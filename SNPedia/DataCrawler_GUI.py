@@ -7,6 +7,8 @@ if (sys.version_info < (3, 0)):
     
 from bs4 import BeautifulSoup
 from random import shuffle
+from pathlib import Path
+
 
 import urllib.request
 import pprint
@@ -25,9 +27,9 @@ from GenomeImporter import PersonalData
 
 
 class SNPCrawl:
-    def __init__(self, rsids=[], filepath=None, snppath=None):
-        if filepath and os.path.isfile(filepath):
-            self.importDict(filepath)
+    def __init__(self, rsids=[], rsidpath=None, snppath=None):
+        if rsidpath and os.path.isfile(rsidpath):
+            self.importDict(rsidpath)
             self.rsidList = []
         else:
             self.rsidDict = {}
@@ -113,8 +115,8 @@ class SNPCrawl:
 
         #print(self.rsidList[:5])
 
-    def importDict(self, filepath):
-        with open(filepath, 'r') as jsonfile:
+    def importDict(self, rsidpath):
+        with open(rsidpath, 'r') as jsonfile:
             self.rsidDict = json.load(jsonfile)
 
     def importSNPs(self, snppath):
@@ -127,15 +129,15 @@ class SNPCrawl:
         #data = data.transpose()
         #datapath = os.path.join(os.path.curdir, "data", 'rsidDict.csv')
         #data.to_csv(datapath)
-        filepath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
-        with open(filepath,"w") as jsonfile:
+        rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+        with open(rsidpath,"w") as jsonfile:
             json.dump(self.rsidDict, jsonfile)
 
 
 #parser = argparse.ArgumentParser()
 
 
-#parser.add_argument('-f', '--filepath', help='Filepath for 23andMe data to be used for import', required=False)
+#parser.add_argument('-f', '--rsidpath', help='rsidpath for 23andMe data to be used for import', required=False)
 
 #args = vars(parser.parse_args())
 
@@ -162,9 +164,9 @@ root.filename = filedialog.askopenfilename(initialdir = last_path,title = "Selec
 #print (root.filename)
 
 root.destroy()
-filepath = root.filename
+rsidpath = root.filename
 
-path_split = os.path.split(filepath)
+path_split = os.path.split(rsidpath)
 last_save = open("lastsave.txt","w")
 
 last_save.write(path_split[0])
@@ -173,8 +175,8 @@ last_save.close()
 
 
 
-if filepath:
-    personal = PersonalData(filepath)
+if rsidpath:
+    personal = PersonalData(rsidpath)
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
@@ -186,9 +188,9 @@ if filepath:
 
 
 if __name__ == "__main__":
-    filepath = os.path.join(Path(__file__).resolve().with_name('data'), 'rsidDict.json')
-    if os.path.isfile(filepath):
-        dfCrawl = SNPCrawl(rsids=rsid, filepath=filepath)
+    rsidpath = os.path.join(Path(__file__).resolve().with_name('data'), 'rsidDict.json')
+    if os.path.isfile(rsidpath):
+        dfCrawl = SNPCrawl(rsids=rsid, rsidpath=rsidpath)
 
     else:
         dfCrawl = SNPCrawl(rsids=rsid)

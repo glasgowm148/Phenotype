@@ -7,13 +7,13 @@ from pathlib import Path
 
 app = Flask(__name__, template_folder='templates')
 
+
+
 @app.route("/", methods=['GET', 'POST'])
 def main():
-    print(vars(request.form))
-    
 
-    filepath = Path(__file__).resolve().with_name('templates') / 'snp_resource.html'
-    
+    print(vars(request.form))
+    rsidpath = Path(__file__).resolve().with_name('templates') / 'snp_resource.html'
     return render_template('snp_resource.html')
 
 @app.route("/excel", methods=['GET', 'POST'])
@@ -50,15 +50,18 @@ def send_css(path):
 
 @app.route("/api/rsids", methods=['GET'])
 def get_types():
+    #rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+
+    #dfCrawl = SNPCrawl(rsidpath=rsidpath)
     return jsonify({"results":dfCrawl.rsidList})
 
 if __name__ == "__main__":
-    filepath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+    rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
     snppath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
 
-    if filepath.is_file():
+    if rsidpath.is_file():
         if snppath.is_file():
-            dfCrawl = SNPCrawl(filepath=filepath, snppath=snppath)
-        else:
-            dfCrawl = SNPCrawl(filepath=filepath)
+            dfCrawl = SNPCrawl(rsidpath=rsidpath, snppath=snppath)
+    else:
+        dfCrawl = SNPCrawl(rsidpath=rsidpath)
     app.run(debug=True)

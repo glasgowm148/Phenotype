@@ -63,12 +63,12 @@ class GrabSNPs:
         self.cmcontinue = cmcontinue
 
     def lastsessionexists(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
-        return os.path.isfile(filepath)
+        rsidpath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
+        return rsidpath.is_file()
 
     def importlast(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
-        lastsession = open(filepath, "r")
+        rsidpath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
+        lastsession = open(rsidpath, "r")
         lines = lastsession.readlines()
         lastsession.close()
         lastsessionvalue = lines[0].strip("\n")
@@ -77,8 +77,8 @@ class GrabSNPs:
 
 
     def export(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
-        with open(filepath, "w") as lastsession:
+        rsidpath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
+        with open(rsidpath, "w") as lastsession:
             lastsession.write(self.cmcontinue)
             lastsession.close()
 

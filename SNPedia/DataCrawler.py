@@ -1,13 +1,20 @@
 import sys
 
 
-
+# Ensures python is set to > 3
 if (sys.version_info < (3, 0)):
 	print ("Please use Python 3")
 	exit()
 from bs4 import BeautifulSoup
 from random import shuffle
+
+from GenomeImporter import PersonalData
+
+# Switched to pathlib for osx use
 from pathlib import Path
+
+import pandas as pd 
+import numpy as np 
 
 
 import urllib.request
@@ -19,15 +26,18 @@ import random
 
 
 from SNPGen import GrabSNPs
-from GenomeImporter import PersonalData
+
 
 
 class SNPCrawl:
-    def __init__(self, rsids=[], filepath=None, snppath=None):
-        if filepath and os.path.isfile(filepath):
-            self.importDict(filepath)
+    # initialises a list and dict from command line arguments(?)
+    def __init__(self, rsids=[], rsidpath=None, snppath=None):
+        
+        # If rsidpath is present import dict and set rsidList[]
+        if rsidpath and os.path.isfile(rsidpath): 
+            self.importDict(rsidpath) #rsid dna -> self.rsidDict (As json)
             self.rsidList = []
-        else:
+        else: 
             self.rsidDict = {}
             self.rsidList = []
 
@@ -54,7 +64,7 @@ class SNPCrawl:
                 self.export()
                 print("exporting current results")
         pp = pprint.PrettyPrinter(indent=1)
-        #pp.pprint(self.rsidDict)
+        pp.pprint(self.rsidDict)
 
     def grabTable(self, rsid):
         try:
@@ -109,10 +119,10 @@ class SNPCrawl:
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
             self.rsidList.append(make(rsid, curdict["Description"], variations))
 
-        #print(self.rsidList[:5])
+        print(self.rsidList[:5])
 
-    def importDict(self, filepath):
-        with open(filepath, 'r') as jsonfile:
+    def importDict(self, rsidpath):
+        with open(rsidpath, 'r') as jsonfile:
             self.rsidDict = json.load(jsonfile)
 
     def importSNPs(self, snppath):
@@ -125,19 +135,19 @@ class SNPCrawl:
         data = data.transpose()
         datapath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
         data.to_csv(datapath)
-        filepath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
-
-        with open(filepath,"w") as jsonfile:
-            json.dump(self.snpdict, jsonfile)
+        rsidpath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
 
         with open(datapath,"w") as jsonfile:
             json.dump(self.rsidDict, jsonfile)
+        
+
+     
 
 
 parser = argparse.ArgumentParser()
 
 
-parser.add_argument('-f', '--filepath', help='Filepath for 23andMe data to be used for import', required=False)
+parser.add_argument('-f', '--rsidpath', help='rsidpath for 23andMe data to be used for import', required=False)
 
 args = vars(parser.parse_args())
 
@@ -149,8 +159,8 @@ rsid += ["rs1801133"]
 #os.chdir(os.path.dirname(__file__))
 
 
-if args["filepath"]:
-    personal = PersonalData(args["filepath"])
+if args["rsidpath"]:
+    personal = PersonalData(args["rsidpath"])
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
@@ -162,9 +172,9 @@ if args["filepath"]:
 
 
 if __name__ == "__main__":
-    filepath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
-    if filepath.is_file():
-        dfCrawl = SNPCrawl(rsids=rsid, filepath=filepath)
+    rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+    if rsidpath.is_file():
+        dfCrawl = SNPCrawl(rsids=rsid, rsidpath=rsidpath)
 
     else:
         dfCrawl = SNPCrawl(rsids=rsid)
