@@ -84,10 +84,12 @@ class SNPCrawl:
                     d1 = self.tableToList(description)
                     self.rsidDict[rsid]["Description"] = d1[0][0]
                     print(d1[0][0].encode("utf-8"))
+
                 if table:
                     d2 = self.tableToList(table)
-                    self.rsidDict[rsid]["Variations"] = d2[1:]
-                    print(d2[1:])
+                    self.rsidDict[rsid]["snpedia"] = d2[1:]
+                    print(d2[0:])
+                
         except urllib.error.HTTPError:
             print(url + " was not found or contained no valid information")
 
@@ -113,11 +115,15 @@ class SNPCrawl:
                 if rsid.lower() in self.snpdict.keys() and \
                    self.snpdict[rsid.lower()] == variation[0] \
                 else str.join(" ", variation)
+                
 
         for rsid in self.rsidDict.keys():
             curdict = self.rsidDict[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
             self.rsidList.append(make(rsid, curdict["Description"], variations))
+        
+        for rsid in self.rsidDict.keys():
+            print(rsid)
 
         print(self.rsidList[:5])
 
@@ -139,6 +145,9 @@ class SNPCrawl:
 
         with open(datapath,"w") as jsonfile:
             json.dump(self.rsidDict, jsonfile)
+        
+        with open(rsidpath,"w") as jsonfile:
+            json.dump(self.snpdict, jsonfile)
         
 
      
