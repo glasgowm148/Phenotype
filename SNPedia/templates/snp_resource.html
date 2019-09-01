@@ -54,14 +54,16 @@
 
                     $("#grid").kendoGrid({
 
-                        toolbar: [{
-                            name: 'exportExcel1',
-                            template: '#= exportExcel()#',
-                        },
-                        {
-                            name:'lookupsnp',
-                            template:'#= snplookup()#'
-                        }
+                        toolbar: [
+                        
+                        {   name: 'exportExcel1',
+                            template: '#= exportExcel()#'},
+                        
+                        {   name:'lookupsnp',
+                            template:'#= snplookup()#'},
+                        
+                        {   name:'lookupdbSNP',
+                            template:'#= lookupDBSNP()#'}
                         ],
                         excel: {
                             fileName: "SNP Report.xlsx",
@@ -83,12 +85,12 @@
                                     return response.results;
                                 }
                             },
-                            pageSize: 50
+                            pageSize: 500
                         },
                         columns: [
                        { field: "Name", width: '190px', title: "Name" },
-                       { field: "Description", width: '290px', title: "Short Description" },
-                       { field: "Genotype", width: '190px', title: "Individual Genotype" },
+                       { field: "Description", width: '290px', title: "Description" },
+                       { field: "Genotype", width: '190px', title: "Your Genotype" },
                        { field: "Variations", width: '490px', title: "Genotype variations", encoded: false },
                          ],
                         height: 950,
@@ -104,8 +106,23 @@
                         reorderable: true
                     });
                 });
-                function snplookup(e){
-                            return '<a class="k-button" href="#" id="lookupsnp" onclick="snpedia()">Lookup on SNPedia</a>';
+                function lookupDBSNP(e){
+                            return '<a class="k-button" href="#" id="lookupsnp" onclick="dbSNP()">dbSNP</a>';
+                        };
+                        
+                        function dbSNP(){
+                            var entityGrid = $("#grid").data("kendoGrid");
+                            var rows = entityGrid.select();
+                            var rsid = rows[0].cells[0].innerText
+
+                            var html = "https://www.ncbi.nlm.nih.gov/snp/"
+                            var link = html.concat(rsid)
+                            window.open(link);
+                        };
+
+
+                        function snplookup(e){
+                            return '<a class="k-button" href="#" id="lookupsnp" onclick="snpedia()">SNPedia</a>';
                         };
                         function snpedia(){
                             var entityGrid = $("#grid").data("kendoGrid");
@@ -113,6 +130,15 @@
                             var rsid = rows[0].cells[0].innerText
 
                             var html = "https://bots.snpedia.com/index.php/"
+                            var link = html.concat(rsid)
+                            window.open(link);
+                        };
+                        function dbSNP(){
+                            var entityGrid = $("#grid").data("kendoGrid");
+                            var rows = entityGrid.select();
+                            var rsid = rows[0].cells[0].innerText
+
+                            var html = "https://www.ncbi.nlm.nih.gov/snp/"
                             var link = html.concat(rsid)
                             window.open(link);
                         };
