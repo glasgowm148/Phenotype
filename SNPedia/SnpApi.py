@@ -50,9 +50,6 @@ def send_css(path):
 
 @app.route("/api/rsids", methods=['GET'])
 def get_types():
-    #rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
-
-    #dfCrawl = SNPCrawl(rsidpath=rsidpath)
     return jsonify({"results":dfCrawl.rsidList})
 
 if __name__ == "__main__":

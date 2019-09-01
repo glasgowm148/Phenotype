@@ -156,6 +156,10 @@ args = vars(parser.parse_args())
 rsid = ["rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
 rsid += ["rs1801133"]
 
+#load in snps_of_interest.txt
+f = open('/Users/mark/Documents/GitHub/OSGenome/SNPedia/data/snps_of_interest.txt', 'r')
+rsid += f.readlines()
+f.close()
 #os.chdir(os.path.dirname(__file__))
 
 
