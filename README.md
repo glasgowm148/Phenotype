@@ -4,9 +4,21 @@ This Git is based on OSGenome - An Open Source Web Application for Genetic Data 
 ## Description
 OS Genome is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. All of which using Flask, Kendo, and Python programming.
 
-
 ## Disclaimer
 Raw Data coming from Genetic tests done by Direct To Consumer companies such as 23andMe and Ancestry.com were found to have a false positive rate of 40% for genes with clinical significance in a March 2018 study [*False-positive results released by direct-to-consumer genetic tests highlight the importance of clinical confirmation testing for appropriate patient care*](https://www.nature.com/articles/gim201838). For this reason, it's important to confirm any at risk clinical SNPs with your doctor who can provide genetic tests and send them to a clinical laboratory.
+
+
+# Customisations
+
+* Fixed py2/3 print bug preventing program from starting
+* Switched os.cwd to pathlib for cross-platform support
+* Created data/snps_of_interest.txt which can be loaded with SNPs you'd like to specifically query against your dataset
+* Added support for dbSNP lookup
+* Removed _GUI.py
+* Enabled the commented out code and imported panda
+* In Progress
+  * dbSNP crawler to get risk allele, publications, frequency and crosscheck result from snpedia
+  * 
 
 ## Installation:
 
@@ -38,9 +50,3 @@ This sets us the Flask server
 
 ## Access the Local Server
 Access http://127.0.0.1:5000 (the ip address also known as localhost, it's all hosted on your local machine) to look at your Genome
-
-## arv support
-There exists a library arv ([GitHub: cslarsen/arv - A fast 23andMe DNA parser and inferrer for Python](https://github.com/cslarsen/arv)) that allows for rule based matching of health and trait attributes using a hash table of the raw data of 23andMe. It is possible to alter the rsidDict.json to allow for automatically populating the rule matching conditions. I will be designing this functionality in a python script that will be able to be used to import the JSON as a dictionary that can be called within the rule matching. Please keep in mind its respective disclaimers before using the service. 
-
-## Example
-![Example of Kendo Grid](https://github.com/mentatpsi/OSGenome/blob/master/images/OSGenome5.PNG)
