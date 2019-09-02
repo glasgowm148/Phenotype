@@ -13,7 +13,7 @@ app = Flask(__name__, template_folder='templates')
 def main():
 
     print(vars(request.form))
-    rsidpath = Path(__file__).resolve().with_name('templates') / 'snp_resource.html'
+    filepath = Path(__file__).resolve().with_name('templates') / 'snp_resource.html'
     return render_template('snp_resource.html')
 
 @app.route("/excel", methods=['GET', 'POST'])
@@ -53,12 +53,12 @@ def get_types():
     return jsonify({"results":dfCrawl.rsidList})
 
 if __name__ == "__main__":
-    rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+    filepath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
     snppath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
 
-    if rsidpath.is_file():
+    if filepath.is_file():
         if snppath.is_file():
-            dfCrawl = SNPCrawl(rsidpath=rsidpath, snppath=snppath)
+            dfCrawl = SNPCrawl(filepath=filepath, snppath=snppath)
     else:
-        dfCrawl = SNPCrawl(rsidpath=rsidpath)
+        dfCrawl = SNPCrawl(filepath=filepath)
     app.run(debug=True)

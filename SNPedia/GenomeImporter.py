@@ -6,13 +6,13 @@ from pathlib import Path
 
 
 class PersonalData:
-    def __init__(self, rsidpath):
-        if os.path.exists(rsidpath):
-            self.readData(rsidpath)
+    def __init__(self, filepath):
+        if os.path.exists(filepath):
+            self.readData(filepath)
             self.export()
 
-    def readData(self, rsidpath):
-        with open(rsidpath) as file:
+    def readData(self, filepath):
+        with open(filepath) as file:
             relevantdata = [line for line in file.readlines() if line[0] != "#"]
             file.close()
         self.personaldata = [line.split("\t") for line in relevantdata]
@@ -25,8 +25,8 @@ class PersonalData:
         return not genotype == "(-;-)"
 
     def export(self):
-        rsidpath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
-        with open(rsidpath, "w") as jsonfile:
+        filepath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
+        with open(filepath, "w") as jsonfile:
             json.dump(self.snpdict, jsonfile)
 
 
@@ -35,12 +35,12 @@ class PersonalData:
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--rsidpath', help='rsidpath for json dump to be used for import', required=False)
+    parser.add_argument('-f', '--filepath', help='filepath for json dump to be used for import', required=False)
 
     args = vars(parser.parse_args())
 
-    if args["rsidpath"]:
-        pd = PersonalData(rsidpath=args["rsidpath"])
+    if args["filepath"]:
+        pd = PersonalData(filepath=args["filepath"])
         print(len(pd.personaldata))
         print(pd.snps[:50])
         print(list(pd.snpdict.keys())[:10])

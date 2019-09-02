@@ -13,6 +13,7 @@ from GenomeImporter import PersonalData
 # Switched to pathlib for osx use
 from pathlib import Path
 
+#import pandas for pd. ? 
 import pandas as pd 
 import numpy as np 
 
@@ -31,11 +32,11 @@ from SNPGen import GrabSNPs
 
 class SNPCrawl:
     # initialises a list and dict from command line arguments(?)
-    def __init__(self, rsids=[], rsidpath=None, snppath=None):
+    def __init__(self, rsids=[], filepath=None, snppath=None):
         
-        # If rsidpath is present import dict and set rsidList[]
-        if rsidpath and os.path.isfile(rsidpath): 
-            self.importDict(rsidpath) #rsid dna -> self.rsidDict (As json)
+        # If filepath is present import dict and set rsidList[]
+        if filepath and os.path.isfile(filepath): 
+            self.importDict(filepath) #rsid dna -> self.rsidDict (As json)
             self.rsidList = []
         else: 
             self.rsidDict = {}
@@ -53,8 +54,10 @@ class SNPCrawl:
         self.createList()
 
     def initcrawl(self, rsids):
+        print("initcrawl start")
         count = 0
         for rsid in rsids:
+            print("RSID:")
             print(rsid)
             self.grabTable(rsid)
             print("")
@@ -68,7 +71,7 @@ class SNPCrawl:
 
     def grabTable(self, rsid):
         try:
-            url = "https://bots.snpedia.com/index.php/" + rsid
+            url = "https://bots.snpedia.com/index.php/" + rsid.lower()
             if rsid not in self.rsidDict.keys():
                 self.rsidDict[rsid.lower()] = {
                     "Description": "",
@@ -78,23 +81,25 @@ class SNPCrawl:
                 html = response.read()
                 bs = BeautifulSoup(html, "html.parser")
                 table = bs.find("table", {"class": "sortable smwtable"})
-                description = bs.find('table', {'style': 'border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;'})
+                description = bs.find("table", {"style": "border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;"})
 
                 if description:
                     d1 = self.tableToList(description)
                     self.rsidDict[rsid]["Description"] = d1[0][0]
+                    print("1")
                     print(d1[0][0].encode("utf-8"))
 
                 if table:
                     d2 = self.tableToList(table)
-                    self.rsidDict[rsid]["snpedia"] = d2[1:]
+                    self.rsidDict[rsid]["Variations"] = d2[1:]
+                    print("2")
                     print(d2[1:])
                 
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
 
         try:
-            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid
+            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower()
             if rsid not in self.rsidDict.keys():
                 self.rsidDict[rsid.lower()] = {
                     "Frequency": "",
@@ -104,26 +109,28 @@ class SNPCrawl:
                 html = response.read()
                 bs = BeautifulSoup(html, "html.parser")
                 table = bs.find("table", {"class": "sortable smwtable"})
-                freq = bs.find('table', {'style': 'border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;'})
+                freq = bs.find("table", {"style": "border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;"})
 
                 if description:
                     d1 = self.tableToList(freq)
                     self.rsidDict[rsid]["Frequency"] = d1[0][0]
+                    print("3")
                     print(d1[0][0].encode("utf-8"))
 
                 if table:
                     d2 = self.tableToList(risk)
                     self.rsidDict[rsid]["Risk"] = d2[1:]
+                    print("4")
                     print(d2[1:])
 
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
 
     def tableToList(self, table):
-        rows = table.find_all('tr')
+        rows = table.find_all("tr")
         data = []
         for row in rows:
-            cols = row.find_all('td')
+            cols = row.find_all("td")
             cols = [ele.text.strip() for ele in cols]
             data.append([ele for ele in cols if ele])
         return data
@@ -149,31 +156,36 @@ class SNPCrawl:
             self.rsidList.append(make(rsid, curdict["Description"], variations))
         
         for rsid in self.rsidDict.keys():
+            print("Printing for rsid in self.rsidDict.keys()")
             print(rsid)
 
+        print("here?!")
         print(self.rsidList[:5])
 
-    def importDict(self, rsidpath):
-        with open(rsidpath, 'r') as jsonfile:
+    def importDict(self, filepath):
+        with open(filepath, 'r') as jsonfile:
             self.rsidDict = json.load(jsonfile)
 
     def importSNPs(self, snppath):
         with open(snppath, 'r') as jsonfile:
             self.snpdict = json.load(jsonfile)
 
+    # The excel export function ?? 
     def export(self):
         data = pd.DataFrame(self.rsidDict)
         data = data.fillna("-")
         data = data.transpose()
-        datapath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
+        datapath = Path(__file__).resolve().with_name("data") / "rsidDict.csv"
         data.to_csv(datapath)
-        rsidpath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
+        filepath = Path(__file__).resolve().with_name("data") / "rsidDict.json"
 
-        with open(datapath,"w") as jsonfile:
+        with open(filepath,"w") as jsonfile:
             json.dump(self.rsidDict, jsonfile)
+
+       # with open(datapath,"w") as jsonfile:
+        #   json.dump(self.snpdict, jsonfile)
         
-        with open(rsidpath,"w") as jsonfile:
-            json.dump(self.snpdict, jsonfile)
+        
         
 
      
@@ -182,7 +194,7 @@ class SNPCrawl:
 parser = argparse.ArgumentParser()
 
 
-parser.add_argument('-f', '--rsidpath', help='rsidpath for 23andMe data to be used for import', required=False)
+parser.add_argument("-f", "--filepath", help="filepath for 23andMe data to be used for import", required=False)
 
 args = vars(parser.parse_args())
 
@@ -192,14 +204,14 @@ rsid = ["rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", 
 rsid += ["rs1801133"]
 
 #load in snps_of_interest.txt
-f = open('/Users/mark/Documents/GitHub/OSGenome/SNPedia/data/snps_of_interest.txt', 'r')
+f = open("/Users/mark/Documents/GitHub/OSGenome/SNPedia/data/snps_of_interest.txt", "r")
 rsid += f.readlines()
 f.close()
 #os.chdir(os.path.dirname(__file__))
 
 
-if args["rsidpath"]:
-    personal = PersonalData(args["rsidpath"])
+if args["filepath"]:
+    personal = PersonalData(args["filepath"])
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
@@ -212,9 +224,9 @@ if args["rsidpath"]:
 
 
 if __name__ == "__main__":
-    rsidpath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
-    if rsidpath.is_file():
-        dfCrawl = SNPCrawl(rsids=rsid, rsidpath=rsidpath)
+    filepath = Path(__file__).resolve().with_name("data") / "rsidDict.json"
+    if filepath.is_file():
+        dfCrawl = SNPCrawl(rsids=rsid, filepath=filepath)
 
     else:
         dfCrawl = SNPCrawl(rsids=rsid)
