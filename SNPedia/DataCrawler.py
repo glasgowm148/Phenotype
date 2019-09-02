@@ -88,10 +88,36 @@ class SNPCrawl:
                 if table:
                     d2 = self.tableToList(table)
                     self.rsidDict[rsid]["snpedia"] = d2[1:]
-                    print(d2[0:])
+                    print(d2[1:])
                 
         except urllib.error.HTTPError:
-            print(url + " was not found or contained no valid information")
+            print(url + " was not found on snpedia or contained no valid information")
+
+        try:
+            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid
+            if rsid not in self.rsidDict.keys():
+                self.rsidDict[rsid.lower()] = {
+                    "Frequency": "",
+                    "Risk": []
+                }
+                response = urllib.request.urlopen(url)
+                html = response.read()
+                bs = BeautifulSoup(html, "html.parser")
+                table = bs.find("table", {"class": "sortable smwtable"})
+                freq = bs.find('table', {'style': 'border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;'})
+
+                if description:
+                    d1 = self.tableToList(freq)
+                    self.rsidDict[rsid]["Frequency"] = d1[0][0]
+                    print(d1[0][0].encode("utf-8"))
+
+                if table:
+                    d2 = self.tableToList(risk)
+                    self.rsidDict[rsid]["Risk"] = d2[1:]
+                    print(d2[1:])
+
+        except urllib.error.HTTPError:
+            print(url + " was not found or on dbSNP or contained no valid information")
 
     def tableToList(self, table):
         rows = table.find_all('tr')
@@ -177,6 +203,7 @@ if args["rsidpath"]:
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
+    print("Length of sp.snps")
     print(len(sp.snps))
     temp = personal.snps
     random.shuffle(temp)
