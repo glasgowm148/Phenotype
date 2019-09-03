@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.00046", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "171086457", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FMO3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "10338091"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Reported by Akerman et al. 1999 to cause Trimethylaminuria in a recessive manner. The authors report seeing it once, compound heterozygous in a patient.", 
+    "URL": "http://evidence.pgp-hms.org/FMO3-R492W", 
+    "Variant Name": "FMO3-R492W", 
+    "Variant Page": "http://evidence.pgp-hms.org/FMO3-R492W"
+}

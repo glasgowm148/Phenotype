@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "9e-05", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "20648267", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SLC6A5", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "16751771"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant is associated with hyperekplexia (a disorder of excessive startle reflect and stiffness), seen homozygously in a single family in a screen of 79 unrelated cases and not seen in 400 control chromosomes. This is not enough data to establish statistical significance, but the authors did find functional data supporting this variant as having an severe effect on the gene product.", 
+    "URL": "http://evidence.pgp-hms.org/SLC6A5-T425M", 
+    "Variant Name": "SLC6A5-T425M", 
+    "Variant Page": "http://evidence.pgp-hms.org/SLC6A5-T425M", 
+    "dbSNP IDs": [
+        "rs121908498"
+    ]
+}

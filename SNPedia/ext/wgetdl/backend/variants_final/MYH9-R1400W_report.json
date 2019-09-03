@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0015", 
+    "Build 37 Chromosome": "chr22", 
+    "Build 37 Position": "36688178", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MYH9", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11752022"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": "1", 
+        "Functional": "0", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably a rare nonpathogenic polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/MYH9-R1400W", 
+    "Variant Name": "MYH9-R1400W", 
+    "Variant Page": "http://evidence.pgp-hms.org/MYH9-R1400W"
+}

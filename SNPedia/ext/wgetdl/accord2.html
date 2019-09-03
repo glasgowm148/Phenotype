@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>accordion demo</title> 
+ <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Bubble Variant Visualization Demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <link rel="stylesheet" href="css/style.css"> 
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+ 
+<div id="accordion">
+  <div id="ahead_1"class = "accord_header" ><!-- a href="#" id="rar" class="btn">Rarity</a> --> 
+      <div id="save_exit" class="btn-group" style="visibility: visible;  padding-left: 0px;">
+             <a href="#" id="var_info" class="btn"><input type="var_info" width="20px"></a>
+           <a href="#" id="save" class="btn"><img src="img/save.png" width="10px"/></a> 
+           <a href="#"  id="exit" class="btn"><img src="img/close.png" width="10px"/></a> 
+
+      </div>
+      </div>
+  <div id= "acontent_1">
+    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+    Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+    condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+    Nam mi. Proin viverra leo ut odio.</p>
+  </div>
+  <div id="ahead_2"class = "accord_header">Section 2</div>
+  <div>
+    <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+    Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+    faucibus interdum tellus libero ac justo.</p>
+  </div>
+  <div id= "ahead_3"class = "accord_header">Section 3</div>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+    Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+</div>
+ 
+<script>
+$( "#accordion" ).accordion();
+</script>
+ 
+</body>
+</html>

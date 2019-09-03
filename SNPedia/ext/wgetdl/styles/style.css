@@ -1,0 +1,171 @@
+/*
+vis_style.css
+Nicole Francisco (edited by PGP team summer 2014)
+for Wellesley College HCI Lab
+*/
+
+
+
+
+#toggle_label {
+  width: 18%;
+}
+
+.button_and_menu {
+  margin-top: 15px;
+  display: inline;
+  margin-left: 30px;
+  width: 23%;
+  float: left;
+  font-size: large;
+}
+
+.button_and_menu input[type=radio] {
+  display: inline;
+}
+
+
+#all_filters select {
+  display: block;
+  visibility: hidden;
+  width: 90%;
+}
+
+#all_filters {
+  margin: 0;
+  width: 956.65;
+  height: 70px;
+  background-color:#D7E1E5;
+}
+
+
+/* navbar */
+#study_wrapper {
+	margin-top:60px;
+}
+
+/* Form styles */
+input[type="checkbox"], input[type="radio"] {
+    vertical-align:middle;
+    margin:0 5px 0 0;
+}
+
+textarea {
+    width:auto;
+	display:block;
+}
+
+input[type=number] {
+    height:auto;
+}
+
+select, input[type="text"] {
+    margin-left: 5px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.submit_top {
+	margin: 11px 0;
+}
+ 
+/* Pop-up div box */
+#validate_msg{
+	position: fixed;
+    left: 25%;
+    top: 25%;
+    border: 1px solid black;
+	padding: 30px;
+    width: 50%;
+}
+
+#exitBtn{
+	position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+/* Google API TreeMap Visualization */
+
+#vis_low {
+	width: 40%;
+}
+
+#vis_mod {
+	width: 30%; 
+	left: 38%;
+}
+
+#vis_high {
+	width: 20%; 
+	left: 66%;
+}
+
+#vis_low, #vis_mod, #vis_high{
+	height: 500px; 
+	position: absolute;
+}
+
+#visualization {
+	width:850px; 
+	position: relative;
+	display: block;
+	height: 500px;
+}
+
+/*** GENOME TABLE ***/
+.report_table_wrapper div, .report_table_wrapper label{
+	font-size:11px;
+	font-weight:normal;
+}
+
+.report_table_wrapper label {
+	padding: 5px 5px 0 5px;
+}
+
+.report_table_wrapper select, input[type="text"] {
+	font-size:11px;
+	font-weight:normal;
+	height:auto;
+	width:auto;
+	vertical-align:top;
+}
+
+table#gnm_table {
+	font-family:Verdana,Arial,sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #555555;
+	vertical-align: top;
+	text-align: left;
+	border-collapse: collapse;
+}
+	
+table#gnm_table th {
+	font-weight:normal;
+	border: 1px solid #d3d3d3;
+	padding: 2px;
+	margin:0px;
+	font-weight: normal;
+}
+	
+table#gnm_table th.sorting {
+	width:12%;
+}
+	
+.css_right { float:right; }
+
+table#gnm_table tr {
+	border-left: 1px solid #d3d3d3;
+}
+
+table#gnm_table tr.odd {
+	background-color:#e9e9e9 !important;
+}
+
+table#gnm_table td {
+	border-style: solid;
+	border-color: #bbb;
+	border-width: 1px 1px 0 0;
+	vertical-align: top;
+	text-align: left;
+}

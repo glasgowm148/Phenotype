@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.039", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "57015091", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "CETP", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "17952847"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "1", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant is associated with slightly lower HDL (good) cholesterol, although it has a negligible effect (around 2 mg/dl).", 
+    "URL": "http://evidence.pgp-hms.org/CETP-A390P", 
+    "Variant Name": "CETP-A390P", 
+    "Variant Page": "http://evidence.pgp-hms.org/CETP-A390P", 
+    "dbSNP IDs": [
+        "rs5880"
+    ]
+}

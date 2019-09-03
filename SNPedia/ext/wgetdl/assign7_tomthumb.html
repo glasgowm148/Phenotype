@@ -1,0 +1,66 @@
+<!--
+FILE NAME: assign7_tomthumb.html
+WRITTEN BY: Isabelle Styslinger and Christina Pollalis
+DATE: November 4th 2015
+PURPOSE: This is the html file for the Task 2 for homework 7
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Tom Thumb</title>
+	<meta charset='utf-8'>
+	<link href='assign7.css' rel='stylesheet'>
+
+</head>
+<body>
+    <h1>Tom Thumb</h1>
+
+<!--
+    Creates a <form> with <input> elements for the user to enter three values for
+    width, height, and number of colors. Gives then a default value that one can
+    use in testing. -->
+
+
+    <form>
+            <label for="width">Image Width</label>
+                <input type="text" id='width' name='width' value='10'>
+                <br>
+			<label for="height">Image Height</label>
+				<input type="text" id='height' name='height' value='10'>
+                <br>
+            <label for="colors">Number of Colors</label>
+    			<input type="text" id='colors' name='colors' value='5'>
+                <br>
+		<!-- button that will calculate the size (in the js file) -->
+        <button type='button' id='button2'>Calculate</button>
+
+    </form>
+
+    <br>
+	<!-- div that will get manipulated to display the message to the user -->
+	<div id='results'>
+    </div>
+
+	<!-- Validation forms -->
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer">
+    		<img
+       			src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"
+       			alt="Valid HTML 5"
+       			title="Valid HTML 5"
+       			height="31" width="88">
+		</a>
+  		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+     	<img
+       		src="http://cs.wellesley.edu/~cs110/Icons/vcss.gif"
+       		alt="Valid CSS"
+       		title="Valid CSS"
+       		height="31" width="88">
+  		</a>
+	</p>
+
+	<!-- Attached to the scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src='assign7.js'></script>
+</html>

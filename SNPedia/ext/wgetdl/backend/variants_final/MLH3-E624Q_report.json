@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0082", 
+    "Build 37 Chromosome": "chr14", 
+    "Build 37 Position": "75514489", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MLH3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "11586295", 
+        "12702580", 
+        "19156873"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "0", 
+        "Familial": "1", 
+        "Functional": "2", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign, follow-up studies have failed to support any link with colorectal cancer and the protein function is identical to wildtype.", 
+    "URL": "http://evidence.pgp-hms.org/MLH3-E624Q", 
+    "Variant Name": "MLH3-E624Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/MLH3-E624Q", 
+    "dbSNP IDs": [
+        "rs28756986"
+    ]
+}

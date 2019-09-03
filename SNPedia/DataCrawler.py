@@ -54,11 +54,10 @@ class SNPCrawl:
         self.createList()
 
     def initcrawl(self, rsids):
-        print("initcrawl start")
+        print("####### Starting to crawl.... #######")
         count = 0
         for rsid in rsids:
-            print("RSID:")
-            print(rsid)
+            print("RSID:" + rsid)
             self.grabTable(rsid)
             print("")
             count += 1
@@ -69,13 +68,25 @@ class SNPCrawl:
         pp = pprint.PrettyPrinter(indent=1)
         pp.pprint(self.rsidDict)
 
+
+
+    # Loops through the list of rsid's and checks SNPedia
+    # if rsid isn't found in rsidDict.keys()
+    # scrape the page using BeautifulSoup and assign it to a variable
+    # So we can place it in the rsidDict
     def grabTable(self, rsid):
+       
+       # SNPedia import
         try:
+            print("####### SNPedia import #######" + rsid)
+
             url = "https://bots.snpedia.com/index.php/" + rsid.lower()
             if rsid not in self.rsidDict.keys():
                 self.rsidDict[rsid.lower()] = {
                     "Description": "",
-                    "Variations": []
+                    "Variations": [],
+                    "Frequency": "",
+                    "Risk": ""
                 }
                 response = urllib.request.urlopen(url)
                 html = response.read()
@@ -86,7 +97,6 @@ class SNPCrawl:
                 if description:
                     d1 = self.tableToList(description)
                     self.rsidDict[rsid]["Description"] = d1[0][0]
-                    print("1")
                     print(d1[0][0].encode("utf-8"))
 
                 if table:
@@ -98,30 +108,25 @@ class SNPCrawl:
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
 
+        # dbSNP import
         try:
+            print("####### dbSNP import #######" + rsid)
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower()
-            if rsid not in self.rsidDict.keys():
-                self.rsidDict[rsid.lower()] = {
-                    "Frequency": "",
-                    "Risk": []
-                }
-                response = urllib.request.urlopen(url)
-                html = response.read()
-                bs = BeautifulSoup(html, "html.parser")
-                table = bs.find("table", {"class": "sortable smwtable"})
-                freq = bs.find("table", {"style": "border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;"})
+           
+            response = urllib.request.urlopen(url)
+            html = response.read()
+            bs = BeautifulSoup(html, "html.parser")
+            dbSNPin = bs.find("dl", {"class": "usa-width-one-half"})
+            
+            if dbSNPin:
+                print("if dbSNPin:")
+                d1 = self.tableToList2(dbSNPin)
+                print(d1)
 
-                if description:
-                    d1 = self.tableToList(freq)
-                    self.rsidDict[rsid]["Frequency"] = d1[0][0]
-                    print("3")
-                    print(d1[0][0].encode("utf-8"))
-
-                if table:
-                    d2 = self.tableToList(risk)
-                    self.rsidDict[rsid]["Risk"] = d2[1:]
-                    print("4")
-                    print(d2[1:])
+                self.rsidDict[rsid]["Frequency"] = d1[2]
+                self.rsidDict[rsid]["Risk"] = d1[4:2]
+                print(d1[0][0].encode("utf-8"))
+            
 
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
@@ -134,13 +139,23 @@ class SNPCrawl:
             cols = [ele.text.strip() for ele in cols]
             data.append([ele for ele in cols if ele])
         return data
+    
+    def tableToList2(self, table):
+        rows = table.find_all("dt")
+        data = []
+        for row in rows:
+            cols = row.find_all("td")
+            cols = [ele.text.strip() for ele in cols]
+            data.append([ele for ele in cols if ele])
+        return data
 
     def createList(self):
-        make = lambda rsname, description, variations: \
+        make = lambda rsname, description, freq, risk, variations: \
             {"Name": rsname,
              "Description": description,
-             "Genotype": self.snpdict[rsname.lower()] \
-             if rsname.lower() in self.snpdict.keys() else "(-;-)", \
+             "Genotype": self.snpdict[rsname.lower()] if rsname.lower() in self.snpdict.keys() else "(-;-)", 
+             "Frequency": freq,
+             "Risk Allele": risk,
              "Variations": str.join("<br>", variations)}
 
         formatCell = lambda rsid, variation : \
@@ -153,7 +168,8 @@ class SNPCrawl:
         for rsid in self.rsidDict.keys():
             curdict = self.rsidDict[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
-            self.rsidList.append(make(rsid, curdict["Description"], variations))
+            risk = 2
+            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], risk, variations))
         
         for rsid in self.rsidDict.keys():
             print("Printing for rsid in self.rsidDict.keys()")
@@ -215,7 +231,7 @@ if args["filepath"]:
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
-    print("Length of sp.snps")
+    print("Extra 'SNPs of interest' to be analysed:")
     print(len(sp.snps))
     temp = personal.snps
     random.shuffle(temp)

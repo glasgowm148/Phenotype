@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SYNE1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "17159980"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "This may be rare and may cause cerebellar ataxia in a recessive manner. This is a disruptive variant, but most of reported causal variants have been upstream of this position -- the few reports of causal downstream variants lack statistical significance. This protein is very large, it's possible that truncating variants this far along in the product do not have as severe an effect.", 
+    "URL": "http://evidence.pgp-hms.org/SYNE1-E6786Shift", 
+    "Variant Name": "SYNE1-E6786Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/SYNE1-E6786Shift"
+}

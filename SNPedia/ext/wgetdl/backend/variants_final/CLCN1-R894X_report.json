@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "0.00074", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "143048771", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "CLCN1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "7874130", 
+        "8533761", 
+        "11840191"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Causes myotonia congenita in a recessive manner, delayed relaxation of the muscles and rigidity. May also cause symptoms in a dominant manner with low penetrance (sometimes subclinical symptoms reported). Based on allele frequency (1 in 500 are carriers) vs. disease prevalence (1-10 in 100,000), we conclude the penetrance for the disease in heterozygous carriers, if true, is either very low penetrances (< 1%) and/or very underdiagnosed.", 
+    "URL": "http://evidence.pgp-hms.org/CLCN1-R894X", 
+    "Variant Name": "CLCN1-R894X", 
+    "Variant Page": "http://evidence.pgp-hms.org/CLCN1-R894X"
+}

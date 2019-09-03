@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.061", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "237778084", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RYR2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16769042", 
+        "18326664"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Reported to cause arrhythmogenic right ventricular cardiomyopathy when compound heterozygous with G1885E, although this finding is weakened after correcting for multiple hypotheses and it is unclear what penetrance such a genotype might have, if it is causal.", 
+    "URL": "http://evidence.pgp-hms.org/RYR2-G1886S", 
+    "Variant Name": "RYR2-G1886S", 
+    "Variant Page": "http://evidence.pgp-hms.org/RYR2-G1886S", 
+    "dbSNP IDs": [
+        "rs3766871"
+    ]
+}

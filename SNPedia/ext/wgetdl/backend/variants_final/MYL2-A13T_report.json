@@ -1,0 +1,42 @@
+{
+    "Allele Frequency": "0.00019", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "111356964", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MYL2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 6, 
+    "PMID List": [
+        "8673105", 
+        "11102452", 
+        "11748309", 
+        "12668451", 
+        "14594949", 
+        "15483641"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": "-1", 
+        "Functional": "4", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This rare variant is implicated in causing late-onset familial hypertrophic cardiomyopathy. The variant has been found in five affected Caucasian individuals (in four families), but affected non-carriers and unaffected carriers have also been observed. No statistically significant enrichment of this variant in cases vs. controls has been shown.", 
+    "URL": "http://evidence.pgp-hms.org/MYL2-A13T", 
+    "Variant Name": "MYL2-A13T", 
+    "Variant Page": "http://evidence.pgp-hms.org/MYL2-A13T", 
+    "dbSNP IDs": [
+        "rs104894363"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.00029", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "38645249", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SCN5A", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "11997281", 
+        "15840476", 
+        "18071069", 
+        "19716085", 
+        "20486126"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Rare, reported to be associated with long-QT syndrome (can cause syncopal spells, sudden death as a teenager / young adult), but observations are scattered may have some publication bias.", 
+    "URL": "http://evidence.pgp-hms.org/SCN5A-G615E", 
+    "Variant Name": "SCN5A-G615E", 
+    "Variant Page": "http://evidence.pgp-hms.org/SCN5A-G615E", 
+    "dbSNP IDs": [
+        "rs12720452"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.048", 
+    "Build 37 Chromosome": "chr20", 
+    "Build 37 Position": "61451332", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "COL9A3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11308397"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Carriers of this collagen variant are associated with having a significantly increased risk of lumbar disc disease (~11% total risk compared to a typical risk of 4%). ", 
+    "URL": "http://evidence.pgp-hms.org/COL9A3-R103W", 
+    "Variant Name": "COL9A3-R103W", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL9A3-R103W", 
+    "dbSNP IDs": [
+        "rs61734651"
+    ]
+}

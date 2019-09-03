@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.049", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "41858876", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Anatomical and congenital", 
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TGFB1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "8901839", 
+        "14596813", 
+        "15212689", 
+        "15569360"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "2", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This variant in a growth factor gene is associated with variation in TGFB1 levels; this has been associated with various pathogenic and some protective effects, including: more hepatic fibrosis progression in hep C patients, lower risk of cleft palate, anticorrelation with longevity, higher risk of myocardial infarction and lower risk of hypertension.", 
+    "URL": "http://evidence.pgp-hms.org/TGFB1-R25P", 
+    "Variant Name": "TGFB1-R25P", 
+    "Variant Page": "http://evidence.pgp-hms.org/TGFB1-R25P", 
+    "dbSNP IDs": [
+        "rs1800471"
+    ]
+}

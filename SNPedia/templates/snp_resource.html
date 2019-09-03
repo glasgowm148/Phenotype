@@ -74,7 +74,7 @@
                                     return response.results;
                                 }
                             },
-                            pageSize: 50
+                            pageSize: 250
                         },
                         columns: [
                        { field: "Name", width: '190px', title: "Name" },
@@ -82,7 +82,7 @@
                        { field: "Genotype", width: '190px', title: "Your Genotype" },
                        { field: "Frequency", width: '190px', title: "Frequency" },
                        { field: "Risk", width: '190px', title: "Risk Allele" },
-                       { field: "Variations", width: '490px', title: "Genotype variations", encoded: false },
+                       { field: "Variations", width: '490px', title: "SNPedia Notes", encoded: false },
                          ],
                         height: 950,
                         filterable: true,
@@ -110,7 +110,7 @@
                             window.open(link);
                         };
                 function snplookup2(e){
-                    return '<a class="k-button" href="#" id="lookupsnp2" onclick="dbsnp()">SNPedia</a>';
+                    return '<a class="k-button" href="#" id="lookupsnp2" onclick="dbsnp()">dbSNP</a>';
                     
                         };
                         function dbsnp(){

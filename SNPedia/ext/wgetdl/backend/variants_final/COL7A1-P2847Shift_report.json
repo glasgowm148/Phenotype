@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "COL7A1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "This frameshift mutation is predicted to cause dystrophic epidermolysis bullosa in a recessive manner. Although there are no known reports of this variant, other disruptive variants in this gene cause this disease. Notably, this variant is nearer to the end than most reports (codon 2,847 out of 2,944 total), this may reduce the severity of its impact on protein function.", 
+    "URL": "http://evidence.pgp-hms.org/COL7A1-P2847Shift", 
+    "Variant Name": "COL7A1-P2847Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL7A1-P2847Shift"
+}

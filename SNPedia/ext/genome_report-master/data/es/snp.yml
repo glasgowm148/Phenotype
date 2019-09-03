@@ -1,0 +1,3106 @@
+rs429358:
+  TT:
+    - Riesgo normal de padecer Alzheimer.
+    - true
+  CT:
+    - Tienes un riesgo elevado de padecer Alzheimer. Si tienes problemas de coraz&oacute;n el riesgo aumenta.
+    - false
+  CC:
+    - Tienes riesgo de padecer Alzheimer.
+    - false
+rs7412:
+  CC:
+    - Seguir un tratamiento con olanzapina, te provocar&aacute; un aumento de peso.
+    - false
+  CT:
+    - Seguir un tratamiento con olanzapina, te provocar&aacute; un aumento de peso.
+    - false
+  CC:
+    - Reacci&oacute;n normal al seguir un tratamiento con olanzapina.
+    - null
+rs1045485:
+  CC:
+    - Riesgo bajo de padecer c&aacute;ncer de mama.
+    - true
+  CG:
+    - Riesgo muy bajo de padecer c&aacute;ncer de mama.
+    - true
+  GG:
+    - Riesgo normal de padecer c&aacute;ncer de mama.
+    - true
+rs1815739:
+  CC:
+    - Gen&eacute;tica muscular la mejor, posible deportista profesional.
+    - true
+  CT:
+    - Gen&eacute;tica muscular mixta, posible velocista.
+    - true
+  TT:
+    - Alteraci&oacute;n del rendimiento muscular, posible corredor.
+    - null
+rs53576:
+  AA:
+    - Falta de empat&iacute;a?
+    - false
+  AG:
+    - Falta de empat&iacute;a?
+    - false
+  GG:
+    - Optimista y emp&aacute;tico, maneja bien el estr&eacute;s.
+    - true
+rs6152:
+  AA:
+    - Ese pelazo que tienes, lo vas a conservar por mucho tiempo.
+    - true
+  AG:
+    - Riesgo alto de padecer calvicie, no te preocupes es la moda de hoy en d&iacute;a.
+    - null
+  GG:
+    - Riesgo de ser calvo, buena suerte, puede que no sea as&iacute;.
+    - null
+rs333:
+  --:
+    - Tu organismo combate el VIH.
+    - true
+rs9264942:
+  CC:
+    - 90% de combatir el virus VIH.
+    - true
+  CT:
+    - 60% de combatir el virus VIH.
+    - true
+  TT:
+    - Porcentaje normal, de combatir el virus VIH.
+    - null
+rs2572886:
+  AA:
+    - Riesgo muy alto de infecci&oacute;n del virus VIH.
+    - false
+  AG:
+    - Riesgo alto de infecci&oacute;n del virus VIH.
+    - false
+  GG:
+    - Riesgo normal de infecci&oacute;n del virus VIH.
+    - true
+rs1800497:
+  CC:
+    - Cantidad normal de receptores de dopamina, baja obesidad debido a la mayor respuesta del placer de los alimentos. Muy bajo riesgo de alcoholismo y de adicci&oacute;n al tabaquismo. Si eres alcoholico o fumador, trabaja que lo conseguir&aacute;s dejar.
+    - true
+  CT:
+    - Incremento de obesidad debido a la disminui&oacute;n de la respuesta al placer de los alimentos. Riesgo de alcoholismo y de adicci&oacute;n al tabaquismo.
+    - false
+  TT:
+    - Incremento de obesidad debido a la disminui&oacute;n de la respuesta al placer de los alimentos. Mayor riesgo de alcoholismo y de adicci&oacute;n al tabaquismo.
+    - false
+rs1805007:
+  CC:
+    - No eres pelirojo. Pocas pecas.
+    - true
+  CT:
+    - Eres portador de una variante al pelo rojo, por lo tanto mayor riesgo de melanoma
+    - false
+  TT:
+    - Eres pelirojo, riesgo muy alto de melanoma y de respuesta a los anest&eacute;sicos.
+    - false
+rs9939609:
+  AA:
+    - Riesgo alto de obesidad y de diabetes tipo 2.
+    - false
+  AT:
+    - Riesgo de obesidad y de diabetes tipo 2.
+    - false
+  TT:
+    - Bajo riesgo de obesidad y de diabetes tipo 2.
+    - true
+rs662799:
+  AA:
+    - No hay riesgo de ataque card&iacute;aco.
+    - true
+  AG:
+    - Alto riesgo de ataque card&iacute;aco, cuida la dieta y no comas grasas.
+    - false
+  GG:
+    - Muy alto riesgo de ataque card&iacute;aco, cuida mucho tu dieta no comas grasas.
+    - false
+rs7495174:
+  AA:
+    - Muy probable que tengas los ojos azules o verdes.
+    - null
+  AG:
+    - Algo probable que tengas los ojos azules o verdes
+    - null
+  GG:
+    - Algo probable que tengas los ojos azules o verdes
+    - null
+rs12913832:
+  AA:
+    - En el 85% de los casos ojos marrones, en el 14% ojos verdes y un 1% de casos con ojos azules.
+    - null
+  AG:
+    - Ojos marrones en el 56% de los casos, ojos verdes en el 37% y en el 7% ojos azules.
+    - null
+  GG:
+    - En el 72% de los casos ojos azules, en el 27% ojos verdes y un 1% de casos con ojos marrones.
+    - null
+rs7903146:
+  CC:
+    - Riesgo bajo de padecer diabetes de tipo 2
+    - true
+  CT:
+    - Riesgo alto de padecer diabetes tipo 2 y probablemente c&aacute;ncer de colon.
+    - false
+  TT:
+    - Riesgo muy alto de padecer diabetes de tipo 2.
+    - false
+rs12255372:
+  GG:
+    - Riesgo normal de padecer diabetes tipo 2.
+    - true
+  GT:
+    - Riesgo alto de padecer diabetes de tipo 2.
+    - false
+  TT:
+    - Muy alto riesgo de padecer diabetes de tipo 2 y posiblemente c&aacute;ncer de mama y c&aacute;ncer de pr&oacute;stata agresivo.
+    - false
+rs1799971:
+  AA:
+    - No eres alcoh&oacute;lico, tus antojos de alcohol estan en la media.
+    - true
+  AG:
+    - Antojos de alcohol fuertes, posible alcoh&oacute;lico.
+    - false
+  GG:
+    - Tus antojos de alcohol son muy fuertes, posible alcoh&oacute;lico.
+    - false
+rs17822931:
+  CC:
+    - Cera de o&iacute;do humeda, olor corporal normal, sudoroso normal
+    - null
+  CT:
+    - Cera de o&iacute;do humeda, buen olor corporal.
+    - true
+  TT:
+    - Cera de o&iacute;do seca, no hay olor corporal, probablemente ascendencia asi&aacute;tica, no eres sudoroso.
+    - true
+rs4680:
+  AA:
+    - Nivel Guerrero, ventaja en tareas de memor&iacute;a y atenci&oacute;n. Mayo nivel de dopamina.
+    - true
+  AG:
+    - Normal, niveles normales de dopamina.
+    - null
+  GG:
+    - Nivel Guerrero, mayor umbral del dolor, mucha resistencia al estr&eacute;s, modestamente nivel cognitivo reducido.
+    - true
+rs1333049:
+  CC:
+    - Muy alto riesgo de enfermedad coronaria.
+    - false
+  CG:
+    - Riesgo alto de enfermedad coronaria.
+    - false
+  GG:
+    - Normal, estas en la media.
+    - true
+rs1801133:
+  CC:
+    - Común, niveles normales de homociste&iacute;na.
+    - true
+  CT:
+    - Riesgo, nivel de procesamiento del acido f&oacute;lico menor. Este aelo esta relacionado a multiples posibles trastornos (autismo, c&aacute;ncer g&aacute;strico, de pulm&oacute;n, renal..., depresi&oacute;n, migra&ntilde;a, esquizofrenia, trombosis, sindrome de Down..)
+    - false
+  TT:
+    - Alto riesgo, nivel de procesamiento del acido f&oacute;lico muy bajo y homociste&iacute;na elevada. Este aelo esta relacionado a multiples posibles trastornos (autismo, c&aacute;ncer g&aacute;strico, de pulm&oacute;n, renal..., depresi&oacute;n, migra&ntilde;a, esquizofrenia, trombosis, sindrome de Down..)
+    - false
+rs9340799:
+  AA:
+    - Las mujeres tienen un menor riesgo de endometriosis, pero riesgo normal de c&aacute;ncer endometrial, y el deterioro cognitivo con la edad.
+    - true
+  AG:
+    - Las mujeres tienen un riesgo normal de la endometriosis, menor riesgo de c&aacute;ncer endometrial y el riesgo superior del deterioro cognitivo.
+    - true
+  GG:
+    - Las mujeres tienen alto riesgo de endometriosis, pero la mitad el riesgo de c&aacute;ncer endometrial y menos deterioro cognitivo.
+    - false
+rs1051730:
+  CC:
+    - Si eres fumador, tienes muy baja dependencia a la nicotica.
+    - true
+  CT:
+    - Dependencia alta, con riesgo de padecer c&aacute;ncer de pulm&oacute;n
+    - false
+  TT:
+    - Dependendia muy alta, y riesgo muy alto de c&aacute;ncer de pulm&oacute;n, y posible riesgo de abuso del alcohol.
+    - false
+rs4988235:
+  CC:
+    - Probabilidad muy alta de ser intolerante a la lactosa.
+    - false
+  CT:
+    - Probabilidad de ser intolerante a la lactosa.
+    - true
+  TT:
+    - No eres intolerante a la lactosa.
+    - true
+rs121965063:
+  GG:
+    - No hay deficiencia.
+    - true
+  GT:
+    - Portador de la mutaci&oacute;n del factor XI, pueden presentar episodios hemorr&aacute;gicos graves
+    - false
+  TT:
+    - Deficiencia del factor XI, sufres de episodios hemorr&aacute;gicos graves, (hemorragias nasales, propenso a moretones, periodos menstruales abundantes y prolongados, u otras hemorragias anormales)
+    - false
+rs121908747:
+  CC:
+    - No eres portador.
+    - true
+rs113993960:
+  --:
+    - Portador de una mutaci&oacute;n de fibrosis qu&iacute;stica
+    - false
+  CT:
+    - No eres portador
+    - true
+  CC:
+    - No eres portador
+    - true
+  TT:
+    - No eres portador
+    - true
+  TC:
+    - No eres portador
+    - true
+rs1042713:
+  --:
+    - Perteneces al 88% y solo pierdes peso con el ejercicio intenso.
+    - false
+  AA:
+    - Gen&eacute;tica privilegiada, perteneces al 12% y cualquier ejercicio es bueno para perder peso.
+    - true
+  TT:
+    - Gen&eacute;tica privilegiada, perteneces al 12% y cualquier ejercicio es bueno para perder peso.
+    - true
+rs4994:
+  --:
+    - Perteneces al 88% y solo pierdes peso con el ejercicio intenso.
+    - false
+  AA:
+    - Gen&eacute;tica privilegiada, perteneces al 12% y cualquier ejercicio es bueno para perder peso.
+    - true
+  TT:
+    - Gen&eacute;tica privilegiada, perteneces al 12% y cualquier ejercicio es bueno para perder peso.
+    - true
+rs1799883:
+  --:
+    - Lo siento, tu dieta tiene que ser muy muy baja en carboidratos.
+    - false
+  GG:
+    - Felicidades! cualquier dieta es valida.
+    - true
+rs1801282:
+  --:
+    - Obtendras mejores resultados si controla los carboidratos.
+    - false
+  CC:
+    - Eres un privilegiado cualquier dieta es buena para ti.
+    - true
+rs1042714:
+  --:
+    - Obtendras mejores resultados si controla los carboidratos.
+    - false
+  CC:
+    - Eres un privilegiado cualquier dieta es buena para ti.
+    - true
+rs7151526:
+  AA:
+    - Posible riesgo de ANCA asociado a vasculitis.
+    - false
+  CC:
+    - Normal no pasa nada.
+    - true
+rs121912713:
+  GT:
+    - Probable trastorno de sangrado.
+    - false
+  TT:
+    - Normal.
+    - true
+rs28931568:
+  AA:
+    - Alto riesgo de enfisema.
+    - false
+  AG:
+    - Portador com&uacute; Antitripsina.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs28931569:
+  CC:
+    - Alto riesgo de enfisema.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs5742904:
+  AA:
+    - Riesgo muy alto de Hipercolesterolemia tipo B.
+    - false
+  AG:
+    - Riesgo alto de Hipercolesterolemia tipo B.
+    - false
+  GG:
+    - Normal.
+    - true
+rs144467873:
+  AA:
+    - Riesgo muy alto de Hipercolesterolemia tipo B.
+    - false
+  AG:
+    - Riesgo alto de Hipercolesterolemia tipo B.
+    - false
+  GG:
+    - Normal.
+    - true
+rs121918070:
+  AA:
+    - Normal.
+    - true
+  AG:
+    - Padeces de polineuropat&iacute;a amiloide familiar.
+    - false
+  GG:
+    - Padeces de polineuropat&iacute;a amiloide familiar.
+    - false
+i4000378:
+  DD:
+    - Caso com&uacute;n.
+    - null
+  DI:
+    - C&aacute;ncer de mama.
+    - false
+  II:
+    - C&aacute;ncer de mama.
+    - false
+rs80357906:
+  --:
+    - Caso com&uacute;n.
+    - null
+  -C:
+    - C&aacute;ncer de mama.
+    - false
+i4000377:
+  DD:
+    - C&aacute;ncer de mama.
+    - false
+  DI:
+    - C&aacute;ncer de mama.
+    - false
+  II:
+    - Caso com&uacute;n.
+    - null
+rs1799945:
+  CC:
+    - Sin riesgo de falta de hierro.
+    - true
+  CG:
+    - Portador y posible afectado de hemocromatosis (Falta de hierro).
+    - false
+  GG:
+    - Afectado de forma leve de hemocromatosis (Falta de hierro).
+    - false
+rs1799963:
+  AA:
+    - Propenso a la trombosis, tambi&eacute; mayor riesgo de infarto cerebral.
+    - false
+  AG:
+    - Propenso a la trombosis, tambi&eacute; mayor riesgo de infarto cerebral.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs6025:
+  AA:
+    - Riesgo muy alto de trombosis.
+    - false
+  AG:
+    - Riesgo de trombosis.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs34637584:
+  AA:
+    - Del 15 al 30% de probabilidad de la enfermedad de Parkinson.
+    - false
+  AG:
+    - Del 15 al 30% de probabilidad de la enfermedad de Parkinson.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs121908428:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de mutaci&oacute;n neurol&oacute;gico ACCPN.
+    - false
+  TT:
+    - Trastorn neurol&oacute;gico ACCPN.
+    - false
+rs200511261:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  GG:
+    - Poliquistico enfermedad en los ri&ntilde;ones.
+    - false
+rs369925690:
+  CC:
+    - Poliquistico enfermedad en los ri&ntilde;ones.
+    - false
+  CT:
+    - Portador de una mutaci&oacute;n de enfermedad renal poliqu&iacute;stica.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs137852944:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de una mutaci&oacute;n de enfermedad renal poliqu&iacute;stica.
+    - false
+  TT:
+    - Poliquistico enfermedad en los ri&ntilde;ones.
+    - false
+rs11549407:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de Beta Talasemia.
+    - false
+  TT:
+    - Contiene Beta Talasemia.
+    - false
+i4000396:
+  DD:
+    - Caso com&uacute;n.
+    - null
+  DI:
+    - Portador del s&iacute;ndrome de Bloom.
+    - false
+  II:
+    - Padece el s&iacute;ndrome de Bloom.
+    - false
+rs28940279:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AC:
+    - Portador de la enfermedad de Canavan.
+    - false
+  CC:
+    - Padece la enfermedad de Canavan.
+    - false
+rs28936415:
+  AA:
+    - Trastorno cong&eacute;nito de la glicosilaci&oacute;n tipo 1a.
+    - false
+  AG:
+    - Portador del trastorno cong&eacute;nito de la glicosilaci&oacute;n tipo 1a.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs80338939:
+  --:
+    - Sordera asociada.
+    - false
+  -G:
+    - Portador de la variante de sordera asociada.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+i4000320:
+  AA:
+    - Fibrosis qu&iacute;stica.
+    - false
+  AG:
+    - Portador de fibrosis qu&iacute;stica.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs4934:
+  AA:
+    - Riesgo muy alto de padecer Alzheimer.
+    - false
+  AG:
+    - Riesgo normal.
+    - null
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs671:
+  AA:
+    - Riesgo alto de c&acute;ncer de es&oacute;fago, alcoholismo cr&oacute;nico.
+    - false
+  AG:
+    - Sufre las peores resacas, riesgo de c&acute;ncer de es&oacute;fago, probablemente alcoh&oacutelico.
+    - false
+  GG:
+    - Riesgo normal de alcoholismo, poco o ning&uacute;n enrojecimiento del rostro con la ingesta de alcohol.
+    - true
+rs2736100:
+  GG:
+    - Riesgo alto de desarrollar glioma.
+    - false
+  GT:
+    - Riesgo alto de desarrollar glioma y fibrosis pulmonar.
+    - false
+  TT:
+    - Muy alto riesgo de padecer una enfermedad pulmonar y c&aacute;ncer testicular, mayor riesgo de fibrosis pulmonar.
+    - false
+rs10936599:
+  CC:
+    - Vida m&aacute;s larga?
+    - true
+  TT:
+    - Vida m&aacute;s corta?
+    - false
+rs1799884:
+  AA:
+    - Las madres tendran bebes 54g m&aacute;s grandes.
+    - null
+  AG:
+    - Las madres tendran bebes 27g m&aacute;s grandes.
+    - null
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs713598:
+  CC:
+    - Puedes saborear los sabores amargos.
+    - null
+  CG:
+    - Puedes saborear los sabores amargos.
+    - null
+  GG:
+    - Posiblemente seas incapaz de saborear el amargo.
+    - null
+rs560887:
+  AA:
+    - Promedio de niveles en ayunas de glucosa plasm&aacute;tica en 5.06mmol/l.
+    - true
+  AG:
+    - Promedio de niveles en ayunas de glucosa plasm&aacute;tica en 5.12mmol/l.
+    - false
+  GG:
+    - Promedio de niveles en ayunas de glucosa plasm&aacute;tica en 5.18mmol/l.
+    - false
+rs2814778:
+  AA:
+    - No eres resistente a la malaria.
+    - null
+  AG:
+    - Portador, quiz&aacute; resistente a la malaria.
+    - true
+  GG:
+    - Resistente a la malaria.
+    - true
+rs601338:
+  AA:
+    - Resistente al notrovirus.
+    - true
+  AG:
+    - Susceptible al notrovirus.
+    - false
+  GG:
+    - Susceptible al notrovirus.
+    - false
+rs398122416:
+  -C:
+    - Padeces s&iacute;ndrome de Prader-Willi-like, s&iacute;ndrome de Schaaf-Yang.
+    - false
+  CC:
+    - Caso com&uacute;n.
+    - null
+rs398122415:
+  -T:
+    - Padeces s&iacute;ndrome de Prader-Willi-like, s&iacute;ndrome de Schaaf-Yang.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs200322968:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Tienes una mutaci&oacute;n del s&iacute;ndrome Orofaciodigital.
+    - false
+  TT:
+    - Padeces el s&iacute;ndrome de Orofaciodigital.
+    - false
+rs373900644:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Tienes una mutaci&oacute;n del s&iacute;ndrome Orofaciodigital.
+    - false
+  TT:
+    - Padeces el s&iacute;ndrome de Orofaciodigital.
+    - false
+rs201662623:
+  CC:
+    - Padeces el s&iacute;ndrome de Orofaciodigital.
+    - false
+  CT:
+    - Tienes una mutaci&oacute;n del s&iacute;ndrome Orofaciodigital.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs200649783:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  AC:
+    - Tienes una mutaci&oacute;n del s&iacute;ndrome Orofaciodigital.
+    - false
+  AA:
+    - Padeces el s&iacute;ndrome de Orofaciodigital.
+    - false
+rs150681845:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Tienes una mutaci&oacute;n del s&iacute;ndrome Orofaciodigital.
+    - false
+  AA:
+    - Padeces el s&iacute;ndrome de Orofaciodigital.
+    - false
+rs137891647:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CG:
+    - No se ve afectado, portador de una mutaci&oacute;n deficiencia Lipoyltransferase 1 (muy grave).
+    - false
+  GG:
+    - Deficiencia de Lipoyltransferase 1 (muy grave).
+    - false
+rs786205156:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - No se ve afectado, portador de una mutaci&oacute;n deficiencia Lipoyltransferase 1 (muy grave).
+    - false
+  GG:
+    - Deficiencia de Lipoyltransferase 1 (muy grave).
+    - false
+rs4244285:
+  AA:
+    - Metaboliza lento varios medicamentos populares.
+    - false
+  AG:
+    - Metaboliza lento varios medicamentos populares.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs4149056:
+  CC:
+    - Riesgo de miopat&iacute;a.
+    - false
+  CT:
+    - Riesgo de miopat&iacute;a.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs10757278:
+  AA:
+    - riesgo reducido de enfermedad cardiaca coronaria. Riesgo reducido de aneurisma cerebral y aneurisma a&oacute;rtico abdominal.
+    - true
+  AG:
+    - Riesgo de ataque al coraz&oacute;n. Riesgo normal de un aneurisma a&oacute;rtico abdominal y aneurisma cerebral.
+    - false
+  GG:
+    - Riesgo de ataque al coraz&oacute;n; riesgo de aneurisma a&oacute;rtico abdominal y aneurisma cerebral.
+    - false
+rs1537415:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CG:
+    - Riesgo alto de periodontitis.
+    - false
+  GG:
+    - Riesgo de periodontitis.
+    - false
+rs1447295:
+  AA:
+    - Riesgo muy alto de c&aacute;ncer de prostata.
+    - false
+  AC:
+    - Riesgo alto de c&aacute;ncer de prostata.
+    - false
+  CC:
+    - Normal.
+    - null
+rs11803731:
+  AA:
+    - Pelo liso.
+    - null
+  TT:
+    - Pelo rizado.
+    - null
+rs2395029:
+  GG:
+    - Alto riesgo de hipersensibilidad a varios f&aacute;rmacos, incluyendo abacavir; riesgo de la psoriasis.
+    - false
+  GT:
+    - Riesgo de hipersensibilidad a varios f&aacute;rmacos, incluyendo abacavir; riesgo de la psoriasis.
+    - false
+  TT:
+    - Normal.
+    - null
+rs61750420:
+  AA:
+    - Padeces de la enfermedad peroxisomal (Zellweger).
+    - false
+  AG:
+    - Portador de la enfermedad peroxisomal (Zellweger).
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs111033258:
+  GG:
+    - Padeces el s&iacute;ndrome de Usher Tipo III.
+    - false
+  GT:
+    - Portador del s&iacute;ndrome de Usher Tipo III.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs111033260:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador del s&iacute;ndrome de Usher Tipo III.
+    - false
+  TT:
+    - Padeces el s&iacute;ndrome de Usher Tipo III.
+    - false
+rs80358959:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AT:
+    - BRCA2 variante considerada del patogeno del c&aacute;ncer de mama.
+    - false
+rs80338899:
+  AA:
+    - Tirosinemia tipo I.
+    - false
+  AG:
+    - Portador de un alelo de tirosinemia tipo I.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs80338898:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de un alelo de tirosinemia tipo I.
+    - false
+  TT:
+    - Tirosinemia tipo I.
+    - false
+rs80338901:
+  AA:
+    - Tirosinemia tipo I.
+    - false
+  AG:
+    - Portador de un alelo de tirosinemia tipo I.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs80338895:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  GT:
+    - Portador de un alelo de tirosinemia tipo I.
+    - fals
+  TT:
+    - Tirosinemia tipo I.
+    - false
+rs121965075:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  GT:
+    - Portador de un alelo de tirosinemia tipo I.
+    - fals
+  TT:
+    - Tirosinemia tipo I.
+    - false
+rs76173977:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la enfermedad de Tay-Sachs.
+    - false
+  TT:
+    - Padeces la enfermedad de Tay-Sachs.
+    - false
+rs138058578:
+  AA:
+    - Probable que conduzca a un an&aacute;lisis de sangre de falsos positivos para la enfermedad de Tay Sachs.
+    - false
+  AG:
+    - Probable que conduzca a un an&aacute;lisis de sangre de falsos positivos para la enfermedad de Tay Sachs.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs334:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AT:
+    - Portador de, pero no afectado por, anemia de c&eacute;lulas falciformes; mayor resistencia malaria.
+    - false
+  TT:
+    - Padeces anemia falciforme.
+    - false
+rs80338794:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador principal mutaci&oacute;n de la enfermedad de Finlandia (Salla).
+    - false
+  TT:
+    - Padeces la enfermedad de Salla.
+    - false
+i3002517:
+  AT:
+    - Rizom&eacute;lico Chondrodysplasia Punctata Tipo 1 portador.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs80356708:
+  --:
+    - Padeces hiperoxaluria primaria.
+    - false
+  -G:
+    - Portador de hiperoxaluria primaria.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+i4000430:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  GT:
+    - Enfermedad de Niemann-Pick tipo A portador.
+    - false
+  TT:
+    - Enfermedad de Niemann-Pick tipo A.
+    - false
+i4000381:
+  CC:
+    - Enfermedad de Niemann-Pick tipo A.
+    - false
+  CT:
+    - Enfermedad de Niemann-Pick tipo A portador.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+i4000383:
+  DD:
+    - Enfermedad de Niemann-Pick tipo A.
+    - false
+  DI:
+    - Enfermedad de Niemann-Pick tipo A portador.
+    - false
+  II:
+    - Caso com&uacute;n.
+    - null
+rs104886461:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Portadora de la mutaci&oacute;n mucolipidosis tipo IV.
+    - false
+  GG:
+    - Padeces de mucolipidosis tipo IV.
+    - false
+i5012759:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  GG:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i5012758:
+  TT:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  CC:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i5012760:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  CC:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i5012755:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  CC:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i5003117:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  CC:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i5003116:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  CG:
+    - Portador de la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+  CC:
+    - Padeces la Cadena Media de Acil-CoA deshidrogenasa deficiencia.
+    - false
+i3002808:
+  CC:
+    - Padeces la enfermedad de la orina de jarabe de arce Enfermedad Tipo 1B.
+    - false
+  CG:
+    - Portador de la enfermedad la orina de jarabe de arce Enfermedad Tipo 1B.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+i4000422:
+  AA:
+    - Padeces la enfermedad de la orina de jarabe de arce Enfermedad Tipo 1B.
+    - false
+  AG:
+    - Portador de la enfermedad la orina de jarabe de arce Enfermedad Tipo 1B.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs80356682:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la epidermolisis bullosa.
+    - false
+  TT:
+    - Padeces de la epidermolisis bullosa.
+    - false
+rs1800546:
+  CG:
+    - Portadora de alto riesgo de la intolerancia hereditaria a la fructosa (IHF).
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs80356489:
+  CC:
+    - Portador de la enfermedad almacenamiento de gluc&oacute;geno tipo 1b.
+    - false
+  CT:
+    - Padeces la enfermedad de almacenamiento de gluc&oacute;geno tipo 1b.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs1801175:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portadora de la enfermedad por almacenamiento de gluc&oacute;geno, tipo 1A.
+    - false
+  TT:
+    - Padeces glucogenosis, tipo 1A.
+    - false
+rs80356769:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  GT:
+    - Portador de alelo de la enfermedad de Gaucher.
+    - false
+  TT:
+    - Padeces la enfermedad de Gaucher.
+    - false
+rs28937590:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Portadora del s&iacute;ndrome de GRACILE.
+    - false
+  GG:
+    - Padeces el s&iacute;ndrome de GRACILE.
+    - false
+rs104886456:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AT:
+    - Portador de la anemia de Fanconi.
+    - false
+  TT:
+    - Padeces de la anemia de Fanconi.
+    - false
+rs104886457:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de la anemia de Fanconi.
+    - false
+  TT:
+    - Padeces de la anemia de Fanconi.
+    - false
+rs104886459:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  -G:
+    - Portador de la anemia de Fanconi.
+    - false
+  --:
+    - Padeces de la anemia de Fanconi.
+    - false
+i4000336:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AT:
+    - Portador de la anemia de Fanconi.
+    - false
+  TT:
+    - Padeces de la anemia de Fanconi.
+    - false
+i4000412:
+  GG:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Portador de la anemia de Fanconi.
+    - false
+  AA:
+    - Padeces de la anemia de Fanconi.
+    - false
+i4000413:
+  II:
+    - Caso com&uacute;n.
+    - null
+  DI:
+    - Portador de la anemia de Fanconi.
+    - false
+  DD:
+    - Padeces de la anemia de Fanconi.
+    - false
+rs104895094:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Portadora de una mutaci&oacute;n fiebre mediterr&aacute;nea familiar.
+    - false
+  GG:
+    - Padeces de una fiebre mediterr&aacute;nea familiar.
+    - false
+rs3743930:
+  CC:
+    - Puede padecer fiebre mediterr&aacute;nea.
+    - false
+  CG:
+    - Puede padecer fiebre mediterr&aacute;nea.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs11466023:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Puede padecer fiebre mediterr&aacute;nea.
+    - false
+  TT:
+    - Puede padecer fiebre mediterr&aacute;nea.
+    - false
+rs137853022:
+  CG:
+    - Portador de la mutaci&oacute;n disautonom&iacute;a familiar
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs3918290:
+  AA:
+    - Toxicidad 5-fluorouracilo, dihidropirimidina deshidrogenasa.
+    - false
+  AG:
+    - Cierta toxicidad, portador de dihidropirimidina deshidrogenasa 5-fluorouracilo.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs75527207:
+  AA:
+    - Homocigotos doble para la fibrosis qu&iacute;stica G551D.
+    - false
+  AG:
+    - Portador homocigotos doble para la fibrosis qu&iacute;stica G551D.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs2395029:
+  GG:
+    - Alto riesgo de hipersensibilidad a varios f&aacute;rmacos, incluyendo abacavir; riesgo de la psoriasis.
+    - false
+  GT:
+    - Posible riesgo de hipersensibilidad a varios f&aacute;rmacos, incluyendo abacavir; riesgo de la psoriasis.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs4244285:
+  AA:
+    - Metabolizador lento de varios medicamentos populares; pacientes con prescripci&oacute;n de Plavix disminuyendo su efectividad, y tienen mayor riesgo de eventos cardiovasculares adversos.
+    - false
+  AG:
+    - Pobre metabolizador de varios medicamentos populares; pacientes con prescripci&oacute;n de Plavix disminuyendo su efectividad, y tienen mayor riesgo de eventos cardiovasculares adversos.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs28399504:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Metabolizador lento
+    - null
+  GG:
+    - Peor metabolizador
+    - false
+rs55886062:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AC:
+    - Portador Toxicidad 5-fluorouracilo.
+    - false
+  CC:
+    - Toxicidad 5-fluorouracilo.
+    - false
+rs8099917:
+  GG:
+    - Menor probabilidad de responder al tratamiento con PEG-IFNalpha / RBV.
+    - false
+  GT:
+    - Moderadamente menor probabilidad de responder al tratamiento con PEG-IFNalpha / RBV.
+    - false
+  TT:
+    - Caso com&uacute;n.
+    - null
+rs28933389:
+  CC:
+    - Caso com&uacute;n.
+    - null
+  CT:
+    - Portador de deficiencia seudocolinesterasa.
+    - false
+  TT:
+    - Padece deficiencia seudocolinesterasa.
+    - false
+rs1057910:
+  AA:
+    - Normal; ning&uacute;n efecto sobre el metabolismo de la warfarina.
+    - true
+  AC:
+    - Portador; reducci&oacute;n media del 40% en el metabolismo de la warfarina.
+    - false
+  CC:
+    - Reducci&oacute;n media del 80% en el metabolismo de la warfarina; la reducci&oacute;n del metabolismo de otros f&aacute;rmacos.
+    - false
+rs1800460:
+  AA:
+    - Incapaz de desintoxicaci&oacute;n de subproductos de ciertos medicamentos.
+    - false
+  AG:
+    - Alteraci&oacute;n del metabolismo de drogas.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs1142345:
+  AA:
+    - Caso com&uacute;n.
+    - null
+  AG:
+    - Alteraci&oacute;n del metabolismo.
+    - false
+  GG:
+    - Posiblemente incapaz de desintoxicaci&oacute;n de ciertas drogas.
+    - false
+rs1800462:
+  CC:
+    - Incapaz de desintoxicaci&oacute;n de ciertos medicamentos.
+    - false
+  CG:
+    - La capacidad de desintoxicaci&oacute;n de ciertos medicamentos puede verse disminuida.
+    - false
+  GG:
+    - Caso com&uacute;n.
+    - null
+rs12979860:
+  TT:
+    - 20-25% de los pacientes de hepatitis C responde al tratamiento.
+    - false
+  CC:
+    - 80% de los pacientes de hepatitis C responde al tratamiento.
+    - true
+  CT:
+    - 20-40% de los pacientes de hepatitis C responde al tratamiento.
+    - false
+rs6265:
+  AG:
+    - Habilidades motoras con discapacidad de aprendizaje?.
+    - false
+  AA:
+    - Introversi&oacute;n, resistente a la depresi&oacute;n, problemas de aprendizaje habilidades motoras.
+    - false
+  GG:
+    - Normal.
+    - null
+rs1800629:
+  GG:
+    - Normal.
+    - true
+  AA:
+    - Riesgo alto.
+    - false
+  AG:
+    - Riesgo alto
+    - false
+rs25531:
+  AA:
+    - Nivel bajo de serotonina, un poco menos feliz.
+    - null
+  GG:
+    - Menos sensible al dolor.
+    - null
+i3003626:
+  DD:
+    - Muy resistente al VIH.
+    - true
+  DI:
+    - Resistente al VIH.
+    - true
+  II:
+    - No resistente.
+    - false
+rs2910164:
+  CG:
+    - Probabilidad
+    - null
+  GG:
+    - Normal
+    - null
+  CC:
+    - Muy alta.
+    - false
+rs6983267:
+  GT:
+    - Riesgo de c&aacute;ncer de pr&oacute;stata, la aspirina reduce el riesgo de c&aacute;ncer colorrectal.
+    - false
+  TT:
+    - Mayor riesgo de c&aacute;ncer de pr&oacute;stata, tambi&eacute;n otros tipos de c&aacute;ncer. La aspirina reduce el riesgo de c&aacute;ncer colorrectal.
+    - false
+  GG:
+    - Riesgo normal.
+    - null
+rs738409:
+  CC:
+    - Alta probabilidad de enfermedad hep&aacute;tica alcoh&oacute;lica, y aumento de grasa en el h&iacute;gado.
+    - false
+  GG:
+    - Normal
+    - null
+  CG:
+    - Aumento de grasa en el h&iacute;gado, las probabilidades de enfermedad hep&aacute;tica alcoh&oacute;lica.
+    - false
+rs2476601:
+  GG:
+    - Normal.
+    - null
+  AG:
+    - Riesgo muy alto.
+    - false
+  AA:
+    - Riesgo de la artritis reumatoide y otras enfermedades autoinmunes.
+    - false
+rs7574865:
+  GG:
+    - Riesgo normal de la artritis reumatoide, lupus eritematoso sist&eacute;mico, s&iacute;ndrome de Sj&ouml;gren, diabetes de tipo 1, y la cirrosis biliar primaria.
+    - null
+  GT:
+    - Riesgo de la artritis reumatoide, lupus eritematoso sist&eacute;mico, s&iacute;ndrome de Sj&ouml;gren, diabetes de tipo 1, y la cirrosis biliar primaria.
+    - false
+  TT:
+    - Alto riesgo de la artritis reumatoide, lupus eritematoso sist&eacute;mico, s&iacute;ndrome de Sj&ouml;gren, diabetes de tipo 1, y la cirrosis biliar primaria.
+    - false
+rs1800795:
+  GG:
+    - Alto
+    - false
+  CG:
+    - Complejo de definir.
+    - false
+  CC:
+    - Bajo
+    - true
+rs8050136:
+  AA:
+    - Alto riesgo.
+    - false
+  CC:
+    - Normal
+    - null
+  AC:
+    - Riesgo
+    - false
+rs10490924:
+  TT:
+    - Altisimo, riesgo de degeneraci&oacute;n por la edad.
+    - false
+  GG:
+    - Normal.
+    - null
+  GT:
+    - Riesgo de degeneraci&oacute;n.
+    - false
+rs780094:
+  AA:
+    - Riesgo
+    - false
+  AG:
+    - Riesgo
+    - false
+  GG:
+    - Normal
+    - null
+rs11209026:
+  AA:
+    - Riesgo
+    - false
+  AG:
+    - Riesgo
+    - false
+  GG:
+    - Normal
+    - null
+rs17782313:
+  CT:
+    - Probabilidad de tenerlo muy alto.
+    - false
+  TT:
+    - Normal.
+    - null
+  CC:
+    - Probabilidad de tenerlo alto.
+    - false
+rs16969968:
+  GG:
+    - Normal.
+    - null
+  AA:
+    - Muy alta y alta dependencia a la coca&iacute;na.
+    - false
+  AG:
+    - Riego de depedencia bajo.
+    - false
+rs11614913:
+  CT:
+    - Normal.
+    - null
+  CC:
+    - Riesgo Alto.
+    - false
+  TT:
+    - Riesgo ligero.
+    - false
+rs4481887:
+  AA:
+    - Muy probable para oler metabolitos de esp&aacute;rragos en orina.
+    - null
+  AG:
+    - Muy probable para oler metabolitos de esp&aacute;rragos en orina.
+    - null
+  GG:
+    - Poco probable para oler metabolitos de esp&aacute;rragos en orina.
+    - null
+rs12821256:
+  CC:
+    - Muy alta probabilidad de tener pelo rubio
+    - null
+  CT:
+    - Probabilidad de tener pelo rubio
+    - null
+  TT:
+    - Normal
+    - null
+rs1667394:
+  AA:
+    - Probabilidad de ser rubio y ojos azules.
+    - null
+  GG:
+    - Probable que la piel sea m&aacute;s oscura.
+    - null
+rs7816345:
+  CC:
+    - Mayor tama&ntilde;o de senos.
+    - null
+  CT:
+    - Tama&ntilde;o de senos m&aacute;s peque&ntilde;os.
+    - null
+  TT:
+    - Tama&ntilde;o muy peque&ntilde;o.
+    - null
+rs2472297:
+  CC:
+    - Normal.
+    - true
+  CT:
+    - Incremento del consumo de cafe&iacute;na
+    - null
+  TT:
+    - Incremento del consumo de cafe&iacute;na
+    - null
+rs762551:
+  AA:
+    - Muy r&aacute;pido.
+    - null
+  AC:
+    - Lenta.
+    - null
+  CC:
+    - Lenta.
+    - null
+rs7759938:
+  CC:
+    - Aprox. 2 meses tarde.
+    - null
+  CT:
+    - Aprox. 1 mes tarde.
+    - null
+  TT:
+    - Normal.
+    - null
+rs4778138:
+  AA:
+    - Pecoso.
+    - null
+rs17646946:
+  AA:
+    - Rizo recto.
+    - null
+rs7349332:
+  CC:
+    - Pelo liso.
+    - null
+  TT:
+    - Pelo rizado
+    - null
+rs3827760:
+  CC:
+    - M&aacute;s recto, cabello m&aacute;s grueso, y el aumento de las probabilidades de tener incisivos en forma de pala.
+    - null
+  CT:
+    - Recto, cabello m&aacute;s grueso, y el aumento de las probabilidades de tener incisivos en forma de pala.
+    - null
+  TT:
+    - Normal.
+    - null
+rs1042725:
+  CC:
+    - Aprox. 0.8cm m&aacute;s alto
+    - null
+  CT:
+    - Aprox. 0.4cm m&aacute;s alto
+    - null
+  TT:
+    - Media normal.
+    - null
+rs6625163:
+  AA:
+    - Riesgo alto.
+    - false
+  AG:
+    - Normal
+    - null
+  GG:
+    - Normal
+    - null
+rs2003046:
+  AA:
+    - Muy bajo riesgo.
+    - true
+  AC:
+    - Muy muy muy bajo riesgo.
+    - true
+  CC:
+    - Riesgo normal.
+    - true
+rs2073963:
+  GG:
+    - Mucho riesgo.
+    - false
+  GT:
+    - Riesgo.
+    - false
+  TT:
+    - Riesgo normal.
+    - true
+rs8085664:
+  AA:
+    - Riesgo muy reducido.
+    - true
+  AC:
+    - Riesgo reducido.
+    - true
+  CC:
+    - Riesgo normal.
+    - false
+rs10871777:
+  AA:
+    - Normal
+    - true
+  AG:
+    - IMC probablemente alto.
+    - false
+  GG:
+    - IMC probablemente muy alto.
+    - false
+rs12970134:
+  AA:
+    - Cintura para adultos m&aacute;s grande que el promedio 1.8cm.
+    - null
+  AG:
+    - Cintura para adultos m&aacute;s grande que el promedio 0.9cm.
+    - null
+  GG:
+    - Normal.
+    - null
+rs17070145:
+  CC:
+    - Reducido la habilidad de memor&iacute;a.
+    - false
+  CT:
+    - Incremento de la habilidad de memor&iacute;a.
+    - true
+  TT:
+    - Muy incrementado de la habilidad de memor&iacute;a.
+    - true
+rs16991615:
+  AA:
+    - La edad de la menopausia incrementa 22 meses.
+    - true
+  AG:
+    - La edad de la menopausia incrementa 11 meses.
+    - true
+  GG:
+    - Normal.
+    - null
+rs10427255:
+  CC:
+    - Alta probabilidad de reflejo estornudo photic.
+    - null
+  TT:
+    - Baja probabilidad de reflejo estornudo photic.
+    - null
+rs5082:
+  CC:
+    - Grasas saturadas contribuye a la obesidad, pero 0,57% menor riesgo de enfermedad coronaria.
+    - null
+  CT:
+    - Riesgo normal.
+    - null
+  TT:
+    - Riesgo normal.
+    - null
+rs662799:
+  AA:
+    - Normal.
+    - true
+  AG:
+    - Mayor riesgo de ataque card&iacute;aco temprano; Menos aumento de peso en las dietas altas en grasa.
+    - false
+  GG:
+    - Muy alto riesgo de ataque card&iacute;aco temprano; Menos aumento de peso en las dietas altas en grasa.
+    - false
+rs1800588:
+  CC:
+    - Nivel normal de HDL-C.
+    - false
+  CT:
+    - Nivel alto de HDL-C.
+    - true
+  TT:
+    - Nivel alto de HDL-C.
+    - true
+rs4994:
+  CC:
+    - Nivel muy alto a ciertas mujeres de parecer eventos cardiacos.
+    - false
+  CT:
+    - Nivel alto a ciertas mujeres de parecer eventos cardiacos.
+    - false
+  TT:
+    - Normal.
+    - true
+rs2937573:
+  GG:
+    - Mayor aumento en sensibilidad a los sonidos.
+    - null
+rs838133:
+  CC:
+    - Baja probabilidad que prefieras algo dulce.
+    - null
+  CT:
+    - Normal probabilidad que prefieras algo dulce.
+    - null
+  TT:
+    - Alta probabilidad que prefieras algo dulce.
+    - null
+rs28929474:
+  AA:
+    - Padeces EPOC.
+    - false
+  AG:
+    - Portador EPOC.
+    - false
+  GG:
+    - Normal.
+    - true
+rs17580:
+  AA:
+    - Normal.
+    - true
+  AT:
+    - Portador EPOC.
+    - false
+  TT:
+    - Padeces EPOC.
+    - false
+rs793862:
+  AA:
+    - Riesgo de dislexia.
+    - false
+  AG:
+    - Posible riesgo de dislexia.
+    - null
+  GG:
+    - Normal
+    - true
+rs807701:
+  CC:
+    - Riesgo de dislexia.
+    - false
+  CT:
+    - Bajo riesgo de dislexia.
+    - false
+  TT:
+    - Normal
+    - true
+rs35104847:
+  GG:
+    - Riesgo.
+    - null
+rs5989620:
+  GG:
+    - Riesgo.
+    - null
+i5005855:
+  TT:
+    - Riesgo.
+    - null
+rs2315122:
+  AA:
+    - Riesgo.
+    - null
+rs2315123:
+  TT:
+    - Riesgo.
+    - null
+i5005856:
+  GG:
+    - Riesgo.
+    - null
+rs9275596:
+  CC:
+    - Muy al&eacute;rgico.
+    - false
+  CT:
+    - Al&eacute;rgico.
+    - false
+  TT:
+    - Normal
+    - null
+rs7192:
+  GG:
+    - Normal
+    - null
+  GT:
+    - Al&eacute;rgico.
+    - false
+  TT:
+    - Muy al&eacute;rgico.
+    - false
+rs1317286:
+  GG:
+    - Riesgo de padecer esquizofrenia.
+    - false
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  AA:
+    - Sin riesgo.
+    - true
+rs56164415:
+  GG:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  AA:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs12273539:
+  CC:
+    - Sin riesgo.
+    - true
+  CT:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  TT:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs12364283:
+  AA:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  GG:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs1799732:
+  --:
+    - Riesgo de padecer esquizofrenia.
+    - false
+  CC:
+    - Sin riesgo.
+    - true
+  -C:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+rs4648317:
+  CC:
+    - Normal.
+    - true
+  CT:
+    - Poca dependencia.
+    - false
+  TT:
+    - Alta dependencia.
+    - false
+rs1079727:
+  TT:
+    - Sin riesgo.
+    - true
+  CT:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  CC:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs1076560:
+  AA:
+    - Riesgo alto.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1801028:
+  CC:
+    - Normal.
+    - true
+  CG:
+    - Riesgo de padecer.
+    - false
+  GG:
+    - Normal.
+    - true
+rs2242592:
+  AA:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  GG:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs4320932:
+  AA:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer c&aacute;ncer de ovarios.
+    - false
+  GG:
+    - Riesgo de padecer c&aacute;ncer de ovarios.
+    - false
+rs1108580:
+  AA:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  GG:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs6994992:
+  CC:
+    - Sin riesgo.
+    - true
+  CT:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  TT:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs35753505:
+  CC:
+    - Sin riesgo.
+    - true
+  CT:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  TT:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs2270641:
+  TT:
+    - Sin riesgo.
+    - true
+  GT:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  GG:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs12720071:
+  CC:
+    - Dependencia al canibis.
+    - false
+  TT:
+    - Sin dependencia al canibis.
+    - true
+  CT:
+    - Dependencia baja al canabis.
+    - false
+rs8192625:
+  GG:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  AA:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs3755557:
+  TT:
+    - Sin riesgo.
+    - true
+  AT:
+    - Riesgo bajo de padecer dislexia.
+    - false
+  AA:
+    - Riesgo de padecer dislexia.
+    - false
+rs3749034:
+  GG:
+    - Sin riesgo.
+    - true
+  AG:
+    - Riesgo bajo de padecer esquizofrenia.
+    - false
+  AA:
+    - Riesgo de padecer esquizofrenia.
+    - false
+rs7775228:
+  TT:
+    - Normal.
+    - true
+  CT:
+    - Al&eacute;rgico.
+    - false
+  CC:
+    - Muy al&eacute;rgico
+    - false
+rs6269:
+  AA:
+    - Normal.
+    - true
+  AG:
+    - Peligroso, la intoxicaci&oacute;n por mercurio puede provocar bajo rendimiento cognitivo
+    - false
+  GG:
+    - Peligroso muy alto, la intoxicaci&oacute;n por mercurio puede provocar bajo rendimiento cognitivo
+    - false
+rs5751876:
+  TT:
+    - Riesgo alto.
+    - false
+  CT:
+    - Normal.
+    - true
+  CC:
+    - Normal.
+    - true
+rs1800566:
+  GG:
+    - Normal.
+    - true
+  AG:
+    - Riesgo.
+    - false
+  AA:
+    - Riesgo alto.
+    - false
+rs2606345:
+  CC:
+    - Riesgo.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs4242382:
+  AA:
+    - Riesgo. Tu organismo no elimina correctamente lass toxinas.
+    - false
+  AG:
+    - Riesgo bajo. Tu organismo no elimina correctamente los toxinas.
+    - false
+  GG:
+    - Normal. Tu organismo elimina correctamente los toxinas.
+    - true
+rs2071517:
+  GG:
+    - No eres intolerante.
+    - true
+  AG:
+    - Algo intorelante, cuidado con ingerir ciertos alimentos.
+    - false
+  AA:
+    - Intolerante. Cuidado con ingerir ciertos alimentos.
+    - false
+rs662:
+  TT:
+    - Riesgo, mucho cuidado con ingerir alimentos con pesticidas, puede provocar c&aacute;ncer.
+    - false
+  CT:
+    - Riesgo bajo, cuidado con ingerir alimentos con pesticidas.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1495741:
+  AA:
+    - Muy lento, metabolizador de la enzima NAT2.
+    - false
+  AG:
+    - Lento, metabolizador de la enzima NAT2.
+    - false
+  GG:
+    - R&aacute;pido metabolizador.
+    - true
+rs1799931:
+  GG:
+    - Metabolizador r&aacute;pido.
+    - true
+  AG:
+    - Metabolizador lento.
+    - false
+  AA:
+    - Metabolizador muy lento.
+    - false
+rs1208:
+  GG:
+    - Metabolizador muy lento.
+    - fasle
+  AG:
+    - Metabolizador lento.
+    - false
+  AA:
+    - Metabolizador r&aacute;pido.
+    - true
+rs1799930:
+  GG:
+    - Normal
+    - true
+  AG:
+    - Riesgo de perdida de o&iacute;do.
+    - false
+  AA:
+    - Riesgo alto de perdida de o&iacute;do.
+    - false
+rs1799929:
+  CC:
+    - Metabolizador r&aacute;pido.
+    - true
+  CT:
+    - Metabolizador lento.
+    - false
+  TT:
+    - Metabolizador muy lento.
+    - false
+rs1801280:
+  CC:
+    - Metabolizador muy lento.
+    - false
+  CT:
+    - Metabolizador lento.
+    - false
+  TT:
+    - Metabolizador r&aacute;pido.
+    - true
+rs1041983:
+  CC:
+    - Metabolizador r&aacute;pido.
+    - true
+  CT:
+    - Metabolizador lento.
+    - false
+  TT:
+    - Metabolizador muy lento.
+    - false
+rs1801279:
+  GG:
+    - Metabolizador r&aacute;pido.
+    - true
+  GA:
+    - Metabolizador lento.
+    - false
+  AA:
+    - Metabolizador muy lento.
+    - false
+rs4880:
+  AA:
+    - Tolerante a ftalatos.
+    - true
+  AG:
+    - Poco tolerante a ftalatos.
+    - false
+  GG:
+    - Intolerante a ftalatos.
+    - false
+rs2758331:
+  GG:
+    - Mayor riesgo de da&ntilde;o al h&iacute;gado mientras se expone a BPA, Bisfenol A, que se encuentra algunos tipos de pl&aacute;stico, tales como botellas de agua y Tupperware, as&iacute; como de resina que recubre el interior de productos met&aacute;licos.
+    - false
+  AG:
+    - Ligero riesgo de da&ntilde;o al h&iacute;gado mientras se expone a BPA, Bisfenol A, que se encuentra algunos tipos de pl&aacute;stico, tales como botellas de agua y Tupperware, as&iacute; como de resina que recubre el interior de productos met&aacute;licos.
+    - false
+  AA:
+    - Normal.
+    - true
+rs2227956:
+  AA:
+    - Probabilidades de desarrollar resistencia a la insulina cuando se expon&iacute;an a ftalatos.
+    - false
+  AG:
+    - Mayor probabilidad de desarrollar prediabetes cuando se exponen a ftalatos.
+    - false
+  GG:
+    - Probabilidades de desarrollar resistencia a la insulina cuando se expon&iacute;an a ftalatos.
+    - false
+rs2631367:
+  CC:
+    - Muy susceptible a las toxinas.
+    - false
+  CG:
+    - Susceptible a las toxinas.
+    - false
+  GG:
+    - Normal.
+    - true
+rs283413:
+  CC:
+    - Buen metabolismo para procesar las toxinas.
+    - true
+  AC:
+    - Mal metabolismo para procesar las toxinas.
+    - false
+  AA:
+    - Muy mal metabolismo para procesar las toxinas.
+    - false
+rs3892097:
+  CC:
+    - Normal.
+    - true
+  CT:
+    - Riesgo bajo, no ponerse en esposici&oacute;n de pesticidas.
+    - false
+  TT:
+    - Riesgo, no ponerse en esposici&oacute;n de pesticidas.
+    - false
+  AA:
+    - Metabolizador lento.
+    - false
+  AG:
+    - Normal.
+    - null
+  GG:
+    - Buen metabolizador.
+    - true
+rs1446109:
+  AA:
+    - Normal.
+    - null
+  AG:
+    - Zurdo Leve.
+    - null
+  GG:
+    - Zurdo.
+    - null
+rs1007371:
+  AA:
+    - Normal.
+    - null
+  TT:
+    - Zurdo.
+    - null
+rs6314:
+  AA:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  AG:
+    - Mala respuesta a los antidepresivos.
+    - false
+  GG:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs2032583:
+  GG:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  AG:
+    - Mala respuesta a los antidepresivos.
+    - false
+  AA:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs12273363:
+  CC:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  CT:
+    - Mala respuesta a los antidepresivos.
+    - false
+  TT:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs806368:
+  CC:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  CT:
+    - Mala respuesta a los antidepresivos.
+    - false
+  TT:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs7997012:
+  AA:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  AG:
+    - Mala respuesta a los antidepresivos.
+    - false
+  GG:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs2319398:
+  CC:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  AC:
+    - Mala respuesta a los antidepresivos.
+    - false
+  AA:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs1364043:
+  GG:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  GT:
+    - Mala respuesta a los antidepresivos.
+    - false
+  TT:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs11030101:
+  TT:
+    - Muy mala respuesta a los antidepresivos.
+    - false
+  AT:
+    - Mala respuesta a los antidepresivos.
+    - false
+  AA:
+    - Buena respuesta a los antidepresivos.
+    - true
+rs3766246:
+  GG:
+    - Fatiga despues de la ingesta.
+    - false
+  AG:
+    - Algo de fatiga despues de la ingesta.
+    - false
+  AA:
+    - Normal.
+    - true
+rs2295633:
+  AA:
+    - Posible estr&eacute;s postraum&aacute;tico.
+    - false
+  AG:
+    - Ligero posible estr&eacute;s postraum&aacute;tico.
+    - false
+  GG:
+    - Normal.
+    - true
+rs2229109:
+  CC:
+    - Normal.
+    - true
+  CT:
+    - Mala respuesta.
+    - false
+  TT:
+    - Muy mala respuesta.
+    - false
+rs2241220:
+  CC:
+    - Normal.
+    - true
+  CT:
+    - Mala respuesta.
+    - false
+  TT:
+    - Muy mala respuesta.
+    - false
+rs6837793:
+  AA:
+    - Normal.
+    - true
+  AG:
+    - Mala respuesta. Riesgo de sobre peso.
+    - false
+  GG:
+    - Muy mala respuesta. Riesgo de sobre peso.
+    - false
+rs4532:
+  CC:
+    - Muy mala respuesta, riesgo de autimos o discinesia.
+    - false
+  CT:
+    - Mala respuesta, riesgo de autimos o discinesia.
+    - false
+  TT:
+    - Normal.
+    - true
+rs9357271:
+  TT:
+    - Muy mala respuesta.
+    - false
+  CT:
+    - Mala respuesta.
+    - false
+  CC:
+    - Normal.
+    - true
+rs5092:
+  TT:
+    - Muy mala respuesta.
+    - false
+  CT:
+    - Mala respuesta.
+    - false
+  CC:
+    - Normal.
+    - true
+rs11030104:
+  GG:
+    - Muy mala respuesta.
+    - false
+  AG:
+    - Mala respuesta.
+    - false
+  AA:
+    - Normal.
+    - true
+rs5574:
+  TT:
+    - Muy mala respuesta.
+    - false
+  CT:
+    - Mala respuesta.
+    - false
+  CC:
+    - Normal.
+    - true
+rs324650:
+  AA:
+    - Riesgo.
+    - false
+  AT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs4731426:
+  CC:
+    - Riesgo.
+    - false
+  CG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs12327666:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs489693:
+  AA:
+    - Riesgo.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1801131:
+  GG:
+    - Riesgo.
+    - false
+  GT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs324420:
+  AA:
+    - Riesgo.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1137101:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs8179183:
+  CC:
+    - Riesgo.
+    - false
+  CG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs4606:
+  GG:
+    - Riesgo.
+    - false
+  CG:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs993648:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs4765623:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs6280:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs3923809:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs806378:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1468271:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs10501087:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs1799978:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs11214606:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs6279:
+  GG:
+    - Riesgo.
+    - false
+  CG:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs4969170:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs717620:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1045642:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs10276036:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs2074190:
+  GG:
+    - Riesgo. Puede producir asma.
+    - false
+  AG:
+    - Riesgo bajo. Pued producir asma.
+    - false
+  AA:
+    - Normal.
+    - true
+rs5918:
+  CC:
+    - Riesgo. Incrementa la resistencia a la aspirina.
+    - false
+  CT:
+    - Riesgo bajo. Incrementa la resistencia a la aspirina.
+    - false
+  TT:
+    - Normal.
+    - true
+rs4648319:
+  AA:
+    - Riesgo. Riesgo de padecer c&aacute;ncer por la ingesta de aspirinas.
+    - false
+  AG:
+    - Riesgo bajo. Riesgo de padecer c&aacute;ncer por la ingesta de aspirinas.
+    - false
+  GG:
+    - Normal.
+    - true
+rs6277:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs10156191:
+  TT:
+    - Riesgo. Incremento riesgo en migra&ntilde;as y hipersensibilidad al ibuprofeno.
+    - false
+  CT:
+    - Riesgo bajo. Incremento riesgo en migra&ntilde;as y hipersensibilidad al ibuprofeno.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1128503:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs20417:
+  GG:
+    - Riesgo.
+    - false
+  CG:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs5275:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs3918226:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs659580:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs11810574:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs11810574:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs3213619:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs2854744:
+  GG:
+    - Riesgo. Mala respuesta por el tumor.
+    - false
+  GT:
+    - Riesgo bajo. Mala respuesta por el tumor.
+    - false
+  TT:
+    - Normal.
+    - true
+rs8176719:
+  CC:
+    - Riesgo.
+    - false
+  -C:
+    - Riesgo bajo.
+    - false
+  --:
+    - Normal.
+    - true
+rs833068:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs8187710:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs2946834:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs6220:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs12615435:
+  GG:
+    - Riesgo.
+    - false
+  TG:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs11549465:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs480409:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs13393173:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs438034:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs1277203:
+  CC:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  TT:
+    - Normal.
+    - true
+rs12142335:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs303386:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs2235046:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs242941:
+  AA:
+    - Riesgo.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1876828:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs2146323:
+  AA:
+    - Riesgo.
+    - false
+  AC:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs37972:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs28364072:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs37973:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs3087243:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo. Mejor respuesta en asm&aacute;ticos.
+    - false
+  GG:
+    - Normal. Mejor respuesta en asm&aacute;ticos.
+    - true
+rs5065:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs2071427:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs8192440:
+  AA:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  GG:
+    - Normal.
+    - true
+rs2314339:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs10455872:
+  GG:
+    - Riesgo.
+    - false
+  AG:
+    - Riesgo bajo.
+    - false
+  AA:
+    - Normal.
+    - true
+rs11638450:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs12428035:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs5443:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true
+rs1799853:
+  TT:
+    - Riesgo.
+    - false
+  CT:
+    - Riesgo bajo.
+    - false
+  CC:
+    - Normal.
+    - true

@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0012", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "167138296", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "SCN9A", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "19763161"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Singh et al. 2009 studied a large family with febrile seizures, linking this region as causal. Then, analyzing a panel of 92 patients with childhood febrile seizures, and 109 Dravet cases (total of 201 patients), they saw 3 carriers of this variant (once in former, twice in latter), and not it in 562 Caucasian control chromosomes (281 individuals). Neither patient nor control findings have a statistically significant difference the variant frequency according to ExAC data (where 1 in 173 are carriers). This paper was proposing a high penetrance hypothesis, but if this were true we would see a dramatic enrichment of the variant in patients.", 
+    "URL": "http://evidence.pgp-hms.org/SCN9A-K655R", 
+    "Variant Name": "SCN9A-K655R", 
+    "Variant Page": "http://evidence.pgp-hms.org/SCN9A-K655R"
+}

@@ -1,0 +1,40 @@
+{
+    "Allele Frequency": "0.49", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "49206674", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Blood", 
+        "Immune system"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "FUT2", 
+    "Impact": "Protective", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "7876235", 
+        "12692541", 
+        "19625485", 
+        "20031047", 
+        "22025362"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "5", 
+        "Severity": "2", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This recessive protective variant confers resistance to norovirus (which causes stomach flu). 20% of Caucasians and Africans are homozygous for this variant and are \"non-secretors\": they do not express ABO blood type antigens in their saliva or mucosal surfaces. Most strains of norovirus bind to these antigens in the gut, and so this non-secretor status confers almost total resistantance to most types of norovirus. There are notable exceptions, some strains of norovirus bind a different target and are equally infectious for secretors and non-secretors.", 
+    "URL": "http://evidence.pgp-hms.org/FUT2-W154X", 
+    "Variant Name": "FUT2-W154X", 
+    "Variant Page": "http://evidence.pgp-hms.org/FUT2-W154X", 
+    "dbSNP IDs": [
+        "rs601338"
+    ]
+}

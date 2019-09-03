@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+
+            input, textarea { 
+                width: 420px; 
+            }
+
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+
+            header {
+                padding:1px;
+                text-align:center;
+            }
+
+        </style>
+        <script src="popup.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <h3>GenomiX Plugin</h3>
+        </header>
+        <div class="container">
+            <form id="addbookmark">
+
+                <p><label for="type">Type</label><br />
+                    <select id="type">
+                        <option value="web">Webpage</option>
+                        <option value="img">IMG</option>
+                        <option value="video">Video</option>
+                        <option value="pdf">PDF</option>
+                    </select>
+                </p>
+
+                <p><label for="title">Title</label><br />
+                <input type="text" id="title" name="title" size="50" value="" /></p>
+
+                <p><label for="url">Url</label><br />
+                <input type="text" id="url" name="url" size="50" value="" /></p>
+
+                <p><label for="summary">Summary</label><br />
+                <textarea id="summary" name="summary" rows="6" cols="35"></textarea></p>
+
+                <div id="pages"></div>               
+
+                <p>
+                    <center> 
+                        <input id="save" type="submit" value="Save to GenomiX" />
+                        <br>
+                        <span id="status-display"></span>
+                    </center>
+                </p>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

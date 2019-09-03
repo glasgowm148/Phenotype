@@ -1,0 +1,27 @@
+{
+    "Allele Frequency": "0.0085", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Anatomical and congenital", 
+        "Breathing"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DNAH5", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Tentatively evaluated as benign, although predicted to be damaging by Polyphen 2. Other recessive mutations in this gene cause primary ciliary dyskinesia and Kartagener Syndrome (situs inversus, chronic sinusitis, and bronchiectasis), but these are usually more severe (splicing, nonsense, or frameshift).", 
+    "URL": "http://evidence.pgp-hms.org/DNAH5-E758G", 
+    "Variant Name": "DNAH5-E758G", 
+    "Variant Page": "http://evidence.pgp-hms.org/DNAH5-E758G"
+}

@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Anatomical and congenital"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "VPS13B", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15141358"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "1", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "According to Kolehmainen, et al 2004 this was seen homozygously in a pair of siblings from a family with Cohen syndrome, in a screen of 76 patients from 59 families.", 
+    "URL": "http://evidence.pgp-hms.org/VPS13B-N2968S", 
+    "Variant Name": "VPS13B-N2968S", 
+    "Variant Page": "http://evidence.pgp-hms.org/VPS13B-N2968S"
+}

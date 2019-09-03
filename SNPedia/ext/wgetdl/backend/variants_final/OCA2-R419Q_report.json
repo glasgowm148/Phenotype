@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.057", 
+    "Build 37 Chromosome": "chr15", 
+    "Build 37 Position": "28230318", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Skin"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "OCA2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12163334"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant is associated with eye color, as is OCA2 R305W. Individuals with this variant are reported to be more likely to have green/hazel eyes as opposed to blue/gray eyes. Other variants in this gene are associated with oculocutaneous albinism (albinism which involves skin and eyes).", 
+    "URL": "http://evidence.pgp-hms.org/OCA2-R419Q", 
+    "Variant Name": "OCA2-R419Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/OCA2-R419Q", 
+    "dbSNP IDs": [
+        "rs1800407"
+    ]
+}

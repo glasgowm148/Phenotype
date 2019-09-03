@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "LRRK2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "16633828"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "4", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause autosomal dominant Parkinson's disease. This report is recorded in ClinVar, submitted by GeneReviews (http://www.ncbi.nlm.nih.gov/clinvar/RCV000032405/). However, one publication linked by ClinVar, Di Fonzo 2006 (PMID: 16633828) found the variant with equal frequency in cases and controls in a study of Taiwanese cases and controls. According to ExAC, this variant has a much higher allele frequency in east asians (0.58%) where 1 in 90 carry the variant. This strongly contradicts the variant as causing this disease, and this reported effect should be considered disproven.", 
+    "URL": "http://evidence.pgp-hms.org/LRRK2-A419V", 
+    "Variant Name": "LRRK2-A419V", 
+    "Variant Page": "http://evidence.pgp-hms.org/LRRK2-A419V"
+}

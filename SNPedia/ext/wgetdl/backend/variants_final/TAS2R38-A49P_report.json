@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.43", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "141673345", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TAS2R38", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "12595690", 
+        "15883422", 
+        "20675712"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": "5", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant is strongly associated with causing the \"taster\" phenotype of phenylthiocarbamine (PTC) in a dominant manner.", 
+    "URL": "http://evidence.pgp-hms.org/TAS2R38-A49P", 
+    "Variant Name": "TAS2R38-A49P", 
+    "Variant Page": "http://evidence.pgp-hms.org/TAS2R38-A49P", 
+    "dbSNP IDs": [
+        "rs713598"
+    ]
+}

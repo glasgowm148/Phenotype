@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.097", 
+    "Build 37 Chromosome": "chr8", 
+    "Build 37 Position": "21976710", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "HR", 
+    "Impact": "Benign", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "9445480", 
+        "9736769"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Probably benign. One study implicated it in causing alopecia universalis, but a later report noted the variant has an allele frequency inconsistent with the rarity of that disease.", 
+    "URL": "http://evidence.pgp-hms.org/HR-T1022A", 
+    "Variant Name": "HR-T1022A", 
+    "Variant Page": "http://evidence.pgp-hms.org/HR-T1022A", 
+    "dbSNP IDs": [
+        "rs7014851"
+    ]
+}

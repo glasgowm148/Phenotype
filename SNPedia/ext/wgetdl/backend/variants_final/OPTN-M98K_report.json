@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.061", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "13152400", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "OPTN", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "11834836", 
+        "14627677", 
+        "19145250"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant was initially reported to be a risk factor for glaucoma, but subsequent reports have failed to find a statistically significant association. It may have a modifier effect, with carriers of the variant having lower intraocular pressure on average -- pressures that might be considered normal in other individuals would be abnormally high for carriers of this variant.", 
+    "URL": "http://evidence.pgp-hms.org/OPTN-M98K", 
+    "Variant Name": "OPTN-M98K", 
+    "Variant Page": "http://evidence.pgp-hms.org/OPTN-M98K", 
+    "dbSNP IDs": [
+        "rs11258194"
+    ]
+}

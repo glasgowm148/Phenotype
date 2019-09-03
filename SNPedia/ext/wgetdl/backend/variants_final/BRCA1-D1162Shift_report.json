@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "BRCA1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "9150151", 
+        "9361038", 
+        "10995809"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "4", 
+        "Familial": "4", 
+        "Functional": "0", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "ClinVar reports this variant to predispose carriers to early onset breast cancer, variant and fallopian tube cancer, and other cancers (http://www.ncbi.nlm.nih.gov/clinvar/variation/37531/). ", 
+    "URL": "http://evidence.pgp-hms.org/BRCA1-D1162Shift", 
+    "Variant Name": "BRCA1-D1162Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA1-D1162Shift"
+}

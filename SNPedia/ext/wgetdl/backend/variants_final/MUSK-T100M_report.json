@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.023", 
+    "Build 37 Chromosome": "chr9", 
+    "Build 37 Position": "113449489", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MUSK", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign.", 
+    "URL": "http://evidence.pgp-hms.org/MUSK-T100M", 
+    "Variant Name": "MUSK-T100M", 
+    "Variant Page": "http://evidence.pgp-hms.org/MUSK-T100M", 
+    "dbSNP IDs": [
+        "rs35142681"
+    ]
+}

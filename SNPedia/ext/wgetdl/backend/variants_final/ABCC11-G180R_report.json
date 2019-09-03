@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.098", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "48258198", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ABCC11", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "14471313", 
+        "16444273"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": "5", 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant is associated with dry type ear wax (a benign trait) in a recessive manner.", 
+    "URL": "http://evidence.pgp-hms.org/ABCC11-G180R", 
+    "Variant Name": "ABCC11-G180R", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCC11-G180R", 
+    "dbSNP IDs": [
+        "rs17822931"
+    ]
+}

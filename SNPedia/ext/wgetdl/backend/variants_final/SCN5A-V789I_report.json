@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "SCN5A", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "20129283"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause Brugada syndrome (increased risk of sudden cardiac death), but the reported observation doesn't different from the variant's general allele frequency. Kapplinger et al. 2009 reported seeing this variant once in 2,111 patients and not in 1,300 controls. ExAC reports the variant present in 9 out of 33,201 individuals with European ancestry (1 in 3,700). This allele frequency indicates the reported observation was almost certainly coincidental as it is consistent with ExAC's allele frequency for the general population. Brugada syndrome is estimated to affect 1 in 2,000; if this variant were causal with any notable penetrance, it would be found in a large fraction of patients. Based on updated allele frequency information data, this hypothesis should be considered disproven.", 
+    "URL": "http://evidence.pgp-hms.org/SCN5A-V789I", 
+    "Variant Name": "SCN5A-V789I", 
+    "Variant Page": "http://evidence.pgp-hms.org/SCN5A-V789I"
+}

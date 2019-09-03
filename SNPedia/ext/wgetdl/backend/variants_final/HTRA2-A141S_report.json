@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.017", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "74757554", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "HTRA2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "15961413", 
+        "18364387"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. One report proposed an association with increased risk for Parkinson's disease, but had very weak statistical significance. A later study found an equal incidence of this variant in cases and controls, contradicting any association with the disease.", 
+    "URL": "http://evidence.pgp-hms.org/HTRA2-A141S", 
+    "Variant Name": "HTRA2-A141S", 
+    "Variant Page": "http://evidence.pgp-hms.org/HTRA2-A141S", 
+    "dbSNP IDs": [
+        "rs72470544"
+    ]
+}

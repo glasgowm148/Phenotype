@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.16", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "13340236", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PHYH", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "10767344", 
+        "14974078"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Probably benign. This variant was implicated as causing Refsum Disease in a recessive manner, but a subsequent publication noted that all instances were linked with other explanatory mutations. The high allele frequency of this variant in the population (7-13%) contradicts a pathogenic hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/PHYH-P29S", 
+    "Variant Name": "PHYH-P29S", 
+    "Variant Page": "http://evidence.pgp-hms.org/PHYH-P29S", 
+    "dbSNP IDs": [
+        "rs28938169"
+    ]
+}

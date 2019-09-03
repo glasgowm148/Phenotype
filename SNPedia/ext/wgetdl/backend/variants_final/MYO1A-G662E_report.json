@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.026", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "57431402", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MYO1A", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12736868"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Although one report speculated that this variant may cause dominant, early-onset sensorineural hearing loss, the findings lacked statistical significance. Notably, this gene is not a clinically tested gene and another of the eight variants reported by these authors (S797F) has since been observed in a PGP participant with no symptoms of hearing loss.", 
+    "URL": "http://evidence.pgp-hms.org/MYO1A-G662E", 
+    "Variant Name": "MYO1A-G662E", 
+    "Variant Page": "http://evidence.pgp-hms.org/MYO1A-G662E", 
+    "dbSNP IDs": [
+        "rs33962952"
+    ]
+}

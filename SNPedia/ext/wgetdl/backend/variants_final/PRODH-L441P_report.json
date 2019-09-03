@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.0059", 
+    "Build 37 Chromosome": "chr22", 
+    "Build 37 Position": "18905934", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Blood", 
+        "Mental and behavioral", 
+        "Metabolism", 
+        "Nervous system"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "PRODH", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12217952", 
+        "15662599"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Causes hyperprolinemia in a recessive manner (high levels of proline in the blood due to a defect in metabolism of this amino acid). This can sometimes lead to seizures, mental retardation, and other neurological manifestations. Some authors also hypothesize hyperprolinemia is a risk factor for schizophrenia, but this is less well supported and the effect of this variant on risk for that disease is unclear.", 
+    "URL": "http://evidence.pgp-hms.org/PRODH-L441P", 
+    "Variant Name": "PRODH-L441P", 
+    "Variant Page": "http://evidence.pgp-hms.org/PRODH-L441P", 
+    "dbSNP IDs": [
+        "rs2904551"
+    ]
+}

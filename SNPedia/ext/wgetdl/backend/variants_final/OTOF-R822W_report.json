@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.018", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "26700099", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "OTOF", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16283880", 
+        "16371502"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare variant, reported as a polymorphism also found in controls. Other severe variants in this gene are reported to cause autosomal recessive non-syndromic deafness.", 
+    "URL": "http://evidence.pgp-hms.org/OTOF-R822W", 
+    "Variant Name": "OTOF-R822W", 
+    "Variant Page": "http://evidence.pgp-hms.org/OTOF-R822W", 
+    "dbSNP IDs": [
+        "rs80356570"
+    ]
+}

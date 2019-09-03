@@ -13,40 +13,45 @@ Raw Data coming from Genetic tests done by Direct To Consumer companies such as 
 * Fixed py2/3 print bug preventing program from starting
 * Switched os.cwd to pathlib for cross-platform support
 * Created data/snps_of_interest.txt which can be loaded with SNPs you'd like to specifically query against your dataset
-* Added support for dbSNP lookup
+* dbSNP lookup functionality added
 * Removed _GUI.py
 * Enabled the commented out code and imported panda
 * In Progress
   * dbSNP crawler to get risk allele, publications, frequency and crosscheck result from snpedia
-  * 
+* To Do
+  * Search / Filter
+  * Bookmark
+  * User Login with upload
+  * Custom reports
+  * Utilise reload DB Data
+  * Utilise Genomix source
 
 ## Installation:
 
-In order to set up the requirements. Make sure you have [python pip](https://packaging.python.org/installing/). The necessary dependencies can therein be added by pip install -r requirements.txt. This will install everything you need to use the script. It is written using Python 3. So make sure to use that when running the script and make sure environmental variables of PATH were set during installation of Python for Windows.
+In order to set up the requirements. Make sure you have [python pip](https://packaging.python.org/installing/). The necessary dependencies can therein be added by pip install -r requirements.txt. This will install everything you need to use the script. It is written using Python 3. So make sure to use that when running the script and make sure environmental variables of PATH were set during installation of Python. 
 
-Step 0:
+Note: Linux may be pip3.6 and OSX Should be be pip3 
+
+0.
 ```
 pip install -r requirements.txt
 ```
 This sets up the necessary dependencies (such as Flask, used to create a Python based web server and BeautifulSoup used to crawl through SNPedia).
 
-Note: Linux may be pip3.6 and OSX Should be be pip3 
 
 
-Step 1:
+1. 
 ```
 python3 SNPedia/DataCrawler.py -f [Absolute path of your downloaded raw 23andMe data]
 ```
 This sets up the datacrawler using your data as a means to highlight what SNPs are relevant to you. 
 
-
-
-Step 2:
+2.
 ```
 python3 SNPedia/SnpApi.py
 ```
-This sets us the Flask server
+This serves the Flask server
 
 
 ## Access the Local Server
-Access http://127.0.0.1:5000 (the ip address also known as localhost, it's all hosted on your local machine) to look at your Genome
+http://127.0.0.1:5000

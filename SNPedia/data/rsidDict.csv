@@ -1,713 +1,813 @@
-,Description,Variations
-rs1815739,muscle performance,"[['(C;C)', '2.2', 'Better performing muscles. Likely sprinter.'], ['(C;T)', '2.1', 'Mix of muscle types. Likely sprinter.'], ['(T;T)', '2.2', 'Impaired muscle performance. Likely endurance athlete.']]"
-rs53576,influences social behavior and personality,"[['(A;A)', '2.8', 'Lack of empathy?'], ['(A;G)', '2.8', 'Lack of empathy?'], ['(G;G)', '2.5', 'Optimistic and empathetic; handle stress well']]"
-rs4680,warrior vs worrier; number of other associations,"[['(A;A)', '2.5', '(worrier) advantage in memory and attention tasks'], ['(A;G)', 'Intermediate dopamine levels, other effects'], ['(G;G)', '2.5', '(warrior) multiple associations, see details']]"
-rs1800497,,"[['(C;C)', '3', 'Normal (A2/A2)'], ['(C;T)', '2.9', 'A1/A2: Bad at avoidance of errors. 0.5x lower OCD risk, 0.87x lower Tardive Diskinesia risk, higher ADHD risk. More Alcohol Dependence. Lower risk of Postoperative Nausea. Increased obesity. Bupropion is not effective for smoking cessation.'], ['(T;T)', '4', 'A1/A1: Bad at avoidance of errors. 0.25x lower OCD; 0.56x lower Tardive Diskinesia; higher ADHD; 1.4x Alcohol Dependence; lower Postoperative Nausea; Increased obesity; less pleasure response; Bupropion ineffective for smoking cessation.; 2.4x risk for adenoma recurrence.']]"
-rs429358,,"[['(C;C)', '1.2', 'one of 2 snps relevant to classifying APOE genotype'], ['(C;T)', "">3x increased risk for Alzheimer's; 1.4x increased risk for heart disease""], ['(T;T)', '0', 'common']]"
-rs9939609,Obesity related. Raises T2D risk through obesity.,"[['(A;A)', '3', 'obesity risk and 1.6x risk for T2D'], ['(A;T)', '2.4', '1.3x risk for T2D; obesity risk'], ['(T;T)', '1.5', 'lower risk of obesity and Type-2 diabetes']]"
-rs4988235,,"[['(C;C)', '2.5', 'likely to be lactose intolerant as an adult'], ['(C;T)', '1.1', 'likely to be able to digest milk as an adult'], ['(T;T)', '1.1', 'can digest milk']]"
-rs6806903,,[]
-rs4244285,Clopidogrel (Plavix®),"[['(A;A)', '4', 'poor metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(A;G)', '3', 'poorer metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(G;G)', '0', 'normal']]"
-rs1801133,Folic acid processing; homocysteine levels,"[['(C;C)', '0', 'Common genotype: normal homocysteine levels'], ['(C;T)', '2.2', '1 copy of C677T allele of MTHFR = 65% efficiency in processing folic acid'], ['(T;T)', '2.8', 'homozygous for C677T of MTHFR = 10-20% efficiency in processing folic acid = high homocysteine, low B12 and folate levels']]"
+,Frequency,Risk,Description,Variations
+rs1815739,,,-,-
+rs53576,,,-,-
+rs4680,,,-,-
+rs1800497,,,-,-
+rs429358,,,-,-
+rs9939609,,,-,-
+rs4988235,,,-,-
+rs6806903,,,-,-
+rs4244285,,,-,-
+rs1801133,,,-,-
 "rs9378252
-",,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '1', 'benign'], ['(T;T)', '1', 'benign']]"
+",,,-,-
 "rs204890
-",,"[['(G;G)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs6472
-",,"[['(C;C)', '0', 'benign polymorphism'], ['(C;G)', '0', 'benign polymorphism'], ['(G;G)', '0', 'common/normal']]"
+",,,-,-
 "rs6410
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",,,-,-
 "rs2486758
-",,"[['(C;C)', '2.2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(C;T)', '2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(T;T)', '2', 'Slightly lower prostate cancer risk; better response to AA/P treatment']]"
+",,,-,-
 "rs2296239
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",,,-,-
 "rs11621961
-",,[]
+",,,-,-
 "rs1009382
-",,[]
+",,,-,-
 "rs1134095
-",,[]
+",,,-,-
 "rs6387
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs284849
-",,[]
+",,,-,-
 "rs1269851
-",,[]
+",,,-,-
 "rs4539
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",,,-,-
 "rs1134096
-",,[]
+",,,-,-
 "rs1269854
-",,[]
+",,,-,-
 "rs9267798
-",,[]
+",,,-,-
 "rs204894
-",,[]
+",,,-,-
 "rs915908
-",,"[['(G;G)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs204999
-",,[]
+",,,-,-
 "rs204887
-",,[]
+",,,-,-
 "rs12530380
-",,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]"
+",,,-,-
 "rs4998896
-",,[]
+",,,-,-
 "rs743572
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",,,-,-
 "rs6405
-",,[]
+",,,-,-
 "rs1137486
-",,[]
+",,,-,-
 "rs5292
-",,[]
+",,,-,-
 "rs35045158
-",,[]
+",,,-,-
 "rs1042854
-",,[]
+",,,-,-
 "rs5301
-",,[]
+",,,-,-
 "rs5297
-",,[]
+",,,-,-
 "rs7003319
-",,[]
+",,,-,-
 "rs4534
-",,[]
+",,,-,-
 "rs1137485
-",,[]
+",,,-,-
 "rs1137483
-",,[]
+",,,-,-
 "rs28934586
-",,"[['(A;G)', '3', 'Carrier of a congenital adrenal hyperplasia mutation'], ['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs17115100
-",,"[['(G;G)', '0', 'common on affy axiom data'], ['(G;T)', '1.5', ""slightly increased risk of developing Parkinson's Disease""], ['(T;T)', '2', ""Increased risk of developing Parkinson's Disease""]]"
+",,,-,-
 "rs6162
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs6163
-",,[]
+",,,-,-
 "rs1004467
-",,"[['(T;T)', '0']]"
+",,,-,-
 "rs6445
-",,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
+",,,-,-
 "rs284847
-",,[]
+",,,-,-
 "rs5284
-",,[]
+",,,-,-
 "rs5283
-",,[]
+",,,-,-
 "rs28935481
-",,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0']]"
+",,,-,-
 "rs4541
-",,[]
+",,,-,-
 "rs35887327
-",,[]
+",,,-,-
 "rs4919687
-",,[]
+",,,-,-
 "rs6389
-",,[]
+",,,-,-
 "rs5303
-",,[]
+",,,-,-
 "rs5017238
-",,[]
+",,,-,-
 "rs11123857
-",,"[['(A;A)', '0'], ['(A;G)', '2', '1.44-fold increased risk of bipolar disorder or major depression'], ['(G;G)', '2', '2.88-fold risk of bipolar disorder or major depression']]"
+",,,-,-
 "rs2899472
-",,"[['(C;C)', '0', 'common on affy axiom data']]"
+",,,-,-
 "rs1934953
-",,[]
+",,,-,-
 "rs3842570
-",,[]
+",,,-,-
 "rs3830076
-",,[]
+",,,-,-
 "rs4986883
-",,"[['(A;A)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs104894149
-",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]"
+",,,-,-
 "rs28934605
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs55951658
-",,"[['(C;C)', 'CYP3A4*4 homozygote'], ['(C;T)', 'carrier of one CYP3A4*4 allele'], ['(T;T)', '0', 'normal']]"
+",,,-,-
 "rs9267796
-",,[]
+",,,-,-
 "rs55897648
-",,"[['(A;A)', 'CYP2E1*3 homozygote'], ['(A;G)', 'carrier of one CYP2E1*3 allele'], ['(G;G)', '0', 'normal']]"
+",,,-,-
 "rs34690599
-",,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '3', 'Beta Thalassemia carrier; Hemoglobin beta-plus mutation'], ['(G;G)', '4.5', 'Beta Thalassemia intermedia likely; Hemoglobin beta-plus; variable clinical symptoms']]"
+",,,-,-
 "rs104894136
-",,"[['(C;C)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs104894145
-",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]"
+",,,-,-
 "rs28934607
-",,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]"
+",,,-,-
 "rs56244447
-",,"[['(A;A)', '0', 'normal'], ['(A;C)', '2', 'carrier of one CYP3A5*3D allele'], ['(C;C)', '2.5', 'CYP3A5*3D homozygote; nonexpressor for CYP3A5']]"
+",,,-,-
 "rs55901263
-",,"[['(C;C)', 'CYP3A4*5 homozygote'], ['(C;G)', 'carrier of one CYP3A4*5 allele'], ['(G;G)', '0', 'normal']]"
+",,,-,-
 "rs35580488
-",,[]
+",,,-,-
 "rs28934604
-",,"[['(C;C)', '0'], ['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs104894139
-",,"[['(A;G)', '3', 'Carrier of an isolated 17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs1075944
-",,"[['(C;C)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs104894148
-",,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]"
+",,,-,-
 "rs104894142
-",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]"
+",,,-,-
 "rs55817950
-",,"[['(A;A)', '2.5', 'CYP3A5*8 homozygote; nonexpressor for CYP3A5'], ['(A;G)', '2', 'carrier of one CYP3A5*8 allele'], ['(G;G)', '0', 'normal']]"
+",,,-,-
 "rs1056827
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs104894144
-",,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]"
+",,,-,-
 "rs56107638
-",,"[['(G;G)', '0', 'common/normal']]"
+",,,-,-
 "rs34745240
-",,"[['(G;G)', '0', 'common on affy axiom data']]"
+",,,-,-
 "rs104894147
-",,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]"
+",,,-,-
 "rs4713505
-",,[]
+",,,-,-
 "rs104894154
-",,"[['(A;A)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;G)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]"
+",,,-,-
 "rs72551320
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",,,-,-
 "rs55785340
-",,"[['(A;A)', '0', 'normal'], ['(A;G)', 'carrier of one CYP3A4*2 allele'], ['(G;G)', 'CYP3A4*2 homozygote']]"
+",,,-,-
 "rs104894135
-",,"[['(C;C)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]"
+",,,-,-
 "rs9282671
-",,"[['(A;A)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(A;T)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(T;T)', '0', 'common in complete genomics']]"
+",,,-,-
 "rs28931609
-",,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]"
+",,,-,-
 "rs104894146
-",,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]"
+",,,-,-
 "rs104894137
-",,"[['(A;A)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;C)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(C;C)', '0', 'common in clinvar']]"
+",,,-,-
 "rs41272687
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",,,-,-
 "rs72552791
-",,"[['(A;A)', '0', 'normal'], ['(A;G)', '2', 'carrier of one CYP3A5*11 allele'], ['(G;G)', '2.5', 'CYP3A5*11 homozygote; nonexpressor for CYP3A5']]"
+",-,-,,"[['(A;A)', '0', 'normal'], ['(A;G)', '2', 'carrier of one CYP3A5*11 allele'], ['(G;G)', '2.5', 'CYP3A5*11 homozygote; nonexpressor for CYP3A5']]"
 "rs201184519
-",,[]
+",-,-,,[]
 "rs204895
-",,[]
+",-,-,,[]
 "rs267606757
-",,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;C)', '5', 'Congenital adrenal hyperplasia']]"
+",-,-,,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;C)', '5', 'Congenital adrenal hyperplasia']]"
 "rs200737038
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(G;G)', '0', 'common in clinvar']]"
 "rs2617266
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar']]"
 "rs204899
-",,[]
+",-,-,,[]
 "rs6475
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in complete genomics']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in complete genomics']]"
 "rs72552752
-",,[]
+",-,-,,[]
 "i5005427
-",Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
 "rs204888
-",,[]
+",-,-,,[]
 "rs72554626
-",,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0', 'common in complete genomics']]"
+",-,-,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0', 'common in complete genomics']]"
 "rs11751545
-",,[]
+",-,-,,[]
 "rs2239689
-",,[]
+",-,-,,[]
 "rs2077580
-",,[]
+",-,-,,[]
 "rs267606756
-",,"[['(-;-)', '0', 'common in clinvar']]"
+",-,-,,"[['(-;-)', '0', 'common in clinvar']]"
 "rs121908613
-",,"[['(A;T)', '3', 'Carrier of a spastic paraplegia mutation'], ['(T;T)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;T)', '3', 'Carrier of a spastic paraplegia mutation'], ['(T;T)', '0', 'common in clinvar']]"
 "i6024112
-",,[]
+",-,-,,[]
 "i6024116
-",,[]
+",-,-,,[]
 "rs6002635
-",,"[['(G;G)', '0', 'common in complete genomics']]"
+",-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
 "rs72551314
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar']]"
 "rs6926448
-",,[]
+",-,-,,[]
 "i5005424
-",,[]
+",-,-,,[]
 "rs72552751
-",,[]
+",-,-,,[]
 "rs411337
-",,[]
+",-,-,,[]
 "rs204879
-",,[]
+",-,-,,[]
 "rs199476189
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(G;G)', '0', 'common in clinvar']]"
 "rs8283
-",,[]
+",-,-,,[]
 "i6024117
-",,[]
+",-,-,,[]
 "rs61495246
-",,"[['(T;T)', '0', 'common in clinvar']]"
+",-,-,,"[['(T;T)', '0', 'common in clinvar']]"
 "rs8192789
-",,"[['(C;C)', '0', 'common in complete genomics']]"
+",-,-,,"[['(C;C)', '0', 'common in complete genomics']]"
 "rs13199524
-",,[]
+",-,-,,[]
 "rs200718357
-",,[]
+",-,-,,[]
 "rs56276455
-",,"[['(A;A)', 'CYP1A2*3 homozygote'], ['(A;G)', 'carrier of one CYP1A2*3 allele'], ['(G;G)', '0', 'normal']]"
+",-,-,,"[['(A;A)', 'CYP1A2*3 homozygote'], ['(A;G)', 'carrier of one CYP1A2*3 allele'], ['(G;G)', '0', 'normal']]"
 "rs2269426
-",,[]
+",-,-,,[]
 "rs2269429
-",,[]
+",-,-,,[]
 "i5005426
-",,[]
+",-,-,,[]
 "rs72552758
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
 "rs201552310
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
 "rs2239688
-",,[]
+",-,-,,[]
 "rs6476
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in clinvar']]"
 "rs9378251
-",,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
+",-,-,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
 "i5005438
-",,[]
+",-,-,,[]
 "rs151344505
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
 "rs72547515
-",,"[['(C;C)', '0', 'normal'], ['(C;T)', 'carrier of one CYP1A2*16 allele'], ['(T;T)', 'CYP1A2*16 homozygote']]"
+",-,-,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'carrier of one CYP1A2*16 allele'], ['(T;T)', 'CYP1A2*16 homozygote']]"
 "i5005422
-",,[]
+",-,-,,[]
 "rs1150758
-",,[]
+",-,-,,[]
 "rs72551317
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '0', 'common in clinvar']]"
 "rs151344506
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
 "rs2470144
-",,[]
+",-,-,,[]
 "rs12333245
-",,[]
+",-,-,,[]
 "rs6467
-",,"[['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar'], ['(G;T)', '0', 'polymorphism'], ['(T;T)', '0', 'common/normal']]"
+",-,-,,"[['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar'], ['(G;T)', '0', 'polymorphism'], ['(T;T)', '0', 'common/normal']]"
 "rs28357069
-",,[]
+",-,-,,[]
 "rs61754278
-",,"[['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(G;G)', '0', 'common in clinvar']]"
 "rs3807039
-",,[]
+",-,-,,[]
 "i5005423
-",,[]
+",-,-,,[]
 "rs3749962
-",,[]
+",-,-,,[]
 "rs397509367
-",,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;GG)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GG;GG)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;GG)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GG;GG)', '0', 'common in clinvar']]"
 "rs10046127
-",,[]
+",-,-,,[]
 "rs28361044
-",,[]
+",-,-,,[]
 "rs7774197
-",,[]
+",-,-,,[]
 "i5005434
-",Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
 "i5005436
-",Congenital adrenal hyperplasia related,"[['(C;C)', '0', 'normal'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(C;C)', '0', 'normal'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia']]"
 "rs151344503
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]"
 "rs3130342
-",,"[['(G;G)', '0', 'common on affy axiom data']]"
+",-,-,,"[['(G;G)', '0', 'common on affy axiom data']]"
 "rs3134954
-",,[]
+",-,-,,[]
 "rs2071293
-",,[]
+",-,-,,[]
 "rs72547508
-",,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0', 'common in complete genomics']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0', 'common in complete genomics']]"
 "i5006178
-",,[]
+",-,-,,[]
 "i5005425
-",Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
 "i5005439
-",,[]
+",-,-,,[]
 "rs8111
-",,[]
+",-,-,,[]
 "rs387906510
-",,"[['(-;-)', '5', 'Congenital adrenal hyperplasia'], ['(-;GAGACTAC)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GAGACTAC;GAGACTAC)', '0', 'common in clinvar']]"
+",-,-,,"[['(-;-)', '5', 'Congenital adrenal hyperplasia'], ['(-;GAGACTAC)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GAGACTAC;GAGACTAC)', '0', 'common in clinvar']]"
 "i6024113
-",,[]
+",-,-,,[]
 "rs72551315
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar']]"
 "rs2228628
-",,[]
+",-,-,,[]
 "rs169494
-",,[]
+",-,-,,[]
 "rs72551319
-",,"[['(A;A)', '0', 'common in clinvar']]"
+",-,-,,"[['(A;A)', '0', 'common in clinvar']]"
 "rs11962353
-",,[]
+",-,-,,[]
 "rs200357005
-",,[]
+",-,-,,[]
 "rs12198173
-",,"[['(G;G)', '0']]"
+",-,-,,"[['(G;G)', '0']]"
 "rs439844
-",,[]
+",-,-,,[]
 "rs2071295
-",,[]
+",-,-,,[]
 "i5005431
-",Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
 "i5005429
-",,[]
+",-,-,,[]
 "rs1150754
-",,"[['(G;G)', '0', 'common on affy axiom data']]"
+",-,-,,"[['(G;G)', '0', 'common on affy axiom data']]"
 "rs5758598
-",,"[['(G;G)', '0', 'common in complete genomics']]"
+",-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
 "rs7769409
-",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscallled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscallled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
 "rs56411402
-",,"[['(C;C)', '2.5', 'CYP3A5*4 homozygote; nonexpressor for CYP3A5'], ['(C;T)', '2', 'carrier of one CYP3A5*4 allele'], ['(T;T)', '0', 'normal']]"
+",-,-,,"[['(C;C)', '2.5', 'CYP3A5*4 homozygote; nonexpressor for CYP3A5'], ['(C;T)', '2', 'carrier of one CYP3A5*4 allele'], ['(T;T)', '0', 'normal']]"
 "rs12153855
-",,[]
+",-,-,,[]
 "i6024115
-",,[]
+",-,-,,[]
 "rs12524441
-",,[]
+",-,-,,[]
 "rs169496
-",,[]
+",-,-,,[]
 "rs2480256
-",,[]
+",-,-,,[]
 "i5005432
-",Congenital adrenal hyperplasia related,"[['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
+",-,-,Congenital adrenal hyperplasia related,"[['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]"
 "rs151344504
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]"
 "rs7755898
-",Q318X allele of the 21-hydroxylase gene.  T is the risk allele.  This represents a null allele (no function).,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
+",-,-,Q318X allele of the 21-hydroxylase gene.  T is the risk allele.  This represents a null allele (no function).,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
 "rs72551316
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar']]"
 "rs185819
-",,"[['(T;T)', '0', 'common in clinvar']]"
+",-,-,,"[['(T;T)', '0', 'common in clinvar']]"
 "rs72552756
-",,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]"
+",-,-,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]"
 "rs72552754
-",,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]"
+",-,-,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]"
 "rs72552750
-",,[]
+",-,-,,[]
 "rs72551318
-",,"[['(C;C)', '0', 'common in clinvar']]"
+",-,-,,"[['(C;C)', '0', 'common in clinvar']]"
 "rs6471
-",,"[['(G;G)', '0', 'common in complete genomics'], ['(G;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
+",-,-,,"[['(G;G)', '0', 'common in complete genomics'], ['(G;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]"
 "rs397515532
-",,"[['(-;-)', '0', 'common in clinvar']]"
-i6024118,,[]
-rs1057744,,[]
-rs1057868,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'normal'], ['(T;T)', '1.6', '1.6x higher overall CYP3A activity']]"
-rs1057909,,"[['(A;A)', '0', 'normal'], ['(A;G)', '3', 'carrier of one CYP2C9_42612A>G allele'], ['(G;G)', '4', 'CYP2C9_42612A>G homozygote']]"
-rs1057910,Warfarin (Coumadin®),"[['(A;A)', '0.1', 'normal; no effect on warfarin metabolism'], ['(A;C)', '2.5', 'CYP2C9*3 carrier; average 40% reduction in warfarin metabolism'], ['(C;C)', '4', 'CYP2C9*3 homozygote; average 80% reduction in warfarin metabolism; reduced metabolism of number of other drugs']]"
-rs1058026,,[]
-rs1058164,,[]
-rs1058205,,[]
-rs1058322,,[]
-rs1058396,,"[['(A;A)', '1', 'Jk(a-/b+) Kidd blood group, barring other variants'], ['(A;G)', '1', 'Jk(a+/b+) Kidd blood group, barring other variants'], ['(G;G)', '1', 'Jk(a+/b-) Kidd blood group, barring other variants']]"
-rs1058564,,[]
-rs1058587,,[]
-rs1058768,,[]
-rs1058881,,[]
-rs1058930,,"[['(G;G)', '0', 'normal']]"
-rs1058932,,[]
-rs1059004,,[]
-rs1059234,,[]
-rs1059293,,[]
-rs1059440,,[]
-rs1059513,,[]
-rs1059611,,"[['(T;T)', '0', 'common in clinvar']]"
-rs1059702,,[]
-rs1059823,,[]
-rs1060043,,[]
-rs1060402,,[]
-rs1060463,,[]
-rs1060573,,"[['(A;A)', 'Decreased risk of acne occurrences in Chinese Han population'], ['(G;A)', '1.25x Increased risk of acne occurrences in Chinese Han population.']]"
-rs1061147,,"[['(A;A)', '2.2', '2.76x increased risk for Age Related Macular Degeneration.'], ['(A;C)', '1', 'Normal 0.97x risk for Age Related Macular Degeneration.'], ['(C;C)', '2.2', 'Reduced 0.34x risk of Age Related Macular Degeneration.']]"
-rs1061170,,"[['(C;C)', '3.2', '5.9x risk for AMD; higher mortality among nonagenarians'], ['(C;T)', '2.5', '2.5x risk for AMD; higher mortality among nonagenarians'], ['(T;T)', '1.6', 'lower risk for AMD, generally longer live than (C) allele carriers']]"
-rs1061235,,"[['(A;A)', '0.1', 'Normal carbamazepine sensitivity; common in clinvar'], ['(A;T)', '2.9', '26% risk of bad reaction to anti-epileptic carbamazepine'], ['(T;T)', '4', '26% risk of bad reaction to anti-epileptic carbamazepine']]"
-rs1061325,,"[['(C;C)', '2', 'Two copies of ""farmer"" CLTCL1 gene variant'], ['(C;T)', '2', 'One copy of ""hunter-gather"" CLTCL1 gene variant + one ""farmer"" variant'], ['(T;T)', '2', 'Two copies of ""hunter-gatherer"" CLTCL1 gene variant']]"
-rs1061472,,"[['(A;A)', '0', 'common in clinvar']]"
-rs1061622,,[]
-rs1061624,,[]
-rs1061631,,[]
-rs1061646,,"[['(C;C)', '0', '1.16x increased risk for breast cancer'], ['(C;T)', '1.08x increased risk for breast cancer'], ['(T;T)', 'normal risk']]"
-rs1061808,,[]
-rs1062033,,"[['(C;G)', 'increases susceptibility to postmenopausal osteoporosis'], ['(G;G)', 'increases susceptibility to postmenopausal osteoporosis']]"
-rs1062087,,"[['(G;G)', '0', 'common in clinvar'], ['(T;T)', '0']]"
-rs1062158,,[]
-rs1062613,,[]
-rs1062708,,[]
-rs1062923,,"[['(T;T)', '0', 'common on affy axiom data']]"
-rs1063134,,[]
-rs1063169,,[]
-rs1063192,,"[['(C;C)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(C;T)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(T;T)', '1', 'Normal risk of myocardial infarction']]"
-rs1063355,,[]
-rs1063499,,[]
-rs1063539,,[]
-rs1063739,,"[['(C;C)', '0', 'common in clinvar']]"
-rs1063856,,"[['(A;A)', '0', 'common in clinvar']]"
-rs1063857,,"[['(T;T)', '0', 'common in clinvar']]"
-rs1064017,,[]
-rs1064039,,"[['(A;A)', '2', 'Higher risk for age-related macular degeneration; slightly higher Alzheimers risk in Caucasians but not Asians'], ['(A;G)', '1.2', 'slightly higher risk for Alzheimers in Caucasians but not Asians'], ['(G;G)', '0', 'common in clinvar']]"
-rs1064074,,"[['(G;G)', '0', 'common in clinvar']]"
-rs1064395,"Association between schizophrenia and common variation in neurocan (NCAN), a genetic risk factor for bipolar disorder.","[['(A;A)', '2.1', 'Having the A allele at this SNP makes your risk for developing bipolar disorder or schizophrenia higher.'], ['(A;G)', '2', 'Having any copies of A at this SNP heightens your risk for bipolar disorder and schizophrenia.'], ['(G;G)', 'Normal risk of bipolar disorder or schizophrenia']]"
-rs1064422,,"[['(C;C)', '0', 'common in clinvar']]"
-rs1064524,,[]
-rs1064651,,"[['(C;C)', '8', ""possibly Gaucher's disease, but more likely a mis-oriented interpretation""], ['(C;G)', '3', 'carrier of Gaucher disease allele'], ['(G;G)', '0', 'common/normal']]"
-rs1065297,,[]
-rs1065356,,[]
-rs1065489,,"[['(G;G)', '0', 'common in clinvar']]"
-rs1065569,,"[['(G;G)', '0', 'common in complete genomics']]"
-rs1065776,,"[['(C;C)', '0', 'common in complete genomics']]"
-rs1065852,CYP2D6 drug metabolism,"[['(C;C)', '0', 'normal'], ['(C;T)', '2', 'Carrier of one CYP2D6 decreased or non-functioning variant.'], ['(T;T)', '3.2', 'Homozygous for CYP2D6 decreased or non-functioning variants; possibly less response to some drugs, including tamoxifen']]"
-rs10665,,[]
-rs106871,,[]
-rs1071592,,[]
-rs1071646,,"[['(C;C)', '0', 'common in clinvar']]"
-rs10733113,,"[['(G;G)', '0']]"
-rs10733612,,[]
-rs10733682,,"[['(A;A)', '0', 'common in clinvar']]"
-rs10734105,,[]
-rs10734652,,[]
-rs10735416,,[]
-rs10735781,,"[['(C;C)', '>1.11x risk'], ['(C;G)', '1.11x risk'], ['(G;G)', 'common']]"
-rs10737680,,[]
-rs10737909,,[]
-rs1073810,,[]
-rs10738445,,[]
-rs10738610,,[]
-rs10738760,,[]
-rs10739778,,[]
-rs10740051,,"[['(G;G)', '0', 'common in complete genomics']]"
-rs10740055,,[]
-rs10740993,,[]
-rs1074145,,[]
-rs10741780,,[]
-rs1074182,,[]
-rs10743430,,"[['(T;T)', '0', 'common in complete genomics']]"
-rs10744391,,[]
-rs10744743,,[]
-rs10745527,,[]
-rs10746463,,[]
-rs10747502,,[]
-rs10748128,,[]
-rs10748180,,[]
-rs10748185,,[]
-rs10748643,,[]
-rs10749127,,[]
-rs10749535,,[]
-rs10749971,,[]
-rs10751226,,[]
-rs10752637,,[]
-rs10753575,,[]
-rs10753929,,[]
-rs10754339,,"[['(A;A)', '0', 'normal'], ['(A;G)', '1.3', '1.3x increased risk of breast cancer'], ['(G;G)', '1.4', '1.45x increased risk of breast cancer']]"
-rs10754557,,[]
-rs10754558,,"[['(G;G)', '0', 'common in clinvar']]"
-rs10754644,,[]
-rs10754833,,[]
-rs10755578,,[]
-rs1075650,,[]
-rs10756819,,[]
-rs10757257,,[]
-rs10757269,,[]
-rs10757272,,"[['(C;C)', '1', 'Normal risk for Coronary artery disease'], ['(C;T)', '1.5', '1.30x increased risk for Coronary artery disease'], ['(T;T)', '2', '1.54x increased risk for Coronary artery disease']]"
-rs10757274,,"[['(A;A)', 'normal'], ['(A;G)', '~1.2x increased risk for heart disease'], ['(G;G)', '~1.3x increased risk for heart disease']]"
-rs10757278,,"[['(A;A)', '1.9', '0.78x reduced risk for Coronary Heart Disease. 0.77x reduced risk for Brain Aneurysm and Abdominal Aortic Aneurysm.'], ['(A;G)', '2', '1.3x risk for Heart Attack. Normal risk for Abdominal Aortic Aneurysm and Brain Aneurysm.'], ['(G;G)', '2.5', '1.6x risk for Heart Attack; 1.3x risk for Abdominal Aortic Aneurysm and Brain Aneurysm.']]"
-rs10758161,,[]
-rs10758593,,[]
-rs10758658,,[]
-rs10758669,,[]
-rs10758892,,[]
-rs10759,,[]
-rs10759102,,[]
-rs1075944,,"[['(C;C)', '0', 'common in complete genomics']]"
-rs10759734,,[]
-rs10759930,,[]
-rs10759932,,"[['(C;C)', '2', 'increased risk for chorionic plate inflammation'], ['(C;T)', 'increased risk for chorionic plate inflammation'], ['(T;T)', 'normal']]"
-rs10759944,,[]
-rs10760130,,[]
-rs10760706,,[]
-rs10761129,,[]
-rs10761482,,[]
-rs10761570,,[]
-rs10761581,,[]
-rs1076160,,[]
-rs1076165,,"[['(G;G)', '0', 'common in complete genomics']]"
-rs10761659,,"[['(A;A)', '0', ""1.5x risk of Crohn's disease""], ['(A;G)', '1', ""1.2x risk of Crohn's disease""], ['(G;G)', '0', 'normal']]"
-rs10761670,,[]
-rs10761785,,[]
-rs10762058,,"[['(G;G)', '0', 'common in complete genomics']]"
-rs10763642,,[]
-rs10763976,,[]
-rs10764775,,[]
-rs1076540,,[]
-rs1076560,,"[['(A;A)', '2', 'influences working memory'], ['(A;C)', '1.3x increased risk for alcoholism'], ['(C;C)', '0', 'normal']]"
-rs10765819,,[]
-rs10766117,,[]
-rs10767873,,[]
-rs10767942,,"[['(C;T)'], ['(T;T)', '0', 'common in complete genomics']]"
-rs10767971,,[]
-rs10768122,,[]
-rs10768140,,[]
-rs10769258,,[]
-rs10769780,,[]
-rs10769908,,[]
-rs1076991,,[]
-rs10769945,,[]
-rs10770042,,[]
-rs10770141,,[]
-rs10770705,,[]
-rs10771279,,[]
-rs10771283,,[]
-rs10771399,,[]
-rs10771431,,[]
-rs10772420,,"[['(A;A)', 'More intense perception of quinine'], ['(A;G)', 'Median more intense perception of quinine'], ['(G;G)', 'Less intense perception of quinine']]"
-rs10772915,,[]
-rs10772939,,[]
-rs10773338,,[]
-rs10773771,,[]
-rs10774021,,[]
-rs10774035,,[]
-rs10774214,,[]
-rs10774610,,"[['(C;C)', 'Likely has alcohol flush']]"
-rs10774671,,[]
-rs10775247,,[]
-rs10775480,,[]
-rs1077667,,[]
-rs10776733,,[]
-rs10777288,,[]
-rs10777332,,[]
-rs10777845,,[]
-rs10778213,,[]
-rs1077834,,[]
-rs1077858,,[]
-rs1077861,,[]
-rs1077989,,[]
-rs10781380,,[]
-rs10781500,,[]
-rs10782529,,[]
-rs1078305,,[]
-rs10783050,,"[['(T;T)', '0', 'common in complete genomics']]"
-rs10784339,,[]
-rs10784496,,[]
-rs10784502,,"[['(C;C)', '2', 'better intracranial volume?'], ['(C;T)', '1', 'Slightly higher intracranial volume'], ['(T;T)', '1.5', 'less intracranial volume?']]"
-rs10784762,,[]
-rs10785430,,[]
-rs10785877,,[]
-rs10786284,,[]
-rs10786828,,[]
-rs10787760,,[]
-rs10788528,,[]
-rs10788819,,[]
-rs10789082,,[]
-rs10789230,,[]
-rs1078967,,[]
-rs1078985,,[]
-rs10789859,,[]
-rs10790212,,[]
-rs10790289,,[]
-rs1079128,,[]
-rs10791957,,[]
-rs10792830,,[]
-rs10794595,,[]
-rs10794720,,"[['(C;C)', '0', 'common in complete genomics']]"
-rs10795130,,[]
-rs10795189,,[]
-rs10795668,,[]
-rs10795791,,[]
-rs10795917,,[]
-rs1079596,,[]
-rs1079597,,[]
-rs10796051,,[]
-rs1079727,,[]
-rs10797919,,"[['(C;G)', '0', 'common in complete genomics']]"
-rs10798,,"[['(A;A)', '0', 'common in clinvar']]"
-rs10798269,,[]
-rs10798959,,[]
-rs10799319,,[]
-rs10799824,,[]
-rs10800098,,"[['(G;G)', '0', 'common on affy axiom data']]"
-rs10800309,,[]
-rs10800485,,[]
-rs10801047,,[]
-rs10801555,,[]
-rs10801911,,[]
-rs10801935,,"[['(A;A)', 'normal'], ['(A;C)', 'normal'], ['(C;C)', '1.6', '0.3x decreased risk of breast cancer']]"
-rs10804533,,[]
-rs10806425,,[]
-rs10808265,,[]
-rs10808555,,[]
-rs10808556,,[]
-rs10808746,,[]
-rs1080983,,"[['(A;G)', '0.1', 'common']]"
-rs1080984,,"[['(A;A)', '0'], ['(T;T)', '0', 'common in complete genomics']]"
-rs1080989,,[]
-rs1080992,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in complete genomics']]"
-rs1080993,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in complete genomics']]"
-rs1080996,,[]
-rs1081000,,[]
-rs1081004,,"[['(G;G)', '0', 'common in complete genomics']]"
-rs10810790,,[]
-rs10810865,,"[['(T;T)', '0', 'common on affy axiom data']]"
-rs10811474,,[]
-rs10811661,,"[['(C;C)', '0', 'normal'], ['(C;T)', '2', '1.2x increased risk for type-2 diabetes'], ['(T;T)', '2.1', '1.2x increased risk for type-2 diabetes']]"
-rs10811771,,[]
-rs10812428,,[]
-rs10812610,,[]
-rs10813821,,[]
-rs10814916,,[]
-rs10814969,,[]
-rs6915442,,[]
-rs16992609,,[]
-rs2359372,,[]
-rs514122,,[]
-rs8076131,,[]
-rs10099507,,[]
-rs13037326,,[]
-rs10783793,,[]
-rs4819852,,[]
-rs12282747,,[]
-i6023993,,[]
-rs3810504,,[]
-rs16975739,,[]
-rs7303397,,[]
-i5048521,,[]
-rs2731647,,[]
-rs10074858,,[]
-rs6879291,,[]
-rs17458108,,[]
-rs902176,,[]
-rs11134759,,[]
-i6001297,,[]
-rs10234925,,[]
-rs10810516,,[]
-rs331985,,[]
-rs11908536,,[]
-rs2073041,,[]
-rs7166258,,[]
-i5004185,,[]
-rs1807512,,[]
-rs10835201,,[]
-rs3807814,,[]
-rs6564865,,[]
-rs17035378,,[]
-rs12567277,,[]
-rs4729602,,[]
-rs3797887,,[]
-rs11172479,,[]
-rs11135841,,[]
-rs7143698,,[]
-rs949551,,[]
-rs1876830,,[]
-rs8007870,,[]
-rs12663902,,[]
-rs17079796,,[]
-rs2553377,,[]
-i6016214,,[]
-i6032790,,[]
-rs6584817,,[]
-rs922832,,[]
+",-,-,,"[['(-;-)', '0', 'common in clinvar']]"
+i6024118,-,-,,[]
+rs1057744,-,-,,[]
+rs1057868,-,-,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'normal'], ['(T;T)', '1.6', '1.6x higher overall CYP3A activity']]"
+rs1057909,-,-,,"[['(A;A)', '0', 'normal'], ['(A;G)', '3', 'carrier of one CYP2C9_42612A>G allele'], ['(G;G)', '4', 'CYP2C9_42612A>G homozygote']]"
+rs1057910,-,-,Warfarin (Coumadin®),"[['(A;A)', '0.1', 'normal; no effect on warfarin metabolism'], ['(A;C)', '2.5', 'CYP2C9*3 carrier; average 40% reduction in warfarin metabolism'], ['(C;C)', '4', 'CYP2C9*3 homozygote; average 80% reduction in warfarin metabolism; reduced metabolism of number of other drugs']]"
+rs1058026,-,-,,[]
+rs1058164,-,-,,[]
+rs1058205,-,-,,[]
+rs1058322,-,-,,[]
+rs1058396,-,-,,"[['(A;A)', '1', 'Jk(a-/b+) Kidd blood group, barring other variants'], ['(A;G)', '1', 'Jk(a+/b+) Kidd blood group, barring other variants'], ['(G;G)', '1', 'Jk(a+/b-) Kidd blood group, barring other variants']]"
+rs1058564,-,-,,[]
+rs1058587,-,-,,[]
+rs1058768,-,-,,[]
+rs1058881,-,-,,[]
+rs1058930,-,-,,"[['(G;G)', '0', 'normal']]"
+rs1058932,-,-,,[]
+rs1059004,-,-,,[]
+rs1059234,-,-,,[]
+rs1059293,-,-,,[]
+rs1059440,-,-,,[]
+rs1059513,-,-,,[]
+rs1059611,-,-,,"[['(T;T)', '0', 'common in clinvar']]"
+rs1059702,-,-,,[]
+rs1059823,-,-,,[]
+rs1060043,-,-,,[]
+rs1060402,-,-,,[]
+rs1060463,-,-,,[]
+rs1060573,-,-,,"[['(A;A)', 'Decreased risk of acne occurrences in Chinese Han population'], ['(G;A)', '1.25x Increased risk of acne occurrences in Chinese Han population.']]"
+rs1061147,-,-,,"[['(A;A)', '2.2', '2.76x increased risk for Age Related Macular Degeneration.'], ['(A;C)', '1', 'Normal 0.97x risk for Age Related Macular Degeneration.'], ['(C;C)', '2.2', 'Reduced 0.34x risk of Age Related Macular Degeneration.']]"
+rs1061170,-,-,,"[['(C;C)', '3.2', '5.9x risk for AMD; higher mortality among nonagenarians'], ['(C;T)', '2.5', '2.5x risk for AMD; higher mortality among nonagenarians'], ['(T;T)', '1.6', 'lower risk for AMD, generally longer live than (C) allele carriers']]"
+rs1061235,-,-,,"[['(A;A)', '0.1', 'Normal carbamazepine sensitivity; common in clinvar'], ['(A;T)', '2.9', '26% risk of bad reaction to anti-epileptic carbamazepine'], ['(T;T)', '4', '26% risk of bad reaction to anti-epileptic carbamazepine']]"
+rs1061325,-,-,,"[['(C;C)', '2', 'Two copies of ""farmer"" CLTCL1 gene variant'], ['(C;T)', '2', 'One copy of ""hunter-gather"" CLTCL1 gene variant + one ""farmer"" variant'], ['(T;T)', '2', 'Two copies of ""hunter-gatherer"" CLTCL1 gene variant']]"
+rs1061472,-,-,,"[['(A;A)', '0', 'common in clinvar']]"
+rs1061622,-,-,,[]
+rs1061624,-,-,,[]
+rs1061631,-,-,,[]
+rs1061646,-,-,,"[['(C;C)', '0', '1.16x increased risk for breast cancer'], ['(C;T)', '1.08x increased risk for breast cancer'], ['(T;T)', 'normal risk']]"
+rs1061808,-,-,,[]
+rs1062033,-,-,,"[['(C;G)', 'increases susceptibility to postmenopausal osteoporosis'], ['(G;G)', 'increases susceptibility to postmenopausal osteoporosis']]"
+rs1062087,-,-,,"[['(G;G)', '0', 'common in clinvar'], ['(T;T)', '0']]"
+rs1062158,-,-,,[]
+rs1062613,-,-,,[]
+rs1062708,-,-,,[]
+rs1062923,-,-,,"[['(T;T)', '0', 'common on affy axiom data']]"
+rs1063134,-,-,,[]
+rs1063169,-,-,,[]
+rs1063192,-,-,,"[['(C;C)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(C;T)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(T;T)', '1', 'Normal risk of myocardial infarction']]"
+rs1063355,-,-,,[]
+rs1063499,-,-,,[]
+rs1063539,-,-,,[]
+rs1063739,-,-,,"[['(C;C)', '0', 'common in clinvar']]"
+rs1063856,-,-,,"[['(A;A)', '0', 'common in clinvar']]"
+rs1063857,-,-,,"[['(T;T)', '0', 'common in clinvar']]"
+rs1064017,-,-,,[]
+rs1064039,-,-,,"[['(A;A)', '2', 'Higher risk for age-related macular degeneration; slightly higher Alzheimers risk in Caucasians but not Asians'], ['(A;G)', '1.2', 'slightly higher risk for Alzheimers in Caucasians but not Asians'], ['(G;G)', '0', 'common in clinvar']]"
+rs1064074,-,-,,"[['(G;G)', '0', 'common in clinvar']]"
+rs1064395,-,-,"Association between schizophrenia and common variation in neurocan (NCAN), a genetic risk factor for bipolar disorder.","[['(A;A)', '2.1', 'Having the A allele at this SNP makes your risk for developing bipolar disorder or schizophrenia higher.'], ['(A;G)', '2', 'Having any copies of A at this SNP heightens your risk for bipolar disorder and schizophrenia.'], ['(G;G)', 'Normal risk of bipolar disorder or schizophrenia']]"
+rs1064422,-,-,,"[['(C;C)', '0', 'common in clinvar']]"
+rs1064524,-,-,,[]
+rs1064651,-,-,,"[['(C;C)', '8', ""possibly Gaucher's disease, but more likely a mis-oriented interpretation""], ['(C;G)', '3', 'carrier of Gaucher disease allele'], ['(G;G)', '0', 'common/normal']]"
+rs1065297,-,-,,[]
+rs1065356,-,-,,[]
+rs1065489,-,-,,"[['(G;G)', '0', 'common in clinvar']]"
+rs1065569,-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
+rs1065776,-,-,,"[['(C;C)', '0', 'common in complete genomics']]"
+rs1065852,-,-,CYP2D6 drug metabolism,"[['(C;C)', '0', 'normal'], ['(C;T)', '2', 'Carrier of one CYP2D6 decreased or non-functioning variant.'], ['(T;T)', '3.2', 'Homozygous for CYP2D6 decreased or non-functioning variants; possibly less response to some drugs, including tamoxifen']]"
+rs10665,-,-,,[]
+rs106871,-,-,,[]
+rs1071592,-,-,,[]
+rs1071646,-,-,,"[['(C;C)', '0', 'common in clinvar']]"
+rs10733113,-,-,,"[['(G;G)', '0']]"
+rs10733612,-,-,,[]
+rs10733682,-,-,,"[['(A;A)', '0', 'common in clinvar']]"
+rs10734105,-,-,,[]
+rs10734652,-,-,,[]
+rs10735416,-,-,,[]
+rs10735781,-,-,,"[['(C;C)', '>1.11x risk'], ['(C;G)', '1.11x risk'], ['(G;G)', 'common']]"
+rs10737680,-,-,,[]
+rs10737909,-,-,,[]
+rs1073810,-,-,,[]
+rs10738445,-,-,,[]
+rs10738610,-,-,,[]
+rs10738760,-,-,,[]
+rs10739778,-,-,,[]
+rs10740051,-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
+rs10740055,-,-,,[]
+rs10740993,-,-,,[]
+rs1074145,-,-,,[]
+rs10741780,-,-,,[]
+rs1074182,-,-,,[]
+rs10743430,-,-,,"[['(T;T)', '0', 'common in complete genomics']]"
+rs10744391,-,-,,[]
+rs10744743,-,-,,[]
+rs10745527,-,-,,[]
+rs10746463,-,-,,[]
+rs10747502,-,-,,[]
+rs10748128,-,-,,[]
+rs10748180,-,-,,[]
+rs10748185,-,-,,[]
+rs10748643,-,-,,[]
+rs10749127,-,-,,[]
+rs10749535,-,-,,[]
+rs10749971,-,-,,[]
+rs10751226,-,-,,[]
+rs10752637,-,-,,[]
+rs10753575,-,-,,[]
+rs10753929,-,-,,[]
+rs10754339,-,-,,"[['(A;A)', '0', 'normal'], ['(A;G)', '1.3', '1.3x increased risk of breast cancer'], ['(G;G)', '1.4', '1.45x increased risk of breast cancer']]"
+rs10754557,-,-,,[]
+rs10754558,-,-,,"[['(G;G)', '0', 'common in clinvar']]"
+rs10754644,-,-,,[]
+rs10754833,-,-,,[]
+rs10755578,-,-,,[]
+rs1075650,-,-,,[]
+rs10756819,-,-,,[]
+rs10757257,-,-,,[]
+rs10757269,-,-,,[]
+rs10757272,-,-,,"[['(C;C)', '1', 'Normal risk for Coronary artery disease'], ['(C;T)', '1.5', '1.30x increased risk for Coronary artery disease'], ['(T;T)', '2', '1.54x increased risk for Coronary artery disease']]"
+rs10757274,-,-,,"[['(A;A)', 'normal'], ['(A;G)', '~1.2x increased risk for heart disease'], ['(G;G)', '~1.3x increased risk for heart disease']]"
+rs10757278,-,-,,"[['(A;A)', '1.9', '0.78x reduced risk for Coronary Heart Disease. 0.77x reduced risk for Brain Aneurysm and Abdominal Aortic Aneurysm.'], ['(A;G)', '2', '1.3x risk for Heart Attack. Normal risk for Abdominal Aortic Aneurysm and Brain Aneurysm.'], ['(G;G)', '2.5', '1.6x risk for Heart Attack; 1.3x risk for Abdominal Aortic Aneurysm and Brain Aneurysm.']]"
+rs10758161,-,-,,[]
+rs10758593,-,-,,[]
+rs10758658,-,-,,[]
+rs10758669,-,-,,[]
+rs10758892,-,-,,[]
+rs10759,-,-,,[]
+rs10759102,-,-,,[]
+rs1075944,-,-,,"[['(C;C)', '0', 'common in complete genomics']]"
+rs10759734,-,-,,[]
+rs10759930,-,-,,[]
+rs10759932,-,-,,"[['(C;C)', '2', 'increased risk for chorionic plate inflammation'], ['(C;T)', 'increased risk for chorionic plate inflammation'], ['(T;T)', 'normal']]"
+rs10759944,-,-,,[]
+rs10760130,-,-,,[]
+rs10760706,-,-,,[]
+rs10761129,-,-,,[]
+rs10761482,-,-,,[]
+rs10761570,-,-,,[]
+rs10761581,-,-,,[]
+rs1076160,-,-,,[]
+rs1076165,-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
+rs10761659,-,-,,"[['(A;A)', '0', ""1.5x risk of Crohn's disease""], ['(A;G)', '1', ""1.2x risk of Crohn's disease""], ['(G;G)', '0', 'normal']]"
+rs10761670,-,-,,[]
+rs10761785,-,-,,[]
+rs10762058,-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
+rs10763642,-,-,,[]
+rs10763976,-,-,,[]
+rs10764775,-,-,,[]
+rs1076540,-,-,,[]
+rs1076560,-,-,,"[['(A;A)', '2', 'influences working memory'], ['(A;C)', '1.3x increased risk for alcoholism'], ['(C;C)', '0', 'normal']]"
+rs10765819,-,-,,[]
+rs10766117,-,-,,[]
+rs10767873,-,-,,[]
+rs10767942,-,-,,"[['(C;T)'], ['(T;T)', '0', 'common in complete genomics']]"
+rs10767971,-,-,,[]
+rs10768122,-,-,,[]
+rs10768140,-,-,,[]
+rs10769258,-,-,,[]
+rs10769780,-,-,,[]
+rs10769908,-,-,,[]
+rs1076991,-,-,,[]
+rs10769945,-,-,,[]
+rs10770042,-,-,,[]
+rs10770141,-,-,,[]
+rs10770705,-,-,,[]
+rs10771279,-,-,,[]
+rs10771283,-,-,,[]
+rs10771399,-,-,,[]
+rs10771431,-,-,,[]
+rs10772420,-,-,,"[['(A;A)', 'More intense perception of quinine'], ['(A;G)', 'Median more intense perception of quinine'], ['(G;G)', 'Less intense perception of quinine']]"
+rs10772915,-,-,,[]
+rs10772939,-,-,,[]
+rs10773338,-,-,,[]
+rs10773771,-,-,,[]
+rs10774021,-,-,,[]
+rs10774035,-,-,,[]
+rs10774214,-,-,,[]
+rs10774610,-,-,,"[['(C;C)', 'Likely has alcohol flush']]"
+rs10774671,-,-,,[]
+rs10775247,-,-,,[]
+rs10775480,-,-,,[]
+rs1077667,-,-,,[]
+rs10776733,-,-,,[]
+rs10777288,-,-,,[]
+rs10777332,-,-,,[]
+rs10777845,-,-,,[]
+rs10778213,-,-,,[]
+rs1077834,-,-,,[]
+rs1077858,-,-,,[]
+rs1077861,-,-,,[]
+rs1077989,-,-,,[]
+rs10781380,-,-,,[]
+rs10781500,-,-,,[]
+rs10782529,-,-,,[]
+rs1078305,-,-,,[]
+rs10783050,-,-,,"[['(T;T)', '0', 'common in complete genomics']]"
+rs10784339,-,-,,[]
+rs10784496,-,-,,[]
+rs10784502,-,-,,"[['(C;C)', '2', 'better intracranial volume?'], ['(C;T)', '1', 'Slightly higher intracranial volume'], ['(T;T)', '1.5', 'less intracranial volume?']]"
+rs10784762,-,-,,[]
+rs10785430,-,-,,[]
+rs10785877,-,-,,[]
+rs10786284,-,-,,[]
+rs10786828,-,-,,[]
+rs10787760,-,-,,[]
+rs10788528,-,-,,[]
+rs10788819,-,-,,[]
+rs10789082,-,-,,[]
+rs10789230,-,-,,[]
+rs1078967,-,-,,[]
+rs1078985,-,-,,[]
+rs10789859,-,-,,[]
+rs10790212,-,-,,[]
+rs10790289,-,-,,[]
+rs1079128,-,-,,[]
+rs10791957,-,-,,[]
+rs10792830,-,-,,[]
+rs10794595,-,-,,[]
+rs10794720,-,-,,"[['(C;C)', '0', 'common in complete genomics']]"
+rs10795130,-,-,,[]
+rs10795189,-,-,,[]
+rs10795668,-,-,,[]
+rs10795791,-,-,,[]
+rs10795917,-,-,,[]
+rs1079596,-,-,,[]
+rs1079597,-,-,,[]
+rs10796051,-,-,,[]
+rs1079727,-,-,,[]
+rs10797919,-,-,,"[['(C;G)', '0', 'common in complete genomics']]"
+rs10798,-,-,,"[['(A;A)', '0', 'common in clinvar']]"
+rs10798269,-,-,,[]
+rs10798959,-,-,,[]
+rs10799319,-,-,,[]
+rs10799824,-,-,,[]
+rs10800098,-,-,,"[['(G;G)', '0', 'common on affy axiom data']]"
+rs10800309,-,-,,[]
+rs10800485,-,-,,[]
+rs10801047,-,-,,[]
+rs10801555,-,-,,[]
+rs10801911,-,-,,[]
+rs10801935,-,-,,"[['(A;A)', 'normal'], ['(A;C)', 'normal'], ['(C;C)', '1.6', '0.3x decreased risk of breast cancer']]"
+rs10804533,-,-,,[]
+rs10806425,-,-,,[]
+rs10808265,-,-,,[]
+rs10808555,-,-,,[]
+rs10808556,-,-,,[]
+rs10808746,-,-,,[]
+rs1080983,-,-,,"[['(A;G)', '0.1', 'common']]"
+rs1080984,-,-,,"[['(A;A)', '0'], ['(T;T)', '0', 'common in complete genomics']]"
+rs1080989,-,-,,[]
+rs1080992,-,-,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in complete genomics']]"
+rs1080993,-,-,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in complete genomics']]"
+rs1080996,-,-,,[]
+rs1081000,-,-,,[]
+rs1081004,-,-,,"[['(G;G)', '0', 'common in complete genomics']]"
+rs10810790,-,-,,[]
+rs10810865,-,-,,"[['(T;T)', '0', 'common on affy axiom data']]"
+rs10811474,-,-,,[]
+rs10811661,-,-,,"[['(C;C)', '0', 'normal'], ['(C;T)', '2', '1.2x increased risk for type-2 diabetes'], ['(T;T)', '2.1', '1.2x increased risk for type-2 diabetes']]"
+rs10811771,-,-,,[]
+rs10812428,-,-,,[]
+rs10812610,-,-,,[]
+rs10813821,-,-,,[]
+rs10814916,-,-,,[]
+rs10814969,-,-,,[]
+rs6915442,-,-,,[]
+rs16992609,-,-,,[]
+rs2359372,-,-,,[]
+rs514122,-,-,,[]
+rs8076131,-,-,,[]
+rs10099507,-,-,,[]
+rs13037326,-,-,,[]
+rs10783793,-,-,,[]
+rs4819852,-,-,,[]
+rs12282747,-,-,,[]
+i6023993,-,-,,[]
+rs3810504,-,-,,[]
+rs16975739,-,-,,[]
+rs7303397,-,-,,[]
+i5048521,-,-,,[]
+rs2731647,-,-,,[]
+rs10074858,-,-,,[]
+rs6879291,-,-,,[]
+rs17458108,-,-,,[]
+rs902176,-,-,,[]
+rs11134759,-,-,,[]
+i6001297,-,-,,[]
+rs10234925,-,-,,[]
+rs10810516,-,-,,[]
+rs331985,-,-,,[]
+rs11908536,-,-,,[]
+rs2073041,-,-,,[]
+rs7166258,-,-,,[]
+i5004185,-,-,,[]
+rs1807512,-,-,,[]
+rs10835201,-,-,,[]
+rs3807814,-,-,,[]
+rs6564865,-,-,,[]
+rs17035378,-,-,,[]
+rs12567277,-,-,,[]
+rs4729602,-,-,,[]
+rs3797887,-,-,,[]
+rs11172479,-,-,,[]
+rs11135841,-,-,,[]
+rs7143698,-,-,,[]
+rs949551,-,-,,[]
+rs1876830,-,-,,[]
+rs8007870,-,-,,[]
+rs12663902,-,-,,[]
+rs17079796,-,-,,[]
+rs2553377,-,-,,[]
+i6016214,-,-,,[]
+i6032790,-,-,,[]
+rs6584817,-,-,,[]
+rs922832,-,-,,[]
+rs12762440,-,-,,[]
+rs6474069,-,-,,[]
+rs1317768,-,-,,[]
+rs11217357,-,-,,[]
+rs1019153,-,-,,[]
+rs12050549,-,-,,[]
+rs117119372,-,-,,[]
+rs2134400,-,-,,[]
+rs146900210,-,-,,[]
+rs1540052,-,-,,[]
+rs10484847,-,-,,[]
+rs9486431,-,-,,[]
+rs10507341,-,-,,[]
+rs8111177,-,-,,[]
+rs6944822,-,-,,[]
+rs17309204,-,-,,[]
+rs6431929,-,-,,[]
+rs3860620,-,-,,[]
+rs483760,-,-,,[]
+rs10845080,-,-,,[]
+rs2585800,-,-,,[]
+rs1648373,-,-,,[]
+rs11679213,-,-,,[]
+rs933399,-,-,,[]
+i6017730,-,-,,[]
+rs10519799,-,-,,[]
+rs6771493,-,-,,[]
+rs12530168,-,-,,[]
+rs7977734,-,-,,[]
+rs8035094,-,-,,[]
+rs11685345,-,-,,[]
+rs7740768,-,-,,[]
+rs1343873,-,-,,[]
+rs2129280,-,-,,[]
+rs9465648,-,-,,[]
+rs7325627,-,-,,[]
+rs79444406,-,-,,[]
+rs10021418,-,-,,[]
+rs7787057,-,-,,[]
+rs4237258,-,-,,[]
+rs6803785,-,-,,[]
+rs111487298,-,-,,[]
+rs3763468,-,-,,[]
+rs3755527,-,-,,[]
+rs4148863,-,-,,[]
+rs2913779,-,-,,[]
+rs3740066,-,-,,"[['(A;A)', '4.4x risk for ICP'], ['(A;G)', '1.6x risk for ICP'], ['(C;C)', '0'], ['(G;G)', '0', 'average']]"
+rs892414,-,-,,[]
+rs7738394,-,-,,[]
+rs12901270,-,-,,[]
+rs10897609,-,-,,[]
+rs9479087,-,-,,[]
+rs2028742,-,-,,[]
+rs1526421,-,-,,[]
+rs6504663,-,-,,[]
+rs117016905,-,-,,[]
+rs141379267,-,-,,[]
+rs61735377,-,-,,[]
+rs115811779,-,-,,[]
+rs2990536,-,-,,[]
+rs6974169,-,-,,[]
+i4000206,-,-,,[]
+rs7283173,-,-,,[]
+i6019797,-,-,,[]
+rs1058326,-,-,,[]
+rs1052638,-,-,,[]
+rs896629,-,-,,[]
+rs7843215,-,-,,[]
+rs5918867,-,-,,[]
+rs8062038,-,-,,[]
+rs76313555,-,-,,[]
+rs7028321,-,-,,[]
+rs9322454,-,-,,[]
+rs17716149,-,-,,[]
+rs7745603,-,-,,[]
+i6015886,-,-,,[]
+rs11261027,-,-,,[]
+rs6926401,-,-,,[]
+rs656134,-,-,,[]
+rs10936840,-,-,,[]
+rs1356016,-,-,,[]
+rs8105064,-,-,,[]
+rs160283,-,-,,[]
+rs12647562,-,-,,[]
+rs2072885,-,-,,[]
+rs344257,-,-,,[]
+rs6803028,-,-,,[]
+rs4888184,-,-,,[]
+rs9819348,-,-,,[]
+rs3115258,-,-,,[]
+rs7781074,-,-,,[]
+rs2892403,-,-,,[]
+i6033714,-,-,,[]
+rs10239188,-,-,,[]
+i6057418,-,-,,[]
+rs10827263,-,-,,[]
+rs481854,-,-,,[]
+rs1470148,-,-,,[]
+rs13249565,-,-,,[]
+rs6112671,-,-,,[]

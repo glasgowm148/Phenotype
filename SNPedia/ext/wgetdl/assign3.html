@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Filename: assign3.html
+     Author:  Scott Anderson
+     Purpose: Assignment 3 on CSS Layout
+     Modications:  Feb 2014: Eni made significant changes to the structure, 
+	 to use HTML5 semantic tags instead of div-s with id-s.
+     Jean added links for "Back to top".
+	 Sep 2014: Eni added some more comments.
+-->
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Dangerous Magical Creatures</title>
+    <link rel="stylesheet" href="potterstyle.css">    
+
+  </head>
+  
+  
+  <body>
+  
+    <header>
+      <!--The background image for the header was taken by this website:
+      <a href="http://ngustafsson.blogspot.com/2011/04/hagrid-and-fang.html"-->
+        <img src="images/Gustafsson_HagridandFang_small.jpg" alt="Hagrid">
+        <h1>Hagrid's Horribles </h1>
+    
+        <p>Rubeus Hagrid has been Hogwarts Gamekeeper for many years.  He's
+        also occasional professor of Care of Magical Creatures.  Despite his
+        gentle disposition, he has an inordinate fondness for creatures that
+        are a bit ... dangerous. Here are some of his favorite creatures!
+        </p> 
+
+    </header>
+  
+	<!-- These links use fragment URLs to go to different parts of the document.-->
+    <ul>
+       <li><a href="#fluffy">Fluffy</a></li>
+       <li><a href="#norbert">Norbert</a>
+       <li><a href="#aragog">Aragog</a>
+       <li><a href="#buckbeak">Buckbeak</a>
+       <li><a href="#skrewts">Blast-ended Skrewts</a>
+    </ul>
+
+    <!-- The id-s in the sections are used for the table of content links, 
+         not for styling.--> 
+	  
+    <section id="fluffy">
+        <h2>Fluffy</h2>
+
+        <figure>
+          <img src="images/250px-Fluffy.jpg" 
+               alt="Fluffy">
+          <figcaption>Fluffy</figcaption>
+        </figure>
+      
+        <p>
+        Fluffy is an enormous three-headed dog who guarded the Sorcerer's
+        Stone.
+
+        <p>Sed nunc enim, gravida id auctor sed, mattis non
+        mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. Ut enim elit, sodales in
+        rhoncus eget, ullamcorper non mauris. Morbi non mauris
+        orci. Integer eros turpis, viverra eu laoreet vitae, luctus at
+        nisi. Nam nec velit nulla. Aenean nec augue sed purus tempus
+        convallis at et metus. Nunc ultrices vulputate viverra. Nullam non
+        magna non nisi egestas rhoncus nec id elit. Nam et libero a urna
+        convallis condimentum. Proin imperdiet nisi nec augue imperdiet ac
+        scelerisque nunc ultrices. Ut laoreet rhoncus eros dignissim
+        gravida. 
+	
+        <p>
+        In hac habitasse platea dictumst.  Nunc tristique pretium
+        elit, nec viverra sapien consequat dictum.  Fusce pharetra ligula vel
+        justo ullamcorper egestas.  Fusce elementum, lorem porta blandit
+        lacinia, justo nisl semper lectus, tincidunt mattis tellus magna sed
+        diam.  Donec urna est, vestibulum non vestibulum ac, egestas id elit.
+        Proin imperdiet nisi nec augue imperdiet ac scelerisque nunc ultrices.
+        Ut laoreet rhoncus eros dignissim gravida.  Curabitur erat leo,
+        feugiat vitae pellentesque ac, viverra in erat.  Aliquam pretium
+        eleifend dolor od lacinia.  Pellentesque vestibulum felis lacinia
+        lectus tempus laoreet. <a href="#">Back to top...</a>
+			
+		<!-- We use the symbol "#" to link at the top of the page -->
+			
+      </section> <!-- end of fluffy section-->
+      
+    
+      <section id="norbert">
+      
+        <h2>Norbert/Norberta</h2>
+
+        <figure>
+          <img src="images/250px-Norbert.jpg" 
+               alt="Norbert">
+          <figcaption>Norbert, a dragon</figcaption>
+        </figure>
+
+        <p>Hagrid hatched Norbert, a Norwegian Ridgeback, from an egg, but
+        keeping dragons is illegal, so Hagrid had to send Norbert away.
+        Later, her name was changed to Norberta.
+
+        <p>Etiam id condimentum metus. Phasellus
+        adipiscing viverra neque in posuere. Praesent elementum mollis
+        orci, ac ornare tellus molestie vitae. Morbi at est elit. Nam
+        interdum vestibulum erat sit amet interdum. Nulla mi urna, tempus
+        eu hendrerit ut, elementum eget nulla. Nullam nec mi non odio
+        vehicula vulputate. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos.
+        
+        <p>
+        Fusce et lacinia mauris. In accumsan faucibus malesuada. Nulla
+        facilisi. Fusce viverra, tortor in varius iaculis, ante libero
+        viverra metus, eu fringilla felis purus ut erat. In hac
+        habitasse platea dictumst. Praesent venenatis, orci fringilla
+        tristique porta, lorem nisi faucibus elit, ac dictum libero quam
+        eu quam. Maecenas a lorem nisl. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis
+        egestas. <a href="#">Back to top...</a>
+        
+      </section> <!-- end of norbert section-->
+      
+      
+      <section id="aragog">
+        
+        <h2>Aragog</h2>
+
+        <figure>
+          <img src="images/250px-Aragog.jpg" 
+               alt="Aragog">
+          <figcaption>Aragog, an acromantula</figcaption>
+        </figure>
+
+        <p>Aragog is one of a group of <em>large</em> spiders
+        called <em>acromantula</em>.  When we say <q>large</q>, we don't
+        mean the size of a butterfly, we mean the size of a Buick.
+        <p>
+          Suspendisse convallis, libero sed vestibulum fringilla, est
+          orci molestie odio, a aliquam purus mi vitae nulla. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          lacinia, purus sed tincidunt scelerisque, neque nisl imperdiet
+          tortor, at sagittis felis lacus at turpis. In fringilla
+          blandit enim eleifend molestie. Nulla feugiat aliquam justo
+          nec malesuada. Nulla at sapien nisl. Curabitur id mauris
+          tortor. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Donec id mollis enim. Mauris arcu neque, egestas at
+          tempus id, ullamcorper a dui. Vivamus eget bibendum
+          massa. Integer rhoncus, urna ac congue mattis, elit mauris
+          tristique tellus, tincidunt semper diam augue eget
+          justo. Proin vel enim lorem. <a href="#">Back to top...</a>
+          
+       </section><!--end of aragog section-->
+      
+      
+       <section id="buckbeak">      
+         <h2>Buckbeak</h2>
+          
+         <figure>
+           <img src="images/250px-Buckbeak.jpg"  
+               alt="Buckbeak">
+           <figcaption>Buckbeak, a Hippogriff</figcaption>
+         </figure>
+
+          <p>Buckbeak is a hippogriff who was sentenced to be executed
+          because of how supposedly dangerous he was, though he was probably
+          one of the least dangerous of Hagrid's affections.
+  
+          <p>Suspendisse potenti. Maecenas et massa sit amet nisi semper
+          vestibulum. Phasellus erat tortor, ornare nec blandit vel,
+          molestie ut quam. Vestibulum eu quam nec quam porta
+          euismod. Maecenas consequat arcu eget felis convallis ac luctus
+          risus venenatis. In sit amet mi vitae odio faucibus tristique quis
+          et urna. Donec sodales, metus in sollicitudin dignissim, mi sapien
+          blandit odio, eu vulputate tortor lectus eu massa. Nam cursus
+          pharetra fringilla. Etiam congue dui et mauris facilisis ac
+          molestie erat tempor. Pellentesque faucibus tristique nibh, ac
+          condimentum massa scelerisque nec. Integer ac metus dui. Morbi
+          arcu magna, eleifend volutpat bibendum eu, lacinia vel urna.
+           <a href="#">Back to top</a>...
+            
+       </section> <!--end of buckbeak section-->
+
+      
+       <section id="skrewts">     
+          <h2>Blast-Ended Skrewts</h2>
+          
+          <figure>
+            <img src="images/Blast-Ended_Skrewt.gif" 
+                 alt="a blast-ended skrewt">
+            <figcaption>a Blast-Ended Skrewt</figcaption>
+          </figure>
+  
+          <p>Hagrid bred these novel creatures from Manticores and Fire
+          crabs.
+            
+          <p>
+            In eu risus et enim tincidunt adipiscing iaculis at dolor. Sed
+            accumsan, neque id sollicitudin congue, ante quam lacinia dolor,
+            eget dapibus mauris erat sed sapien. Vestibulum et elit
+            magna. Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Fusce id enim eu enim
+            porttitor tempor condimentum sed nisi. Nulla venenatis dapibus
+            felis vel tempor. Maecenas sodales rhoncus erat et luctus. Sed
+            ac volutpat augue. Nunc et turpis elit. Duis faucibus, neque
+            sollicitudin viverra blandit, justo lectus egestas nunc, at
+            bibendum velit nisl non tellus. Pellentesque quis orci at tellus
+            sagittis interdum. Nunc interdum magna ut arcu mollis
+            volutpat. Nunc at massa interdum risus facilisis scelerisque sed
+            ac arcu.  Proin imperdiet nisi nec augue imperdiet ac
+            scelerisque nunc ultrices. Ut laoreet rhoncus eros dignissim
+            gravida. Curabitur erat leo, feugiat vitae pellentesque ac,
+            viverra in erat. Aliquam pretium eleifend dolor id
+            lacinia. Pellentesque vestibulum felis lacinia lectus tempus
+            laoreet. <a href="#">Back to top...</a>
+     
+        </section> <!--end of skrewts section-->                 
+            
+        <footer>  
+          <p>Copyright:  All pictures from articles on the
+          <a href="http://harrypotter.wikia.com">harrypotter.wikia.com</a>
+          wiki at <a href="http://wikia.com">Wikia</a> 
+          and is licensed under the
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
+          Commons Attribution-Share Alike License</a>.
+          </p>
+      
+          <p><a href="http://validator.w3.org/check?uri=referer">
+            <img src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"  
+                 alt="Valid HTML 5!" height="31" width="88">   </a> 
+          &nbsp;
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img height="31" width="88"
+                 src="http://cs.wellesley.edu/~cs110/Icons/vcss.gif" 
+            alt="Valid CSS!"></a>
+          </p>
+        </footer> 
+ 
+  </body>
+</html>

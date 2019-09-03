@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.00084", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "227073271", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Mental and behavioral", 
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PSEN2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "14623725", 
+        "15663477", 
+        "17186461", 
+        "17345043", 
+        "22503161"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "-1", 
+        "Penetrance": "2", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Occasional observations report this in patients with Alzheimer's Disease (AD), and other variants in this gene cause early-onset AD. One group speculates an association with dilated cardiomyopathy. However, a functional study found no abnormal behavior (Walker et al.) and none of these studies showed statistically significant associations of the variant with either of these diseases.", 
+    "URL": "http://evidence.pgp-hms.org/PSEN2-S130L", 
+    "Variant Name": "PSEN2-S130L", 
+    "Variant Page": "http://evidence.pgp-hms.org/PSEN2-S130L"
+}

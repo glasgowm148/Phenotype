@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.012", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "42338993", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SLC4A1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "8471774"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Rare and reported to cause hemolytic anemia in a recessive manner, although insufficient data is published to establish statistical significance. Polyphen 2 predicts a benign effect.", 
+    "URL": "http://evidence.pgp-hms.org/SLC4A1-E40K", 
+    "Variant Name": "SLC4A1-E40K", 
+    "Variant Page": "http://evidence.pgp-hms.org/SLC4A1-E40K", 
+    "dbSNP IDs": [
+        "rs45562031"
+    ]
+}

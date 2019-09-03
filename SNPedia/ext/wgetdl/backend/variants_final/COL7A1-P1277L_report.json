@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.041", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "48623124", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "COL7A1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Polymorphism, presumed benign.", 
+    "URL": "http://evidence.pgp-hms.org/COL7A1-P1277L", 
+    "Variant Name": "COL7A1-P1277L", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL7A1-P1277L", 
+    "dbSNP IDs": [
+        "rs35761247"
+    ]
+}

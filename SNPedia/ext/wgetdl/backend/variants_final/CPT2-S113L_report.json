@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.00093", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "53668099", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "CPT2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "8358442", 
+        "15622536", 
+        "15642848"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This is the most common variant associated with late-onset carnitine palmitoyltransferase deficiency, which is classically viewed as recessive.", 
+    "URL": "http://evidence.pgp-hms.org/CPT2-S113L", 
+    "Variant Name": "CPT2-S113L", 
+    "Variant Page": "http://evidence.pgp-hms.org/CPT2-S113L", 
+    "dbSNP IDs": [
+        "rs74315294"
+    ]
+}

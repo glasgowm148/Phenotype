@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.017", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "17548878", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "USH1C", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12702164"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This moderately common variant (1000 genomes allele frequency of 6.2%) was reported found heterozygously in a patient with Usher syndrome. However, the high allele frequency and fact that it is a conservative amino acid change supports classifying this variant as benign.", 
+    "URL": "http://evidence.pgp-hms.org/USH1C-V130I", 
+    "Variant Name": "USH1C-V130I", 
+    "Variant Page": "http://evidence.pgp-hms.org/USH1C-V130I", 
+    "dbSNP IDs": [
+        "rs55843567"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.11", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "15291576", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "NOTCH3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "18765654", 
+        "19528524", 
+        "22348356"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably nonpathogenic. Reported by Scheid et al. as possibly causing CADASIL in a dominant manner, but an immediate follow-up from Quattrone et al. disagreed with this hypothesis, pointing to the presence of the variant in their own controls and the high allele frequency for the variant seen in dbSNP data.", 
+    "URL": "http://evidence.pgp-hms.org/NOTCH3-A1020P", 
+    "Variant Name": "NOTCH3-A1020P", 
+    "Variant Page": "http://evidence.pgp-hms.org/NOTCH3-A1020P", 
+    "dbSNP IDs": [
+        "rs35769976"
+    ]
+}

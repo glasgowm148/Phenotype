@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0026", 
+    "Build 37 Chromosome": "chr4", 
+    "Build 37 Position": "88989102", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PKD2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17582161", 
+        "20881056"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Predicted to cause autosomal dominant polycystic kidney disease, but without control allele frequency the report cannot be tested for statistical significance.", 
+    "URL": "http://evidence.pgp-hms.org/PKD2-S804N", 
+    "Variant Name": "PKD2-S804N", 
+    "Variant Page": "http://evidence.pgp-hms.org/PKD2-S804N"
+}

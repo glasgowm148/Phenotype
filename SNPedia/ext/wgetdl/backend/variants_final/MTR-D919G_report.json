@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.22", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "237048500", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MTR", 
+    "Impact": "Protective", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "10498402", 
+        "14744749", 
+        "17417062", 
+        "17855192"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "1", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant was weakly associated with a protective effect vs. colorectal cancer, but only in individuals with low alcohol consumption.\n\n\n", 
+    "URL": "http://evidence.pgp-hms.org/MTR-D919G", 
+    "Variant Name": "MTR-D919G", 
+    "Variant Page": "http://evidence.pgp-hms.org/MTR-D919G", 
+    "dbSNP IDs": [
+        "rs1805087"
+    ]
+}

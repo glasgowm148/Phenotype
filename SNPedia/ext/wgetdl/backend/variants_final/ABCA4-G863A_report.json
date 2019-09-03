@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.0049", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "94517254", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "ABCA4", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "9054934", 
+        "10090887", 
+        "11919200", 
+        "11973624", 
+        "18285826"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": "4", 
+        "Functional": "0", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Various publications report this variant causes Stargardt Disease in a recessive manner, when combined with another more severe variant. Stargardt disease causes progressive vision loss and blindness.", 
+    "URL": "http://evidence.pgp-hms.org/ABCA4-G863A", 
+    "Variant Name": "ABCA4-G863A", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCA4-G863A", 
+    "dbSNP IDs": [
+        "rs76157638"
+    ]
+}

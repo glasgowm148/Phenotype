@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ITGB2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "9884339"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Reported to cause leukocyte adhesion deficiency in a recessive manner. Only one case reported. This variant appears to be too rare to establish statistical significance for this association, but the variant gene fails to produce product when studied in vitro.", 
+    "URL": "http://evidence.pgp-hms.org/ITGB2-G273R", 
+    "Variant Name": "ITGB2-G273R", 
+    "Variant Page": "http://evidence.pgp-hms.org/ITGB2-G273R"
+}

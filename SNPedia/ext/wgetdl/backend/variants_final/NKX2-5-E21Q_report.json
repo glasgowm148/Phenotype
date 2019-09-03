@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.00047", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "172662026", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NKX2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "11714651", 
+        "12798584"
+    ], 
+    "Scores": {
+        "Case/Control": null, 
+        "Computational": "0", 
+        "Familial": "1", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably nonpathogenic. Reported in a single case of tetralogy of fallot (a congenital heart defect), although an unaffected mother and grandmother were also carriers. A later study also found the variant in an affected family, but the variant did not segregate with disease (other affected family members were *not* carriers) -- they conclude that it is probably a nonpathogenic polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/NKX2-5-E21Q", 
+    "Variant Name": "NKX2-5-E21Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/NKX2-5-E21Q", 
+    "dbSNP IDs": [
+        "rs104893904"
+    ]
+}

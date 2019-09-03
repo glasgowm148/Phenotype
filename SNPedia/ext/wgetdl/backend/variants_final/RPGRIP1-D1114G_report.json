@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.026", 
+    "Build 37 Chromosome": "chr14", 
+    "Build 37 Position": "21811196", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RPGRIP1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11528500"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant is hypothesized to cause Leber's Congenital Amaurosis in a recessive manner (causing severe vision loss and blindness), but stastical significance cannot be established without any observations of allele frequency in controls. This variant is a missense and predicted by Polyphen 2 to have a benign effect, while other causal variants implicated in this gene are severe truncating variants (nonsense or frameshift mutations).", 
+    "URL": "http://evidence.pgp-hms.org/RPGRIP1-D1114G", 
+    "Variant Name": "RPGRIP1-D1114G", 
+    "Variant Page": "http://evidence.pgp-hms.org/RPGRIP1-D1114G", 
+    "dbSNP IDs": [
+        "rs17103671"
+    ]
+}

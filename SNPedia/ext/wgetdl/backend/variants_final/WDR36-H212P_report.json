@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.00047", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "110436345", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "WDR36", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "18172102", 
+        "19150991"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign.", 
+    "URL": "http://evidence.pgp-hms.org/WDR36-H212P", 
+    "Variant Name": "WDR36-H212P", 
+    "Variant Page": "http://evidence.pgp-hms.org/WDR36-H212P"
+}

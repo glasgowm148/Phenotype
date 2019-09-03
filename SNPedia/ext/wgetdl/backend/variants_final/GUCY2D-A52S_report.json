@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.21", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "7906519", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "GUCY2D", 
+    "Impact": "Benign", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "8944027"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "One publication suggested that this variant possibly causes Leber's congenital amaurosis in a recessive manner, but the frequency data (36% in 1000 genomes) contradicts any significant pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/GUCY2D-A52S", 
+    "Variant Name": "GUCY2D-A52S", 
+    "Variant Page": "http://evidence.pgp-hms.org/GUCY2D-A52S", 
+    "dbSNP IDs": [
+        "rs61749665"
+    ]
+}

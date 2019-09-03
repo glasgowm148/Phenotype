@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0056", 
+    "Build 37 Chromosome": "chr4", 
+    "Build 37 Position": "3475166", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DOK7", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17439981", 
+        "20562457"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant was seen as a compound heterozygote (with either P376PfsX30 or P469H) in two individuals with congenital myasthenic syndromes (out of a screen of 200). Other mutations in this gene are associated with the syndrome, but there are insufficient controls to establish this variant in particular as significant.", 
+    "URL": "http://evidence.pgp-hms.org/DOK7-S45L", 
+    "Variant Name": "DOK7-S45L", 
+    "Variant Page": "http://evidence.pgp-hms.org/DOK7-S45L", 
+    "dbSNP IDs": [
+        "rs62272670"
+    ]
+}

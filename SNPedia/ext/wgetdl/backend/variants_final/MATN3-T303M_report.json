@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.011", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "20202930", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MATN3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12736871"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "1", 
+        "Familial": "2", 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "An Iceland study implicated this in causing increased osteoarthritis -- in particular, hand osteoarthritis. Because the variant is rare, the statistical significance of observations is weak. The authors estimate that individuals heterozygous for this variant have a 2.1-fold risk for hand osteoarthritis.", 
+    "URL": "http://evidence.pgp-hms.org/MATN3-T303M", 
+    "Variant Name": "MATN3-T303M", 
+    "Variant Page": "http://evidence.pgp-hms.org/MATN3-T303M", 
+    "dbSNP IDs": [
+        "rs77245812"
+    ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~cpollali/christinapollalis/personalwebsite/less/mixins</title>
+ </head>
+ <body>
+<h1>Index of /~cpollali/christinapollalis/personalwebsite/less/mixins</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=D">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/~cpollali/christinapollalis/personalwebsite/less/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="center-block.less">center-block.less</a>      </td><td align="right">2016-07-25 08:51  </td><td align="right">120 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="size.less">size.less</a>              </td><td align="right">2016-07-25 08:51  </td><td align="right">127 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="text-emphasis.less">text-emphasis.less</a>     </td><td align="right">2016-07-25 08:51  </td><td align="right">128 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="opacity.less">opacity.less</a>           </td><td align="right">2016-07-25 08:51  </td><td align="right">148 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="background-variant.less">background-variant.less</a></td><td align="right">2016-07-25 08:51  </td><td align="right">151 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="labels.less">labels.less</a>            </td><td align="right">2016-07-25 08:51  </td><td align="right">161 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="text-overflow.less">text-overflow.less</a>     </td><td align="right">2016-07-25 08:51  </td><td align="right">162 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="progress-bar.less">progress-bar.less</a>      </td><td align="right">2016-07-25 08:51  </td><td align="right">191 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="resize.less">resize.less</a>            </td><td align="right">2016-07-25 08:51  </td><td align="right">196 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="nav-divider.less">nav-divider.less</a>       </td><td align="right">2016-07-25 08:51  </td><td align="right">232 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="reset-filter.less">reset-filter.less</a>      </td><td align="right">2016-07-25 08:51  </td><td align="right">248 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="alerts.less">alerts.less</a>            </td><td align="right">2016-07-25 08:51  </td><td align="right">257 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="tab-focus.less">tab-focus.less</a>         </td><td align="right">2016-07-25 08:51  </td><td align="right">332 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="responsive-visibility.less">responsive-visibilit..&gt;</a></td><td align="right">2016-07-25 08:51  </td><td align="right">354 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="nav-vertical-align.less">nav-vertical-align.less</a></td><td align="right">2016-07-25 08:51  </td><td align="right">364 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="border-radius.less">border-radius.less</a>     </td><td align="right">2016-07-25 08:51  </td><td align="right">468 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reset-text.less">reset-text.less</a>        </td><td align="right">2016-07-25 08:51  </td><td align="right">470 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="pagination.less">pagination.less</a>        </td><td align="right">2016-07-25 08:51  </td><td align="right">485 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="panels.less">panels.less</a>            </td><td align="right">2016-07-25 08:51  </td><td align="right">537 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="list-group.less">list-group.less</a>        </td><td align="right">2016-07-25 08:51  </td><td align="right">546 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="hide-text.less">hide-text.less</a>         </td><td align="right">2016-07-25 08:51  </td><td align="right">575 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="clearfix.less">clearfix.less</a>          </td><td align="right">2016-07-25 08:51  </td><td align="right">605 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="table-row.less">table-row.less</a>         </td><td align="right">2016-07-25 08:51  </td><td align="right">700 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="image.less">image.less</a>             </td><td align="right">2016-07-25 08:51  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="buttons.less">buttons.less</a>           </td><td align="right">2016-07-25 08:51  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="forms.less">forms.less</a>             </td><td align="right">2016-07-25 08:51  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="grid-framework.less">grid-framework.less</a>    </td><td align="right">2016-07-25 08:51  </td><td align="right">2.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="grid.less">grid.less</a>              </td><td align="right">2016-07-25 08:51  </td><td align="right">3.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="gradients.less">gradients.less</a>         </td><td align="right">2016-07-25 08:51  </td><td align="right">4.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="vendor-prefixes.less">vendor-prefixes.less</a>   </td><td align="right">2016-07-25 08:51  </td><td align="right">6.5K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

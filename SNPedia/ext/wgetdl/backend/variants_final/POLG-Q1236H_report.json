@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.058", 
+    "Build 37 Chromosome": "chr15", 
+    "Build 37 Position": "89859994", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "POLG", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "15917273", 
+        "16595552"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "0", 
+        "Severity": "3", 
+        "Treatability": null
+    }, 
+    "Summary": "Generally a nonpathogenic polymorphism, but may have a modifier effect that increases severity when combined in cis with other pathogenic variants.", 
+    "URL": "http://evidence.pgp-hms.org/POLG-Q1236H", 
+    "Variant Name": "POLG-Q1236H", 
+    "Variant Page": "http://evidence.pgp-hms.org/POLG-Q1236H", 
+    "dbSNP IDs": [
+        "rs3087374"
+    ]
+}

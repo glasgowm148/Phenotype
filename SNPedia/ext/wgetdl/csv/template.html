@@ -1,0 +1,335 @@
+<?php
+   session_start();
+   error_reporting(E_ERROR);
+
+   $_SESSION["vis"] = "sunburst";
+   $_SESSION['vis_start_time'] = time(); //start timer
+?>
+
+<!DOCTYPE>
+<html>
+	<head>
+
+		<title>Visualization</title>
+
+		<!--original css-->
+		<link rel="stylesheet" href="css/new.css">
+		<!--font awesome css-->
+		<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+		<!--font-->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,400' rel='stylesheet' type='text/css'>
+
+
+		<!-- d3 + jquery -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    	<!--js-->
+		<script src="js/index.js"></script>
+
+		<!--tooltips-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!-- ********* old header content ******* -->
+		<script type="text/javascript" charset="utf8" src="js/jquery-1.10.2.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- CSS concatenated and minified via ant build script-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+    	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <!-- .old header content-->
+
+	    <!-- need for tooltips -->
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  		<script src="js/CustomTooltip.js"></script>
+
+	    <!-- Added from the visualization that was working on the previous template -->
+		<script type="text/javascript">
+    		// Hack to make this example display correctly in an iframe on bl.ocks.org
+    		d3.select(self.frameElement).style("height", "1000px");
+ 		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+	      <div class="navbar navbar-fixed-top navbar-inverse">
+	        <div class="navbar-inner">
+	            <span class="brand" style="font-size:20px; padding-left:40px !important"><img src="assets/img/dna.png"> GenomiX: PGHCI Variant Report</span>
+	        </div>
+	      </div>
+	    </header>
+
+	    <!--tab code source: http://webdesignerhut.com/create-pure-css-tabs/ -->
+	    <div class="tabs">
+				<p id = "instructions">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus, lacus vel
+						consectetur laoreet, velit tortor lacinia urna, sit amet vulputate leo ipsum.
+				</p>
+		   	<!-- Radio button and lable for #tab-content1 -->
+			<input type="radio" name="tabs" id="tab1" checked>
+			<label for="tab1">
+				<span>Overview</span>
+			</label>
+
+			<!-- Radio button and lable for #tab-content3 -->
+			<input type="radio" name="tabs" id="tab3">
+			<label for="tab3">
+				<span>Glossary</span>
+			</label>
+
+			<!-- ******************* OVERVIEW CONTENT ********************* -->
+
+			<!-- Tab 1 Content-->
+			<div id="tab-content1" class="tab-content main-tabs">
+
+				<div class="row">
+
+		    		<div class="col-sm-2" style="background-color:#f2f2f2;">
+		    			<div style="background-color:#f2f2f2;height:77%">
+
+		                    <center><h4>Key</h4></center>
+
+		                    <!-- *** all the rest of the legends start here (grouped seperately because of how they are displayed) *** -->
+
+		                    <br>
+
+	            			<div id="AllLegends" class="legend-scale" >
+
+	            				<button class="btn btn-click btn-md" title="The potential effect of a gene variant describes how it may influence a persons chances of developing a disease or what medication may work best for them.">
+		            				<b>Color </b>
+								    <i class="fa fa-info-circle fa-lg"></i>
+								</button>
+
+	            				<table class="legend-table">
+	            					<tr>
+	            						<td><div style='background-color:#cccccc;height:16px;width:30px;border:1px solid #999'></div></td>
+	            						<td>Benign</td>
+	            					</tr>
+	            					<tr>
+	            						<td><div style='background-color:#ff6666;height:16px;width:30px;border:1px solid #999'></div></td>
+	            						<td>Pathogenic</td>
+	            					</tr>
+	            					<tr>
+	            						<td><div style='background-color:#89b4fd;height:16px;width:30px;border:1px solid #999'></div></td>
+	            						<td>Protective</td>
+	            					</tr>
+	            					<tr>
+	            						<td><div style='background-color:#e77ee7;height:16px;width:30px;border:1px solid #999'></div></td>
+	            						<td>Pharma/Drug Response</td>
+	            					</tr>
+	            				</table>
+
+	            				<br><br>
+
+							    <div>
+							    	<button class="btn btn-click btn-md" title="Carrier Status is important in determining the gene variant’s effect. Each person inherits two variants of each gene, one from their biological father and one from their biological mother. A person is either a carrier of or affected by each gene.">
+									    <b>Filled vs. Hollow</b>
+									    <i class="fa fa-info-circle fa-lg"></i>
+									</button>
+
+								    <br><img id="circle" src="img/filled.png" width="20px" alt="Rarity"/>&nbspPotentially Affected
+								    <br><img id="circle" src="img/hallow.png" width="20px" alt="Rarity"/>&nbspCarrier
+							    </div>
+
+							    <br><br>
+
+							    <div id="size_key">
+							    	<button id="size_info_btn" class="btn btn-click btn-md" title="Risk describes how often individuals carrying the variant develop the associated disease. Rarity describes the percentage of the population that has this genetic variant.">
+		              					<b><span id="size_type">Size by Rarity</span></b>
+		              					<i class="fa fa-info-circle fa-lg"></i>
+		              				</button>
+		              				<br>
+		              				<br><img id="sizing" src="img/rarity-sizing-arch.png" width="100%">
+		              				<br><span id="size_left" style="float:left">Less Rare</span><span id="size_right" style="float:right">More Rare</span>
+							    </div>
+
+							    <br>
+							    <br>
+
+							    <!-- RISK KEY STARTS -->
+	            				<div id="risk_key">
+	              					<a id="risk_tooltip"></a>
+	              				</div> <!-- end risk key-->
+
+	            				<!-- RARITY KEY STARTS!!!! (ENCOMPASSES A LOT OF STUFF THAT WAS REPEATED ABOVE BECAUSE IT OVERRIDES RISK TOOLTIP ABOVE!!): -->
+	            				<div id="rarity_key" style="visibility: hidden;">
+		            				<a id="rarity_tooltip"></a>
+	          					</div> <!-- end rarity key -->
+
+	          				</div>  <!-- end of #legend-scale -->
+
+			    		</div> <!-- background -->
+			    	</div> <!-- end col-sm-2 (legend bootstrap) -->
+
+
+<!-- ****************  E N D   O F   K E Y  *************************** -->
+
+		    		<div class="col-sm-7">
+			            
+ 		 				<!-- BELOW CODE WAS TAKEN FROM AMAL: -->
+	 		 			<div id = "all_filters" style="z-index:1; background-color:#f2f2f2; ">
+							<div id = "toggle_label" class = "button_and_menu">Filter By:
+							</div>
+
+							<div class = "button_and_menu">
+								<input type = "radio" name = "filter" value = "people" id="people_button"> People
+								<select class = "filter" id = "people_filter">
+									<option value = "Show All"> Show All </option>
+									<option value = "p1"> Jamie</option>
+									<option value = "p2"> Jessie </option>
+									<option value = "shared"> Shared </option>
+								</select>
+							</div>
+					
+
+							<div class = "button_and_menu">
+								<input type = "radio" name = "filter" value = "category" id="category_button"> Category
+								<select class = "filter" id = "category_filter">
+									<option> Show All </option>
+									<option value = "Anatomical and congenital"> Anatomical &amp; Congenital</option>
+									<option> Blood </option>
+									<option> Breathing </option>
+									<option> Cancer </option>
+									<option> Drug Response </option>
+									<option value = "Genital and urinary"> Genital &amp; Urinary </option>
+									<option value = "Hearing and vision"> Hearing &amp; Vision </option>
+									<option value = "Heart and circulatory"> Heart &amp; Circulatory </option>
+									<option value = "Immune system"> Immune System </option>
+									<option value = "Mental and behavioral"> Mental &amp; Behavioral </option>
+									<option> Metabolism </option>
+									<option value = "Mouth, liver, and digestive"> Mouth, Liver &amp; Digestive </option>
+									<option value = "Muscular, skeletal, and connective tissue"> Muscular, Skeletal, &amp; Circulatory Tissue </option>
+									<option value = "Nervous system"> Nervous System </option>
+									<option> Skin </option>
+									<option> Other </option>
+								</select>
+							</div>
+
+							<div class = "button_and_menu">
+								<input type = "radio" name = "filter" id = "impact_button"> Effect
+								<select class = "filter" id = "impact_filter">
+									<option> Show All </option>
+									<option> Pathogenic </option>
+									<option> Protective </option>
+									<option> Benign </option>
+									<option value = "Pharmacogenetic"> Pharma/Drug Response </option>
+								</select>
+							</div>
+
+							<div class = "button_and_menu">
+								<input type = "radio" name = "filter" id = "evidence_button"> Certainty
+								<select class = "filter" id = "evidence_filter">
+									<option> Show All </option>
+									<option value = "Well-established"> Well-Established </option>
+									<option> Likely </option>
+									<option> Uncertain </option>
+								</select>
+							</div>
+
+						</div> <!--End toggle label-->
+						<div id="chart"> </div> <!-- end of all filters -->
+					</div> <!--end col-sm-7 (overview section) -->
+
+		    		<div class="col-sm-3" style="background-color:#f2f2f2; height:80%">
+		    			<center><h4>Variant Information</h4></center>
+		    			<!-- <div id="var_info" style="font-size:16px"></div>
+		    			<div id="second_info" style="max-height:200px;overflow-y:scroll"></div> -->
+
+						<div class="panel-group" id="accordion" style="max-height:85%;overflow-y:scroll">
+
+							<!-- Selected Variant: -->
+
+							<div class="panel panel-default" id="clicked-variant">
+
+						        <div class="panel-heading">
+							        <h4 class="panel-title">
+							        	<a id="var_info" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >Example Variant</a>
+							        	<table style="float:right">
+							        		<tr>
+							        			<td>
+									        		<button id="pin-variant" class="btn btn-sm btn-add-panel" style="height:22px">Save</button>
+								      			</td>
+							      			</tr>
+							      		</table>
+							      	</h4>
+						        </div>
+
+						        <div id="collapseOne" class="panel-collapse collapse in">
+						            <div class="panel-body" id="second_info" style="max-height:35%;overflow-y:scroll">
+
+						            	<div id='var-intro'>
+						            		Information about a selected variant will appear here. Saved variants will appear in a list below.
+						            	</div>
+
+						            	<div id='var-details'>
+							            	<span id='var_summary'><b>Summary: </b><span id='var_summary'></span></span><br>
+							            	<span id='var-certainty'><b>Certainty of Evidence: </b><span id='var_certainty_of_evidence'></span></span><br>
+							            	<span id='var-effect'><b>Health Effect: </b><span id='var_health_effect'></span></span><br>
+							            	<span id='var-impact'><b>Impact: </b><span id='var_impact'></span></span><br>
+							            	<span id='var-impact'><b>Inheritance: </b><span id='var_inheritance'></span></span><br>
+							            	<span id='var-rarity'><b>Rarity: </b><span id='var_rarity'></span></span><br>
+							            	<span id='var-risk'><b>Risk: </b><span id='var_risk'></span></span><br>
+							            	<span id='var-category'><b>Category: </b><span id='var_category'></span></span><br>
+							            	<span id='var-affected-info' style='display:none'></span>
+							            </div>
+						            </div>
+						        </div>
+
+						    </div> <!-- panel default -->
+
+						    <!-- Saved Variants: -->
+
+						    <div class="panel panel-default template">
+
+						        <div class="panel-heading">
+						        	<span class="glyphicon glyphicon-remove-circle pull-right"></span>
+						            <h4 class="panel-title">
+								        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+						      		</h4>
+						        </div>
+
+						        <div id="collapseThree" class="panel-collapse collapse saved-variant">
+						            <div class="panel-body" style="max-height:35%;overflow-y:scroll"></div>
+						        </div>
+
+						    </div> <!-- panel template -->
+
+					    </div> <!-- panel group -->
+
+				    </div> <!--end col-sm-3 (variant info column) -->
+
+			  	</div> <!---end row-->
+
+			</div> <!-- #tab-content1 -->
+
+			<!-- Tab 3 Content-->
+			<div id="tab-content3" class="tab-content main-tabs">
+				<h3>Glossary</h3>
+
+				<div id="glossary" class="glossary"></div>
+
+				<script>
+					$("#glossary").load("glossary.html");
+				</script>
+
+			</div> <!-- #tab-content3 -->
+
+		</div> <!-- end tabs -->
+
+	</body>
+</html>

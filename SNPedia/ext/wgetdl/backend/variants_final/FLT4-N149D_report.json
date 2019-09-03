@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.073", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "180057293", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "FLT4", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11292664"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Other severe variants in this gene are implicated in causing Milroy Disease (primary lymphedema) in a recessive manner. Although this variant is rare (2.3% allele frequency), it is still common enough that it is highly unlikely to have a severe, high penetrance pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/FLT4-N149D", 
+    "Variant Name": "FLT4-N149D", 
+    "Variant Page": "http://evidence.pgp-hms.org/FLT4-N149D", 
+    "dbSNP IDs": [
+        "rs34221241"
+    ]
+}

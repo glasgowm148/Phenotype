@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.023", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FCN3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "18261799", 
+        "19535802"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Speculated to cause immunodeficiency in a patient with serious, repeated infections. A large set of patients was examined (1282) and this variant is not extremely rare (1.1% allele frequency), and so this single observation had no statistical significance. Additionally, if this phenotype is relatively rare (1% or less), then a strong disease effect in homozygotes should have resulted in many more homozygotes in the patient cohort. The lack of this observation casts significant doubt on any pathogenic hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/FCN3-L117Shift", 
+    "Variant Name": "FCN3-L117Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/FCN3-L117Shift", 
+    "dbSNP IDs": [
+        "rs28357092"
+    ]
+}

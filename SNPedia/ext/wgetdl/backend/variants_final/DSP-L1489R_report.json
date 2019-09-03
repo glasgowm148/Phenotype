@@ -1,0 +1,30 @@
+{
+    "Allele Frequency": "9e-05", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "7580889", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DSP", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": null
+    }, 
+    "Summary": "Unreported, rare and predicted to be damaging. Some dominant variants in this gene are reported to cause Arrhythmogenic Right Ventricular Dysplasia -- this effect is contradicted by the presence of this variant in a healthy PGP participant, although penetrance is reported to be variable. Other recessive missense variants in this gene are reported to cause Skin Fragility-Woolly Hair Syndrome.", 
+    "URL": "http://evidence.pgp-hms.org/DSP-L1489R", 
+    "Variant Name": "DSP-L1489R", 
+    "Variant Page": "http://evidence.pgp-hms.org/DSP-L1489R"
+}

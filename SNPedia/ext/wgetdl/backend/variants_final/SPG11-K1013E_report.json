@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.01", 
+    "Build 37 Chromosome": "chr15", 
+    "Build 37 Position": "44907562", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SPG11", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "One unpublished report links this to causing spastic paraplegia in a recessive manner, but insufficient data exists to evaluate significance. Most mutations in this reported to cause the disease in this gene are more severe null mutations (frameshift or nonsense).", 
+    "URL": "http://evidence.pgp-hms.org/SPG11-K1013E", 
+    "Variant Name": "SPG11-K1013E", 
+    "Variant Page": "http://evidence.pgp-hms.org/SPG11-K1013E", 
+    "dbSNP IDs": [
+        "rs111347025"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0017", 
+    "Build 37 Chromosome": "chr9", 
+    "Build 37 Position": "34648167", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism", 
+        "Nervous system"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "GALT", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "1427861", 
+        "1897530", 
+        "8198125"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant causes classic galactosemia in a recessive manner (when homozygous or combined with another disease-causing variant). This is a metabolic disorder where individuals are unable to metabolize the sugar galactose. Treatment consists of strict dietary avoidance of lactose and galactose. Without treatment children develop permanent and eventually fatal health problems, and even when treated some individuals still have neurological impairment.", 
+    "URL": "http://evidence.pgp-hms.org/GALT-Q188R", 
+    "Variant Name": "GALT-Q188R", 
+    "Variant Page": "http://evidence.pgp-hms.org/GALT-Q188R"
+}

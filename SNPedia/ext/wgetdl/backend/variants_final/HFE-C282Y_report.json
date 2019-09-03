@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.049", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "26093141", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "HFE", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "11313265", 
+        "11812557", 
+        "18025780"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": "1", 
+        "Severity": "2", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant is associated with hereditary haemochromatosis, 80% of patients with that disease are homozygous for this variant. However, the penetrance is low, in Beutler et al. they note that only 1 of their 158 homozygotes met criteria for diagnosis with the condition.", 
+    "URL": "http://evidence.pgp-hms.org/HFE-C282Y", 
+    "Variant Name": "HFE-C282Y", 
+    "Variant Page": "http://evidence.pgp-hms.org/HFE-C282Y", 
+    "dbSNP IDs": [
+        "rs1800562"
+    ]
+}

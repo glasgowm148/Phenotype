@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.00065", 
+    "Build 37 Chromosome": "chr15", 
+    "Build 37 Position": "28197037", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "OCA2", 
+    "Impact": "Benign", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17570052", 
+        "20221248"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Associated with lighter skin pigmentation in East Asian populations.", 
+    "URL": "http://evidence.pgp-hms.org/OCA2-H615R", 
+    "Variant Name": "OCA2-H615R", 
+    "Variant Page": "http://evidence.pgp-hms.org/OCA2-H615R", 
+    "dbSNP IDs": [
+        "rs1800414"
+    ]
+}

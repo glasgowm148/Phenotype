@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0002", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "2659186", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CACNA1C", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17224476", 
+        "20817017"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This rare variant has been reported to cause Brugada syndrome (a major cause of sudden unexplained death) with shorter than normal QT intervals. A single patient with Turkish ancestry was reported, and no controls mentioned. Observations associating this variant with the disease have not been statistically significant, although this could be due to the rarity of the variant.", 
+    "URL": "http://evidence.pgp-hms.org/CACNA1C-G490R", 
+    "Variant Name": "CACNA1C-G490R", 
+    "Variant Page": "http://evidence.pgp-hms.org/CACNA1C-G490R"
+}

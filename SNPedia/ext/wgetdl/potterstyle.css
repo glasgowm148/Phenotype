@@ -1,0 +1,81 @@
+/*Filename: potterstyle.css
+Author:  Christina Pollalis
+Purpose: Assignment 3 on CSS Layout (changing the css, without changing the html)
+Modications:  Sept 25 2015*/
+
+
+body { /*makes the body as the one in the screenshot*/
+    width:800px;
+    margin:0 auto;
+    background-color: #f2e8b3;
+    color:#445973;
+    font-family: Lucida Sans Unicode; /*given to us in the assignment*/
+    font-size: 16px;
+}
+
+header img { /*want these to just apply to the first image*/
+    float:left;
+    margin-top:auto;
+}
+
+header p { /*want these to just apply to the paragraph in the header*/
+    margin-left:225px;
+}
+
+h1, a, figcaption { /*color for headers, links, and image captions*/
+    color:#ae806e;
+}
+
+h1 { /*these apply to the first header*/
+    font-family: Impact; /*given to us in the assignment*/
+    font-size: 46px;
+    margin-top:0px;
+    padding-top:40px;
+    margin-left:225px;
+}
+
+h2 { /*these apply to the second header*/
+    font-size: 26px;
+}
+
+a { /*these apply to links (takes out the undelining)*/
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover { /*changes the color of the links when they are hovered on*/
+    color:silver;
+}
+
+ul { /*these apply to the bullet points - changes the bullets into pretty images*/
+    list-style-image: url(images/owl.jpg);
+    margin-left:218px;
+}
+
+
+figure { /*these apply to the figures throughout the page (
+    rounded corners, background color to white, etc)*/
+    border: 1px solid black;
+    background-color: #e7e7e7;
+    padding: 10px;
+    margin: 15px; /*check this out later*/
+    float:right;
+}
+
+/*the below is to make the specific images rounded*/
+#fluffy img, #norbert img, #aragog img, #buckbeak img, #skrewts img {
+    border-radius:10px;
+    float:left;
+}
+
+figcaption { /*these apply to the image captions*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+footer { /*these apply to the footer (making it center, border, and margin)*/
+    text-align:center;
+    border-top:1px solid black;
+    margin:10px auto;
+}

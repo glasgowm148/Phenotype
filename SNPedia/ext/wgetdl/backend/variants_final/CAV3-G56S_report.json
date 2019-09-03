@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.038", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "8787263", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CAV3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "9536092", 
+        "11251997", 
+        "11884389"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "-1", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "This variant has been implicated in causing limb-girdle dystrophy in a recessive manner, but it has only been seen homozygously once in a single patient and has been seen heterozygously in controls, so case/control data lacks significance.", 
+    "URL": "http://evidence.pgp-hms.org/CAV3-G56S", 
+    "Variant Name": "CAV3-G56S", 
+    "Variant Page": "http://evidence.pgp-hms.org/CAV3-G56S", 
+    "dbSNP IDs": [
+        "rs72546667"
+    ]
+}

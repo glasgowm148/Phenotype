@@ -1,0 +1,29 @@
+body {
+    width: 250px;
+}
+
+.label-item .btn-remove-label {
+    display:none;
+}
+
+.label-item:hover .btn-remove-label {
+    display: block;
+}
+
+.label-item .label-content {
+    font-weight: bold;
+}
+
+.label-item.completed .label-content {
+    color:darkgray;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+#label-list {
+    margin-bottom: 10px;
+}
+
+#btn-submit {
+    margin-bottom: 10px;
+}

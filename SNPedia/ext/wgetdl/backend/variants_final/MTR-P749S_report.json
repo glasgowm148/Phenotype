@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.001", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "237025584", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MTR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Unreported, predicted to be damaging. Other recessive missense mutations in this gene cause methylcobalamin deficiency.", 
+    "URL": "http://evidence.pgp-hms.org/MTR-P749S", 
+    "Variant Name": "MTR-P749S", 
+    "Variant Page": "http://evidence.pgp-hms.org/MTR-P749S"
+}

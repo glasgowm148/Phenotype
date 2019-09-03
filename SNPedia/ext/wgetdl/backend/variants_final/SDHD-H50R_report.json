@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.0066", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "111958677", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SDHD", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "12111639", 
+        "12386824", 
+        "17639058", 
+        "18678321"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. Other mutations in this gene are implicated in causing hereditary paraganglioma or pheochromocytoma syndromes, but this variant is also found in unaffected controls and is considered a nonpathogenic polymorphism by most authors that have reported it.", 
+    "URL": "http://evidence.pgp-hms.org/SDHD-H50R", 
+    "Variant Name": "SDHD-H50R", 
+    "Variant Page": "http://evidence.pgp-hms.org/SDHD-H50R", 
+    "dbSNP IDs": [
+        "rs11214077"
+    ]
+}

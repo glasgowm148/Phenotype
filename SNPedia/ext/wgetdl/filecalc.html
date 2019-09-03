@@ -1,0 +1,65 @@
+Name: Christina Pollalis <br>
+Assignment: #4, part II <br>
+Class: CS110 <br>
+<br>
+<br>
+Questions:<br>
+1. A. The formula to calculate the bytes needed per pixels is:<br>
+# bytes for color table + # bytes for pixel color info = # bytes for total image file<br>
+<br>
+the number of bytes for color table is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+color_table_size = 129 * 8 = 1032<br>
+<br>
+# pixels x bit-depth / 8 = # bytes for pixel color info<br>
+total_number_of_pixels = 700 * 450 = 315000<br>
+number_of_bytes_for_pixel_color_info = (700*450)*8/8 = 315000<br>
+<br>
+So, now we add both of these to the first formula above and we get:<br>
+answer = 315000 + 1032 = 316032 bytes<br>
+<br>
+B. Bytes needed to represent the pixels for the image:<br>
+As seen above, the formula is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+Thus:<br>
+answer = 129 * 8 = 1032 bytes<br>
+<br>
+2. A. If the picture uses 63 colors (6 bit-depth):<br>
+<br>
+the number of bytes for color table is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+color_table_size = 63 * 6 = 378<br>
+<br>
+# pixels x bit-depth / 8 = # bytes for pixel color info<br>
+total_number_of_pixels = 700 * 450 = 315000<br>
+number_of_bytes_for_pixel_color_info = (700*450)*6/8 = 236250<br>
+<br>
+<br>
+So, now we add both of these to the first formula above and we get:<br>
+answer = 236250 + 378 = 236628 bytes<br>
+<br>
+B. Bytes needed to represent the pixels for the image:<br>
+As seen above, the formula is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+Thus:<br>
+answer = 63 * 6 = 378 bytes<br>
+<br>
+2. A. If the picture uses 50 colors (6 bit-depth):<br>
+<br>
+the number of bytes for color table is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+color_table_size = 50 * 6 = 300<br>
+<br>
+# pixels x bit-depth / 8 = # bytes for pixel color info<br>
+total_number_of_pixels = 700*450<br>
+number_of_bytes_for_pixel_color_info = (700*450)*6/8 = 236250<br>
+<br>
+So, now we add both of these to the first formula above and we get:<br>
+answer = 236250 + 300 = 236550 bytes<br>
+<br>
+B. Bytes needed to represent the pixels for the image:<br>
+As seen above, the formula is:<br>
+# colors x 3(bytes/color) = # bytes for color table<br>
+Thus:<br>
+answer = 50 * 6 = 300 bytes<br>
+<br>

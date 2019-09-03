@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "0.048", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "CCR5", 
+    "Impact": "Protective", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "8751444", 
+        "8791590", 
+        "8898752"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "1", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Also known as CCR5-delta32, this variant is associated with resistance to many strains of HIV (but not all strains, only strains that use target the CCR5 protein). Heterozygotes are reported to have slower HIV progression, and homozygotes are very resistant to being infected by these strains.", 
+    "URL": "http://evidence.pgp-hms.org/CCR5-S185Shift", 
+    "Variant Name": "CCR5-S185Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/CCR5-S185Shift", 
+    "dbSNP IDs": [
+        "rs333"
+    ]
+}

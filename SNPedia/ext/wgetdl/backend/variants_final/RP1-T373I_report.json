@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.012", 
+    "Build 37 Chromosome": "chr8", 
+    "Build 37 Position": "55537560", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RP1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "11095597", 
+        "15863674"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "2", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause recessive retinitis pigmentosa in some Pakistani families. Because it is unclear whether these families have some common ancestry, and because there may be an uncharacterized linked variant, this pathogenic effect of this variant is considered uncertain.", 
+    "URL": "http://evidence.pgp-hms.org/RP1-T373I", 
+    "Variant Name": "RP1-T373I", 
+    "Variant Page": "http://evidence.pgp-hms.org/RP1-T373I", 
+    "dbSNP IDs": [
+        "rs77775126"
+    ]
+}

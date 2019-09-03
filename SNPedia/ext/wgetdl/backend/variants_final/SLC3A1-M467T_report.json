@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0021", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "44539792", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Genital and urinary", 
+        "Metabolism"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "SLC3A1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "8054986", 
+        "12239244", 
+        "21255007"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": "2", 
+        "Functional": "1", 
+        "Penetrance": "5", 
+        "Severity": "2", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Causes cystinuria in a recessive manner, which can lead to kidney stones when symptomatic. This variant is one of the most common cystinuria-causing variants, and may be somewhat milder than other causal variants.", 
+    "URL": "http://evidence.pgp-hms.org/SLC3A1-M467T", 
+    "Variant Name": "SLC3A1-M467T", 
+    "Variant Page": "http://evidence.pgp-hms.org/SLC3A1-M467T"
+}

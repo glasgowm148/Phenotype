@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0027", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "41245027", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "BRCA1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "8968716"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Other variants in this gene are associated with breast and ovarian cancer. A 1996 paper proposed this variant as causing increased risk, but their observations lacked statistical significance and no later publications have supported that hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/BRCA1-R841W", 
+    "Variant Name": "BRCA1-R841W", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA1-R841W"
+}

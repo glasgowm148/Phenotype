@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.00037", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "94480221", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ABCA4", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "10746567"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to have caused Stargardt disease (progressive vision loss and blindness) in a recessive manner when seen in a single compound heterozygous case, but insufficient data makes it impossible to determine the significance of this report.", 
+    "URL": "http://evidence.pgp-hms.org/ABCA4-P1780A", 
+    "Variant Name": "ABCA4-P1780A", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCA4-P1780A", 
+    "dbSNP IDs": [
+        "rs121909207"
+    ]
+}

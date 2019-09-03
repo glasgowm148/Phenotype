@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.01", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "227915847", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "COL4A4", 
+    "Impact": "Benign", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12631110", 
+        "14871398"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant is causative for Benign Familial Hematuria (thin membrane basement disease). While this variant is benign, it is useful in differentiating glomerular hematuria from Alport Syndrome.", 
+    "URL": "http://evidence.pgp-hms.org/COL4A4-G999E", 
+    "Variant Name": "COL4A4-G999E", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL4A4-G999E", 
+    "dbSNP IDs": [
+        "rs13027659"
+    ]
+}

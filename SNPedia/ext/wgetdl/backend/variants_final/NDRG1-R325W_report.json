@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "0.0078", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NDRG1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Tentatively classified as benign, although predicted by Polyphen 2 to be damaging. Other more severe null mutations (frameshift and nonsense) in this gene are reported to cause Charcot-Marie-Tooth disease type 4 in a recessive manner.", 
+    "URL": "http://evidence.pgp-hms.org/NDRG1-R325W", 
+    "Variant Name": "NDRG1-R325W", 
+    "Variant Page": "http://evidence.pgp-hms.org/NDRG1-R325W"
+}

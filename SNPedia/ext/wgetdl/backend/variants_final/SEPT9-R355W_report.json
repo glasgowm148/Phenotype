@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.00058", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "75484342", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SEPT9", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare, tentatively classified as benign. Other missense variants in this gene are reported to cause familial neuralgic amyotrophy in a dominant manner, but this was seen in a PGP participant who has not reported a family history of the disease.", 
+    "URL": "http://evidence.pgp-hms.org/SEPT9-R355W", 
+    "Variant Name": "SEPT9-R355W", 
+    "Variant Page": "http://evidence.pgp-hms.org/SEPT9-R355W"
+}

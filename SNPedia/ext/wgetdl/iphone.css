@@ -1,0 +1,29 @@
+body {
+
+    background-color: #dde6ef; /*light blue*/
+
+    width: 100%;
+
+    color: #222; /*dark gray*/
+
+    font-family: Helvetica;
+
+    font-size: 14px;
+
+}
+
+header {
+
+   background-color: #006;  /* dark blue */
+
+   font-size: 20px;
+
+   line-height: 44px;
+
+   color: white;
+
+   padding: 3px;
+
+   
+
+}

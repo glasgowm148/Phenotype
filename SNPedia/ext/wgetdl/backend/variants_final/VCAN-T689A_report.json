@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0064", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "82816190", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "VCAN", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably not pathogenic, seen in two healthy PGP participants, contradicting a severe pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/VCAN-T689A", 
+    "Variant Name": "VCAN-T689A", 
+    "Variant Page": "http://evidence.pgp-hms.org/VCAN-T689A", 
+    "dbSNP IDs": [
+        "rs61754531"
+    ]
+}

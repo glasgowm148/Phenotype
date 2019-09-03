@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0065", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "152279975", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system", 
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FLG", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Tentatively evaluated as benign. Other, much more severe null mutations cause increased susceptibility ichthyosis vulgaris, atopic eczema, and allergies.", 
+    "URL": "http://evidence.pgp-hms.org/FLG-H2463D", 
+    "Variant Name": "FLG-H2463D", 
+    "Variant Page": "http://evidence.pgp-hms.org/FLG-H2463D", 
+    "dbSNP IDs": [
+        "rs113188294"
+    ]
+}

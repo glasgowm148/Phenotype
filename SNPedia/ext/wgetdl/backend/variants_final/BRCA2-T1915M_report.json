@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.021", 
+    "Build 37 Chromosome": "chr13", 
+    "Build 37 Position": "32914236", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "BRCA2", 
+    "Impact": "Protective", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "19030985"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": null, 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Serrano-Fern\u00e1ndez et al. found this variant to be associated with a modest (OR = 1.61) but significant (P = 0.0007) reduction in breast cancer risk.  ", 
+    "URL": "http://evidence.pgp-hms.org/BRCA2-T1915M", 
+    "Variant Name": "BRCA2-T1915M", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA2-T1915M", 
+    "dbSNP IDs": [
+        "rs4987117"
+    ]
+}

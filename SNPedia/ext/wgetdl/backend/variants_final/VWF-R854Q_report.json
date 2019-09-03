@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0041", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "6143978", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "VWF", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "22875612"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Causes type 2N von Willebrand disease in a recessive manner. This defect in coagulation can manifest as excessive bleeding during surgery.", 
+    "URL": "http://evidence.pgp-hms.org/VWF-R854Q", 
+    "Variant Name": "VWF-R854Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/VWF-R854Q", 
+    "dbSNP IDs": [
+        "rs41276738"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.057", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "171080080", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FMO3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "9536088"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This common variant (HapMap allele frequency of 9.2%) appears to have no functional effect. OMIM has recorded it as having been seen homozygously in an individual with Trimethylaminuria, but Treacy et al. 1998 conclude it is a polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/FMO3-V257M", 
+    "Variant Name": "FMO3-V257M", 
+    "Variant Page": "http://evidence.pgp-hms.org/FMO3-V257M", 
+    "dbSNP IDs": [
+        "rs1736557"
+    ]
+}

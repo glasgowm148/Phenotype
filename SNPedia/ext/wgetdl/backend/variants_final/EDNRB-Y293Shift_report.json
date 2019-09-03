@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Mouth, liver, and digestive"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "EDNRB", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "8852658"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Reported as \"EDNRB, 1-BP INS, 878T\" in OMIM, this frameshift variant has been reported to cause increased susceptibility to Hirschsprung's disease (partial lack of nerves in the bowel, potentially leading to severe constipation and digestive issues). It may also be associated with Waardenburg syndrome type 4 in a recessive or incomplete-dominance manner.", 
+    "URL": "http://evidence.pgp-hms.org/EDNRB-Y293Shift", 
+    "Variant Name": "EDNRB-Y293Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/EDNRB-Y293Shift"
+}

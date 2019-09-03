@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.012", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "3304626", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MEFV", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "9668175", 
+        "10090880", 
+        "15458961", 
+        "16439437", 
+        "19820229"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "-1", 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Some reports believe this cause Familial Mediterranean Fever in a recessive manner with reduced penetrance (i.e. not all get the disease). However, these reports lack strong statistical significance; other studies argue the variant is not associated with the disease.", 
+    "URL": "http://evidence.pgp-hms.org/MEFV-E148Q", 
+    "Variant Name": "MEFV-E148Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/MEFV-E148Q", 
+    "dbSNP IDs": [
+        "rs3743930"
+    ]
+}

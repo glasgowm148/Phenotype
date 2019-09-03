@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.39", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "196642233", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Metabolism"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "CFH", 
+    "Impact": "Protective", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15870199"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Associated with a decreased risk for age related macular degeneration (ARMD). Homozygotes for this have a 4-5% decreased attributable risk (3-4% vs. average 8% risk), heterozygotes have slightly lower than average risk (7%). Non-carriers have an increased risk (12-13%). ARMD impairs sharp vision as age progresses. While there is no cure, treatment can slow progression of the disease and environmental factors (smoking and obesity) contribute to higher risk.", 
+    "URL": "http://evidence.pgp-hms.org/CFH-V62I", 
+    "Variant Name": "CFH-V62I", 
+    "Variant Page": "http://evidence.pgp-hms.org/CFH-V62I", 
+    "dbSNP IDs": [
+        "rs800292"
+    ]
+}

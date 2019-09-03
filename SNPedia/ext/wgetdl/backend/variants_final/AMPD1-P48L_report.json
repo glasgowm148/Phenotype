@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.094", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "115231254", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "AMPD1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15173240"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign, ancestral to15173240 pathogenic Q12X mutation.", 
+    "URL": "http://evidence.pgp-hms.org/AMPD1-P48L", 
+    "Variant Name": "AMPD1-P48L", 
+    "Variant Page": "http://evidence.pgp-hms.org/AMPD1-P48L", 
+    "dbSNP IDs": [
+        "rs61752479"
+    ]
+}

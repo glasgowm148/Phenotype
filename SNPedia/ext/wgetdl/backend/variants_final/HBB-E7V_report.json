@@ -1,0 +1,45 @@
+{
+    "Allele Frequency": "0.014", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "5248232", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "HBB", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 11, 
+    "PMID List": [
+        "655188", 
+        "2296310", 
+        "2741981", 
+        "7662990", 
+        "9325099", 
+        "10631276", 
+        "13369537", 
+        "13464827", 
+        "16001361", 
+        "17393956", 
+        "17910044"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "5", 
+        "Familial": "5", 
+        "Functional": "5", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "HB-S variant responsible for causing Sickle Cell Disease when homozygous (residue count follows p.HBB). This is often also referred to as E6V, referring to the position of the amino acid in the final protein product (the first amino acid is removed after translation). Heterozygotes have Sickle Cell Trait. ", 
+    "URL": "http://evidence.pgp-hms.org/HBB-E7V", 
+    "Variant Name": "HBB-E7V", 
+    "Variant Page": "http://evidence.pgp-hms.org/HBB-E7V", 
+    "dbSNP IDs": [
+        "rs334"
+    ]
+}

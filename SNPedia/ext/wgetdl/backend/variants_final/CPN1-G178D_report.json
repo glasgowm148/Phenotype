@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.036", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "101829514", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CPN1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12560874"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "5", 
+        "Severity": "2", 
+        "Treatability": "1"
+    }, 
+    "Summary": "This rare variant (around 1% allele frequency) is hypothesized to cause carboxypeptidase N deficiency in a recessive manner, especially if combined with a more severe variant. However the findings lack statistical sigificance: only a single case study of an affected individual links this variant to causing the disease. There aren\u2019t any follow-up in vitro studies testing whether this variant affects protein function.", 
+    "URL": "http://evidence.pgp-hms.org/CPN1-G178D", 
+    "Variant Name": "CPN1-G178D", 
+    "Variant Page": "http://evidence.pgp-hms.org/CPN1-G178D", 
+    "dbSNP IDs": [
+        "rs61751507"
+    ]
+}

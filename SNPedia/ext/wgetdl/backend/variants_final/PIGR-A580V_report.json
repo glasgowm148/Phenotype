@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.25", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "207106478", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Genital and urinary", 
+        "Immune system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PIGR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12740691"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "0", 
+        "Severity": "4", 
+        "Treatability": "2"
+    }, 
+    "Summary": "In a Japanese study, this variant was associated with an increased risk for immunoglobulin A nephropathy (IgAN), a rare disease. The chances of having this disease, even with this variant, is less than 0.1%.", 
+    "URL": "http://evidence.pgp-hms.org/PIGR-A580V", 
+    "Variant Name": "PIGR-A580V", 
+    "Variant Page": "http://evidence.pgp-hms.org/PIGR-A580V", 
+    "dbSNP IDs": [
+        "rs291102"
+    ]
+}

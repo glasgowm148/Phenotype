@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0015", 
+    "Build 37 Chromosome": "chr13", 
+    "Build 37 Position": "20763612", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "GJB2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16840571", 
+        "17036313"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This recessive variant is associated with mild hearing loss in Asians.", 
+    "URL": "http://evidence.pgp-hms.org/GJB2-V37I", 
+    "Variant Name": "GJB2-V37I", 
+    "Variant Page": "http://evidence.pgp-hms.org/GJB2-V37I", 
+    "dbSNP IDs": [
+        "rs72474224"
+    ]
+}

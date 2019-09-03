@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.15", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "6718387", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "C3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "4427677", 
+        "17634448"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant (also called C3F) is common in Europeans (10.2% allele frequency), and is associated with age-related macular degeneration. In the US, 1.5% of adults over 40 have the disease, but the incidence increases strongly with age (>15% in women over 80). Assuming an average lifetime risk of ~10%, heterozygous individuals have a ~13% risk and homozygous have ~20%.", 
+    "URL": "http://evidence.pgp-hms.org/C3-R102G", 
+    "Variant Name": "C3-R102G", 
+    "Variant Page": "http://evidence.pgp-hms.org/C3-R102G", 
+    "dbSNP IDs": [
+        "rs2230199"
+    ]
+}

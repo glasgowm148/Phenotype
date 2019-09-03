@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.02", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "182542998", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NEUROD1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "10545951"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Tentatively presumed benign. Other disruptive mutations in this gene have been reported to cause type 2 diabetes in a dominant manner, but this was found in a PGP participant who does not report having the disease.", 
+    "URL": "http://evidence.pgp-hms.org/NEUROD1-P197H", 
+    "Variant Name": "NEUROD1-P197H", 
+    "Variant Page": "http://evidence.pgp-hms.org/NEUROD1-P197H", 
+    "dbSNP IDs": [
+        "rs8192556"
+    ]
+}

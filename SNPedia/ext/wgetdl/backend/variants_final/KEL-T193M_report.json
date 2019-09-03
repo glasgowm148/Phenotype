@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.032", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "142655008", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "KEL", 
+    "Impact": "Benign", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "7849312"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": null, 
+        "Familial": "5", 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": "0", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant is also known as Kell or K1 or K (capitalized) in the Kell antigen system. K1-negative mothers (carrying no copies of this variant) carrying K1-positive fetuses (heterozygous or homozygous) are at risk for hemolytic disease of the newborn. About 9% of caucasians carry one or two copies of K1.", 
+    "URL": "http://evidence.pgp-hms.org/KEL-T193M", 
+    "Variant Name": "KEL-T193M", 
+    "Variant Page": "http://evidence.pgp-hms.org/KEL-T193M", 
+    "dbSNP IDs": [
+        "rs8176058"
+    ]
+}

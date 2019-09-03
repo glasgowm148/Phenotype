@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.01", 
+    "Build 37 Chromosome": "chr22", 
+    "Build 37 Position": "18905899", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Mental and behavioral"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PRODH", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12217952", 
+        "15662599"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": "1", 
+        "Severity": "2", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Associated with reduced proline oxidase activity, and may cause hyperprolemia in a recessive manner (when homozygous or compound heterozygous). Hyperprolemia, in turn, may be associated with schizophrenia.", 
+    "URL": "http://evidence.pgp-hms.org/PRODH-R453C", 
+    "Variant Name": "PRODH-R453C", 
+    "Variant Page": "http://evidence.pgp-hms.org/PRODH-R453C", 
+    "dbSNP IDs": [
+        "rs3970559"
+    ]
+}

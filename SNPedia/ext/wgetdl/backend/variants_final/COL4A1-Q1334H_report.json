@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.32", 
+    "Build 37 Chromosome": "chr13", 
+    "Build 37 Position": "110818598", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "COL4A1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "10334796", 
+        "18077766", 
+        "20031579"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This common variant has been associated with arterial stiffness and, in Japanese, a small increased risk of myocardial infarction (MI, a.k.a. heart attack). This last observation supported a dominant effect for this variant and, assuming a lifetime risk of 15% for MI, we estimate carriers have an additional risk of 0.5-3%.", 
+    "URL": "http://evidence.pgp-hms.org/COL4A1-Q1334H", 
+    "Variant Name": "COL4A1-Q1334H", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL4A1-Q1334H", 
+    "dbSNP IDs": [
+        "rs3742207"
+    ]
+}

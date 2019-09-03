@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0013", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "38954162", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Anatomical and congenital", 
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RYR1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "10790202"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare, tentatively evaluated as benign. Some recessive missense variants in this gene are reported to cause malignant hyperthermia and central core disease, but this variant occurs outside of the amino acid regions where these pathogenic variants typically occur.", 
+    "URL": "http://evidence.pgp-hms.org/RYR1-G893S", 
+    "Variant Name": "RYR1-G893S", 
+    "Variant Page": "http://evidence.pgp-hms.org/RYR1-G893S"
+}

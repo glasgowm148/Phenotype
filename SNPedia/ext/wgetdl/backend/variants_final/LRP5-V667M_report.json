@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.041", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "68174189", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "LRP5", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11719191"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": null
+    }, 
+    "Summary": "This variant has been implicated in causing osteoporosis-pseudoglioma syndrome in a recessive manner. The gene is strongly implicated in causing the disease, but an insufficient number of controls means this variant's observation lacks statistical significance. The condition manifests in childhood with early onset osteoporosis and eye problems.", 
+    "URL": "http://evidence.pgp-hms.org/LRP5-V667M", 
+    "Variant Name": "LRP5-V667M", 
+    "Variant Page": "http://evidence.pgp-hms.org/LRP5-V667M", 
+    "dbSNP IDs": [
+        "rs4988321"
+    ]
+}
