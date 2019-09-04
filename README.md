@@ -1,8 +1,7 @@
-# OSGenome
-This Git is based on [OSGenome - An Open Source Web Application for Genetic Data (SNPs) using 23AndMe and Data Crawling Technologies](https://github.com/mentatpsi/OSGenome)
+# Phenotype.dev
 
 ## Description
-OS Genome is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. All of which using Flask, Kendo, and Python programming.
+Phenotype is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. All of which using Flask, Kendo, and Python programming.
 
 ## Disclaimer
 Raw Data coming from Genetic tests done by Direct To Consumer companies such as 23andMe and Ancestry.com were found to have a false positive rate of 40% for genes with clinical significance in a March 2018 study [*False-positive results released by direct-to-consumer genetic tests highlight the importance of clinical confirmation testing for appropriate patient care*](https://www.nature.com/articles/gim201838). For this reason, it's important to confirm any at risk clinical SNPs with your doctor who can provide genetic tests and send them to a clinical laboratory.
@@ -16,15 +15,18 @@ Raw Data coming from Genetic tests done by Direct To Consumer companies such as 
 * dbSNP lookup functionality added
 * Removed _GUI.py
 * Enabled the commented out code and imported panda
+* dbSNP Crawler added to import risk allele / freq
 * In Progress
-  * dbSNP crawler to get risk allele, publications, frequency and crosscheck result from snpedia
+  * Tidying up HTML/CSS/Tabular 
 * To Do
   * Search / Filter
+  * ONIM Support
   * Bookmark
   * User Login with upload
   * Custom reports
   * Utilise reload DB Data
   * Utilise Genomix source
+  * Email notifications when new studies are published with the users genotype
 
 ## Installation:
 
@@ -55,3 +57,7 @@ This serves the Flask server
 
 ## Access the Local Server
 http://127.0.0.1:5000
+
+
+This Git is based on OSGenome - An Open Source Web Application for Genetic Data (SNPs) using 23AndMe and Data Crawling Technologies
+

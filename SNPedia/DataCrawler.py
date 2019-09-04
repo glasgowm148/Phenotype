@@ -34,19 +34,21 @@ class SNPCrawl:
     # initialises a list and dict from command line arguments(?)
     def __init__(self, rsids=[], filepath=None, snppath=None):
         
-        # If filepath is present import dict and set rsidList[]
+        # If rsidDict.json already exists
         if filepath and os.path.isfile(filepath): 
-            self.importDict(filepath) #rsid dna -> self.rsidDict (As json)
+            self.importDict(filepath) # If 
             self.rsidList = []
         else: 
             self.rsidDict = {}
             self.rsidList = []
 
+        # if snpDict.json already exists
         if snppath and os.path.isfile(snppath):
-            self.importSNPs(snppath)
+            self.importSNPs(snppath) # If
         else:
             self.snpdict = {}
 
+        # Iterate through each item in the passed in file and store them as
         rsids = [item.lower() for item in rsids]
         if rsids:
             self.initcrawl(rsids)
@@ -58,10 +60,10 @@ class SNPCrawl:
         count = 0
         for rsid in rsids:
             print("RSID:" + rsid)
-            self.grabTable(rsid)
+            self.grabTable(rsid) # imports
             print("")
             count += 1
-            if count % 100 == 0:
+            if count % 100 == 0 or count == 5:
                 print("%i out of %s completed" % (count, len(rsids)))
                 self.export()
                 print("exporting current results")
@@ -86,11 +88,14 @@ class SNPCrawl:
                     "Description": "",
                     "Variations": [],
                     "Frequency": "",
-                    "Risk": ""
+                    "Risk": []
                 }
+                # Store the HTML resonse from the page as bs. 
                 response = urllib.request.urlopen(url)
                 html = response.read()
                 bs = BeautifulSoup(html, "html.parser")
+                
+                # Find
                 table = bs.find("table", {"class": "sortable smwtable"})
                 description = bs.find("table", {"style": "border: 1px; background-color: #FFFFC0; border-style: solid; margin:1em; width:90%;"})
 
@@ -116,16 +121,24 @@ class SNPCrawl:
             response = urllib.request.urlopen(url)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
-            dbSNPin = bs.find("dl", {"class": "usa-width-one-half"})
-            
-            if dbSNPin:
-                print("if dbSNPin:")
-                d1 = self.tableToList2(dbSNPin)
-                print(d1)
+            freq = []
+            for div in bs.find_all(class_='usa-width-one-half'):
+                    for childdiv in div.find_all('div'):
+                        freq.append(childdiv.string)
+            print("freq-print")
+            self.rsidDict[rsid]["Frequency"] = freq[2]
+            print(freq[2])
 
-                self.rsidDict[rsid]["Frequency"] = d1[2]
-                self.rsidDict[rsid]["Risk"] = d1[4:2]
-                print(d1[0][0].encode("utf-8"))
+            risk = []
+            for div in bs.find_all(class_='usa-width-one-half'):
+                    for childdiv in div.find_all('dd'):
+                        if childdiv.string != None : 
+                            risk.append(childdiv.string)
+            risk = [s.strip() for s in risk]
+            print(risk[1:])
+            
+            self.rsidDict[rsid]["Risk"] = risk[1:]
+
             
 
         except urllib.error.HTTPError:
@@ -140,23 +153,20 @@ class SNPCrawl:
             data.append([ele for ele in cols if ele])
         return data
     
-    def tableToList2(self, table):
-        rows = table.find_all("dt")
-        data = []
-        for row in rows:
-            cols = row.find_all("td")
-            cols = [ele.text.strip() for ele in cols]
-            data.append([ele for ele in cols if ele])
-        return data
+   
 
     def createList(self):
         make = lambda rsname, description, freq, risk, variations: \
-            {"Name": rsname,
-             "Description": description,
-             "Genotype": self.snpdict[rsname.lower()] if rsname.lower() in self.snpdict.keys() else "(-;-)", 
-             "Frequency": freq,
-             "Risk Allele": risk,
-             "Variations": str.join("<br>", variations)}
+            {
+
+            "Name": rsname,
+            "Description": description,
+            "Genotype": self.snpdict[rsname.lower()] if rsname.lower() in self.snpdict.keys() else "(-;-)", 
+            "Frequency": freq,
+            "Risk Allele": str.join("<br>", risk),
+            "Variations": str.join("<br>", variations)
+             
+             }
 
         formatCell = lambda rsid, variation : \
             "<b>" + str.join(" ", variation) + "</b>" \
@@ -168,14 +178,12 @@ class SNPCrawl:
         for rsid in self.rsidDict.keys():
             curdict = self.rsidDict[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
-            risk = 2
-            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], risk, variations))
+            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], curdict["Risk"], variations))
         
         for rsid in self.rsidDict.keys():
             print("Printing for rsid in self.rsidDict.keys()")
             print(rsid)
 
-        print("here?!")
         print(self.rsidList[:5])
 
     def importDict(self, filepath):
@@ -198,11 +206,7 @@ class SNPCrawl:
         with open(filepath,"w") as jsonfile:
             json.dump(self.rsidDict, jsonfile)
 
-       # with open(datapath,"w") as jsonfile:
-        #   json.dump(self.snpdict, jsonfile)
-        
-        
-        
+    
 
      
 

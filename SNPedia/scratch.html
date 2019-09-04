@@ -1,0 +1,126 @@
+dbSNPin
+<dl class="usa-width-one-half">
+<dt>Organism</dt>
+<dd class="species_name">Homo sapiens</dd>
+<dt>Position</dt>
+<dd>
+<span>chr11:66560624 </span><span>(GRCh38.p12) </span><a class="fa fa-question-circle" data-ga-action="Click-on-Popper" data-ga-label="pos_tp" data-jig="ncbipopper" data-section="Summary" data-width="640px" href="#pos_tp" ref="section=Summary&amp;action=Click-on-Popper&amp;label=pos_tp"><span class="usa-sr-only">Help</span></a><p id="pos_tp">The anchor position for this RefSNP. Includes all nucleotides potentially affected by this change, thus it can differ from HGVS, which is right-shifted. See <a href="/snp/docs/refsnp_report/helpdoc/">here</a> for details.</p>
+</dd>
+<dt>Alleles</dt>
+<dd>
+        
+        
+          C&gt;T
+        
+      </dd>
+<dt>Variation Type</dt>
+<dd>
+        
+          SNV
+        
+
+        
+          <span class="small-font gray">Single Nucleotide Variation</span>
+</dd>
+<dt>Frequency</dt>
+<dd>
+<div>
+                  T=0.46138
+                  (114812/248844, GnomAD_exome)
+                </div><div>
+                  T=0.37484
+                  (47068/125568, TOPMED)
+                </div><span>
+                  T=0.45197 (54501/120586, ExAC)
+                </span><span>(<a data-freq-remn="7" data-ga-action="Click-on" data-ga-label="Frequency" data-is-icon="false" data-jig="ncbitoggler" data-section="Summary" data-targets="#remn_summ_freq" href="#remn_summ_freq" id="expandfrequency" ref="section=Summary&amp;action=Click-on&amp;label=Frequency">+ 7 more</a>)</span><div class="ui-widget hide_elm" id="remn_summ_freq"><div>
+                    T=0.3878
+                    (30510/78682, PAGE_STUDY)
+                  </div><div>
+                    T=0.3402
+                    (10655/31320, GnomAD)
+                  </div><div>
+                    T=0.401
+                    (2007/5008, 1000G)
+                  </div><div>
+                    T=0.354
+                    (1584/4480, Estonian)
+                  </div><div>
+                    T=0.441
+                    (1698/3854, ALSPAC)
+                  </div><div>
+                    T=0.441
+                    (1637/3708, TWINSUK)
+                  </div><div>
+                    T=0.42
+                    (254/600, NorthernSweden)
+                  </div></div>
+</dd>
+</dl>
+if dbSNPin:
+<dl class="usa-width-one-half">
+<dt>Organism</dt>
+<dd class="species_name">Homo sapiens</dd>
+<dt>Position</dt>
+<dd>
+<span>chr11:66560624 </span><span>(GRCh38.p12) </span><a class="fa fa-question-circle" data-ga-action="Click-on-Popper" data-ga-label="pos_tp" data-jig="ncbipopper" data-section="Summary" data-width="640px" href="#pos_tp" ref="section=Summary&amp;action=Click-on-Popper&amp;label=pos_tp"><span class="usa-sr-only">Help</span></a><p id="pos_tp">The anchor position for this RefSNP. Includes all nucleotides potentially affected by this change, thus it can differ from HGVS, which is right-shifted. See <a href="/snp/docs/refsnp_report/helpdoc/">here</a> for details.</p>
+</dd>
+<dt>Alleles</dt>
+<dd>
+        
+        
+          C&gt;T
+        
+      </dd>
+<dt>Variation Type</dt>
+<dd>
+        
+          SNV
+        
+
+        
+          <span class="small-font gray">Single Nucleotide Variation</span>
+</dd>
+<dt>Frequency</dt>
+<dd>
+<div>
+                  T=0.46138
+                  (114812/248844, GnomAD_exome)
+                </div><div>
+                  T=0.37484
+                  (47068/125568, TOPMED)
+                </div><span>
+                  T=0.45197 (54501/120586, ExAC)
+                </span><span>(<a data-freq-remn="7" data-ga-action="Click-on" data-ga-label="Frequency" data-is-icon="false" data-jig="ncbitoggler" data-section="Summary" data-targets="#remn_summ_freq" href="#remn_summ_freq" id="expandfrequency" ref="section=Summary&amp;action=Click-on&amp;label=Frequency">+ 7 more</a>)</span><div class="ui-widget hide_elm" id="remn_summ_freq"><div>
+                    T=0.3878
+                    (30510/78682, PAGE_STUDY)
+                  </div><div>
+                    T=0.3402
+                    (10655/31320, GnomAD)
+                  </div><div>
+                    T=0.401
+                    (2007/5008, 1000G)
+                  </div><div>
+                    T=0.354
+                    (1584/4480, Estonian)
+                  </div><div>
+                    T=0.441
+                    (1698/3854, ALSPAC)
+                  </div><div>
+                    T=0.441
+                    (1637/3708, TWINSUK)
+                  </div><div>
+                    T=0.42
+                    (254/600, NorthernSweden)
+                  </div></div>
+</dd>
+</dl>
+Traceback (most recent call last):
+  File "SNPedia/DataCrawler.py", line 239, in <module>
+    dfCrawl = SNPCrawl(rsids=rsid)
+  File "SNPedia/DataCrawler.py", line 52, in __init__
+    self.initcrawl(rsids)
+  File "SNPedia/DataCrawler.py", line 61, in initcrawl
+    self.grabTable(rsid)
+  File "SNPedia/DataCrawler.py", line 126, in grabTable
+    self.rsidDict[rsid]["Frequency"] = d1[2][2]
+IndexError: list index out of range
