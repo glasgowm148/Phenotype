@@ -88,6 +88,7 @@ class SNPCrawl:
                     "Description": "",
                     "Variations": [],
                     "Frequency": "",
+                    "Studies": "",
                     "Risk": ""
                 }
                 # Store the HTML resonse from the page as bs. (BeautifulSoup)
@@ -118,6 +119,7 @@ class SNPCrawl:
         # dbSNP import
         try:
             print("####### dbSNP import for " + rsid)
+            #url = "https://www.ncbi.nlm.nih.gov/pmc/?term= + rsid.lower()
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower()
            
             response = urllib.request.urlopen(url)
@@ -145,10 +147,28 @@ class SNPCrawl:
                 self.scrapedData[rsid]["Frequency"] = freq[2]
                 self.scrapedData[rsid]["Risk"] = risk[1]
 
-            
-
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
+
+
+        try:
+            print("####### Study import #######")
+            url = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + rsid.lower()
+            response = urllib.request.urlopen(url)
+            html = response.read()
+            bs = BeautifulSoup(html, "html.parser")
+            study = []
+            for div in bs.find_all(class_='title'):
+                for childdiv in div.find_all('a'):
+                    if childdiv.string != None : 
+                        study.append(childdiv.string)
+            if (len(study) > 1):
+                self.scrapedData[rsid]["Studies"] = study[0]
+                print(study[1])
+        except urllib.error.HTTPError:
+            print(url + " was not found or on dbSNP term search or contained no valid information")
+        except urllib.error.URLError::
+            print(url + " was not found or on dbSNP term search or contained no valid information")
 
     def tableToList(self, table):
         rows = table.find_all("tr")
@@ -162,7 +182,7 @@ class SNPCrawl:
    
 
     def createList(self):
-        make = lambda rsname, description, freq, risk, variations: \
+        make = lambda rsname, description, freq, risk, study, variations: \
             {
 
             "Name": rsname,
@@ -170,6 +190,7 @@ class SNPCrawl:
             "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(n/a)", 
             "Frequency": freq,
             "Risk": risk,
+            "Studies": study,
             "Variations": str.join("<br>", variations)
              
              }
@@ -184,7 +205,7 @@ class SNPCrawl:
         for rsid in self.scrapedData.keys():
             curdict = self.scrapedData[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
-            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], curdict["Risk"], variations))
+            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], curdict["Risk"], curdict["Studies"], variations))
         
         for rsid in self.scrapedData.keys():
             print("Printing for rsid in self.scrapedData.keys()")
@@ -210,11 +231,6 @@ class SNPCrawl:
 
         with open(filepath,"w") as jsonfile:
             json.dump(self.scrapedData, jsonfile)
-
-    
-
-     
-
 
 parser = argparse.ArgumentParser()
 

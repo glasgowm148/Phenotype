@@ -1,1020 +1,263 @@
-,Description,Variations,Frequency,Risk
+,Description,Variations,Frequency,Studies,Risk
 rs1815739,muscle performance,"[['(C;C)', '2.2', 'Better performing muscles. Likely sprinter.'], ['(C;T)', '2.1', 'Mix of muscle types. Likely sprinter.'], ['(T;T)', '2.2', 'Impaired muscle performance. Likely endurance athlete.']]","
                   T=0.46138
                   (114812/248844, GnomAD_exome)
-                ",C>T
+                ",Cellular Aspects of Muscle Specialization Demonstrate Genotype – Phenotype Interaction Effects in Athletes,C>T
 rs53576,influences social behavior and personality,"[['(A;A)', '2.8', 'Lack of empathy?'], ['(A;G)', '2.8', 'Lack of empathy?'], ['(G;G)', '2.5', 'Optimistic and empathetic; handle stress well']]","
                   A=0.31514
                   (39572/125568, TOPMED)
-                ",A>G / A>T
+                ",The oxytocin receptor gene predicts brain activity during an emotion recognition task in autism,A>G / A>T
 rs4680,warrior vs worrier; number of other associations,"[['(A;A)', '2.5', '(worrier) advantage in memory and attention tasks'], ['(A;G)', 'Intermediate dopamine levels, other effects'], ['(G;G)', '2.5', '(warrior) multiple associations, see details']]","
                   A=0.46109
                   (114049/247346, GnomAD_exome)
-                ",G>A
+                ",A genetic variant in the catechol-O-methyl transferase (COMT) gene is related to age-dependent differences in the therapeutic effect of calcium-channel blockers,G>A
 rs1800497,,"[['(C;C)', '3', 'Normal (A2/A2)'], ['(C;T)', '2.9', 'A1/A2: Bad at avoidance of errors. 0.5x lower OCD risk, 0.87x lower Tardive Diskinesia risk, higher ADHD risk. More Alcohol Dependence. Lower risk of Postoperative Nausea. Increased obesity. Bupropion is not effective for smoking cessation.'], ['(T;T)', '4', 'A1/A1: Bad at avoidance of errors. 0.25x lower OCD; 0.56x lower Tardive Diskinesia; higher ADHD; 1.4x Alcohol Dependence; lower Postoperative Nausea; Increased obesity; less pleasure response; Bupropion ineffective for smoking cessation.; 2.4x risk for adenoma recurrence.']]","
                   A=0.26419
                   (65225/246888, GnomAD_exome)
-                ",G>A
+                ",DRD2/ANKK1 Polymorphism Modulates the Effect of Ventral Striatal Activation on Working Memory Performance,G>A
 rs429358,,"[['(C;C)', '1.2', 'one of 2 snps relevant to classifying APOE genotype'], ['(C;T)', "">3x increased risk for Alzheimer's; 1.4x increased risk for heart disease""], ['(T;T)', '0', 'common']]","
                   C=0.13850
                   (23502/169692, GnomAD_exome)
-                ",T>C
+                ",Apolipoprotein E polymorphisms increase the risk of post-stroke depression,T>C
 rs9939609,Obesity related. Raises T2D risk through obesity.,"[['(A;A)', '3', 'obesity risk and 1.6x risk for T2D'], ['(A;T)', '2.4', '1.3x risk for T2D; obesity risk'], ['(T;T)', '1.5', 'lower risk of obesity and Type-2 diabetes']]","
                   A=0.40273
                   (50570/125568, TOPMED)
-                ",T>A
+                ",,T>A
 rs4988235,,"[['(C;C)', '2.5', 'likely to be lactose intolerant as an adult'], ['(C;T)', '1.1', 'likely to be able to digest milk as an adult'], ['(T;T)', '1.1', 'can digest milk']]","
                   A=0.38766
                   (48678/125568, TOPMED)
-                ",G>A / G>C
+                ","Dairy consumption, systolic blood pressure, and risk of hypertension: Mendelian randomization study",G>A / G>C
 rs6806903,,[],"
                   G=0.27626
                   (34689/125568, TOPMED)
-                ",A>G
+                ",,A>G
 rs4244285,Clopidogrel (Plavix®),"[['(A;A)', '4', 'poor metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(A;G)', '3', 'poorer metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(G;G)', '0', 'normal']]","
                   A=0.17640
                   (28518/161670, GnomAD_exome)
-                ",G>A / G>C
+                ",Genetic Polymorphisms of Metabolic Enzymes and the Pharmacokinetics of Indapamide in Taiwanese Subjects,G>A / G>C
 rs1801133,Folic acid processing; homocysteine levels,"[['(C;C)', '0', 'Common genotype: normal homocysteine levels'], ['(C;T)', '2.2', '1 copy of C677T allele of MTHFR = 65% efficiency in processing folic acid'], ['(T;T)', '2.8', 'homozygous for C677T of MTHFR = 10-20% efficiency in processing folic acid = high homocysteine, low B12 and folate levels']]","
                   A=0.31486
                   (79177/251468, GnomAD_exome)
-                ",G>A
+                ","Methylenetetrahydrofolate reductase tagging polymorphisms are associated with risk of esophagogastric junction adenocarcinoma: a case-control study involving 2,740 Chinese Han subjects",G>A
 rs9378252,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '1', 'benign'], ['(T;T)', '1', 'benign']]","
                   T=0.04407
                   (7165/162570, GnomAD_exome)
-                ",A>G / A>T
+                ",,A>G / A>T
 rs204890,,"[['(G;G)', '0', 'common in complete genomics']]","
                   T=0.02968
                   (5218/175784, GnomAD_exome)
-                ",C>T
+                ",MHC region and risk of systemic lupus erythematosus in African-American women,C>T
 rs6472,,"[['(C;C)', '0', 'benign polymorphism'], ['(C;G)', '0', 'benign polymorphism'], ['(G;G)', '0', 'common/normal']]","
                   C=0.1238
                   (3811/30776, GnomAD)
-                ",G>A / G>C
+                ",,G>A / G>C
 rs6410,,"[['(A;A)', '0', 'common in clinvar']]","
                   T=0.41910
                   (105248/251126, GnomAD_exome)
-                ",T>A / T>C
+                ",,T>A / T>C
 rs2486758,,"[['(C;C)', '2.2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(C;T)', '2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(T;T)', '2', 'Slightly lower prostate cancer risk; better response to AA/P treatment']]","
                   C=0.17057
                   (21418/125568, TOPMED)
-                ",T>C
+                ",Relationship between CYP17A1 Genetic Polymorphism and Essential Hypertension in a Chinese Population,T>C
 rs2296239,,"[['(C;C)', '0', 'common in clinvar']]","
                   T=0.27941
                   (70250/251420, GnomAD_exome)
-                ",C>T
+                ",Genetic association analysis of vitamin D pathway with obesity traits,C>T
 rs11621961,,[],"
                   T=0.30322
                   (38075/125568, TOPMED)
-                ",C>T
+                ","Investigation of Genetic Variants, Birthweight and Hypothalamic-Pituitary-Adrenal Axis Function Suggests a Genetic Variant in the SERPINA6 Gene Is Associated with Corticosteroid Binding Globulin in the Western Australia Pregnancy Cohort (Raine) Study",C>T
 rs1009382,,[],"
                   C=0.28018
                   (67520/240990, GnomAD_exome)
-                ",C>A / C>G / C>T
+                ",High-Density SNP Screening of the Major Histocompatibility Complex in Systemic Lupus Erythematosus Demonstrates Strong Evidence for Independent Susceptibility Regions,C>A / C>G / C>T
 rs1134095,,[],"
                   G=0.38656
                   (48540/125568, TOPMED)
-                ",G>A
+                ",,G>A
 rs6387,,"[['(G;G)', '0', 'common in clinvar']]","
                   C=0.49504
                   (62161/125568, TOPMED)
-                ",C>G / C>T
+                ",,C>G / C>T
 rs284849,,[],"
                   T=0.14747
                   (18517/125568, TOPMED)
-                ",G>T
+                ",,G>T
 rs1269851,,[],"
                   C=0.05702
                   (7160/125568, TOPMED)
-                ",T>C
+                ",,T>C
 rs4539,,"[['(A;A)', '0', 'common in clinvar']]","
                   C=0.42399
                   (105290/248332, GnomAD_exome)
-                ",T>C
+                ",Association between Polymorphisms in the Renin-Angiotensin-Aldosterone System Genes and Essential Hypertension in the Han Chinese Population,T>C
 rs1134096,,[],"
                   C=0.38656
                   (48539/125568, TOPMED)
-                ",C>A
+                ",,C>A
 rs1269854,,[],"
                   C=0.06094
                   (7652/125568, TOPMED)
-                ",T>C
+                ",,T>C
 rs9267798,,[],"
                   C=0.08506
                   (10681/125568, TOPMED)
-                ",G>C
+                ",,G>C
 rs204894,,[],"
                   A=0.03500
                   (8803/251486, GnomAD_exome)
-                ",G>A
+                ",,G>A
 rs915908,,"[['(G;G)', '0', 'common in complete genomics']]","
                   A=0.12611
                   (15836/125568, TOPMED)
-                ",G>A
+                ",Assessment of interaction between maternal polycyclic aromatic hydrocarbons exposure and genetic polymorphisms on the risk of congenital heart diseases,G>A
 rs204999,,[],"
                   G=0.29457
                   (36988/125568, TOPMED)
-                ",A>G
+                ",A genome-wide meta-analysis of nodular sclerosing Hodgkin lymphoma identifies risk loci at 6p21.32,A>G
 rs204887,,[],"
                   A=0.36781
                   (46185/125568, TOPMED)
-                ",A>G / A>T
-rs12530380,,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]",-,T>A
+                ",,A>G / A>T
+rs12530380,,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]",-,,T>A
 rs4998896,,[],"
                   A=0.00000
                   (1/251472, GnomAD_exome)
-                ",C>A / C>T
+                ",,C>A / C>T
 rs743572,,"[['(A;A)', '0', 'common in clinvar']]","
                   G=0.39840
                   (50026/125568, TOPMED)
-                ",A>G / A>T
+                ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,A>G / A>T
 rs6405,,[],"
                   T=0.00015
                   (37/250968, GnomAD_exome)
-                ",C>T
-rs1137486,,[],-,C>A / C>T
-rs5292,,[],None,G>C
+                ",,C>T
+rs1137486,,[],-,,C>A / C>T
+rs5292,,[],None,,G>C
 rs35045158,,[],"
                   A=0.02155
                   (2706/125568, TOPMED)
-                ",G>A
-rs1042854,,[],None,G>T
+                ",,G>A
+rs1042854,,[],None,,G>T
 rs5301,,[],"
                   C=0.48152
                   (60464/125568, TOPMED)
-                ",T>C
+                ",,T>C
 rs5297,,[],"
                   G=0.13214
                   (16592/125568, TOPMED)
-                ",A>G
+                ",Linking Genomic and Metabolomic Natural Variation Uncovers Nematode Pheromone Biosynthesis,A>G
 rs7003319,,[],"
                   T=0.38656
                   (48539/125568, TOPMED)
-                ",T>C
+                ",,T>C
 rs4534,,[],"
                   T=0.08449
                   (21242/251402, GnomAD_exome)
-                ",C>T
+                ",Association of genetic variations with pharmacokinetics and lipid-lowering response to atorvastatin in healthy Korean subjects,C>T
 rs1137485,,[],"
                   G=0.00002
                   (2/125568, TOPMED)
-                ",C>G
-rs1137483,,[],-,T>C
+                ",,C>G
+rs1137483,,[],-,,T>C
 rs28934586,,"[['(A;G)', '3', 'Carrier of a congenital adrenal hyperplasia mutation'], ['(G;G)', '0', 'common in clinvar']]","
                   T=0.00002
                   (6/251406, GnomAD_exome)
-                ",C>T
+                ",,C>T
 rs17115100,,"[['(G;G)', '0', 'common on affy axiom data'], ['(G;T)', '1.5', ""slightly increased risk of developing Parkinson's Disease""], ['(T;T)', '2', ""Increased risk of developing Parkinson's Disease""]]","
                   T=0.14254
                   (35549/249388, GnomAD_exome)
-                ",G>T
+                ",Novel disease syndromes unveiled by integrative multiscale network analysis of diseases sharing molecular effectors and comorbidities,G>T
 rs6162,,"[['(G;G)', '0', 'common in clinvar']]","
                   A=0.42336
                   (106461/251466, GnomAD_exome)
-                ",G>A
+                ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,G>A
 rs6163,,[],"
                   A=0.39797
                   (49972/125568, TOPMED)
-                ",C>A / C>T
+                ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,C>A / C>T
 rs1004467,,"[['(T;T)', '0']]","
                   G=0.15280
                   (38333/250872, GnomAD_exome)
-                ",A>G
+                ",A Study on the Association Between Polymorphisms in the Cytochrome P450 Family 17 Subfamily A Member 1 Gene Region and Type 2 Diabetes Mellitus in Han Chinese,A>G
 rs6445,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","
                   T=0.00460
                   (633/137706, GnomAD_exome)
-                ",C>T
+                ",,C>T
 rs284847,,[],"
                   A=0.02161
                   (2714/125568, TOPMED)
-                ",G>A / G>T
+                ",,G>A / G>T
 rs5284,,[],"
                   A=0.00014
                   (34/251420, GnomAD_exome)
-                ",G>A
+                ",,G>A
 rs5283,,[],"
                   A=0.40867
                   (102650/251182, GnomAD_exome)
-                ",G>A
-rs28935481,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0']]",-,T>A / T>C
+                ",,G>A
+rs28935481,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0']]",-,,T>A / T>C
 rs4541,,[],"
                   A=0.0245
                   (318/13006, GO-ESP)
-                ",G>A / G>T
+                ",Variation in Genes that Regulate Blood Pressure Are Associated with Glomerular Filtration Rate in Chinese,G>A / G>T
 rs35887327,,[],"
                   C=0.00304
                   (762/250862, GnomAD_exome)
-                ",T>C
+                ",,T>C
 rs4919687,,[],"
                   A=0.24249
                   (30449/125568, TOPMED)
-                ",G>A
-rs6389,,[],None,C>T
+                ",Association of CYP17A1 Genetic Polymorphisms and Susceptibility to Essential Hypertension in the Southwest Han Chinese Population,G>A
+rs6389,,[],None,,C>T
 rs5303,,[],"
                   A=0.33903
                   (42571/125568, TOPMED)
-                ",A>C / A>G
+                ",,A>C / A>G
 rs5017238,,[],"
                   G=0.38652
                   (48535/125568, TOPMED)
-                ",G>A / G>T
+                ",,G>A / G>T
 rs11123857,,"[['(A;A)', '0'], ['(A;G)', '2', '1.44-fold increased risk of bipolar disorder or major depression'], ['(G;G)', '2', '2.88-fold risk of bipolar disorder or major depression']]","
                   G=0.27012
                   (33919/125568, TOPMED)
-                ",A>G
+                ",Differential Association of Circadian Genes with Mood Disorders: CRY1 and NPAS2 are Associated with Unipolar Major Depression and CLOCK and VIP with Bipolar Disorder,A>G
 rs2899472,,"[['(C;C)', '0', 'common on affy axiom data']]","
                   A=0.16371
                   (20557/125568, TOPMED)
-                ",C>A
+                ",Genetic Determinants of Circulating Estrogen Levels and Evidence of a Causal Effect of Estradiol on Bone Density in Men,C>A
 rs1934953,,[],"
                   C=0.31483
                   (39532/125568, TOPMED)
-                ",C>A / C>T
-rs3842570,,[],None,"11
+                ",Genetic markers in the EET metabolic pathway are associated with outcomes in patients with aneurysmal subarachnoid hemorrhage,C>A / C>T
+rs3842570,,[],None,Common polymorphisms of calpain-10 and the risk of Type 2 Diabetes in a Tunisian Arab population: a case-control study,"11
         citations"
 rs3830076,,[],"
                   T=0.05427
                   (6814/125568, TOPMED)
-                ",C>T
+                ",Mapping MHC haplotype effects in unrelated donor hematopoietic cell transplantation,C>T
 rs4986883,,"[['(A;A)', '0', 'common in complete genomics']]","
                   C=0.00861
                   (1081/125568, TOPMED)
-                ",T>C
-rs104894149,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]",None,G>A / G>T
-rs28934605,,"[['(G;G)', '0', 'common in clinvar']]",None,C>T
+                ",Associations of CYP1 polymorphisms with risk of prostate cancer: an updated meta-analysis,T>C
+rs104894149,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]",None,,G>A / G>T
+rs28934605,,"[['(G;G)', '0', 'common in clinvar']]",None,,C>T
 rs55951658,,"[['(C;C)', 'CYP3A4*4 homozygote'], ['(C;T)', 'carrier of one CYP3A4*4 allele'], ['(T;T)', '0', 'normal']]","
                   C=0.00041
                   (102/251140, GnomAD_exome)
-                ",T>A / T>C
+                ",Interaction Effects of AFB1 and MC-LR Co-exposure with Polymorphism of Metabolic Genes on Liver Damage: focusing on SLCO1B1 and GSTP1,T>A / T>C
 rs9267796,,[],"
                   T=0.03640
                   (4571/125568, TOPMED)
-                ",C>T
+                ",,C>T
 rs55897648,,"[['(A;A)', 'CYP2E1*3 homozygote'], ['(A;G)', 'carrier of one CYP2E1*3 allele'], ['(G;G)', '0', 'normal']]","
                   A=0.00143
                   (179/125568, TOPMED)
-                ",G>A / G>T
+                ",,G>A / G>T
 rs34690599,,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '3', 'Beta Thalassemia carrier; Hemoglobin beta-plus mutation'], ['(G;G)', '4.5', 'Beta Thalassemia intermedia likely; Hemoglobin beta-plus; variable clinical symptoms']]","
                   C=0.00002
                   (3/125568, TOPMED)
-                ",G>C
-rs104894136,,"[['(C;C)', '0', 'common in complete genomics']]",CYP17A1 : Stop Gained,G>A
-rs104894145,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]",CYP17A1 : Missense Variant,G>A
-rs28934607,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]",None,G>A
-rs56244447,,"[['(A;A)', '0', 'normal'], ['(A;C)', '2', 'carrier of one CYP3A5*3D allele'], ['(C;C)', '2.5', 'CYP3A5*3D homozygote; nonexpressor for CYP3A5']]","
-                  C=0.00016
-                  (40/251306, GnomAD_exome)
-                ",A>C
-rs55901263,,"[['(C;C)', 'CYP3A4*5 homozygote'], ['(C;G)', 'carrier of one CYP3A4*5 allele'], ['(G;G)', '0', 'normal']]","
-                  C=0.00011
-                  (27/251126, GnomAD_exome)
-                ",G>C
-rs35580488,,[],"
-                  C=0.01019
-                  (2562/251496, GnomAD_exome)
-                ",G>A / G>C
-rs28934604,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in clinvar']]",None,C>T
-rs104894139,,"[['(A;G)', '3', 'Carrier of an isolated 17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]","
-                  T=0.00002
-                  (4/251304, GnomAD_exome)
-                ",C>T
-rs1075944,,"[['(C;C)', '0', 'common in complete genomics']]",,
-rs104894148,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]",None,T>A
-rs104894142,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]","
-                  A=0.00000
-                  (1/251224, GnomAD_exome)
-                ",G>A
-rs55817950,,"[['(A;A)', '2.5', 'CYP3A5*8 homozygote; nonexpressor for CYP3A5'], ['(A;G)', '2', 'carrier of one CYP3A5*8 allele'], ['(G;G)', '0', 'normal']]","
-                  A=0.00001
-                  (3/251310, GnomAD_exome)
-                ",G>A
-rs1056827,,"[['(G;G)', '0', 'common in clinvar']]","
-                  A=0.31887
-                  (65208/204494, GnomAD_exome)
-                ",C>A
-rs104894144,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","
-                  T=0.00003
-                  (7/251448, GnomAD_exome)
-                ",A>C / A>T
-rs56107638,,"[['(G;G)', '0', 'common/normal']]","
-                  A=0.00023
-                  (58/251300, GnomAD_exome)
-                ",G>A / G>C
-rs34745240,,"[['(G;G)', '0', 'common on affy axiom data']]","
-                  A=0.02622
-                  (6590/251296, GnomAD_exome)
-                ",G>A
-rs104894147,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]",None,A>C
-rs4713505,,[],"
-                  T=0.21561
-                  (27074/125568, TOPMED)
-                ",G>T
-rs104894154,,"[['(A;A)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;G)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]","
-                  T=0.00002
-                  (4/251458, GnomAD_exome)
-                ",C>T
-rs72551320,,"[['(A;A)', '0', 'common in clinvar']]",-,A>G
-rs55785340,,"[['(A;A)', '0', 'normal'], ['(A;G)', 'carrier of one CYP3A4*2 allele'], ['(G;G)', 'CYP3A4*2 homozygote']]","
-                  G=0.00096
-                  (240/251054, GnomAD_exome)
-                ",A>G / A>T
-rs104894135,,"[['(C;C)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","
-                  G=0.00001
-                  (2/251484, GnomAD_exome)
-                ",A>G
-rs9282671,,"[['(A;A)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(A;T)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(T;T)', '0', 'common in complete genomics']]","
-                  T=0.00355
-                  (654/183970, GnomAD_exome)
-                ",A>T
-rs28931609,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]","
-                  A=0.00002
-                  (5/249592, GnomAD_exome)
-                ",G>A / G>T
-rs104894146,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]",None,A>C
-rs104894137,,"[['(A;A)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;C)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(C;C)', '0', 'common in clinvar']]",None,G>T
-rs41272687,,"[['(C;C)', '0', 'common in clinvar']]","
-                  T=0.01898
-                  (4772/251390, GnomAD_exome)
-                ",C>T
-rs72552791,,"[['(A;A)', '0', 'normal'], ['(A;G)', '2', 'carrier of one CYP3A5*11 allele'], ['(G;G)', '2.5', 'CYP3A5*11 homozygote; nonexpressor for CYP3A5']]","
-                  C=0.00000
-                  (1/251264, GnomAD_exome)
-                ",T>C
-rs201184519,,[],"
-                  A=0.00003
-                  (8/246836, GnomAD_exome)
-                ",G>A
-rs204895,,[],"
-                  T=0.02328
-                  (2923/125568, TOPMED)
-                ",C>T
-rs267606757,,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;C)', '5', 'Congenital adrenal hyperplasia']]",None,A>C
-rs200737038,,"[['(G;G)', '0', 'common in clinvar']]","
-                  A=0.00014
-                  (35/248024, GnomAD_exome)
-                ",G>A
-rs2617266,,"[['(C;C)', '0', 'common in clinvar']]","
-                  A=0.29261
-                  (70960/242504, GnomAD_exome)
-                ",G>A
-rs204899,,[],"
-                  T=0.13276
-                  (16670/125568, TOPMED)
-                ",C>T
-rs6475,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in complete genomics']]","
-                  A=0.00048
-                  (120/249434, GnomAD_exome)
-                ",T>A
-rs72552752,,[],None,C>T
-i5005427,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",,
-rs204888,,[],"
-                  T=0.12030
-                  (30022/249560, GnomAD_exome)
-                ",G>T
-rs72554626,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0', 'common in complete genomics']]",None,T>C
-rs11751545,,[],"
-                  C=0.0079
-                  (619/78702, PAGE_STUDY)
-                ",A>C
-rs2239689,,[],"
-                  A=0.33472
-                  (62709/187348, GnomAD_exome)
-                ",G>A
-rs2077580,,[],"
-                  A=0.10273
-                  (12900/125568, TOPMED)
-                ",G>A
-rs267606756,,"[['(-;-)', '0', 'common in clinvar']]",None,dupT
-rs121908613,,"[['(A;T)', '3', 'Carrier of a spastic paraplegia mutation'], ['(T;T)', '0', 'common in clinvar']]","
-                  T=0.00008
-                  (19/250488, GnomAD_exome)
-                ",A>G / A>T
-i6024112,,[],,
-i6024116,,[],,
-rs6002635,,"[['(G;G)', '0', 'common in complete genomics']]",,
-rs72551314,,"[['(C;C)', '0', 'common in clinvar']]","
-                  T=0.00001
-                  (3/251436, GnomAD_exome)
-                ",C>T
-rs6926448,,[],"
-                  T=0.00002
-                  (6/251452, GnomAD_exome)
-                ",C>T
-i5005424,,[],,
-rs72552751,,[],None,G>C
-rs411337,,[],"
-                  T=0.11304
-                  (14194/125568, TOPMED)
-                ",C>G / C>T
-rs204879,,[],"
-                  C=0.02202
-                  (2765/125568, TOPMED)
-                ",T>C
-rs199476189,,"[['(G;G)', '0', 'common in clinvar']]","
-                  T=0.00020
-                  (51/251400, GnomAD_exome)
-                ",G>T
-rs8283,,[],"
-                  G=0.26339
-                  (33073/125568, TOPMED)
-                ",A>G
-i6024117,,[],,
-rs61495246,,"[['(T;T)', '0', 'common in clinvar']]","
-                  G=0.00024
-                  (61/251224, GnomAD_exome)
-                ",A>G
-rs8192789,,"[['(C;C)', '0', 'common in complete genomics']]","
-                  T=0.06638
-                  (8335/125568, TOPMED)
-                ",C>A / C>T
-rs13199524,,[],"
-                  T=0.08763
-                  (11003/125568, TOPMED)
-                ",C>T
-rs200718357,,[],"
-                  T=0.00046
-                  (112/243686, GnomAD_exome)
-                ",C>T
-rs56276455,,"[['(A;A)', 'CYP1A2*3 homozygote'], ['(A;G)', 'carrier of one CYP1A2*3 allele'], ['(G;G)', '0', 'normal']]","
-                  A=0.00017
-                  (43/250946, GnomAD_exome)
-                ",G>A
-rs2269426,,[],"
-                  A=0.33618
-                  (42214/125568, TOPMED)
-                ",G>A
-rs2269429,,[],"
-                  T=0.13048
-                  (16384/125568, TOPMED)
-                ",C>G / C>T
-i5005426,,[],,
-rs72552758,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]","
-                  A=0.00002
-                  (2/133220, GnomAD_exome)
-                ",G>A
-rs201552310,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]","
-                  C=0.00001
-                  (1/125568, TOPMED)
-                ",G>A / G>C
-rs2239688,,[],"
-                  G=0.01970
-                  (2474/125568, TOPMED)
-                ",C>A / C>G
-rs6476,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in clinvar']]","
-                  A=0.00100
-                  (249/250242, GnomAD_exome)
-                ",T>A / T>C
-rs9378251,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","
-                  T=0.00009
-                  (22/240194, GnomAD_exome)
-                ",C>T
-i5005438,,[],,
-rs151344505,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]","
-                  A=0.00011
-                  (26/246388, GnomAD_exome)
-                ",G>A
-rs72547515,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'carrier of one CYP1A2*16 allele'], ['(T;T)', 'CYP1A2*16 homozygote']]","
-                  C=0.00000
-                  (1/251386, GnomAD_exome)
-                ",G>A / G>C
-i5005422,,[],,
-rs1150758,,[],"
-                  C=0.09935
-                  (12475/125568, TOPMED)
-                ",G>C
-rs72551317,,"[['(A;A)', '0', 'common in clinvar']]","
-                  G=0.00002
-                  (4/251474, GnomAD_exome)
-                ",A>G
-rs151344506,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]","
-                  A=0.0000
-                  (1/87116, ExAC)
-                ",G>A / G>C
-rs2470144,,[],"
-                  T=0.37829
-                  (47501/125568, TOPMED)
-                ",T>C
-rs12333245,,[],"
-                  A=0.13333
-                  (16742/125568, TOPMED)
-                ",G>A
-rs6467,,"[['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar'], ['(G;T)', '0', 'polymorphism'], ['(T;T)', '0', 'common/normal']]","
-                  C=0.3707
-                  (4817/12996, GO-ESP)
-                ",C>A / C>G / C>T
-rs28357069,,[],,
-rs61754278,,"[['(G;G)', '0', 'common in clinvar']]","
-                  T=0.00002
-                  (4/251412, GnomAD_exome)
-                ",C>T
-rs3807039,,[],"
-                  C=0.10357
-                  (13005/125568, TOPMED)
-                ",A>C
-i5005423,,[],,
-rs3749962,,[],"
-                  A=0.13930
-                  (34695/249064, GnomAD_exome)
-                ",G>A
-rs397509367,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;GG)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GG;GG)', '0', 'common in clinvar']]",None,delGGinsC
-rs10046127,,[],"
-                  T=0.08238
-                  (10344/125568, TOPMED)
-                ",C>T
-rs28361044,,[],,
-rs7774197,,[],"
-                  C=0.09604
-                  (12059/125568, TOPMED)
-                ",A>C
-i5005434,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",,
-i5005436,Congenital adrenal hyperplasia related,"[['(C;C)', '0', 'normal'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia']]",,
-rs151344503,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]",CYP21A2 : Stop Gained,G>A
-rs3130342,,"[['(G;G)', '0', 'common on affy axiom data']]","
-                  A=0.09451
-                  (11867/125568, TOPMED)
-                ",A>C / A>G / A>T
-rs3134954,,[],"
-                  C=0.09465
-                  (11885/125568, TOPMED)
-                ",C>T
-rs2071293,,[],"
-                  A=0.23008
-                  (28891/125568, TOPMED)
-                ",G>A
-rs72547508,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0', 'common in complete genomics']]","
-                  A=0.00001
-                  (3/251368, GnomAD_exome)
-                ",G>A
-i5006178,,[],,
-i5005425,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",,
-i5005439,,[],,
-rs8111,,[],"
-                  T=0.20591
-                  (25856/125568, TOPMED)
-                ",C>T
-rs387906510,,"[['(-;-)', '5', 'Congenital adrenal hyperplasia'], ['(-;GAGACTAC)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GAGACTAC;GAGACTAC)', '0', 'common in clinvar']]",None,delGAGACTAC
-i6024113,,[],,
-rs72551315,,"[['(C;C)', '0', 'common in clinvar']]","
-                  T=0.00003
-                  (4/125568, TOPMED)
-                ",C>T
-rs2228628,,[],"
-                  C=0.26560
-                  (55532/209080, GnomAD_exome)
-                ",G>C
-rs169494,,[],"
-                  A=0.09611
-                  (12068/125568, TOPMED)
-                ",G>A
-rs72551319,,"[['(A;A)', '0', 'common in clinvar']]","
-                  T=0.00002
-                  (4/251412, GnomAD_exome)
-                ",A>T
-rs11962353,,[],"
-                  A=0.00162
-                  (204/125568, TOPMED)
-                ",G>A
-rs200357005,,[],-,C>G / C>T
-rs12198173,,"[['(G;G)', '0']]","
-                  A=0.10846
-                  (13619/125568, TOPMED)
-                ",G>A
-rs439844,,[],"
-                  T=0.14991
-                  (18824/125568, TOPMED)
-                ",C>T
-rs2071295,,[],"
-                  T=0.23949
-                  (30072/125568, TOPMED)
-                ",C>T
-i5005431,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",,
-i5005429,,[],,
-rs1150754,,"[['(G;G)', '0', 'common on affy axiom data']]","
-                  T=0.09861
-                  (12382/125568, TOPMED)
-                ",C>A / C>T
-rs5758598,,"[['(G;G)', '0', 'common in complete genomics']]","
-                  G=0.02026
-                  (2689/132730, GnomAD_exome)
-                ",G>A
-rs7769409,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscallled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]",None,C>T
-rs56411402,,"[['(C;C)', '2.5', 'CYP3A5*4 homozygote; nonexpressor for CYP3A5'], ['(C;T)', '2', 'carrier of one CYP3A5*4 allele'], ['(T;T)', '0', 'normal']]","
-                  C=0.00023
-                  (59/251466, GnomAD_exome)
-                ",T>C
-rs12153855,,[],"
-                  C=0.11887
-                  (14926/125568, TOPMED)
-                ",T>C
-i6024115,,[],,
-rs12524441,,[],"
-                  A=0.01080
-                  (1356/125568, TOPMED)
-                ",G>A
-rs169496,,[],"
-                  T=0.15022
-                  (18863/125568, TOPMED)
-                ",C>T
-rs2480256,,[],"
-                  A=0.28557
-                  (56512/197892, GnomAD_exome)
-                ",A>G / A>T
-i5005432,Congenital adrenal hyperplasia related,"[['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",,
-rs151344504,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]",None,G>A
-rs7755898,Q318X allele of the 21-hydroxylase gene.  T is the risk allele.  This represents a null allele (no function).,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]",None,C>T
-rs72551316,,"[['(C;C)', '0', 'common in clinvar']]","
-                  T=0.00001
-                  (2/251478, GnomAD_exome)
-                ",C>T
-rs185819,,"[['(T;T)', '0', 'common in clinvar']]","
-                  T=0.48533
-                  (60942/125568, TOPMED)
-                ",T>A / T>C / T>G
-rs72552756,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]","
-                  C=0.00001
-                  (2/237156, GnomAD_exome)
-                ",G>C
-rs72552754,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]","
-                  A=0.00000
-                  (1/247760, GnomAD_exome)
-                ",G>A
-rs72552750,,[],"
-                  A=0.00003
-                  (6/234136, GnomAD_exome)
-                ",G>A
-rs72551318,,"[['(C;C)', '0', 'common in clinvar']]","
-                  T=0.00004
-                  (5/125568, TOPMED)
-                ",C>G / C>T
-rs6471,,"[['(G;G)', '0', 'common in complete genomics'], ['(G;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]",None,G>A / G>C / G>T
-rs397515532,,"[['(-;-)', '0', 'common in clinvar']]",,
-i6024118,,[],,
-i5009894,,"[['(-;AA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5009897,,"[['(-;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5009900,,"[['(-;CAAG)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(CAAG;CAAG)', '0', 'common in clinvar']]",,
-i5009903,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009905,,"[['(-;GAAA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(GAAA;GAAA)', '0', 'Normal']]",,
-i5009906,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009909,,"[['(-;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5009910,,"[['(-;CAGT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(CAGT;CAGT)', '0', 'common in clinvar']]",,
-i5009914,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009915,,"[['(-;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5009917,,"[['(-;AGAAT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(AGAAT;AGAAT)', '0', 'common in clinvar']]",,
-i5009921,,"[['(-;TAAC)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(TAAC;TAAC)', '0', 'common in clinvar']]",,
-i5009925,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009928,,"[['(AAAGC;AAAGC)', '0', 'common in clinvar']]",,
-i5009929,,"[['(-;TTAAA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(TTAAA;TTAAA)', '0', 'Normal']]",,
-i5009932,,"[['(-;ATTA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(ATTA;ATTA)', '0', 'Normal']]",,
-i5009933,,"[['(-;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5009934,,"[['(-;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5009939,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009941,,"[['(-;AA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5009943,,"[['(-;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5009950,,"[['(AC;AC)', '0', 'common in clinvar']]",,
-i5009952,,"[['(-;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5009953,,[['(D;I)']],,
-i5009954,,"[['(-;GA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(GA;GA)', '0', 'common in clinvar']]",,
-i5009956,,"[['(-;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5009958,,"[['(-;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'Normal']]",,
-i5009961,,"[['(-;CA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(CA;CA)', '0', 'common in clinvar']]",,
-i5009962,,"[['(-;AT)', '6', 'Likely miscall in Ancestry data; otherwise, BRCA1 variant considered pathogenic for breast cancer'], ['(AT;AT)', '0', 'common in clinvar'], ['(D;D)', '1', 'Likely miscall in Ancestry data']]",,
-i5009965,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'Normal']]",,
-i5009966,,"[['(-;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5009967,,[['(D;I)']],,
-i5009969,,"[['(-;GT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(GT;GT)', '0', 'common in clinvar']]",,
-i5009972,,"[['(-;CT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(CT;CT)', '0', 'common in clinvar']]",,
-i5009974,,"[['(-;GT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(GT;GT)', '0', 'Normal']]",,
-i5009975,,"[['(-;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'Normal']]",,
-i5009979,,[['(D;I)']],,
-i5009984,,"[['(-;GT)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(-;TG)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(GT;GT)', '0', 'common/normal'], ['(TG;TG)', '0', 'common in clinvar']]",,
-i5009987,,"[['(-;CA)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(CA;CA)', '0', 'common in clinvar']]",,
-i5009988,,"[['(-;A)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5009989,,"[['(-;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010001,,"[['(TT;TT)', '0', 'common in clinvar']]",,
-i5010007,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010010,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010013,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010015,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010016,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010017,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010019,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010037,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'normal']]",,
-i5010039,,"[['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'Normal']]",,
-i5010041,,"[['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010046,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010064,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010065,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010074,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010086,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010087,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010089,,"[['(A;A)', '0', 'common in clinvar'], ['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010090,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010091,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010093,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010102,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010103,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010109,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010111,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010112,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010115,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010118,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010120,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010124,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010129,,"[['(G;G)', '0', 'Normal'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010131,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010136,,"[['(C;C)', '0', 'Normal'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010138,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010140,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010141,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010142,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010150,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010153,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010160,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010161,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010166,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010171,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010172,,"[['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010173,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010176,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010178,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010180,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010187,,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010190,,"[['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'Normal']]",,
-i5010191,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010195,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010196,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010197,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010200,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010202,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010203,,"[['(G;G)', '0', 'Normal'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010207,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010209,,"[['(C;C)', '0', 'Normal'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010217,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010219,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010221,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010223,,"[['(G;G)', '0', 'Normal'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010224,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010228,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010233,,"[['(A;A)', '0', 'Normal'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010235,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010237,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010241,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010242,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010243,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010250,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010252,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010253,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010256,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010261,,"[['(C;C)', '0', 'Normal'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010262,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010263,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010265,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010266,,"[['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010267,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010270,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010272,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010273,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010276,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010277,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010280,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010281,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010283,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010286,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010287,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010288,,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'Normal']]",,
-i5010289,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010292,,"[['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'Normal']]",,
-i5010293,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010302,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010306,,"[['(A;C)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar'], ['(C;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010314,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010316,BRCA1 pathogenic variant,"[['(C;T)', '4', 'pathogenic BRCA1 mutation']]",,
-i5010320,BRCA1 pathogenic variant,"[['(C;T)', '4', 'pathogenic BRCA1 mutation']]",,
-i5010324,,"[['(A;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010334,BRCA1 pathogenic variant,"[['(A;G)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar'], ['(G;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010337,,"[['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010342,BRCA1 pathogenic variant,"[['(A;T)', '6', 'BRCA1 variant considered likely to be pathogenic for ovarian cancer (by ClinVar)'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer (by most ClinVar submitters)'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010347,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '6', 'BRCA1 variant considered pathogenic for breast cancer']]",,
-i5010353,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010354,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010356,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010357,,"[['(-;TT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TT;TT)', '0', 'common in clinvar']]",,
-i5010358,,"[['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010360,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010362,,"[['(-;TA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AT;AT)', '0', 'common in clinvar'], ['(TA;TA)', '0', 'common in clinvar']]",,
-i5010366,,"[['(-;GA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AG;AG)', '0', 'common in clinvar'], ['(GA;GA)', '0', 'common in clinvar']]",,
-i5010368,,"[['(-;ATTA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AATT;AATT)', '0', 'common in clinvar'], ['(ATTA;ATTA)', '0', 'common in clinvar']]",,
-i5010370,,"[['(-;TAAAT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TAAAT;TAAAT)', '0', 'common in clinvar'], ['(TTAAA;TTAAA)', '0', 'common in clinvar']]",,
-i5010372,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010373,,"[['(-;TATT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TATT;TATT)', '0', 'common in clinvar']]",,
-i5010375,,"[['(-;TTAAA)', '6', 'Likely miscall in 23andMe v4 data; otherwise, BRCA2 variant considered pathogenic for breast cancer'], ['(ATTAA;ATTAA)', '0', 'common in clinvar'], ['(TTAAA;TTAAA)', '0', 'common in clinvar']]",,
-i5010381,,"[['(-;AGTT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AGTT;AGTT)', '0', 'common in clinvar']]",,
-i5010383,,"[['(-;TG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TG;TG)', '0', 'common in clinvar']]",,
-i5010384,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010386,,"[['(-;C)', '6', 'Likely miscall in Ancestry v2c data; otherwise, BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010387,,"[['(-;ACTC)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;ACTCC)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(ACTC;ACTC)', '0', 'common in clinvar']]",,
-i5010388,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010389,,"[['(-;GAAAA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AGAAA;AGAAA)', '0', 'common in clinvar'], ['(GAAAA;GAAAA)', '0', 'common/normal']]",,
-i5010391,,"[['(-;CT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CT;CT)', '0', 'common in clinvar'], ['(TC;TC)', '0', 'common in clinvar']]",,
-i5010392,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010393,,"[['(-;TCTTA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CTTAT;CTTAT)', '0', 'common in clinvar'], ['(TCTTA;TCTTA)', '0', 'common in clinvar']]",,
-i5010396,,"[['(-;TAAA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AATA;AATA)', '0', 'common in clinvar'], ['(TAAA;TAAA)', '0', 'common in clinvar']]",,
-i5010399,,"[['(-;AA)', '6', 'Likely miscall in Ancestry v2 data; otherwise, BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010400,,"[['(-;CT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CT;CT)', '0', 'common in clinvar'], ['(TC;TC)', '0', 'common in clinvar']]",,
-i5010401,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010402,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010403,,"[['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010404,,"[['(-;CA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CA;CA)', '0', 'common in clinvar']]",,
-i5010405,,"[['(-;TG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(GT;GT)', '0', 'common in clinvar'], ['(TG;TG)', '0', 'common in clinvar']]",,
-i5010406,,"[['(-;CT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CT;CT)', '0', 'common in clinvar'], ['(TC;TC)', '0', 'common in clinvar']]",,
-i5010408,,"[['(-;AG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AG;AG)', '0', 'common in clinvar']]",,
-i5010409,,"[['(-;TT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TT;TT)', '0', 'common in clinvar']]",,
-i5010410,,"[['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010411,,"[['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010412,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010413,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010414,,[],,
-i5010415,,"[['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010418,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010420,,"[['(-;GA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AG;AG)', '0', 'common in clinvar'], ['(GA;GA)', '0', 'common in clinvar']]",,
-i5010426,,"[['(-;GGA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(GGA;GGA)', '0', 'common/normal']]",,
-i5010427,,"[['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010429,,"[['(-;AG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AG;AG)', '0', 'common in clinvar']]",,
-i5010433,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010435,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010436,,"[['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010444,,[],,
-i5010449,,"[['(-;TA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AT;AT)', '0', 'common in clinvar'], ['(TA;TA)', '0', 'common in clinvar']]",,
-i5010451,,"[['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010452,,[],,
-i5010454,,"[['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(AA;AA)', '0', 'common in clinvar']]",,
-i5010456,,"[['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010457,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010458,,"[['(-;TT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TT;TT)', '0', 'common in clinvar']]",,
-i5010462,,"[['(-;CC)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(CC;CC)', '0', 'common in clinvar']]",,
-i5010463,,"[['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010464,,"[['(-;TATG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TATG;TATG)', '0', 'common in clinvar'], ['(TGTA;TGTA)', '0', 'common in clinvar']]",,
-i5010466,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010468,,"[['(-;-)', '0', 'common in clinvar'], ['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010469,,"[['(D;D)', '0', 'normal'], ['(D;I)', '3', 'likely to be BRCA2 variant formerly thought to be pathogenic for breast cancer']]",,
-i5010472,,"[['(-;-)', '0', 'common in clinvar'], ['(-;AT)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010474,,"[['(-;-)', '0', 'common in clinvar'], ['(-;CTTA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;TGAG)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010475,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010476,,"[['(D;I)', '1', 'Unreliable probe']]",,
-i5010477,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010479,,"[['(-;-)', '0', 'common in clinvar'], ['(-;TTAG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010480,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010481,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010488,,"[['(-;GACT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(ACTG;ACTG)', '0', 'common in clinvar'], ['(GACT;GACT)', '0', 'common in clinvar']]",,
-i5010489,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010492,,"[['(-;TTCAAGAACTCTAC)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(TTCAAGAACTCTAC;TTCAAGAACTCTAC)', '0', 'common in clinvar']]",,
-i5010494,,"[['(-;-)', '0', 'common/normal'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010496,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010497,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010498,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010499,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010502,,"[['(-;-)', '0', 'common/normal'], ['(-;TGCT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;TTGC)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010503,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010504,,"[['(-;-)', '0', 'common in clinvar'], ['(-;CATC)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010506,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010507,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010509,,"[['(-;-)', '0', 'common in clinvar'], ['(-;TGAT)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010511,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010512,,"[['(-;-)', '0', 'common in clinvar'], ['(-;TG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010518,,"[['(-;-)', '0', 'common in clinvar'], ['(-;CT)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010519,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(-;AA)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010520,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010521,,"[['(D;I)', '1', 'Unreliable probe']]",,
-i5010522,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010523,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010524,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010527,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'Possible miscall in Ancestry v2c data; otherwise, BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010530,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010531,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010534,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010543,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010544,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010545,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010546,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010550,,"[['(-;-)', '0', 'common in clinvar'], ['(-;TA)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010551,,"[['(D;I)', '1', 'Unreliable probe']]",,
-i5010552,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010553,,"[['(-;-)', '0', 'common in clinvar'], ['(-;AG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010554,,"[['(-;-)', '0', 'common in clinvar'], ['(-;AG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010555,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010557,,"[['(-;-)', '0', 'common in clinvar'], ['(-;TT)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010558,,"[['(-;-)', '0', 'common in clinvar'], ['(-;GTGG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010559,,"[['(-;-)', '0', 'common in clinvar'], ['(-;C)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010561,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010564,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010569,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010570,,"[['(D;I)', '6', 'Very likely to be a false positive (miscall) in 23andMe data; would be a BRCA2 variant pathogenic for breast cancer if it were accurate']]",,
-i5010571,,"[['(;)', '0', 'common in clinvar'], ['(-;-)', '0', 'common/normal'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010572,,"[['(-;-)', '0', 'common in clinvar'], ['(-;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010573,,"[['(-;-)', '0', 'common in clinvar'], ['(-;A)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010576,,"[['(GT;GT)', '0', 'common in clinvar'], ['(GT;TAAAAAG)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010578,,"[['(AAA;GC)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(GC;AAA)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(GC;GC)', '0', 'common in clinvar']]",,
-i5010579,,"[['(AA;AA)', '0', 'common in clinvar'], ['(AA;T)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010584,,"[['(A;A)', '0', 'common in clinvar'], ['(A;CT)', '6', 'BRCA2 variant considered pathogenic for breast cancer']]",,
-i5010597,,"[['(A;A)', '0', 'normal'], ['(A;G)', '5', 'BRCA2 variant considered likely to be pathogenic for breast cancer']]",,
-i5010599,,"[['(A;G)', '6', 'BRCA2 mutation considered pathogenic for breast cancer'], ['(G;G)', '0', 'normal']]",,
-i5010607,,"[['(A;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010610,,"[['(A;A)', '0', 'normal'], ['(A;G)', '6', 'BRCA2 mutation considered pathogenic for breast cancer']]",,
-i5010613,,"[['(C;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'normal']]",,
-i5010616,,"[['(A;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010622,,"[['(A;G)', '6', 'BRCA2 variant considered pathogenic for breast cancer'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010628,,"[['(A;G)', '6', 'BRCA2 mutation considered pathogenic for breast cancer'], ['(G;G)', '0', 'normal']]",,
-i5010659,,"[['(A;C)', '3', 'carrier of a cystic fibrosis allele'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010660,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'cystic fibrosis carrier  (most likely)']]",,
-i5010671,,"[['(-;T)', '3', 'carrier of a cystic fibrosis allele'], ['(T;T)', '0', 'common in clinvar']]",,
-i5010675,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010686,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010697,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010717,,"[['(A;G)', '3', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010728,,"[['(A;G)', '3', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common/normal']]",,
-i5010736,Cystic Fibrosis related,"[['(D;D)', '0', 'common/normal']]",,
-i5010743,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal']]",,
-i5010751,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal'], ['(C;T)', '3.5', 'carrier of a cystic fibrosis allele']]",,
-i5010753,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal']]",,
-i5010780,,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010781,Cystic Fibrosis related,"[['(G;G)', '0', 'common/normal']]",,
-i5010784,Cystic Fibrosis related,"[['(G;G)', '0', 'common/normal']]",,
-i5010801,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal']]",,
-i5010804,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010811,,"[['(-;A)', '3', 'carrier of a cystic fibrosis allele'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010812,,"[['(-;A)', '3', 'Likely miscall by 23andMe; but if not, carrier of a cystic fibrosis allele'], ['(A;A)', '0', 'common in clinvar']]",,
-i5010827,,"[['(A;C)', '3', 'cystic fibrosis carrier  (most likely)'], ['(C;C)', '0', 'common/normal']]",,
-i5010858,,"[['(-;C)', '3', 'carrier of a cystic fibrosis allele'], ['(C;C)', '0', 'common in clinvar']]",,
-i5010879,Cystic Fibrosis related,"[['(A;A)', '0', 'common/normal'], ['(D;I)', '3.3', 'possible carrier of a cystic fibrosis allele']]",,
-i5010919,,"[['(C;T)', '3', 'carrier of a cystic fibrosis allele'], ['(T;T)', '0', 'common/normal']]",,
-i5010929,Cystic Fibrosis related,"[['(I;I)', '0', 'common/normal']]",,
-i5010930,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'cystic fibrosis carrier']]",,
-i5010931,Cystic Fibrosis related,"[['(A;G)', '4', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common/normal']]",,
-i5010947,Cystic Fibrosis related,"[['(A;G)', '4', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common/normal']]",,
-i5010950,Cystic Fibrosis related,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3.1', 'possible cystic fibrosis carrier'], ['(A;G)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5010953,Cystic Fibrosis related,"[['(G;G)', '0', 'common/normal'], ['(G;T)', '4', 'carrier of a cystic fibrosis allele']]",,
-i5010957,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal'], ['(C;T)', '4', 'carrier of a cystic fibrosis allele']]",,
-i5010966,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal'], ['(C;T)', '4', 'carrier of a cystic fibrosis allele']]",,
-i5010975,,"[['(A;G)', '3', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common in clinvar']]",,
-i5010980,Cystic Fibrosis related,"[['(C;C)', '0', 'common/normal'], ['(C;T)', '4', 'carrier of a cystic fibrosis allele']]",,
-i5010985,,"[['(G;T)', '3', 'carrier of a cystic fibrosis allele'], ['(T;T)', '0', 'common in clinvar']]",,
-i5011007,,"[['(G;T)', '3', 'cystic fibrosis carrier  (most likely)'], ['(T;T)', '0', 'common/normal']]",,
-i5011008,,"[['(-;A)', '3', 'cystic fibrosis carrier'], ['(A;A)', '0', 'common in clinvar']]",,
-i5011011,Cystic Fibrosis related,"[['(A;C)', '4', 'carrier of a cystic fibrosis allele'], ['(C;C)', '0', 'common/normal']]",,
-i5011050,,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '3', 'cystic fibrosis carrier']]",,
-i5011072,,"[['(-;A)', '3', 'carrier of a cystic fibrosis allele'], ['(A;A)', '0', 'common in clinvar']]",,
-i5011073,Cystic Fibrosis related,"[['(G;G)', '0', 'common/normal'], ['(G;T)', '4', 'carrier of a cystic fibrosis allele']]",,
-i5011131,,"[['(A;G)', '3', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common in clinvar']]",,
-i5011139,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011146,Cystic Fibrosis related,"[['(D;I)', '1.9', 'Likely miscall by 23andMe; but if not, would be a carrier of a cystic fibrosis allele']]",,
-i5011161,Cystic Fibrosis related,"[['(A;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011170,Cystic Fibrosis related,"[['(A;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011184,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011201,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011208,,"[['(C;T)', '3', 'cystic fibrosis carrier (most likely)'], ['(T;T)', '0', 'common in clinvar']]",,
-i5011216,Cystic Fibrosis related,"[['(A;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011217,,"[['(A;A)', '0', 'common in clinvar'], ['(A;G)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011229,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011252,,"[['(A;G)', '3', 'carrier of a cystic fibrosis allele'], ['(G;G)', '0', 'common in clinvar']]",,
-i5011273,,"[['(A;A)', '0', 'common/normal'], ['(A;G)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011284,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011304,Cystic Fibrosis related,"[['(A;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011328,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011341,,"[['(-;C)', '3', 'carrier of a cystic fibrosis allele'], ['(C;C)', '0', 'common in clinvar']]",,
-i5011342,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele (most likely)']]",,
-i5011344,Cystic Fibrosis related,"[['(A;G)', '4', 'cystic fibrosis carrier']]",,
-i5011360,,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011361,Cystic Fibrosis related,"[['(A;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011377,,"[['(-;T)', '3', 'carrier of a cystic fibrosis allele'], ['(T;T)', '0', 'common in clinvar']]",,
-i5011470,,"[['(-;AACT)', '3', 'cystic fibrosis carrier'], ['(AACT;AACT)', '0', 'common in clinvar'], ['(CTAA;CTAA)', '0', 'common in clinvar']]",,
-i5011475,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011477,,"[['(G;G)', '0', 'common in clinvar'], ['(G;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011483,,"[['(A;G)', '4', 'cystic fibrosis carrier']]",,
-i5011504,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011506,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011509,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011511,Cystic Fibrosis related,"[['(G;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011516,Cystic Fibrosis related,"[['(-;G)', '3', 'cystic fibrosis carrier'], ['(G;G)', '0', 'common in clinvar']]",,
-i5011531,,"[['(G;G)', '0', 'normal']]",,
-i5011540,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011543,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011551,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011556,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011571,Cystic Fibrosis related,"[['(G;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011583,Cystic Fibrosis related,"[['(A;C)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011594,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011647,Cystic Fibrosis related,"[['(A;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011662,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011667,,"[['(-;-)', '0', 'common in clinvar'], ['(-;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011672,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011682,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011685,,"[['(-;A)', '3', 'carrier of a cystic fibrosis allele'], ['(A;A)', '0', 'common in clinvar']]",,
-i5011692,Cystic Fibrosis related,"[['(C;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011706,Cystic Fibrosis related,"[['(C;T)', '3', 'Carrier of a cystic fibrosis allele']]",,
-i5011709,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011739,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele (likely)']]",,
-i5011741,Cystic Fibrosis related,"[['(D;I)', '3', 'Carrier of a cystic fibrosis allele (likely)']]",,
-i5011775,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'carrier of a cystic fibrosis allele']]",,
-i5011792,Cystic Fibrosis related,"[['(A;G)', '4', 'cystic fibrosis carrier']]",,
-i5011798,Cystic Fibrosis related,"[['(G;T)', '3', 'cystic fibrosis carrier  (most likely)'], ['(T;T)', '0', 'common in clinvar']]",,
-i5011800,Cystic Fibrosis related,"[['(C;G)', '3', 'Carrier of a cystic fibrosis allele']]",,
+                ",,G>C
+rs104894136,,"[['(C;C)', '0', 'common in complete genomics']]",CYP17A1 : Stop Gained,,G>A
+rs104894145,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]",CYP17A1 : Missense Variant,,G>A
+rs28934607,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]",None,,G>A

@@ -1,5 +1,6 @@
 # Phenotype.dev
 
+[Example of output](https://github.com/glasgowm148/Phenotype/tree/master/images/phenotype.png)
 ## Description
 Phenotype is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. All of which using Flask, Kendo, and Python programming.
 
@@ -13,7 +14,7 @@ With genome analysis, sometimes sites will report on the negative strand - meani
 
 * Fixed py2/3 bug
 * Switched os.cwd to pathlib for cross-platform support
-* Created data/snps_of_interest.txt which can be loaded with SNPs you'd like to specifically query against your dataset
+* Created data/snps_of_interest.txt which can be loaded with SNPs to specifically query against your dataset
 * dbSNP lookup functionality added
 * Removed _GUI.py
 * Enabled the commented out code and imported panda
