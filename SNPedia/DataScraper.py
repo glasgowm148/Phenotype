@@ -231,7 +231,7 @@ rsid += ["rs1801133"]
 #load in snps_of_interest.txt
 
 
-rsid += [line.rstrip() for line in open('/data/snps_of_interest.txt')]
+rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
 
 
 if args["filepath"]:
