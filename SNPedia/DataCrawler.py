@@ -63,7 +63,7 @@ class SNPCrawl:
             self.grabTable(rsid) # imports
             print("")
             count += 1
-            if count % 100 == 0 or count == 5:
+            if count % 25 == 0 or count == 5:
                 print("%i out of %s completed" % (count, len(rsids)))
                 self.export()
                 print("exporting current results")
@@ -80,15 +80,16 @@ class SNPCrawl:
        
        # SNPedia import
         try:
-            print("####### SNPedia import #######" + rsid)
+            print("####### SNPedia import for " + rsid )
 
             url = "https://bots.snpedia.com/index.php/" + rsid.lower()
             if rsid not in self.scrapedData.keys():
+                print(self.yourData[rsid.lower()])
                 self.scrapedData[rsid.lower()] = {
                     "Description": "",
                     "Variations": [],
                     "Frequency": "",
-                    "Risk": []
+                    "Risk": ""
                 }
                 # Store the HTML resonse from the page as bs. 
                 response = urllib.request.urlopen(url)
@@ -107,37 +108,39 @@ class SNPCrawl:
                 if table:
                     d2 = self.tableToList(table)
                     self.scrapedData[rsid]["Variations"] = d2[1:]
-                    print("2")
                     print(d2[1:])
+
                 
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
 
         # dbSNP import
         try:
-            print("####### dbSNP import #######" + rsid)
+            print("####### dbSNP import for " + rsid)
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower()
            
             response = urllib.request.urlopen(url)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
             freq = []
-            for div in bs.find_all(class_='usa-width-one-half'):
-                    for childdiv in div.find_all('div'):
-                        freq.append(childdiv.string)
-            print("freq-print")
-            self.scrapedData[rsid]["Frequency"] = freq[2]
-            print(freq[2])
-
             risk = []
+
             for div in bs.find_all(class_='usa-width-one-half'):
-                    for childdiv in div.find_all('dd'):
-                        if childdiv.string != None : 
-                            risk.append(childdiv.string)
-            risk = [s.strip() for s in risk]
-            print(risk[1:])
+                for childdiv in div.find_all('div'):
+                    freq.append(childdiv.string)
+
+                for childdiv in div.find_all('dd'):
+                    if childdiv.string != None : 
+                        risk.append(childdiv.string)
             
-            self.scrapedData[rsid]["Risk"] = risk[1:]
+            
+            risk = [s.strip() for s in risk]
+            print("dbSNP Scraped Data ::")
+            print(freq[2])
+            print(risk[1])
+
+            self.scrapedData[rsid]["Frequency"] = freq[2]
+            self.scrapedData[rsid]["Risk"] = risk[1]
 
             
 
@@ -161,9 +164,9 @@ class SNPCrawl:
 
             "Name": rsname,
             "Description": description,
-            "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(-;-)", 
+            "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(n/a)", 
             "Frequency": freq,
-            "Risk Allele": str.join("<br>", risk),
+            "Risk": risk,
             "Variations": str.join("<br>", variations)
              
              }

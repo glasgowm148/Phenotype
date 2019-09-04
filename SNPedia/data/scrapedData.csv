@@ -1,0 +1,328 @@
+,Description,Variations,Frequency,Risk
+rs1815739,muscle performance,"[['(C;C)', '2.2', 'Better performing muscles. Likely sprinter.'], ['(C;T)', '2.1', 'Mix of muscle types. Likely sprinter.'], ['(T;T)', '2.2', 'Impaired muscle performance. Likely endurance athlete.']]","
+                  T=0.46138
+                  (114812/248844, GnomAD_exome)
+                ",C>T
+rs53576,influences social behavior and personality,"[['(A;A)', '2.8', 'Lack of empathy?'], ['(A;G)', '2.8', 'Lack of empathy?'], ['(G;G)', '2.5', 'Optimistic and empathetic; handle stress well']]","
+                  A=0.31514
+                  (39572/125568, TOPMED)
+                ",A>G / A>T
+rs4680,warrior vs worrier; number of other associations,"[['(A;A)', '2.5', '(worrier) advantage in memory and attention tasks'], ['(A;G)', 'Intermediate dopamine levels, other effects'], ['(G;G)', '2.5', '(warrior) multiple associations, see details']]","
+                  A=0.46109
+                  (114049/247346, GnomAD_exome)
+                ",G>A
+rs1800497,,"[['(C;C)', '3', 'Normal (A2/A2)'], ['(C;T)', '2.9', 'A1/A2: Bad at avoidance of errors. 0.5x lower OCD risk, 0.87x lower Tardive Diskinesia risk, higher ADHD risk. More Alcohol Dependence. Lower risk of Postoperative Nausea. Increased obesity. Bupropion is not effective for smoking cessation.'], ['(T;T)', '4', 'A1/A1: Bad at avoidance of errors. 0.25x lower OCD; 0.56x lower Tardive Diskinesia; higher ADHD; 1.4x Alcohol Dependence; lower Postoperative Nausea; Increased obesity; less pleasure response; Bupropion ineffective for smoking cessation.; 2.4x risk for adenoma recurrence.']]","
+                  A=0.26419
+                  (65225/246888, GnomAD_exome)
+                ",G>A
+rs429358,,"[['(C;C)', '1.2', 'one of 2 snps relevant to classifying APOE genotype'], ['(C;T)', "">3x increased risk for Alzheimer's; 1.4x increased risk for heart disease""], ['(T;T)', '0', 'common']]","
+                  C=0.13850
+                  (23502/169692, GnomAD_exome)
+                ",T>C
+rs9939609,Obesity related. Raises T2D risk through obesity.,"[['(A;A)', '3', 'obesity risk and 1.6x risk for T2D'], ['(A;T)', '2.4', '1.3x risk for T2D; obesity risk'], ['(T;T)', '1.5', 'lower risk of obesity and Type-2 diabetes']]","
+                  A=0.40273
+                  (50570/125568, TOPMED)
+                ",T>A
+rs4988235,,"[['(C;C)', '2.5', 'likely to be lactose intolerant as an adult'], ['(C;T)', '1.1', 'likely to be able to digest milk as an adult'], ['(T;T)', '1.1', 'can digest milk']]","
+                  A=0.38766
+                  (48678/125568, TOPMED)
+                ",G>A / G>C
+rs6806903,,[],"
+                  G=0.27626
+                  (34689/125568, TOPMED)
+                ",A>G
+rs4244285,Clopidogrel (Plavix®),"[['(A;A)', '4', 'poor metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(A;G)', '3', 'poorer metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(G;G)', '0', 'normal']]","
+                  A=0.17640
+                  (28518/161670, GnomAD_exome)
+                ",G>A / G>C
+rs1801133,Folic acid processing; homocysteine levels,"[['(C;C)', '0', 'Common genotype: normal homocysteine levels'], ['(C;T)', '2.2', '1 copy of C677T allele of MTHFR = 65% efficiency in processing folic acid'], ['(T;T)', '2.8', 'homozygous for C677T of MTHFR = 10-20% efficiency in processing folic acid = high homocysteine, low B12 and folate levels']]","
+                  A=0.31486
+                  (79177/251468, GnomAD_exome)
+                ",G>A
+"rs9378252
+",,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '1', 'benign'], ['(T;T)', '1', 'benign']]","
+                  T=0.04407
+                  (7165/162570, GnomAD_exome)
+                ",A>G / A>T
+"rs204890
+",,"[['(G;G)', '0', 'common in complete genomics']]","
+                  T=0.02968
+                  (5218/175784, GnomAD_exome)
+                ",C>T
+"rs6472
+",,"[['(C;C)', '0', 'benign polymorphism'], ['(C;G)', '0', 'benign polymorphism'], ['(G;G)', '0', 'common/normal']]","
+                  C=0.1238
+                  (3811/30776, GnomAD)
+                ",G>A / G>C
+"rs6410
+",,"[['(A;A)', '0', 'common in clinvar']]","
+                  T=0.41910
+                  (105248/251126, GnomAD_exome)
+                ",T>A / T>C
+"rs2486758
+",,"[['(C;C)', '2.2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(C;T)', '2', 'Slightly higher prostate cancer risk; poorer response to AA/P treatment'], ['(T;T)', '2', 'Slightly lower prostate cancer risk; better response to AA/P treatment']]","
+                  C=0.17057
+                  (21418/125568, TOPMED)
+                ",T>C
+"rs2296239
+",,"[['(C;C)', '0', 'common in clinvar']]","
+                  T=0.27941
+                  (70250/251420, GnomAD_exome)
+                ",C>T
+"rs11621961
+",,[],"
+                  T=0.30322
+                  (38075/125568, TOPMED)
+                ",C>T
+"rs1009382
+",,[],"
+                  C=0.28018
+                  (67520/240990, GnomAD_exome)
+                ",C>A / C>G / C>T
+"rs1134095
+",,[],"
+                  G=0.38656
+                  (48540/125568, TOPMED)
+                ",G>A
+"rs6387
+",,"[['(G;G)', '0', 'common in clinvar']]","
+                  C=0.49504
+                  (62161/125568, TOPMED)
+                ",C>G / C>T
+"rs284849
+",,[],"
+                  T=0.14747
+                  (18517/125568, TOPMED)
+                ",G>T
+"rs1269851
+",,[],"
+                  C=0.05702
+                  (7160/125568, TOPMED)
+                ",T>C
+"rs4539
+",,"[['(A;A)', '0', 'common in clinvar']]","
+                  C=0.42399
+                  (105290/248332, GnomAD_exome)
+                ",T>C
+"rs1134096
+",,[],"
+                  C=0.38656
+                  (48539/125568, TOPMED)
+                ",C>A
+"rs1269854
+",,[],"
+                  C=0.06094
+                  (7652/125568, TOPMED)
+                ",T>C
+"rs9267798
+",,[],"
+                  C=0.08506
+                  (10681/125568, TOPMED)
+                ",G>C
+"rs204894
+",,[],"
+                  A=0.03500
+                  (8803/251486, GnomAD_exome)
+                ",G>A
+"rs915908
+",,"[['(G;G)', '0', 'common in complete genomics']]","
+                  A=0.12611
+                  (15836/125568, TOPMED)
+                ",G>A
+"rs204999
+",,[],"
+                  G=0.29457
+                  (36988/125568, TOPMED)
+                ",A>G
+"rs204887
+",,[],"
+                  A=0.36781
+                  (46185/125568, TOPMED)
+                ",A>G / A>T
+"rs12530380
+",,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]",-,T>A
+"rs4998896
+",,[],"
+                  A=0.00000
+                  (1/251472, GnomAD_exome)
+                ",C>A / C>T
+"rs743572
+",,"[['(A;A)', '0', 'common in clinvar']]","
+                  G=0.39840
+                  (50026/125568, TOPMED)
+                ",A>G / A>T
+"rs6405
+",,[],"
+                  T=0.00015
+                  (37/250968, GnomAD_exome)
+                ",C>T
+"rs1137486
+",,[],-,C>A / C>T
+"rs5292
+",,[],None,G>C
+"rs35045158
+",,[],"
+                  A=0.02155
+                  (2706/125568, TOPMED)
+                ",G>A
+"rs1042854
+",,[],None,G>T
+"rs5301
+",,[],"
+                  C=0.48152
+                  (60464/125568, TOPMED)
+                ",T>C
+"rs5297
+",,[],"
+                  G=0.13214
+                  (16592/125568, TOPMED)
+                ",A>G
+"rs7003319
+",,[],"
+                  T=0.38656
+                  (48539/125568, TOPMED)
+                ",T>C
+"rs4534
+",,[],"
+                  T=0.08449
+                  (21242/251402, GnomAD_exome)
+                ",C>T
+"rs1137485
+",,[],"
+                  G=0.00002
+                  (2/125568, TOPMED)
+                ",C>G
+"rs1137483
+",,[],-,T>C
+"rs28934586
+",,"[['(A;G)', '3', 'Carrier of a congenital adrenal hyperplasia mutation'], ['(G;G)', '0', 'common in clinvar']]","
+                  T=0.00002
+                  (6/251406, GnomAD_exome)
+                ",C>T
+"rs17115100
+",,"[['(G;G)', '0', 'common on affy axiom data'], ['(G;T)', '1.5', ""slightly increased risk of developing Parkinson's Disease""], ['(T;T)', '2', ""Increased risk of developing Parkinson's Disease""]]","
+                  T=0.14254
+                  (35549/249388, GnomAD_exome)
+                ",G>T
+"rs6162
+",,"[['(G;G)', '0', 'common in clinvar']]","
+                  A=0.42336
+                  (106461/251466, GnomAD_exome)
+                ",G>A
+"rs6163
+",,[],"
+                  A=0.39797
+                  (49972/125568, TOPMED)
+                ",C>A / C>T
+"rs1004467
+",,"[['(T;T)', '0']]","
+                  G=0.15280
+                  (38333/250872, GnomAD_exome)
+                ",A>G
+"rs6445
+",,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","
+                  T=0.00460
+                  (633/137706, GnomAD_exome)
+                ",C>T
+"rs284847
+",,[],"
+                  A=0.02161
+                  (2714/125568, TOPMED)
+                ",G>A / G>T
+"rs5284
+",,[],"
+                  A=0.00014
+                  (34/251420, GnomAD_exome)
+                ",G>A
+"rs5283
+",,[],"
+                  A=0.40867
+                  (102650/251182, GnomAD_exome)
+                ",G>A
+"rs28935481
+",,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0']]",-,T>A / T>C
+"rs4541
+",,[],"
+                  A=0.0245
+                  (318/13006, GO-ESP)
+                ",G>A / G>T
+"rs35887327
+",,[],"
+                  C=0.00304
+                  (762/250862, GnomAD_exome)
+                ",T>C
+"rs4919687
+",,[],"
+                  A=0.24249
+                  (30449/125568, TOPMED)
+                ",G>A
+"rs6389
+",,[],None,C>T
+"rs5303
+",,[],"
+                  A=0.33903
+                  (42571/125568, TOPMED)
+                ",A>C / A>G
+"rs5017238
+",,[],"
+                  G=0.38652
+                  (48535/125568, TOPMED)
+                ",G>A / G>T
+"rs11123857
+",,"[['(A;A)', '0'], ['(A;G)', '2', '1.44-fold increased risk of bipolar disorder or major depression'], ['(G;G)', '2', '2.88-fold risk of bipolar disorder or major depression']]","
+                  G=0.27012
+                  (33919/125568, TOPMED)
+                ",A>G
+"rs2899472
+",,"[['(C;C)', '0', 'common on affy axiom data']]","
+                  A=0.16371
+                  (20557/125568, TOPMED)
+                ",C>A
+"rs1934953
+",,[],"
+                  C=0.31483
+                  (39532/125568, TOPMED)
+                ",C>A / C>T
+"rs3842570
+",,[],None,"11
+        citations"
+"rs3830076
+",,[],"
+                  T=0.05427
+                  (6814/125568, TOPMED)
+                ",C>T
+"rs4986883
+",,"[['(A;A)', '0', 'common in complete genomics']]","
+                  C=0.00861
+                  (1081/125568, TOPMED)
+                ",T>C
+"rs104894149
+",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]",None,G>A / G>T
+"rs28934605
+",,"[['(G;G)', '0', 'common in clinvar']]",None,C>T
+"rs55951658
+",,"[['(C;C)', 'CYP3A4*4 homozygote'], ['(C;T)', 'carrier of one CYP3A4*4 allele'], ['(T;T)', '0', 'normal']]","
+                  C=0.00041
+                  (102/251140, GnomAD_exome)
+                ",T>A / T>C
+"rs9267796
+",,[],"
+                  T=0.03640
+                  (4571/125568, TOPMED)
+                ",C>T
+"rs55897648
+",,"[['(A;A)', 'CYP2E1*3 homozygote'], ['(A;G)', 'carrier of one CYP2E1*3 allele'], ['(G;G)', '0', 'normal']]","
+                  A=0.00143
+                  (179/125568, TOPMED)
+                ",G>A / G>T
+"rs34690599
+",,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '3', 'Beta Thalassemia carrier; Hemoglobin beta-plus mutation'], ['(G;G)', '4.5', 'Beta Thalassemia intermedia likely; Hemoglobin beta-plus; variable clinical symptoms']]","
+                  C=0.00002
+                  (3/125568, TOPMED)
+                ",G>C
+"rs104894136
+",,"[['(C;C)', '0', 'common in complete genomics']]",CYP17A1 : Stop Gained,G>A
+"rs104894145
+",,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]",CYP17A1 : Missense Variant,G>A
+"rs28934607
+",,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]",None,G>A
