@@ -53,8 +53,8 @@ def get_types():
     return jsonify({"results":dfCrawl.rsidList})
 
 if __name__ == "__main__":
-    filepath = Path(__file__).resolve().with_name('data') / 'rsidDict.json'
-    snppath = Path(__file__).resolve().with_name('data') / 'snpDict.json'
+    filepath = Path(__file__).resolve().with_name('data') / 'scrapedData.json'
+    snppath = Path(__file__).resolve().with_name('data') / 'yourData.json'
 
     if filepath.is_file():
         if snppath.is_file():

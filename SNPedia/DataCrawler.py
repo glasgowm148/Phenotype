@@ -34,19 +34,19 @@ class SNPCrawl:
     # initialises a list and dict from command line arguments(?)
     def __init__(self, rsids=[], filepath=None, snppath=None):
         
-        # If rsidDict.json already exists
+        # If scrapedData.json already exists
         if filepath and os.path.isfile(filepath): 
             self.importDict(filepath) # If 
             self.rsidList = []
         else: 
-            self.rsidDict = {}
+            self.scrapedData = {}
             self.rsidList = []
 
-        # if snpDict.json already exists
+        # if yourData.json already exists
         if snppath and os.path.isfile(snppath):
             self.importSNPs(snppath) # If
         else:
-            self.snpdict = {}
+            self.yourData = {}
 
         # Iterate through each item in the passed in file and store them as
         rsids = [item.lower() for item in rsids]
@@ -68,14 +68,14 @@ class SNPCrawl:
                 self.export()
                 print("exporting current results")
         pp = pprint.PrettyPrinter(indent=1)
-        pp.pprint(self.rsidDict)
+        pp.pprint(self.scrapedData)
 
 
 
     # Loops through the list of rsid's and checks SNPedia
-    # if rsid isn't found in rsidDict.keys()
+    # if rsid isn't found in scrapedData.keys()
     # scrape the page using BeautifulSoup and assign it to a variable
-    # So we can place it in the rsidDict
+    # So we can place it in the scrapedData
     def grabTable(self, rsid):
        
        # SNPedia import
@@ -83,8 +83,8 @@ class SNPCrawl:
             print("####### SNPedia import #######" + rsid)
 
             url = "https://bots.snpedia.com/index.php/" + rsid.lower()
-            if rsid not in self.rsidDict.keys():
-                self.rsidDict[rsid.lower()] = {
+            if rsid not in self.scrapedData.keys():
+                self.scrapedData[rsid.lower()] = {
                     "Description": "",
                     "Variations": [],
                     "Frequency": "",
@@ -101,12 +101,12 @@ class SNPCrawl:
 
                 if description:
                     d1 = self.tableToList(description)
-                    self.rsidDict[rsid]["Description"] = d1[0][0]
+                    self.scrapedData[rsid]["Description"] = d1[0][0]
                     print(d1[0][0].encode("utf-8"))
 
                 if table:
                     d2 = self.tableToList(table)
-                    self.rsidDict[rsid]["Variations"] = d2[1:]
+                    self.scrapedData[rsid]["Variations"] = d2[1:]
                     print("2")
                     print(d2[1:])
                 
@@ -126,7 +126,7 @@ class SNPCrawl:
                     for childdiv in div.find_all('div'):
                         freq.append(childdiv.string)
             print("freq-print")
-            self.rsidDict[rsid]["Frequency"] = freq[2]
+            self.scrapedData[rsid]["Frequency"] = freq[2]
             print(freq[2])
 
             risk = []
@@ -137,7 +137,7 @@ class SNPCrawl:
             risk = [s.strip() for s in risk]
             print(risk[1:])
             
-            self.rsidDict[rsid]["Risk"] = risk[1:]
+            self.scrapedData[rsid]["Risk"] = risk[1:]
 
             
 
@@ -161,7 +161,7 @@ class SNPCrawl:
 
             "Name": rsname,
             "Description": description,
-            "Genotype": self.snpdict[rsname.lower()] if rsname.lower() in self.snpdict.keys() else "(-;-)", 
+            "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(-;-)", 
             "Frequency": freq,
             "Risk Allele": str.join("<br>", risk),
             "Variations": str.join("<br>", variations)
@@ -170,41 +170,40 @@ class SNPCrawl:
 
         formatCell = lambda rsid, variation : \
             "<b>" + str.join(" ", variation) + "</b>" \
-                if rsid.lower() in self.snpdict.keys() and \
-                   self.snpdict[rsid.lower()] == variation[0] \
+                if rsid.lower() in self.yourData.keys() and \
+                   self.yourData[rsid.lower()] == variation[0] \
                 else str.join(" ", variation)
                 
 
-        for rsid in self.rsidDict.keys():
-            curdict = self.rsidDict[rsid]
+        for rsid in self.scrapedData.keys():
+            curdict = self.scrapedData[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
             self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], curdict["Risk"], variations))
         
-        for rsid in self.rsidDict.keys():
-            print("Printing for rsid in self.rsidDict.keys()")
+        for rsid in self.scrapedData.keys():
+            print("Printing for rsid in self.scrapedData.keys()")
             print(rsid)
 
         print(self.rsidList[:5])
 
     def importDict(self, filepath):
         with open(filepath, 'r') as jsonfile:
-            self.rsidDict = json.load(jsonfile)
+            self.scrapedData = json.load(jsonfile)
 
     def importSNPs(self, snppath):
         with open(snppath, 'r') as jsonfile:
-            self.snpdict = json.load(jsonfile)
+            self.yourData = json.load(jsonfile)
 
-    # The excel export function ?? 
     def export(self):
-        data = pd.DataFrame(self.rsidDict)
+        data = pd.DataFrame(self.scrapedData)
         data = data.fillna("-")
         data = data.transpose()
-        datapath = Path(__file__).resolve().with_name("data") / "rsidDict.csv"
+        datapath = Path(__file__).resolve().with_name("data") / "scrapedData.csv"
         data.to_csv(datapath)
-        filepath = Path(__file__).resolve().with_name("data") / "rsidDict.json"
+        filepath = Path(__file__).resolve().with_name("data") / "scrapedData.json"
 
         with open(filepath,"w") as jsonfile:
-            json.dump(self.rsidDict, jsonfile)
+            json.dump(self.scrapedData, jsonfile)
 
     
 
@@ -244,7 +243,7 @@ if args["filepath"]:
 
 
 if __name__ == "__main__":
-    filepath = Path(__file__).resolve().with_name("data") / "rsidDict.json"
+    filepath = Path(__file__).resolve().with_name("data") / "scrapedData.json"
     if filepath.is_file():
         dfCrawl = SNPCrawl(rsids=rsid, filepath=filepath)
 
