@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, send_file, send_from_directory, jsonify
 import base64
-from DataCrawler import SNPCrawl
+from DataScraper import SNPCrawl
 import os
 import io
 from pathlib import Path

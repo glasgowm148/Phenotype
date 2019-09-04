@@ -115,12 +115,12 @@ if dbSNPin:
 </dd>
 </dl>
 Traceback (most recent call last):
-  File "SNPedia/DataCrawler.py", line 239, in <module>
+  File "SNPedia/DataScraper.py", line 239, in <module>
     dfCrawl = SNPCrawl(rsids=rsid)
-  File "SNPedia/DataCrawler.py", line 52, in __init__
+  File "SNPedia/DataScraper.py", line 52, in __init__
     self.initcrawl(rsids)
-  File "SNPedia/DataCrawler.py", line 61, in initcrawl
+  File "SNPedia/DataScraper.py", line 61, in initcrawl
     self.grabTable(rsid)
-  File "SNPedia/DataCrawler.py", line 126, in grabTable
+  File "SNPedia/DataScraper.py", line 126, in grabTable
     self.scrapedData[rsid]["Frequency"] = d1[2][2]
 IndexError: list index out of range
