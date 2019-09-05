@@ -87,6 +87,7 @@ class SNPCrawl:
                 self.scrapedData[rsid.lower()] = {
                     "Description": "",
                     "Variations": [],
+                    "ClinVar": [],
                     "Frequency": "",
                     "Studies": "",
                     "Risk": ""
@@ -167,8 +168,29 @@ class SNPCrawl:
                 print(study[1])
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP term search or contained no valid information")
-        except urllib.error.URLError::
+        except urllib.error.URLError:
             print(url + " was not found or on dbSNP term search or contained no valid information")
+        
+        # ClinVar
+        try:
+            print("####### Clinical Significance  #######")
+            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
+            response = urllib.request.urlopen(url)
+            html = response.read()
+            bs = BeautifulSoup(html, "html.parser")
+            ClinVar = []
+            for div in bs.find_all(id="clinical_significance"):
+                for childdiv in div.find_all('td'):
+                    if childdiv.string != None : 
+                        ClinVar.append(childdiv.string)
+            if(len(ClinVar) > 0):
+                print(ClinVar)
+                self.scrapedData[rsid]["ClinVar"] = ClinVar[0:]
+
+
+
+        except urllib.error.HTTPError:
+            print(url + " was not found or on dbSNP or contained no valid information")
 
     def tableToList(self, table):
         rows = table.find_all("tr")
@@ -182,11 +204,12 @@ class SNPCrawl:
    
 
     def createList(self):
-        make = lambda rsname, description, freq, risk, study, variations: \
+        make = lambda rsname, description, ClinVar, freq, risk, study, variations: \
             {
 
             "Name": rsname,
             "Description": description,
+            "ClinVar": str.join("<br>", ClinVar),
             "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(n/a)", 
             "Frequency": freq,
             "Risk": risk,
@@ -195,17 +218,18 @@ class SNPCrawl:
              
              }
 
+        # Highlight users genotype in bold
         formatCell = lambda rsid, variation : \
             "<b>" + str.join(" ", variation) + "</b>" \
                 if rsid.lower() in self.yourData.keys() and \
                    self.yourData[rsid.lower()] == variation[0] \
                 else str.join(" ", variation)
                 
-
+        # Compile the rsidList to be passed to the API
         for rsid in self.scrapedData.keys():
             curdict = self.scrapedData[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
-            self.rsidList.append(make(rsid, curdict["Description"], curdict["Frequency"], curdict["Risk"], curdict["Studies"], variations))
+            self.rsidList.append(make(rsid, curdict["Description"], curdict["ClinVar"], curdict["Frequency"], curdict["Risk"], curdict["Studies"], variations))
         
         for rsid in self.scrapedData.keys():
             print("Printing for rsid in self.scrapedData.keys()")

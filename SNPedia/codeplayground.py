@@ -17,24 +17,26 @@ import json
 import argparse
 import os
 import random
+# rs4534 rs1815739
 
-#  rs1815739
-rsid = "rs55901263"
+# filter common</b> & normal</b>
+
+rsid = "rs4534"
 
 from SNPGen import GrabSNPs
 
 try:
-            print("####### Study import #######")
-            url = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + rsid.lower()
+            print("####### Clinical Significance  #######")
+            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
             response = urllib.request.urlopen(url)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
-            study = []
-            for div in bs.find_all(class_='title'):
-                for childdiv in div.find_all('a'):
+            ClinVar = []
+            for div in bs.find_all(id="clinical_significance"):
+                for childdiv in div.find_all('td'):
                     if childdiv.string != None : 
-                        study.append(childdiv.string)
-            print(study[1])
+                        ClinVar.append(childdiv.string)
+            print(ClinVar)
 except urllib.error.HTTPError:
     print(url + " was not found or on dbSNP or contained no valid information")
 

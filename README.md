@@ -11,18 +11,17 @@ With genome analysis, sometimes sites will report on the negative strand - meani
 
 
 # Timeline
-
-* Fixed py2/3 bug
-* Switched os.cwd to pathlib for cross-platform support
-* Created data/snps_of_interest.txt which can be loaded with SNPs to specifically query against your dataset
-* dbSNP lookup functionality added
-* Removed _GUI.py
-* Enabled the commented out code and imported panda
-* dbSNP Crawler added to import risk allele / freq
+* Done
+    * Enabled cross-platform support
+    * Created data/snps_of_interest.txt which can be loaded with SNPs to specifically query against your dataset
+    * dbSNP lookup functionality added
+    * CSV Export working
+    * Crawl dbSNP - added to import risk allele / freq
+    * Crawl Clinivar - import clinical significance
 * In Progress
   * Tidying up HTML/CSS/Tabular 
+  * Filter by mutations only
 * To Do
-  * Search / Filter
   * ONIM Support
   * Bookmark
   * User Login with upload
