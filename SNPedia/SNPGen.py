@@ -55,7 +55,7 @@ class GrabSNPs:
 
         if snpsofinterest:
             self.snps = [snp for snp in self.snps if snp.lower() in snpsofinterest]
-            print(len(self.snps))
+            print(len(self.snps), "percent complete")
 
         if len(self.snps) < target:
             self.crawl(snpsofinterest=snpsofinterest, cmcontinue=cmcontinue, target=target)

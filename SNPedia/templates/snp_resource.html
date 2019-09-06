@@ -36,9 +36,6 @@
                 };
 
                 $(document).ready(function () {
-
-
-
                     $("#grid").kendoGrid({
 
                         toolbar: [{
@@ -80,9 +77,18 @@
                        { field: "Name", width: '190px', title: "Name" },
                        { field: "Description", width: '290px', title: "Description" },
                        { field: "ClinVar", width: '290px', title: "Clinical Significance" },
-                       { field: "Genotype", width: '100px', title: "You" },
+                      
                        { field: "Frequency", width: '140px', title: "Frequency" },
                        { field: "Risk", width: '100px', title: "Risk" },
+                       { 
+                           field: "Genotype", 
+                           width: '100px', 
+                           title: "Genotype",
+                           template: "#if(Genotype.indexOf(Risk.charAt(2)) != -1) { # <div style='background-color:red'>Risk Allele Present</div> #} else if (Genotype.indexOf(Risk.charAt(2)) == -1){ # <div style='background-color:green'>&nbsp;</div> #} #"
+                           //template: "#if(Genotype.indexOf(Risk.charAt(3)) != -1){#<span class='red'>#: Genotype     #</span>#}else{#<span class='blue'>#: Genotype #</span> #} #"
+                       
+                       },
+
                        { field: "Studies", width: '190px', title: "Studies" },
                        { field: "Variations", width: '490px', title: "SNPedia Notes", encoded: false },
                          ],

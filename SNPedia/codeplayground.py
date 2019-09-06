@@ -21,7 +21,7 @@ import random
 
 # filter common</b> & normal</b>
 
-rsid = "rs4534"
+rsid = "rs202242769"
 
 from SNPGen import GrabSNPs
 
@@ -36,7 +36,7 @@ try:
                 for childdiv in div.find_all('td'):
                     if childdiv.string != None : 
                         ClinVar.append(childdiv.string)
-            print(ClinVar)
+            print(ClinVar[0:])
 except urllib.error.HTTPError:
     print(url + " was not found or on dbSNP or contained no valid information")
 

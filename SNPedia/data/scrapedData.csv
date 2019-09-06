@@ -1,5 +1,5 @@
 ,Description,Variations,ClinVar,Frequency,Studies,Risk
-rs1815739,muscle performance,"[['(C;C)', '2.2', 'Better performing muscles. Likely sprinter.'], ['(C;T)', '2.1', 'Mix of muscle types. Likely sprinter.'], ['(T;T)', '2.2', 'Impaired muscle performance. Likely endurance athlete.']]","['Benign', 'ACTN3 deficiency', 'Affects', 'Sprinting performance', 'Pathogenic']","
+rs1815739,muscle performance,"[['(C;C)', '2.2', 'Better performing muscles. Likely sprinter.'], ['(C;T)', '2.1', 'Mix of muscle types. Likely sprinter.'], ['(T;T)', '2.2', 'Impaired muscle performance. Likely endurance athlete.']]","['ACTININ, ALPHA-3 POLYMORPHISM', 'Benign', 'ACTN3 deficiency', 'Affects', 'Sprinting performance', 'Pathogenic']","
                   T=0.46138
                   (114812/248844, GnomAD_exome)
                 ",Cellular Aspects of Muscle Specialization Demonstrate Genotype – Phenotype Interaction Effects in Athletes,C>T
@@ -7,15 +7,15 @@ rs53576,influences social behavior and personality,"[['(A;A)', '2.8', 'Lack of e
                   A=0.31514
                   (39572/125568, TOPMED)
                 ",The oxytocin receptor gene predicts brain activity during an emotion recognition task in autism,A>G / A>T
-rs4680,warrior vs worrier; number of other associations,"[['(A;A)', '2.5', '(worrier) advantage in memory and attention tasks'], ['(A;G)', 'Intermediate dopamine levels, other effects'], ['(G;G)', '2.5', '(warrior) multiple associations, see details']]","['Benign', 'nicotine response - Efficacy', 'Drug-Response', 'not specified', 'Benign', 'tramadol response - Dosage, Efficacy', 'Drug-Response', 'methadone response - Dosage, Efficacy', 'Drug-Response', 'morphine response - Dosage, Efficacy', 'Drug-Response', 'opioids response - Dosage, Efficacy', 'Drug-Response', 'oxycodone response - Dosage, Efficacy', 'Drug-Response', 'remifentanil response - Dosage, Efficacy', 'Drug-Response', 'sufentanil response - Dosage, Efficacy', 'Drug-Response']","
+rs4680,warrior vs worrier; number of other associations,"[['(A;A)', '2.5', '(worrier) advantage in memory and attention tasks'], ['(A;G)', 'Intermediate dopamine levels, other effects'], ['(G;G)', '2.5', '(warrior) multiple associations, see details']]","['CATECHOL-O-METHYLTRANSFERASE POLYMORPHISM', 'Benign', 'nicotine response - Efficacy', 'Drug-Response', 'not specified', 'Benign', 'tramadol response - Dosage, Efficacy', 'Drug-Response', 'methadone response - Dosage, Efficacy', 'Drug-Response', 'morphine response - Dosage, Efficacy', 'Drug-Response', 'opioids response - Dosage, Efficacy', 'Drug-Response', 'oxycodone response - Dosage, Efficacy', 'Drug-Response', 'remifentanil response - Dosage, Efficacy', 'Drug-Response', 'sufentanil response - Dosage, Efficacy', 'Drug-Response']","
                   A=0.46109
                   (114049/247346, GnomAD_exome)
                 ",A genetic variant in the catechol-O-methyl transferase (COMT) gene is related to age-dependent differences in the therapeutic effect of calcium-channel blockers,G>A
-rs1800497,,"[['(C;C)', '3', 'Normal (A2/A2)'], ['(C;T)', '2.9', 'A1/A2: Bad at avoidance of errors. 0.5x lower OCD risk, 0.87x lower Tardive Diskinesia risk, higher ADHD risk. More Alcohol Dependence. Lower risk of Postoperative Nausea. Increased obesity. Bupropion is not effective for smoking cessation.'], ['(T;T)', '4', 'A1/A1: Bad at avoidance of errors. 0.25x lower OCD; 0.56x lower Tardive Diskinesia; higher ADHD; 1.4x Alcohol Dependence; lower Postoperative Nausea; Increased obesity; less pleasure response; Bupropion ineffective for smoking cessation.; 2.4x risk for adenoma recurrence.']]","['Benign', 'ethanol response - Toxicity/ADR', 'Drug-Response', 'clozapine response - Toxicity/ADR', 'Drug-Response', 'bupropion response - Efficacy', 'Drug-Response', 'olanzapine response - Toxicity/ADR', 'Drug-Response', 'antipsychotics response - Toxicity/ADR', 'Drug-Response', 'risperidone response - Toxicity/ADR', 'Drug-Response', 'not specified', 'Benign']","
+rs1800497,,"[['(C;C)', '3', 'Normal (A2/A2)'], ['(C;T)', '2.9', 'A1/A2: Bad at avoidance of errors. 0.5x lower OCD risk, 0.87x lower Tardive Diskinesia risk, higher ADHD risk. More Alcohol Dependence. Lower risk of Postoperative Nausea. Increased obesity. Bupropion is not effective for smoking cessation.'], ['(T;T)', '4', 'A1/A1: Bad at avoidance of errors. 0.25x lower OCD; 0.56x lower Tardive Diskinesia; higher ADHD; 1.4x Alcohol Dependence; lower Postoperative Nausea; Increased obesity; less pleasure response; Bupropion ineffective for smoking cessation.; 2.4x risk for adenoma recurrence.']]","['Dopamine receptor d2, reduced brain density of', 'Benign', 'ethanol response - Toxicity/ADR', 'Drug-Response', 'clozapine response - Toxicity/ADR', 'Drug-Response', 'bupropion response - Efficacy', 'Drug-Response', 'olanzapine response - Toxicity/ADR', 'Drug-Response', 'antipsychotics response - Toxicity/ADR', 'Drug-Response', 'risperidone response - Toxicity/ADR', 'Drug-Response', 'not specified', 'Benign']","
                   A=0.26419
                   (65225/246888, GnomAD_exome)
                 ",DRD2/ANKK1 Polymorphism Modulates the Effect of Ventral Striatal Activation on Working Memory Performance,G>A
-rs429358,,"[['(C;C)', '1.2', 'one of 2 snps relevant to classifying APOE genotype'], ['(C;T)', "">3x increased risk for Alzheimer's; 1.4x increased risk for heart disease""], ['(T;T)', '0', 'common']]","['Pathogenic', 'Alzheimer disease 2', 'Pathogenic', 'Familial type 3 hyperlipoproteinemia', 'Pathogenic', 'APOE4(-)-FREIBURG', 'Pathogenic', 'APOE4 VARIANT', 'Association', 'not provided', 'Other']","
+rs429358,,"[['(C;C)', '1.2', 'one of 2 snps relevant to classifying APOE genotype'], ['(C;T)', "">3x increased risk for Alzheimer's; 1.4x increased risk for heart disease""], ['(T;T)', '0', 'common']]","['Familial type 3 hyperlipoproteinemia', 'Pathogenic', 'Alzheimer disease 2', 'Pathogenic', 'Familial type 3 hyperlipoproteinemia', 'Pathogenic', 'APOE4(-)-FREIBURG', 'Pathogenic', 'APOE4 VARIANT', 'Association', 'not provided', 'Other']","
                   C=0.13850
                   (23502/169692, GnomAD_exome)
                 ",Apolipoprotein E polymorphisms increase the risk of post-stroke depression,T>C
@@ -23,7 +23,7 @@ rs9939609,Obesity related. Raises T2D risk through obesity.,"[['(A;A)', '3', 'ob
                   A=0.40273
                   (50570/125568, TOPMED)
                 ",,T>A
-rs4988235,,"[['(C;C)', '2.5', 'likely to be lactose intolerant as an adult'], ['(C;T)', '1.1', 'likely to be able to digest milk as an adult'], ['(T;T)', '1.1', 'can digest milk']]",['Association'],"
+rs4988235,,"[['(C;C)', '2.5', 'likely to be lactose intolerant as an adult'], ['(C;T)', '1.1', 'likely to be able to digest milk as an adult'], ['(T;T)', '1.1', 'can digest milk']]","['Lactase persistence', 'Association']","
                   A=0.38766
                   (48678/125568, TOPMED)
                 ","Dairy consumption, systolic blood pressure, and risk of hypertension: Mendelian randomization study",G>A / G>C
@@ -31,15 +31,11 @@ rs6806903,,[],[],"
                   G=0.27626
                   (34689/125568, TOPMED)
                 ",,A>G
-rs4244285,Clopidogrel (Plavix®),"[['(A;A)', '4', 'poor metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(A;G)', '3', 'poorer metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(G;G)', '0', 'normal']]","['Drug-Response', 'Proguanil, poor metabolism of', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'amitriptyline response - Efficacy', 'Drug-Response', 'clopidogrel response - Efficacy, Toxicity/ADR', 'Drug-Response', 'citalopram response - Efficacy', 'Drug-Response', 'clomipramine response - Efficacy', 'Drug-Response', 'not provided', 'Other', 'not specified', 'Likely-Benign', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'CYP2C19: no function', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response']","
+rs4244285,Clopidogrel (Plavix®),"[['(A;A)', '4', 'poor metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(A;G)', '3', 'poorer metabolizer of several popular medicines; patients prescribed Plavix get less benefit, and have higher risk for adverse cardiovascular events'], ['(G;G)', '0', 'normal']]","['Mephenytoin, poor metabolism of', 'Drug-Response', 'Proguanil, poor metabolism of', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'amitriptyline response - Efficacy', 'Drug-Response', 'clopidogrel response - Efficacy, Toxicity/ADR', 'Drug-Response', 'citalopram response - Efficacy', 'Drug-Response', 'clomipramine response - Efficacy', 'Drug-Response', 'not provided', 'Other', 'not specified', 'Likely-Benign', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'CYP2C19: no function', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Clopidogrel response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Citalopram response', 'Drug-Response', 'Escitalopram response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Sertraline response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response', 'Voriconazole response', 'Drug-Response']","
                   A=0.17640
                   (28518/161670, GnomAD_exome)
                 ",Genetic Polymorphisms of Metabolic Enzymes and the Pharmacokinetics of Indapamide in Taiwanese Subjects,G>A / G>C
-rs1801133,Folic acid processing; homocysteine levels,"[['(C;C)', '0', 'Common genotype: normal homocysteine levels'], ['(C;T)', '2.2', '1 copy of C677T allele of MTHFR = 65% efficiency in processing folic acid'], ['(T;T)', '2.8', 'homozygous for C677T of MTHFR = 10-20% efficiency in processing folic acid = high homocysteine, low B12 and folate levels']]","['Conflicting-Interpretations-Of-Pathogenicity', 'Gastrointestinal stroma tumor', 'Uncertain-Significance', 'not provided', 'Uncertain-Significance,Other', 'cyclophosphamide response - Toxicity/ADR', 'Drug-Response', 'carboplatin response - Efficacy', 'Drug-Response', 'Neural tube defects, folate-sensitive', 'Likely-Benign', 'methotrexate response - Dosage, Efficacy, Toxicity/ADR', 'Drug-Response', 'Neoplasm of stomach', 'Not-Provided', 'not specified', 'Benign', 'Venous thrombosis', 'Uncertain-Significance']","
-                  A=0.31486
-                  (79177/251468, GnomAD_exome)
-                ","Methylenetetrahydrofolate reductase tagging polymorphisms are associated with risk of esophagogastric junction adenocarcinoma: a case-control study involving 2,740 Chinese Han subjects",G>A
-rs9378252,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '1', 'benign'], ['(T;T)', '1', 'benign']]","['Pathogenic', 'not specified', 'Benign']","
+rs9378252,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '1', 'benign'], ['(T;T)', '1', 'benign']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not specified', 'Benign']","
                   T=0.04407
                   (7165/162570, GnomAD_exome)
                 ",,A>G / A>T
@@ -47,11 +43,11 @@ rs204890,,"[['(G;G)', '0', 'common in complete genomics']]",[],"
                   T=0.02968
                   (5218/175784, GnomAD_exome)
                 ",MHC region and risk of systemic lupus erythematosus in African-American women,C>T
-rs6472,,"[['(C;C)', '0', 'benign polymorphism'], ['(C;G)', '0', 'benign polymorphism'], ['(G;G)', '0', 'common/normal']]","['Benign', 'Congenital adrenal hyperplasia', 'Not-Provided', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign', 'not specified', 'Benign']","
+rs6472,,"[['(C;C)', '0', 'benign polymorphism'], ['(C;G)', '0', 'benign polymorphism'], ['(G;G)', '0', 'common/normal']]","['21-HYDROXYLASE POLYMORPHISM', 'Benign', 'Congenital adrenal hyperplasia', 'Not-Provided', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign', 'not specified', 'Benign']","
                   C=0.1238
                   (3811/30776, GnomAD)
                 ",,G>A / G>C
-rs6410,,"[['(A;A)', '0', 'common in clinvar']]","['Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
+rs6410,,"[['(A;A)', '0', 'common in clinvar']]","['Congenital adrenal hyperplasia', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
                   T=0.41910
                   (105248/251126, GnomAD_exome)
                 ",,T>A / T>C
@@ -59,7 +55,7 @@ rs2486758,,"[['(C;C)', '2.2', 'Slightly higher prostate cancer risk; poorer resp
                   C=0.17057
                   (21418/125568, TOPMED)
                 ",Relationship between CYP17A1 Genetic Polymorphism and Essential Hypertension in a Chinese Population,T>C
-rs2296239,,"[['(C;C)', '0', 'common in clinvar']]",['Benign'],"
+rs2296239,,"[['(C;C)', '0', 'common in clinvar']]","['Infantile hypercalcemia', 'Benign']","
                   T=0.27941
                   (70250/251420, GnomAD_exome)
                 ",Genetic association analysis of vitamin D pathway with obesity traits,C>T
@@ -67,15 +63,15 @@ rs11621961,,[],[],"
                   T=0.30322
                   (38075/125568, TOPMED)
                 ","Investigation of Genetic Variants, Birthweight and Hypothalamic-Pituitary-Adrenal Axis Function Suggests a Genetic Variant in the SERPINA6 Gene Is Associated with Corticosteroid Binding Globulin in the Western Australia Pregnancy Cohort (Raine) Study",C>T
-rs1009382,,[],['Benign'],"
+rs1009382,,[],"['not specified', 'Benign']","
                   C=0.28018
                   (67520/240990, GnomAD_exome)
                 ",High-Density SNP Screening of the Major Histocompatibility Complex in Systemic Lupus Erythematosus Demonstrates Strong Evidence for Independent Susceptibility Regions,C>A / C>G / C>T
-rs1134095,,[],"['Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+rs1134095,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
                   G=0.38656
                   (48540/125568, TOPMED)
                 ",,G>A
-rs6387,,"[['(G;G)', '0', 'common in clinvar']]","['Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
+rs6387,,"[['(G;G)', '0', 'common in clinvar']]","['Congenital adrenal hyperplasia', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
                   C=0.49504
                   (62161/125568, TOPMED)
                 ",,C>G / C>T
@@ -87,11 +83,11 @@ rs1269851,,[],[],"
                   C=0.05702
                   (7160/125568, TOPMED)
                 ",,T>C
-rs4539,,"[['(A;A)', '0', 'common in clinvar']]","['Benign', 'Hyperaldosteronism, familial, type I', 'Benign', 'Corticosterone methyloxidase type 2 deficiency', 'Benign', 'not specified', 'Benign']","
+rs4539,,"[['(A;A)', '0', 'common in clinvar']]","['Corticosterone methyloxidase type 1 deficiency', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign', 'Corticosterone methyloxidase type 2 deficiency', 'Benign', 'not specified', 'Benign']","
                   C=0.42399
                   (105290/248332, GnomAD_exome)
                 ",Association between Polymorphisms in the Renin-Angiotensin-Aldosterone System Genes and Essential Hypertension in the Han Chinese Population,T>C
-rs1134096,,[],"['Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
+rs1134096,,[],"['Congenital adrenal hyperplasia', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
                   C=0.38656
                   (48539/125568, TOPMED)
                 ",,C>A
@@ -115,16 +111,16 @@ rs204999,,[],[],"
                   G=0.29457
                   (36988/125568, TOPMED)
                 ",A genome-wide meta-analysis of nodular sclerosing Hodgkin lymphoma identifies risk loci at 6p21.32,A>G
-rs204887,,[],['Benign'],"
+rs204887,,[],"['not specified', 'Benign']","
                   A=0.36781
                   (46185/125568, TOPMED)
                 ",,A>G / A>T
-rs12530380,,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]","['Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",-,,T>A
+rs12530380,,"[['(A;A)', '3', 'Miscall likely if from 23andMe user data'], ['(T;T)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",-,,T>A
 rs4998896,,[],[],"
                   A=0.00000
                   (1/251472, GnomAD_exome)
                 ",,C>A / C>T
-rs743572,,"[['(A;A)', '0', 'common in clinvar']]",['Benign'],"
+rs743572,,"[['(A;A)', '0', 'common in clinvar']]","['Congenital adrenal hyperplasia', 'Benign']","
                   G=0.39840
                   (50026/125568, TOPMED)
                 ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,A>G / A>T
@@ -139,19 +135,19 @@ rs35045158,,[],[],"
                   (2706/125568, TOPMED)
                 ",,G>A
 rs1042854,,[],[],None,,G>T
-rs5301,,[],"['Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
+rs5301,,[],"['Congenital adrenal hyperplasia', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
                   C=0.48152
                   (60464/125568, TOPMED)
                 ",,T>C
-rs5297,,[],"['Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+rs5297,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
                   G=0.13214
                   (16592/125568, TOPMED)
                 ",Linking Genomic and Metabolomic Natural Variation Uncovers Nematode Pheromone Biosynthesis,A>G
-rs7003319,,[],"['Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
+rs7003319,,[],"['Congenital adrenal hyperplasia', 'Benign', 'Hyperaldosteronism, familial, type I', 'Benign']","
                   T=0.38656
                   (48539/125568, TOPMED)
                 ",,T>C
-rs4534,,[],"['Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+rs4534,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
                   T=0.08449
                   (21242/251402, GnomAD_exome)
                 ",Association of genetic variations with pharmacokinetics and lipid-lowering response to atorvastatin in healthy Korean subjects,C>T
@@ -160,7 +156,7 @@ rs1137485,,[],[],"
                   (2/125568, TOPMED)
                 ",,C>G
 rs1137483,,[],[],-,,T>C
-rs28934586,,"[['(A;G)', '3', 'Carrier of a congenital adrenal hyperplasia mutation'], ['(G;G)', '0', 'common in clinvar']]",['Likely-Pathogenic'],"
+rs28934586,,"[['(A;G)', '3', 'Carrier of a congenital adrenal hyperplasia mutation'], ['(G;G)', '0', 'common in clinvar']]","['Deficiency of steroid 11-beta-monooxygenase', 'Likely-Pathogenic']","
                   T=0.00002
                   (6/251406, GnomAD_exome)
                 ",,C>T
@@ -168,11 +164,11 @@ rs17115100,,"[['(G;G)', '0', 'common on affy axiom data'], ['(G;T)', '1.5', ""sl
                   T=0.14254
                   (35549/249388, GnomAD_exome)
                 ",Novel disease syndromes unveiled by integrative multiscale network analysis of diseases sharing molecular effectors and comorbidities,G>T
-rs6162,,"[['(G;G)', '0', 'common in clinvar']]","['Benign', 'not provided', 'Benign']","
+rs6162,,"[['(G;G)', '0', 'common in clinvar']]","['Congenital adrenal hyperplasia', 'Benign', 'not provided', 'Benign']","
                   A=0.42336
                   (106461/251466, GnomAD_exome)
                 ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,G>A
-rs6163,,[],"['Benign', 'not provided', 'Benign']","
+rs6163,,[],"['Congenital adrenal hyperplasia', 'Benign', 'not provided', 'Benign']","
                   A=0.39797
                   (49972/125568, TOPMED)
                 ",Association between polymorphisms in sex hormones synthesis and metabolism and prostate cancer aggressiveness,C>A / C>T
@@ -180,7 +176,1146 @@ rs1004467,,"[['(T;T)', '0']]",[],"
                   G=0.15280
                   (38333/250872, GnomAD_exome)
                 ",A Study on the Association Between Polymorphisms in the Cytochrome P450 Family 17 Subfamily A Member 1 Gene Region and Type 2 Diabetes Mellitus in Han Chinese,A>G
-rs6445,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Pathogenic', 'not provided', 'Pathogenic']","
+rs6445,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']","
                   T=0.00460
                   (633/137706, GnomAD_exome)
                 ",,C>T
+rs284847,,[],[],"
+                  A=0.02161
+                  (2714/125568, TOPMED)
+                ",,G>A / G>T
+rs5284,,[],[],"
+                  A=0.00014
+                  (34/251420, GnomAD_exome)
+                ",,G>A
+rs5283,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+                  A=0.40867
+                  (102650/251182, GnomAD_exome)
+                ",,G>A
+rs28935481,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0']]","['Congenital adrenal hypoplasia, X-linked', 'Pathogenic']",-,,T>A / T>C
+rs4541,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign', 'Deficiency of steroid 11-beta-monooxygenase', 'Uncertain-Significance']","
+                  A=0.0245
+                  (318/13006, GO-ESP)
+                ",Variation in Genes that Regulate Blood Pressure Are Associated with Glomerular Filtration Rate in Chinese,G>A / G>T
+rs35887327,,[],"['Congenital adrenal hyperplasia', 'Uncertain-Significance']","
+                  C=0.00304
+                  (762/250862, GnomAD_exome)
+                ",,T>C
+rs4919687,,[],[],"
+                  A=0.24249
+                  (30449/125568, TOPMED)
+                ",Association of CYP17A1 Genetic Polymorphisms and Susceptibility to Essential Hypertension in the Southwest Han Chinese Population,G>A
+rs6389,,[],[],None,,C>T
+rs5303,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+                  A=0.33903
+                  (42571/125568, TOPMED)
+                ",,A>C / A>G
+rs5017238,,[],"['Hyperaldosteronism, familial, type I', 'Benign', 'Congenital adrenal hyperplasia', 'Benign']","
+                  G=0.38652
+                  (48535/125568, TOPMED)
+                ",,G>A / G>T
+rs11123857,,"[['(A;A)', '0'], ['(A;G)', '2', '1.44-fold increased risk of bipolar disorder or major depression'], ['(G;G)', '2', '2.88-fold risk of bipolar disorder or major depression']]",[],"
+                  G=0.27012
+                  (33919/125568, TOPMED)
+                ",Differential Association of Circadian Genes with Mood Disorders: CRY1 and NPAS2 are Associated with Unipolar Major Depression and CLOCK and VIP with Bipolar Disorder,A>G
+rs2899472,,"[['(C;C)', '0', 'common on affy axiom data']]",[],"
+                  A=0.16371
+                  (20557/125568, TOPMED)
+                ",Genetic Determinants of Circulating Estrogen Levels and Evidence of a Causal Effect of Estradiol on Bone Density in Men,C>A
+rs1934953,,[],[],"
+                  C=0.31483
+                  (39532/125568, TOPMED)
+                ",Genetic markers in the EET metabolic pathway are associated with outcomes in patients with aneurysmal subarachnoid hemorrhage,C>A / C>T
+rs3830076,,[],[],"
+                  T=0.05427
+                  (6814/125568, TOPMED)
+                ",Mapping MHC haplotype effects in unrelated donor hematopoietic cell transplantation,C>T
+rs4986883,,"[['(A;A)', '0', 'common in complete genomics']]",[],"
+                  C=0.00861
+                  (1081/125568, TOPMED)
+                ",Associations of CYP1 polymorphisms with risk of prostate cancer: an updated meta-analysis,T>C
+rs104894149,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]","['Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",None,,G>A / G>T
+rs28934605,,"[['(G;G)', '0', 'common in clinvar']]","['Vitamin D-dependent rickets, type 1', 'Pathogenic']",None,,C>T
+rs55951658,,"[['(C;C)', 'CYP3A4*4 homozygote'], ['(C;T)', 'carrier of one CYP3A4*4 allele'], ['(T;T)', '0', 'normal']]",[],"
+                  C=0.00041
+                  (102/251140, GnomAD_exome)
+                ",Worldwide Distribution of Cytochrome P450 Alleles: A Meta‐analysis of Population‐scale Sequencing Projects,T>A / T>C
+rs9267796,,[],[],"
+                  T=0.03640
+                  (4571/125568, TOPMED)
+                ",,C>T
+rs55897648,,"[['(A;A)', 'CYP2E1*3 homozygote'], ['(A;G)', 'carrier of one CYP2E1*3 allele'], ['(G;G)', '0', 'normal']]",[],"
+                  A=0.00143
+                  (179/125568, TOPMED)
+                ",,G>A / G>T
+rs34690599,,"[['(C;C)', '0', 'common in clinvar'], ['(C;G)', '3', 'Beta Thalassemia carrier; Hemoglobin beta-plus mutation'], ['(G;G)', '4.5', 'Beta Thalassemia intermedia likely; Hemoglobin beta-plus; variable clinical symptoms']]","['Beta-plus-thalassemia', 'Pathogenic', 'beta Thalassemia', 'Pathogenic', 'not specified', 'Pathogenic', 'not provided', 'Pathogenic', 'Beta-thalassemia, dominant inclusion body type,Erythrocytosis 6, familial,Fetal hemoglobin quantitative trait locus 1,Hb SS disease,Heinz body anemia,METHEMOGLOBINEMIA, BETA TYPE,Susceptibility to malaria,alpha Thalassemia,beta Thalassemia', 'Pathogenic']","
+                  C=0.00002
+                  (3/125568, TOPMED)
+                ",,G>C
+rs104894136,,"[['(C;C)', '0', 'common in complete genomics']]","['Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic', 'Breast cancer, susceptibility to', 'Risk-Factor', 'not provided', 'Pathogenic', 'Deficiency of steroid 17-alpha-monooxygenase', 'Not-Provided']",CYP17A1 : Stop Gained,,G>A
+rs104894145,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",CYP17A1 : Missense Variant,,G>A
+rs28934607,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]","['Vitamin D-dependent rickets, type 1', 'Pathogenic']",None,,G>A
+rs56244447,,"[['(A;A)', '0', 'normal'], ['(A;C)', '2', 'carrier of one CYP3A5*3D allele'], ['(C;C)', '2.5', 'CYP3A5*3D homozygote; nonexpressor for CYP3A5']]",[],"
+                  C=0.00016
+                  (40/251306, GnomAD_exome)
+                ",,A>C
+rs55901263,,"[['(C;C)', 'CYP3A4*5 homozygote'], ['(C;G)', 'carrier of one CYP3A4*5 allele'], ['(G;G)', '0', 'normal']]",[],"
+                  C=0.00011
+                  (27/251126, GnomAD_exome)
+                ",Worldwide Distribution of Cytochrome P450 Alleles: A Meta‐analysis of Population‐scale Sequencing Projects,G>C
+rs35580488,,[],[],"
+                  C=0.01019
+                  (2562/251496, GnomAD_exome)
+                ",,G>A / G>C
+rs28934604,,"[['(C;C)', '0'], ['(G;G)', '0', 'common in clinvar']]","['Vitamin D-dependent rickets, type 1', 'Likely-Pathogenic']",None,CYP24A1 and CYP27B1 Polymorphisms Modulate Vitamin D Metabolism in Colon Cancer Cells,C>T
+rs104894139,,"[['(A;G)', '3', 'Carrier of an isolated 17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]","['Isolated 17,20-lyase deficiency', 'Pathogenic']","
+                  T=0.00002
+                  (4/251304, GnomAD_exome)
+                ",,C>T
+rs1075944,,"[['(C;C)', '0', 'common in complete genomics']]",[],,,
+rs104894148,,"[['(A;A)', '0', 'common in clinvar'], ['(A;T)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency']]","['Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",None,,T>A
+rs104894142,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']","
+                  A=0.00000
+                  (1/251224, GnomAD_exome)
+                ",,G>A
+rs55817950,,"[['(A;A)', '2.5', 'CYP3A5*8 homozygote; nonexpressor for CYP3A5'], ['(A;G)', '2', 'carrier of one CYP3A5*8 allele'], ['(G;G)', '0', 'normal']]",[],"
+                  A=0.00001
+                  (3/251310, GnomAD_exome)
+                ",,G>A
+rs1056827,,"[['(G;G)', '0', 'common in clinvar']]","['not specified', 'Benign', 'Primary congenital glaucoma', 'Benign']","
+                  A=0.31887
+                  (65208/204494, GnomAD_exome)
+                ",Association between CYP1B1 Gene Polymorphisms and Risk Factors and Susceptibility to Laryngeal Cancer,C>A
+rs104894144,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']","
+                  T=0.00003
+                  (7/251448, GnomAD_exome)
+                ",,A>C / A>T
+rs56107638,,"[['(G;G)', '0', 'common/normal']]",[],"
+                  A=0.00023
+                  (58/251300, GnomAD_exome)
+                ",Influence of SLCO1B1 in gastric cancer patients treated with EOF chemotherapy,G>A / G>C
+rs34745240,,"[['(G;G)', '0', 'common on affy axiom data']]","['not specified', 'Benign', 'Corneal Dystrophy, Recessive', 'Likely-Benign', 'Bietti crystalline corneoretinal dystrophy', 'Likely-Benign']","
+                  A=0.02622
+                  (6590/251296, GnomAD_exome)
+                ",,G>A
+rs104894147,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",None,,A>C
+rs4713505,,[],[],"
+                  T=0.21561
+                  (27074/125568, TOPMED)
+                ",,G>T
+rs104894154,,"[['(A;A)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;G)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(G;G)', '0', 'common in clinvar']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']","
+                  T=0.00002
+                  (4/251458, GnomAD_exome)
+                ",,C>T
+rs72551320,,"[['(A;A)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Pathogenic']",-,,A>G
+rs55785340,,"[['(A;A)', '0', 'normal'], ['(A;G)', 'carrier of one CYP3A4*2 allele'], ['(G;G)', 'CYP3A4*2 homozygote']]",[],"
+                  G=0.00096
+                  (240/251054, GnomAD_exome)
+                ","Polymorphisms in genes involved in the absorption, distribution, metabolism, and excretion of drugs in the Kazakhs of Kazakhstan",A>G / A>T
+rs104894135,,"[['(C;C)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(C;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic', 'not provided', 'Pathogenic', 'Deficiency of steroid 17-alpha-monooxygenase', 'Pathogenic']","
+                  G=0.00001
+                  (2/251484, GnomAD_exome)
+                ",,A>G
+rs9282671,,"[['(A;A)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(A;T)', '1.5', 'small chance of slightly increasing risk for a form of glaucoma'], ['(T;T)', '0', 'common in complete genomics']]","['Primary open angle glaucoma', 'Pathogenic', 'Congenital ocular coloboma', 'Uncertain-Significance', 'not specified', 'Benign', 'not provided', 'Uncertain-Significance']","
+                  T=0.00355
+                  (654/183970, GnomAD_exome)
+                ",,A>T
+rs28931609,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0']]","['Corticosterone methyloxidase type 2 deficiency', 'Pathogenic']","
+                  A=0.00002
+                  (5/249592, GnomAD_exome)
+                ",Assessment of coding region variants in Kuwaiti population: implications for medical genetics and population genomics,G>A / G>T
+rs104894146,,"[['(G;G)', '6.6', 'Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(G;T)', '3', 'Carrier of a complete combined 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(T;T)', '0', 'common in clinvar']]","['Complete combined 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",None,,A>C
+rs104894137,,"[['(A;A)', '6.3', 'Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency'], ['(A;C)', '3', 'Carrier of a partial 17-alpha-hydroxylase/17,20-lyase deficiency mutation'], ['(C;C)', '0', 'common in clinvar']]","['Combined partial 17-alpha-hydroxylase/17,20-lyase deficiency', 'Pathogenic']",None,,G>T
+rs41272687,,"[['(C;C)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Pathogenic', 'not specified', 'Benign-Likely-Benign']","
+                  T=0.01898
+                  (4772/251390, GnomAD_exome)
+                ",,C>T
+rs72552791,,"[['(A;A)', '0', 'normal'], ['(A;G)', '2', 'carrier of one CYP3A5*11 allele'], ['(G;G)', '2.5', 'CYP3A5*11 homozygote; nonexpressor for CYP3A5']]",[],"
+                  C=0.00000
+                  (1/251264, GnomAD_exome)
+                ",,T>C
+rs201184519,,[],"['not provided', 'Uncertain-Significance']","
+                  A=0.00003
+                  (8/246836, GnomAD_exome)
+                ",,G>A
+rs204895,,[],[],"
+                  T=0.02328
+                  (2923/125568, TOPMED)
+                ",,C>T
+rs267606757,,"[['(A;A)', '0', 'common in clinvar'], ['(A;C)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;C)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",None,,A>C
+rs200737038,,"[['(G;G)', '0', 'common in clinvar']]","['Spastic paraplegia', 'Pathogenic', 'Inborn genetic diseases', 'Pathogenic', 'not provided', 'Pathogenic']","
+                  A=0.00014
+                  (35/248024, GnomAD_exome)
+                ",Clinical features and genetic spectrum in Chinese patients with recessive hereditary spastic paraplegia,G>A
+rs2617266,,"[['(C;C)', '0', 'common in clinvar']]","['not specified', 'Benign', 'Primary congenital glaucoma', 'Likely-Benign', 'Irido-corneo-trabecular dysgenesis', 'Likely-Benign']","
+                  A=0.29261
+                  (70960/242504, GnomAD_exome)
+                ","Assessment of Interactions between PAH Exposure and Genetic Polymorphisms on PAH-DNA Adducts in African American, Dominican, and Caucasian Mothers and Newborns",G>A
+rs204899,,[],[],"
+                  T=0.13276
+                  (16670/125568, TOPMED)
+                ",,C>T
+rs6475,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in complete genomics']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Inborn genetic diseases', 'Pathogenic', 'not provided', 'Pathogenic']","
+                  A=0.00048
+                  (120/249434, GnomAD_exome)
+                ",,T>A
+rs72552752,,[],[],None,,C>T
+i5005427,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",[],,,
+rs204888,,[],[],"
+                  T=0.12030
+                  (30022/249560, GnomAD_exome)
+                ",,G>T
+rs72554626,,"[['(A;A)', '0', 'common in clinvar'], ['(T;T)', '0', 'common in complete genomics']]","['Corticosterone methyloxidase type 2 deficiency', 'Pathogenic']",None,,T>C
+rs11751545,,[],[],"
+                  C=0.0079
+                  (619/78702, PAGE_STUDY)
+                ",Identification of 12 novel loci that confer susceptibility to early-onset dyslipidemia,A>C
+rs2239689,,[],"['not specified', 'Benign']","
+                  A=0.33472
+                  (62709/187348, GnomAD_exome)
+                ",,G>A
+rs2077580,,[],[],"
+                  A=0.10273
+                  (12900/125568, TOPMED)
+                ",,G>A
+rs267606756,,"[['(-;-)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,dupT
+rs121908613,,"[['(A;T)', '3', 'Carrier of a spastic paraplegia mutation'], ['(T;T)', '0', 'common in clinvar']]","['Spastic paraplegia 5A', 'Pathogenic', 'not provided', 'Pathogenic', 'Hereditary spastic paraplegia', 'Pathogenic', 'Spastic paraplegia', 'Pathogenic']","
+                  T=0.00008
+                  (19/250488, GnomAD_exome)
+                ",,A>G / A>T
+i6024112,,[],[],,,
+i6024116,,[],[],,,
+rs6002635,,"[['(G;G)', '0', 'common in complete genomics']]",[],,,
+rs72551314,,"[['(C;C)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Pathogenic', 'not provided', 'Pathogenic-Likely-Pathogenic']","
+                  T=0.00001
+                  (3/251436, GnomAD_exome)
+                ",,C>T
+rs6926448,,[],[],"
+                  T=0.00002
+                  (6/251452, GnomAD_exome)
+                ",,C>T
+i5005424,,[],[],,,
+rs72552751,,[],[],None,,G>C
+rs411337,,[],[],"
+                  T=0.11304
+                  (14194/125568, TOPMED)
+                ",,C>G / C>T
+rs204879,,[],[],"
+                  C=0.02202
+                  (2765/125568, TOPMED)
+                ",,T>C
+rs199476189,,"[['(G;G)', '0', 'common in clinvar']]","['Bietti crystalline corneoretinal dystrophy', 'Pathogenic']","
+                  T=0.00020
+                  (51/251400, GnomAD_exome)
+                ",,G>T
+rs8283,,[],[],"
+                  G=0.26339
+                  (33073/125568, TOPMED)
+                ",High-Density SNP Screening of the Major Histocompatibility Complex in Systemic Lupus Erythematosus Demonstrates Strong Evidence for Independent Susceptibility Regions,A>G
+i6024117,,[],[],,,
+rs61495246,,"[['(T;T)', '0', 'common in clinvar']]","['Vitamin d hydroxylation-deficient rickets, type 1b', 'Pathogenic']","
+                  G=0.00024
+                  (61/251224, GnomAD_exome)
+                ",,A>G
+rs8192789,,"[['(C;C)', '0', 'common in complete genomics']]",[],"
+                  T=0.06638
+                  (8335/125568, TOPMED)
+                ",‘Smoking Genes’: A Genetic Association Study,C>A / C>T
+rs13199524,,[],[],"
+                  T=0.08763
+                  (11003/125568, TOPMED)
+                ",Distinct Genetic Loci Control Plasma HIV-RNA and Cellular HIV-DNA Levels in HIV-1 Infection: The ANRS Genome Wide Association 01 Study,C>T
+rs200718357,,[],[],"
+                  T=0.00046
+                  (112/243686, GnomAD_exome)
+                ",,C>T
+rs56276455,,"[['(A;A)', 'CYP1A2*3 homozygote'], ['(A;G)', 'carrier of one CYP1A2*3 allele'], ['(G;G)', '0', 'normal']]",[],"
+                  A=0.00017
+                  (43/250946, GnomAD_exome)
+                ",Genetic polymorphisms of cytochrome P450-1A2 (CYP1A2) among Emiratis,G>A
+rs2269426,,[],[],"
+                  A=0.33618
+                  (42214/125568, TOPMED)
+                ","Human adaptations to diet, subsistence, and ecoregion are due to subtle shifts in allele frequency",G>A
+rs2269429,,[],"['not specified', 'Benign']","
+                  T=0.13048
+                  (16384/125568, TOPMED)
+                ",Abstracts for the 12th International Congress on Schizophrenia Research (ICOSR),C>G / C>T
+i5005426,,[],[],,,
+rs72552758,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]",[],"
+                  A=0.00002
+                  (2/133220, GnomAD_exome)
+                ",,G>A
+rs201552310,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']","
+                  C=0.00001
+                  (1/125568, TOPMED)
+                ",,G>A / G>C
+rs2239688,,[],[],"
+                  G=0.01970
+                  (2474/125568, TOPMED)
+                ",,C>A / C>G
+rs6476,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']","
+                  A=0.00100
+                  (249/250242, GnomAD_exome)
+                ",,T>A / T>C
+rs9378251,,"[['(C;C)', '0', 'common in complete genomics'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']","
+                  T=0.00009
+                  (22/240194, GnomAD_exome)
+                ",,C>T
+i5005438,,[],[],,,
+rs151344505,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]",[],"
+                  A=0.00011
+                  (26/246388, GnomAD_exome)
+                ",,G>A
+rs72547515,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'carrier of one CYP1A2*16 allele'], ['(T;T)', 'CYP1A2*16 homozygote']]",[],"
+                  C=0.00000
+                  (1/251386, GnomAD_exome)
+                ",,G>A / G>C
+i5005422,,[],[],,,
+rs1150758,,[],[],"
+                  C=0.09935
+                  (12475/125568, TOPMED)
+                ",Genetic variants within the MHC region are associated with immune responsiveness to childhood vaccinations,G>C
+rs72551317,,"[['(A;A)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Likely-Pathogenic']","
+                  G=0.00002
+                  (4/251474, GnomAD_exome)
+                ",,A>G
+rs151344506,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]",[],"
+                  A=0.0000
+                  (1/87116, ExAC)
+                ",,G>A / G>C
+rs2470144,,[],[],"
+                  T=0.37829
+                  (47501/125568, TOPMED)
+                ",Impact of Aromatase Genetic Variation on Hormone Levels and Global Outcome after Severe TBI,T>C
+rs12333245,,[],[],"
+                  A=0.13333
+                  (16742/125568, TOPMED)
+                ",,G>A
+rs6467,,"[['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar'], ['(G;T)', '0', 'polymorphism'], ['(T;T)', '0', 'common/normal']]","['not specified', 'Benign', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Inborn genetic diseases', 'Pathogenic', 'not provided', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Not-Provided']","
+                  C=0.3707
+                  (4817/12996, GO-ESP)
+                ",The Major Histocompatibility Complex Conserved Extended Haplotype 8.1 in AIDS-related Non-Hodgkin’s Lymphoma,C>A / C>G / C>T
+rs28357069,,[],[],,,
+rs61754278,,"[['(G;G)', '0', 'common in clinvar']]","['Isolated 17,20-lyase deficiency', 'Pathogenic', 'Deficiency of steroid 17-alpha-monooxygenase', 'Pathogenic']","
+                  T=0.00002
+                  (4/251412, GnomAD_exome)
+                ",,C>T
+rs3807039,,[],[],"
+                  C=0.10357
+                  (13005/125568, TOPMED)
+                ",,A>C
+i5005423,,[],[],,,
+rs3749962,,[],"['not specified', 'Benign']","
+                  A=0.13930
+                  (34695/249064, GnomAD_exome)
+                ",,G>A
+rs397509367,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;GG)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GG;GG)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,delGGinsC
+rs10046127,,[],[],"
+                  T=0.08238
+                  (10344/125568, TOPMED)
+                ",,C>T
+rs28361044,,[],[],,,
+rs7774197,,[],[],"
+                  C=0.09604
+                  (12059/125568, TOPMED)
+                ",,A>C
+i5005434,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",[],,,
+i5005436,Congenital adrenal hyperplasia related,"[['(C;C)', '0', 'normal'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia']]",[],,,
+rs151344503,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",CYP21A2 : Stop Gained,,G>A
+rs3130342,,"[['(G;G)', '0', 'common on affy axiom data']]",[],"
+                  A=0.09451
+                  (11867/125568, TOPMED)
+                ",Knowledge-based analysis of genetic associations of rheumatoid arthritis to inform studies searching for pleiotropic genes: a literature review and network analysis,A>C / A>G / A>T
+rs3134954,,[],[],"
+                  C=0.09465
+                  (11885/125568, TOPMED)
+                ",,C>T
+rs2071293,,[],[],"
+                  A=0.23008
+                  (28891/125568, TOPMED)
+                ",,G>A
+rs72547508,,"[['(C;C)', '0', 'common in clinvar'], ['(G;G)', '0', 'common in complete genomics']]","['Adrenal insufficiency, congenital, with 46,XY sex reversal, partial or complete', 'Pathogenic']","
+                  A=0.00001
+                  (3/251368, GnomAD_exome)
+                ",,G>A
+i5006178,,[],[],,,
+i5005425,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",[],,,
+i5005439,,[],[],,,
+rs8111,,[],[],"
+                  T=0.20591
+                  (25856/125568, TOPMED)
+                ",,C>T
+rs387906510,,"[['(-;-)', '5', 'Congenital adrenal hyperplasia'], ['(-;GAGACTAC)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(GAGACTAC;GAGACTAC)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,delGAGACTAC
+i6024113,,[],[],,,
+rs72551315,,"[['(C;C)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Pathogenic']","
+                  T=0.00003
+                  (4/125568, TOPMED)
+                ",,C>T
+rs2228628,,[],[],"
+                  C=0.26560
+                  (55532/209080, GnomAD_exome)
+                ",,G>C
+rs169494,,[],[],"
+                  A=0.09611
+                  (12068/125568, TOPMED)
+                ",,G>A
+rs72551319,,"[['(A;A)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Pathogenic']","
+                  T=0.00002
+                  (4/251412, GnomAD_exome)
+                ",,A>T
+rs11962353,,[],[],"
+                  A=0.00162
+                  (204/125568, TOPMED)
+                ",,G>A
+rs200357005,,[],[],-,,C>G / C>T
+rs12198173,,"[['(G;G)', '0']]",[],"
+                  A=0.10846
+                  (13619/125568, TOPMED)
+                ",Distinct Genetic Loci Control Plasma HIV-RNA and Cellular HIV-DNA Levels in HIV-1 Infection: The ANRS Genome Wide Association 01 Study,G>A
+rs439844,,[],[],"
+                  T=0.14991
+                  (18824/125568, TOPMED)
+                ",,C>T
+rs2071295,,[],[],"
+                  T=0.23949
+                  (30072/125568, TOPMED)
+                ",,C>T
+i5005431,Congenital adrenal hyperplasia related,"[['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",[],,,
+i5005429,,[],[],,,
+rs1150754,,"[['(G;G)', '0', 'common on affy axiom data']]",[],"
+                  T=0.09861
+                  (12382/125568, TOPMED)
+                ",Genetic similarities and differences between discoid and systemic lupus erythematosus patients within the Polish population,C>A / C>T
+rs5758598,,"[['(G;G)', '0', 'common in complete genomics']]",[],"
+                  G=0.02026
+                  (2689/132730, GnomAD_exome)
+                ",,G>A
+rs7769409,,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscallled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,C>T
+rs56411402,,"[['(C;C)', '2.5', 'CYP3A5*4 homozygote; nonexpressor for CYP3A5'], ['(C;T)', '2', 'carrier of one CYP3A5*4 allele'], ['(T;T)', '0', 'normal']]",[],"
+                  C=0.00023
+                  (59/251466, GnomAD_exome)
+                ",,T>C
+rs12153855,,[],[],"
+                  C=0.11887
+                  (14926/125568, TOPMED)
+                ",Associations of 6p21.3 Region with Age-related Macular Degeneration and Polypoidal Choroidal Vasculopathy,T>C
+i6024115,,[],[],,,
+rs12524441,,[],[],"
+                  A=0.01080
+                  (1356/125568, TOPMED)
+                ",,G>A
+rs169496,,[],[],"
+                  T=0.15022
+                  (18863/125568, TOPMED)
+                ",,C>T
+rs2480256,,[],[],"
+                  A=0.28557
+                  (56512/197892, GnomAD_exome)
+                ",Impact of the Interaction between 3′-UTR SNPs and microRNA on the Expression of Human Xenobiotic Metabolism Enzyme and Transporter Genes,A>G / A>T
+i5005432,Congenital adrenal hyperplasia related,"[['(C;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia']]",[],,,
+rs151344504,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common/normal']]",[],None,,G>A
+rs7755898,Q318X allele of the 21-hydroxylase gene.  T is the risk allele.  This represents a null allele (no function).,"[['(C;C)', '0', 'common in clinvar'], ['(C;T)', '3', 'miscalled by 23andMe, but should indicate being a carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,C>T
+rs72551316,,"[['(C;C)', '0', 'common in clinvar']]","['Cholestanol storage disease', 'Likely-Pathogenic']","
+                  T=0.00001
+                  (2/251478, GnomAD_exome)
+                ",,C>T
+rs185819,,"[['(T;T)', '0', 'common in clinvar']]","['not specified', 'Benign']","
+                  T=0.48533
+                  (60942/125568, TOPMED)
+                ",Polymorphisms associated with a tropical climate and root crop diet induce susceptibility to metabolic and cardiovascular diseases in Solomon Islands,T>A / T>C / T>G
+rs72552756,,"[['(C;C)', '5', 'Congenital adrenal hyperplasia'], ['(C;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]",[],"
+                  C=0.00001
+                  (2/237156, GnomAD_exome)
+                ",,G>C
+rs72552754,,"[['(A;A)', '5', 'Congenital adrenal hyperplasia'], ['(A;G)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(G;G)', '0', 'common in complete genomics']]",[],"
+                  A=0.00000
+                  (1/247760, GnomAD_exome)
+                ",,G>A
+rs72552750,,[],[],"
+                  A=0.00003
+                  (6/234136, GnomAD_exome)
+                ",,G>A
+rs72551318,,"[['(C;C)', '0', 'common in clinvar']]","['not provided', 'Uncertain-Significance', 'Cholestanol storage disease', 'Pathogenic', 'Cholestanol storage disease', 'Pathogenic', 'not provided', 'Pathogenic']","
+                  T=0.00004
+                  (5/125568, TOPMED)
+                ",,C>G / C>T
+rs6471,,"[['(G;G)', '0', 'common in complete genomics'], ['(G;T)', '3', 'Carrier of allele for congenital adrenal hyperplasia'], ['(T;T)', '5', 'Congenital adrenal hyperplasia']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'Adenoma, cortisol-producing', 'Pathogenic', 'Carcinoma, adrenocortical, androgen-secreting', 'Pathogenic', 'Inborn genetic diseases', 'Pathogenic', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic', 'not provided', 'Pathogenic']",None,,G>A / G>C / G>T
+rs397515532,,"[['(-;-)', '0', 'common in clinvar']]",[],,,
+i6024118,,[],[],,,
+rs6470,,[],"['not specified', 'Benign']","
+                  T=0.01227
+                  (1925/156824, GnomAD_exome)
+                ",,C>T
+rs549949982,,[],"['not provided', 'Uncertain-Significance']","
+                  T=0.00021
+                  (37/176716, GnomAD_exome)
+                ",,C>T
+rs757608533,,[],"['not provided', 'Uncertain-Significance']","
+                  T=0.00001
+                  (2/186390, GnomAD_exome)
+                ",,C>T
+rs72552744,,[],"['not specified', 'Uncertain-Significance']","
+                  T=0.00055
+                  (115/210526, GnomAD_exome)
+                ",,G>A / G>T
+rs1303387085,,[],"['not provided', 'Uncertain-Significance']","
+                  A=0.00000
+                  (1/237104, GnomAD_exome)
+                ",,T>A
+rs6468,,[],"['not specified', 'Benign']","
+                  C=0.20560
+                  (47312/230114, GnomAD_exome)
+                ",,C>G / C>T
+rs6464,,[],"['not specified', 'Benign']","
+                  C=0.31122
+                  (66232/212814, GnomAD_exome)
+                ",,C>A / C>T
+rs368330593,,[],"['not provided', 'Uncertain-Significance']","
+                  A=0.00019
+                  (35/180472, GnomAD_exome)
+                ",,G>A
+rs1554304513,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Likely-Pathogenic']",None,,A>G
+rs6462,,[],"['not specified', 'Benign']","
+                  C=0.26312
+                  (56346/214146, GnomAD_exome)
+                ",,C>G / C>T
+rs193922544,,[],"['Congenital adrenal hyperplasia', 'Uncertain-Significance']","
+                  G=0.00003
+                  (4/125568, TOPMED)
+                ",,C>G / C>T
+rs147821751,,[],"['not specified', 'Likely-Benign']","
+                  A=0.00329
+                  (761/231458, GnomAD_exome)
+                ",,G>A
+rs886038303,,[],"['not specified', 'Likely-Benign']",None,,G>A
+rs6474,,"[['(G;G)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign', 'not specified', 'Benign', 'not provided', 'Benign']","
+                  A=0.31647
+                  (75713/239240, GnomAD_exome)
+                ",A genome-wide association study of atopic dermatitis identifies loci with overlapping effects on asthma and psoriasis,G>A / G>C
+rs6455,,[],"['not specified', 'Likely-Benign', 'not specified', 'Benign']","
+                  C=0.0043
+                  (338/78678, PAGE_STUDY)
+                ",,G>A / G>C
+rs193922545,,[],"['Congenital adrenal hyperplasia', 'Likely-Benign', 'not specified', 'Benign']","
+                  G=0.00001
+                  (2/246210, GnomAD_exome)
+                ",,C>G
+rs193922546,,[],"['Congenital adrenal hyperplasia', 'Likely-Benign', 'not specified', 'Benign', 'not provided', 'Likely-Benign']","
+                  T=0.00005
+                  (12/246506, GnomAD_exome)
+                ",,C>T
+rs566065375,,[],"['not provided', 'Uncertain-Significance']","
+                  T=0.00062
+                  (147/237412, GnomAD_exome)
+                ",,C>T
+rs1057519069,,"[['(C;C)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",-,,C>G / C>T
+rs779166970,,[],"['not provided', 'Uncertain-Significance']","
+                  A=0.00000
+                  (1/248112, GnomAD_exome)
+                ",,T>A / T>C
+rs1040312,,[],"['not specified', 'Benign']","
+                  A=0.01289
+                  (2652/205752, GnomAD_exome)
+                ",,C>A
+rs1040311,,[],"['not specified', 'Benign']","
+                  C=0.01173
+                  (2426/206788, GnomAD_exome)
+                ",,T>C
+rs397515531,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign', 'not specified', 'Benign', 'not provided', 'Benign']","
+                  T=0.00002
+                  (2/125568, TOPMED)
+                ",,C>G / C>T
+rs373648076,,[],"['not specified', 'Likely-Benign']","
+                  A=0.00008
+                  (10/125568, TOPMED)
+                ",,G>A / G>T
+rs10947229,,[],"['not specified', 'Benign']","
+                  C=0.00005
+                  (6/125568, TOPMED)
+                ",,T>C / T>G
+rs1554299737,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic']",None,,T>A
+rs6458,,[],"['not specified', 'Benign']","
+                  G=0.13143
+                  (31911/242802, GnomAD_exome)
+                ",,A>G
+rs6459,,[],"['not specified', 'Benign']","
+                  T=0.14372
+                  (15421/107300, ExAC)
+                ",,C>G / C>T
+rs6477,,[],"['not specified', 'Benign', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign']","
+                  G=0.16477
+                  (18983/115212, ExAC)
+                ",,C>G / C>T
+rs11970671,,[],"['not specified', 'Benign']",-,,T>C
+rs994764994,,[],"['not provided', 'Likely-Pathogenic']","
+                  G=0.00002
+                  (4/246400, GnomAD_exome)
+                ",,T>G
+rs774336886,,[],"['not specified', 'Likely-Benign']","
+                  A=0.00000
+                  (1/246278, GnomAD_exome)
+                ",,G>A
+rs6442,,[],"['not specified', 'Benign']","
+                  C=0.01441
+                  (3548/246188, GnomAD_exome)
+                ",,G>C
+rs1554305880,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Likely-Pathogenic']",None,,G>A
+rs6469,,[],"['not specified', 'Benign']","
+                  T=0.2170
+                  (17945/82708, ExAC)
+                ",,C>T
+rs1429901248,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Likely-Pathogenic']",CYP21A2 : Missense Variant,,T>A / T>C / T>G
+rs202242769,,"[['(G;G)', '0', 'common in clinvar']]","['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Pathogenic-Likely-Pathogenic']","
+                  A=0.0136
+                  (1259/92742, ExAC)
+                ",,G>A / G>C
+rs1370167869,,[],"['not provided', 'Pathogenic']",CYP21A2 : Missense Variant,,C>T
+rs193922543,,[],"['Congenital adrenal hyperplasia', 'Likely-Benign']",None,,C>T
+rs767333157,,[],"['not provided', 'Uncertain-Significance']","
+                  T=0.00214
+                  (287/134056, GnomAD_exome)
+                ",,C>T
+rs184649564,,[],"['not provided', 'Conflicting-Interpretations-Of-Pathogenicity']",CYP21A2 : Missense Variant,,G>A / G>T
+rs776989258,,[],"['not provided', 'Pathogenic']","
+                  T=0.00055
+                  (123/222442, GnomAD_exome)
+                ",,C>G / C>T
+rs200005406,,[],"['not provided', 'Pathogenic']",None,,G>A / G>C
+rs6446,,[],"['not specified', 'Benign']","
+                  A=0.00003
+                  (8/238752, GnomAD_exome)
+                ",,G>A
+rs6473,,"[['(G;G)', '0', 'common in clinvar']]","['not specified', 'Benign']",CYP21A2 : Missense Variant,,G>A / G>C
+rs397515529,,[],"['Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Benign']",CYP21A2 : Missense Variant,,C>A / C>T
+rs150697472,,[],"['not provided', 'Uncertain-Significance']","
+                  T=0.01096
+                  (2602/237494, GnomAD_exome)
+                ",,C>T
+rs6447,,[],"['not provided', 'Uncertain-Significance', 'Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency', 'Uncertain-Significance']","
+                  A=0.0177
+                  (550/31076, GnomAD)
+                ",,G>A / G>C / G>T
+rs562025438,,[],"['not specified', 'Likely-Benign']","
+                  T=0.02066
+                  (2995/144950, GnomAD_exome)
+                ",,C>T
+rs199953230,,[],"['Ehlers-Danlos-like syndrome due to tenascin-X deficiency', 'Uncertain-Significance', 'not specified', 'Benign']",TNXB : Missense Variant,,C>T
+rs200523717,,[],"['Ehlers-Danlos-like syndrome due to tenascin-X deficiency', 'Uncertain-Significance', 'not specified', 'Benign']",TNXB : Missense Variant,,C>T
+rs544604053,,[],"['Vesicoureteral reflux 8', 'Uncertain-Significance']","
+                  T=0.00124
+                  (140/113134, GnomAD_exome)
+                ",,C>T
+rs1057744,,[],[],"
+                  T=0.48242
+                  (79977/165782, GnomAD_exome)
+                ",,C>T
+rs1057868,,"[['(C;C)', '0', 'normal'], ['(C;T)', 'normal'], ['(T;T)', '1.6', '1.6x higher overall CYP3A activity']]","['not specified', 'Benign', 'Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis', 'Likely-Benign']","
+                  T=0.30515
+                  (64499/211366, GnomAD_exome)
+                ",Genetic variants and Expression of Cytochrome p450 Oxidoreductase Predict Postoperative Survival in Patients with Hepatitis B Virus-Related Hepatocellular Carcinoma,C>T
+rs1057909,,"[['(A;A)', '0', 'normal'], ['(A;G)', '3', 'carrier of one CYP2C9_42612A>G allele'], ['(G;G)', '4', 'CYP2C9_42612A>G homozygote']]",[],"
+                  C=0.00000
+                  (1/251160, GnomAD_exome)
+                ",Genetic factors associated with patient-specific warfarin dose in ethnic Indonesians,A>C / A>G
+rs1057910,Warfarin (Coumadin®),"[['(A;A)', '0.1', 'normal; no effect on warfarin metabolism'], ['(A;C)', '2.5', 'CYP2C9*3 carrier; average 40% reduction in warfarin metabolism'], ['(C;C)', '4', 'CYP2C9*3 homozygote; average 80% reduction in warfarin metabolism; reduced metabolism of number of other drugs']]","['Warfarin response', 'Drug-Response', 'Warfarin response', 'Drug-Response', 'Tolbutamide response', 'Drug-Response', 'Warfarin response', 'Drug-Response', 'Phenytoin response', 'Drug-Response', 'Glipizide response', 'Drug-Response', 'Warfarin response', 'Drug-Response', 'diclofenac response - Toxicity/ADR', 'Drug-Response', 'celecoxib response - Dosage', 'Drug-Response', 'Antiinflammatory agents, non-steroids response - Toxicity/ADR', 'Drug-Response', 'celecoxib response - Toxicity/ADR', 'Drug-Response', 'acenocoumarol response - Dosage, Toxicity/ADR', 'Drug-Response', 'not provided', 'Other', 'warfarin response - Dosage', 'Drug-Response', 'acenocoumarol response - Toxicity/ADR', 'Drug-Response', 'warfarin response - Toxicity/ADR', 'Drug-Response']","
+                  C=0.04520
+                  (5676/125568, TOPMED)
+                ",High resolution melting method to detect single nucleotide polymorphism of VKORC1 and CYP2C9,A>C / A>G
+rs1058026,,[],[],"
+                  C=0.2003
+                  (6277/31338, GnomAD)
+                ",Kernel Machine SNP-set Analysis for Censored Survival Outcomes in Genome-wide Association Studies,A>C
+rs1058164,,[],[],"
+                  C=0.45159
+                  (109899/243358, GnomAD_exome)
+                ",Pharmacogenomic Study Reveals New Variants of Drug Metabolizing Enzyme and Transporter Genes Associated with Steady-State Plasma Concentrations of Risperidone and 9-Hydroxyrisperidone in Thai Autism Spectrum Disorder Patients,C>G
+rs1058205,,[],[],"
+                  C=0.24876
+                  (61487/247176, GnomAD_exome)
+                ",Association between three genetic variants in kallikrein 3 and prostate cancer risk,C>T
+rs1058322,,[],[],"
+                  T=0.28979
+                  (36388/125568, TOPMED)
+                ","Genetic polymorphisms in leptin, adiponectin and their receptors affect risk and aggressiveness of prostate cancer: evidence from a meta-analysis and pooled-review",C>T
+rs1058396,,"[['(A;A)', '1', 'Jk(a-/b+) Kidd blood group, barring other variants'], ['(A;G)', '1', 'Jk(a+/b+) Kidd blood group, barring other variants'], ['(G;G)', '1', 'Jk(a+/b-) Kidd blood group, barring other variants']]","['KIDD BLOOD POLYMORPHISM Jk(a)/Jk(b)', 'Benign']","
+                  A=0.47147
+                  (118542/251432, GnomAD_exome)
+                ",Identification and replication of the interplay of four genetic high-risk variants for urinary bladder cancer,G>A
+rs1058564,,[],[],"
+                  T=0.21005
+                  (26376/125568, TOPMED)
+                ",,C>G / C>T
+rs1058587,,[],[],"
+                  G=0.21756
+                  (27319/125568, TOPMED)
+                ","Single-nucleotide polymorphisms of stemness genes predicted to regulate RNA splicing, microRNA and oncogenic signaling are associated with prostate cancer survival",C>G / C>T
+rs1058768,,[],[],"
+                  T=0.31759
+                  (79618/250696, GnomAD_exome)
+                ",,T>C
+rs1058881,,[],[],None,UEG Week 2015 Poster Presentations,C>T
+rs1058930,,"[['(G;G)', '0', 'normal']]","['CYP2C8 POLYMORPHISM', 'Benign']","
+                  C=0.03445
+                  (4326/125568, TOPMED)
+                ","PharmGKB summary: very important pharmacogene information for cytochrome P450, family 2, subfamily C, polypeptide 8",G>A / G>C
+rs1058932,,[],[],"
+                  A=0.22291
+                  (55864/250608, GnomAD_exome)
+                ",Interactions between Urinary 4-tert-Octylphenol Levels and Metabolism Enzyme Gene Variants on Idiopathic Male Infertility,G>A
+rs1059004,,[],[],"
+                  A=0.39461
+                  (49550/125568, TOPMED)
+                ",Expression of Oligodendrocyte-Associated Genes in Dorsolateral Prefrontal Cortex of Patients with Schizophrenia,C>A
+rs1059234,,[],[],"
+                  T=0.14712
+                  (36977/251332, GnomAD_exome)
+                ",Association of p21 3′ UTR gene polymorphism with cancer risk: Evidence from a meta-analysis,C>T
+rs1059293,,[],[],"
+                  C=0.39600
+                  (49725/125568, TOPMED)
+                ",Cytokine and cytokine receptor genes of adaptive immune response are differentially associated with breast cancer risk in American women of African and European ancestry,C>T
+rs1059440,,[],[],"
+                  C=0.17810
+                  (44634/250610, GnomAD_exome)
+                ",,T>C
+rs1059513,,[],[],"
+                  C=0.08182
+                  (10274/125568, TOPMED)
+                ",A Genome Wide Association Study of Plasma Total IgE Concentration in the Framingham Heart Study,T>C
+rs1059611,,"[['(T;T)', '0', 'common in clinvar']]","['Hyperlipoproteinemia, type I', 'Likely-Benign']","
+                  C=0.12997
+                  (16320/125568, TOPMED)
+                ",Gene-Based Sequencing Identifies Lipid-Influencing Variants with Ethnicity-Specific Effects in African Americans,T>C
+rs1059702,,[],[],"
+                  A=0.28360
+                  (51076/180099, GnomAD_exome)
+                ",New insight on the Xq28 association with systemic sclerosis,A>G
+rs1059823,,[],[],"
+                  A=0.47883
+                  (60126/125568, TOPMED)
+                ",Evidence of association with type 1 diabetes in the SLC11A1 gene region,A>G
+rs1060043,,[],[],"
+                  A=0.06822
+                  (8566/125568, TOPMED)
+                ",Genetic and environmental factors in conjunctival UV autofluorescence,G>A / G>T
+rs1060402,,[],[],"
+                  A=0.45344
+                  (56938/125568, TOPMED)
+                ",,G>A
+rs1060463,,[],[],"
+                  C=0.43674
+                  (109755/251304, GnomAD_exome)
+                ",Novel Single Nucleotide Polymorphism Markers for Low Dose Aspirin-Associated Small Bowel Bleeding,C>G / C>T
+rs1060573,,"[['(A;A)', 'Decreased risk of acne occurrences in Chinese Han population'], ['(G;A)', '1.25x Increased risk of acne occurrences in Chinese Han population.']]",[],"
+                  A=0.35733
+                  (44869/125568, TOPMED)
+                ",,A>C / A>G
+rs1061147,,"[['(A;A)', '2.2', '2.76x increased risk for Age Related Macular Degeneration.'], ['(A;C)', '1', 'Normal 0.97x risk for Age Related Macular Degeneration.'], ['(C;C)', '2.2', 'Reduced 0.34x risk of Age Related Macular Degeneration.']]","['Macular degeneration', 'Benign', 'Basal laminar drusen', 'Benign', 'Mesangiocapillary glomerulonephritis, type II', 'Benign', 'Atypical hemolytic uremic syndrome', 'Benign']","
+                  A=0.32377
+                  (81231/250890, GnomAD_exome)
+                ","Complement factor H and LOC387715/ARMS2/HTRA1 variant's frequencies and phenotypic associations in neovascular age-related macular degeneration, a pilot study",A>C
+rs1061170,,"[['(C;C)', '3.2', '5.9x risk for AMD; higher mortality among nonagenarians'], ['(C;T)', '2.5', '2.5x risk for AMD; higher mortality among nonagenarians'], ['(T;T)', '1.6', 'lower risk for AMD, generally longer live than (C) allele carriers']]","['Age-related macular degeneration 4', 'Risk-Factor', 'Basal laminar drusen', 'Pathogenic', 'Basal laminar drusen', 'Benign', 'Macular degeneration', 'Benign', 'Mesangiocapillary glomerulonephritis, type II', 'Benign', 'Atypical hemolytic uremic syndrome', 'Benign']","
+                  C=0.32025
+                  (80072/250026, GnomAD_exome)
+                ",Association between dietary xanthophyll (lutein and zeaxanthin) intake and early age-related macular degeneration: the Atherosclerosis Risk in Communities Study,C>T
+rs1061235,,"[['(A;A)', '0.1', 'Normal carbamazepine sensitivity; common in clinvar'], ['(A;T)', '2.9', '26% risk of bad reaction to anti-epileptic carbamazepine'], ['(T;T)', '4', '26% risk of bad reaction to anti-epileptic carbamazepine']]","['Carbamazepine hypersensitivity', 'Risk-Factor']","
+                  T=0.0470
+                  (1461/31056, GnomAD)
+                ",HLA-A*31:01 and HLA-B*15:02 as genetic markers for carbamazepine hypersensitivity in children,A>T
+rs1061325,,"[['(C;C)', '2', 'Two copies of ""farmer"" CLTCL1 gene variant'], ['(C;T)', '2', 'One copy of ""hunter-gather"" CLTCL1 gene variant + one ""farmer"" variant'], ['(T;T)', '2', 'Two copies of ""hunter-gatherer"" CLTCL1 gene variant']]",[],"
+                  C=0.48505
+                  (119857/247104, GnomAD_exome)
+                ",Genetic diversity of CHC22 clathrin impacts its function in glucose metabolism,T>C
+rs1061472,,"[['(A;A)', '0', 'common in clinvar']]","['Wilson disease', 'Benign', 'not specified', 'Benign', 'not provided', 'Benign']","
+                  T=0.46106
+                  (114975/249370, GnomAD_exome)
+                ","Genetic Polymorphisms are Associated with Hair, Blood, and Urine Mercury Levels in the American Dental Association (ADA) Study Participants",T>C / T>G
+rs1061622,,[],[],"
+                  G=0.21629
+                  (54148/250344, GnomAD_exome)
+                ","Association of TNF-α, TNFRSF1A and TNFRSF1B Gene Polymorphisms with the Risk of Sporadic Breast Cancer in Northeast Chinese Han Women",T>G
+rs1061624,,[],[],"
+                  G=0.47252
+                  (59334/125568, TOPMED)
+                ",The association between TNFR gene polymorphisms and the risk of Hepatitis B Virus-Related Liver Diseases in Chinese population,A>G
+rs1061631,,[],[],"
+                  A=0.14907
+                  (18718/125568, TOPMED)
+                ",Association between genetic variations in tumor necrosis factor receptor genes and survival of patients with T-cell lymphoma,G>A
+rs1061646,,"[['(C;C)', '0', '1.16x increased risk for breast cancer'], ['(C;T)', '1.08x increased risk for breast cancer'], ['(T;T)', 'normal risk']]","['not specified', 'Benign']","
+                  A=0.42454
+                  (65869/155154, GnomAD_exome)
+                ",,G>A
+rs1061808,,[],[],"
+                  T=0.35416
+                  (44471/125568, TOPMED)
+                ",Genome-Wide Association Study Identifies Novel Loci Associated with Circulating Phospho- and Sphingolipid Concentrations,T>G
+rs1062033,,"[['(C;G)', 'increases susceptibility to postmenopausal osteoporosis'], ['(G;G)', 'increases susceptibility to postmenopausal osteoporosis']]",[],"
+                  G=0.34332
+                  (43110/125568, TOPMED)
+                ",CYP19 haplotypes increase risk for Alzheimer's disease,C>G
+rs1062087,,"[['(G;G)', '0', 'common in clinvar'], ['(T;T)', '0']]","['not specified', 'Likely-Benign']","
+                  C=0.17509
+                  (43612/249084, GnomAD_exome)
+                ",,C>T
+rs1062158,,[],[],"
+                  C=0.32352
+                  (40624/125568, TOPMED)
+                ",,C>A / C>G / C>T
+rs1062613,,[],[],"
+                  T=0.20892
+                  (51271/245414, GnomAD_exome)
+                ",HTR3A and HTR3E gene polymorphisms and diarrhea predominant irritable bowel syndrome risk: evidence from a meta-analysis,T>C
+rs1062708,,[],[],"
+                  T=0.41177
+                  (51705/125568, TOPMED)
+                ",The relationship between fertility and lifespan in humans,C>A / C>G / C>T
+rs1062923,,"[['(T;T)', '0', 'common on affy axiom data']]",[],"
+                  G=0.12978
+                  (32146/247698, GnomAD_exome)
+                ","Ambient pollutants, polymorphisms associated with microRNA processing and adhesion molecules: the Normative Aging Study",A>G
+rs1063134,,[],[],"
+                  T=0.15306
+                  (19219/125568, TOPMED)
+                ",,C>A / C>T
+rs1063169,,[],[],"
+                  T=0.12019
+                  (15092/125568, TOPMED)
+                ",Application of Multi-SNP Approaches Bayesian LASSO and AUC-RF to Detect Main Effects of Inflammatory-Gene Variants Associated with Bladder Cancer Risk,G>T
+rs1063192,,"[['(C;C)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(C;T)', '1.5', '0.71x reduced risk of myocardial infarction'], ['(T;T)', '1', 'Normal risk of myocardial infarction']]",[],"
+                  G=0.28204
+                  (35415/125568, TOPMED)
+                ",Functional Genetic Single-Nucleotide Polymorphisms (SNPs) in Cyclin-Dependent Kinase Inhibitor 2A/B (CDKN2A/B) Locus Are Associated with Risk and Prognosis of Osteosarcoma in Chinese Populations,G>A / G>T
+rs1063355,,[],[],"
+                  T=0.42240
+                  (53040/125568, TOPMED)
+                ",Genome-wide association study of asthma identifies RAD50-IL13 and HLA-DR/DQ regions,T>G
+rs1063499,,[],[],"
+                  G=0.42471
+                  (105394/248154, GnomAD_exome)
+                ",A Genome-Wide Association Study for Primary Open Angle Glaucoma and Macular Degeneration Reveals Novel Loci,G>C
+rs1063539,,[],[],"
+                  C=0.11270
+                  (14151/125568, TOPMED)
+                ",Association of adiponectin gene variants with idiopathic recurrent miscarriage according to obesity status: a case–control study,G>A / G>C
+rs1063739,,"[['(C;C)', '0', 'common in clinvar']]","['GLUTAMIC PYRUVATE TRANSAMINASE POLYMORPHISM', 'Benign']","
+                  A=0.40467
+                  (50814/125568, TOPMED)
+                ","Liver enzymes, metabolomics and genome-wide association studies: From systems biology to the personalized medicine",C>A / C>G
+rs1063856,,"[['(A;A)', '0', 'common in clinvar']]","['not specified', 'Benign', 'von Willebrand disorder', 'Likely-Benign', 'not provided', 'Benign', 'not provided', 'Not-Provided']","
+                  C=0.31230
+                  (78459/251226, GnomAD_exome)
+                ",Gene-centric approach identifies new and known loci for FVIII activity and VWF antigen levels in European Americans and African Americans,T>C / T>G
+rs1063857,,"[['(T;T)', '0', 'common in clinvar']]","['not specified', 'Benign', 'von Willebrand disorder', 'Likely-Benign', 'not provided', 'Benign']","
+                  G=0.31234
+                  (78487/251290, GnomAD_exome)
+                ",Genetic Variation in the von Willebrand Factor Gene in Swedish von Willebrand Disease Patients,A>G
+rs1064017,,[],[],"
+                  A=0.36179
+                  (45429/125568, TOPMED)
+                ",,G>A / G>T
+rs1064039,,"[['(A;A)', '2', 'Higher risk for age-related macular degeneration; slightly higher Alzheimers risk in Caucasians but not Asians'], ['(A;G)', '1.2', 'slightly higher risk for Alzheimers in Caucasians but not Asians'], ['(G;G)', '0', 'common in clinvar']]","['Age-related macular degeneration 11', 'Pathogenic']","
+                  T=0.19177
+                  (24080/125568, TOPMED)
+                ",Neuroimaging Measures as Endophenotypes in  Alzheimer's Disease,C>G / C>T
+rs1064074,,"[['(G;G)', '0', 'common in clinvar']]","['not specified', 'Benign', 'Nonsyndromic Hearing Loss, Recessive', 'Likely-Benign', 'Retinitis pigmentosa-deafness syndrome', 'Likely-Benign']","
+                  G=0.48130
+                  (60436/125568, TOPMED)
+                ",,C>A / C>G
+rs1064395,"Association between schizophrenia and common variation in neurocan (NCAN), a genetic risk factor for bipolar disorder.","[['(A;A)', '2.1', 'Having the A allele at this SNP makes your risk for developing bipolar disorder or schizophrenia higher.'], ['(A;G)', '2', 'Having any copies of A at this SNP heightens your risk for bipolar disorder and schizophrenia.'], ['(G;G)', 'Normal risk of bipolar disorder or schizophrenia']]",[],"
+                  A=0.24588
+                  (30875/125568, TOPMED)
+                ",Genome-wide Association Study Identifies Genetic Variation in Neurocan as a Susceptibility Factor for Bipolar Disorder,G>A
+rs1064422,,"[['(C;C)', '0', 'common in clinvar']]","['Agammaglobulinemia 2, autosomal recessive', 'Pathogenic', 'not provided', 'Likely-Pathogenic']","
+                  A=0.00030
+                  (75/251082, GnomAD_exome)
+                ",,G>A
+rs1064524,,[],[],"
+                  T=0.03324
+                  (8345/251038, GnomAD_exome)
+                ",Genome-wide association study of primary dentition pit-and-fissure and smooth surface caries,C>T
+rs1064651,,"[['(C;C)', '8', ""possibly Gaucher's disease, but more likely a mis-oriented interpretation""], ['(C;G)', '3', 'carrier of Gaucher disease allele'], ['(G;G)', '0', 'common/normal']]","['Gaucher disease type 3C', 'Pathogenic', ""Gaucher's disease, type 1"", 'Pathogenic-Likely-Pathogenic', ""Acute neuronopathic Gaucher's disease"", 'Pathogenic', ""Subacute neuronopathic Gaucher's disease"", 'Pathogenic', 'Gaucher disease, perinatal lethal', 'Pathogenic', ""Acute neuronopathic Gaucher's disease"", 'Pathogenic', ""Subacute neuronopathic Gaucher's disease"", 'Pathogenic', 'Gaucher disease', 'Pathogenic', 'not provided', 'Pathogenic', ""Acute neuronopathic Gaucher's disease,Gaucher disease type 3C,Gaucher disease, perinatal lethal,Gaucher's disease, type 1,Lewy body dementia,Parkinson disease, late-onset,Subacute neuronopathic Gaucher's disease"", 'Pathogenic']","
+                  G=0.00013
+                  (32/250360, GnomAD_exome)
+                ",Gaucher disease: single gene molecular characterization of one-hundred Indian patients reveals novel variants and the most prevalent mutation,C>G
+rs1065297,,[],[],"
+                  G=0.05775
+                  (7251/125568, TOPMED)
+                ",SDF1 Polymorphisms Influence Outcome in Patients with Symptomatic Cardiovascular Disease,A>G
+rs1065356,,[],[],"
+                  A=0.26718
+                  (67188/251472, GnomAD_exome)
+                ",,G>A
+rs1065489,,"[['(G;G)', '0', 'common in clinvar']]","['Basal laminar drusen', 'Benign', 'Macular degeneration', 'Benign', 'Mesangiocapillary glomerulonephritis, type II', 'Benign', 'Atypical hemolytic uremic syndrome', 'Benign']","
+                  T=0.20460
+                  (51398/251208, GnomAD_exome)
+                ",Natural resistance to Meningococcal Disease related to CFH loci: Meta-analysis of genome-wide association studies,G>T
+rs1065569,,"[['(G;G)', '0', 'common in complete genomics']]",[],"
+                  A=0.00001
+                  (1/125568, TOPMED)
+                ",,C>A / C>T
+rs1065776,,"[['(C;C)', '0', 'common in complete genomics']]",[],"
+                  T=0.06157
+                  (15378/249778, GnomAD_exome)
+                ",Genetic polymorphisms of pharmacogenomic VIP variants in the Mongol of Northwestern China,C>T
+rs1065852,CYP2D6 drug metabolism,"[['(C;C)', '0', 'normal'], ['(C;T)', '2', 'Carrier of one CYP2D6 decreased or non-functioning variant.'], ['(T;T)', '3.2', 'Homozygous for CYP2D6 decreased or non-functioning variants; possibly less response to some drugs, including tamoxifen']]","['Debrisoquine, poor metabolism of', 'Drug-Response', 'not specified', 'Likely-Benign', 'not provided', 'Other']","
+                  A=0.20875
+                  (50363/241260, GnomAD_exome)
+                ",Gene polymorphism of cytochrome P450 significantly affects lung cancer susceptibility,G>A
+rs10665,,[],[],"
+                  G=0.12009
+                  (15080/125568, TOPMED)
+                ",Common Genetic Polymorphisms Influence Blood Biomarker Measurements in COPD,A>G
+rs106871,,[],[],"
+                  A=0.34713
+                  (43588/125568, TOPMED)
+                ",,G>A
+rs1071592,,[],[],"
+                  A=0.24174
+                  (60675/250990, GnomAD_exome)
+                ",SNPnexus: a web database for functional annotation of newly discovered and public domain single nucleotide polymorphisms,A>C
+rs1071646,,"[['(C;C)', '0', 'common in clinvar']]","['not provided', 'Not-Provided', 'not specified', 'Benign', 'Cardiovascular phenotype', 'Benign', 'Dilated Cardiomyopathy, Dominant', 'Likely-Benign', 'Hypertrophic cardiomyopathy', 'Likely-Benign']","
+                  C=0.32960
+                  (82840/251338, GnomAD_exome)
+                ",Familial Dilated Cardiomyopathy caused by an Alpha-Tropomyosin Mutation: The Distinctive Natural History of Sarcomeric DCM,C>A
+rs10733113,,"[['(G;G)', '0']]",[],"
+                  A=0.18200
+                  (22853/125568, TOPMED)
+                ",NLRP3 Inflammasome and Inflammatory Bowel Disease,A>G
+rs10733612,,[],[],"
+                  T=0.24407
+                  (30647/125568, TOPMED)
+                ",,T>C
+rs10733682,,"[['(A;A)', '0', 'common in clinvar']]","['Nail-patella syndrome', 'Benign']","
+                  A=0.4519
+                  (14142/31292, GnomAD)
+                ",Influence of genetic variants associated with body mass index on eating behavior in childhood,A>G / A>T
+rs10734105,,[],[],"
+                  G=0.34153
+                  (42885/125568, TOPMED)
+                ",A Genome-Wide Scan of Ashkenazi Jewish Crohn's Disease Suggests Novel Susceptibility Loci,G>A / G>C / G>T
+rs10734652,,[],[],"
+                  T=0.46979
+                  (58990/125568, TOPMED)
+                ",,C>T
+rs10735416,,[],[],"
+                  T=0.29484
+                  (37022/125568, TOPMED)
+                ",,T>C / T>G
+rs10735781,,"[['(C;C)', '>1.11x risk'], ['(C;G)', '1.11x risk'], ['(G;G)', 'common']]",[],"
+                  G=0.42231
+                  (53029/125568, TOPMED)
+                ",Multiple sclerosis susceptibility alleles in African Americans,G>C
+rs10737680,,[],[],"
+                  C=0.43474
+                  (54589/125568, TOPMED)
+                ",Seven New Loci Associated with Age-Related Macular Degeneration,A>C
+rs10737909,,[],[],"
+                  T=0.45457
+                  (57079/125568, TOPMED)
+                ",,G>T
+rs1073810,,[],[],"
+                  T=0.12320
+                  (15470/125568, TOPMED)
+                ",,C>T
+rs10738445,,[],[],"
+                  A=0.38730
+                  (48632/125568, TOPMED)
+                ",,A>C / A>T
+rs10738610,,[],[],"
+                  C=0.41203
+                  (51738/125568, TOPMED)
+                ",Assessment of the 9p21.3 locus in severity of coronary artery disease in the presence and absence of type 2 diabetes,A>C / A>T
+rs10738760,,[],[],"
+                  A=0.43866
+                  (55082/125568, TOPMED)
+                ",What Is the Contribution of Two Genetic Variants Regulating VEGF Levels to Type 2 Diabetes Risk and to Microvascular Complications?,A>G
+rs10739778,,[],[],"
+                  C=0.36129
+                  (45366/125568, TOPMED)
+                ",,A>C / A>G
+rs10740051,,"[['(G;G)', '0', 'common in complete genomics']]",[],"
+                  T=0.23920
+                  (30036/125568, TOPMED)
+                ",Evidence for an Association Between Prostate Cancer and Chromosome 8q24 and10q11 Genetic Variants in African American Men: The Flint Men's Health Study,C>T
+rs10740055,,[],[],"
+                  A=0.48645
+                  (61082/125568, TOPMED)
+                ",Relationship between Modulator Recognition Factor 2/AT-rich Interaction Domain 5B Gene Variations and Type 2 Diabetes Mellitus or Lipid Metabolism in a Northern Chinese Population,C>A
+rs10740993,,[],[],"
+                  T=0.49900
+                  (62659/125568, TOPMED)
+                ",,C>T
+rs1074145,,[],[],"
+                  A=0.16577
+                  (20815/125568, TOPMED)
+                ",Citalopram and escitalopram plasma drug and metabolite concentrations: genome-wide associations,G>A
+rs10741780,,[],[],"
+                  T=0.23524
+                  (29539/125568, TOPMED)
+                ",,T>C
+rs1074182,,[],[],"
+                  T=0.45973
+                  (57727/125568, TOPMED)
+                ",,T>G
+rs10743430,,"[['(T;T)', '0', 'common in complete genomics']]",[],"
+                  C=0.24104
+                  (30267/125568, TOPMED)
+                ","Hippocampal Sclerosis of Aging, a Common Alzheimer’s Disease ‘Mimic’: Risk Genotypes are Associated with Brain Atrophy Outside the Temporal Lobe",C>T
+rs10744391,,[],[],"
+                  A=0.27724
+                  (34813/125568, TOPMED)
+                ",,G>A
+rs10744743,,[],[],"
+                  C=0.41102
+                  (51611/125568, TOPMED)
+                ",,C>G
+rs10745527,,[],[],"
+                  G=0.30815
+                  (38694/125568, TOPMED)
+                ",,G>T
+rs10746463,,[],[],"
+                  G=0.32188
+                  (40418/125568, TOPMED)
+                ",A common CD55 rs2564978 variant is associated with the susceptibility of non-small cell lung cancer,G>A / G>T
+rs10747502,,[],[],"
+                  A=0.13809
+                  (17340/125568, TOPMED)
+                ",,A>G
+rs10748128,,[],[],"
+                  T=0.43130
+                  (54157/125568, TOPMED)
+                ",,G>T
+rs10748180,,[],[],"
+                  G=0.49369
+                  (61992/125568, TOPMED)
+                ",,A>C / A>G
+rs10748185,,[],[],"
+                  A=0.41175
+                  (51702/125568, TOPMED)
+                ",Personalized medicine in psychiatry: problems and promises,G>A
+rs10748643,,[],[],"
+                  A=0.47174
+                  (59236/125568, TOPMED)
+                ",CD39 deletion exacerbates experimental murine colitis and human polymorphisms increase susceptibility to inflammatory bowel disease,A>G
+rs10749127,,[],[],"
+                  T=0.27722
+                  (34810/125568, TOPMED)
+                ",Effects of multiple genetic loci on the pathogenesis from serum urate to gout,C>T
+rs10749535,,[],[],"
+                  T=0.32076
+                  (40277/125568, TOPMED)
+                ",,C>T
+rs10749971,,[],[],"
+                  G=0.26546
+                  (33333/125568, TOPMED)
+                ",GWAS-identified colorectal cancer susceptibility loci associated with clinical outcomes,A>G
+rs10751226,,[],[],"
+                  C=0.21791
+                  (27363/125568, TOPMED)
+                ",,C>G / C>T
+rs10752637,,[],[],"
+                  T=0.35280
+                  (44301/125568, TOPMED)
+                ","Deep Sequencing of the Nicastrin Gene in Pooled DNA, the Identification of Genetic Variants That Affect Risk of Alzheimer's Disease",T>A / T>C / T>G
+rs10753575,,[],[],"
+                  C=0.35549
+                  (44638/125568, TOPMED)
+                ",,C>T
+rs10753929,,[],[],"
+                  T=0.14484
+                  (18187/125568, TOPMED)
+                ",Associations of human retinal very long-chain polyunsaturated fatty acids with dietary lipid biomarkers,T>C
+rs10754339,,"[['(A;A)', '0', 'normal'], ['(A;G)', '1.3', '1.3x increased risk of breast cancer'], ['(G;G)', '1.4', '1.45x increased risk of breast cancer']]",[],"
+                  G=0.11655
+                  (28939/248300, GnomAD_exome)
+                ",,G>A
+rs10754557,,[],[],"
+                  G=0.40850
+                  (102171/250112, GnomAD_exome)
+                ",,G>A
+rs10754558,,"[['(G;G)', '0', 'common in clinvar']]","['Chronic infantile neurological, cutaneous and articular syndrome', 'Benign', 'Familial amyloid nephropathy with urticaria AND deafness', 'Benign', 'Familial cold autoinflammatory syndrome', 'Benign']","
+                  G=0.36239
+                  (45505/125568, TOPMED)
+                ",Association of NLRP3 polymorphisms with susceptibility to primary gouty arthritis in a Chinese Han population,G>C / G>T
+rs10754644,,[],[],"
+                  G=0.39771
+                  (49940/125568, TOPMED)
+                ",,A>G
+rs10754833,,[],[],"
+                  T=0.39754
+                  (49918/125568, TOPMED)
+                ",,T>A / T>C
+rs10755578,,[],[],"
+                  G=0.43922
+                  (109505/249318, GnomAD_exome)
+                ","Lifestyle Cardiovascular Risk Score, Genetic Risk Score, and Myocardial Infarction in Hispanic/Latino Adults Living in Costa Rica",C>G
+rs1075650,,[],[],"
+                  C=0.24556
+                  (30834/125568, TOPMED)
+                ",Overlapping Dopaminergic Pathway Genetic Susceptibility for Heroin and Cocaine Addictions in African Americans,T>C
+rs10756819,,[],[],"
+                  A=0.49229
+                  (61816/125568, TOPMED)
+                ",Genetics of skin color variation in Europeans: genome-wide association studies with functional follow-up,G>A / G>C / G>T
+rs10757257,,[],[],"
+                  A=0.33756
+                  (42387/125568, TOPMED)
+                ",Loci at 9p21 and 22q13 harbour alleles for development of cutaneous nevi and melanoma,G>A
+rs10757269,,[],[],"
+                  A=0.36704
+                  (46088/125568, TOPMED)
+                ",The combination of 9p21.3 genotype and biomarker profile improves a peripheral artery disease risk prediction model,A>C / A>G
+rs10757272,,"[['(C;C)', '1', 'Normal risk for Coronary artery disease'], ['(C;T)', '1.5', '1.30x increased risk for Coronary artery disease'], ['(T;T)', '2', '1.54x increased risk for Coronary artery disease']]",[],"
+                  T=0.42223
+                  (53019/125568, TOPMED)
+                ",Genome-wide association study of coronary artery calcification in asymptomatic Korean populations,C>T
+rs10757274,,"[['(A;A)', 'normal'], ['(A;G)', '~1.2x increased risk for heart disease'], ['(G;G)', '~1.3x increased risk for heart disease']]",[],"
+                  G=0.40885
+                  (51338/125568, TOPMED)
+                ",Analysis of Two CDKN2B-AS Polymorphisms in Relation to Coronary Artery Disease Patients in North of Iran,A>G
+rs10757278,,"[['(A;A)', '1.9', '0.78x reduced risk for Coronary Heart Disease. 0.77x reduced risk for Brain Aneurysm and Abdominal Aortic Aneurysm.'], ['(A;G)', '2', '1.3x risk for Heart Attack. Normal risk for Abdominal Aortic Aneurysm and Brain Aneurysm.'], ['(G;G)', '2.5', '1.6x risk for Heart Attack; 1.3x risk for Abdominal Aortic Aneurysm and Brain Aneurysm.']]",[],"
+                  G=0.40013
+                  (50244/125568, TOPMED)
+                ",“Desert” gene (Chr9p21) variants as novel markers for coronary artery disease,A>G
+rs10758161,,[],[],"
+                  C=0.21477
+                  (26968/125568, TOPMED)
+                ",,C>T
+rs10758593,,[],[],"
+                  A=0.45015
+                  (56525/125568, TOPMED)
+                ",GLIS1-3 transcription factors: critical roles in the regulation of multiple physiological processes and diseases,G>A
+rs10758658,,[],[],"
+                  A=0.16743
+                  (21024/125568, TOPMED)
+                ",Genetic Associations of Hemoglobin in Children with Chronic Kidney Disease in the PediGFR Consortium,G>A
+rs10758669,,[],[],"
+                  C=0.29828
+                  (37454/125568, TOPMED)
+                ",Lack of Association between Genetic Polymorphisms of JAK-STAT Signaling Pathway Genes and Acute Anterior Uveitis in Han Chinese,C>A / C>T
+rs10758892,,[],[],"
+                  G=0.10619
+                  (13334/125568, TOPMED)
+                ",,G>A / G>C
+rs10759,,[],[],"
+                  T=0.27590
+                  (34644/125568, TOPMED)
+                ",Genetic Variations in Regulator of G-Protein Signaling (RGS) Confer Risk of Bladder Cancer,G>A / G>T
+rs10759102,,[],[],"
+                  A=0.38346
+                  (48150/125568, TOPMED)
+                ",,G>A
+rs10759734,,[],[],"
+                  G=0.22629
+                  (28415/125568, TOPMED)
+                ",,G>A
+rs10759930,,[],[],"
+                  T=0.31515
+                  (39573/125568, TOPMED)
+                ",Associations between TLR4 Polymorphisms and Open Angle Glaucoma: A Meta-Analysis,C>T
+rs10759932,,"[['(C;C)', '2', 'increased risk for chorionic plate inflammation'], ['(C;T)', 'increased risk for chorionic plate inflammation'], ['(T;T)', 'normal']]",[],"
+                  C=0.17532
+                  (22014/125568, TOPMED)
+                ",Toll-like receptor 4 as a predictor of clinical outcomes of estrogen receptor-negative breast cancer in Saudi women,T>C
