@@ -84,7 +84,7 @@
                            field: "Genotype", 
                            width: '100px', 
                            title: "Genotype",
-                           template: "#if(Genotype.indexOf(Risk.charAt(2)) != -1) { # <div style='background-color:red'>Risk Allele Present</div> #} else if (Genotype.indexOf(Risk.charAt(2)) == -1){ # <div style='background-color:green'>&nbsp;</div> #} #"
+                           template: "#if(Genotype.indexOf(Risk.charAt(2)) != -1) { # <div style='background-color:red'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(2)) == -1){ # <div style='background-color:green'>#: Genotype     #</div> #} #"
                            //template: "#if(Genotype.indexOf(Risk.charAt(3)) != -1){#<span class='red'>#: Genotype     #</span>#}else{#<span class='blue'>#: Genotype #</span> #} #"
                        
                        },
