@@ -75,8 +75,8 @@
                         },
                         columns: [
                        { field: "Name", width: '190px', title: "Name" },
-                       { field: "Description", width: '290px', title: "Description" },
-                       { field: "ClinVar", width: '290px', title: "Clinical Significance" },
+                       { field: "Description", width: '200px', title: "Description" },
+                       { field: "ClinVar", width: '300px', title: "Clinical Significance", encoded: false },
                       
                        { field: "Frequency", width: '140px', title: "Frequency" },
                        { field: "Risk", width: '100px', title: "Risk" },
@@ -84,7 +84,7 @@
                            field: "Genotype", 
                            width: '100px', 
                            title: "Genotype",
-                           template: "#if(Genotype.indexOf(Risk.charAt(2)) != -1) { # <div style='background-color:red'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(2)) == -1){ # <div style='background-color:green'>#: Genotype     #</div> #} #"
+                           template: "#if(Genotype.indexOf(Risk.charAt(2)) == -1) { # <div style='background-color:lightgreen'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(0)) != -1){ # <div style='background-color:orange'>#: Genotype     #</div> #} #"
                            //template: "#if(Genotype.indexOf(Risk.charAt(3)) != -1){#<span class='red'>#: Genotype     #</span>#}else{#<span class='blue'>#: Genotype #</span> #} #"
                        
                        },

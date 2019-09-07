@@ -21,24 +21,41 @@ import random
 
 # filter common</b> & normal</b>
 
-rsid = "rs202242769"
+rsid = "rs16942"
 
 from SNPGen import GrabSNPs
 
+        #################
+        # Classification
 try:
-            print("####### Clinical Significance  #######")
-            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
-            response = urllib.request.urlopen(url)
-            html = response.read()
-            bs = BeautifulSoup(html, "html.parser")
-            ClinVar = []
-            for div in bs.find_all(id="clinical_significance"):
-                for childdiv in div.find_all('td'):
-                    if childdiv.string != None : 
-                        ClinVar.append(childdiv.string)
-            print(ClinVar[0:])
+    print("####### Clinical Significance  #######")
+    url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
+    response = urllib.request.urlopen(url)
+    html = response.read()
+    bs = BeautifulSoup(html, "html.parser")
+
+    classification = bs.find(id="clinical_significance")
+    if classification:
+        rows = classification.find_all("tr")
+        ClinVar = []
+        for row in rows:
+            cols = row.find_all("td")
+            cols = [ele.text.strip() for ele in cols]
+            ClinVar.append([ele for ele in cols if ele])
+        print(ClinVar)
+
+    
 except urllib.error.HTTPError:
     print(url + " was not found or on dbSNP or contained no valid information")
+
+    def tableToList(self, table):
+        rows = table.find_all("tr")
+        data = []
+        for row in rows:
+            cols = row.find_all("td")
+            cols = [ele.text.strip() for ele in cols]
+            data.append([ele for ele in cols if ele])
+        return data
 
 
     

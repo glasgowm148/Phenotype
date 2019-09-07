@@ -13,22 +13,27 @@ With genome analysis, sometimes sites will report on the negative strand - meani
 # Timeline
 * Done
     * Enabled cross-platform support
-    * Created data/snps_of_interest.txt which can be loaded with SNPs to specifically query against your dataset
+    * snps_of_interest.txt can be loaded with SNPs to specifically query against your dataset
+    * one_thousand_and_you.txt is ~1000 rsids related to health, drug metabolism, hormones, autoimmune, eds, asd/adhd, pots/mcas, etc..
     * dbSNP lookup functionality added
     * CSV Export working
     * Crawl dbSNP - added to import risk allele / freq
     * Crawl Clinivar - import clinical significance
+    * Highlighting based on Risk Allele (Still some bugs)
 * In Progress
   * Tidying up HTML/CSS/Tabular 
   * Filter by mutations only
 * To Do
   * ONIM Support
-  * Bookmark
   * User Login with upload
-  * Custom reports
-  * Utilise reload DB Data
-  * Utilise Genomix source
-  * Email notifications when new studies are published with the users genotype
+    * Custom reports
+    * 'Save to ->' 
+    * Email notifications when new studies are published with the users genotype
+  * Other sources to utilise
+    * Reload DB Data
+    * Genomix source
+    * SNPEdia_Scraper
+    * genome_report
 
 ## Installation:
 

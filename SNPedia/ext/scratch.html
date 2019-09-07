@@ -1,3 +1,10 @@
+Error: Invalid template:
+'<tr data-uid="#=data.uid#" role='row'><td  role='gridcell'>#:data.Name==null?'':data.Name#</td>
+<td  role='gridcell'>#:data.Description==null?'':data.Description#</td>
+<td  role='gridcell'>#:data.ClinVar==null?'':data.ClinVar#</td>
+<td  role='gridcell'>#:data.Frequency==null?'':data.Frequency#</td>
+<td  role='gridcell'>#:data.Risk==null?'':data.Risk#</td><td  role='gridcell'>#if(Genotype.indexOf(Risk.charAt(3)) != -1)#else#</td><td  role='gridcell'>#:data.Studies==null?'':data.Studies#</td><td  role='gridcell'>#=data.Variations==null?'':data.Variations#</td></tr>' Generated code:'var $kendoOutput, $kendoHtmlEncode = kendo.htmlEncode;with(data){$kendoOutput='<tr data-uid="'+(data.uid)+'" role=\'row\'><td  role=\'gridcell\'>'+$kendoHtmlEncode(data.Name==null?'':data.Name)+'</td><td  role=\'gridcell\'>'+$kendoHtmlEncode(data.Description==null?'':data.Description)+'</td><td  role=\'gridcell\'>'+$kendoHtmlEncode(data.ClinVar==null?'':data.ClinVar)+'</td><td  role=\'gridcell\'>'+$kendoHtmlEncode(data.Frequency==null?'':data.Frequency)+'</td><td  role=\'gridcell\'>'+$kendoHtmlEncode(data.Risk==null?'':data.Risk)+'</td><td  role=\'gridcell\'>';if(Genotype.indexOf(Risk.charAt(3)) != -1);$kendoOutput+='else';</td><td  role='gridcell'>;$kendoOutput+=':data.Studies==null?\'\':data.Studies';</td><td  role='gridcell'>;$kendoOutput+='=data.Variations==null?\'\':data.Variations';</td></tr>;$kendoOutput+=;}return $kendoOutput;'
+
 dbSNPin
 <dl class="usa-width-one-half">
 <dt>Organism</dt>

@@ -3,9 +3,6 @@ import os
 
 from pathlib import Path
 
-
-
-
 class GrabSNPs:
     """GrabSNPs(crawllimit, target, snpofinterest) ->
     crawls and attains a list of SNPedia compatible SNPs found within the snps of interest array
@@ -55,7 +52,7 @@ class GrabSNPs:
 
         if snpsofinterest:
             self.snps = [snp for snp in self.snps if snp.lower() in snpsofinterest]
-            print(len(self.snps), "percent complete")
+            print(len(self.snps))
 
         if len(self.snps) < target:
             self.crawl(snpsofinterest=snpsofinterest, cmcontinue=cmcontinue, target=target)
@@ -74,7 +71,6 @@ class GrabSNPs:
         lastsessionvalue = lines[0].strip("\n")
         print(lastsessionvalue)
         return lastsessionvalue
-
 
     def export(self):
         filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
