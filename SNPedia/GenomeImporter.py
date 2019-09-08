@@ -12,40 +12,31 @@ class PersonalData:
             self.export()
 
     def readData(self, filepath):
+        dataSource = True
         with open(filepath) as file:
             if "Ancestry" in file.readline():
-                dataSource = "Ancestry"
-                print("Ancestry data loaded")
-            elif "23andme" in file.readline():
-                dataSource = "23andme"
-                print("23andme data loaded")
-                
-            relevantdata = [line for line in file.readlines() if line[0] != "#"]
-                        
+                dataSource = False
             
-                   
-            file.close()
-        self.personaldata = [line.split("\t") for line in relevantdata]
-        self.snps = [item[0].lower() for item in self.personaldata]
-        
-        # convert AncestryDNA raw data
-       # self.yourData = {item[0].lower(): "(" + ''.join(item[-2:]) + ")" \
-       #         for item in self.personaldata}
-        self.yourData = {item[0].lower().strip("\n\t "): item[-2] + '/' + item[-1] \
-                        for item in self.personaldata}
-        ###################
-        
-        
-        #
-        # 23andme code
-        #self.yourData = {item[0].lower(): "(" + item[3].rstrip()[0] + ";" + item[3].rstrip()[-1] + ")" \
-        #                for item in self.personaldata}
+                
+                
+            relevantdata = [line for line in file.readlines() if line[0] != "#"]     
+            self.personaldata = [line.split("\t") for line in relevantdata]
+            self.snps = [item[0].lower() for item in self.personaldata]
 
-        # for item in self.personaldata:
-         #   if "23andme" in item:
-          #      self.yourData = {item[0].lower(): "(" + item[3].rstrip()[0] + ";" + item[3].rstrip()[-1] + ")" }
-           # elif "Ancestry" in item:
-            #    self.yourData = {item[0].lower().strip("\n\t "): item[-2] + '/' + item[-1] }
+
+            if dataSource == False:
+                self.yourData = {item[0].rstrip("\n\t "): item[-2].rstrip("\n\t ") + '/' + item[-1] \
+                            for item in self.personaldata}
+                print("Ancestry data loaded to data/yourData.json")
+            if dataSource ==True:
+                self.yourData = {item[0].lower(): ''.join(item[-2:]) \
+                    for item in self.personaldata}
+                print("23andme data loaded to data/yourData.json")
+
+
+        file.close()
+        
+    
 
 
     def hasGenotype(self, rsid):
