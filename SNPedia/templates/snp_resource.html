@@ -91,6 +91,12 @@
 
                        { field: "Studies", width: '190px', title: "Studies" },
                        { field: "Variations", width: '490px', title: "SNPedia Notes", encoded: false },
+                       { field: "Bookmark", width: "120px", editor: customBoolEditor },
+                       {"command":[{"text": "Delete", "click": this.removeItem}]},
+                       { command: ["edit", "destroy"], title: "&nbsp;", width: "250px" }
+                         
+                         
+                         
                          ],
                         height: 950,
                         filterable: true,
@@ -105,6 +111,22 @@
                         reorderable: true
                     });
                 });
+
+                this.removeItem = function(e) {
+                    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+                    if (dataItem && dataItem.id) {
+                        self.items.remove(function(item) {
+                        return item.id === dataItem.id; 
+                        });
+                    }
+                };
+
+                 function customBoolEditor(container, options) {
+                    var guid = kendo.guid();
+                    $('<input class="k-checkbox" id="' + guid + '" type="checkbox" name="Bookmark" data-type="boolean" data-bind="checked:Bookmark">').appendTo(container);
+                    $('<label class="k-checkbox-label" for="' + guid + '">&#8203;</label>').appendTo(container);
+                }
+
                 function snplookup(e){
                             return '<a class="k-button" href="#" id="lookupsnp" onclick="snpedia()">SNPedia</a>';
                         };

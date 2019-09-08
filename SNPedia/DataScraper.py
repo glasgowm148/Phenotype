@@ -57,10 +57,10 @@ class SNPCrawl:
             self.grabTable(rsid) #### Goto IMPORTS
             print("")
             count += 1
-            if count % 20 == 0 or count == 5:
+            if count % 50 == 0 or count == 5:
                 print("#########################")
                 print("%i out of %s completed" % (count, len(rsids)))
-                print("####### exporting #########")
+                print("####### exporting #######")
                 self.export() 
                 print("#########################")
         pp = pprint.PrettyPrinter(indent=1)
@@ -70,7 +70,7 @@ class SNPCrawl:
     def grabTable(self, rsid):
        # Description & Variation
         try:
-            print("Retrieving SNPedia data... ")
+            print("Retrieving data..... ")
             url = "https://bots.snpedia.com/index.php/" + rsid.lower()
             if rsid not in self.scrapedData.keys():
                 self.scrapedData[rsid.lower()] = {
@@ -90,20 +90,19 @@ class SNPCrawl:
                 if description:
                     d1 = self.tableToList(description)
                     self.scrapedData[rsid]["Description"] = d1[0][0]
-                    print(d1[0][0].encode("utf-8"))
+                    #print(d1[0][0].encode("utf-8"))
 
                 if table:
                     d2 = self.tableToList(table)
                     self.scrapedData[rsid]["Variations"] = d2[1:]
-                    print(d2[1:])
+                    #print(d2[1:])
 
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
 
 ##################### IMPORTS ####
-        ############# Latest Study
+        # Latest Study
         try:
-            print("Retrieving most recent study... ")
             url = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + rsid.lower()
             response = urllib.request.urlopen(url)
             html = response.read()
@@ -121,9 +120,8 @@ class SNPCrawl:
             print(url + " was not found or on dbSNP term search or contained no valid information")
     
 ############# IMPORTS ####
-        ### ncbi.nlm.nih.gov
+        # ncbi.nlm.nih.gov
         try:
-            print("Retrieving ncbi data...")
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
             response = urllib.request.urlopen(url)
             html = response.read()
@@ -243,9 +241,10 @@ args = vars(parser.parse_args())
 
 ##################### LOAD RSIDS ####
 # SNPs can also be loaded directly like this
-rsid = ["rs1303","rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
+rsid = ["rs1303"]
+#rsid += [,"rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
 #load in snps_of_interest.txt
-#rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
+rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
 #load in one_thousand_and_you.txt
 #rsid += [line.rstrip() for line in open('SNPedia/data/one_thousand_and_you.txt')]
 #####################################
@@ -255,7 +254,7 @@ if args["filepath"]:
     snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
     sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
     rsid += sp.snps
-    print("Extra 'SNPs of interest' to be analysed:")
+    print("SNPs of interest to analyse:")
     print(len(sp.snps))
     temp = personal.snps
     random.shuffle(temp)
