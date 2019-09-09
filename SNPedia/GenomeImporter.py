@@ -12,20 +12,16 @@ class PersonalData:
             self.export()
 
     def readData(self, filepath):
-        dataSource = True
+        dataSource = True #Ugly fix for
         with open(filepath) as file:
             if "Ancestry" in file.readline():
                 dataSource = False
-            
-                
-                
             relevantdata = [line for line in file.readlines() if line[0] != "#"]     
             self.personaldata = [line.split("\t") for line in relevantdata]
             self.snps = [item[0].lower() for item in self.personaldata]
 
-
             if dataSource == False:
-                self.yourData = {item[0].rstrip("\n\t "): item[-2].rstrip("\n\t ") + '/' + item[-1] \
+                self.yourData = {item[0].rstrip("\n\t"): item[-2].rstrip("\n\t ") + '/' + item[-1] \
                             for item in self.personaldata}
                 print("Ancestry data loaded to data/yourData.json")
             if dataSource ==True:

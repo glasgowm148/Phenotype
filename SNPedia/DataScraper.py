@@ -118,6 +118,25 @@ class SNPCrawl:
             print(url + " was not found or on dbSNP term search or contained no valid information")
         except urllib.error.URLError:
             print(url + " was not found or on dbSNP term search or contained no valid information")
+
+
+        try:
+            url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#publications"
+            response = urllib.request.urlopen(url)
+            html = response.read()
+            bs = BeautifulSoup(html, "html.parser")
+            publications = bs.find(id="publication_datatable")
+            Studies = []
+            if publications:
+                rows = publications.find_all("tr")
+                for row in rows:
+                    cols = row.find_all("td")
+                    cols = [ele.text.strip() for ele in cols]
+                    Studies.append(ele for ele in cols if ele)
+            if (len(Studies) > 0):
+                self.scrapedData[rsid]["Studies"] = Studies[1][1]
+        except urllib.error.HTTPError:
+            print(url + " was not found or on dbSNP or contained no valid information")
     
 ############# IMPORTS ####
         # ncbi.nlm.nih.gov
@@ -139,20 +158,25 @@ class SNPCrawl:
                 if(len(ClinVar) > 0):
                     self.scrapedData[rsid]["ClinVar"] = ClinVar[1:]
 
-            freq = []
             risk = []
+            ncbi = bs.find(class_="summary-box usa-grid-full")
+            dbSNP = []
+            if ncbi:
+                rows = ncbi.find_all("div")
+                
+                for row in rows:
+                    cols = row.find_all("div")
+                    cols = [ele.text.strip() for ele in cols]
+                    dbSNP.append(cols)
+            print(dbSNP[2][0][4:6]) #frequency
 
-            for div in bs.find_all(class_='usa-width-one-half'):
-                for childdiv in div.find_all('div'):
-                    freq.append(childdiv.string)
-
-                for childdiv in div.find_all('dd'):
-                    if childdiv.string != None : 
-                        risk.append(childdiv.string)
+            for childdiv in div.find_all('dd'):
+                if childdiv.string != None : 
+                    risk.append(childdiv.string)
             
             risk = [s.strip() for s in risk]
-            if (len(freq) > 1 and len(risk) > 0):
-                self.scrapedData[rsid]["Frequency"] = freq[2]
+            if (len(dbSNP[2][0][4:6]) > 1 and len(risk) > 0):
+                self.scrapedData[rsid]["Frequency"] = dbSNP[2][0][4:6]
                 self.scrapedData[rsid]["Risk"] = risk[1]
 
         except urllib.error.HTTPError:
@@ -242,11 +266,11 @@ args = vars(parser.parse_args())
 ##################### LOAD RSIDS ####
 # SNPs can also be loaded directly like this
 rsid = ["rs1303"]
-#rsid += [,"rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
+rsid += [,"rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
 #load in snps_of_interest.txt
 rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
 #load in one_thousand_and_you.txt
-#rsid += [line.rstrip() for line in open('SNPedia/data/one_thousand_and_you.txt')]
+rsid += [line.rstrip() for line in open('SNPedia/data/one_thousand_and_you.txt')]
 #####################################
 
 if args["filepath"]:
