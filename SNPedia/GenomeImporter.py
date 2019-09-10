@@ -25,8 +25,8 @@ class PersonalData:
                             for item in self.personaldata}
                 print("Ancestry data loaded to data/yourData.json")
             if dataSource ==True:
-                self.yourData = {item[0].lower(): ''.join(item[-2:]) \
-                    for item in self.personaldata}
+                self.yourData = {item[0].lower(): "(" + item[3].rstrip()[0] + ";" + item[3].rstrip()[-1] + ")" \
+                        for item in self.personaldata}
                 print("23andme data loaded to data/yourData.json")
                 
         file.close()

@@ -179,7 +179,7 @@ class SNPCrawl:
 
                 try:
                     self.scrapedData[rsid]["Risk"] = dbSNP[2][0][0]
-                    self.scrapedData[rsid]["Frequency"] = dbSNP[2][0][4:6]
+                    self.scrapedData[rsid]["Frequency"] = dbSNP[2][0][3:7]
                 except IndexError:
                     print("index error")
                 
