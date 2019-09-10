@@ -22,18 +22,17 @@ With genome analysis, sometimes sites will report on the negative strand - meani
     * Highlighting based on Risk Allele (Still some bugs)
     * Support for AncestryDNA
     * GeneticGenie + NutriHacker SNPs loaded
+    * Export to PDF
 * In Progress
   * Tidying up HTML/CSS/Tabular 
   * Filter by mutations only
 * To Do
-  * Crawl ClinVar
   * +/- strand orientation check
   * 23andme i -> rsid
-
   * User Login with upload
-    * Custom reports
+    * Custom reports / phenotypes
     * 'Save to ->' 
-    * Email notifications when new studies are published with the users genotype
+    * Email notifications when new studies are published with specified rsids
   * Other sources to utilise
     * Reload DB Data
     * Genomix source
