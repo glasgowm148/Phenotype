@@ -41,20 +41,22 @@ class SNPCrawl:
             self.importSNPs(snppath) 
         else:
             self.yourData = {}
-
         rsids = [item.lower() for item in rsids]
         if rsids:
-            self.initcrawl(rsids)
-        self.export() # export to json / csv
-        self.createList() 
+            self.initcrawl(rsids)           # Crawl
+        self.export()                       # Export
+        self.createList()                   # Create List
 
-########################## crawl ####
+#################### crawl ####
     def initcrawl(self, rsids):
         print("####### Starting to crawl.... #######")
         count = 0
         for rsid in rsids:
-            print("RSID:" + rsid)
+            print("rsid:" + rsid)
+            
             self.grabTable(rsid) #### Goto IMPORTS
+            print("output :: ")
+            print(self.scrapedData[rsid])
             print("")
             count += 1
             if count % 50 == 0 or count == 5:
@@ -66,11 +68,11 @@ class SNPCrawl:
         pp = pprint.PrettyPrinter(indent=1)
         pp.pprint(self.scrapedData)
 
-################# IMPORTS ####
+################ IMPORTS ####
     def grabTable(self, rsid):
        # Description & Variation
         try:
-            print("Retrieving data..... ")
+            #("Retrieving data..... ")
             url = "https://bots.snpedia.com/index.php/" + rsid.lower()
             if rsid not in self.scrapedData.keys():
                 self.scrapedData[rsid.lower()] = {
@@ -79,6 +81,8 @@ class SNPCrawl:
                     "ClinVar": [],
                     "Frequency": "",
                     "Studies": "",
+                    "Citations": "",
+                    "Gene": "",
                     "Risk": ""
                 }
                 response = urllib.request.urlopen(url)
@@ -100,7 +104,7 @@ class SNPCrawl:
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
 
-##################### IMPORTS ####
+######### IMPORTS ####
         # Latest Study
         try:
             url = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + rsid.lower()
@@ -126,15 +130,15 @@ class SNPCrawl:
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
             publications = bs.find(id="publication_datatable")
-            Studies = []
+            study = []
             if publications:
                 rows = publications.find_all("tr")
                 for row in rows:
                     cols = row.find_all("td")
                     cols = [ele.text.strip() for ele in cols]
-                    Studies.append(ele for ele in cols if ele)
-            if (len(Studies) > 0):
-                self.scrapedData[rsid]["Studies"] = Studies[1][1]
+                    study.append(cols)
+            if (len(study) > 0 and not self.scrapedData[rsid]["Studies"]):
+                self.scrapedData[rsid]["Studies"] = study[1][1]
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
     
@@ -155,43 +159,49 @@ class SNPCrawl:
                     cols = row.find_all("td")
                     cols = [ele.text.strip() for ele in cols]
                     ClinVar.append([ele for ele in cols if ele])
+                
                 if(len(ClinVar) > 0):
-                    self.scrapedData[rsid]["ClinVar"] = ClinVar[1:]
+                    if(len(ClinVar) > 7):
+                        self.scrapedData[rsid]["ClinVar"] = ClinVar[-6:-1]
+                    else:
+                        self.scrapedData[rsid]["ClinVar"] = ClinVar[1:]
 
-            risk = []
             ncbi = bs.find(class_="summary-box usa-grid-full")
-            dbSNP = []
             if ncbi:
+                dbSNP = []
+
                 rows = ncbi.find_all("div")
                 
                 for row in rows:
                     cols = row.find_all("div")
                     cols = [ele.text.strip() for ele in cols]
                     dbSNP.append(cols)
-            print(dbSNP[2][0][4:6]) #frequency
 
-            for childdiv in div.find_all('dd'):
-                if childdiv.string != None : 
-                    risk.append(childdiv.string)
-            
-            risk = [s.strip() for s in risk]
-            if (len(dbSNP[2][0][4:6]) > 1 and len(risk) > 0):
-                self.scrapedData[rsid]["Frequency"] = dbSNP[2][0][4:6]
-                self.scrapedData[rsid]["Risk"] = risk[1]
+                try:
+                    self.scrapedData[rsid]["Risk"] = dbSNP[2][0][0]
+                    self.scrapedData[rsid]["Frequency"] = dbSNP[2][0][4:6]
+                except IndexError:
+                    print("index error")
+                
+                dbSNPTwo= []
+                rows = ncbi.find_all("dl")
+                
+                for row in rows:
+                    cols = row.find_all("dd")
+                    cols = [ele.text.strip() for ele in cols]
+                    dbSNPTwo.append(cols)
+        
+            try:
+                print(dbSNPTwo[1][1].split(' ')[0]) #gene
+                self.scrapedData[rsid]["Gene"] = dbSNPTwo[1][1].split(' ')[0]
+                print(dbSNPTwo[1][2][0]) #publications
+                self.scrapedData[rsid]["Citations"] = dbSNPTwo[1][2][0]
+            except IndexError:
+                    print("index error")
+
 
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
-        
-        print(self.scrapedData[rsid]["ClinVar"])
-        classList = self.scrapedData[rsid]["ClinVar"]
-        if 'Benign' in classList:
-            print('#### Benign found ####')
-
-        if(self.scrapedData[rsid]["ClinVar"].count('Benign') > 0):
-
-####### Finished importing - print full output
-            print(self.scrapedData[rsid])
-            
 
 
  ############## IMPORT/Variation function ####
@@ -204,21 +214,23 @@ class SNPCrawl:
             data.append([ele for ele in cols if ele])
         return data
 
-############## IMPORT/Rank function ####
+# IMPORT/Rank function ####
     def rank(self):
         print("##RANK##")
         print(self.scrapedData[rsid]["ClinVar"])
 
 
-######## Create List ####
+####### Create List ####
     def createList(self):
-        make = lambda rsname, description, classifications, freq, risk, study, variations: \
+        make = lambda rsname, description, classifications, freq, risk, citations, gene, study, variations: \
             {
             "Name": rsname,
             "Description": description,
             "ClinVar":  "<br>".join(["<br>".join(s[1:]) if isinstance(s,list) else s for s in classifications]),
             "Genotype": self.yourData[rsname.lower()] if rsname.lower() in self.yourData.keys() else "(n/a)", 
             "Frequency": freq,
+            "Citations": citations,
+            "Gene": gene,
             "Risk": risk,
             "Studies": study,
             "Variations": str.join("<br>", variations)
@@ -234,7 +246,7 @@ class SNPCrawl:
         for rsid in self.scrapedData.keys():
             curdict = self.scrapedData[rsid]
             variations = [formatCell(rsid, variation) for variation in curdict["Variations"]]
-            self.rsidList.append(make(rsid, curdict["Description"], curdict["ClinVar"], curdict["Frequency"], curdict["Risk"], curdict["Studies"], variations))
+            self.rsidList.append(make(rsid, curdict["Description"], curdict["ClinVar"], curdict["Frequency"], curdict["Risk"],curdict["Citations"], curdict["Gene"], curdict["Studies"], variations))
         
 
     def importDict(self, filepath):
@@ -266,10 +278,10 @@ args = vars(parser.parse_args())
 ##################### LOAD RSIDS ####
 # SNPs can also be loaded directly like this
 rsid = ["rs1303"]
-rsid += [,"rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
-#load in snps_of_interest.txt
+rsid += ["rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
+# Load in snps_of_interest.txt
 rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
-#load in one_thousand_and_you.txt
+# Load in one_thousand_and_you.txt
 rsid += [line.rstrip() for line in open('SNPedia/data/one_thousand_and_you.txt')]
 #####################################
 

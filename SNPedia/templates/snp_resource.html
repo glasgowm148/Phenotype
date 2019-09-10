@@ -21,6 +21,21 @@
 	<div class="grid">
         <div id="example">
             <div id="grid"></div>
+                <!-- Load Pako ZLIB library to enable PDF compression -->
+    <script src="https://kendo.cdn.telerik.com/2019.2.619/js/pako_deflate.min.js"></script>
+
+    <script type="x/kendo-template" id="page-template">
+      <div class="page-template">
+        <div class="header">
+          <div style="float: right">Page #: pageNum # of #: totalPages #</div>
+          Multi-page grid with automatic page breaking
+        </div>
+        <div class="watermark">KENDO UI</div>
+        <div class="footer">
+          Page #: pageNum # of #: totalPages #
+        </div>
+      </div>
+    </script>
             <script>
 
                 function exportExcel() {
@@ -38,24 +53,32 @@
                 $(document).ready(function () {
                     $("#grid").kendoGrid({
 
-                        toolbar: [{
-                            name: 'exportExcel1',
-                            template: '#= exportExcel()#'
-                        },
-                        {
-                            name:'lookupsnp',
-                            template:'#= snplookup()#'
-                        },
-                        {
-                            name:'lookupsnp2',
-                            template:'#= snplookup2()#'
-                        },
+                        toolbar: [
+
+                        { name: 'exportExcel1', template: '#= exportExcel()#' },
+
+                        { name:'lookupsnp', template:'#= snplookup()#' },
+                        { name:'lookupsnp2', template:'#= snplookup2()#' },
                         ],
                         excel: {
                             fileName: "SNP Report.xlsx",
                             proxyURL: "/excel",
                             filterable: true
                         },
+
+
+                        toolbar: ["pdf"],
+                            pdf: {
+                                allPages: true,
+                                avoidLinks: true,
+                                paperSize: "A4",
+                                margin: { top: "2cm", left: "1cm", right: "1cm", bottom: "1cm" },
+                                landscape: true,
+                                repeatHeaders: true,
+                                template: $("#page-template").html(),
+                                scale: 0.8
+                        },
+
 
                         dataSource: {
                             dataType: "json",
@@ -74,22 +97,27 @@
                             pageSize: 250
                         },
                         columns: [
-                       { field: "Name", width: '190px', title: "Name" },
-                       { field: "Description", width: '200px', title: "Description" },
-                       { field: "ClinVar", width: '300px', title: "Clinical Significance", encoded: false },
-                      
-                       { field: "Frequency", width: '140px', title: "Frequency" },
-                       { field: "Risk", width: '100px', title: "Risk" },
+                       { field: "Name", width: '150px', title: "rsid" },
                        { 
                            field: "Genotype", 
                            width: '100px', 
-                           title: "Genotype",
-                           template: "#if(Genotype.indexOf(Risk.charAt(2)) == -1) { # <div style='background-color:lightgreen'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(0)) != -1){ # <div style='background-color:orange'>#: Genotype     #</div> #} #"
+                           title: "You",
+                           template: "#if(Genotype.indexOf(Risk.charAt(0)) == -1) { # <div style='background-color:lightgreen'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(0)) != -1){ # <div style='background-color:orange'>#: Genotype     #</div> #} #"
                            //template: "#if(Genotype.indexOf(Risk.charAt(3)) != -1){#<span class='red'>#: Genotype     #</span>#}else{#<span class='blue'>#: Genotype #</span> #} #"
                        
                        },
+                       { field: "Risk", width: '90px', title: "Alt" },
+                       { field: "Frequency", width: '70px', title: "%" },
+                       { field: "Gene", width: '120px', title: "Gene" },
+
+                       { field: "Description", width: '150px', title: "Description" },
+                       { field: "ClinVar", width: '400px', title: "Clinical Significance", encoded: false },
+                       
+                       
+                       
 
                        { field: "Studies", width: '190px', title: "Studies" },
+                       { field: "Citations", width: '70px', title: "Citations" },
                        { field: "Variations", width: '490px', title: "SNPedia Notes", encoded: false },
                        { field: "Bookmark", width: "120px", editor: customBoolEditor },
                        {"command":[{"text": "Delete", "click": this.removeItem}]},
@@ -154,6 +182,68 @@
                         };
             </script>
 </div>
+
+<style>
+        /* Page Template for the exported PDF */
+        .page-template {
+          font-family: "DejaVu Sans", "Arial", sans-serif;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+        .page-template .header {
+          position: absolute;
+          top: 30px;
+          left: 30px;
+          right: 30px;
+          border-bottom: 1px solid #888;
+          color: #888;
+        }
+        .page-template .footer {
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+          right: 30px;
+          border-top: 1px solid #888;
+          text-align: center;
+          color: #888;
+        }
+        .page-template .watermark {
+          font-weight: bold;
+          font-size: 400%;
+          text-align: center;
+          margin-top: 30%;
+          color: #aaaaaa;
+          opacity: 0.1;
+          transform: rotate(-35deg) scale(1.7, 1.5);
+        }
+
+        /* Content styling */
+        .customer-photo {
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background-size: 32px 35px;
+          background-position: center center;
+          vertical-align: middle;
+          line-height: 32px;
+          box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+          margin-left: 5px;
+        }
+        kendo-pdf-document .customer-photo {
+          border: 1px solid #dedede;
+        }
+        .customer-name {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 32px;
+          padding-left: 3px;
+        }
+    </style>
+    
 </div>
 
 

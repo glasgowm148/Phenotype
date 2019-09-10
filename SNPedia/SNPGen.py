@@ -8,7 +8,7 @@ class GrabSNPs:
     crawls and attains a list of SNPedia compatible SNPs found within the snps of interest array
     """
 
-    def __init__(self, crawllimit=500, snpsofinterest=None, target=50):
+    def __init__(self, crawllimit=5000, snpsofinterest=None, target=50):
         self.cmcontinue = ""
         self.snps = []
         self.limit = crawllimit
@@ -69,6 +69,7 @@ class GrabSNPs:
         lines = lastsession.readlines()
         lastsession.close()
         lastsessionvalue = lines[0].strip("\n")
+        print("Last Session Value")
         print(lastsessionvalue)
         return lastsessionvalue
 

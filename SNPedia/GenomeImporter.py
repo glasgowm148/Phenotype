@@ -21,15 +21,14 @@ class PersonalData:
             self.snps = [item[0].lower() for item in self.personaldata]
 
             if dataSource == False:
-                self.yourData = {item[0].rstrip("\n\t"): item[-2].rstrip("\n\t ") + '/' + item[-1] \
+                self.yourData = {item[0].rstrip(""): item[-2].rstrip("") + '/' + item[-1].rstrip("\t\n") \
                             for item in self.personaldata}
                 print("Ancestry data loaded to data/yourData.json")
             if dataSource ==True:
                 self.yourData = {item[0].lower(): ''.join(item[-2:]) \
                     for item in self.personaldata}
                 print("23andme data loaded to data/yourData.json")
-
-
+                
         file.close()
         
     

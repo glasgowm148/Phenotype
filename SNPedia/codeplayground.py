@@ -21,7 +21,7 @@ import random
 
 # filter common</b> & normal</b>
 
-rsid = "rs10005233"
+rsid = "rs9378252"
 
 from SNPGen import GrabSNPs
 
@@ -32,18 +32,18 @@ try:
     response = urllib.request.urlopen(url)
     html = response.read()
     bs = BeautifulSoup(html, "html.parser")
-
   
     ncbi = bs.find(class_="summary-box usa-grid-full")
     dbSNP = []
     if ncbi:
-        rows = ncbi.find_all("div")
+        rows = ncbi.find_all("dl")
         
         for row in rows:
-            cols = row.find_all("div")
+            cols = row.find_all("dd")
             cols = [ele.text.strip() for ele in cols]
             dbSNP.append(cols)
-    print(dbSNP[2][0][4:6])
+    print(dbSNP[1][2][0])
+    print(dbSNP[1][1].split(' ')[0])
 
 except urllib.error.HTTPError:
     print(url + " was not found or on dbSNP or contained no valid information")
