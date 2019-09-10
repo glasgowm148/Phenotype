@@ -10,7 +10,7 @@ Raw Data coming from Genetic tests done by Direct To Consumer companies such as 
 With genome analysis, sometimes sites will report on the negative strand - meaning that if a rare gene pops up which is pathogenic for some thing you've never heard of - this is likely the case. If you had such a gene it's likely 23andme would've notified you - This tool is more aimed at created custom phenotypes which combine several low-risk, benign or carrier genes - to demonstrate phenotypes where diseases could be manifesting as the cause of a combination of several genes - rather than one SNP.
 
 
-# Timeline
+# Log
 * Done
     * Enabled cross-platform support
     * snps_of_interest.txt can be loaded with SNPs to specifically query against your dataset
@@ -18,13 +18,18 @@ With genome analysis, sometimes sites will report on the negative strand - meani
     * dbSNP lookup functionality added
     * CSV Export working
     * Crawl dbSNP - added to import risk allele / freq
-    * Crawl Clinivar - import clinical significance
+    * Crawl dbSNP - import clinical significance
     * Highlighting based on Risk Allele (Still some bugs)
+    * Support for AncestryDNA
+    * GeneticGenie + NutriHacker SNPs loaded
 * In Progress
   * Tidying up HTML/CSS/Tabular 
   * Filter by mutations only
 * To Do
-  * ONIM Support
+  * Crawl ClinVar
+  * +/- strand orientation check
+  * 23andme i -> rsid
+
   * User Login with upload
     * Custom reports
     * 'Save to ->' 
@@ -40,21 +45,18 @@ With genome analysis, sometimes sites will report on the negative strand - meani
 
 0.
 ```
+## Ensure you are using Python3
 pip install -r requirements.txt
-```
-1. 
-```
-python3 SNPedia/DataScraper.py -f [Absolute path of your downloaded raw DNA data]
-```
 
-2.
-```
+## Starts scraping (This will take several hours but exports periodically)
+python3 SNPedia/DataScraper.py -f [Absolute path of your downloaded raw DNA data]
+
+## Once it's exported 5 results - In a new terminal window
 python3 SNPedia/SnpApi.py
-```
-```
+
 ## Access the Local Server
 http://127.0.0.1:5000
 ```
 
-This Git is based on OSGenome - An Open Source Web Application for Genetic Data (SNPs) using 23AndMe and Data Crawling Technologies
+This Git is based on [OSGenome](osgenome/SNPedia at master · mentatpsi/OSGenome), [SNPApi](https://github.com/leaena/snp-api), and [Snappy](https://github.com/zhaofengli/snappy)
 
