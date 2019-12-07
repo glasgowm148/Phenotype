@@ -1,7 +1,0 @@
-Heart,Hypertension,Cardi,Heart,Arterial,Coronary
-Blood,Blood,Anemia,Lymph,Hemo,Haemo
-Cancer,Cancer,Myeloma
-Metabolism,ase Deficiency,Cholesterol,Diabetes,Obesity
-Mental/Behavioral,Depress,Schizo,Anxiety
-Nervous System,Neur,Myelin,Enceph,Cereb
-Skin,Skin,Ecto,Scale,Bullosa
