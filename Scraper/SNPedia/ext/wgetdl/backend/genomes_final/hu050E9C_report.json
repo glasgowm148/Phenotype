@@ -1,0 +1,2021 @@
+{
+    "Participant": "hu050E9C", 
+    "Report URL": "http://evidence.personalgenomes.org/genomes?display_genome_id=414349e1b5db4bdd5f1db6a1f54a57d6d4a7755a&access_token=8d9eb8579bb726193b590ac67c8f042e", 
+    "Variants": [
+        {
+            "Allele Frequency": "0.14", 
+            "Build 37 Chromosome": "chr19", 
+            "Build 37 Position": "45411941", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "High", 
+            "Condition Tags": [
+                "Mental and behavioral", 
+                "Nervous system"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "APOE", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 4, 
+            "PMID List": [
+                "9343467", 
+                "11950276", 
+                "15123497", 
+                "17428983"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": "3", 
+                "Penetrance": "4", 
+                "Severity": "4", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This is generally known as the ApoE4 allele of ApoE and is associated with increased risk of Alzheimer's. 20-25% of individuals are heterozygous for this variant, and 1-2% are homozygous. Data from Khachaturian et al. suggests an average 7% of all individuals developed Alzheimer's by the age of 80; when this is split by ApoE4 status: 10% of ApoE4 heterozygotes (3% increased attributable risk), 40% of ApoE4 homozygotes (33% increased attributable risk), and 5% of non-carriers (2% decreased attributable risk). Notably, their model suggests 70-75% of people would eventually develop Alzheimer's by the age of 100 regardless of ApoE4 genotype (and 25-30% are resistant, regardless of genotype), but that ApoE4 variants shift the disease onset to occur significantly earlier (4 years earlier for heterozygous carriers, 13 years for homozygotes).", 
+            "URL": "http://evidence.pgp-hms.org/APOE-C130R", 
+            "Variant Name": "APOE-C130R", 
+            "Variant Page": "http://evidence.pgp-hms.org/APOE-C130R", 
+            "dbSNP IDs": [
+                "rs429358"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.048", 
+            "Build 37 Chromosome": "chr20", 
+            "Build 37 Position": "61451332", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Moderate", 
+            "Condition Tags": [
+                "Muscular, skeletal, and connective tissue"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "COL9A3", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Dominant", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "11308397"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "2", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "3", 
+                "Severity": "3", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Carriers of this collagen variant are associated with having a significantly increased risk of lumbar disc disease (~11% total risk compared to a typical risk of 4%). ", 
+            "URL": "http://evidence.pgp-hms.org/COL9A3-R103W", 
+            "Variant Name": "COL9A3-R103W", 
+            "Variant Page": "http://evidence.pgp-hms.org/COL9A3-R103W", 
+            "dbSNP IDs": [
+                "rs61734651"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.15", 
+            "Build 37 Chromosome": "chr19", 
+            "Build 37 Position": "6718387", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Moderate", 
+            "Condition Tags": [
+                "Hearing and vision"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "C3", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "4427677", 
+                "17634448"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": "3", 
+                "Severity": "3", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant (also called C3F) is common in Europeans (10.2% allele frequency), and is associated with age-related macular degeneration. In the US, 1.5% of adults over 40 have the disease, but the incidence increases strongly with age (>15% in women over 80). Assuming an average lifetime risk of ~10%, heterozygous individuals have a ~13% risk and homozygous have ~20%.", 
+            "URL": "http://evidence.pgp-hms.org/C3-R102G", 
+            "Variant Name": "C3-R102G", 
+            "Variant Page": "http://evidence.pgp-hms.org/C3-R102G", 
+            "dbSNP IDs": [
+                "rs2230199"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.0053", 
+            "Build 37 Chromosome": "chr7", 
+            "Build 37 Position": "117267812", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Moderate", 
+            "Condition Tags": [
+                "Breathing", 
+                "Metabolism"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "CFTR", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "11186891", 
+                "15987793"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "4", 
+                "Severity": "3", 
+                "Treatability": "1"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Reported to cause mild dysfunction of the cystic fibrosis gene, it may result in cystic fibrosis when combined with more severe variants.", 
+            "URL": "http://evidence.pgp-hms.org/CFTR-S1235R", 
+            "Variant Name": "CFTR-S1235R", 
+            "Variant Page": "http://evidence.pgp-hms.org/CFTR-S1235R", 
+            "dbSNP IDs": [
+                "rs34911792"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.089", 
+            "Build 37 Chromosome": "chr3", 
+            "Build 37 Position": "12393125", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Moderate", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "PPARG", 
+            "Impact": "Not Reviewed", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "16783862", 
+                "17213274", 
+                "17463248"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": "3", 
+                "Familial": "1", 
+                "Functional": "1", 
+                "Penetrance": "3", 
+                "Severity": "3", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": null, 
+            "URL": "http://evidence.pgp-hms.org/PPARG-P12A", 
+            "Variant Name": "PPARG-P12A", 
+            "Variant Page": "http://evidence.pgp-hms.org/PPARG-P12A", 
+            "dbSNP IDs": [
+                "rs1801282"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.45", 
+            "Build 37 Chromosome": "chr5", 
+            "Build 37 Position": "7870973", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Anatomical and congenital", 
+                "Metabolism", 
+                "Nervous system"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "MTRR", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 7, 
+            "PMID List": [
+                "10444342", 
+                "10930360", 
+                "11807890", 
+                "12375236", 
+                "15060097", 
+                "15979034", 
+                "17024475"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "3", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "2"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This common variant (HapMap allele frequency of 31.3%) in a protein involved in folate (B9) and cobalamin (B12) metabolism and is often reported as \"MTRR I22M\" (an alternative transcript position). Mothers homozygous for this variant are associated with having around a increased chance of a child with Down syndrome (risk of 0.4%, average risk in population is 0.25%). Notably, age plays a far larger role in the rate of Down syndrome (risk is 4.5% for a mother 45-years-of-age), and it is unknown how this variant may combine with the effect of age. There are conflicting reports associating this variant with incidence of neural tube defects, possibly when combined with MTHFR A222V.", 
+            "URL": "http://evidence.pgp-hms.org/MTRR-I49M", 
+            "Variant Name": "MTRR-I49M", 
+            "Variant Page": "http://evidence.pgp-hms.org/MTRR-I49M", 
+            "dbSNP IDs": [
+                "rs1801394"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.32", 
+            "Build 37 Chromosome": "chr13", 
+            "Build 37 Position": "110818598", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Heart and circulatory"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "COL4A1", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Dominant", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "10334796", 
+                "18077766", 
+                "20031579"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "0", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "2", 
+                "Severity": "4", 
+                "Treatability": "4"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This common variant has been associated with arterial stiffness and, in Japanese, a small increased risk of myocardial infarction (MI, a.k.a. heart attack). This last observation supported a dominant effect for this variant and, assuming a lifetime risk of 15% for MI, we estimate carriers have an additional risk of 0.5-3%.", 
+            "URL": "http://evidence.pgp-hms.org/COL4A1-Q1334H", 
+            "Variant Name": "COL4A1-Q1334H", 
+            "Variant Page": "http://evidence.pgp-hms.org/COL4A1-Q1334H", 
+            "dbSNP IDs": [
+                "rs3742207"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.011", 
+            "Build 37 Chromosome": "chr16", 
+            "Build 37 Position": "50756540", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Mouth, liver, and digestive"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "NOD2", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "11385576", 
+                "12019468"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "2", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "2", 
+                "Severity": "3", 
+                "Treatability": "4"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant is associated with an increased susceptibility to Crohn's disease and other inflammatory bowel diseases (IBD). Assuming an overall prevalence of 0.5% for IBD, this variant implies an increased attributable risk of 2% (5x increased risk, for an overall risk of 2.5% of IBD for people with this variant).", 
+            "URL": "http://evidence.pgp-hms.org/NOD2-G908R", 
+            "Variant Name": "NOD2-G908R", 
+            "Variant Page": "http://evidence.pgp-hms.org/NOD2-G908R"
+        }, 
+        {
+            "Allele Frequency": "0.093", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "115236057", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Metabolism", 
+                "Muscular, skeletal, and connective tissue"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "AMPD1", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "1631143"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "2", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "4", 
+                "Severity": "2", 
+                "Treatability": "1"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Causes Adenosine Deaminase Deficiency in a recessive manner. Most of the time individuals do not report symptoms, but when symptoms do exist they to be post-exercise symptoms of muscle weakness, muscle pain, and getting tired more quickly.", 
+            "URL": "http://evidence.pgp-hms.org/AMPD1-Q12X", 
+            "Variant Name": "AMPD1-Q12X", 
+            "Variant Page": "http://evidence.pgp-hms.org/AMPD1-Q12X", 
+            "dbSNP IDs": [
+                "rs17602729"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.21", 
+            "Build 37 Chromosome": "chr3", 
+            "Build 37 Position": "148459988", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Drug response", 
+                "Heart and circulatory"
+            ], 
+            "Evidence": "Likely", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 6, 
+            "PMID List": [
+                "8021009", 
+                "\n11250978", 
+                "11593098", 
+                "16046653", 
+                "16675453", 
+                "17668390"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "0", 
+                "Familial": "0", 
+                "Functional": "2", 
+                "Penetrance": "2", 
+                "Severity": "4", 
+                "Treatability": "4"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This common noncoding genetic variant has an allele frequency of ~30% and is associated with an increased risk of hypertension. If ~25% of non-carriers have hypertension, Bonnardeaux et al's data predict ~4% increased risk of hypertension per copy of this variant. This SNP is in the 3' noncoding region of the AGTR1 transcript (angiotensin II type 1 receptor), also known as AT2R1 or AT1R, which is a target of hypertension drugs.", 
+            "URL": "http://evidence.pgp-hms.org/rs5186", 
+            "Variant Name": "rs5186", 
+            "Variant Page": "http://evidence.pgp-hms.org/rs5186", 
+            "dbSNP IDs": [
+                "rs5186"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.24", 
+            "Build 37 Chromosome": "chr13", 
+            "Build 37 Position": "32906729", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Cancer"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "BRCA2", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "11062481", 
+                "15235023"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": "0", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "2", 
+                "Severity": "4", 
+                "Treatability": "3"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This is a common variant of BRCA2 (HapMap allele frequency of 23%). The variant is weakly associated with an increased chance of breast cancer, and zygosity of the variant is associated with sex of children: male children are more likely to be homozygous for this variant, female children are more likely to be heterozygous.", 
+            "URL": "http://evidence.pgp-hms.org/BRCA2-N372H", 
+            "Variant Name": "BRCA2-N372H", 
+            "Variant Page": "http://evidence.pgp-hms.org/BRCA2-N372H", 
+            "dbSNP IDs": [
+                "rs144848"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.0027", 
+            "Build 37 Chromosome": "chr5", 
+            "Build 37 Position": "1293767", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Blood"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "TERT", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Dominant", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "15814878", 
+                "18042801"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "2", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "3"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Hypothesized to cause increased risk of aplastic anemia, but no statistically significant data (this implies that if this variant causes increased risk, it is likely quite small -- too small to produce a significant enrichment).", 
+            "URL": "http://evidence.pgp-hms.org/TERT-H412Y", 
+            "Variant Name": "TERT-H412Y", 
+            "Variant Page": "http://evidence.pgp-hms.org/TERT-H412Y"
+        }, 
+        {
+            "Allele Frequency": "0.14", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Nervous system"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "TGIF1", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "10556296"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "3", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "1"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Severe variants in this gene are associated with holoprosencephaly disorders when combined with loss-of-function variants in SHH. Haploinsufficiency was identified in some families with this condition. It is unclear how likely this variant is to occur in combination with an SHH variant, or what phenotypic effect the variant would have on its own.", 
+            "URL": "http://evidence.pgp-hms.org/TGIF1-P83Shift", 
+            "Variant Name": "TGIF1-P83Shift", 
+            "Variant Page": "http://evidence.pgp-hms.org/TGIF1-P83Shift", 
+            "dbSNP IDs": [
+                "rs11571510"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.2", 
+            "Build 37 Chromosome": "chr15", 
+            "Build 37 Position": "55722882", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Mental and behavioral"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "DYX1C1", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "12954984"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": null, 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "3", 
+                "Severity": "2", 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "One study reports this variant to be associated with dyslexia. The study group was relatively small and so the results did not have strong significance. If they are representative this variant is associated with a doubled risk for dyslexia, but it is unclear whether the effect would be additive, dominant, or recessive.", 
+            "URL": "http://evidence.pgp-hms.org/DYX1C1-E417X", 
+            "Variant Name": "DYX1C1-E417X", 
+            "Variant Page": "http://evidence.pgp-hms.org/DYX1C1-E417X", 
+            "dbSNP IDs": [
+                "rs57809907"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.2", 
+            "Build 37 Chromosome": "chr10", 
+            "Build 37 Position": "50678369", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Anatomical and congenital", 
+                "Cancer", 
+                "Hearing and vision"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "ERCC6", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 0, 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "3", 
+                "Familial": "0", 
+                "Functional": "1", 
+                "Penetrance": "0", 
+                "Severity": "5", 
+                "Treatability": "1"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "When homozygous, this variant may cause Cockayne Syndrome, which is a severe autosomal-recessive disorder characterized by abnormal early growth and development, abnormal sensitivity to sunlight, and premature aging. Cockayne Syndrome Type I and Type II lead to death in early childhood. Several other variants in the ERCC6 gene are linked to Cockayne Syndrome. This variant may also be linked to age-related macular degeneration like other ERCC6 variants, and has been linked to colorectal cancer in one study. ", 
+            "URL": "http://evidence.pgp-hms.org/ERCC6-R1213G", 
+            "Variant Name": "ERCC6-R1213G", 
+            "Variant Page": "http://evidence.pgp-hms.org/ERCC6-R1213G", 
+            "dbSNP IDs": [
+                "rs2228527"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.63", 
+            "Build 37 Chromosome": "chr17", 
+            "Build 37 Position": "7579472", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Cancer"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "TP53", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 6, 
+            "PMID List": [
+                "1975675", 
+                "9607760", 
+                "15355915", 
+                "19837266", 
+                "20615891", 
+                "22184967"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "3", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": "0", 
+                "Severity": "0", 
+                "Treatability": "0"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This is a common variant was first reported as a polymorphism. It has since had mixed associations with cancer: Storey et al. conclude a 7x *increased* risk of HPV cancer for homozygotes vs hets, but Jones et al. find a 1.98x *decreased* risk for colorectal cancer. This variant may have significant impact on particular cancers, but it is unclear what effect it has on the overall burden of cancer.", 
+            "URL": "http://evidence.pgp-hms.org/TP53-P72R", 
+            "Variant Name": "TP53-P72R", 
+            "Variant Page": "http://evidence.pgp-hms.org/TP53-P72R", 
+            "dbSNP IDs": [
+                "rs1042522"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.86", 
+            "Build 37 Chromosome": "chr2", 
+            "Build 37 Position": "231050715", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Immune system"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "SP110", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "16803959"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "0", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "4"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This variant is associated with a slightly increased risk of tuberculosis. It is unclear whether it is itself causal, or in linkage disequilibrium with some other causal variant that has a stronger effect.", 
+            "URL": "http://evidence.pgp-hms.org/SP110-L425S", 
+            "Variant Name": "SP110-L425S", 
+            "Variant Page": "http://evidence.pgp-hms.org/SP110-L425S", 
+            "dbSNP IDs": [
+                "rs3948464"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.11", 
+            "Build 37 Chromosome": "chr6", 
+            "Build 37 Position": "26091179", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Blood"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "HFE", 
+            "Impact": "Pathogenic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 5, 
+            "PMID List": [
+                "8696333", 
+                "9462220", 
+                "12429850", 
+                "14673107", 
+                "17042772"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "2", 
+                "Familial": "0", 
+                "Functional": "2", 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "5"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "There have been some hypotheses that this variant contributes to causing hereditary hemochromatosis, possibly as a compound heterozygote, but some others treat it as a polymorphism. Cys282Tyr is the classic causal variant and itself has very low penetrance. Mouse studies indicates this variant has a similar but weaker effect; if it has any effect at all its penetrance may be quite low and/or require modifier alleles.", 
+            "URL": "http://evidence.pgp-hms.org/HFE-H63D", 
+            "Variant Name": "HFE-H63D", 
+            "Variant Page": "http://evidence.pgp-hms.org/HFE-H63D", 
+            "dbSNP IDs": [
+                "rs1799945"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.4", 
+            "Build 37 Chromosome": "chr4", 
+            "Build 37 Position": "6303354", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Hearing and vision", 
+                "Immune system", 
+                "Metabolism"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "WFS1", 
+            "Impact": "Not Reviewed", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "17603484", 
+                "17719176", 
+                "23257691"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": "4", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": "1", 
+                "Severity": "3", 
+                "Treatability": "4"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This nonsynonymous SNP is associated with Wolfram Syndrome (known as DIDMOAD), which is characterized by early-onset non-autoimmune diabetes mellitus, diabetes insipidus, optic atrophy, and deafness) and to adult Type Two Diabetes Mellitus.  The WFS1 gene maps to chromosome 4p16.3.  The variant has been shown to be statistically associated with type II diabetes in six UK studies and one study of Ashkenazi Jews (Sandhu, M., et al., Minton et al.).", 
+            "URL": "http://evidence.pgp-hms.org/WFS1-R611H", 
+            "Variant Name": "WFS1-R611H", 
+            "Variant Page": "http://evidence.pgp-hms.org/WFS1-R611H", 
+            "dbSNP IDs": [
+                "rs734312"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.097", 
+            "Build 37 Chromosome": "chr10", 
+            "Build 37 Position": "96702047", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Moderate", 
+            "Condition Tags": [
+                "Drug response", 
+                "Metabolism"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "CYP2C9", 
+            "Impact": "Pharmacogenetic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 7, 
+            "PMID List": [
+                "8004131", 
+                "15947090", 
+                "17161452", 
+                "17686967", 
+                "19228618", 
+                "19794411", 
+                "19794412"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "2", 
+                "Familial": null, 
+                "Functional": "3", 
+                "Penetrance": "3", 
+                "Severity": "3", 
+                "Treatability": "3"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant, also called CYP2C9*2, is a pharmacogenetic variant that modulates sensitivity for Warfarin (due to reduced metabolism). This variant is associated with Caucasians. The FDA has approved reduced recommended Warfarin dosage based on the presence of this variant.", 
+            "URL": "http://evidence.pgp-hms.org/CYP2C9-R144C", 
+            "Variant Name": "CYP2C9-R144C", 
+            "Variant Page": "http://evidence.pgp-hms.org/CYP2C9-R144C", 
+            "dbSNP IDs": [
+                "rs1799853"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.061", 
+            "Build 37 Chromosome": "chr20", 
+            "Build 37 Position": "3193842", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Drug response", 
+                "Immune system", 
+                "Metabolism"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "ITPA", 
+            "Impact": "Pharmacogenetic", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 6, 
+            "PMID List": [
+                "12384777", 
+                "15322947", 
+                "17924837", 
+                "19631656", 
+                "19682085", 
+                "20173735"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "2", 
+                "Familial": "0", 
+                "Functional": "2", 
+                "Penetrance": "1", 
+                "Severity": "3", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant is associated with inosine triphosphate pyrophosphohydrolase deficiency and may be associated with an adverse reaction to thiopurine drugs (which are used as immunosuppressants). Homozygotes have no detectable ITPase activity, individuals compound heterozygous with another less severe mutation also have severely reduced enzyme activity.", 
+            "URL": "http://evidence.pgp-hms.org/ITPA-P32T", 
+            "Variant Name": "ITPA-P32T", 
+            "Variant Page": "http://evidence.pgp-hms.org/ITPA-P32T", 
+            "dbSNP IDs": [
+                "rs1127354"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.35", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Impact": "Pharmacogenetic", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 0, 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "1", 
+                "Familial": "0", 
+                "Functional": "-1", 
+                "Penetrance": "0", 
+                "Severity": "1", 
+                "Treatability": "0"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "rs1544410 is a Vitamin D Receptor (VDR) single nucleotide polymorphism. It is unlikely that it has functional significance because it is located in an intron (Liu et. al.), but it is in strong linkage disequilibrium with rs731236 (Dvornyk et al), which is located in an exon. ", 
+            "URL": "http://evidence.pgp-hms.org/rs1544410", 
+            "Variant Name": "rs1544410", 
+            "Variant Page": "http://evidence.pgp-hms.org/rs1544410", 
+            "dbSNP IDs": [
+                "rs1544410"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.34", 
+            "Build 37 Chromosome": "chr20", 
+            "Build 37 Position": "4680251", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "PRNP", 
+            "Impact": "Protective", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "18236005", 
+                "19081515"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "3", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "0", 
+                "Severity": "4", 
+                "Treatability": "1"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant is associated with some protective effects for prion disease -- individuals homozygous for this variant are less susceptible to Creutzfeldt-Jakob, and Papua New Guinea individuals heterozygotes at this site are less susceptible to kuru.\n\n", 
+            "URL": "http://evidence.pgp-hms.org/PRNP-M129V", 
+            "Variant Name": "PRNP-M129V", 
+            "Variant Page": "http://evidence.pgp-hms.org/PRNP-M129V", 
+            "dbSNP IDs": [
+                "rs1799990"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.048", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Immune system"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "CCR5", 
+            "Impact": "Protective", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "8751444", 
+                "8791590", 
+                "8898752"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "3", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "4"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Also known as CCR5-delta32, this variant is associated with resistance to many strains of HIV (but not all strains, only strains that use target the CCR5 protein). Heterozygotes are reported to have slower HIV progression, and homozygotes are very resistant to being infected by these strains.", 
+            "URL": "http://evidence.pgp-hms.org/CCR5-S185Shift", 
+            "Variant Name": "CCR5-S185Shift", 
+            "Variant Page": "http://evidence.pgp-hms.org/CCR5-S185Shift", 
+            "dbSNP IDs": [
+                "rs333"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.39", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "196642233", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Hearing and vision", 
+                "Metabolism"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "CFH", 
+            "Impact": "Protective", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "15870199"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "2", 
+                "Severity": "3", 
+                "Treatability": "2"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Associated with a decreased risk for age related macular degeneration (ARMD). Homozygotes for this have a 4-5% decreased attributable risk (3-4% vs. average 8% risk), heterozygotes have slightly lower than average risk (7%). Non-carriers have an increased risk (12-13%). ARMD impairs sharp vision as age progresses. While there is no cure, treatment can slow progression of the disease and environmental factors (smoking and obesity) contribute to higher risk.", 
+            "URL": "http://evidence.pgp-hms.org/CFH-V62I", 
+            "Variant Name": "CFH-V62I", 
+            "Variant Page": "http://evidence.pgp-hms.org/CFH-V62I", 
+            "dbSNP IDs": [
+                "rs800292"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.1", 
+            "Build 37 Chromosome": "chr9", 
+            "Build 37 Position": "132580901", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Nervous system"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "TOR1A", 
+            "Impact": "Protective", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "18519876", 
+                "19380705", 
+                "20669276"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "2", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "1", 
+                "Severity": "1", 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This SNP has been shown to be benign and play a protective role against Dystonia.  ", 
+            "URL": "http://evidence.pgp-hms.org/TOR1A-D216H", 
+            "Variant Name": "TOR1A-D216H", 
+            "Variant Page": "http://evidence.pgp-hms.org/TOR1A-D216H", 
+            "dbSNP IDs": [
+                "rs1801968"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.74", 
+            "Build 37 Chromosome": "chr11", 
+            "Build 37 Position": "17409572", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Metabolism"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "KCNJ11", 
+            "Impact": "Protective", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "17463246", 
+                "17463248", 
+                "20054294"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": "2", 
+                "Severity": "3", 
+                "Treatability": "4"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This variant is associated with decreased risk of type 2 diabetes. It is unclear whether this variant has additive effects, or acts in a dominant or recessive manner. Assuming diabetes has a lifetime risk of 36%, we estimate a decreased risk of around 1-2% per copy of this variant.", 
+            "URL": "http://evidence.pgp-hms.org/KCNJ11-K23E", 
+            "Variant Name": "KCNJ11-K23E", 
+            "Variant Page": "http://evidence.pgp-hms.org/KCNJ11-K23E", 
+            "dbSNP IDs": [
+                "rs5219"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.22", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "237048500", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Cancer"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "MTR", 
+            "Impact": "Protective", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 4, 
+            "PMID List": [
+                "10498402", 
+                "14744749", 
+                "17417062", 
+                "17855192"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": "2", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": "1", 
+                "Severity": "4", 
+                "Treatability": "3"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant was weakly associated with a protective effect vs. colorectal cancer, but only in individuals with low alcohol consumption.\n\n\n", 
+            "URL": "http://evidence.pgp-hms.org/MTR-D919G", 
+            "Variant Name": "MTR-D919G", 
+            "Variant Page": "http://evidence.pgp-hms.org/MTR-D919G", 
+            "dbSNP IDs": [
+                "rs1805087"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.23", 
+            "Build 37 Chromosome": "chr13", 
+            "Build 37 Position": "110435231", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "IRS2", 
+            "Impact": "Protective", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "19887537"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": null, 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "a.k.a Gly1057Asp, insulin receptor substrate-2 IRS2. The rs1805097(G) allele is associated with the Gly, and the (A) allele with Asp. \nA longevity study concluded that rs1805097(A;A) individuals were about twice as likely to live over 85 y/o (odds ratio 2.03, CI:1.39-2.99, p = .0003). ", 
+            "URL": "http://evidence.pgp-hms.org/IRS2-G1057D", 
+            "Variant Name": "IRS2-G1057D", 
+            "Variant Page": "http://evidence.pgp-hms.org/IRS2-G1057D", 
+            "dbSNP IDs": [
+                "rs1805097"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.2", 
+            "Build 37 Chromosome": "chr11", 
+            "Build 37 Position": "89017961", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Hearing and vision"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "TYR", 
+            "Impact": "Benign", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 7, 
+            "PMID List": [
+                "1820207", 
+                "7704033", 
+                "11284711", 
+                "18326704", 
+                "18488027", 
+                "18488028", 
+                "19533789"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": "2", 
+                "Penetrance": "0", 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This is a frequent pigmentation polymorphism in Europeans that affects function of the Tyrosinase gene. It is associated with blue instead of green eyes and sun sensitivity. For the most part this variant is benign, but many individuals with ocular albinism (which affects only the eyes) carry this variant along with another more severe variant in the same gene.", 
+            "URL": "http://evidence.pgp-hms.org/TYR-R402Q", 
+            "Variant Name": "TYR-R402Q", 
+            "Variant Page": "http://evidence.pgp-hms.org/TYR-R402Q", 
+            "dbSNP IDs": [
+                "rs1126809"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.18", 
+            "Build 37 Chromosome": "chr22", 
+            "Build 37 Position": "51064416", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Well-established", 
+            "Gene Symbol": "ARSA", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "2574462"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "2", 
+                "Familial": "0", 
+                "Functional": "2", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This common variant (HapMap 24.1% allele frequency) causes a loss of a glycosylation site (affecting the size of the protein when studied with gel electrophoresis) but does not affect enzyme activity or stability.", 
+            "URL": "http://evidence.pgp-hms.org/ARSA-N350S", 
+            "Variant Name": "ARSA-N350S", 
+            "Variant Page": "http://evidence.pgp-hms.org/ARSA-N350S", 
+            "dbSNP IDs": [
+                "rs2071421"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.057", 
+            "Build 37 Chromosome": "chr16", 
+            "Build 37 Position": "2140554", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "PKD1", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "19686598"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign.", 
+            "URL": "http://evidence.pgp-hms.org/PKD1-A4059V", 
+            "Variant Name": "PKD1-A4059V", 
+            "Variant Page": "http://evidence.pgp-hms.org/PKD1-A4059V", 
+            "dbSNP IDs": [
+                "rs3209986"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.051", 
+            "Build 37 Chromosome": "chr15", 
+            "Build 37 Position": "89803950", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "FANCI", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "17412408"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": "2", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign.", 
+            "URL": "http://evidence.pgp-hms.org/FANCI-P55L", 
+            "Variant Name": "FANCI-P55L", 
+            "Variant Page": "http://evidence.pgp-hms.org/FANCI-P55L", 
+            "dbSNP IDs": [
+                "rs62020347"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.27", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "201052310", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "CACNA1S", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 0, 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Common polymorphism", 
+            "URL": "http://evidence.pgp-hms.org/CACNA1S-L458H", 
+            "Variant Name": "CACNA1S-L458H", 
+            "Variant Page": "http://evidence.pgp-hms.org/CACNA1S-L458H", 
+            "dbSNP IDs": [
+                "rs12742169"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.011", 
+            "Build 37 Chromosome": "chr2", 
+            "Build 37 Position": "47643457", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Cancer"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "MSH2", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 6, 
+            "PMID List": [
+                "8776590", 
+                "10023327", 
+                "10469597", 
+                "11870161", 
+                "12673796", 
+                "18470917"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": "3", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Although other variants in this mismatch repair gene are associated with cancer, most publications dismiss this variant as a polymorphism (HapMap allele frequency of 1.6%).", 
+            "URL": "http://evidence.pgp-hms.org/MSH2-G322D", 
+            "Variant Name": "MSH2-G322D", 
+            "Variant Page": "http://evidence.pgp-hms.org/MSH2-G322D", 
+            "dbSNP IDs": [
+                "rs4987188"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.068", 
+            "Build 37 Chromosome": "chr2", 
+            "Build 37 Position": "238247734", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Likely", 
+            "Gene Symbol": "COL6A3", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "9536084", 
+                "15563506"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "1", 
+                "Familial": "1", 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign, reported by Pan et al. as a presumed-nonpathogenic variant in the gene.", 
+            "URL": "http://evidence.pgp-hms.org/COL6A3-D2831H", 
+            "Variant Name": "COL6A3-D2831H", 
+            "Variant Page": "http://evidence.pgp-hms.org/COL6A3-D2831H", 
+            "dbSNP IDs": [
+                "rs36104025"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.24", 
+            "Build 37 Chromosome": "chr3", 
+            "Build 37 Position": "37053568", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "MLH1", 
+            "Impact": "Benign", 
+            "Inheritance": "Dominant", 
+            "PMID Count": 8, 
+            "PMID List": [
+                "11781295", 
+                "12810663", 
+                "17074586", 
+                "17510385", 
+                "17870204", 
+                "19863800", 
+                "20301390", 
+                "22631669"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": "0", 
+                "Penetrance": "0", 
+                "Severity": "0", 
+                "Treatability": "0"
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Computational evidence, functional assays, and case/control studies suggest this variant is probably benign.", 
+            "URL": "http://evidence.pgp-hms.org/MLH1-I219V", 
+            "Variant Name": "MLH1-I219V", 
+            "Variant Page": "http://evidence.pgp-hms.org/MLH1-I219V", 
+            "dbSNP IDs": [
+                "rs1799977"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.26", 
+            "Build 37 Chromosome": "chr15", 
+            "Build 37 Position": "74219546", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Hearing and vision"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "LOXL1", 
+            "Impact": "Benign", 
+            "Inheritance": "Complex/Other", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "17690259", 
+                "18450598", 
+                "20142848"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": "0", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Associated with exfoliative glaucoma & syndrome (XFG & XFS) in various populations, but with contradicting results (protective in Caucasians, pathogenic in Japanese). Based on this it seems the variation itself -- although it affects protein structure -- is not itself causing disease. Instead it is likely associated with other nearby causal variants. As such, it is evaluated as benign by GET-Evidence (which focuses on reporting causal variants). See detailed variant report for disease risk associations.", 
+            "URL": "http://evidence.pgp-hms.org/LOXL1-R141L", 
+            "Variant Name": "LOXL1-R141L", 
+            "Variant Page": "http://evidence.pgp-hms.org/LOXL1-R141L", 
+            "dbSNP IDs": [
+                "rs1048661"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.038", 
+            "Build 37 Chromosome": "chr13", 
+            "Build 37 Position": "100962156", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "PCCA", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "10101253"
+            ], 
+            "Scores": {
+                "Case/Control": "2", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Reported as a polymorphism, tentatively presumed benign.", 
+            "URL": "http://evidence.pgp-hms.org/PCCA-I475V", 
+            "Variant Name": "PCCA-I475V", 
+            "Variant Page": "http://evidence.pgp-hms.org/PCCA-I475V", 
+            "dbSNP IDs": [
+                "rs35719359"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.072", 
+            "Build 37 Chromosome": "chr9", 
+            "Build 37 Position": "34649442", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Mouth, liver, and digestive"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "GALT", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "10408771", 
+                "11261429", 
+                "19224951"
+            ], 
+            "Scores": {
+                "Case/Control": "1", 
+                "Computational": "1", 
+                "Familial": null, 
+                "Functional": "3", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant has an allele frequency of ~8% and is ancestral to \"Duarte\" / \"Duarte 2\" and \"Duarte 1\"/\"Los Angeles\" galactosemia variants. This variant is evolutionarily ancestral, and in vitro studies fail to support an impact of this variant on enzyme activity. Carney et al. instead implicate a 4 base deletion on the 5' of the GALT gene as being causal and linked to this variant. Galactosemia is typically screened and detected in infants and causes early, severe but nonspecific symptoms (digestive problems, lethargy, failure to thrive).", 
+            "URL": "http://evidence.pgp-hms.org/GALT-N314D", 
+            "Variant Name": "GALT-N314D", 
+            "Variant Page": "http://evidence.pgp-hms.org/GALT-N314D", 
+            "dbSNP IDs": [
+                "rs2070074"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.16", 
+            "Build 37 Chromosome": "chr17", 
+            "Build 37 Position": "44061278", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "MAPT", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "15365985"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign.", 
+            "URL": "http://evidence.pgp-hms.org/MAPT-R370W", 
+            "Variant Name": "MAPT-R370W", 
+            "Variant Page": "http://evidence.pgp-hms.org/MAPT-R370W", 
+            "dbSNP IDs": [
+                "rs17651549"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.037", 
+            "Build 37 Chromosome": "chr19", 
+            "Build 37 Position": "45296806", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "CBLC", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "19370762"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign.", 
+            "URL": "http://evidence.pgp-hms.org/CBLC-H405Y", 
+            "Variant Name": "CBLC-H405Y", 
+            "Variant Page": "http://evidence.pgp-hms.org/CBLC-H405Y", 
+            "dbSNP IDs": [
+                "rs3208856"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.048", 
+            "Build 37 Chromosome": "chr16", 
+            "Build 37 Position": "28950051", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "CD19", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 0, 
+            "Scores": {
+                "Case/Control": "1", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "Presumed benign.", 
+            "URL": "http://evidence.pgp-hms.org/CD19-R514H", 
+            "Variant Name": "CD19-R514H", 
+            "Variant Page": "http://evidence.pgp-hms.org/CD19-R514H", 
+            "dbSNP IDs": [
+                "rs34763945"
+            ]
+        }, 
+        {
+            "Allele Frequency": "1.0", 
+            "Build 37 Chromosome": "chr2", 
+            "Build 37 Position": "21235475", 
+            "Build 37 Variant Allele": "C", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "APOB", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 0, 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "5", 
+                "Familial": "0", 
+                "Functional": "0", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This position is almost certainly an error in the HG18 reference sequence. ", 
+            "URL": "http://evidence.pgp-hms.org/APOB-Y1422C", 
+            "Variant Name": "APOB-Y1422C", 
+            "Variant Page": "http://evidence.pgp-hms.org/APOB-Y1422C", 
+            "dbSNP IDs": [
+                "rs568413"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.094", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "115231254", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "AMPD1", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "15173240"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign, ancestral to15173240 pathogenic Q12X mutation.", 
+            "URL": "http://evidence.pgp-hms.org/AMPD1-P48L", 
+            "Variant Name": "AMPD1-P48L", 
+            "Variant Page": "http://evidence.pgp-hms.org/AMPD1-P48L", 
+            "dbSNP IDs": [
+                "rs61752479"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.098", 
+            "Build 37 Chromosome": "chr16", 
+            "Build 37 Position": "48258198", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "ABCC11", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "14471313", 
+                "16444273"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "1", 
+                "Familial": "5", 
+                "Functional": "1", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant is associated with dry type ear wax (a benign trait) in a recessive manner.", 
+            "URL": "http://evidence.pgp-hms.org/ABCC11-G180R", 
+            "Variant Name": "ABCC11-G180R", 
+            "Variant Page": "http://evidence.pgp-hms.org/ABCC11-G180R", 
+            "dbSNP IDs": [
+                "rs17822931"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.14", 
+            "Build 37 Chromosome": "chr4", 
+            "Build 37 Position": "88533540", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Mouth, liver, and digestive"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "DSPP", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 3, 
+            "PMID List": [
+                "14758537", 
+                "17452557", 
+                "18797159"
+            ], 
+            "Scores": {
+                "Case/Control": "3", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Probably benign. One report linked this to causing dentinogenesis Imperfecta type II in a large Swedish family, but subsequent publications have observed this is a common variant and conclude it is a nonpathogenic polymorphism.", 
+            "URL": "http://evidence.pgp-hms.org/DSPP-R68W", 
+            "Variant Name": "DSPP-R68W", 
+            "Variant Page": "http://evidence.pgp-hms.org/DSPP-R68W", 
+            "dbSNP IDs": [
+                "rs36094464"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.21", 
+            "Build 37 Chromosome": "chr17", 
+            "Build 37 Position": "7906519", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Hearing and vision"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "GUCY2D", 
+            "Impact": "Benign", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "8944027"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "1", 
+                "Familial": "0", 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "One publication suggested that this variant possibly causes Leber's congenital amaurosis in a recessive manner, but the frequency data (36% in 1000 genomes) contradicts any significant pathogenic effect.", 
+            "URL": "http://evidence.pgp-hms.org/GUCY2D-A52S", 
+            "Variant Name": "GUCY2D-A52S", 
+            "Variant Page": "http://evidence.pgp-hms.org/GUCY2D-A52S", 
+            "dbSNP IDs": [
+                "rs61749665"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.35", 
+            "Build 37 Chromosome": "chr8", 
+            "Build 37 Position": "55539395", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Metabolism"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "RP1", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "12764676", 
+                "19364639"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "Probably benign. One report linked this variant to high triglycerides, but a later paper found a nearby SNP with similar association and suggests that both findings are caused by linkage to an undiscovered causal variant.", 
+            "URL": "http://evidence.pgp-hms.org/RP1-N985Y", 
+            "Variant Name": "RP1-N985Y", 
+            "Variant Page": "http://evidence.pgp-hms.org/RP1-N985Y", 
+            "dbSNP IDs": [
+                "rs2293869"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.69", 
+            "Build 37 Chromosome": "chr5", 
+            "Build 37 Position": "33951693", 
+            "Build 37 Variant Allele": "G", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Cancer"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "SLC45A2", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 4, 
+            "PMID List": [
+                "15714523", 
+                "17044855", 
+                "18563784", 
+                "18806926"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": null, 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": "0", 
+                "Treatability": "0"
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "Pigmentation allele for non-black hair, and consequently, possible increased susceptibility to malignant melanoma.", 
+            "URL": "http://evidence.pgp-hms.org/SLC45A2-L374F", 
+            "Variant Name": "SLC45A2-L374F", 
+            "Variant Page": "http://evidence.pgp-hms.org/SLC45A2-L374F", 
+            "dbSNP IDs": [
+                "rs16891982"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.078", 
+            "Build 37 Chromosome": "chr11", 
+            "Build 37 Position": "47470345", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "RAPSN", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "11791205"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "-1", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": "0", 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Reported as non-pathogenic polymorphism. ", 
+            "URL": "http://evidence.pgp-hms.org/RAPSN-R58C", 
+            "Variant Name": "RAPSN-R58C", 
+            "Variant Page": "http://evidence.pgp-hms.org/RAPSN-R58C", 
+            "dbSNP IDs": [
+                "rs34312154"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.89", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "55529187", 
+            "Build 37 Variant Allele": "A", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Other"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "PCSK9", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 1, 
+            "PMID List": [
+                "19351729"
+            ], 
+            "Scores": {
+                "Case/Control": "5", 
+                "Computational": "3", 
+                "Familial": null, 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Homozygous", 
+            "Summary": "This variant is likely benign. ", 
+            "URL": "http://evidence.pgp-hms.org/PCSK9-G670E", 
+            "Variant Name": "PCSK9-G670E", 
+            "Variant Page": "http://evidence.pgp-hms.org/PCSK9-G670E", 
+            "dbSNP IDs": [
+                "rs505151"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.042", 
+            "Build 37 Chromosome": "chr12", 
+            "Build 37 Position": "52760957", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Skin"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "KRT85", 
+            "Impact": "Benign", 
+            "Inheritance": "Recessive", 
+            "PMID Count": 2, 
+            "PMID List": [
+                "16525032", 
+                "19865094"
+            ], 
+            "Scores": {
+                "Case/Control": "4", 
+                "Computational": "-1", 
+                "Familial": "-1", 
+                "Functional": null, 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "Presumed benign. Although this variant was implicated in causing ectodermal dysplasia in a recessive manner in two Pakistani families (one of which was large and consanguineous), GET-Evidence reports that the variant has been seen in 5 out of 114 random control chromosomes. This strongly contradicts a severe pathogenic effect.", 
+            "URL": "http://evidence.pgp-hms.org/KRT85-R78H", 
+            "Variant Name": "KRT85-R78H", 
+            "Variant Page": "http://evidence.pgp-hms.org/KRT85-R78H", 
+            "dbSNP IDs": [
+                "rs61630004"
+            ]
+        }, 
+        {
+            "Allele Frequency": "0.037", 
+            "Build 37 Chromosome": "chr1", 
+            "Build 37 Position": "158624528", 
+            "Build 37 Variant Allele": "T", 
+            "Build37 coordinates:": [], 
+            "Clinical Importance": "Low", 
+            "Condition Tags": [
+                "Blood"
+            ], 
+            "Evidence": "Uncertain", 
+            "Gene Symbol": "SPTA1", 
+            "Impact": "Benign", 
+            "Inheritance": "Unknown", 
+            "PMID Count": 4, 
+            "PMID List": [
+                "8844207", 
+                "9067503", 
+                "15384986", 
+                "16150946"
+            ], 
+            "Scores": {
+                "Case/Control": "0", 
+                "Computational": "0", 
+                "Familial": null, 
+                "Functional": "1", 
+                "Penetrance": null, 
+                "Severity": null, 
+                "Treatability": null
+            }, 
+            "Status": "Heterozygous", 
+            "Summary": "This variant, also called alpha-IIa, has been seen frequently in individuals with recessive Hereditary spherocytosis. This appears to be the result of linkage to alpha-LEPRA (a C>T substitution at position -99 of intron 30); A970D is later reported as functionally neutral.", 
+            "URL": "http://evidence.pgp-hms.org/SPTA1-A970D", 
+            "Variant Name": "SPTA1-A970D", 
+            "Variant Page": "http://evidence.pgp-hms.org/SPTA1-A970D", 
+            "dbSNP IDs": [
+                "rs35948326"
+            ]
+        }
+    ]
+}

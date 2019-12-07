@@ -1,0 +1,7 @@
+*.log
+*.pot
+*.pyc
+*~
+*.pdf
+
+local_settings.py

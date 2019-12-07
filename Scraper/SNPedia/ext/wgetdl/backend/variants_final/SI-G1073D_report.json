@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0015", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "164739053", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SI", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "16329100"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Reported to cause congenital carbohydrate malabsorption (congenital sucrase-isomaltase deficiency) in a recessive manner.", 
+    "URL": "http://evidence.pgp-hms.org/SI-G1073D", 
+    "Variant Name": "SI-G1073D", 
+    "Variant Page": "http://evidence.pgp-hms.org/SI-G1073D"
+}

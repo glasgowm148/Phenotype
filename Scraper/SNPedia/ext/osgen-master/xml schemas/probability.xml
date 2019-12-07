@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+
+<data>
+    <trait>
+        <name>
+            Eye Color
+        </name>
+        
+        <wikipedialink>
+            https://en.wikipedia.org/wiki/Eye_color
+        </wikipedialink>
+        
+        <description>
+            Eye color is an trait influenced by more than one gene. Currently, the number of genes that contribute to eye color is unknown. However, twin studies show that eye color is highly heritable.
+            <cite type="article">
+                <author>Bito LZ, Matheny A, Cruickshanks KJ, Nondahl DM, Carino OB</author>
+                <title>Eye color changes past early childhood. The Louisville Twin Study.</title>
+                <journal>Arch Ophthalmol.</journal>
+                <year>1997</year>
+                <volume>115</volume>
+                <number>5</number>
+                <pages>659–63</pages>
+                <DOI>doi:10.1001/archopht.1997.01100150661017</DOI>
+                <PMID>9152135</PMID> 
+            </cite>
+        </description>
+        
+        <super>
+        </super>
+        
+        <sub>
+        </sub>
+        
+    </trait>
+    <output type="probability">
+        <SNP>
+            <rsid>rs12913832</rsid>
+            <allele name = "A">
+                <oddsratio>.1</oddsratio>
+                <cite></cite>
+            </allele>
+            <allele name = "G">
+                <oddsratio>.05</oddsratio>
+                <cite></cite>
+            </allele>
+        </SNP>
+        
+        <SNP>
+            <rsid>rs9999999999</rsid>
+            <allele name = "T">
+                <oddsratio>.05</oddsratio>
+                <cite></cite>
+            </allele>
+        
+        </SNP>
+        
+        <outcome>
+            <value>Brown eyes</value>
+        </outcome>
+        
+        <baseline>
+            <ethnicity>European</ethnicity>
+            <probability>70%</probability>
+        </baseline>
+        
+        <baseline>
+            <ethnicity>African</ethnicity>
+            <probability>90%</probability>
+        </baseline>
+            
+    </output>
+</data>

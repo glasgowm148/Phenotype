@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0043", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "8787330", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CAV3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17060380", 
+        "17275750"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "-1", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant was implicated in causing Long QT-Syndrome (LQT9) and sudden infant death syndrome, but the evidence fails to reach significance and functional study failed to find a significance difference in biochemical behavior.", 
+    "URL": "http://evidence.pgp-hms.org/CAV3-T78M", 
+    "Variant Name": "CAV3-T78M", 
+    "Variant Page": "http://evidence.pgp-hms.org/CAV3-T78M"
+}

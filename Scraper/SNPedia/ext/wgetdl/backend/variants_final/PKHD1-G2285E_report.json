@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0022", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "51768795", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PKHD1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15805161"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Tentatively classified as benign. Computationally predicted to be disruptive, but this has been seen twice in various unaffected controls and has not among published patients with autosomal recessive polycystic kidney disease, significantly contradicting a severe pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/PKHD1-G2285E", 
+    "Variant Name": "PKHD1-G2285E", 
+    "Variant Page": "http://evidence.pgp-hms.org/PKHD1-G2285E"
+}

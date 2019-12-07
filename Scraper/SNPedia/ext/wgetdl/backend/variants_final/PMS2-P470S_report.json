@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.37", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "6026988", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PMS2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15256438"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Benign, common variant.", 
+    "URL": "http://evidence.pgp-hms.org/PMS2-P470S", 
+    "Variant Name": "PMS2-P470S", 
+    "Variant Page": "http://evidence.pgp-hms.org/PMS2-P470S", 
+    "dbSNP IDs": [
+        "rs1805321"
+    ]
+}

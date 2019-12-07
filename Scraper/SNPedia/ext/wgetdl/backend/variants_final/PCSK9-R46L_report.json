@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.01", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "55505647", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PCSK9", 
+    "Impact": "Protective", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "16554528"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant is reported to have a dominant protective effect against coronary heart disease. Carriers of this variant have about half the risk of coronary heart disease compared to non-carriers (6.3% risk in carriers vs. 11.8% risk in non-carriers).", 
+    "URL": "http://evidence.pgp-hms.org/PCSK9-R46L", 
+    "Variant Name": "PCSK9-R46L", 
+    "Variant Page": "http://evidence.pgp-hms.org/PCSK9-R46L", 
+    "dbSNP IDs": [
+        "rs11591147"
+    ]
+}

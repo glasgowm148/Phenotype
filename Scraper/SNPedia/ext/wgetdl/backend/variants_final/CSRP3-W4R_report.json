@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0039", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "19213986", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "CSRP3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12507422", 
+        "18505755"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "0", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Implicated in causing dilated cardiomyopathy, but seen in also seen in some unaffected controls with no family history of heart disease. The significance of this variant is unclear; if it is involved in the disease, the increased risk seems to be very low and may require other genetic or environmental factors.", 
+    "URL": "http://evidence.pgp-hms.org/CSRP3-W4R", 
+    "Variant Name": "CSRP3-W4R", 
+    "Variant Page": "http://evidence.pgp-hms.org/CSRP3-W4R"
+}

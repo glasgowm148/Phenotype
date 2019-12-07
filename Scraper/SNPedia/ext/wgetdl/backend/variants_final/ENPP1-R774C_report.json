@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.026", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "132206079", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ENPP1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12881724", 
+        "20137773"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Tentatively classified as benign. Initially reported as a recessive cause of infantile arterial calcification, but with no statistical significance. Other variants have been implicated as causal in these cases this variant. 5% allele frequency in caucasians contradicts this variant as having any highly pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/ENPP1-R774C", 
+    "Variant Name": "ENPP1-R774C", 
+    "Variant Page": "http://evidence.pgp-hms.org/ENPP1-R774C", 
+    "dbSNP IDs": [
+        "rs28933977"
+    ]
+}

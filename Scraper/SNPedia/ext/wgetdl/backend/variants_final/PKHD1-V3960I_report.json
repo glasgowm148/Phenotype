@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.013", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "51484226", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PKHD1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15698423"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign, reported as a nonpathogenic polymorphism found in controls.", 
+    "URL": "http://evidence.pgp-hms.org/PKHD1-V3960I", 
+    "Variant Name": "PKHD1-V3960I", 
+    "Variant Page": "http://evidence.pgp-hms.org/PKHD1-V3960I", 
+    "dbSNP IDs": [
+        "rs34548196"
+    ]
+}

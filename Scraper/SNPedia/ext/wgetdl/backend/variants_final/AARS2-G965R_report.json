@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "AARS2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause progressive leukoencephalopathy in a recessive manner, causing severe neurogeneration begining in young adulthood. This effect is recorded in ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000132555/), and comes from Dallabona et al 2014 (PMID: 24808023) who found this variant in one of 11 patients, compound heterozygous with another putative pathogenic variant.", 
+    "URL": "http://evidence.pgp-hms.org/AARS2-G965R", 
+    "Variant Name": "AARS2-G965R", 
+    "Variant Page": "http://evidence.pgp-hms.org/AARS2-G965R"
+}

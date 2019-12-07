@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.004", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "16852187", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TNFRSF13B", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "16007086", 
+        "16007087", 
+        "17492055"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "1", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Hypothesized to cause common variable immunodeficiency (CVID) in a dominant manner, but observations lack statistical significance and the frequency of people having this variant (0.8%) is much higher than the prevalence of the disease (0.002%). If this variant is associated with increased risk, carriers of this variant must still have an extremely low chance of developing CVID. Other genetic factors may be necessary.", 
+    "URL": "http://evidence.pgp-hms.org/TNFRSF13B-C104R", 
+    "Variant Name": "TNFRSF13B-C104R", 
+    "Variant Page": "http://evidence.pgp-hms.org/TNFRSF13B-C104R", 
+    "dbSNP IDs": [
+        "rs34557412"
+    ]
+}

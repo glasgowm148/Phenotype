@@ -1,0 +1,30 @@
+{
+    "Allele Frequency": "0.001", 
+    "Build 37 Chromosome": "chr4", 
+    "Build 37 Position": "3487374", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DOK7", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare and unreported, tentatively evaluated as benign. Some severe mutations in this gene cause congenital myasthenic syndromes, but these are usually more severe (frameshift or nonsense mutatinos) and there are many other genomes with rare missense polymorphisms.", 
+    "URL": "http://evidence.pgp-hms.org/DOK7-P214L", 
+    "Variant Name": "DOK7-P214L", 
+    "Variant Page": "http://evidence.pgp-hms.org/DOK7-P214L"
+}

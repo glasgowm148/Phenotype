@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.22", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "16251599", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ABCC6", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "10811882", 
+        "10913334", 
+        "11776382", 
+        "20038957"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "1", 
+        "Severity": "1", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This common polymorphism appears to not have a significant phenotypic impact. A few studies report weak but significant associations with plasma lipids (in Inuits) and thalidomide toxicity.", 
+    "URL": "http://evidence.pgp-hms.org/ABCC6-R1268Q", 
+    "Variant Name": "ABCC6-R1268Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCC6-R1268Q", 
+    "dbSNP IDs": [
+        "rs2238472"
+    ]
+}

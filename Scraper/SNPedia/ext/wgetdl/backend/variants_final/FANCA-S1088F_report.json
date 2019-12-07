@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.058", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "89815152", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FANCA", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "10094191", 
+        "14695169"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": "1", 
+        "Functional": null, 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Probably benign. One report hypothesized this variant causing Fanconi Anemia, but the allele frequency (3-7%) is high enough to contradict a highly penetrant pathogenic effect. Later authors have concluded this is a polymorphism, not pathogenic.", 
+    "URL": "http://evidence.pgp-hms.org/FANCA-S1088F", 
+    "Variant Name": "FANCA-S1088F", 
+    "Variant Page": "http://evidence.pgp-hms.org/FANCA-S1088F", 
+    "dbSNP IDs": [
+        "rs17233497"
+    ]
+}

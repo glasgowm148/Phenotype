@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0027", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "6371557", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PITPNM3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "17377520", 
+        "22405330"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "2", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This variant is reported to cause cone dystrophy in a dominant manner (defective colour vision, impaired central visual acuity and sensitivity to light). Although the authors reporting this variant are confident in it having a pathogenic effect, observations lack statistical significance. The variant is found in whole genome sequencing from a HapMap individual (GM06985) -- assuming these individuals are all healthy, this would imply the variant is not pathogenic, but we are unable to follow up with the individual to confirm that there are no symptoms.", 
+    "URL": "http://evidence.pgp-hms.org/PITPNM3-Q626H", 
+    "Variant Name": "PITPNM3-Q626H", 
+    "Variant Page": "http://evidence.pgp-hms.org/PITPNM3-Q626H"
+}

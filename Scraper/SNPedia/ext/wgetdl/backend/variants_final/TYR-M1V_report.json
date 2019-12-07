@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "9e-05", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "88911122", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TYR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "7704033"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause oculocutaneous albinism in a recessive manner. This effect is recorded in ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000004011/), and comes from Fukai et al 1995 (PMID: 7704033) who found this variant carried heterozygously by one of 12 patients studied.", 
+    "URL": "http://evidence.pgp-hms.org/TYR-M1V", 
+    "Variant Name": "TYR-M1V", 
+    "Variant Page": "http://evidence.pgp-hms.org/TYR-M1V"
+}

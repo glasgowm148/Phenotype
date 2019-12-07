@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0029", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "8015486", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ALOXE3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16116617", 
+        "19131948"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "-1", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Found in an 18m child with autosomal recessive congenital ichtyosis. In vitro studies showed activity similar to wild type, and family was unavailable for further study. Insufficient evidence exists to confirm pathogenicity of this variant.", 
+    "URL": "http://evidence.pgp-hms.org/ALOXE3-L237M", 
+    "Variant Name": "ALOXE3-L237M", 
+    "Variant Page": "http://evidence.pgp-hms.org/ALOXE3-L237M"
+}

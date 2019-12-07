@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.0041", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "94473287", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "ABCA4", 
+    "Impact": "Benign", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause Stargardt disease in a recessive manner, causing juvenile macular degeneration and vision loss. This effect is recorded in ClinVar by OMIM, and comes from Rozet et al 1998 (PMID: 9781034), who reported seeing this variant compound heterozygous in a patient from of 55 affected families. However, in ExAC data, this variant has an allele frequency of 0.42% of European ancestry \u2013 which means 1 in 118 individuals are carriers. An observation of 1 in 55 is likely a chance observation; a causal variant should be more significantly enriched in patients. In contrast, Rivera et al 2000 (PMID: 10958763) reported no enrichment for this variant in patients. (c.f. ABCA4 Ala1038Val, which ExAC reports 0.42% frequency in Europeans, had an allele frequency of 9% in Rivera et al's patients.)", 
+    "URL": "http://evidence.pgp-hms.org/ABCA4-L1970F", 
+    "Variant Name": "ABCA4-L1970F", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCA4-L1970F"
+}

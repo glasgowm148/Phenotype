@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.025", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "176722005", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NSD1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "14571271", 
+        "15720303"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Benign, reported as a polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/NSD1-A2546T", 
+    "Variant Name": "NSD1-A2546T", 
+    "Variant Page": "http://evidence.pgp-hms.org/NSD1-A2546T", 
+    "dbSNP IDs": [
+        "rs78247455"
+    ]
+}

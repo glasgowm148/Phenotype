@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "0.0081", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TGM1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Unreported, predicted to be damaging. Other recessive missense mutations in this gene are reported to cause ichthyosis.", 
+    "URL": "http://evidence.pgp-hms.org/TGM1-A700P", 
+    "Variant Name": "TGM1-A700P", 
+    "Variant Page": "http://evidence.pgp-hms.org/TGM1-A700P"
+}

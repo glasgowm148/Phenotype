@@ -1,0 +1,3 @@
+PyVCF==0.4.4
+reportlab==2.6
+snpy==0.1

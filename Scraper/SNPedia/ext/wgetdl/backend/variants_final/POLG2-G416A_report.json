@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.012", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "62476451", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "POLG2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "18195150"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": null, 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare but presumed benign. It was believed to be non-causal in a patient with a different mutation, and functional analysis found no difference from wild type.", 
+    "URL": "http://evidence.pgp-hms.org/POLG2-G416A", 
+    "Variant Name": "POLG2-G416A", 
+    "Variant Page": "http://evidence.pgp-hms.org/POLG2-G416A", 
+    "dbSNP IDs": [
+        "rs17850455"
+    ]
+}

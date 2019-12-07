@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.021", 
+    "Build 37 Chromosome": "chrX", 
+    "Build 37 Position": "31496398", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DMD", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "7881286"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Thought to be a rare nonpathogenic polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/DMD-H2921R", 
+    "Variant Name": "DMD-H2921R", 
+    "Variant Page": "http://evidence.pgp-hms.org/DMD-H2921R", 
+    "dbSNP IDs": [
+        "rs1800279"
+    ]
+}

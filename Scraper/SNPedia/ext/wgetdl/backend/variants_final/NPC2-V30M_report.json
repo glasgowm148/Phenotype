@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NPC2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause seizures and epilepsy in a recessive manner, as recorded in ClinVar by the Developmental Genetics Unit; King Faisal Specialist Hospital and Research Center. This assertion cites a supporting publication, Alazami et al 2015 (PMID: 25558065), which cite this as a mutation discovered through whole exome sequencing in a study of 143 consanguineous families with neurogenetic diagnoses. Other mutations in this gene are known to cause Neiman-Pick syndrome type C2 (a very rare variant), but neither of the affected siblings in the affected family had typical Neiman-Pick symptoms (progressive neurodegeneration or hepatosplenomegaly).", 
+    "URL": "http://evidence.pgp-hms.org/NPC2-V30M", 
+    "Variant Name": "NPC2-V30M", 
+    "Variant Page": "http://evidence.pgp-hms.org/NPC2-V30M"
+}

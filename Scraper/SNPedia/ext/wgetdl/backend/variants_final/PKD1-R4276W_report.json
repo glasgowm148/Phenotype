@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.002", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "2139814", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PKD1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "10200984"
+    ], 
+    "Scores": {
+        "Case/Control": "-1", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause autosomal dominant polycystic kidney disease, but it has been seen in a confirmed-healthy PGP participant and one other presumed-healthy control genome (overall frequency in randomly chosen controls is 1.7%).", 
+    "URL": "http://evidence.pgp-hms.org/PKD1-R4276W", 
+    "Variant Name": "PKD1-R4276W", 
+    "Variant Page": "http://evidence.pgp-hms.org/PKD1-R4276W", 
+    "dbSNP IDs": [
+        "rs114251396"
+    ]
+}

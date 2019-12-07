@@ -1,0 +1,40 @@
+{
+    "Allele Frequency": "0.017", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "113283484", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Mental and behavioral"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "DRD2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 6, 
+    "PMID List": [
+        "7907680", 
+        "8824240", 
+        "9650635", 
+        "12707934", 
+        "16402354", 
+        "17651483"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": "1", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Various studies report this variant in a dopamine receptor is associated with increased risk for schizophrenia. Assuming an average 1% chance of schizophrenia in the general population, combined data suggests carriers of this variant have a risk of 1.4% (0.4% increased risk above average).", 
+    "URL": "http://evidence.pgp-hms.org/DRD2-S311C", 
+    "Variant Name": "DRD2-S311C", 
+    "Variant Page": "http://evidence.pgp-hms.org/DRD2-S311C", 
+    "dbSNP IDs": [
+        "rs1801028"
+    ]
+}

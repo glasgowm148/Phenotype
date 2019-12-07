@@ -1,0 +1,286 @@
+<html>
+  <head>
+
+    <!-- attach the stylesheet -->
+    <link href="vis.css" rel="stylesheet">
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      var categories = ['Categories', 'Personal activities', 'Travel', 'PR, Media and Analysts', 'Employees (generic topics)', 'Employees (specific topics)', 'Customers & Partners', 'Managers of the Parent company', 'Integration of company acquired in 2014', //one color in two shades?
+        'Integration of company acquired in may 2015', { role: 'annotation' } ]
+
+      var week1 = ['Week 1', 13.48315, 37.92135, 2.247191, 8.146068, 19.10112, 9.550562, 0, 0, 9.550562, ''];
+      var week2 = ['Week 2', 23.63636, 11.63636, 18.90909, 12, 5.454545, 21.45455, 0, 0, 6.909091, ''];
+      var week3 = ['Week 3', 23.21428, 6.428571, 14.28571, 26.428571, 13.21429, 8.214286, 1.428571, 0, 6.785714, ''];
+      var week4 = ['Week 4', 11.33333, 25, 52.33333, 4.333333, 1.666667, 0, 0.6666667, 4.666667, 0, ''];
+      var week5 = ['Week 5', 14.34263, 20.71713, 7.171315, 7.968128, 35.85658, 4.38247, 0, 0, 9.561753, ''];
+      var week6 = ['Week 6', 22.16495, 2.57732, 4.123711, 29.38144, 6.701031, 14.43299, 0, 0, 20.61856, ''];
+      var week7 = ['Week 7', 21.8107, 6.584362, 2.880658, 16.46091, 24.27983, 14.81481, 1.646091, 0, 11.52263, ''];
+      var week8 = ['Week 8', 7.228916, 8.433735, 4.016064, 22.48996, 4.819277, 48.19277, 0, 0, 4.819277, ''];
+      var week9 = ['Week 9', 2.909091, 45.09091, 5.454545, 6.545455, 36, 0, 0, 0, 4, ''];
+      var week10 = ['Week 10', 8.609271, 31.78808, 5.298013, 19.86755, 9.933775, 8.609271, 0, 0, 15.89404, ''];
+      var week11 = ['Week 11', 14.1129, 29.43548, 1.008065, 17.94355, 24.79839, 3.024194, 0, 3.629032, 6.048387, ''];
+      var week12 = ['Week 12', 7.692307, 34.61538, 0, 0, 15.38461, 38.46154, 3.846154, 0, 0, ''];
+      var week13 = ['Week 13', 9.855072, 30.43478, 3.188406, 18.84058, 16.52174, 9.565217, 0, 1.15942, 10.43478, ''];
+      var week14 = ['Week 14', 0.6779661, 38.30508, 16.94915, 15.25424, 24.74576, 0, 0, 1.355932, 2.711864, ''];
+      var week15 = ['Week 15', 6.086957, 21.44928, 16.52174, 13.04348, 11.5942, 19.71014, 1.15942, 4.637681, 5.797101, 'Merger Talk Starts'];
+      var week16 = ['Week 16', 5.687204, 23.69668, 0, 46.91943, 4.739336, 3.791469, 0, 4.739336, 10.42654, ''];
+      var week17 = ['Week 17', 16.82243, 21.26168, 7.476635, 8.64486, 11.4486, 2.803738, 2.102804, 5.607477, 23.83178, ''];
+      var week18 = ['Week 18', 1.117318, 33.79888, 25.69832, 6.145251, 25.97765, 1.117318, 0, 3.351955, 2.793296, ''];
+      var week19 = ['Week 19', 25.9887, 31.63842, 2.824859, 10.73446, 12.42938, 3.954802, 2.824859, 6.779661, 2.824859, ''];
+      var week20 = ['Week 20', 15.10791, 11.15108, 3.23741, 14.38849, 15.46763, 9.712231, 0, 29.4964, 1.438849, ''];
+      var week21 = ['Week 21', 17.50973, 5.447471, 5.836576, 21.78988, 10.89494, 24.12451, 0, 5.836576, 8.560311, ''];
+      var week22 = ['Week 22', 9.67742, 24.51613, 0.6451613, 14.83871, 40, 4.83871, 0, 2.580645, 2.903226, ''];
+      var week23 = ['Week 23', 19.04762, 16.78004, 14.51247, 14.73923, 6.122449, 7.709751, 1.587302, 4.988662, 14.51247, ''];
+      var week24 = ['Week 24', 14.7482, 4.316547, 6.47482, 11.51079, 16.18705, 8.633094, 1.079137, 26.25899, 10.79137, ''];
+      var week25 = ['Week 25', 14.24419, 18.02326, 14.24419, 18.60465, 8.139535, 5.523256, 1.744186, 16.56977, 2.906977, ''];
+      var week26 = ['Week 26', 0, 35.4067, 0, 0.9569378, 26.31579, 24.88038, 0, 12.44019, 0, ''];
+
+      var weeksStart = [['Week 1'], ['Week 2'], ['Week 3'], ['Week 4'], ['Week 5'], ['Week 6'], ['Week 7'], ['Week 8'], ['Week 9'], 
+                       ['Week 10'], ['Week 11'], ['Week 12'], ['Week 13'], ['Week 14'], ['Week 15'], ['Week 16'], ['Week 17'], 
+                       ['Week 18'], ['Week 19'], ['Week 20'], ['Week 21'], ['Week 22'], ['Week 23'], ['Week 24'], ['Week 25'], 
+                       ['Week 26']]
+
+
+
+      //The below function adds the categories that are "checked" in the checkboxes above
+      function addCategory() {
+
+        //for resetting purposes: 
+        weeksStart = [['Week 1'], ['Week 2'], ['Week 3'], ['Week 4'], ['Week 5'], ['Week 6'], ['Week 7'], ['Week 8'], ['Week 9'], 
+                       ['Week 10'], ['Week 11'], ['Week 12'], ['Week 13'], ['Week 14'], ['Week 15'], ['Week 16'], ['Week 17'], 
+                       ['Week 18'], ['Week 19'], ['Week 20'], ['Week 21'], ['Week 22'], ['Week 23'], ['Week 24'], ['Week 25'], 
+                       ['Week 26']]
+        
+        //goes through all the categories' checkboxes (starts at 1 since the category names start at cat -ex: cat1)    
+        for (var c=1; c<10; c++) { 
+          //the below two variables compose the category name so that we can assess if it is checked
+          var catNameNum = c; 
+          var catName = "cat" + catNameNum;
+          if (document.getElementById(catName).checked==true) { //if it is checked
+            for (var i = 0; i<26; i++) { //goes through all the weeks (and adds them)
+             var num = i+1;
+             var name = eval("week"+num); //converts it into the variable???
+             weeksStart[i].push(name[c]);
+             console.log(weeksStart[i]);
+            }
+          } else { //if it is not checked
+             for (var i = 0; i<26; i++) {
+              var num = i+1;
+              var name = eval("week"+num); //converts it into the variable???
+              weeksStart[i].push(0);
+              }
+            }
+        }
+
+        //the below for loop adds the final one string to the end of all the arrays for each week
+        for (var j=0; j<26; j++) {
+          var num = j+1;
+          var name = eval("week"+num); //converts it into the variable name
+          weeksStart[j].push(name[10]);
+        }
+      }
+
+
+      //the below function returns the number of the week that is being selected from the drop down menu
+      function getWeek() { 
+        for (var i=1; i<27; i++) {
+          var weekName = "week"+i;
+          if (document.getElementById(weekName).selected == true) {
+            return i; //returns the number of the week
+          }
+        }
+      }
+
+
+      //the below function displays the categories for the week selected
+      function displayByWeek() {
+        if (document.getElementById("all").selected == true) {
+          console.log("should be displaying all??");
+          displayAll();
+
+          } else {
+
+              var weekDay = eval("week"+getWeek()); //makes it weekX
+
+              //the below data is used for when you want to display by week (this variables needs to only be created if any of these is selected)
+              var dataWeek = google.visualization.arrayToDataTable([
+                ['x', '% of Time Spent in each Category'],
+                ["Personal Activities", weekDay[1]], //the weekDay starts at 1 instead of 0 because the first element in this array is the strinsg "Weekx"
+                ["Travel", weekDay[2]],
+                ["PR, Media and Analysts", weekDay[3]],
+                ["Employees (generic topics)", weekDay[4]],
+                ["Employees (specific topics)", weekDay[5]],
+                ["Customers and Partners", weekDay[6]],
+                ["Managers of the Parent company", weekDay[7]],
+                ["Integration of company acquired in 2014", weekDay[8]],
+                ["Integration of company acquired in 2015", weekDay[9]]
+              ]);
+
+              //sets the options
+              var options = {'title':'Percentage of hours spent in each category during week '+getWeek(), //changes the title
+                             'width':1000,
+                             'height':700,
+                             //'isStacked': true, //isStacked:absolute, (to 100%)
+                             //'is3D':true,
+                             'isStacked': 'true',
+                           };
+
+             //creates the chart and draws it based on the data and options given (would not need to be 'new' once the drop down menu works dynamically because the element would have already been created)
+
+             var chart = new google.visualization.ColumnChart(document.getElementById('chart_div')); //does it need the new in here??
+             chart.draw(dataWeek, options);
+            }
+     
+      }
+
+      //the below function will display the chart if someone puts in a higher and lower band (ex: start from week 5)
+      function displayByTime() {
+
+      }
+
+    //the below function displays the chart with all the weeks and all the categories selected 
+    function displayAll() {
+          document.getElementById("all").selected = true; //resets it to show "all" in the drop down menu
+          addCategory(); //calls the function defined above (to return add the categories that are checked to the arrays that are global variables)
+
+          //data for the chart (a stacked graph): 
+          var data = google.visualization.arrayToDataTable([
+          categories,
+          //weeksStart //WHY DOES THIS NOT WORK?!??!?! (it needs arrays seperated by commas not an array of arrays)
+          weeksStart[0],
+          weeksStart[1],
+          weeksStart[2],
+          weeksStart[3],
+          weeksStart[4],
+          weeksStart[5],
+          weeksStart[6],
+          weeksStart[7],
+          weeksStart[8],
+          weeksStart[9],
+          weeksStart[10],
+          weeksStart[11],
+          weeksStart[12],
+          weeksStart[13],
+          weeksStart[14],
+          weeksStart[15],
+          weeksStart[16],
+          weeksStart[17],
+          weeksStart[18],
+          weeksStart[19],
+          weeksStart[20],
+          weeksStart[21],
+          weeksStart[22],
+          weeksStart[23],
+          weeksStart[24],
+          weeksStart[25]
+      ]);
+
+      //options for the categories: 
+      // Set chart options
+        var options = {'title':'Percentage of hours spent in each category per week',
+                       'width':1000,
+                       'height':700,
+                       //'isStacked': true, //isStacked:absolute, (to 100%)
+                       //'is3D':true,
+                       'isStacked': 'true', //could also do: 'percent'
+        //               vAxis: {
+        //                   minValue: 0,
+        //                   ticks: [0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1]
+        //                     }
+                      
+                     };
+
+         //creates the chart and then draws it
+         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+         chart.draw(data, options);
+    }
+
+      // Callback that creates and populates a data table,
+      // instantiates the chart, passes in the data and draws it.
+      function drawChart() {
+        displayAll(); //calls the function defined above to display all (the default mode!)
+      }
+
+
+
+    </script>
+  </head>
+
+  <body>
+
+<div id="options"> <!-- all of the style elements are in the css sheet (vis.css)-->
+
+  <form>
+  <input type="radio" name="data" value="normalized" checked>Normalized Data
+  <br>
+  <input type="radio" name="data" value="raw">Raw Data
+  </form>
+
+
+  <b>Select a specific week:</b>
+  <br>
+  <form>
+  <select id="weeks" onchange="displayByWeek()"> <!-- calls the displayByWeek() function -->
+    <option id="all" value="all">All</option> <!-- returns it to its original format -->
+    <option id="week1" value="week1">Week 1</option>
+    <option id="week2" value="week2">Week 2</option>
+    <option id="week3" value="week3">Week 3</option>
+    <option id="week4" value="week4">Week 4</option>
+    <option id="week5" value="week5">Week 5</option>
+    <option id="week6" value="week6">Week 6</option>
+    <option id="week7" value="week7">Week 7</option>
+    <option id="week8" value="week8">Week 8</option>
+    <option id="week9" value="week9" >Week 9</option>
+    <option id="week10" value="week10">Week 10</option>
+    <option id="week11" value="week11">Week 11</option>
+    <option id="week12" value="week12">Week 12</option>
+    <option id="week13" value="week13">Week 13</option>
+    <option id="week14" value="week14">Week 14</option>
+    <option id="week15" value="week15">Week 15</option>
+    <option id="week16" value="week16">Week 16</option>
+    <option id="week17" value="week17">Week 17</option>
+    <option id="week18" value="week18">Week 18</option>
+    <option id="week19" value="week19">Week 19</option>
+    <option id="week20" value="week20">Week 20</option>
+    <option id="week21" value="week21">Week 21</option>
+    <option id="week22" value="week22">Week 22</option>
+    <option id="week23" value="week23">Week 23</option>
+    <option id="week24" value="week24">Week 24</option>
+    <option id="week25" value="week25">Week 25</option>
+    <option id="week26" value="week26">Week 26</option>
+  </select>
+ </form>
+<br>
+<br>
+<!-- the below is the form with checkboxes for the different categories -->
+
+<b>Select the categories:</b>
+<br>
+ <form>
+  <input type="checkbox" id="cat1" value="Personal" onchange="displayAll()" checked> Personal Activities<br>
+  <input type="checkbox" id="cat2" value="Travel" onchange="displayAll()" checked> Travel<br>
+  <input type="checkbox" id="cat3" value="PR" onchange="displayAll()" checked> PR, Media and Analysts<br>
+  <input type="checkbox" id="cat4" value="Employees_generic" onchange="displayAll()" checked> Employees (generic topics)<br>
+  <input type="checkbox" id="cat5" value="Employees_specific" onchange="displayAll()" checked> Employees (specific topics)<br>
+  <input type="checkbox" id="cat6" value="Customers" onchange="displayAll()" checked> Customers and Partners<br>
+  <input type="checkbox" id="cat7" value="Managers" onchange="displayAll()" checked> Managers of the Parent company<br>
+  <input type="checkbox" id="cat8" value="Integration_2014" onchange="displayAll()" checked> Integration of company acquired in 2014<br>
+  <input type="checkbox" id="cat9" value="Integration_2015" onchange="displayAll()" checked> Integration of company acquired in may 2015<br>
+</form>
+
+</div> <!-- end of options div -->
+
+
+    <!--Div that will hold the chart-->
+    <div id="chart_div"></div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.31", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "9323910", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Genital and urinary", 
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "H6PD", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "12858176", 
+        "15827106", 
+        "16817821"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": "1", 
+        "Severity": "3", 
+        "Treatability": null
+    }, 
+    "Summary": "This common variant may have a small pathogenic effect by contributing to cortisone reductase deficiency (a rare abnormality) when homozygous and combined with a serious pathogenic variant. The same authors have tested and ruled out a contribution to polycystic ovary syndrome (similar phenotype, more common disease).", 
+    "URL": "http://evidence.pgp-hms.org/H6PD-R453Q", 
+    "Variant Name": "H6PD-R453Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/H6PD-R453Q", 
+    "dbSNP IDs": [
+        "rs6688832"
+    ]
+}

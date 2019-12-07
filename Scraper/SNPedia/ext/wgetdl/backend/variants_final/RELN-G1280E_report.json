@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.011", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "103234202", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RELN", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "14515139"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign.", 
+    "URL": "http://evidence.pgp-hms.org/RELN-G1280E", 
+    "Variant Name": "RELN-G1280E", 
+    "Variant Page": "http://evidence.pgp-hms.org/RELN-G1280E", 
+    "dbSNP IDs": [
+        "rs55689103"
+    ]
+}

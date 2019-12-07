@@ -1,0 +1,124 @@
+/* Filename: hungergames.css
+   Purpose:  Style for assignment 4 Hunger Games website
+   Author: Christina Pollalis
+   Date Modified: October 2 2015
+*/
+
+/* import the Google fonts. Must be first. */
+@import url(http://fonts.googleapis.com/css?family=Roboto|Geo);
+
+/*---------------------------------------------------------------------------*/
+
+/* A fix for semantic tags to be recognized by old browsers */
+aside, figure, header, nav, main, section {
+  display: block;
+}
+
+body { /*makes the basic changes to the page -- this affects almost all elements
+    on the page as they all apply to the body*/
+  font-family: "Roboto", "sans serif";
+  width:960px;
+  margin:auto;
+  background-color:black;
+  color:orange;
+  font-size:16px;
+}
+
+nav, figcaption { /*put the font and text alignment for the nav bar and the captions*/
+    font-family: "Geo", "sans serif";
+    text-align:center;
+}
+
+a { /*adds the correct style to the links (color and no underlining)*/
+    color:orange;
+    text-decoration: none;
+}
+
+section { /*changes the sections on the main page essentially that have borders
+    around them)*/
+    width:250px;
+    height:280px;
+    border: 2px solid orange;
+    float:left;
+    border-radius:20px;
+    margin-top:50px;
+    margin-left:15px;
+    margin-right:15px;
+    padding-top:0px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+
+.navitem { /*adds style to all the items on the nav bar*/
+    display: inline ;
+    width: 800px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-top: orange solid 1px;
+    border-bottom: orange solid 1px;
+    padding-right: 70px;
+    padding-left: 70px;
+    text-transform: uppercase; /*this is for the extracredit*/
+    letter-spacing: 3px; /*this is for the extracredit*/
+    /*the font is already done from above*/
+}
+
+#character aside { /*makes the image go to the left*/
+    float:left;
+    width:100px;
+    position: fixed; /*makes it stay at the bottom*/
+    left:100px;
+    bottom:0px;
+    margin:0;
+}
+
+#character section { /*makes the section on the right stay in its own column on
+    on the right -- this could be done in various ways so I included as a
+    comment another way I found how to do it*/
+    position:relative;
+    padding-left:335px;
+    /*instead of the above two, we could also put:
+    float:right;
+    but, this makes the text overlap with the image when making the screen smaller*/
+    width:600px;
+    border:none;
+    margin-top:5px;
+}
+
+figcaption { /*makes the caption under the image appear where it should*/
+    position: absolute;
+    bottom: 330px;
+    left: 180px;
+    right: 4px;
+    font-weight: 200%;
+}
+
+#character figure { /*puts the image exactly on the bottom*/
+    width:500px;
+    margin-bottom:0px;
+}
+
+a:hover { /*changes how the links look when being hovered on*/
+    color:#a31300;
+}
+
+header { /*changes all elements in the header*/
+    background-image:
+    url(images/katniss-180px.png),
+    url(images/hungergames-180px.jpg),
+    url(images/peeta-180px.png); /*this is for extracredit*/
+    background-position: left,center,right; /*this is for extracredit*/
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height:190px;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    width:fixed 800px;
+}
+
+.firstP::first-letter { /*this is for the extracredit*/
+    font-size: 40px; /*makes the font larger*/
+    text-transform: uppercase; /*makes the font uppercase*/
+}

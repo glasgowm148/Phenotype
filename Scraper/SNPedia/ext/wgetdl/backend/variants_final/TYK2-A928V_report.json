@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0059", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "10464843", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TYK2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "18270328"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign.", 
+    "URL": "http://evidence.pgp-hms.org/TYK2-A928V", 
+    "Variant Name": "TYK2-A928V", 
+    "Variant Page": "http://evidence.pgp-hms.org/TYK2-A928V", 
+    "dbSNP IDs": [
+        "rs35018800"
+    ]
+}

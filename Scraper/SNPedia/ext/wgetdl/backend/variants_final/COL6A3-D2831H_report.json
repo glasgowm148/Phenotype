@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.068", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "238247734", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "COL6A3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "9536084", 
+        "15563506"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": "1", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign, reported by Pan et al. as a presumed-nonpathogenic variant in the gene.", 
+    "URL": "http://evidence.pgp-hms.org/COL6A3-D2831H", 
+    "Variant Name": "COL6A3-D2831H", 
+    "Variant Page": "http://evidence.pgp-hms.org/COL6A3-D2831H", 
+    "dbSNP IDs": [
+        "rs36104025"
+    ]
+}

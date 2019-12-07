@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0027", 
+    "Build 37 Chromosome": "chr13", 
+    "Build 37 Position": "20763642", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "GJB2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "11494963", 
+        "15790391", 
+        "19719946"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": "0", 
+        "Treatability": null
+    }, 
+    "Summary": "Probable non-pathogenic; other variants in gene associated with hearing loss.\nA few controversial mutations of uncertain or evolving clinical signi\ufb01cance are included in this prototype.\nExamples include V27I, M34T, V37I, and E114G in the GJB2 gene and IVS2-2AG in the SLC26A5 gene.\nThis variant is also observed both in Case and Control in the study of hearing loss.", 
+    "URL": "http://evidence.pgp-hms.org/GJB2-V27I", 
+    "Variant Name": "GJB2-V27I", 
+    "Variant Page": "http://evidence.pgp-hms.org/GJB2-V27I", 
+    "dbSNP IDs": [
+        "rs2274084"
+    ]
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE>
+<html>
+	<head>
+
+		<title>Visualization</title>
+
+		<!--original css-->
+		<link rel="stylesheet" href="css/new.css">
+		<!--font awesome css-->
+		<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+		<!--font-->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,400' rel='stylesheet' type='text/css'>
+
+
+		<!-- d3 + jquery -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    	<!--js-->
+		<script src="js/index.js"></script>
+
+		<!--tooltips-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!-- ********* old header content ******* -->
+		<script type="text/javascript" charset="utf8" src="js/jquery-1.10.2.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- CSS concatenated and minified via ant build script-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+    	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <!-- .old header content-->
+
+	    <!-- need for tooltips -->
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	    <!-- Added from the visualization that was working on the previous template -->
+		<script type="text/javascript">
+    		// Hack to make this example display correctly in an iframe on bl.ocks.org
+    		d3.select(self.frameElement).style("height", "1000px");
+ 		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+	      <div class="navbar navbar-fixed-top navbar-inverse">
+	        <div class="navbar-inner">
+	          <div class="container">
+	            <span class="brand"><img src="assets/img/dna.png"> Visualization</span>
+	          </div>
+	        </div>
+	      </div>
+	    </header>
+
+	    <!--tab code source: http://webdesignerhut.com/create-pure-css-tabs/ -->
+	    <div class="tabs">
+		   	<!-- Radio button and lable for #tab-content1 -->
+			<input type="radio" name="tabs" id="tab1" checked>
+			<label for="tab1">
+				<span>Overview</span>
+			</label>
+
+			<!-- Radio button and lable for #tab-content2 -->
+			<input type="radio" name="tabs" id="tab2">
+			<label for="tab2">
+				<span>Categories</span>
+			</label>
+
+			<!-- Radio button and lable for #tab-content3 -->
+			<input type="radio" name="tabs" id="tab3">
+			<label for="tab3">
+				<span>Glossary</span>
+			</label>
+
+
+
+			<!-- ******************* OVERVIEW CONTENT ********************* -->
+
+			<!-- Tab 1 Content-->
+			<div id="tab-content1" class="tab-content">
+
+				<!--create sidebars first-->
+				<!-- this was a screenshot, inputted by lauren: -->
+				<!-- <div class="toolbar"> 
+					<img src="img/toolbar.png" alt="toolbar" width="100%"/>
+				</div> -->
+
+				<!-- The below code is taken from the one lauren wrote w the bubbles visualization -->
+
+				<div class="col-sm-2" style="background-color:#f2f2f2;">
+		    			<div style="background-color:#f2f2f2;height:77%">
+
+	                    <center><h4>Key</h4></center>
+
+				<!-- @@@@ note to self: come back and clean this with css @@@@-->
+
+	                    <!-- *** all the rest of the legends start here (grouped seperately because of how they are displayed) *** -->
+
+	                    <br>
+
+            			<div id="AllLegends" class="legend-scale" >
+
+            				<button class="btn btn-click btn-md" title="The potential effect of a gene variant describes how it may influence a persons chances of developing a disease or what medication may work best for them.">
+	            				<b>Color </b> 
+							    <i class="fa fa-info-circle fa-lg"></i>
+							</button>
+
+            				<table class="legend-table">
+            					<tr>
+            						<td><div style='background-color:#cccccc;height:16px;width:30px;border:1px solid #999'></div></td>
+            						<td>Benign</td>
+            					</tr>
+            					<tr>
+            						<td><div style='background-color:#ff6666;height:16px;width:30px;border:1px solid #999'></div></td>
+            						<td>Pathogenic</td>
+            					</tr>
+            					<tr>
+            						<td><div style='background-color:#89b4fd;height:16px;width:30px;border:1px solid #999'></div></td>
+            						<td>Protective</td>
+            					</tr>
+            					<tr>
+            						<td><div style='background-color:#e77ee7;height:16px;width:30px;border:1px solid #999'></div></td>
+            						<td>Pharma/Drug Response</td>
+            					</tr>
+            				</table>
+
+            				<br><br>
+
+						    <div>
+						    	<button class="btn btn-click btn-md" title="Carrier Status is important in determining the gene variant’s effect. Each person inherits two variants of each gene, one from their biological father and one from their biological mother. A person is either a carrier of or affected by each gene.">
+								    <b>Filled vs. Hollow</b> 
+								    <i class="fa fa-info-circle fa-lg"></i>
+								</button>
+
+							    <br><img id="circle" src="img/filled.png" width="20px" alt="Rarity"/>&nbspPotentially Affected
+							    <br><img id="circle" src="img/hallow.png" width="20px" alt="Rarity"/>&nbspCarrier
+						    </div>
+
+						    <br><br>
+
+						    <div id="size_key">
+						    	<button id="size_info_btn" class="btn btn-click btn-md" title="Risk describes how often individuals carrying the variant develop the associated disease. Rarity describes the percentage of the population that has this genetic variant.">
+	              					<b><span id="size_type">Size by Risk</span></b>
+	              					<i class="fa fa-info-circle fa-lg"></i>
+	              				</button>
+	              				<br><img id="sizing" src="img/circlesizing.png" width="100%"> 
+	              				<br><span id="size_left" style="float:left">Less Risk</span><span id="size_right" style="float:right">More Risk</span> 
+						    </div>
+
+						    <br>
+						    <br>
+
+						    <!-- RISK KEY STARTS -->
+            				<div id="risk_key">
+              					<a id="risk_tooltip"></a>
+              				</div> <!-- end risk key-->
+
+            				<!-- RARITY KEY STARTS!!!! (ENCOMPASSES A LOT OF STUFF THAT WAS REPEATED ABOVE BECAUSE IT OVERRIDES RISK TOOLTIP ABOVE!!): -->
+            				<div id="rarity_key" style="visibility: hidden;">
+	            				<a id="rarity_tooltip"></a>
+          					</div> <!-- end rarity key -->
+
+          				</div>  <!-- end of #legend-scale -->
+
+		    		</div>
+		    	</div> <!-- end col-sm-2 (legend bootstrap) (end of the code taken from lauren's visualization) -->
+	
+				<!-- START OF INSERT BY CHRISTINA A.K.A. VISUALIZATION -->
+						<!--create graph-->
+						<div id="main">
+							<!-- <div id="sequence">
+							</div> -->
+							<div id="chart" style="width:80%;">
+							</div>
+						</div>
+
+						<div class="normal"> 
+							<!-- First toggle: People -->
+							<select id="people" onchange="clickToggle()">
+	    						<option id="all" value="all" selected>All</option>
+							    <option id="p1" value="p1">Jamie</option>
+							    <option id="p2" value="p2">Jessie</option>
+							    <option id="shared" value="shared">Shared</option> 
+	 		 				</select>
+	 		 				<!-- Second toggle: Certainty of Evidence -->
+	 		 				<select id="certOfEvidence">
+	 		 					<option id="default" value="all" selected>Certainty of Evidence/All</option>
+	    						<option id="uncertain" value="uncertain">Uncertain</option>
+							    <option id="likely" value="likely">Likely</option>
+							    <option id="well_established" value="well_established">Well Established</option>
+	 		 				</select>
+	 		 				<!-- Third toggle: Health Effect -->
+	 		 				<select id="effect">
+	 		 					<option id="default" value="all" selected>Health Effect/All</option>
+	    						<option id="pathogenic" value="pathogenic">Pathogenic</option>
+							    <option id="benign" value="benign">Benign</option>
+							    <option id="protective" value="protective">Protective</option>
+	 		 				</select>
+	 		 				<!-- Fourth toggle: Categories -->
+	 		 				<select id="category">
+	 		 					<option id="default" value="all" selected>Category/All</option>
+	    						<option id="cancer" value="cancer" >Cancer</option>
+							    <option id="heart" value="heart">Heart Disease</option>
+							    <option id="skin" value="skin">Skin</option>
+	 		 				</select>
+ 		 				</div>	
+				<!-- END OF LAST INSERT BY CHRISTINA -->
+
+				<br>
+				<br>
+				<!-- A C C O R D I O N -->
+				<div class="col-sm-3" style="background-color:#f2f2f2; height:80%; margin-left: 75%; margin-top: -46%">
+		    			<div style="background-color:#f2f2f2;">
+			    			<center><h4>Variant Information</h4></center>
+			    			<!-- <div id="var_info" style="font-size:16px"></div>
+			    			<div id="second_info" style="max-height:200px;overflow-y:scroll"></div> -->
+
+			    			<!--ACCORDION BEGINS-->
+
+							<div class="panel-group" id="accordion" style="max-height:85%;overflow-y:scroll">
+
+								<!-- Selected Variant: ( first panel)-->
+
+								<div class="panel panel-default" id="clicked-variant">
+							        <div class="panel-heading">
+								        <h4 class="panel-title">
+								        	<a id="var_info" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >Example Variant</a>
+								        	<table style="float:right">
+								        		<tr>
+										        	<td>
+										        		<button id="pin-variant" class="btn btn-sm btn-add-panel" style="height:22px">Save</button>
+										        	</td>
+								      			</tr>
+								      		</table>
+								      	</h4> 	
+							        </div>
+
+							        <div id="collapseOne" class="panel-collapse collapse in">
+							            <div class="panel-body" id="second_info" style="max-height:35%;overflow-y:scroll">
+
+							            	<div id='var-intro'>
+							            		Information about a selected variant will appear here. Saved variants will appear in a list below.
+							            	</div>
+
+							            	<div id='var-details'>
+								            	<span id='var_summary'><b>Summary: </b><span id='var_summary'></span></span><br>
+								            	<span id='var-certainty'><b>Certainty of Evidence: </b><span id='var_certainty_of_evidence'></span></span><br>
+								            	<span id='var-effect'><b>Health Effect: </b><span id='var_health_effect'></span></span><br>
+								            	<span id='var-impact'><b>Impact: </b><span id='var_impact'></span></span><br>
+								            	<span id='var-rarity'><b>Rarity: </b><span id='var_rarity'></span></span><br>
+								            	<span id='var-risk'><b>Risk: </b><span id='var_risk'></span></span><br>
+								            	<span id='var-category'><b>Category: </b><span id='var_category'></span></span><br>
+								            	<span id='var-affected-info' style='display:none'></span>
+								            </div>
+
+							            </div>
+							        </div>
+							    </div>
+
+							    <!-- Saved Variants: -->
+
+							    <div class="panel panel-default template">
+
+							        <div class="panel-heading"> 
+							        	<span class="glyphicon glyphicon-remove-circle pull-right"></span>
+							            <h4 class="panel-title">
+									        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+							      		</h4>
+							        </div>
+
+							        <div id="collapseThree" class="panel-collapse collapse saved-variant">
+							            <div class="panel-body" style="max-height:35%;overflow-y:scroll"></div>
+							        </div>
+
+							    </div>
+
+							</div>
+						
+			    	</div></div> <!--end col-sm-3 (variant info column) -->
+
+			    </div> <!--end row-->
+
+
+				<div class="overview" style="z-index:0;">
+					<div id="overview_graph" style="margin-right:15%">
+						
+					   
+					   
+					</div>
+
+
+				</div><!-- .overview -->
+
+
+
+
+			</div> <!-- #tab-content1 -->
+
+
+			<!--*************** CATEGORIES CONTENT ****************-->
+
+			<!-- Tab 2 Content-->
+			<div id="tab-content2" class="tab-content">
+
+				<!--create sidebars first-->
+				<div class="toolbar">
+					<img src="img/toolbar.png" alt="toolbar" width="100%"/>
+				</div>
+
+				<!-- VARIANT INFO ACCORDION : CODE COPIED FROM LAUREN'S VISUALIZATION -->
+
+				<div class="col-sm-3" style="background-color:#f2f2f2; height:80%">
+		    			<div style="background-color:#f2f2f2;">
+			    			<center><h4>Variant Information</h4></center>
+			    			<!-- <div id="var_info" style="font-size:16px"></div>
+			    			<div id="second_info" style="max-height:200px;overflow-y:scroll"></div> -->
+
+			    			<!--ACCORDION BEGINS-->
+
+							<div class="panel-group" id="accordion" style="max-height:85%;overflow-y:scroll">
+
+								<!-- Selected Variant: ( first panel)-->
+
+								<div class="panel panel-default" id="clicked-variant">
+							        <div class="panel-heading">
+								        <h4 class="panel-title">
+								        	<a id="var_info" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >Example Variant</a>
+								        	<table style="float:right">
+								        		<tr>
+								        			<td>
+										        		<button id="pin-variant" class="btn btn-sm btn-add-panel" style="height:22px"><i class="fa fa-lg fa-thumb-tack"></i></i></button>
+									      			</td>
+										        	<td>
+										        		<button id="save-variant" class="btn btn-xs" style="height:22px">Save</button>
+										        	</td>
+								      			</tr>
+								      		</table>
+								      	</h4> 	
+							        </div>
+
+							        <div id="collapseOne" class="panel-collapse collapse in">
+							            <div class="panel-body" id="second_info" style="max-height:35%;overflow-y:scroll">
+
+							            	<div id='var-intro'>
+							            		Information about a selected variant will appear here. Saved variants will appear in a list below.
+							            	</div>
+
+							            	<div id='var-details'>
+								            	<span id='var-summary'><b>Summary: </b><span id='var-summary-info'></span></span><br>
+								            	<span id='var-certainty'><b>Certainty of Evidence: </b><span id='var-certainty-info'></span></span><br>
+								            	<span id='var-effect'><b>Health Effect: </b><span id='var-effect-info'></span></span><br>
+								            	<span id='var-impact'><b>Impact: </b><span id='var-impact-info'></span></span><br>
+								            	<span id='var-rarity'><b>Rarity: </b><span id='var-rarity-info'></span></span><br>
+								            	<span id='var-risk'><b>Risk: </b><span id='var-risk-info'></span></span><br>
+								            	<span id='var-category'><b>Category: </b><span id='var-category-info'></span></span><br>
+								            	<span id='var-affected-info' style='display:none'></span>
+								            </div>
+
+							            </div>
+							        </div>
+							    </div>
+
+							    <!-- Saved Variants: -->
+
+							    <div class="panel panel-default template">
+
+							        <div class="panel-heading"> 
+							        	<span class="glyphicon glyphicon-remove-circle pull-right"></span>
+							            <h4 class="panel-title">
+									        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+							      		</h4>
+							        </div>
+
+							        <div id="collapseThree" class="panel-collapse collapse saved-variant">
+							            <div class="panel-body" style="max-height:35%;overflow-y:scroll"></div>
+							        </div>
+
+							    </div>
+
+							</div>
+
+<!-- 							<button style="position:absolute;bottom:10px;right:10px" data-role="button" id="testButton" size="10px" style="visibility:hidden">SAVE</button>-->							
+<!-- 								<button style="position:absolute;bottom:10px;left:10px" data-role="button" id="saveButton" size="10px" style="visibility:hidden">CLEAR</button>
+ -->
+						
+			    	</div></div> <!--end col-sm-3 (variant info column) -->
+
+				<!--create graph-->
+				<table class="categories"> <!--4 column, 4 row table with indices (row, column)-->
+					<tr>
+						<!--Table Cell (0,0)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with birth defects as well as gene variants associated with birth defects and genetic syndromes affecting multiple aspects of biology. (Ex. Increased or decreased susceptibility to cleft palate or dwarfism).">
+          						<img src="img/anatomical.png" alt="Anatomical and Congenial" height="45px" style="opacity: 1;" />
+         					</a>
+
+     					</td>
+     					<!--Table Cell (0,1)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the blood. (Ex. Increased or decreased susceptibility to Hemophilia or Anemia).">
+          						<img src="img/blood.png" alt="Blood" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (0,2)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the organs involved in breathing such as the lungs. (Ex. Increased or decreased susceptibility to Bronchitis or COPD).">
+          						<img src="img/breathing.png" alt="Breathing" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (0,3)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with an increased or decreased risk of cancer. (Ex. Increased or decreased susceptibility to Breast cancer or Melanoma).">
+          						<img src="img/cancer.png" alt="Cancer" height="40px" style="opacity: 1;" />
+         					</a>
+						</td>
+					</tr>
+					<tr>
+						<!--Table Cell (1,0)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that may affect how one reacts to medications.">
+          						<img src="img/drug.png" alt="Drug Response" height="35px" style="opacity: 1;" />
+         					</a>
+     					</td>
+     					<!--Table Cell (1,1)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with the genitals and reproductive organs as well as gene variants that are associated with urinary system, which includes the kidneys. (Ex. Increased or decreased susceptibility to Kidney Disease or Endometriosis).">
+          						<img src="img/genital.png" alt="Genital and Urinary" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (1,2)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with hearing and vision. (Ex. Increased or decreased susceptibility to Deafness or Age-related Macular Degeneration).">
+          						<img src="img/hearing.png" alt="Hearing and Vision" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (1,3)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with the heart and the circulatory system that are not specifically associated with the blood. (Ex. Increased or decreased susceptibility to heart defects or arrhythmia).">
+          						<img src="img/heart.png" alt="Heart and Circulatory" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+					</tr>
+					<tr>
+						<!--Table Cell (2,0)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with the immune system and autoimmune diseases. (Ex. Increased or decreased susceptibility to the flu or Celiac Sprue disease).">
+          						<img src="img/immune.png" alt="Immune System" height="35px" style="opacity: 1;" />
+         					</a>
+     					</td>
+     					<!--Table Cell (2,1)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with mental and behavioral disorders. (Ex. Increased or decreased susceptibility to depression or schizophrenia).">
+          						<img src="img/mental.png" alt="Mental and Behavioral" height="40px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (2,2)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are associated with the chemical transformations that happen throughout the body. (Ex. Increased or decreased susceptibility to Cushing’s Disease or high cholesterol).">
+          						<img src="img/metabolism.png" alt="Metabolism" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (2,3)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the teeth, gums, liver, and the rest of the digestive system. (Ex. Increased or decreased susceptibility to Crohn’s disease or gum disease).">
+          						<img src="img/mouth.png" alt="Mouth, Liver, and Digestive" height="45px" style="opacity: 1;" />
+         					</a>
+						</td>
+					</tr>
+					<tr>
+						<!--Table Cell (3,0)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the muscles, bones, and connective tissue. (Ex. Increased or decreased susceptibility to Arthritis or Muscular Dystrophy).">
+          						<img src="img/muscular.png" alt="Muscular, Skeletal, and Connective Tissue" height="45px" style="opacity: 1;" />
+         					</a>
+     					</td>
+     					<!--Table Cell (3,1)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the brain and the spinal cord / nervous system. (Ex. Increased or decreased susceptibility to Seizures or Multiple Sclerosis).">
+          						<img src="img/nervous.png" alt="Nervous System" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (3,2)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants associated with the skin. (Ex. Increased or decreased susceptibility to Eczema or Psoriasis).">
+          						<img src="img/skin.png" alt="Skin" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+						<!--Table Cell (3,3)-->
+						<td>
+							<a href="#" data-toggle="tooltip" title="Contains gene variants that are benign, do not fit into the other health categories, or that may have been missed when sorted into health categories.">
+          						<img src="img/other.png" alt="Other" height="35px" style="opacity: 1;" />
+         					</a>
+						</td>
+					</tr>
+
+				</table>
+
+
+
+			</div> <!-- #tab-content2 -->
+
+			<!-- Tab 3 Content-->
+			<div id="tab-content3" class="tab-content">
+				<h3>Glossary</h3>
+
+				<div class="glossary">
+
+					<!--***************GLOSSARY MECHANICS************************-->
+
+				   	<!-- Radio button and lable for #tab-contentA -->
+					<input type="radio" name="glossary" id="glossaryA" checked>
+					<label for="glossaryA">
+						<span>A</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentB -->
+					<input type="radio" name="glossary" id="glossaryB">
+					<label for="glossaryB">
+						<span>B</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentC -->
+					<input type="radio" name="glossary" id="glossaryC">
+					<label for="glossaryC">
+						<span>C</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentD -->
+					<input type="radio" name="glossary" id="glossaryD">
+					<label for="glossaryD">
+						<span>D</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentE -->
+					<input type="radio" name="glossary" id="glossaryE">
+					<label for="glossaryE">
+						<span>E</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentF -->
+					<input type="radio" name="glossary" id="glossaryF">
+					<label for="glossaryF">
+						<span>F</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentG -->
+					<input type="radio" name="glossary" id="glossaryG">
+					<label for="glossaryG">
+						<span>G</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentH -->
+					<input type="radio" name="glossary" id="glossaryH">
+					<label for="glossaryH">
+						<span>H</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentI -->
+					<input type="radio" name="glossary" id="glossaryI">
+					<label for="glossaryI">
+						<span>I</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentJ -->
+					<input type="radio" name="glossary" id="glossaryJ">
+					<label for="glossaryJ">
+						<span>J</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentK -->
+					<input type="radio" name="glossary" id="glossaryK">
+					<label for="glossaryK">
+						<span>K</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentL -->
+					<input type="radio" name="glossary" id="glossaryL">
+					<label for="glossaryL">
+						<span>L</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentM -->
+					<input type="radio" name="glossary" id="glossaryM">
+					<label for="glossaryM">
+						<span>M</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentN -->
+					<input type="radio" name="glossary" id="glossaryN">
+					<label for="glossaryN">
+						<span>N</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentO -->
+					<input type="radio" name="glossary" id="glossaryO">
+					<label for="glossaryO">
+						<span>O</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentP -->
+					<input type="radio" name="glossary" id="glossaryP">
+					<label for="glossaryP">
+						<span>P</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentQ -->
+					<input type="radio" name="glossary" id="glossaryQ">
+					<label for="glossaryQ">
+						<span>Q</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentR -->
+					<input type="radio" name="glossary" id="glossaryR">
+					<label for="glossaryR">
+						<span>R</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentS -->
+					<input type="radio" name="glossary" id="glossaryS">
+					<label for="glossaryS">
+						<span>S</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentT -->
+					<input type="radio" name="glossary" id="glossaryT">
+					<label for="glossaryT">
+						<span>T</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentU -->
+					<input type="radio" name="glossary" id="glossaryU">
+					<label for="glossaryU">
+						<span>U</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentV -->
+					<input type="radio" name="glossary" id="glossaryV">
+					<label for="glossaryV">
+						<span>V</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentW -->
+					<input type="radio" name="glossary" id="glossaryW">
+					<label for="glossaryW">
+						<span>W</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentX -->
+					<input type="radio" name="glossary" id="glossaryX">
+					<label for="glossaryX">
+						<span>X</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentY -->
+					<input type="radio" name="glossary" id="glossaryY">
+					<label for="glossaryY">
+						<span>Y</span>
+					</label>
+
+					<!-- Radio button and lable for #tab-contentZ -->
+					<input type="radio" name="glossary" id="glossaryZ">
+					<label for="glossaryZ">
+						<span>Z</span>
+					</label>
+
+					<!--***************GLOSSARY CONTENT************************-->
+
+					<!-- Tab A Content-->
+					<div id="glossary-contentA" class="glossary-content">
+
+						<h3>A</h3>
+
+						<p><b>Anatomical and Congenital:</b> Contains gene variants associated with birth defects as well as gene variants associated with birth defects and genetic syndromes affecting multiple aspects of biology. (Ex. Increased or decreased susceptibility to cleft palate or dwarfism)
+
+					</div> <!-- #glossary-contentA -->
+
+					<!-- Tab B Content-->
+					<div id="glossary-contentB" class="glossary-content">
+
+						<h3>B</h3>
+
+						<p><b>Benign:</b> Not associated to a disease.<br>
+				       	<p><b>Blood:</b> Contains gene variants associated with the blood.  (Ex. Increased or decreased susceptibility to Hemophilia or Anemia).<br>
+				       	<p><b>Breathing:</b> Contains gene variants associated with the organs involved in breathing such as the lungs. (Ex. Increased or decreased susceptibility to Bronchitis or COPD).
+
+					</div> <!-- #glossary-contentB -->
+
+					<!-- Tab C Content-->
+					<div id="glossary-contentC" class="glossary-content">
+
+						<h3>C</h3>
+
+						<p><b>Cancer:</b> Contains gene variants associated with an increased or decreased risk of cancer.  (Ex. Increased or decreased susceptibility to Breast cancer or Melanoma).<br>
+				    	<p><b>Carrier Status:</b> Carrier Status is important in determining the gene variant’s effect. Each person inherits two variants of each gene, one from their biological father and one from their biological mother. A person is either a carrier of or affected by each gene. <br>
+				    	<p><b>Carrier:</b> A carrier for a particular gene variant is heterozygous for a gene variant with a recessive effect. This means that a carrier will not be affected by the gene variant; however if their child receives this gene variant from both parents, the child will potentially be affected.<br>
+				    	<p><b>Certainty:</b> The certainty of a gene variant describes how well-established the scientific data is behind the effect of the gene variant. <br>
+				    	<p><b>Compound Heterozygous:</b> The variants of two different genes work together to create the same effect as being homozygous for one of the genes.
+
+					</div> <!-- #glossary-contentC -->
+
+					<!-- Tab D Content-->
+					<div id="glossary-contentD" class="glossary-content">
+
+						<h3>D</h3>
+
+						<p><b>Dominant:</b> Dominant variants are expected to have the reported impact when just one copy is inherited (heterozygous).<br>
+						<p><b>Drug Response:</b> Contains gene variants that may affect how one reacts to medications.
+
+					</div> <!-- #glossary-contentD -->
+
+					<!-- Tab E Content-->
+					<div id="glossary-contentE" class="glossary-content">
+
+						<h3>E</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentE -->
+
+					<!-- Tab F Content-->
+					<div id="glossary-contentF" class="glossary-content">
+
+						<h3>F</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentF -->
+
+					<!-- Tab G Content-->
+					<div id="glossary-contentG" class="glossary-content">
+						<h3>G</h3>
+
+						<p><b>Genital and Urinary:</b> Contains gene variants that are associated with the genitals and reproductive organs as well as gene variants that are associated with urinary system, which includes the kidneys. (Ex. Increased or decreased susceptibility to Kidney Disease or Endometriosis).
+
+					</div> <!-- #glossary-contentG -->
+
+					<!-- Tab H Content-->
+					<div id="glossary-contentH" class="glossary-content">
+
+						<h3>H</h3>
+
+						<p><b>Health Category:</b> The health category of the gene variant is aspect of individual biology and health that the gene variant may affect. Many times, gene variants affect multiple aspects of individual biology or multiple areas of the body, and therefore fall into/appear in multiple categories. <br>
+						<p><b>Health Effect:</b> Health Effect is based on three different variables. Severity, treatability and risk of the disease associated with the variant. The higher the health effect score, the more important it is to discuss with a medical professional. <br>
+						<p><b>Hearing and Vision:</b> Contains gene variants that are associated with hearing and vision. (Ex. Increased or decreased susceptibility to Deafness or Age-related Macular Degeneration). <br>
+						<p><b>Heart and Circulatory:</b> Contains gene variants that are associated with the heart and the circulatory system that are not specifically associated with the blood.  (Ex. Increased or decreased susceptibility to heart defects or arrhythmia). <br>
+						<p><b>Heterozygous:</b> The two variants of the gene are different (the person has two different variants). <br>
+						<p><b>Homozygous:</b> The two variants of the gene are the same.
+
+					</div> <!-- #glossary-contentH -->
+
+					<!-- Tab I Content-->
+					<div id="glossary-contentI" class="glossary-content">
+
+						<h3>I</h3>
+
+						<p><b>Immune System:</b> Contains gene variants that are associated with the immune system and autoimmune diseases. (Ex. Increased or decreased susceptibility to the flu or Celiac Sprue disease).
+
+					</div> <!-- #glossary-contentI -->
+
+					<!-- Tab J Content-->
+					<div id="glossary-contentJ" class="glossary-content">
+
+						<h3>J</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentJ -->
+
+					<!-- Tab K Content-->
+					<div id="glossary-contentK" class="glossary-content">
+
+						<h3>K</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentK -->
+
+					<!-- Tab L Content-->
+					<div id="glossary-contentL" class="glossary-content">
+
+						<h3>L</h3>
+
+						<p><b>Likely:</b> The research behind the effect of a gene variant is not as well-established, and therefore the effect described is only likely linked to the gene variant.
+
+					</div> <!-- #glossary-contentL -->
+
+					<!-- Tab M Content-->
+					<div id="glossary-contentM" class="glossary-content">
+
+						<h3>M</h3>
+
+						<p><b>Mental and Behavioral:</b> Contains gene variants that are associated with mental and behavioral disorders. (Ex. Increased or decreased susceptibility to depression or  schizophrenia).<br>
+				      	<p><b>Metabolism:</b> Contains gene variants that are associated with the chemical transformations that happen throughout the body. (Ex. Increased or decreased susceptibility to Cushing’s Disease or high cholesterol). <br>
+				      	<p><b>Mouth, Liver, and Digestive:</b> Contains gene variants associated with the teeth, gums, liver, and the rest of the digestive system. (Ex. Increased or decreased susceptibility to Crohn’s disease or gum disease). <br>
+				      	<p><b>Muscular, Skeletal, and Connective Tissue:</b> Contains gene variants associated with the muscles, bones, and connective tissue. (Ex. Increased or decreased susceptibility to Arthritis or Muscular Dystrophy).
+
+					</div> <!-- #glossary-contentM -->
+
+					<!-- Tab N Content-->
+					<div id="glossary-contentN" class="glossary-content">
+
+						<h3>N</h3>
+
+						<p><b>Nervous System:</b> Contains gene variants associated with the brain and the spinal cord / nervous system.  (Ex. Increased or decreased susceptibility to Seizures or Multiple Sclerosis).
+
+					</div> <!-- #glossary-contentN -->
+
+					<!-- Tab O Content-->
+					<div id="glossary-contentO" class="glossary-content">
+						<h3>O</h3>
+
+						<p><b>Other:</b> Contains gene variants that are benign, do not fit into the other health categories, or that may have been missed when sorted into health categories. Variants defined as "other" encompasses various possibilities. Some variants have a strong effect when homozygous and a weaker effect when heterozygous, or others only seem to have an effect on traits when another variant is also present.
+
+					</div> <!-- #glossary-contentO -->
+
+					<!-- Tab P Content-->
+					<div id="glossary-contentP" class="glossary-content">
+
+						<h3>P</h3>
+
+						<p><b>Pathogenic:</b> May cause disease. <br>
+  						<p><b>Pharmacogenetic / drug response:</b> May influence the effect of a medication. <br>
+  						<p><b>Potential Effect:</b> The potential effect of a gene variant describes how it may influence a person's chances of developing a disease or what medication may work best for them. <br>
+						<p><b>Potentially Affected:</b> Someone who is potentially affected by a gene variant has a higher risk or likelihood of developing the conditions associated with that gene variant.<br>
+						<p><b>Protective:</b> May prevent disease.
+
+					</div> <!-- #glossary-contentP -->
+
+					<!-- Tab Q Content-->
+					<div id="glossary-contentQ" class="glossary-content">
+
+						<h3>Q</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentQ -->
+
+					<!-- Tab R Content-->
+					<div id="glossary-contentR" class="glossary-content">
+
+						<h3>R</h3>
+
+						<p><b>Rarity:</b> Rarity, also know as frequency in population or allele frequency, describes the percentage of the population that has this genetic variant. The smaller the frequency, the less common it is among the population and the more interesting it is to a healthcare professional. If there is “No Freq Recorded,”  the frequency of the gene variant is unknown. <br>
+					    <p><b>Recessive:</b> Recessive variants are not expected to have the reported impact unless homozygous or compound heterozygous. <br>
+					    <p><b>Risk:</b> Risk, also known as penetrance, describes how often individuals carrying the variant develop the associated disease. A variant with a higher penetrance means that a person with this variant is more likely to develop the associated disease. (Note: These scores are considered irrelevant for "benign" variants. Benign variants includes those which affect traits not considered to be medical/health issues, e.g. eye color.
+
+					</div> <!-- #glossary-contentR -->
+
+					<!-- Tab S Content-->
+					<div id="glossary-contentS" class="glossary-content">
+
+						<h3>S</h3>
+
+						<p><b>Severity:</b> How severe the disease caused by a variant is, if left untreated. For protective variants this is the severity of the disease the variant protects against, and for pharmacogenetic variants it is the severity of consequences if the variant was not considered when administering a drug. <br>
+    					<p><b>Skin:</b> Contains gene variants associated with the skin. (Ex. Increased or decreased susceptibility to Eczema or Psoriasis).
+
+					</div> <!-- #glossary-contentS -->
+
+					<!-- Tab T Content-->
+					<div id="glossary-contentT" class="glossary-content">
+
+						<h3>T</h3>
+
+						<p><b>Treatability:</b> How treatable the disease caused by the variant is. A higher score indicates a more treatable effect. Variants which could be treated are considered to have higher clinical importance.
+
+					</div> <!-- #glossary-contentT -->
+
+					<!-- Tab U Content-->
+					<div id="glossary-contentU" class="glossary-content">
+
+						<h3>U</h3>
+
+						<p><b>Uncertain:</b> The research behind the effect of a gene variant is uncertain, and therefore there is little evidence that links the effect to the gene variant.
+
+					</div> <!-- #glossary-contentU -->
+
+					<!-- Tab V Content-->
+					<div id="glossary-contentV" class="glossary-content">
+
+						<h3>V</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentV -->
+
+					<!-- Tab W Content-->
+					<div id="glossary-contentW" class="glossary-content">
+
+						<h3>W</h3>
+
+						<p><b>Well-established:</b> The research behind the effect of a gene variant is well-established.
+
+					</div> <!-- #glossary-contentW -->
+
+					<!-- Tab X Content-->
+					<div id="glossary-contentX" class="glossary-content">
+
+						<h3>X</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentX -->
+
+					<!-- Tab Y Content-->
+					<div id="glossary-contentY" class="glossary-content">
+
+						<h3>Y</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentY -->
+
+					<!-- Tab Z Content-->
+					<div id="glossary-contentZ" class="glossary-content">
+
+						<h3>Z</h3>
+
+						<p>No words yet!
+
+					</div> <!-- #glossary-contentZ -->
+
+				</div> <!-- #glossary -->
+
+
+			</div> <!-- #tab-content3 -->
+
+		</div>
+
+		<!--tooltip script-->
+		<script>
+			$(document).ready(function(){
+    			$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+
+	</body>
+</html>

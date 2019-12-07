@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0016", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "162683724", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PARK2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "\n11487568"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause early onset Parkinson disease in a recessive fashion, as reported to ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000007454/). This report comes from Hedrich et al 2001 (PMID: 11487568), where a study of 21 patients found this substitution variant homozygous in one patient, but coupled with another more severe variant (homozygous deletion of exon 7). It is highly likely that this variant was coincidentally observed, and its relatively high allele frequency in ExAC data (0.5%) also strongly contradicts a serious effect. As such, this reported effect should be considered disproven, or potentially misreported by OMIM to ClinVar.", 
+    "URL": "http://evidence.pgp-hms.org/PARK2-A82E", 
+    "Variant Name": "PARK2-A82E", 
+    "Variant Page": "http://evidence.pgp-hms.org/PARK2-A82E"
+}

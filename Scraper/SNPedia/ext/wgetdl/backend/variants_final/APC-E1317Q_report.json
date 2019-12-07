@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0088", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "112175240", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "APC", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "11001924", 
+        "14578138", 
+        "17119068"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This rare variant has been hypothesized to increase risk of colon cancer. Later studies have contradicted this, finding no significant enrichment and concluding the variant does not increase risk.", 
+    "URL": "http://evidence.pgp-hms.org/APC-E1317Q", 
+    "Variant Name": "APC-E1317Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/APC-E1317Q", 
+    "dbSNP IDs": [
+        "rs1801166"
+    ]
+}

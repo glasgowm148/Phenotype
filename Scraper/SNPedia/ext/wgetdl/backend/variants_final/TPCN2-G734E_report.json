@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.29", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "68855363", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TPCN2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "18488028"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": "0"
+    }, 
+    "Summary": "Pigmentation allele.", 
+    "URL": "http://evidence.pgp-hms.org/TPCN2-G734E", 
+    "Variant Name": "TPCN2-G734E", 
+    "Variant Page": "http://evidence.pgp-hms.org/TPCN2-G734E", 
+    "dbSNP IDs": [
+        "rs3829241"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0072", 
+    "Build 37 Chromosome": "chr9", 
+    "Build 37 Position": "35075022", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood", 
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FANCG", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "16643430"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Rare polymorphism. Hypothesized to increase susceptibility to childhood acute myeloid leukemia, but the numbers in the study failed to have statistical significance.", 
+    "URL": "http://evidence.pgp-hms.org/FANCG-R513Q", 
+    "Variant Name": "FANCG-R513Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/FANCG-R513Q", 
+    "dbSNP IDs": [
+        "rs17885240"
+    ]
+}

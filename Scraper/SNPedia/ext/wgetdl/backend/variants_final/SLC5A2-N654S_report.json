@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.0071", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "31501798", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SLC5A2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "14569097", 
+        "14614622", 
+        "15110322", 
+        "18622023"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "2", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Some authors report this rare variant as a nonpathogenic polymorphism, others suggest it may cause renal glucosuria in a recessive manner when compound heterozygous with other pathogenic variants.", 
+    "URL": "http://evidence.pgp-hms.org/SLC5A2-N654S", 
+    "Variant Name": "SLC5A2-N654S", 
+    "Variant Page": "http://evidence.pgp-hms.org/SLC5A2-N654S", 
+    "dbSNP IDs": [
+        "rs61742739"
+    ]
+}

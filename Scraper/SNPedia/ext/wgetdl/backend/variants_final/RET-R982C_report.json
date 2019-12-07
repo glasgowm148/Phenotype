@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.016", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "43620335", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RET", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "7647787", 
+        "7881414", 
+        "9760196", 
+        "14633923"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "-1", 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Initially suspected of causing Hirschsprung\u2019s disease, this rare variant has been later reported as present in unaffected controls (allele frequency around 1%). Supporting a lack of effect: Panini et al. did not find loss of function effects seen in other variants, and Svensson et al. report unaffected relatives in a family who carried the same variant. OMIM lists it as reported to cause increased susceptibility, but there do not appear to be any statistically significant reports supporting this hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/RET-R982C", 
+    "Variant Name": "RET-R982C", 
+    "Variant Page": "http://evidence.pgp-hms.org/RET-R982C", 
+    "dbSNP IDs": [
+        "rs17158558"
+    ]
+}

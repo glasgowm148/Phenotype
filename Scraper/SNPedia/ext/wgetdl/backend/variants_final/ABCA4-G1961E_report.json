@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.0027", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "94473807", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "ABCA4", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "9295268", 
+        "9973280", 
+        "10958763", 
+        "11346402", 
+        "19217903"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This rare variant causes Stargardt Disease in a recessive manner. It was hypothesized to increase susceptibility to age-related macular degeneration, but subsequent studies have contradicted this hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/ABCA4-G1961E", 
+    "Variant Name": "ABCA4-G1961E", 
+    "Variant Page": "http://evidence.pgp-hms.org/ABCA4-G1961E", 
+    "dbSNP IDs": [
+        "rs1800553"
+    ]
+}

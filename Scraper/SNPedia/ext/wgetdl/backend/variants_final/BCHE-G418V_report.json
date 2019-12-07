@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0036", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "165547569", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "BCHE", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "1415224"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "5"
+    }, 
+    "Summary": "This is the \"flu-2\" variant of BCHE and can cause prolonged post-succinylcholine apnea (an adverse side-effect of prolonged response to anesthesia) when homozygous or compound heterozygous with other deleterious BCHE variants.", 
+    "URL": "http://evidence.pgp-hms.org/BCHE-G418V", 
+    "Variant Name": "BCHE-G418V", 
+    "Variant Page": "http://evidence.pgp-hms.org/BCHE-G418V", 
+    "dbSNP IDs": [
+        "rs28933390"
+    ]
+}

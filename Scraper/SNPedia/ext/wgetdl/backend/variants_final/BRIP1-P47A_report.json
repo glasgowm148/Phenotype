@@ -1,0 +1,30 @@
+{
+    "Allele Frequency": "0.00028", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "59937223", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "BRIP1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Some sources report this in ClinVar as a likely pathogenic cause of familial breast cancer and ovarian cancer (acting in a dominant manner); however others report it as having uncertain significance (unclear whether it is or is not a cause): http://www.ncbi.nlm.nih.gov/clinvar/variation/4736/  The only publication linked is from 2001, which found this heterozygous in 1 of 86 cases and not in 200 controls \u2013 this has no statistical significance, and no further study of that patient's family was done.", 
+    "URL": "http://evidence.pgp-hms.org/BRIP1-P47A", 
+    "Variant Name": "BRIP1-P47A", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRIP1-P47A"
+}

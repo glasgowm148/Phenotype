@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.037", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "158624528", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SPTA1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "8844207", 
+        "9067503", 
+        "15384986", 
+        "16150946"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant, also called alpha-IIa, has been seen frequently in individuals with recessive Hereditary spherocytosis. This appears to be the result of linkage to alpha-LEPRA (a C>T substitution at position -99 of intron 30); A970D is later reported as functionally neutral.", 
+    "URL": "http://evidence.pgp-hms.org/SPTA1-A970D", 
+    "Variant Name": "SPTA1-A970D", 
+    "Variant Page": "http://evidence.pgp-hms.org/SPTA1-A970D", 
+    "dbSNP IDs": [
+        "rs35948326"
+    ]
+}

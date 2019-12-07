@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.57", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PECAM1", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "8532023"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "1", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Mismatched genotypes in this variant between donor and recipient is associated with causing graft vs. host disease in bone marrow transplants.", 
+    "URL": "http://evidence.pgp-hms.org/PECAM1-L125V", 
+    "Variant Name": "PECAM1-L125V", 
+    "Variant Page": "http://evidence.pgp-hms.org/PECAM1-L125V", 
+    "dbSNP IDs": [
+        "rs668"
+    ]
+}

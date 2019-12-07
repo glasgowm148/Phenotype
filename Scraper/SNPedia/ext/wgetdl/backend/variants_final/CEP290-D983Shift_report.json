@@ -1,0 +1,28 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Mental and behavioral", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CEP290", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Although there are no known reports for this variant, this is predicted to be very disruptive in a gene associated with recessive ciliopathy disorders (mostly Joubert Syndrome and/or Leber's Congenital Amaurosis). This variant would be predicted to have a similarly severe recessive pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/CEP290-D983Shift", 
+    "Variant Name": "CEP290-D983Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/CEP290-D983Shift"
+}

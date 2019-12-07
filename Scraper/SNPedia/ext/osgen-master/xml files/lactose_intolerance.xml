@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<data>
+    <trait>
+        <name>
+            Lactose Intolerance
+        </name>
+        
+        <wikipedialink>
+            https://en.wikipedia.org/wiki/Lactose_intolerance
+        </wikipedialink>
+        
+        <description>
+            Lactose intolerance is the inability to digest lactose, a sugar found in the milk of all mammals. Most lactose intolerance is in adults, but some infants also suffer from lactose intolerance. There are at least 4 distinct SNPs that determine lactose tolerance, one of which is found primarily in European populations, and three found primarily in African populations. 
+        </description>
+        
+        <supertrait>
+        </supertrait>
+        
+        <subtrait>
+        </subtrait>
+        
+    </trait>
+    <output type="phenotype">
+        <SNP>
+            <rsid>rs4988235</rsid>
+            
+            <ethnicity value ="European">
+        
+                <genotype value="GG">
+                    <shortmeaning>Most likely lactose intolerance</shortmeaning>
+                    <longmeaning>Most likely to be lactose intolerant in adulthood. However, could still be lactose tolerant for other reasons, particularily if of African descent. </longmeaning>
+                </genotype>
+                
+                <genotype value="AG">
+                    <shortmeaning>Most likely lactose tolerant</shortmeaning>
+                    <longmeaning>Individuals with this genotype have higher adult levels of the lactase enzyme. However, could still be lactose intolerant for other reasons.</longmeaning>
+                </genotype>
+                
+                <genotype value="AA">
+                    <shortmeaning>Most likely lactose tolerant</shortmeaning>
+                    <longmeaning>Individuals with this genotype have higher adult levels of the lactase enzyme. However, could still be lactose intolerant for other reasons.</longmeaning>
+                </genotype>
+                
+            </ethnicity>
+            
+        </SNP>
+    </output>
+</data>
+    

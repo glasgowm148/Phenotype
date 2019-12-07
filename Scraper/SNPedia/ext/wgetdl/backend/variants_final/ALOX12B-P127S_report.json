@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.017", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "7984479", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ALOX12B", 
+    "Impact": "Benign", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16116617", 
+        "17139268"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": null, 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant was found heterozygously in autosomal recessive congenital ichthyosis in two Turkish siblings, although the second mutation was not found. Later, Lesueur et al. observe that this variant has a 4% frequency in their North African controls and is likely just a rare SNP.", 
+    "URL": "http://evidence.pgp-hms.org/ALOX12B-P127S", 
+    "Variant Name": "ALOX12B-P127S", 
+    "Variant Page": "http://evidence.pgp-hms.org/ALOX12B-P127S", 
+    "dbSNP IDs": [
+        "rs72842957"
+    ]
+}

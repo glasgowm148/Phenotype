@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "0.0044", 
+    "Build 37 Chromosome": "chr22", 
+    "Build 37 Position": "18909902", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Mental and behavioral", 
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PRODH", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12217952", 
+        "15662599"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "One report suggested that this rare variant (0.9% allele frequency) could be associated with hyperprolinemia and, through this, associated with increased susceptibility to schizophrenia and/or schizoaffective disorder. However, this finding completely lacked statistical significance, and both reported cases were also associated with other potentially causal variants. A later functional study found only a mild functional effect on enzyme activity (78-90% of wildtype activity).", 
+    "URL": "http://evidence.pgp-hms.org/PRODH-L289M", 
+    "Variant Name": "PRODH-L289M", 
+    "Variant Page": "http://evidence.pgp-hms.org/PRODH-L289M"
+}

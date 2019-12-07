@@ -1,0 +1,38 @@
+{
+    "Allele Frequency": "0.018", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "237778082", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory", 
+        "Muscular, skeletal, and connective tissue", 
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "RYR2", 
+    "Impact": "Benign", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16769042", 
+        "18326664"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": "0", 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Hypothesized to cause arrhythmogenic right ventricular cardiomyopathy when compound heterozygous with G1886S. However, this variant is quite common (2.4% in Europeans), as is G1886S (3.1% in Europeans), and about 1 in 700 are compound heterozygous. This is highly discordant with a disease prevalence of 1 in 2500 to 5000, and notably G1886S is reported in ClinVar as benign. We should consider the original hypothesis disproven.", 
+    "URL": "http://evidence.pgp-hms.org/RYR2-G1885E", 
+    "Variant Name": "RYR2-G1885E", 
+    "Variant Page": "http://evidence.pgp-hms.org/RYR2-G1885E", 
+    "dbSNP IDs": [
+        "rs41315858"
+    ]
+}

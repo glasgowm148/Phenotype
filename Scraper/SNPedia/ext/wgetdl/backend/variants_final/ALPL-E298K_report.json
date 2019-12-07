@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ALPL", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "7833929"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Proposed to cause infantile hypophosphatasia in a recessive manner. This comes from a case study reported by Orimo et al 1994 (PMID: 7833929) and is recorded in ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000014657/).", 
+    "URL": "http://evidence.pgp-hms.org/ALPL-E298K", 
+    "Variant Name": "ALPL-E298K", 
+    "Variant Page": "http://evidence.pgp-hms.org/ALPL-E298K"
+}

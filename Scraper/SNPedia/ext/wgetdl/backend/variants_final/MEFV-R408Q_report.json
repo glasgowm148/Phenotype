@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.005", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "3299468", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MEFV", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "10364520", 
+        "18097735"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "0", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant is associated with Familial Mediterranean Fever, it has generally been reported in cis with other variants. Sugiura et al. conclude that this variant may be weakly involved with the disease.", 
+    "URL": "http://evidence.pgp-hms.org/MEFV-R408Q", 
+    "Variant Name": "MEFV-R408Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/MEFV-R408Q", 
+    "dbSNP IDs": [
+        "rs11466024"
+    ]
+}

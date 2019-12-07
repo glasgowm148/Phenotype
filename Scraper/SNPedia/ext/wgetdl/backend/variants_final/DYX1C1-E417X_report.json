@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.2", 
+    "Build 37 Chromosome": "chr15", 
+    "Build 37 Position": "55722882", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Mental and behavioral"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "DYX1C1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12954984"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": null, 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "2", 
+        "Treatability": null
+    }, 
+    "Summary": "One study reports this variant to be associated with dyslexia. The study group was relatively small and so the results did not have strong significance. If they are representative this variant is associated with a doubled risk for dyslexia, but it is unclear whether the effect would be additive, dominant, or recessive.", 
+    "URL": "http://evidence.pgp-hms.org/DYX1C1-E417X", 
+    "Variant Name": "DYX1C1-E417X", 
+    "Variant Page": "http://evidence.pgp-hms.org/DYX1C1-E417X", 
+    "dbSNP IDs": [
+        "rs57809907"
+    ]
+}

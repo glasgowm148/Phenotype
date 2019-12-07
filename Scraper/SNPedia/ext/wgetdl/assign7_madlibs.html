@@ -1,0 +1,79 @@
+<!--
+FILE NAME: assign7_madlibs.html
+WRITTEN BY: Isabelle Styslinger and Christina Pollalis
+DATE: November 4th 2015
+PURPOSE: the mad libs html file used for Task 1 for homework 7
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Mad Libs by Christina and Isabelle</title>
+	<meta charset='utf-8'>
+	<link href='assign7.css' rel='stylesheet'>
+
+</head>
+<body>
+	<!-- a title that is descriptive and has both of our names in it -->
+    <h1>Christina and Isabelle's Depressing Mad Libs</h1>
+
+<!--
+    Uses a <form> with four <input> elements for the user to enter four missing
+    words, for example, a noun for a name, a noun for an object, an adjective,
+    and an adverb. Only has one input for each of these words and have default
+	values in case the user does not input anything -->
+    <form>
+            <label for="noun">Noun for a name</label>
+                <input type="text" id='noun' name='noun' value='Bob'>
+                <br>
+			<label for="object">Noun for an object</label>
+				<input type="text" id='object' name='object' value='table'>
+                <br>
+            <label for="adjective">Adjective</label>
+    			<input type="text" id='adjective' name='adjective' value='red'>
+                <br>
+            <label for="adverb">Adverb</label>
+    			<input type="text" id='adverb' name='adverb' value='quickly'>
+                <br>
+		<!-- button that will display the words in the text below -->
+        <button type='button' id='button1'>Submit</button>
+    </form>
+
+    <br>
+	<!-- the below paragraph is the mad libs paragraph that will be manipulated so that
+	the words entered by the user will be displayed in the appropriate places -->
+	<p id='results'>
+        Once upon a time, a woman <span class='adverb'>adverb</span> went
+        to where she saw a man named <span class='noun'>name</span> who was
+        <span class='adjective'>adjective</span>. The first thing she noticed about
+        <span class='noun'>name</span> was his <span class='adjective'>adjective</span>
+        <span class='object'>object</span>. She thought <span class='noun'>name</span>
+        seemed very cute and friendly, so she decided to talk to
+        <span class='noun'>name</span>. It was love at first sight, but then they both
+        died. The end.
+    </p>
+
+
+	<!-- the validation forms/icons -->
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer">
+    		<img
+       			src="http://cs.wellesley.edu/~cs110/Icons/valid-html5v2.png"
+       			alt="Valid HTML 5"
+       			title="Valid HTML 5"
+       			height="31" width="88">
+		</a>
+  		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+     	<img
+       		src="http://cs.wellesley.edu/~cs110/Icons/vcss.gif"
+       		alt="Valid CSS"
+       		title="Valid CSS"
+       		height="31" width="88">
+  		</a>
+	</p>
+
+	<!-- the scripts:  -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src='assign7.js'></script>
+</body>
+</html>

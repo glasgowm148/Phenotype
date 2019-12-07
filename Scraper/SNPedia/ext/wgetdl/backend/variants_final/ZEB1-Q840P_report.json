@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0039", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "31810782", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "ZEB1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "20036349"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Riazuddin, et al 2010 reported seeing this in a large pedigree with late-onset Fuchs corneal dystrophy, although the evidence isn't clear-cut. They also reported not finding the variant in 560 control chromosomes (equiv 230 individuals), and one carrier in a screen of 192 sporadic cases. Based on ExAC allele frequency data, not seeing this variant in 560 control chromosomes is unusual, but possible. However, the incidence of the variant in sporadic Caucasian cases matches ExAC allele frequency data, disproving the hypothesized effect; if this variant caused disease with any notable penetrance, it would be highly enriched with cases.", 
+    "URL": "http://evidence.pgp-hms.org/ZEB1-Q840P", 
+    "Variant Name": "ZEB1-Q840P", 
+    "Variant Page": "http://evidence.pgp-hms.org/ZEB1-Q840P"
+}

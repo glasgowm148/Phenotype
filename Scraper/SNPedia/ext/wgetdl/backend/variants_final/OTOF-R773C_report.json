@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.016", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "26700373", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "OTOF", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12114484"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Presumed benign. Seen in 2.4% of randomly chosen chromosomes, contradicting a severe pathogenic hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/OTOF-R773C", 
+    "Variant Name": "OTOF-R773C", 
+    "Variant Page": "http://evidence.pgp-hms.org/OTOF-R773C", 
+    "dbSNP IDs": [
+        "rs80356569"
+    ]
+}

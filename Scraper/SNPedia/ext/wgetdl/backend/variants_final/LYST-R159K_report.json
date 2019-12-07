@@ -1,0 +1,31 @@
+{
+    "Allele Frequency": "0.0078", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system", 
+        "Nervous system", 
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "LYST", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Rare and unreported, tentatively evaluated as benign. Some severe mutations in this gene cause Chediak-Higashi syndrome (a severe genetic disorder causing albinism, neuropathy, and life-threatening susceptibility to bacterial infections), but this disease is rare and there are many other genomes with rare missense polymorphisms.", 
+    "URL": "http://evidence.pgp-hms.org/LYST-R159K", 
+    "Variant Name": "LYST-R159K", 
+    "Variant Page": "http://evidence.pgp-hms.org/LYST-R159K", 
+    "dbSNP IDs": [
+        "rs111806240"
+    ]
+}

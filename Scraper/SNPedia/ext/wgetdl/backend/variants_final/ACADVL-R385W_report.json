@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "0.0078", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ACADVL", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Predicted to be damaging. Other recessive mutations in this gene cause Very Long Chain Acyl-Coenzyme A Dehydrogenase Deficiency, and this variant is mentioned in an online database linking it to this disease.", 
+    "URL": "http://evidence.pgp-hms.org/ACADVL-R385W", 
+    "Variant Name": "ACADVL-R385W", 
+    "Variant Page": "http://evidence.pgp-hms.org/ACADVL-R385W"
+}

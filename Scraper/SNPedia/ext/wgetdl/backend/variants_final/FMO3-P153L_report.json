@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.0022", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "171076952", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "FMO3", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Reported to cause trimethylaminuria, causing affected individuals to have a fishy body odor. Recorded by OMIM and GeneReviews, this comes from Dolphin et al 1997 (PMID: 9398858). According to OMIM, these authors found the variant in three different affected families.", 
+    "URL": "http://evidence.pgp-hms.org/FMO3-P153L", 
+    "Variant Name": "FMO3-P153L", 
+    "Variant Page": "http://evidence.pgp-hms.org/FMO3-P153L"
+}

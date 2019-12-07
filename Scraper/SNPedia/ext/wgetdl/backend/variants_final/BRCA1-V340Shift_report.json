@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary", 
+        "Skin"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "BRCA1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "7894492", 
+        "10441573", 
+        "10595257", 
+        "23289006"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "4", 
+        "Familial": "4", 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant predisposes carriers to early-onset breast and ovarian cancer as well as other cancers. This and other BRCA1 variants predispose towards estrogen receptor negative, progesterone receptor negative, and human epidermal growth factor receptor negative breast cancers. BRCA1 V340fs is found in ClinVar at http://www.ncbi.nlm.nih.gov/clinvar/variation/54102/", 
+    "URL": "http://evidence.pgp-hms.org/BRCA1-V340Shift", 
+    "Variant Name": "BRCA1-V340Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA1-V340Shift"
+}

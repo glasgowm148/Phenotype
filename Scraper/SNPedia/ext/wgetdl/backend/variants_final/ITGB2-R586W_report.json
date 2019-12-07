@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.0049", 
+    "Build 37 Chromosome": "chr21", 
+    "Build 37 Position": "46309312", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "ITGB2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause leukocyte adhesion deficiency in a recessive fashion, as reported to ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000010071/). This report comes from Nelson et al 1992 (PMID: 1346613), where a case study found this variant in a patient. However, it coupled with a more severe variant on the same chromosome (an in-frame 12 base insertion), and biochemical assay indicated the effect of this variant was minor. Thus, it is highly likely that this variant was coincidentally observed, and its relatively high allele frequency in ExAC data (0.8%) also strongly contradicts a serious effect. As such, this reported effect should be considered disproven, or potentially misreported by OMIM to ClinVar.", 
+    "URL": "http://evidence.pgp-hms.org/ITGB2-R586W", 
+    "Variant Name": "ITGB2-R586W", 
+    "Variant Page": "http://evidence.pgp-hms.org/ITGB2-R586W"
+}

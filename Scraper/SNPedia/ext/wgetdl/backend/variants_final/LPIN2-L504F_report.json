@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "0.0032", 
+    "Build 37 Chromosome": "chr18", 
+    "Build 37 Position": "2929103", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood", 
+        "Muscular, skeletal, and connective tissue", 
+        "Skin"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "LPIN2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Unreported and rare, tentatively evaluated as benign. Other recessive mutations in this gene cause Majeed syndrome (multifocal osteomyelitis, anemia, and dermatosis). Although unstudied, LPIN2 is in a locus associated with psoriasis.", 
+    "URL": "http://evidence.pgp-hms.org/LPIN2-L504F", 
+    "Variant Name": "LPIN2-L504F", 
+    "Variant Page": "http://evidence.pgp-hms.org/LPIN2-L504F", 
+    "dbSNP IDs": [
+        "rs104895500"
+    ]
+}

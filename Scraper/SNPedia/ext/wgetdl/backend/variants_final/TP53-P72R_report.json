@@ -1,0 +1,40 @@
+{
+    "Allele Frequency": "0.63", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "7579472", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TP53", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 6, 
+    "PMID List": [
+        "1975675", 
+        "9607760", 
+        "15355915", 
+        "19837266", 
+        "20615891", 
+        "22184967"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "3", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This is a common variant was first reported as a polymorphism. It has since had mixed associations with cancer: Storey et al. conclude a 7x *increased* risk of HPV cancer for homozygotes vs hets, but Jones et al. find a 1.98x *decreased* risk for colorectal cancer. This variant may have significant impact on particular cancers, but it is unclear what effect it has on the overall burden of cancer.", 
+    "URL": "http://evidence.pgp-hms.org/TP53-P72R", 
+    "Variant Name": "TP53-P72R", 
+    "Variant Page": "http://evidence.pgp-hms.org/TP53-P72R", 
+    "dbSNP IDs": [
+        "rs1042522"
+    ]
+}

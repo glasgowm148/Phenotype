@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.03", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "78087041", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "GAA", 
+    "Impact": "Benign", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "18301443"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This is also known as the GAA*4 allozyme is frequent in the Asian population and appears to have somewhat reduced enzyme activity. Kroos et al. rule out pathogenic effect.", 
+    "URL": "http://evidence.pgp-hms.org/GAA-E689K", 
+    "Variant Name": "GAA-E689K", 
+    "Variant Page": "http://evidence.pgp-hms.org/GAA-E689K", 
+    "dbSNP IDs": [
+        "rs1800309"
+    ]
+}

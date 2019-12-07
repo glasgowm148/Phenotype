@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.00084", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "73518081", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "TSEN54", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "18711368"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Causes pontocerebellar hypoplasia (a serious deformity in brain development) in a recessive manner.", 
+    "URL": "http://evidence.pgp-hms.org/TSEN54-A307S", 
+    "Variant Name": "TSEN54-A307S", 
+    "Variant Page": "http://evidence.pgp-hms.org/TSEN54-A307S"
+}

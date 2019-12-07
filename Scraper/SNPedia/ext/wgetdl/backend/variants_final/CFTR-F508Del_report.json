@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Breathing", 
+        "Genital and urinary", 
+        "Metabolism"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "CFTR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "1699669", 
+        "7529176"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "2", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "This is the most common variant that causes Cystic Fibrosis. It causes Cystic Fibrosis if homozygous or combined with another severely disruptive variant in this gene. It can also cause bilateral absence of the vans deferens (causing male infertility) when combined with a less disruptive variant.", 
+    "URL": "http://evidence.pgp-hms.org/CFTR-F508Del", 
+    "Variant Name": "CFTR-F508Del", 
+    "Variant Page": "http://evidence.pgp-hms.org/CFTR-F508Del"
+}

@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0099", 
+    "Build 37 Chromosome": "chr13", 
+    "Build 37 Position": "20763620", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "GJB2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "22668073"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": null, 
+        "Familial": "5", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Several labs have reported in ClinVar that this causes deafness in a recessive manner: http://www.ncbi.nlm.nih.gov/clinvar/variation/17000/ This variant seems to be \"mild\", with a stronger effect when combined with a more severe variant. The variant is relatively common: according to ExAC data, 1 in 40 with European ancestry (and 1 in 25 Finnish) are carriers of this variant. L\u00f6pp\u00f6nen et al 2012 report that homozygotes for the variant have mild to moderate hearing impairment.", 
+    "URL": "http://evidence.pgp-hms.org/GJB2-M34T", 
+    "Variant Name": "GJB2-M34T", 
+    "Variant Page": "http://evidence.pgp-hms.org/GJB2-M34T", 
+    "dbSNP IDs": [
+        "rs35887622"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0036", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "74759825", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "HTRA2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "15961413", 
+        "18364387", 
+        "19118185"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "1", 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "Although one group reported this variant as being associated with Parkinson\u2019s disease, their screen lacked statistical significance and later studies have found equal frequencies of this variant in unaffected controls. Knockout of this gene is reported to cause parkinsonianism in mice, but another functional study found no impact on the mitochondrial pathway they implicate as being causal in Parkinson\u2019s.", 
+    "URL": "http://evidence.pgp-hms.org/HTRA2-G399S", 
+    "Variant Name": "HTRA2-G399S", 
+    "Variant Page": "http://evidence.pgp-hms.org/HTRA2-G399S", 
+    "dbSNP IDs": [
+        "rs72470545"
+    ]
+}

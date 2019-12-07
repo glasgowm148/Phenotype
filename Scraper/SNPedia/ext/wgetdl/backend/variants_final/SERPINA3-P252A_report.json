@@ -1,0 +1,30 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Breathing"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "SERPINA3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "8244391", 
+        "18268927"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": null, 
+        "Familial": "2", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "An uncommon variant carried by about 1 in 100 Europeans. Claimed by Poller et al. 1993 to cause chronic obstructive pulmonary disease (COPD )in three generations of an affected family, implying a Mendelian hypothesis. Seifart, et al 2007 mentions that publication and states that the association was not replicated in Japanese, and that no association was found in a study of Italian cases.", 
+    "URL": "http://evidence.pgp-hms.org/SERPINA3-P252A", 
+    "Variant Name": "SERPINA3-P252A", 
+    "Variant Page": "http://evidence.pgp-hms.org/SERPINA3-P252A"
+}

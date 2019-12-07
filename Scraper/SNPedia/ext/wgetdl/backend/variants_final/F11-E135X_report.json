@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.00056", 
+    "Build 37 Chromosome": "chr4", 
+    "Build 37 Position": "187195347", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "F11", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Causes factor XI deficiency in a recessive manner, with symptoms of increased susceptibility to bruising, bleeding, and nosebleeds. This variant appears to be a well-established cause of the disease and is common in patients with Ashkenazi Jewish ancestry. Asakai et al 1991 (PMID: 2052060) reports that about half of pathogenic variants found in patients with Ashkenazi Jewish ancestry are this variant, and the frequency of the variant is high in this ancestry (1 in 8 to 1 in 10 believed to be a carrier of this or another pathogenic variant).", 
+    "URL": "http://evidence.pgp-hms.org/F11-E135X", 
+    "Variant Name": "F11-E135X", 
+    "Variant Page": "http://evidence.pgp-hms.org/F11-E135X"
+}

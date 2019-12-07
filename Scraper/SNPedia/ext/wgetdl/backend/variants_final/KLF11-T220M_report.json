@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.015", 
+    "Build 37 Chromosome": "chr2", 
+    "Build 37 Position": "10188123", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "KLF11", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "15774581", 
+        "17130512"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "1", 
+        "Familial": "-1", 
+        "Functional": "1", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Reported by Neve et al. to be a dominant cause of early-onset monogenic type II diabetes mellitus (maturity onset diabetes of the young). If true, carriers would be predicted to have a family history of diabetes. Florez et al. contradicted other findings in this gene made by Neve et al. for the Q62R polymorphism, and were unable to find any carriers of this rare variant (thus unable to investigate).", 
+    "URL": "http://evidence.pgp-hms.org/KLF11-T220M", 
+    "Variant Name": "KLF11-T220M", 
+    "Variant Page": "http://evidence.pgp-hms.org/KLF11-T220M", 
+    "dbSNP IDs": [
+        "rs34336420"
+    ]
+}

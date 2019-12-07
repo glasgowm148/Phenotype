@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.027", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "92132493", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PEX1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11389485"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported as a mutation causing peroxisome biogenesis disorder in a single patient, presumably in a recessive manner.", 
+    "URL": "http://evidence.pgp-hms.org/PEX1-I696M", 
+    "Variant Name": "PEX1-I696M", 
+    "Variant Page": "http://evidence.pgp-hms.org/PEX1-I696M", 
+    "dbSNP IDs": [
+        "rs35996821"
+    ]
+}

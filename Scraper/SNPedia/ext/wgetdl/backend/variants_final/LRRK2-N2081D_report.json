@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.014", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "40740686", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "LRRK2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "15541309"
+    ], 
+    "Scores": {
+        "Case/Control": null, 
+        "Computational": "1", 
+        "Familial": "3", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported as a rare, nonpathogenic variant.", 
+    "URL": "http://evidence.pgp-hms.org/LRRK2-N2081D", 
+    "Variant Name": "LRRK2-N2081D", 
+    "Variant Page": "http://evidence.pgp-hms.org/LRRK2-N2081D", 
+    "dbSNP IDs": [
+        "rs33995883"
+    ]
+}

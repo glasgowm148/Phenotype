@@ -1,0 +1,42 @@
+{
+    "Allele Frequency": "0.061", 
+    "Build 37 Chromosome": "chr20", 
+    "Build 37 Position": "3193842", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Drug response", 
+        "Immune system", 
+        "Metabolism"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "ITPA", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 6, 
+    "PMID List": [
+        "12384777", 
+        "15322947", 
+        "17924837", 
+        "19631656", 
+        "19682085", 
+        "20173735"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": "1", 
+        "Severity": "3", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant is associated with inosine triphosphate pyrophosphohydrolase deficiency and may be associated with an adverse reaction to thiopurine drugs (which are used as immunosuppressants). Homozygotes have no detectable ITPase activity, individuals compound heterozygous with another less severe mutation also have severely reduced enzyme activity.", 
+    "URL": "http://evidence.pgp-hms.org/ITPA-P32T", 
+    "Variant Name": "ITPA-P32T", 
+    "Variant Page": "http://evidence.pgp-hms.org/ITPA-P32T", 
+    "dbSNP IDs": [
+        "rs1127354"
+    ]
+}

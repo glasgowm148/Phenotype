@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.046", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "6061559", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "VWF", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11439975"
+    ], 
+    "Scores": {
+        "Case/Control": "1", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign, seems to be considered an uncommon polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/VWF-G2705R", 
+    "Variant Name": "VWF-G2705R", 
+    "Variant Page": "http://evidence.pgp-hms.org/VWF-G2705R", 
+    "dbSNP IDs": [
+        "rs7962217"
+    ]
+}

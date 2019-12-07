@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.044", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "52303361", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "EFHC1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "7668263", 
+        "15258581"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. OMIM appears to incorrectly interpret literature as linking this variant to juvenile myoclonic epilepsy; the authors report it as a polymorphism.", 
+    "URL": "http://evidence.pgp-hms.org/EFHC1-R182H", 
+    "Variant Name": "EFHC1-R182H", 
+    "Variant Page": "http://evidence.pgp-hms.org/EFHC1-R182H", 
+    "dbSNP IDs": [
+        "rs3804505"
+    ]
+}

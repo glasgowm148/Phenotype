@@ -1,0 +1,542 @@
+a, a:visited, a:active {
+  color: black;
+}
+
+#myCanvas {
+ 
+
+  border-right: 1px dotted gray;
+  border-top: 1px dotted gray;
+  
+/*  border-right: 1px dotted black; */
+  padding-top: 0px;
+/*  border-bottom: 1px dotted black; 
+  border-top: 1px dotted black;*/
+  height:530px;
+  width:720px;
+  z-index: -90;
+
+}
+/* */
+
+/**/
+
+.accord_content { 
+  display: none; 
+}
+
+#ahead_1{
+  display: inline;
+  z-index: 30;
+
+}
+
+#accordion{
+  height:0px;
+  margin-bottom: 20px !important;
+  float:right;
+  z-index: 70;
+  border-right: 10px solid #0f82f5;
+  font-size: 13px;
+
+/*  margin-right:1300px;
+  margin-bottom: 500px;*/
+}
+
+#both_suits{ /* div that includes  both ace and King accordion to make everything scrollable */
+  overflow: auto;
+  /*background-color: purple; /*for testing  
+  height:510px;   if I ever want to take a look at the entire span of the height */
+ /* max-height: 480px;  */
+  z-index: 90;
+  margin-right: 24px; /*this way it will surround the accordion better */
+  margin-bottom: 3px;
+  height: 516px;
+  border: 5px dotted gray;
+  border-radius: 5px;
+  border-width: 1px; /* border width will eventually be 1*/
+  /*padding: 12px;  */
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-top: 2px;
+}
+
+#saveButton {
+  z-index: 90;
+}
+
+#accordionGlossary {
+  z-index: 90;
+}
+
+#fillGlossary{
+  z-index: 90;
+}
+
+#accordionPlace {
+  /*border: 10px solid #0f82f5;*/
+  margin-top:-38px;
+  max-width: 900px;
+  z-index: 90;
+}
+
+/*.toolbar ui-widget-header ui-corner-all{
+  width:5px;
+  height: 3px;
+}*/
+
+#accordion .accord_content{
+  height:700px; 
+  width: 500px;
+  
+}
+
+#accordion .accord_header{
+
+  font-size: 12px;
+  width: 380px;
+  color:purple;
+  font-weight: bold;
+  border: 2px;
+  border-color: #000;
+  padding: 2px;
+}
+
+.legend-labels {
+  z-index:0;
+}
+
+
+
+.btn.active {
+  background-color: white !important;
+  border-bottom: 12px solid white !important;
+  border-top: 3px solid #0072e6;
+  color: black !important;
+/*  border-left: 3px solid #C0A8F0;
+  border-right: 3px solid #C0A8F0;*/
+  background-image: none !important;
+}
+
+
+#container {
+  width: 100%;
+  position: left;
+  padding-left: 10px;
+}
+
+#questionmark {
+  width: 7px;
+  opacity: .1;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+footer {
+  text-align: center;
+  margin: 0px;
+  border: 0px;
+}
+
+#view_selection {
+  /*padding-top: 20px;*/
+  /*background-color: #d3d3d3;*/
+  float:left;
+  position:relative;
+/*  border-top: 10px solid #d3d3d3;
+  border-left: 10px solid #d3d3d3;
+  border-right: 10px solid #d3d3d3;*/
+}
+
+#rarity_penetrance {
+  padding-top: 5px;
+  float:left;
+  position:relative;
+  z-index:50; /* added this now */
+  width: 200px;
+}
+
+#view_selection {
+
+  z-index:50; /* added this now */
+}
+
+/*.btn {
+    border-bottom: 12px solid #0f82f5;
+}*/
+
+#save_exit {
+  padding-top: 5px;
+  float:left;
+  position:relative;
+  color: black;
+}
+
+
+#my-legend, #legend-title, #legend-scale {
+  padding-left: 10px;
+}
+
+
+
+#head {
+  padding:10px;
+  margin:0px;
+  padding-right: 10px; /*doesn't appear to do anything */
+}
+
+#King{
+  z-index: 100px;
+
+}
+
+
+
+
+.years {
+  font-size: 12px;
+  fill: #808080;
+  font-weight: bold;
+}
+
+#info {
+  font-size: 12px;
+  height:50px;
+
+}
+
+#qmark {
+  z-index:20;
+}
+
+#categoriesQ1, #categoriesQ2, #color, #color_tooltip, #categoriesQ4, #health_tooltip, #categoriesQ3, #certainty_tooltip {
+  z-index:20;
+}
+ 
+
+ #whole {
+  max-width: 80%;
+ }
+
+ #assignedContacts {
+ padding: 10px;
+ border: 2px solid #999;
+}
+#avContacts {
+ padding: 10px;
+ border: 2px solid #999;
+}
+
+
+.round-button {
+    display:block;
+    width:10px;
+    height:10px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #262626;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+/*#main {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    padding-left: 10px;
+    display: inline;
+}*/
+
+
+#main {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: inline-block;
+  z-index: 0;
+ 
+}
+
+div#canvas {
+  width:297px;
+  height:50px; /*used to be 100  this  is where the bubbles go out of bounds, when they move*/ 
+  padding-top: 30px;
+  z-index: -90;
+}
+
+
+#canvas,
+#vis {
+  width: 50%;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -90;
+}
+
+#var_info {
+  z-index: 100;
+  font-size: 12.3px;
+}
+
+
+#vis {
+  width: 100px;
+  height: 100px;
+  clear: both;
+  margin-bottom: 0px;
+
+  z-index: 10; 
+}
+
+#vis #svg_vis{
+  width: 600px;
+}
+/*#svg{
+  width: 300px !important;
+  height: 500px !important;
+}*/
+
+#svg_vis{
+
+  width: 800px !important;
+  height: 700px !important;
+}
+
+#accordion {
+  z-index: 70;
+  width:300px;
+  font-size: 10px;
+ }
+
+
+#King:nth-child(odd) {
+background-color: rgba(255, 0, 0, 0);
+height:100px;
+}
+
+#second_info{
+  height:400px !important;
+  width:176px !important;
+}
+
+.accordionList {
+  float: right;
+  margin-right: 15px;
+  height: 400px;
+  width:206px;  /*copy saved variant body */
+}
+
+#second_current{
+  width:294px !important;
+  margin-right: 30px !important;
+}
+
+
+
+h3{
+  width: 220px !important;
+  height: 40px !important;
+
+}
+
+.ui-accordion-content .ui-helper-reset .ui-widget-content .ui-corner-bottom .ui-accordion-content-active{
+  height: 400px !important;
+}
+
+element.style{
+  height:600px;
+}
+
+#view_selection {
+  z-index:20;
+}
+
+
+.ui-accordion .ui-accordion-content {
+  overflow: auto;
+}
+
+
+#save_exit {
+  z-index:25;
+  padding-left: 20px;
+}
+
+
+
+#header {
+  padding-left: 0px;
+  padding-top: 0px;
+  color:#40e0d0;
+}
+
+#AllLegends {
+  margin-top: 13px;
+}
+
+.my-legend {
+  display:fixed;
+  padding-left: 20px;
+}
+
+.my-legend .legend-title {
+  text-align: left;
+  padding-top: 9px;
+  margin-bottom: 5px;
+  font-weight: bold;  
+  font-size: 10px;
+}
+
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+  display: initial; 
+}
+
+.my-legend .legend-scale ul li {  /*this changes the font size of the text next to the pictures */
+  font-size: 100%;
+  font-size: 10px;
+  list-style: none;
+  margin-left: 0;
+  line-height: 15px;
+  margin-bottom: 4px;    /* this changes the space between eah of the four color blocks */
+}
+
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+}
+
+#Ace {
+  z-index: 90;
+  margin-bottom: 15px;
+}
+
+h3 {
+  z-index: 90;
+}
+
+#King {
+  z-index: 90;
+}
+
+#myClicker{
+  z-index: 90;
+}
+
+.my-legend .legend-source {
+  font-size: 100%;
+  color: #999;
+  clear: both;
+}
+
+.my-legend a {
+  color: #777;
+}
+
+.legend-labels ul.circletext {
+  font-size: 12px;
+}
+
+
+#infoblurb{
+/*#ffa500 */ 
+
+  background: none;
+  color: #222222; /*hopefully light grey */ 
+  /*border: 2px solid #000;  (this is just to point out where it begins and ends */
+  border: 2px solid #fff;
+
+}
+
+/*.allinfo + .tooltip > .tooltip-inner {
+    background-color: #8AC007; 
+    color: green; 
+    border: 1px solid green;
+    padding: 15px;
+    font-size: 20px;
+}  */
+
+.allinfo {
+  color:purple;
+}
+.allinfo + .tooltip.right {
+    /*background-color: #8AC007; /*the lime green color */ 
+    
+    border: .2px solid green;
+    padding: 8px;
+    font-size: 12px;
+    opacity: .8;
+    color:#ffa500 ;
+
+
+
+}
+
+
+.tooltip {
+
+  /*position: absolute;*/
+  top: 100px;
+  left: 00px;
+  /*-moz-border-radius:5px; /* does not work perfectly -- cannot manipulate x and y */ 
+  border-radius: 5px;
+  border: 2px solid #000; 
+  background: white; /*this was #fff*/
+  opacity: .9;
+  /* color: #eeeeee; */
+  color: black;
+  margin-left: 100px;  /* 695 px hardcoded 130 margin top*/
+  margin-top: 180px; 
+  padding-top: 10px;
+  width: 1000px;
+  font-size: 12px;
+  z-index: 50; /* DO NOT CHANGE THIS */
+  white-space: wrap;
+  /*set x-axis and y-axis coordinates? */
+}
+
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+.tooltip .title {
+  font-size: 12px;
+  color:#40e0d0;
+  text-align: center;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+
+
+
+

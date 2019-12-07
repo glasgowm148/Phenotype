@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0013", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "117171029", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Breathing", 
+        "Genital and urinary", 
+        "Metabolism"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "CFTR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "10655317", 
+        "19880712"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant has a mild recessive effect. When combined with a more severe variant (e.g. F508Del), this variant can cause congenital bilateral absence of vans deferens (CBAVD, which causes male infertility) with moderate penetrance. Cystic fibrosis, however, appears to be extremely low penetrance.", 
+    "URL": "http://evidence.pgp-hms.org/CFTR-R117H", 
+    "Variant Name": "CFTR-R117H", 
+    "Variant Page": "http://evidence.pgp-hms.org/CFTR-R117H"
+}

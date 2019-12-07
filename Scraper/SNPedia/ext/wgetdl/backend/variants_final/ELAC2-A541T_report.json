@@ -1,0 +1,44 @@
+{
+    "Allele Frequency": "0.028", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "12899902", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ELAC2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 8, 
+    "PMID List": [
+        "10986046", 
+        "11175785", 
+        "11431329", 
+        "12373607", 
+        "12515253", 
+        "12783937", 
+        "18767027", 
+        "20231859"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "0", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "2", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This variant is implicated as causing increased susceptibility to prostate cancer. However the variant has always been seen paired with S217L, it is unclear which variant is causal. Evidence is weak for both; one meta-analysis (Severi et al.) concluded that neither variant was pathogenic, a more recent meta-analysis (Xu et al.) found the data to be significant but the odds ratio was not strong and concluded they are \"low-penetrance susceptibility markers of prostate cancer\".", 
+    "URL": "http://evidence.pgp-hms.org/ELAC2-A541T", 
+    "Variant Name": "ELAC2-A541T", 
+    "Variant Page": "http://evidence.pgp-hms.org/ELAC2-A541T", 
+    "dbSNP IDs": [
+        "rs34152967", 
+        "rs5030739"
+    ]
+}

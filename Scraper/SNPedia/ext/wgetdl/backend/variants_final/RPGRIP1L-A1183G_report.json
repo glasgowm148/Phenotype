@@ -1,0 +1,34 @@
+{
+    "Allele Frequency": "0.011", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "53653005", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Anatomical and congenital", 
+        "Mental and behavioral", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RPGRIP1L", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "19430481"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": "0", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably not pathogenic, although it may have a modifier effect in other diseases. Other disruptive variants in this gene are implicated in causing Joubert Syndrome and Meckel Syndrome in a recessive manner. Although this variant is somewhat rare (1.1% allele frequency) and Polyphen 2 predicts it to be disruptive, most reported disease-causing variants in the gene are more disruptive frameshift or nonsense mutations & occur upstream of this position.", 
+    "URL": "http://evidence.pgp-hms.org/RPGRIP1L-A1183G", 
+    "Variant Name": "RPGRIP1L-A1183G", 
+    "Variant Page": "http://evidence.pgp-hms.org/RPGRIP1L-A1183G"
+}

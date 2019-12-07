@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SHH", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": null, 
+        "Computational": "4", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause holoprosencephaly in a dominant manner, causing facial and brain deformity. This comes from a ClinVar entry, where it is reported by GeneReviews (http://www.ncbi.nlm.nih.gov/clinvar/RCV000056099/).", 
+    "URL": "http://evidence.pgp-hms.org/SHH-V13Shift", 
+    "Variant Name": "SHH-V13Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/SHH-V13Shift"
+}

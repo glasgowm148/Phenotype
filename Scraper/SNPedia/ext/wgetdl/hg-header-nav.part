@@ -1,0 +1,9 @@
+
+<header>
+</header>
+<nav>
+  <div class="navitem"><a href="hungergames.html">home</a></div>
+  <div class="navitem"><a href="peeta.html">peeta</a></div>
+  <div class="navitem"><a href="katniss.html">katniss</a></div>
+  <div class="navitem"><a href="gale.html">gale</a></div>
+</nav>

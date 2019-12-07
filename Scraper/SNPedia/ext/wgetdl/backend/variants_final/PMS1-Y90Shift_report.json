@@ -1,0 +1,30 @@
+{
+    "Allele Frequency": "0.0078", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PMS1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "11691795", 
+        "14560016"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": "1", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "This variant is tentatively evaluated as benign, as the only publications linking mutations in this gene to disease have been contradicted.", 
+    "URL": "http://evidence.pgp-hms.org/PMS1-Y90Shift", 
+    "Variant Name": "PMS1-Y90Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/PMS1-Y90Shift"
+}

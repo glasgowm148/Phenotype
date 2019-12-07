@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0023", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "6127833", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "VWF", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12649144", 
+        "17080221"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "-1", 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "2", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant is associated with causing Type 1 von Willebrand disease in a dominant fashion. This hereditary defect in coagulation makes individuals more susceptible to bleeding. Not all carriers of the variant have the disease (incomplete penetrance); type O blood may also be a risk factor. A vWF antigen assay can confirm presence of the disease. Individuals are not usually treated with medication, but prophylactic measures are recommended before surgery and behavioral modification to avoid activities with a high risk of trauma (particularly head trauma) is recommended.", 
+    "URL": "http://evidence.pgp-hms.org/VWF-Y1584C", 
+    "Variant Name": "VWF-Y1584C", 
+    "Variant Page": "http://evidence.pgp-hms.org/VWF-Y1584C", 
+    "dbSNP IDs": [
+        "rs1800386"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "PLCD1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "21665001"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "2", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "2", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Recorded as Ala553Thr by ClinVar, this variant was reported by Kiuru et al. 2011 to cause hereditary chalky, white \"porcelian nails\" in a dominant fashion. The authors reported finding it in an extended Pakistani family, where a DNA segment containing this variant was found to be very strongly linked to the condition. The variant wasn't found in 130 healthy Pakistani individuals used as controls. According to ExAC data this variant is fairly rare, with an allele frequency of 0.016% in European data (1 in 2750 people are carriers), and 0.1% in Finns (1 in 500 are carriers).", 
+    "URL": "http://evidence.pgp-hms.org/PLCD1-A574T", 
+    "Variant Name": "PLCD1-A574T", 
+    "Variant Page": "http://evidence.pgp-hms.org/PLCD1-A574T"
+}

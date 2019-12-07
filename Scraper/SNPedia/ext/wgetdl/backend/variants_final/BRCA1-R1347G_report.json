@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0043", 
+    "Build 37 Chromosome": "chr17", 
+    "Build 37 Position": "41243509", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "BRCA1", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "8776600", 
+        "12215251"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Believed to be a nonpathogenic polymorphism, although Polyphen 2 predicts a damaging effect.", 
+    "URL": "http://evidence.pgp-hms.org/BRCA1-R1347G", 
+    "Variant Name": "BRCA1-R1347G", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA1-R1347G", 
+    "dbSNP IDs": [
+        "rs28897689"
+    ]
+}

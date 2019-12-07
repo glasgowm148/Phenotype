@@ -1,0 +1,42 @@
+{
+    "Allele Frequency": "0.097", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "96702047", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Drug response", 
+        "Metabolism"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "CYP2C9", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 7, 
+    "PMID List": [
+        "8004131", 
+        "15947090", 
+        "17161452", 
+        "17686967", 
+        "19228618", 
+        "19794411", 
+        "19794412"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "3", 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This variant, also called CYP2C9*2, is a pharmacogenetic variant that modulates sensitivity for Warfarin (due to reduced metabolism). This variant is associated with Caucasians. The FDA has approved reduced recommended Warfarin dosage based on the presence of this variant.", 
+    "URL": "http://evidence.pgp-hms.org/CYP2C9-R144C", 
+    "Variant Name": "CYP2C9-R144C", 
+    "Variant Page": "http://evidence.pgp-hms.org/CYP2C9-R144C", 
+    "dbSNP IDs": [
+        "rs1799853"
+    ]
+}

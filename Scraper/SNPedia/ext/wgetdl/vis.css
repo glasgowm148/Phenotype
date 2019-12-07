@@ -1,0 +1,16 @@
+#options {
+	float:left; 
+	width:210; 
+	z-index:10; 
+	margin-top:130; 
+	border:1px solid black; 
+	padding:8px; 
+	padding-bottom:28px;
+}
+
+#chart_div {
+	float:left; 
+	position:relative; 
+	width:1000px;
+	/*look at what position: fixed does*/
+}

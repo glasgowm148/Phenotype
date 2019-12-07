@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.28", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "182554557", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Cancer", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "RNASEL", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Complex/Other", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "11941539", 
+        "12022038", 
+        "12415269", 
+        "17407163"
+    ], 
+    "Scores": {
+        "Case/Control": "2", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Associated with increased risk of prostate cancer in individuals who already have a family history of prostate cancer, but studies have been unable to replicate this finding in sporadic (non-familial) prostate cancer cases.", 
+    "URL": "http://evidence.pgp-hms.org/RNASEL-R462Q", 
+    "Variant Name": "RNASEL-R462Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/RNASEL-R462Q", 
+    "dbSNP IDs": [
+        "rs486907"
+    ]
+}

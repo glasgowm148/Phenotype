@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.00019", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "120539691", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Anatomical and congenital"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "NOTCH2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. Predicted to be damaging by Polyphen 2 and other damaging variants cause Alagille syndrome, but this variant is not rare enough and has been seen in a healthy PGP participant.", 
+    "URL": "http://evidence.pgp-hms.org/NOTCH2-P227H", 
+    "Variant Name": "NOTCH2-P227H", 
+    "Variant Page": "http://evidence.pgp-hms.org/NOTCH2-P227H", 
+    "dbSNP IDs": [
+        "rs3899528"
+    ]
+}

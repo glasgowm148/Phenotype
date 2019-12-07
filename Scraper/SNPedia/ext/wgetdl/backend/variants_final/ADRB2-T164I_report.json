@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.011", 
+    "Build 37 Chromosome": "chr5", 
+    "Build 37 Position": "148206885", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Drug response", 
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ADRB2", 
+    "Impact": "Pharmacogenetic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "7901205", 
+        "18353108"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": "4", 
+        "Penetrance": "0", 
+        "Severity": "0", 
+        "Treatability": "0"
+    }, 
+    "Summary": "This rare variant in \u03b22-Adrenoceptor has only reported heterozygously (in 2-4% of the population) and strongly decreases the protein\u2019s responsiveness to inducing compounds (agonists). Carriers of this variant are less sensitive to induction of increased heart rate, heart contraction, and vasodilation by \u03b2-AR agonists. Mixed data suggests that this variant does not have a significant impact on hypertension or heart disease. It may affect responsiveness to beta blocker drugs.", 
+    "URL": "http://evidence.pgp-hms.org/ADRB2-T164I", 
+    "Variant Name": "ADRB2-T164I", 
+    "Variant Page": "http://evidence.pgp-hms.org/ADRB2-T164I", 
+    "dbSNP IDs": [
+        "rs1800888"
+    ]
+}

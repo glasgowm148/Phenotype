@@ -1,0 +1,136 @@
+/*
+	vis_style.css
+	for v1.php & v2.php
+
+	Nicole Francisco
+	for Wellesley College HCI Lab
+ */
+
+ /* navbar */
+ #study_wrapper {
+    margin-top:500px;
+	margin-left:10px;
+	}
+/* Form styles */
+ #study_wrapper input[type="checkbox"], input[type="radio"] {
+    vertical-align:middle;
+    margin:0 10px 0 10px;
+    padding:0 10px 0 10px;
+    float:left;
+}
+
+ #study_wrapper textarea {
+    width:auto;
+	display:block;
+}
+
+ #study_wrapper input[type=number] {
+    height:auto;
+}
+
+ #study_wrapper select, input[type="text"] {
+    margin-left: 5px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#study_wrapper .submit_top {
+	margin: 11px 0;
+}
+ 
+/* Pop-up div box */
+#validate_msg{
+	position: fixed;
+    left: 25%;
+    top: 25%;
+    border: 1px solid black;
+	padding: 30px;
+    width: 50%;
+}
+
+#exitBtn{
+	position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+#study_wrapper label{
+ font-size:14px;
+ vertical-align: middle;
+}
+
+#study_wrapper li{
+ font-size:14px;
+ vertical-align: middle;
+}
+
+#study_wrapper p{
+ font-size:14px;
+ vertical-align: middle;
+}
+
+#study_wrapper button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+#study_wrapper label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#study_wrapper input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+#study_wrapper input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+
+#study_wrapper button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+#study_wrapper button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+#study_wrapper button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+#study_wrapper button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+#study_wrapper button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+

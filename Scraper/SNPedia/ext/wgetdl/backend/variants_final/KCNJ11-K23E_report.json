@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.74", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "17409572", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "KCNJ11", 
+    "Impact": "Protective", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "17463246", 
+        "17463248", 
+        "20054294"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This variant is associated with decreased risk of type 2 diabetes. It is unclear whether this variant has additive effects, or acts in a dominant or recessive manner. Assuming diabetes has a lifetime risk of 36%, we estimate a decreased risk of around 1-2% per copy of this variant.", 
+    "URL": "http://evidence.pgp-hms.org/KCNJ11-K23E", 
+    "Variant Name": "KCNJ11-K23E", 
+    "Variant Page": "http://evidence.pgp-hms.org/KCNJ11-K23E", 
+    "dbSNP IDs": [
+        "rs5219"
+    ]
+}

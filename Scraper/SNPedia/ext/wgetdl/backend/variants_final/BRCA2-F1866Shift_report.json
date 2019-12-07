@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Cancer"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "BRCA2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "4", 
+        "Familial": "4", 
+        "Functional": "0", 
+        "Penetrance": "4", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "This frameshift introduces a premature stop codon. Frameshifts in the BRCA2 tumor-suppressing gene region are considered pathogenic (see \"Discussion\" -> \"Novel Mutations\" subsection in http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3583621/).", 
+    "URL": "http://evidence.pgp-hms.org/BRCA2-F1866Shift", 
+    "Variant Name": "BRCA2-F1866Shift", 
+    "Variant Page": "http://evidence.pgp-hms.org/BRCA2-F1866Shift", 
+    "dbSNP IDs": [
+        "rs80359524"
+    ]
+}

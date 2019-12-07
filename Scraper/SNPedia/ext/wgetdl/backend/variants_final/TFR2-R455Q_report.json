@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0023", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "100226902", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "TFR2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "12150153", 
+        "16424658"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "0", 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Hypothesized to be increase risk or severity of hemochromatosis, but only speculations based on a couple sporadic observations (no statistical significance).", 
+    "URL": "http://evidence.pgp-hms.org/TFR2-R455Q", 
+    "Variant Name": "TFR2-R455Q", 
+    "Variant Page": "http://evidence.pgp-hms.org/TFR2-R455Q", 
+    "dbSNP IDs": [
+        "rs41303501"
+    ]
+}

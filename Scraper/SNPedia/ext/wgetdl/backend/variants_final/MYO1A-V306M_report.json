@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0062", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "57437119", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "MYO1A", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "12736868"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. Other variants in this gene implicated in causing autosomal dominant nonsyndromic deafness. This variant was also considered potentially pathogenic, but subsequent allele frequency data strongly contradicts such a hypothesis.", 
+    "URL": "http://evidence.pgp-hms.org/MYO1A-V306M", 
+    "Variant Name": "MYO1A-V306M", 
+    "Variant Page": "http://evidence.pgp-hms.org/MYO1A-V306M"
+}

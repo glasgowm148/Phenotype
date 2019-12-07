@@ -1,0 +1,31 @@
+{
+    "Allele Frequency": "0.00051", 
+    "Build 37 Chromosome": "chr4", 
+    "Build 37 Position": "15552591", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Anatomical and congenital", 
+        "Mental and behavioral", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CC2D2A", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Unreported, predicted to be damaging. Other recessive mutations in this gene cause Joubert Syndrome and Meckel Syndrome.", 
+    "URL": "http://evidence.pgp-hms.org/CC2D2A-G776R", 
+    "Variant Name": "CC2D2A-G776R", 
+    "Variant Page": "http://evidence.pgp-hms.org/CC2D2A-G776R"
+}

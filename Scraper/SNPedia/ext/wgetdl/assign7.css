@@ -1,0 +1,12 @@
+/*
+FILE NAME: assign7.css
+WRITTEN BY: Isabelle Styslinger and Christina Pollalis
+DATE: 4 November 2015
+PURPOSE: This is the css file. It is only used to change the appearance of the
+words that are manipulated in the mad libs paragraph
+*/
+
+.noun, .object, .adjective, .adverb {
+    border-bottom: 1px solid red;
+    color: red;
+}

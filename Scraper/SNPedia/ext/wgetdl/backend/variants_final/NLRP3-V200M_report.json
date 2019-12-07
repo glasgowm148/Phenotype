@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "NLRP3", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "11687797"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "0", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause familial cold urticaria by Hoffman et al, in a dominant manner. However the variant is quite common (1 in 50 Europeans is a carrier) while the disease is extremely rare (<1 in 1 million) -- therefore the variant can't be causing this effect.", 
+    "URL": "http://evidence.pgp-hms.org/NLRP3-V200M", 
+    "Variant Name": "NLRP3-V200M", 
+    "Variant Page": "http://evidence.pgp-hms.org/NLRP3-V200M", 
+    "dbSNP IDs": [
+        "rs121908147"
+    ]
+}

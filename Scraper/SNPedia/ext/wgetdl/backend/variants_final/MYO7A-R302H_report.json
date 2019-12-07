@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0017", 
+    "Build 37 Chromosome": "chr11", 
+    "Build 37 Position": "76869378", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "MYO7A", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "8900236", 
+        "16963483", 
+        "18700726"
+    ], 
+    "Scores": {
+        "Case/Control": "4", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Weston, et al. 1996 reported seeing this on the same DNA strand with another variant in a couple cases of Usher Type I syndrome. That other variant was believed to cause disease in a recessive manner, while this variant was speculated to be coincidental observed. ExAC allele frequency data confirms that this variant is merely uncommon in Europeans (1 in 170 are carriers). If it were causal, it would be a well-established cause; the lack of such evidence in the literature confirms that the variant is not a \"Mendelian\" cause of Usher Type I syndrome.", 
+    "URL": "http://evidence.pgp-hms.org/MYO7A-R302H", 
+    "Variant Name": "MYO7A-R302H", 
+    "Variant Page": "http://evidence.pgp-hms.org/MYO7A-R302H", 
+    "dbSNP IDs": [
+        "rs41298135"
+    ]
+}

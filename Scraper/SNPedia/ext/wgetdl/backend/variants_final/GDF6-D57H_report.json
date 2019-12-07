@@ -1,0 +1,26 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "GDF6", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause Leber congenital amaurosis in a recessive manner, causing congenital vision loss. This effect is recorded in ClinVar by OMIM (http://www.ncbi.nlm.nih.gov/clinvar/RCV000054426/) and comes from Asai-Coakwell 2013 (PMID: 23307924), who report seeing this variant compound heterozygous with another pathogenic variant in a single case out of 279 studied. According to ExAC data, about 1 in 6000 with European ancestry carry this variant.", 
+    "URL": "http://evidence.pgp-hms.org/GDF6-D57H", 
+    "Variant Name": "GDF6-D57H", 
+    "Variant Page": "http://evidence.pgp-hms.org/GDF6-D57H"
+}

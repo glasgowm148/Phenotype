@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.00065", 
+    "Build 37 Chromosome": "chr20", 
+    "Build 37 Position": "52774675", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "CYP24A1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "21675912"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": "0", 
+        "Penetrance": "3", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Several report strongly confirm this is associated with hypercalcemia of infancy, acting in a recessive manner. The condition is rare, and is described as \"idiopathic\" (sporadic) \u2013 it's unclear what the risk is for the condition, if an individual carries homozygous or compound heterozygous genotype.", 
+    "URL": "http://evidence.pgp-hms.org/CYP24A1-R396W", 
+    "Variant Name": "CYP24A1-R396W", 
+    "Variant Page": "http://evidence.pgp-hms.org/CYP24A1-R396W", 
+    "dbSNP IDs": [
+        "rs114368325"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "Allele Frequency": "0.21", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "148459988", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Drug response", 
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Likely", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 6, 
+    "PMID List": [
+        "8021009", 
+        "\n11250978", 
+        "11593098", 
+        "16046653", 
+        "16675453", 
+        "17668390"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "0", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": "2", 
+        "Severity": "4", 
+        "Treatability": "4"
+    }, 
+    "Summary": "This common noncoding genetic variant has an allele frequency of ~30% and is associated with an increased risk of hypertension. If ~25% of non-carriers have hypertension, Bonnardeaux et al's data predict ~4% increased risk of hypertension per copy of this variant. This SNP is in the 3' noncoding region of the AGTR1 transcript (angiotensin II type 1 receptor), also known as AT2R1 or AT1R, which is a target of hypertension drugs.", 
+    "URL": "http://evidence.pgp-hms.org/rs5186", 
+    "Variant Name": "rs5186", 
+    "Variant Page": "http://evidence.pgp-hms.org/rs5186", 
+    "dbSNP IDs": [
+        "rs5186"
+    ]
+}

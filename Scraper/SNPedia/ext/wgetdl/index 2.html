@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>d3 sunburst partition example</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "1000px");
+  </script>
+
+<div id="main">
+    <div id="sequence"></div>
+      <div id="chart">
+        <div id="explanation">
+          <span id="info">Hover over variants to see which ones you share</span><br/>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <input type="radio" id="all" name="gender" value="all" checked> All<br>
+      <input type="radio" id="p1" name="gender" value="p1" > Person 1<br>
+      <input type="radio" id="p2" name="gender" value="p2"> Person 2<br>
+      <input type="radio" id="shared" name="gender" value="shared"> Shared
+    </form>
+
+    <div id="sidebar">
+      <input type="checkbox" id="togglelegend"> Legend<br/>
+      <div id="legend" style="visibility: hidden;"></div>
+    </div>
+
+  
+    
+  </body>
+</html>

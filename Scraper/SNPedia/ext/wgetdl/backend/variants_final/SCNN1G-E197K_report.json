@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0064", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "23200963", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "SCNN1G", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "18507830", 
+        "19462466"
+    ], 
+    "Scores": {
+        "Case/Control": "3", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": "-1", 
+        "Penetrance": "1", 
+        "Severity": "4", 
+        "Treatability": "1"
+    }, 
+    "Summary": "May cause slight increased risk of rare, CFTR-like disease.", 
+    "URL": "http://evidence.pgp-hms.org/SCNN1G-E197K", 
+    "Variant Name": "SCNN1G-E197K", 
+    "Variant Page": "http://evidence.pgp-hms.org/SCNN1G-E197K", 
+    "dbSNP IDs": [
+        "rs5738"
+    ]
+}

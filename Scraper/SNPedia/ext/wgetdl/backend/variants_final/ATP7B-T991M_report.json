@@ -1,0 +1,27 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Mouth, liver, and digestive", 
+        "Nervous system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "ATP7B", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Reported to cause Wilson's disease in a recessive manner, a disorder where copper accumulation leads to neurological and liver dysfunction. This effect is recorded in ClinVar by LabCorp (http://www.ncbi.nlm.nih.gov/clinvar/RCV000029361/).", 
+    "URL": "http://evidence.pgp-hms.org/ATP7B-T991M", 
+    "Variant Name": "ATP7B-T991M", 
+    "Variant Page": "http://evidence.pgp-hms.org/ATP7B-T991M"
+}

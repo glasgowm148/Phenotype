@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0051", 
+    "Build 37 Chromosome": "chr16", 
+    "Build 37 Position": "3299586", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "MEFV", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "10090880", 
+        "18097735"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "2", 
+        "Severity": "3", 
+        "Treatability": "4"
+    }, 
+    "Summary": "Weak evidence associating this with familial mediterranean fever, but there is a fairly high frequency of this allele. This variant might cause increased susceptibility to the disease but there is not enough evidence to be significant.", 
+    "URL": "http://evidence.pgp-hms.org/MEFV-P369S", 
+    "Variant Name": "MEFV-P369S", 
+    "Variant Page": "http://evidence.pgp-hms.org/MEFV-P369S", 
+    "dbSNP IDs": [
+        "rs11466023"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.093", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "115236057", 
+    "Build 37 Variant Allele": "A", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Metabolism", 
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "AMPD1", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "1631143"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "2", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Causes Adenosine Deaminase Deficiency in a recessive manner. Most of the time individuals do not report symptoms, but when symptoms do exist they to be post-exercise symptoms of muscle weakness, muscle pain, and getting tired more quickly.", 
+    "URL": "http://evidence.pgp-hms.org/AMPD1-Q12X", 
+    "Variant Name": "AMPD1-Q12X", 
+    "Variant Page": "http://evidence.pgp-hms.org/AMPD1-Q12X", 
+    "dbSNP IDs": [
+        "rs17602729"
+    ]
+}

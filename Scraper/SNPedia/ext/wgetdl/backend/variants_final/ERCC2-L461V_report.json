@@ -1,0 +1,29 @@
+{
+    "Allele Frequency": "0.00028", 
+    "Build 37 Chromosome": "chr19", 
+    "Build 37 Position": "45860626", 
+    "Build 37 Variant Allele": "C", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Skin"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "ERCC2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": null, 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Reported to cause Xeroderma Pigmentosum (XP) and Photosensitive Trichothiodystrophy (TTD) in a recessive manner. These effects are recorded in ClinVar by OMIM and come, respectively, from Frederick et al 1994 (PMID: 7849702), and Takayama et al 1996 & Takayama et al 1997 (PMID: 8571952 & PMID: 9195225). Notably, the latter papers implicated this variant only in combination with a 15 amino acid deletion on the same chromosome (expected to have a more severe effect \u2013 so this variant may have been coincidental and not causal). In ExAC data this variant has an allele frequency of 0.7% in South Asian ancestry, which means at least 1 in 20,000 with South Asian ancestry are expected to be homozygous. In contrast, XP and TTD are both much rarer, with incidences of 1 inn 250,000 to 1,000,000. This information, combined with a lack of more recent confirming literature, indicates the reported effects should probably be considered disproven.", 
+    "URL": "http://evidence.pgp-hms.org/ERCC2-L461V", 
+    "Variant Name": "ERCC2-L461V", 
+    "Variant Page": "http://evidence.pgp-hms.org/ERCC2-L461V"
+}

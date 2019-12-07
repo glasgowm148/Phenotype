@@ -1,0 +1,35 @@
+{
+    "Allele Frequency": "0.0011", 
+    "Build 37 Chromosome": "chr3", 
+    "Build 37 Position": "32181723", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Other"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "GPD1L", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "17967976"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "-1", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "5", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Found in a single SIDS case (out of 304 total cases). Although the authors described a functional impact of the variant in cell lines, the findings in human subjects did not have statistical significance and there is currently no clinical testing for variants in this gene.", 
+    "URL": "http://evidence.pgp-hms.org/GPD1L-I124V", 
+    "Variant Name": "GPD1L-I124V", 
+    "Variant Page": "http://evidence.pgp-hms.org/GPD1L-I124V", 
+    "dbSNP IDs": [
+        "rs72552293"
+    ]
+}

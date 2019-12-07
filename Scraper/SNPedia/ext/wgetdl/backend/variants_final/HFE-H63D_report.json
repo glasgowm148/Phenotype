@@ -1,0 +1,39 @@
+{
+    "Allele Frequency": "0.11", 
+    "Build 37 Chromosome": "chr6", 
+    "Build 37 Position": "26091179", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Blood"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "HFE", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 5, 
+    "PMID List": [
+        "8696333", 
+        "9462220", 
+        "12429850", 
+        "14673107", 
+        "17042772"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": "2", 
+        "Penetrance": "1", 
+        "Severity": "4", 
+        "Treatability": "5"
+    }, 
+    "Summary": "There have been some hypotheses that this variant contributes to causing hereditary hemochromatosis, possibly as a compound heterozygote, but some others treat it as a polymorphism. Cys282Tyr is the classic causal variant and itself has very low penetrance. Mouse studies indicates this variant has a similar but weaker effect; if it has any effect at all its penetrance may be quite low and/or require modifier alleles.", 
+    "URL": "http://evidence.pgp-hms.org/HFE-H63D", 
+    "Variant Name": "HFE-H63D", 
+    "Variant Page": "http://evidence.pgp-hms.org/HFE-H63D", 
+    "dbSNP IDs": [
+        "rs1799945"
+    ]
+}

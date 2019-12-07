@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "0.0049", 
+    "Build 37 Chromosome": "chr12", 
+    "Build 37 Position": "33049590", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Heart and circulatory"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "PKP2", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "16567567", 
+        "20829228"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Probably benign. This variant has been classified as a rare polymorphism, although other variants in this gene have been implicated in causing autosomal dominant arrhythmogenic right ventricular dysplasia (which can cause sudden death at an early age).", 
+    "URL": "http://evidence.pgp-hms.org/PKP2-D26N", 
+    "Variant Name": "PKP2-D26N", 
+    "Variant Page": "http://evidence.pgp-hms.org/PKP2-D26N"
+}

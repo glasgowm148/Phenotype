@@ -1,0 +1,28 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Blood", 
+        "Mouth, liver, and digestive", 
+        "Muscular, skeletal, and connective tissue"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "GBA", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 0, 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "3"
+    }, 
+    "Summary": "Causes Gaucher's disease, a recessive disorder whose symptoms include anemia, bruising, bone lesions, and spleen and liver issues. Reported to ClinVar by OMIM and Emory Genetics Laboratory (http://www.ncbi.nlm.nih.gov/clinvar/RCV000004509/), numerous publications cite this variant as causing the disease.", 
+    "URL": "http://evidence.pgp-hms.org/GBA-L483P", 
+    "Variant Name": "GBA-L483P", 
+    "Variant Page": "http://evidence.pgp-hms.org/GBA-L483P"
+}

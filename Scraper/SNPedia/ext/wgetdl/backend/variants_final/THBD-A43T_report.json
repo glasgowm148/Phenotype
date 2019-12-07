@@ -1,0 +1,36 @@
+{
+    "Allele Frequency": "0.0038", 
+    "Build 37 Chromosome": "chr20", 
+    "Build 37 Position": "23030015", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "High", 
+    "Condition Tags": [
+        "Blood", 
+        "Genital and urinary"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "THBD", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Dominant", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "19625716"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "0", 
+        "Familial": "1", 
+        "Functional": "1", 
+        "Penetrance": "5", 
+        "Severity": "4", 
+        "Treatability": "2"
+    }, 
+    "Summary": "Reported to cause familial hemolytic-uremic syndrome in a dominant manner, a potentially lethal illness in children. If true, penetrance is not 100%, but some family history of the illness might be expected.", 
+    "URL": "http://evidence.pgp-hms.org/THBD-A43T", 
+    "Variant Name": "THBD-A43T", 
+    "Variant Page": "http://evidence.pgp-hms.org/THBD-A43T", 
+    "dbSNP IDs": [
+        "rs1800576"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.0053", 
+    "Build 37 Chromosome": "chr7", 
+    "Build 37 Position": "117267812", 
+    "Build 37 Variant Allele": "G", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Breathing", 
+        "Metabolism"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "CFTR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 2, 
+    "PMID List": [
+        "11186891", 
+        "15987793"
+    ], 
+    "Scores": {
+        "Case/Control": "0", 
+        "Computational": "1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": "4", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Reported to cause mild dysfunction of the cystic fibrosis gene, it may result in cystic fibrosis when combined with more severe variants.", 
+    "URL": "http://evidence.pgp-hms.org/CFTR-S1235R", 
+    "Variant Name": "CFTR-S1235R", 
+    "Variant Page": "http://evidence.pgp-hms.org/CFTR-S1235R", 
+    "dbSNP IDs": [
+        "rs34911792"
+    ]
+}

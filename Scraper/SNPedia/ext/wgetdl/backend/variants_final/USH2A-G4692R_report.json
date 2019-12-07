@@ -1,0 +1,32 @@
+{
+    "Allele Frequency": "0.0047", 
+    "Build 37 Chromosome": "chr1", 
+    "Build 37 Position": "215844373", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Hearing and vision"
+    ], 
+    "Evidence": "Uncertain", 
+    "Gene Symbol": "USH2A", 
+    "Impact": "Benign", 
+    "Inheritance": "Unknown", 
+    "PMID Count": 1, 
+    "PMID List": [
+        "22004887"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "-1", 
+        "Familial": null, 
+        "Functional": null, 
+        "Penetrance": null, 
+        "Severity": null, 
+        "Treatability": null
+    }, 
+    "Summary": "Likely benign. Deleterious variants in this gene can cause Usher Syndrome type IIa in a recessive manner, but this variant doesn't appear to be involved.", 
+    "URL": "http://evidence.pgp-hms.org/USH2A-G4692R", 
+    "Variant Name": "USH2A-G4692R", 
+    "Variant Page": "http://evidence.pgp-hms.org/USH2A-G4692R"
+}

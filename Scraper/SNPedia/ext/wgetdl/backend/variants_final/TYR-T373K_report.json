@@ -1,0 +1,33 @@
+{
+    "Allele Frequency": "?", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Moderate", 
+    "Condition Tags": [
+        "Hearing and vision", 
+        "Skin"
+    ], 
+    "Evidence": "Well-established", 
+    "Gene Symbol": "TYR", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 4, 
+    "PMID List": [
+        "1905879", 
+        "8128955", 
+        "18326704", 
+        "18463683"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "3", 
+        "Functional": null, 
+        "Penetrance": "5", 
+        "Severity": "3", 
+        "Treatability": "1"
+    }, 
+    "Summary": "Numerous reports confirm this is a well-established cause of oculocutaneous albinism type 1 (recessive). Oetting, et al. 1991 reported this variant as compound heterozygous in one of three patients. Gershoni-Baruch, et al. 1994 found it compound heterozygous in 2 of 38 cases. Later studies further confirm variant, e.g. Hutton et al. 2008 (4 compound het carriers in 36 patients, PMID 18326704) and the same authors later found it heterozygous in 23 out of 121 patients (PMID 18463683).", 
+    "URL": "http://evidence.pgp-hms.org/TYR-T373K", 
+    "Variant Name": "TYR-T373K", 
+    "Variant Page": "http://evidence.pgp-hms.org/TYR-T373K"
+}

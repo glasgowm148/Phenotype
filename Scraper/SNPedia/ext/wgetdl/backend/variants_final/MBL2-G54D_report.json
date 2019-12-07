@@ -1,0 +1,37 @@
+{
+    "Allele Frequency": "0.1", 
+    "Build 37 Chromosome": "chr10", 
+    "Build 37 Position": "54531235", 
+    "Build 37 Variant Allele": "T", 
+    "Build37 coordinates:": [], 
+    "Clinical Importance": "Low", 
+    "Condition Tags": [
+        "Immune system"
+    ], 
+    "Evidence": "Likely", 
+    "Gene Symbol": "MBL2", 
+    "Impact": "Pathogenic", 
+    "Inheritance": "Recessive", 
+    "PMID Count": 3, 
+    "PMID List": [
+        "7564730", 
+        "10199352", 
+        "17872904"
+    ], 
+    "Scores": {
+        "Case/Control": "5", 
+        "Computational": "2", 
+        "Familial": "0", 
+        "Functional": null, 
+        "Penetrance": "3", 
+        "Severity": "2", 
+        "Treatability": "2"
+    }, 
+    "Summary": "This variant is associated with mannose binding protein deficiency which leads to impaired complement system immune response to mannose-rich pathogens. Patients homozygous for this allele or compound heterozygous are likely to have increased susceptibility to infection, but Hellemann et al. report heterosis for intensive care outcomes in heterozygous subjects. The wild-type version of this gene is known as variant allele A, while this is called variant allele B. See R52C (variant D) and G57E (variant C).", 
+    "URL": "http://evidence.pgp-hms.org/MBL2-G54D", 
+    "Variant Name": "MBL2-G54D", 
+    "Variant Page": "http://evidence.pgp-hms.org/MBL2-G54D", 
+    "dbSNP IDs": [
+        "rs1800450"
+    ]
+}

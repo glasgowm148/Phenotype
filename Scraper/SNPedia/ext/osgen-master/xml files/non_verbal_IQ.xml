@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<data>
+    <trait>
+        <name>
+            Non-Verbal IQ (Performance IQ)
+        </name>
+        
+        <wikipedialink>
+            https://en.wikipedia.org/wiki/Wechsler_Adult_Intelligence_Scale#Performance_IQ_.28PIQ.29
+        </wikipedialink>
+        
+        <description>
+            
+        </description>
+        
+        <supertrait slug = "intelligence">
+            Intelligence
+        </supertrait>
+        
+        <subtrait>
+        </subtrait>
+        
+    </trait>
+    <output type="phenotype">
+        <SNP>
+            <rsid>rs363050</rsid>
+            
+            <ethnicity value ="European">
+        
+                <genotype value="AA">
+                    <shortmeaning>Slightly higher non-verbal IQ</shortmeaning>
+                    <longmeaning>Individuals with this genotype on average scored 3 points higher on the Performance IQ test. </longmeaning>
+                </genotype>
+                
+                <genotype value="AG">
+                    <shortmeaning>Average non-verbal IQ</shortmeaning>
+                    <longmeaning>Individuals with this genotype had average performance on the Performance IQ test. </longmeaning>
+                </genotype>
+                
+                <genotype value="GG">
+                    <shortmeaning>Slightly lower non-verbal IQ</shortmeaning>
+                    <longmeaning>Individuals with this genotype on average scored 3 points lower on the Performance IQ test. </longmeaning>
+                </genotype>
+                
+            </ethnicity>
+            
+        </SNP>
+    </output>
+</data>
+    
