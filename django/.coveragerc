@@ -1,0 +1,5 @@
+[run]
+include = phenotype/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin

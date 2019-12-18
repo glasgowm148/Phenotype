@@ -1,0 +1,76 @@
+import argparse
+import os
+import string
+import json
+from pathlib import Path
+
+import pandas as pd                     
+import matplotlib.pyplot as plt          # plotting
+import numpy as np                       # dense matrices
+from scipy.sparse import csr_matrix      # sparse matrices
+
+
+class PersonalData:
+    def __init__(self, pd):
+        print(pd.head())
+        #if os.path.exists(filepath):
+            
+            #self.readData(filepath)
+           # self.export()
+
+    def readData(self, filepath):
+        dataSource = True #Ugly fix for
+        with open(filepath) as file:
+            if "Ancestry" in file.readline():
+                dataSource = False
+            relevantdata = [line for line in file.readlines() if line[0] != "#"]     
+            self.personaldata = [line.split("\t") for line in relevantdata]
+            self.snps = [item[0].lower() for item in self.personaldata]
+
+            if dataSource == False:
+                self.yourData = {item[0].rstrip(""): item[-2].rstrip("") + '/' + item[-1].rstrip("\t\n") \
+                            for item in self.personaldata}
+                print("Ancestry data loaded to data/yourData.json")
+            if dataSource ==True:
+                self.yourData = {item[0].lower(): "(" + item[3].rstrip()[0] + ";" + item[3].rstrip()[-1] + ")" \
+                        for item in self.personaldata}
+                print("23andme data loaded to data/yourData.json")
+                
+        file.close()
+        
+    
+
+
+    def hasGenotype(self, rsid):
+        genotype = self.yourData[rsid]
+        return not genotype == "(-;-)"
+
+    def export(self):
+        filepath = Path(__file__).resolve().with_name('data') / 'yourData.json'
+        with open(filepath, "w") as jsonfile:
+            json.dump(self.yourData, jsonfile)
+
+
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--filepath', help='filepath for json dump to be used for import', required=False)
+
+    args = vars(parser.parse_args())
+
+    if args["filepath"]:
+        pd = PersonalData(filepath=args["filepath"])
+        print(len(pd.personaldata))
+        print(pd.snps[:50])
+        print(list(pd.yourData.keys())[:10])
+        print(list(pd.yourData.values())[:10])
+
+def handle_uploaded_file(f):
+    print("===here=====")
+    print(f)
+
+    for chunk in f.get('document'):
+        print(chunk)
+
