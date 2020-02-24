@@ -6,7 +6,7 @@ There's two Jupyter notebooks which are pretty much functional. Retrieving 500-1
 
 Currently exports a plain HTML table, NaN and 23andme i-rsid's dropped and sorted by adviser rating.
 
-![ ][https://github.com/glasgowm148/Phenotype/blob/master/data/html_table.png]
+![][https://github.com/glasgowm148/Phenotype/blob/master/data/html_table.png]
 
 ### Scrape & Save
 
