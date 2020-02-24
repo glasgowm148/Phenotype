@@ -2,7 +2,11 @@
 
 ## Jupyter Notebook
 
-There's two Jupyter notebooks which are pretty much functional.
+There's two Jupyter notebooks which are pretty much functional. Retrieving 500-1k rsid's a second using [MyVariant.info](https://myvariant.info/) which [returns XML.](http://myvariant.info/v1/variant/rs9264942)
+
+Currently exports a plain HTML table, NaN and 23andme i-rsid's dropped and sorted by adviser rating.
+
+![][data/html_table.png]
 
 ### Scrape & Save
 
