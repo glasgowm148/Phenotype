@@ -23,8 +23,11 @@ Currently only tested with 23andme V4 & V5.
 
 ### ToDo 
 
-* Prettify HTML datatable using DataTables
+* Beautify HTML datatable using DataTables
 * Flatten all DTC file formats into a consistent dataframe for manipulation
 * Add more sources of data
   * SNPedia
   * ONIM
+* Data-validaiton
+  * strand orientation
+  * risk allelle debugging
