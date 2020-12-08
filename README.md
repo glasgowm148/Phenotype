@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/phenotype.png)
+![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png)
 
 
 ### Built With
