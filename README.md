@@ -16,7 +16,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/glasgowm148/Phenotype">
-    <img src="Phenotype/data/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Phenotype</h3>
@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png)
+![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/phenotype.png)
 
 
 ### Built With
