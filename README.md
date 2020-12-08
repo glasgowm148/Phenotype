@@ -16,13 +16,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/glasgowm148/Phenotype">
-    <img src="https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Phenotype</h3>
 
   <p align="center">
-    A proof-of-concept fake news detection cog for RedBot
+    Genomic Analysis
     <br />
     <a href="https://github.com/glasgowm148/Phenotype/tree/main/Phenotype/data/docs"><strong>Explore the docs »</strong></a>
     <br />
