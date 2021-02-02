@@ -72,9 +72,13 @@
 
 This project contains various tools to play with raw SNP data from retail genetic testing. 
 
-## Jupyter Notebook
+  
+* Jupyter - Notebooks that allow quick parsing of results against ClinVar
+* Python - A open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. Using Flask, Kendo, and Python.
+* Django - A UI for the above
+## Jupyter 
 
-There's two Jupyter notebooks which are pretty much functional. Retrieving 500-1k rsids a second using [MyVariant.info](https://myvariant.info/) which [returns XML](http://myvariant.info/v1/variant/rs9264942)
+There's two Jupyter notebooks which are functional. Retrieving 500-1k rsids a second using [MyVariant.info](https://myvariant.info/) which [returns XML](http://myvariant.info/v1/variant/rs9264942)
 
 Currently exports a plain HTML table, NaN and 23andme i-rsid's dropped and sorted by adviser rating.
 
