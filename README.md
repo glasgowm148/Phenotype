@@ -70,12 +70,9 @@
 
 ![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/phenotype.png)
 
-This project contains various tools to play with raw SNP data from retail genetic testing. 
+Phenotype is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. Using Flask, Kendo, and Python.
 
-  
-* Jupyter - Notebooks that allow quick parsing of results against ClinVar
-* Python - A open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. Using Flask, Kendo, and Python.
-* Django - A UI for the above
+
 ## Jupyter 
 
 There's two Jupyter notebooks which are functional. Retrieving 500-1k rsids a second using [MyVariant.info](https://myvariant.info/) which [returns XML](http://myvariant.info/v1/variant/rs9264942)
@@ -84,13 +81,9 @@ Currently exports a plain HTML table, NaN and 23andme i-rsid's dropped and sorte
 
 ![](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/html_table.png)
 
-### Scrape & Save
 
-[Scrape & Save](https://github.com/glasgowm148/Phenotype/blob/master/DNA%20Pandas/Scrape_and_Save.ipynb) queries your rsids against ClinVar and returns assosciations, risk allele's, frequency - and stores it in a datatable. 
-
-### Load & Analyse
-
-[Load & Analyse](https://github.com/glasgowm148/Phenotype/blob/master/DNA%20Pandas/Load_and_Analyse%20.ipynb) matches your rsids against the ClinVar dataframe pulled from [Scrape & Save](https://github.com/glasgowm148/Phenotype/blob/master/DNA%20Pandas/Scrape_and_Save.ipynb). This can be exported to CSV or HTML.
+* [Scrape & Save](/src/2-Jupyter-playground/Scrape_and_Save.ipynb) queries your rsids against ClinVar and returns assosciations, risk allele's, frequency - and stores it in a datatable. 
+* [Load & Analyse](/src/2-Jupyter-playground/Load_and_Analyse.ipynb) matches your rsids against the ClinVar dataframe pulled from [Scrape & Save](/src/2-Jupyter-playground/Scrape_and_Save.ipynb). This can be exported to CSV or HTML.
 
 ### Limitations
 
