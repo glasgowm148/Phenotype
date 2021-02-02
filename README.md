@@ -16,7 +16,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/glasgowm148/Phenotype">
-    <img src="https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png" alt="Logo" width="130" height="120">
+    <img src="https://github.com/glasgowm148/Phenotype/blob/master/docs/img/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Phenotype</h3>
@@ -70,8 +70,7 @@
 
 ![Phenotype Screen Shot](https://github.com/glasgowm148/Phenotype/blob/master/docs/img/phenotype.png)
 
-
-### Built With
+This project contains various tools to play with raw SNP data from retail genetic testing. 
 
 ## Jupyter Notebook
 
