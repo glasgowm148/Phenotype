@@ -101,21 +101,21 @@ Currently only tested with 23andme V4 & V5.
   * strand orientation
   * risk allelle debugging
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED 
 ## Getting Started
 ### Installation
 
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE EXAMPLES 
 ## Overview
 
 
 
 
 
-<!-- ROADMAP -->
+<!-- ROADMAP 
 ## Roadmap
 
 See the [open issues](https://github.com/glasgowm148/Phenotype/issues) for a list of proposed features (and known issues).
@@ -141,7 +141,6 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
 <!-- CONTACT -->
 ## Contact
 
@@ -150,9 +149,9 @@ Mark Glasgow - markglasgow@gmail.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-
-
-
+* [OSGenome](https://github.com/mentatpsi/OSGenome)
+* [SNPApi](https://github.com/leaena/snp-api),  
+* [Snappy](https://github.com/zhaofengli/snappy)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
