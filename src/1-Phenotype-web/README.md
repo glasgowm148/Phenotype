@@ -10,6 +10,27 @@ Raw Data coming from Genetic tests done by Direct To Consumer companies such as 
 With genome analysis, sometimes sites will report on the negative strand - meaning that if a rare gene pops up which is pathogenic for some thing you've never heard of - this is likely the case. If you had such a gene it's likely 23andme would've notified you - This tool is more aimed at created custom phenotypes which combine several low-risk, benign or carrier genes - to demonstrate phenotypes where diseases could be manifesting as the cause of a combination of several genes - rather than one SNP.
 
 
+## Use:
+
+Ensure you are using Python 3. 
+```
+pip3 install -r requirements.txt
+```
+Start scraping (This will take several hours but exports periodically)
+
+```
+python3 SNPedia/DataScraper.py -f SNPedia/data/example2.txt 
+```
+
+Once it's exported 5 results - In a new terminal window
+```
+python3 SNPedia/SnpApi.py
+```
+
+Access the Local Server
+[127.0.0.1:5000](http://127.0.0.1:5000)
+
+
 # Log
 * Done
     * Enabled cross-platform support
@@ -39,23 +60,10 @@ With genome analysis, sometimes sites will report on the negative strand - meani
     * SNPEdia_Scraper
     * genome_report
 
-## Installation:
 
-
-0.
-```
-## Ensure you are using Python3
-pip install -r requirements.txt
-
-## Starts scraping (This will take several hours but exports periodically)
-python3 SNPedia/DataScraper.py -f [Absolute path of your downloaded raw DNA data]
-
-## Once it's exported 5 results - In a new terminal window
-python3 SNPedia/SnpApi.py
-
-## Access the Local Server
-http://127.0.0.1:5000
 ```
 
+
+## Acknowledgements 
 This Git is based on [OSGenome](osgenome/SNPedia at master · mentatpsi/OSGenome), [SNPApi](https://github.com/leaena/snp-api), and [Snappy](https://github.com/zhaofengli/snappy)
 
