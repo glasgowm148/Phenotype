@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
-    <title></title>
+    <title>Phenotype</title>
     <link rel="stylesheet" href="css/kendo.common-material.min.css" />
     <link rel="stylesheet" href="css/kendo.material.min.css" />
     <link rel="stylesheet" href="css/kendo.material.mobile.min.css" />
@@ -45,21 +45,23 @@
 
                 function exportToExcel() {
 			var grid1 = $("#grid").data("kendoGrid");
-			oldPageSize = grid1.dataSource.pageSize();
-			grid1.dataSource.pageSize(grid1.dataSource.data().length);
+				var oldPageSize = grid1.dataSource.pageSize();
+                    grid1.one("excelExport", function() {
+                        grid1.dataSource.pageSize(oldPageSize);
+                    });
+				grid1.dataSource.pageSize(grid1.dataSource.data().length);
                     	grid1.saveAsExcel()
                 };
 
                 $(document).ready(function () {
                     $("#grid").kendoGrid({
 
-                        toolbar: [
-
-                        { name: 'exportExcel1', template: '#= exportExcel()#' },
-
-                        { name:'lookupsnp', template:'#= snplookup()#' },
-                        { name:'lookupsnp2', template:'#= snplookup2()#' },
-                        ],
+	                        toolbar: [
+                            "pdf",
+	                        { name: 'exportExcel1', template: '#= exportExcel()#' },
+	                        { name:'lookupsnp', template:'#= snplookup()#' },
+	                        { name:'lookupsnp2', template:'#= snplookup2()#' },
+	                        ],
                         excel: {
                             fileName: "SNP Report.xlsx",
                             proxyURL: "/excel",
@@ -67,8 +69,7 @@
                         },
 
 
-                        toolbar: ["pdf"],
-                            pdf: {
+	                            pdf: {
                                 allPages: true,
                                 avoidLinks: true,
                                 paperSize: "A4",
@@ -159,9 +160,10 @@
                             return '<a class="k-button" href="#" id="lookupsnp" onclick="snpedia()">SNPedia</a>';
                         };
                         function snpedia(){
-                            var entityGrid = $("#grid").data("kendoGrid");
-                            var rows = entityGrid.select();
-                            var rsid = rows[0].cells[0].innerText
+	                            var entityGrid = $("#grid").data("kendoGrid");
+	                            var rows = entityGrid.select();
+                            if (!rows.length) return;
+	                            var rsid = rows[0].cells[0].innerText
 
                             var html = "https://bots.snpedia.com/index.php/"
                             var link = html.concat(rsid)
@@ -172,9 +174,10 @@
                     
                         };
                         function dbsnp(){
-                            var entityGrid = $("#grid").data("kendoGrid");
-                            var rows = entityGrid.select();
-                            var rsid = rows[0].cells[0].innerText
+	                            var entityGrid = $("#grid").data("kendoGrid");
+	                            var rows = entityGrid.select();
+                            if (!rows.length) return;
+	                            var rsid = rows[0].cells[0].innerText
 
                             var html = "https://www.ncbi.nlm.nih.gov/snp/"
                             var link = html.concat(rsid)
@@ -249,4 +252,3 @@
 
 </body>
 </html>
-

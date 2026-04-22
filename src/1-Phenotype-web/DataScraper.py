@@ -3,48 +3,59 @@
 #     Genome Analysis      #
 ############################
 
-import sys
-if (sys.version_info < (3, 0)):
-	print ("Please use Python 3")
-	exit()
-from random import shuffle
-import numpy as np 
-
-from bs4 import BeautifulSoup
-from pathlib import Path
-import pandas as pd 
-
-import urllib.request
-import pprint
 import json
 import argparse
-import os
+import pprint
 import random
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+import pandas as pd
+from bs4 import BeautifulSoup
 
 from GenomeImporter import PersonalData #imports your raw data
 from SNPGen import GrabSNPs
 
+
+APP_DIR = Path(__file__).resolve().parent
+DATA_DIR = APP_DIR / "data"
+DEFAULT_RSIDS = [
+    "rs1303",
+    "rs1815739",
+    "rs53576",
+    "rs4680",
+    "rs1800497",
+    "rs429358",
+    "rs9939609",
+    "rs4988235",
+    "rs6806903",
+    "rs4244285",
+]
+
+
 class SNPCrawl:
 
 ########################## INITIALISE ####
-    def __init__(self, rsids=[], filepath=None, snppath=None):
+    def __init__(self, rsids=None, filepath=None, snppath=None):
+        rsids = rsids or []
         
         # If .json's already exists
-        if filepath and os.path.isfile(filepath): 
+        if filepath and Path(filepath).is_file():
             self.importDict(filepath)
-            self.rsidList = []
         else: 
             self.scrapedData = {}
-            self.rsidList = []
+        self.rsidList = []
         
-        if snppath and os.path.isfile(snppath):
+        if snppath and Path(snppath).is_file():
             self.importSNPs(snppath) 
         else:
             self.yourData = {}
         rsids = [item.lower() for item in rsids]
         if rsids:
             self.initcrawl(rsids)           # Crawl
-        self.export()                       # Export
+        if rsids or not filepath:
+            self.export()                   # Export
         self.createList()                   # Create List
 
 #################### crawl ####
@@ -85,7 +96,7 @@ class SNPCrawl:
                     "Gene": "",
                     "Risk": ""
                 }
-                response = urllib.request.urlopen(url)
+                response = urllib.request.urlopen(url, timeout=30)
                 html = response.read()
                 bs = BeautifulSoup(html, "html.parser")
                 table = bs.find("table", {"class": "sortable smwtable"})
@@ -103,12 +114,14 @@ class SNPCrawl:
 
         except urllib.error.HTTPError:
             print(url + " was not found on snpedia or contained no valid information")
+        except urllib.error.URLError:
+            print(url + " could not be reached")
 
 ######### IMPORTS ####
         # Latest Study
         try:
             url = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + rsid.lower()
-            response = urllib.request.urlopen(url)
+            response = urllib.request.urlopen(url, timeout=30)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
             study = []
@@ -126,7 +139,7 @@ class SNPCrawl:
 
         try:
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#publications"
-            response = urllib.request.urlopen(url)
+            response = urllib.request.urlopen(url, timeout=30)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
             publications = bs.find(id="publication_datatable")
@@ -137,18 +150,21 @@ class SNPCrawl:
                     cols = row.find_all("td")
                     cols = [ele.text.strip() for ele in cols]
                     study.append(cols)
-            if (len(study) > 0 and not self.scrapedData[rsid]["Studies"]):
+            if (len(study) > 1 and not self.scrapedData[rsid]["Studies"]):
                 self.scrapedData[rsid]["Studies"] = study[1][1]
         except urllib.error.HTTPError:
+            print(url + " was not found or on dbSNP or contained no valid information")
+        except urllib.error.URLError:
             print(url + " was not found or on dbSNP or contained no valid information")
     
 ############# IMPORTS ####
         # ncbi.nlm.nih.gov
         try:
             url = "https://www.ncbi.nlm.nih.gov/snp/" + rsid.lower() + "#clinical_significance"
-            response = urllib.request.urlopen(url)
+            response = urllib.request.urlopen(url, timeout=30)
             html = response.read()
             bs = BeautifulSoup(html, "html.parser")
+            dbSNPTwo = []
 
             classification = bs.find(id="clinical_significance")
             
@@ -183,7 +199,6 @@ class SNPCrawl:
                 except IndexError:
                     print("index error")
                 
-                dbSNPTwo= []
                 rows = ncbi.find_all("dl")
                 
                 for row in rows:
@@ -202,6 +217,8 @@ class SNPCrawl:
 
         except urllib.error.HTTPError:
             print(url + " was not found or on dbSNP or contained no valid information")
+        except urllib.error.URLError:
+            print(url + " was not found or on dbSNP or contained no valid information")
 
 
  ############## IMPORT/Variation function ####
@@ -215,7 +232,7 @@ class SNPCrawl:
         return data
 
 # IMPORT/Rank function ####
-    def rank(self):
+    def rank(self, rsid):
         print("##RANK##")
         print(self.scrapedData[rsid]["ClinVar"])
 
@@ -261,47 +278,46 @@ class SNPCrawl:
         data = pd.DataFrame(self.scrapedData)
         data = data.fillna("-")
         data = data.transpose()
-        datapath = Path(__file__).resolve().with_name("data") / "scrapedData.csv"
+        DATA_DIR.mkdir(exist_ok=True)
+        datapath = DATA_DIR / "scrapedData.csv"
         data.to_csv(datapath)
-        filepath = Path(__file__).resolve().with_name("data") / "scrapedData.json"
+        filepath = DATA_DIR / "scrapedData.json"
 
         with open(filepath,"w") as jsonfile:
             json.dump(self.scrapedData, jsonfile)
 
-##################### CLI PARSER ####
-parser = argparse.ArgumentParser()
-parser.add_argument("-f", "--filepath", help="filepath for raw data to be used for import", required=False)
-args = vars(parser.parse_args())
-#####################################
+def read_rsid_file(filename):
+    path = DATA_DIR / filename
+    if not path.is_file():
+        return []
+    return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
-##################### LOAD RSIDS ####
-# SNPs can also be loaded directly like this
-rsid = ["rs1303"]
-rsid += ["rs1815739", "Rs53576", "rs4680", "rs1800497", "rs429358", "rs9939609", "rs4988235", "rs6806903", "rs4244285"]
-# Load in snps_of_interest.txt
-rsid += [line.rstrip() for line in open('SNPedia/data/snps_of_interest.txt')]
-# Load in one_thousand_and_you.txt
-rsid += [line.rstrip() for line in open('SNPedia/data/one_thousand_and_you.txt')]
-#####################################
+def build_rsid_list(raw_filepath=None):
+    rsids = list(DEFAULT_RSIDS)
+    rsids += read_rsid_file("snps_of_interest.txt")
+    rsids += read_rsid_file("one_thousand_and_you.txt")
 
-if args["filepath"]:
-    personal = PersonalData(args["filepath"])
-    snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
-    sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
-    rsid += sp.snps
-    print("SNPs of interest to analyse:")
-    print(len(sp.snps))
-    temp = personal.snps
-    random.shuffle(temp)
-    print(temp[:10])
-    rsid += temp[:50]
+    if raw_filepath:
+        personal = PersonalData(raw_filepath)
+        snpsofinterest = [snp for snp in personal.snps if personal.hasGenotype(snp)]
+        sp = GrabSNPs(crawllimit=60, snpsofinterest=snpsofinterest, target=100)
+        rsids += sp.snps
+        print("SNPs of interest to analyse:")
+        print(len(sp.snps))
+        temp = list(personal.snps)
+        random.shuffle(temp)
+        print(temp[:10])
+        rsids += temp[:50]
+
+    return rsids
 
 
 if __name__ == "__main__":
-    filepath = Path(__file__).resolve().with_name("data") / "scrapedData.json"
-    if filepath.is_file():
-        dfCrawl = SNPCrawl(rsids=rsid, filepath=filepath)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", "--filepath", help="filepath for raw data to be used for import", required=False)
+    args = parser.parse_args()
 
-    else:
-        dfCrawl = SNPCrawl(rsids=rsid)
+    filepath = DATA_DIR / "scrapedData.json"
+    rsids = build_rsid_list(args.filepath)
+    dfCrawl = SNPCrawl(rsids=rsids, filepath=filepath if filepath.is_file() else None)

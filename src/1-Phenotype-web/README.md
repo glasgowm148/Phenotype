@@ -10,25 +10,42 @@ Raw Data coming from Genetic tests done by Direct To Consumer companies such as 
 With genome analysis, sometimes sites will report on the negative strand - meaning that if a rare gene pops up which is pathogenic for some thing you've never heard of - this is likely the case. If you had such a gene it's likely 23andme would've notified you - This tool is more aimed at created custom phenotypes which combine several low-risk, benign or carrier genes - to demonstrate phenotypes where diseases could be manifesting as the cause of a combination of several genes - rather than one SNP.
 
 
-## Use:
+## Use
 
-Ensure you are using Python 3. 
-```
-pip3 install -r requirements.txt
-```
-Start scraping (This will take several hours but exports periodically)
+Ensure you are using Python 3.10 or newer.
 
-```
-python3 SNPedia/DataScraper.py -f SNPedia/data/example2.txt 
-```
-
-Once it's exported 5 results - In a new terminal window
-```
-python3 SNPedia/SnpApi.py
+```bash
+cd ../../
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r src/1-Phenotype-web/requirements.txt
+cd src/1-Phenotype-web
 ```
 
-Access the Local Server
-[127.0.0.1:5000](http://127.0.0.1:5000)
+Start the local web app with cached data:
+
+```bash
+python SnpApi.py
+```
+
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+If port `5000` is already in use:
+
+```bash
+python -m flask --app SnpApi run --host 127.0.0.1 --port 5001
+```
+
+Open [http://127.0.0.1:5001](http://127.0.0.1:5001).
+
+Refresh the scraped data from a raw genome file:
+
+```bash
+python DataScraper.py -f data/example2.txt
+```
+
+Scraping can take several hours. It exports periodically to `data/scrapedData.json` and `data/scrapedData.csv`. The web app overlays genotype data from `data/yourData.json` when that file exists.
 
 
 # Log
@@ -60,10 +77,5 @@ Access the Local Server
     * SNPEdia_Scraper
     * genome_report
 
-
-```
-
-
 ## Acknowledgements 
 This Git is based on [OSGenome](osgenome/SNPedia at master · mentatpsi/OSGenome), [SNPApi](https://github.com/leaena/snp-api), and [Snappy](https://github.com/zhaofengli/snappy)
-

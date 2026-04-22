@@ -1,7 +1,10 @@
 import requests
-import os
 
 from pathlib import Path
+
+
+DATA_DIR = Path(__file__).resolve().parent / "data"
+SNPEDIA_API_URL = "https://bots.snpedia.com/api.php"
 
 class GrabSNPs:
     """GrabSNPs(crawllimit, target, snpofinterest) ->
@@ -26,59 +29,58 @@ class GrabSNPs:
 
 
     def crawl(self, snpsofinterest=None, cmcontinue=None, target=100):
-        members = []
+        snpsofinterest = {snp.lower() for snp in snpsofinterest or []}
         count = 0
-        if not cmcontinue:
-            curgen = "https://bots.snpedia.com//api.php?action=query&format=json&list=categorymembers&rawcontinue=0&cmtitle=Category%3Ais_a_snp"
-            response = requests.get(curgen)
+        params = {
+            "action": "query",
+            "format": "json",
+            "list": "categorymembers",
+            "cmtitle": "Category:is_a_snp",
+            "cmlimit": "500",
+        }
+        if cmcontinue:
+            params["cmcontinue"] = cmcontinue
+
+        while count <= self.limit:
+            response = requests.get(SNPEDIA_API_URL, params=params, timeout=30)
+            response.raise_for_status()
             jd = response.json()
 
-            members.append(jd["query"]["categorymembers"])
-            cmcontinue = jd["query-continue"]["categorymembers"]["cmcontinue"]
+            members = [item["title"] for item in jd.get("query", {}).get("categorymembers", [])]
+            if snpsofinterest:
+                members = [snp for snp in members if snp.lower() in snpsofinterest]
+            self.snps.extend(members)
 
-        while cmcontinue and count <= self.limit:
-            curgen = "https://bots.snpedia.com//api.php?action=query&format=json&list=categorymembers&rawcontinue=0&cmtitle=Category%3Ais_a_snp&cmcontinue=" \
-                     + cmcontinue
-            response = requests.get(curgen)
-            jd = response.json()
-            members.append(jd["query"]["categorymembers"])
-            cmcontinue = jd["query-continue"]["categorymembers"]["cmcontinue"]
+            continuation = jd.get("continue", {})
+            cmcontinue = continuation.get("cmcontinue")
+            if len(self.snps) >= target or not cmcontinue:
+                break
+
+            params["cmcontinue"] = cmcontinue
+            params["continue"] = continuation.get("continue", "")
             count += 1
 
-        members = [[i["title"] for i in item] for item in members]
-
-        for member in members:
-            self.snps.extend(member)
-
         if snpsofinterest:
-            self.snps = [snp for snp in self.snps if snp.lower() in snpsofinterest]
             print(len(self.snps))
 
-        if len(self.snps) < target:
-            self.crawl(snpsofinterest=snpsofinterest, cmcontinue=cmcontinue, target=target)
-
-        self.cmcontinue = cmcontinue
+        self.cmcontinue = cmcontinue or ""
 
     def lastsessionexists(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
+        filepath = DATA_DIR / 'last_session.txt'
         return filepath.is_file()
 
     def importlast(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
-        lastsession = open(filepath, "r")
-        lines = lastsession.readlines()
-        lastsession.close()
-        lastsessionvalue = lines[0].strip("\n")
+        filepath = DATA_DIR / 'last_session.txt'
+        lines = filepath.read_text(encoding="utf-8").splitlines()
+        lastsessionvalue = lines[0] if lines else ""
         print("Last Session Value")
         print(lastsessionvalue)
-        return lastsessionvalue
+        return lastsessionvalue or None
 
     def export(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'last_session.txt'
-        with open(filepath, "w") as lastsession:
-            lastsession.write(self.cmcontinue)
-            lastsession.close()
-
+        DATA_DIR.mkdir(exist_ok=True)
+        filepath = DATA_DIR / 'last_session.txt'
+        filepath.write_text(self.cmcontinue, encoding="utf-8")
 
 
 

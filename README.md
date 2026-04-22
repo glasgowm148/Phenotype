@@ -72,6 +72,53 @@
 
 Phenotype is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. Using Flask, Kendo, and Python.
 
+## Quick Start
+
+Phenotype has two main workflows:
+
+* View existing cached SNP data in the Flask/Kendo web app.
+* Refresh the cached SNP data from a raw 23andMe or AncestryDNA-style export.
+
+### Install
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r src/1-Phenotype-web/requirements.txt
+cd src/1-Phenotype-web
+```
+
+### Run the Web App
+
+```bash
+python SnpApi.py
+```
+
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+If port `5000` is already in use:
+
+```bash
+python -m flask --app SnpApi run --host 127.0.0.1 --port 5001
+```
+
+Then open [http://127.0.0.1:5001](http://127.0.0.1:5001).
+
+The app reads cached data from `src/1-Phenotype-web/data/scrapedData.json` and, when present, overlays genotypes from `src/1-Phenotype-web/data/yourData.json`.
+
+### Refresh the Data
+
+To import a raw genome file and refresh the scraped data:
+
+```bash
+cd src/1-Phenotype-web
+source ../../.venv/bin/activate
+python DataScraper.py -f data/example2.txt
+```
+
+Scraping can take a long time because it queries external SNPedia/NCBI pages. Progress is exported periodically to `data/scrapedData.json` and `data/scrapedData.csv`.
+
 
 ## Jupyter-playground
 
@@ -88,6 +135,8 @@ Currently exports a plain HTML table, NaN and 23andme i-rsid's dropped and sorte
 ### Limitations
 
 Currently only tested with 23andme V4 & V5. 
+
+This project is for personal exploration only. Direct-to-consumer genetic data can contain false positives and should not be treated as clinical advice without confirmatory testing.
 
 
 ### ToDo 

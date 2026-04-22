@@ -1,45 +1,51 @@
 import argparse
-import os
-import string
 import json
 from pathlib import Path
 
 
+DATA_DIR = Path(__file__).resolve().parent / "data"
+
+
 class PersonalData:
     def __init__(self, filepath):
-        if os.path.exists(filepath):
+        self.personaldata = []
+        self.snps = []
+        self.yourData = {}
+        if Path(filepath).exists():
             self.readData(filepath)
             self.export()
 
     def readData(self, filepath):
-        dataSource = True #Ugly fix for
-        with open(filepath) as file:
-            if "Ancestry" in file.readline():
-                dataSource = False
-            relevantdata = [line for line in file.readlines() if line[0] != "#"]     
-            self.personaldata = [line.split("\t") for line in relevantdata]
-            self.snps = [item[0].lower() for item in self.personaldata]
+        lines = Path(filepath).read_text(encoding="utf-8", errors="replace").splitlines()
+        is_ancestry = any("Ancestry" in line for line in lines[:5])
+        relevantdata = [line for line in lines if line and not line.startswith("#")]
+        self.personaldata = [line.split("\t") for line in relevantdata]
+        self.personaldata = [item for item in self.personaldata if item and item[0]]
+        self.snps = [item[0].lower() for item in self.personaldata]
 
-            if dataSource == False:
-                self.yourData = {item[0].rstrip(""): item[-2].rstrip("") + '/' + item[-1].rstrip("\t\n") \
-                            for item in self.personaldata}
-                print("Ancestry data loaded to data/yourData.json")
-            if dataSource ==True:
-                self.yourData = {item[0].lower(): "(" + item[3].rstrip()[0] + ";" + item[3].rstrip()[-1] + ")" \
-                        for item in self.personaldata}
-                print("23andme data loaded to data/yourData.json")
-                
-        file.close()
-        
-    
+        if is_ancestry:
+            self.yourData = {
+                item[0].lower(): item[-2].strip() + "/" + item[-1].strip()
+                for item in self.personaldata
+                if len(item) >= 2
+            }
+            print("Ancestry data loaded to data/yourData.json")
+        else:
+            self.yourData = {
+                item[0].lower(): "(" + item[3].strip()[0] + ";" + item[3].strip()[-1] + ")"
+                for item in self.personaldata
+                if len(item) >= 4 and item[3].strip()
+            }
+            print("23andme data loaded to data/yourData.json")
 
 
     def hasGenotype(self, rsid):
-        genotype = self.yourData[rsid]
+        genotype = self.yourData.get(rsid.lower(), "(-;-)")
         return not genotype == "(-;-)"
 
     def export(self):
-        filepath = Path(__file__).resolve().with_name('data') / 'yourData.json'
+        DATA_DIR.mkdir(exist_ok=True)
+        filepath = DATA_DIR / 'yourData.json'
         with open(filepath, "w") as jsonfile:
             json.dump(self.yourData, jsonfile)
 

@@ -1,2 +1,56 @@
-.DS*
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local config / secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local runtime files
+*.log
+*.pid
+*.sqlite
+*.sqlite-*
+*.db-journal
+tmp/
+temp/
+
+# Generated app data and personal genome exports
+src/1-Phenotype-web/data/scrapedData.csv
+src/1-Phenotype-web/data/scrapedData.json
+src/1-Phenotype-web/data/yourData.json
+src/1-Phenotype-web/data/last_session.txt
+src/1-Phenotype-web/data/outputs/
+src/1-Phenotype-web/data/AncestryDNA*.txt
+src/1-Phenotype-web/data/23andme*.txt
+src/1-Phenotype-web/data/reload_db.xlsx
+src/2-Jupyter-playground/data/23andme*
+
+# Generated scraper scratch files
+src/1-Phenotype-web/ext/SNPedia_Scraper-master/test.csv
+
+# Large local reference files
 DNA Pandas/resources/refpanel_public_ref.gz
