@@ -8,7 +8,7 @@ import urllib.request
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-from phenotype.models import complement_genotype_key, normalize_genotype_key, normalize_rsid
+from phenotype.models import complement_genotype_key, is_homozygous_genotype_key, normalize_genotype_key, normalize_rsid
 
 SNPEDIA_ASK_API = "https://bots.snpedia.com/api.php"
 
@@ -111,10 +111,14 @@ def fetch_genoset_finding(gs_id: str, timeout: int = 30) -> SnpediaGenotypeFindi
 def matches_imported_genotype(finding: SnpediaGenotypeFinding, imported_genotype: str) -> bool:
     imported_key = normalize_genotype_key(imported_genotype)
     finding_key = normalize_genotype_key(finding.genotype)
+    complement_allowed = not is_homozygous_genotype_key(imported_key)
     return bool(
         imported_key
         and finding_key
-        and (imported_key == finding_key or complement_genotype_key(imported_key) == finding_key)
+        and (
+            imported_key == finding_key
+            or (complement_allowed and complement_genotype_key(imported_key) == finding_key)
+        )
     )
 
 

@@ -21,14 +21,14 @@ def test_home_route_serves_app_shell(tmp_path):
     response = app.test_client().get("/")
 
     assert response.status_code == 200
-    assert b"Import genome" in response.data
-    assert b"Annotation coverage" in response.data
+    assert b"Upload genome" in response.data
+    assert b"Loaded:" in response.data
     assert b"Build 37 variants" in response.data
     assert b"x;y" in response.data
     assert b"x;x" in response.data
-    assert b"Priority" in response.data
+    assert b"Highest priority" in response.data
     assert b"Recent findings" in response.data
-    assert b"Clear all" in response.data
+    assert b"Clear" in response.data
     assert b"Refresh finding dates" in response.data
     assert b"Import ClinVar DB" in response.data
     assert b"Scan x;y ClinVar matches" in response.data
@@ -40,14 +40,17 @@ def test_home_route_serves_app_shell(tmp_path):
     assert b"Missense" in response.data
     assert b"Splice" in response.data
     assert b"Stop gained" in response.data
-    assert b"Unannotated backlog" in response.data
+    assert b"Unannotated" in response.data
     assert b"Finding date" in response.data
     assert b"ClinVar findings" in response.data
-    assert b"Clinical allele match" in response.data
-    assert b"Promethease-style" in response.data
-    assert b"Import SNPedia bad genotypes" in response.data
-    assert b"Scan genosets" in response.data
-    assert b"Finding type" in response.data
+    assert b"Clinical" in response.data
+    assert b"Findings" in response.data
+    assert b"Source only" in response.data
+    assert b"Clinical match" in response.data
+    assert b"Genotype match" in response.data
+    assert b"Update SNPedia" in response.data
+    assert b"Update genosets" in response.data
+    assert b"Promethease-style" not in response.data
     assert b"Pathogenic" in response.data
     assert b"Risk factor" in response.data
     assert b"Drug response" in response.data

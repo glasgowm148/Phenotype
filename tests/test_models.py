@@ -39,6 +39,7 @@ def test_personal_significance_penalizes_common_variants():
 def test_snpedia_genotype_match_detects_complementary_strand():
     assert snpedia_genotype_match([["A;G", "direct"]], "(G;A)") == "direct"
     assert snpedia_genotype_match([["C;T", "complement"]], "(A;G)") == "complement"
+    assert snpedia_genotype_match([["T;T", "homozygous complement"]], "(A;A)") == "none"
     assert snpedia_genotype_match([["T;T", "different"]], "(A;G)") == "none"
 
 

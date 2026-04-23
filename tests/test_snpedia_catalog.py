@@ -31,6 +31,10 @@ def test_catalog_match_allows_complement_and_indels():
         SnpediaGenotypeFinding("rs6025", "(A;G)", "4.1", "Bad", "risk", ""),
         "(C;T)",
     )
+    assert not matches_imported_genotype(
+        SnpediaGenotypeFinding("rs104893931", "(T;T)", "6", "Bad", "risk", ""),
+        "(A;A)",
+    )
     assert matches_imported_genotype(
         SnpediaGenotypeFinding("i3003626", "(I;I)", "0", "Bad", "reported", ""),
         "(I;I)",

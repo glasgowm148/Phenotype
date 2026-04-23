@@ -196,14 +196,16 @@ def snpedia_genotype_match(variations: list[Any], genotype: str) -> str:
     if not genotype_key:
         return ""
     complement_key = complement_genotype_key(genotype_key)
+    complement_allowed = not is_homozygous_genotype_key(genotype_key)
+    found_complement = False
     for variation in variations:
         allele = str(variation[0]) if isinstance(variation, list) and variation else str(variation).split(" ", 1)[0]
         variation_key = normalize_genotype_key(allele)
         if variation_key == genotype_key:
             return "direct"
-        if variation_key and variation_key == complement_key:
-            return "complement"
-    return "none" if variations else ""
+        if complement_allowed and variation_key and variation_key == complement_key:
+            found_complement = True
+    return "complement" if found_complement else ("none" if variations else "")
 
 
 def allele_orientation_note(variations: list[Any], genotype: str, match: str) -> str:
@@ -223,11 +225,22 @@ def snpedia_matched_finding(variations: list[Any], genotype: str, match: str) ->
         return {}
     genotype_key = normalize_genotype_key(genotype)
     complement_key = complement_genotype_key(genotype_key)
+    complement_allowed = not is_homozygous_genotype_key(genotype_key)
+    matched_variation = None
+    matched_allele = ""
     for variation in variations:
         allele = str(variation[0]) if isinstance(variation, list) and variation else str(variation).split(" ", 1)[0]
         variation_key = normalize_genotype_key(allele)
-        if variation_key != genotype_key and variation_key != complement_key:
-            continue
+        if variation_key == genotype_key:
+            matched_variation = variation
+            matched_allele = allele
+            break
+        if complement_allowed and variation_key == complement_key and matched_variation is None:
+            matched_variation = variation
+            matched_allele = allele
+    if matched_variation is not None:
+        variation = matched_variation
+        allele = matched_allele
         magnitude = ""
         note = ""
         if isinstance(variation, list):
@@ -298,6 +311,10 @@ def normalize_genotype_key(value: str) -> str:
     if len(alleles) < 2:
         return ""
     return "".join(sorted(alleles[:2]))
+
+
+def is_homozygous_genotype_key(value: str) -> bool:
+    return len(value) == 2 and value[0] == value[1]
 
 
 def complement_genotype_key(value: str) -> str:
