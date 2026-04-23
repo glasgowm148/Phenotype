@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phenotype"
+version = "0.1.0"
+description = "Local genome annotation explorer"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "Flask>=3.0,<4",
+    "openpyxl>=3.1",
+    "pandas>=2.2",
+    "requests>=2.32",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8",
+]
+
+[project.scripts]
+phenotype-web = "phenotype.cli:web"
+phenotype-scrape = "phenotype.cli:scrape"
+phenotype-vep-import = "phenotype.vep:main"
+
+[tool.setuptools.packages.find]
+where = ["src/1-Phenotype-web"]
+include = ["phenotype*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src/1-Phenotype-web"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

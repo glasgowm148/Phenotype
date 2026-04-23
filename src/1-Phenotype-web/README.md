@@ -2,7 +2,7 @@
 
 ![Example of output](https://github.com/glasgowm148/Phenotype/blob/master/images/phenotype.png)
 ## Description
-Phenotype is an open source web application that allows users to gather the information they need to make sense of their own genome without needing to rely on outside services with unknown privacy policies. OS Genome's goal is to crawl various sources and give meaning to an individual's genome. It creates a Responsive Grid of the user's specific genome. This allows for everything from filtering to excel exporting. All of which using Flask, Kendo, and Python programming.
+Phenotype is an open source local web application that helps users explore cached genome annotations without sending raw genome data to outside services. It uses Flask, SQLite, and plain JavaScript to import local genotype data, filter SNP annotations, refresh selected annotations, and export CSV data.
 
 ## Disclaimer
 Raw Data coming from Genetic tests done by Direct To Consumer companies such as 23andMe and Ancestry.com were found to have a false positive rate of 40% for genes with clinical significance in a March 2018 study [*False-positive results released by direct-to-consumer genetic tests highlight the importance of clinical confirmation testing for appropriate patient care*](https://www.nature.com/articles/gim201838). For this reason, it's important to confirm any at risk clinical SNPs with your doctor who can provide genetic tests and send them to a clinical laboratory.
@@ -19,14 +19,14 @@ cd ../../
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r src/1-Phenotype-web/requirements.txt
-cd src/1-Phenotype-web
+python -m pip install -e ".[dev]"
 ```
 
 Start the local web app with cached data:
 
 ```bash
-python SnpApi.py
+cd src/1-Phenotype-web
+../../.venv/bin/python -m flask --app SnpApi run --host 127.0.0.1 --port 5000
 ```
 
 Open [http://127.0.0.1:5000](http://127.0.0.1:5000).
@@ -42,10 +42,22 @@ Open [http://127.0.0.1:5001](http://127.0.0.1:5001).
 Refresh the scraped data from a raw genome file:
 
 ```bash
-python DataScraper.py -f data/example2.txt
+cd src/1-Phenotype-web
+../../.venv/bin/python DataScraper.py -f data/example2.txt
 ```
 
-Scraping can take several hours. It exports periodically to `data/scrapedData.json` and `data/scrapedData.csv`. The web app overlays genotype data from `data/yourData.json` when that file exists.
+Scraping can take several hours. The app asks MyVariant.info first, then falls back to SNPedia/NCBI HTML pages when API fields are missing. It exports periodically to `data/scrapedData.json` and `data/scrapedData.csv`. The web app overlays genotype data from `data/yourData.json` when that file exists.
+
+The browser app can also import genome files, filter/search SNPs, sort by personal clinical significance, sort by recent classification changes, show color-coded ClinVar finding summaries, link selected SNPs to SNPedia/PubMed/source records, export CSV, delete local genotypes, refresh missing annotation data into the local SQLite cache, refresh missing finding dates from MyVariant/ClinVar, pause or cancel active refresh runs, resume incomplete runs, and retry failed SNP annotations through the API.
+
+Useful development commands:
+
+```bash
+cd ../../
+.venv/bin/python -m pytest
+.venv/bin/python -m ruff check src/1-Phenotype-web/phenotype tests
+.venv/bin/python -m ruff format src/1-Phenotype-web/phenotype tests
+```
 
 
 # Log

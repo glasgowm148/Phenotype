@@ -1,254 +1,978 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phenotype</title>
-    <link rel="stylesheet" href="css/kendo.common-material.min.css" />
-    <link rel="stylesheet" href="css/kendo.material.min.css" />
-    <link rel="stylesheet" href="css/kendo.material.mobile.min.css" />
-
-    <script src="js/jszip.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/kendo.all.min.js"></script>
-
-</head>
-<body>
-
-<div class="main">
-    <div id="content">
-    </div>
- </div>
-	<div class="grid">
-        <div id="example">
-            <div id="grid"></div>
-                <!-- Load Pako ZLIB library to enable PDF compression -->
-    <script src="https://kendo.cdn.telerik.com/2019.2.619/js/pako_deflate.min.js"></script>
-
-    <script type="x/kendo-template" id="page-template">
-      <div class="page-template">
-        <div class="header">
-          <div style="float: right">Page #: pageNum # of #: totalPages #</div>
-          Multi-page grid with automatic page breaking
-        </div>
-        <div class="watermark">Phenotype.dev</div>
-        <div class="footer">
-          Page #: pageNum # of #: totalPages #
-        </div>
-      </div>
-    </script>
-            <script>
-
-                function exportExcel() {
-			return '<a class="k-button" href="#" id="selectallelements" onclick="exportToExcel()">Export to Excel</a>';
-                        
-                }
-
-                function exportToExcel() {
-			var grid1 = $("#grid").data("kendoGrid");
-				var oldPageSize = grid1.dataSource.pageSize();
-                    grid1.one("excelExport", function() {
-                        grid1.dataSource.pageSize(oldPageSize);
-                    });
-				grid1.dataSource.pageSize(grid1.dataSource.data().length);
-                    	grid1.saveAsExcel()
-                };
-
-                $(document).ready(function () {
-                    $("#grid").kendoGrid({
-
-	                        toolbar: [
-                            "pdf",
-	                        { name: 'exportExcel1', template: '#= exportExcel()#' },
-	                        { name:'lookupsnp', template:'#= snplookup()#' },
-	                        { name:'lookupsnp2', template:'#= snplookup2()#' },
-	                        ],
-                        excel: {
-                            fileName: "SNP Report.xlsx",
-                            proxyURL: "/excel",
-                            filterable: true
-                        },
-
-
-	                            pdf: {
-                                allPages: true,
-                                avoidLinks: true,
-                                paperSize: "A4",
-                                margin: { top: "2cm", left: "1cm", right: "1cm", bottom: "1cm" },
-                                landscape: true,
-                                repeatHeaders: true,
-                                template: $("#page-template").html(),
-                                scale: 0.8
-                        },
-
-
-                        dataSource: {
-                            dataType: "json",
-                            transport: {
-                                read: "/api/rsids"
-                            },
-                            sort: {
-                                field: "Variations",
-                                dir: "desc"
-                            },
-                            schema: {
-                                data: function(response) {
-                                    return response.results;
-                                }
-                            },
-                            pageSize: 250
-                        },
-                        columns: [
-                       { field: "Name", width: '150px', title: "rsid" },
-                       { 
-                           field: "Genotype", 
-                           width: '100px', 
-                           title: "You",
-                           template: "#if(Genotype.indexOf(Risk.charAt(0)) == -1) { # <div style='background-color:lightgreen'>#: Genotype     #</div> #} else if (Genotype.indexOf(Risk.charAt(0)) != -1){ # <div style='background-color:orange'>#: Genotype     #</div> #} #"
-                           //template: "#if(Genotype.indexOf(Risk.charAt(3)) != -1){#<span class='red'>#: Genotype     #</span>#}else{#<span class='blue'>#: Genotype #</span> #} #"
-                       
-                       },
-                       { field: "Risk", width: '90px', title: "Alt" },
-                       { field: "Frequency", width: '70px', title: "%" },
-                       { field: "Gene", width: '120px', title: "Gene" },
-
-                       { field: "Description", width: '150px', title: "Description" },
-                       { field: "ClinVar", width: '400px', title: "Clinical Significance", encoded: false },
-                       
-                       
-                       
-
-                       { field: "Studies", width: '190px', title: "Studies" },
-                       { field: "Citations", width: '70px', title: "Citations" },
-                       { field: "Variations", width: '490px', title: "SNPedia Notes", encoded: false },
-                       { field: "Bookmark", width: "120px", editor: customBoolEditor },
-                       {"command":[{"text": "Delete", "click": this.removeItem}]},
-                       { command: ["edit", "destroy"], title: "&nbsp;", width: "250px" }
-                         
-                         
-                         
-                         ],
-                        height: 950,
-                        filterable: true,
-                        sortable: true,
-                        pageable: {
-                            refresh: true,
-                            pageSizes: [100, 250, 500, 1000],
-                            buttonCount: 5
-                        },
-                        selectable: "row",
-                        allowCopy: true,
-                        reorderable: true
-                    });
-                });
-
-                this.removeItem = function(e) {
-                    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
-                    if (dataItem && dataItem.id) {
-                        self.items.remove(function(item) {
-                        return item.id === dataItem.id; 
-                        });
-                    }
-                };
-
-                 function customBoolEditor(container, options) {
-                    var guid = kendo.guid();
-                    $('<input class="k-checkbox" id="' + guid + '" type="checkbox" name="Bookmark" data-type="boolean" data-bind="checked:Bookmark">').appendTo(container);
-                    $('<label class="k-checkbox-label" for="' + guid + '">&#8203;</label>').appendTo(container);
-                }
-
-                function snplookup(e){
-                            return '<a class="k-button" href="#" id="lookupsnp" onclick="snpedia()">SNPedia</a>';
-                        };
-                        function snpedia(){
-	                            var entityGrid = $("#grid").data("kendoGrid");
-	                            var rows = entityGrid.select();
-                            if (!rows.length) return;
-	                            var rsid = rows[0].cells[0].innerText
-
-                            var html = "https://bots.snpedia.com/index.php/"
-                            var link = html.concat(rsid)
-                            window.open(link);
-                        };
-                function snplookup2(e){
-                    return '<a class="k-button" href="#" id="lookupsnp2" onclick="dbsnp()">dbSNP</a>';
-                    
-                        };
-                        function dbsnp(){
-	                            var entityGrid = $("#grid").data("kendoGrid");
-	                            var rows = entityGrid.select();
-                            if (!rows.length) return;
-	                            var rsid = rows[0].cells[0].innerText
-
-                            var html = "https://www.ncbi.nlm.nih.gov/snp/"
-                            var link = html.concat(rsid)
-                            window.open(link);
-                        };
-            </script>
-</div>
-
-<style>
-        /* Page Template for the exported PDF */
-        .page-template {
-          font-family: "DejaVu Sans", "Arial", sans-serif;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #17202a;
+            --muted: #5a6876;
+            --line: #d7e0e7;
+            --panel: #ffffff;
+            --page: #f5f7fa;
+            --accent: #0f6fb4;
+            --good: #dff2df;
+            --warn: #ffe1a8;
+            --danger: #9d2d20;
+            --sev-pathogenic: #a51f1f;
+            --sev-risk: #b75f00;
+            --sev-drug: #6f4ba8;
+            --sev-modifier: #216f7a;
+            --sev-uncertain: #7a6500;
+            --sev-benign: #397645;
         }
-        .page-template .header {
-          position: absolute;
-          top: 30px;
-          left: 30px;
-          right: 30px;
-          border-bottom: 1px solid #888;
-          color: #888;
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; font: 14px Arial, Helvetica, sans-serif; color: var(--ink); background: var(--page); }
+        header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 22px; background: #10263f; color: #fff; }
+        h1 { margin: 0; font-size: 24px; line-height: 1.1; letter-spacing: 0; }
+        .tagline { color: #c7d7e5; }
+        .privacy { padding: 9px 22px; background: #e5f3ed; border-bottom: 1px solid #c3ded2; color: #163d32; }
+        .coverage { display: none; padding: 10px 22px; background: #fff8e1; border-bottom: 1px solid #e5cf83; color: #4b3a06; }
+        .coverage strong { color: #1d2936; }
+        .toolbar { position: sticky; top: 0; z-index: 5; display: grid; gap: 8px; padding: 10px 22px; background: var(--panel); border-bottom: 1px solid var(--line); box-shadow: 0 1px 8px rgba(16, 38, 63, .08); }
+        .toolbar-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+        .control-group { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 6px 10px 6px 0; border-right: 1px solid var(--line); }
+        .control-group:last-of-type { border-right: 0; }
+        .group-label { color: #536171; font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+        .action-group { margin-left: auto; justify-content: flex-end; }
+        input[type="search"], select { height: 36px; border: 1px solid #aebbc7; border-radius: 4px; background: #fff; padding: 0 10px; color: var(--ink); }
+        input[type="search"] { width: min(340px, 100%); }
+        button, .file-button, a.button { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 11px; border: 1px solid #8f9dab; border-radius: 4px; background: #fff; color: #182433; text-decoration: none; cursor: pointer; }
+        button.chip { min-height: 32px; border-color: #c3ced8; background: #f8fafc; }
+        button.chip[aria-pressed="true"] { background: #dbeefd; border-color: var(--accent); color: #073b64; font-weight: 700; }
+        button.sort-active { background: #17324f; border-color: #17324f; color: #fff; }
+        .severity-filter { gap: 6px; border-left-width: 4px; }
+        .type-pathogenic { border-left-color: var(--sev-pathogenic); }
+        .type-risk { border-left-color: var(--sev-risk); }
+        .type-drug { border-left-color: var(--sev-drug); }
+        .type-modifier { border-left-color: var(--sev-modifier); }
+        .type-uncertain { border-left-color: var(--sev-uncertain); }
+        .type-benign { border-left-color: var(--sev-benign); }
+        .severity-filter[aria-pressed="true"].type-pathogenic { background: #fff1f1; border-color: var(--sev-pathogenic); color: #791414; }
+        .severity-filter[aria-pressed="true"].type-risk { background: #fff6ea; border-color: var(--sev-risk); color: #744000; }
+        .severity-filter[aria-pressed="true"].type-drug { background: #f6f0ff; border-color: var(--sev-drug); color: #4e3479; }
+        .severity-filter[aria-pressed="true"].type-modifier { background: #eefbfc; border-color: var(--sev-modifier); color: #174f57; }
+        .severity-filter[aria-pressed="true"].type-uncertain { background: #fffbe6; border-color: var(--sev-uncertain); color: #574800; }
+        .severity-filter[aria-pressed="true"].type-benign { background: #eff8ef; border-color: var(--sev-benign); color: #24572f; }
+        .chip-count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; min-height: 20px; padding: 0 5px; border-radius: 999px; background: #e5ecf2; color: #273747; font-size: 12px; font-weight: 700; }
+        button.chip[aria-pressed="true"] .chip-count, button.sort-active .chip-count { background: rgba(255, 255, 255, .55); color: inherit; }
+        button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+        button.danger { color: var(--danger); border-color: #caa49d; }
+        button.ghost { color: var(--muted); }
+        button:disabled { opacity: .5; cursor: default; }
+        input[type="file"] { display: none; }
+        #status { margin-left: auto; color: var(--muted); min-width: 220px; text-align: right; }
+        main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 0; min-height: calc(100vh - 124px); }
+        .table-wrap { overflow: auto; border-right: 1px solid var(--line); }
+        table { width: 100%; border-collapse: collapse; background: var(--panel); table-layout: fixed; }
+        th, td { padding: 8px 9px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+        th { position: sticky; top: 0; z-index: 1; background: #eef3f7; text-align: left; color: #263544; font-weight: 700; cursor: pointer; }
+        tr:hover td { background: #f7fbff; }
+        tr.selected td { background: #e8f2fb; }
+        .rsid { width: 118px; }
+        .genotype { width: 95px; }
+        .risk { width: 76px; }
+        .zygosity { width: 110px; }
+        .chromosome { width: 74px; }
+        .position { width: 92px; }
+        .freq { width: 86px; }
+        .significance { width: 92px; }
+        .updated { width: 112px; }
+        .gene { width: 116px; }
+        .vep { width: 180px; }
+        .clinical { width: 310px; }
+        .desc { width: 280px; }
+        .geno-hit { display: inline-block; padding: 3px 6px; background: var(--warn); border-radius: 4px; }
+        .geno-clear { display: inline-block; padding: 3px 6px; background: var(--good); border-radius: 4px; }
+        .badge { display: inline-flex; align-items: center; min-height: 22px; padding: 2px 7px; border-radius: 4px; color: #fff; font-weight: 700; }
+        .severity-pathogenic { background: var(--sev-pathogenic); }
+        .severity-risk { background: var(--sev-risk); }
+        .severity-drug { background: var(--sev-drug); }
+        .severity-modifier { background: var(--sev-modifier); }
+        .severity-uncertain { background: var(--sev-uncertain); }
+        .severity-benign { background: var(--sev-benign); }
+        .severity-none { background: #6c7782; }
+        .finding-cell { display: grid; gap: 4px; }
+        .finding-summary { font-weight: 700; }
+        .finding-meta { color: var(--muted); font-size: 12px; }
+        .snpedia-inline { display: grid; gap: 2px; }
+        .snpedia-inline span { display: block; }
+        .finding-list { display: grid; gap: 8px; }
+        .finding-card { border-left: 4px solid #8b96a3; padding: 7px 8px; background: #f7fafc; }
+        .finding-card.severity-pathogenic { border-left-color: var(--sev-pathogenic); background: #fff1f1; color: var(--ink); }
+        .finding-card.severity-risk { border-left-color: var(--sev-risk); background: #fff6ea; color: var(--ink); }
+        .finding-card.severity-drug { border-left-color: var(--sev-drug); background: #f6f0ff; color: var(--ink); }
+        .finding-card.severity-modifier { border-left-color: var(--sev-modifier); background: #eefbfc; color: var(--ink); }
+        .finding-card.severity-uncertain { border-left-color: var(--sev-uncertain); background: #fffbe6; color: var(--ink); }
+        .finding-card.severity-benign { border-left-color: var(--sev-benign); background: #eff8ef; color: var(--ink); }
+        .finding-title { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+        aside {
+            position: sticky;
+            top: 0;
+            align-self: start;
+            max-height: 100vh;
+            background: var(--panel);
+            padding: 16px;
+            overflow: auto;
         }
-        .page-template .footer {
-          position: absolute;
-          bottom: 30px;
-          left: 30px;
-          right: 30px;
-          border-top: 1px solid #888;
-          text-align: center;
-          color: #888;
-        }
-        .page-template .watermark {
-          font-weight: bold;
-          font-size: 400%;
-          text-align: center;
-          margin-top: 30%;
-          color: #aaaaaa;
-          opacity: 0.1;
-          transform: rotate(-35deg) scale(1.7, 1.5);
-        }
-
-        /* Content styling */
-        .customer-photo {
-          display: inline-block;
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          background-size: 32px 35px;
-          background-position: center center;
-          vertical-align: middle;
-          line-height: 32px;
-          box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
-          margin-left: 5px;
-        }
-        kendo-pdf-document .customer-photo {
-          border: 1px solid #dedede;
-        }
-        .customer-name {
-          display: inline-block;
-          vertical-align: middle;
-          line-height: 32px;
-          padding-left: 3px;
+        aside h2 { margin: 0 0 10px; font-size: 18px; letter-spacing: 0; }
+        .detail-row { margin: 0 0 12px; }
+        .detail-label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+        .pager { display: flex; align-items: center; gap: 8px; padding: 10px 22px; background: var(--panel); border-top: 1px solid var(--line); }
+        .pager span { color: var(--muted); }
+        @media (max-width: 920px) {
+            main { grid-template-columns: 1fr; }
+            aside { position: static; max-height: none; border-top: 1px solid var(--line); }
+            #status { width: 100%; margin-left: 0; text-align: left; }
+            .action-group { margin-left: 0; justify-content: flex-start; }
         }
     </style>
-    
+</head>
+<body>
+<header>
+    <h1>Phenotype</h1>
+    <div class="tagline">Local genome explorer</div>
+</header>
+<div class="privacy">Genome imports and cached annotations stay on this machine.</div>
+<div class="coverage" id="coverage"></div>
+<div class="toolbar" aria-label="SNP filters and actions">
+    <div class="toolbar-row">
+        <div class="control-group">
+            <span class="group-label">Search</span>
+            <input id="search" type="search" placeholder="Search rsid, gene, clinical text">
+            <button class="ghost" id="clear-filters">Clear all</button>
+        </div>
+        <div class="control-group" aria-label="Sort">
+            <span class="group-label">Sort</span>
+            <button class="chip" id="sort-significance">Priority</button>
+            <button class="chip" id="sort-recent">Recent findings</button>
+            <button class="chip" id="sort-rsid">rsid</button>
+        </div>
+        <span id="status"></span>
+    </div>
+    <div class="toolbar-row">
+        <div class="control-group" aria-label="Genome filters">
+            <span class="group-label">Genome</span>
+            <button class="chip" id="filter-has-genotype" aria-pressed="false">Has genotype</button>
+            <button class="chip" id="filter-clinical-allele" aria-pressed="false">Clinical allele match <span class="chip-count" id="count-clinical-match">0</span></button>
+            <button class="chip" id="filter-promethease" aria-pressed="false">Promethease-style <span class="chip-count" id="count-promethease">0</span></button>
+            <button class="chip" id="view-variants" aria-pressed="false">Build 37 variants</button>
+            <button class="chip" id="filter-heterozygous" aria-pressed="false">x;y</button>
+            <button class="chip" id="filter-homozygous" aria-pressed="false">x;x</button>
+            <button class="chip" id="filter-clinical" aria-pressed="false">Clinical findings <span class="chip-count" id="count-clinical">0</span></button>
+        </div>
+        <div class="control-group" aria-label="Finding type filters">
+            <span class="group-label">Finding type</span>
+            <button class="chip severity-filter type-pathogenic" data-severity="pathogenic" aria-pressed="false">Pathogenic <span class="chip-count" id="count-pathogenic">0</span></button>
+            <button class="chip severity-filter type-risk" data-severity="risk" aria-pressed="false">Risk factor <span class="chip-count" id="count-risk">0</span></button>
+            <button class="chip severity-filter type-drug" data-severity="drug" aria-pressed="false">Drug response <span class="chip-count" id="count-drug">0</span></button>
+            <button class="chip severity-filter type-modifier" data-severity="modifier" aria-pressed="false">Modifier <span class="chip-count" id="count-modifier">0</span></button>
+            <button class="chip severity-filter type-uncertain" data-severity="uncertain" aria-pressed="false">Uncertain <span class="chip-count" id="count-uncertain">0</span></button>
+            <button class="chip severity-filter type-benign" data-severity="benign" aria-pressed="false">Benign <span class="chip-count" id="count-benign">0</span></button>
+        </div>
+        <div class="control-group" aria-label="VEP consequence filters">
+            <span class="group-label">VEP</span>
+            <button class="chip" id="filter-vep-high" aria-pressed="false">High impact</button>
+            <button class="chip" id="filter-vep-moderate" aria-pressed="false">Moderate impact</button>
+            <button class="chip" id="filter-vep-missense" aria-pressed="false">Missense</button>
+            <button class="chip" id="filter-vep-splice" aria-pressed="false">Splice</button>
+            <button class="chip" id="filter-vep-stop" aria-pressed="false">Stop gained</button>
+        </div>
+    </div>
+    <div class="toolbar-row">
+        <div class="control-group">
+            <span class="group-label">Rows</span>
+            <select id="page-size" aria-label="Rows per page">
+                <option value="50">50 rows</option>
+                <option value="100" selected>100 rows</option>
+                <option value="250">250 rows</option>
+            </select>
+            <button class="primary" id="refresh">Refresh</button>
+        </div>
+        <div class="control-group action-group">
+            <span class="group-label">Data</span>
+            <label class="file-button" for="genome-file">Import genome</label>
+            <input id="genome-file" type="file" accept=".txt,.csv,.tsv">
+            <label class="file-button" for="vep-file">Import VEP</label>
+            <input id="vep-file" type="file" accept=".txt,.tab,.tsv">
+            <button id="scrape">Refresh annotations</button>
+            <button id="refresh-clinical">Refresh finding dates</button>
+            <button id="import-clinvar">Import ClinVar DB</button>
+            <button id="scan-clinvar">Scan x;y ClinVar matches</button>
+            <button id="import-snpedia-bad">Import SNPedia bad genotypes</button>
+            <button id="scan-genosets">Scan genosets</button>
+            <button class="chip" id="view-backlog" aria-pressed="false">Unannotated backlog</button>
+            <button id="pause-scrape">Pause</button>
+            <button id="resume-scrape">Resume</button>
+            <button id="cancel-scrape">Cancel</button>
+            <button id="retry-failed">Retry failed</button>
+            <a class="button" href="/api/export.csv">Export CSV</a>
+            <a class="button" href="/api/export-vep.tsv?zygosity=heterozygous">Export VEP x;y</a>
+            <a class="button" href="/api/export-vep-rsids.txt">Export VEP rsids</a>
+            <button class="danger" id="clear-genotypes">Delete genotypes</button>
+        </div>
+    </div>
 </div>
+<main>
+    <section>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                <tr>
+                    <th class="rsid" data-sort="Name">rsid</th>
+                    <th class="genotype" data-sort="Genotype">You</th>
+                    <th class="risk" data-sort="RiskAllele">Source allele</th>
+                    <th class="zygosity" data-sort="VariantZygosity">Zygosity</th>
+                    <th class="chromosome" data-sort="Chromosome">Chr</th>
+                    <th class="position" data-sort="Position">Position</th>
+                    <th class="freq" data-sort="FrequencyPercent">Freq</th>
+                    <th class="significance" data-sort="SignificanceScore">Rating</th>
+                    <th class="updated" data-sort="ClassificationUpdatedAt">Finding date</th>
+                    <th class="gene" data-sort="Gene">Gene</th>
+                    <th class="vep" data-sort="VepImpactRank">VEP</th>
+                    <th class="clinical" data-sort="FindingSeverityScore">Finding</th>
+                    <th class="desc" data-sort="Description">Description</th>
+                </tr>
+                </thead>
+                <tbody id="rows"></tbody>
+            </table>
+        </div>
+        <div class="pager">
+            <button id="prev-page">Prev</button>
+            <span id="page-readout"></span>
+            <button id="next-page">Next</button>
+        </div>
+    </section>
+    <aside id="detail">
+        <h2>No row selected</h2>
+    </aside>
+</main>
+<script>
+    var allRows = [];
+    var currentPage = 0;
+    var sortField = "Name";
+    var sortDir = "asc";
+    var selectedName = null;
+    var latestRunId = null;
+    var scrapeTimer = null;
+    var backlogMode = false;
+    var variantsMode = false;
+    var filters = {
+        hasGenotype: false,
+        clinicalAllele: false,
+        promethease: false,
+        clinical: false,
+        zygosity: "",
+        vepImpact: "",
+        vepConsequence: "",
+        severities: []
+    };
 
+    function escapeHtml(value) {
+        return String(value == null ? "" : value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
 
+    function setStatus(text) {
+        document.getElementById("status").textContent = text || "";
+    }
+
+    function pageSize() {
+        return Number(document.getElementById("page-size").value);
+    }
+
+    function query() {
+        if (backlogMode) {
+            var backlogParams = new URLSearchParams({
+                search: document.getElementById("search").value,
+                limit: "5000"
+            });
+            return "/api/backlog?" + backlogParams.toString();
+        }
+        if (variantsMode) {
+            var variantParams = new URLSearchParams({
+                search: document.getElementById("search").value,
+                zygosity: filters.zygosity,
+                clinical_only: filters.clinical ? "1" : "0",
+                clinical_match_only: filters.clinicalAllele ? "1" : "0",
+                promethease_only: filters.promethease ? "1" : "0",
+                vep_impact: filters.vepImpact,
+                vep_consequence: filters.vepConsequence,
+                limit: "50000"
+            });
+            return "/api/variants?" + variantParams.toString();
+        }
+        var params = new URLSearchParams({
+            search: document.getElementById("search").value,
+            has_genotype: filters.hasGenotype ? "1" : "0",
+            clinical_match_only: filters.clinicalAllele ? "1" : "0",
+            promethease_only: filters.promethease ? "1" : "0",
+            limit: "50000"
+        });
+        return "/api/snps?" + params.toString();
+    }
+
+    function riskHit(row) {
+        return Boolean(row.IsRiskMatch);
+    }
+
+    function clinicalAlleleHit(row) {
+        return Boolean(row.HasClinicalAlleleMatch);
+    }
+
+    function prometheaseHit(row) {
+        return Boolean(row.HasPrometheaseMatch);
+    }
+
+    function hasClinicalFinding(row) {
+        return Boolean(
+            Number(row.ClinicalScore || 0) > 0 ||
+            (row.ClinicalSignificance && String(row.ClinicalSignificance).trim()) ||
+            (row.ClinVarFindings && row.ClinVarFindings.length)
+        );
+    }
+
+    function filteredRows(rows) {
+        return rows.filter(function(row) {
+            var severity = row.FindingSeverityClass || "none";
+            if (filters.clinicalAllele && !clinicalAlleleHit(row)) return false;
+            if (filters.promethease && !prometheaseHit(row)) return false;
+            if (filters.clinical && !hasClinicalFinding(row)) return false;
+            if (filters.severities.length && filters.severities.indexOf(severity) === -1) return false;
+            return true;
+        });
+    }
+
+    function updateCounts() {
+        var counts = {
+            clinical: 0,
+            "clinical-match": 0,
+            promethease: 0,
+            pathogenic: 0,
+            risk: 0,
+            drug: 0,
+            modifier: 0,
+            uncertain: 0,
+            benign: 0
+        };
+        allRows.forEach(function(row) {
+            var severity = row.FindingSeverityClass || "none";
+            if (hasClinicalFinding(row)) counts.clinical += 1;
+            if (clinicalAlleleHit(row)) counts["clinical-match"] += 1;
+            if (prometheaseHit(row)) counts.promethease += 1;
+            if (counts[severity] != null) counts[severity] += 1;
+        });
+        Object.keys(counts).forEach(function(key) {
+            var el = document.getElementById("count-" + key);
+            if (el) el.textContent = counts[key];
+        });
+    }
+
+    function updateControls() {
+        document.getElementById("filter-has-genotype").setAttribute("aria-pressed", filters.hasGenotype ? "true" : "false");
+        document.getElementById("filter-clinical-allele").setAttribute("aria-pressed", filters.clinicalAllele ? "true" : "false");
+        document.getElementById("filter-promethease").setAttribute("aria-pressed", filters.promethease ? "true" : "false");
+        document.getElementById("filter-clinical").setAttribute("aria-pressed", filters.clinical ? "true" : "false");
+        document.getElementById("view-variants").setAttribute("aria-pressed", variantsMode ? "true" : "false");
+        document.getElementById("filter-heterozygous").setAttribute("aria-pressed", filters.zygosity === "heterozygous" ? "true" : "false");
+        document.getElementById("filter-homozygous").setAttribute("aria-pressed", filters.zygosity === "homozygous" ? "true" : "false");
+        document.getElementById("filter-vep-high").setAttribute("aria-pressed", filters.vepImpact === "HIGH" ? "true" : "false");
+        document.getElementById("filter-vep-moderate").setAttribute("aria-pressed", filters.vepImpact === "MODERATE" ? "true" : "false");
+        document.getElementById("filter-vep-missense").setAttribute("aria-pressed", filters.vepConsequence === "missense_variant" ? "true" : "false");
+        document.getElementById("filter-vep-splice").setAttribute("aria-pressed", filters.vepConsequence === "splice" ? "true" : "false");
+        document.getElementById("filter-vep-stop").setAttribute("aria-pressed", filters.vepConsequence === "stop_gained" ? "true" : "false");
+        document.querySelectorAll("[data-severity]").forEach(function(button) {
+            button.setAttribute(
+                "aria-pressed",
+                filters.severities.indexOf(button.dataset.severity) === -1 ? "false" : "true"
+            );
+        });
+        [
+            ["sort-significance", "SignificanceScore"],
+            ["sort-recent", "ClassificationUpdatedAt"],
+            ["sort-rsid", "Name"]
+        ].forEach(function(item) {
+            document.getElementById(item[0]).classList.toggle("sort-active", sortField === item[1]);
+        });
+        document.getElementById("view-backlog").setAttribute("aria-pressed", backlogMode ? "true" : "false");
+        document.getElementById("view-backlog").textContent = backlogMode ? "Cached findings" : "Unannotated backlog";
+        updateCounts();
+    }
+
+    function formatDate(value) {
+        return value ? String(value).slice(0, 10) : "";
+    }
+
+    function formatInteger(value) {
+        return Number(value || 0).toLocaleString();
+    }
+
+    function formatFrequency(row) {
+        return row.FrequencyDisplay || (row.FrequencyPercent == null ? row.Frequency : row.FrequencyPercent + "%");
+    }
+
+    function link(label, url) {
+        if (!url) return "";
+        return "<a href='" + escapeHtml(normalizeSourceUrl(url)) + "' target='_blank' rel='noreferrer'>" + escapeHtml(label) + "</a>";
+    }
+
+    function snpediaTitle(rsid) {
+        return "Rs" + String(rsid || "").replace(/^rs/i, "");
+    }
+
+    function normalizeSourceUrl(url) {
+        return String(url || "").replace("https://bots.snpedia.com/index.php/", "https://www.snpedia.com/index.php/");
+    }
+
+    function snpediaUrl(row) {
+        return (row.SourceUrls && row.SourceUrls.snpedia)
+            ? normalizeSourceUrl(row.SourceUrls.snpedia)
+            : "https://www.snpedia.com/index.php/" + encodeURIComponent(snpediaTitle(row.Name));
+    }
+
+    function studiesUrl(row) {
+        return (row.SourceUrls && row.SourceUrls.studies) || "https://pubmed.ncbi.nlm.nih.gov/?term=" + encodeURIComponent(row.Name);
+    }
+
+    function severityClass(row) {
+        return "severity-" + (row.FindingSeverityClass || "none");
+    }
+
+    function severityBadge(row, label) {
+        return "<span class='badge " + severityClass(row) + "'>" + escapeHtml(label || row.FindingSeverity || "None") + "</span>";
+    }
+
+    function vepBadgeClass(row) {
+        if (row.VepImpact === "HIGH") return "severity-pathogenic";
+        if (row.VepImpact === "MODERATE") return "severity-modifier";
+        if (row.VepImpact === "LOW") return "severity-benign";
+        return "severity-none";
+    }
+
+    function vepCell(row) {
+        if (!row.VepImpact && !row.VepConsequence) return "";
+        var symbol = row.VepSymbol ? "<div class='finding-meta'>" + escapeHtml(row.VepSymbol) + "</div>" : "";
+        return "<div class='finding-cell'>" +
+            "<div><span class='badge " + vepBadgeClass(row) + "'>" + escapeHtml(row.VepImpact || "VEP") + "</span></div>" +
+            "<div class='finding-summary'>" + escapeHtml(row.VepConsequence || "") + "</div>" +
+            symbol +
+            "</div>";
+    }
+
+    function findingCell(row) {
+        var summary = row.FindingSummary || row.Description || row.ClinicalSignificance || "";
+        var date = formatDate(row.ClassificationUpdatedAt);
+        var meta = [date, row.Significance || ""].filter(Boolean).join(" · ");
+        var snpedia = snpediaFindingSummary(row.SNPediaMatchedFinding);
+        return "<div class='finding-cell'>" +
+            "<div>" + severityBadge(row, row.FindingSeverity || "Finding") + "</div>" +
+            "<div class='finding-summary'>" + escapeHtml(summary) + "</div>" +
+            "<div class='finding-meta'>" + escapeHtml(meta) + "</div>" +
+            snpedia +
+            "</div>";
+    }
+
+    function snpediaFindingSummary(finding) {
+        if (!finding || !finding.summary) return "";
+        var magnitude = finding.magnitude
+            ? "<span><strong>Magnitude:</strong> " + escapeHtml(finding.magnitude) + "</span>"
+            : "";
+        var note = finding.note
+            ? "<span><strong>Risk note:</strong> " + escapeHtml(finding.note) + "</span>"
+            : "";
+        return "<div class='finding-meta snpedia-inline'><span><strong>SNPedia genotype:</strong> " +
+            escapeHtml(finding.allele || "") + "</span>" + magnitude + note + "</div>";
+    }
+
+    function accessionUrl(accession) {
+        return accession ? "https://www.ncbi.nlm.nih.gov/clinvar/" + encodeURIComponent(accession) + "/" : "";
+    }
+
+    function renderFindings(row) {
+        var findings = row.ClinVarFindings || [];
+        if (!findings.length) return "";
+        return "<div class='finding-list'>" + findings.slice(0, 8).map(function(finding) {
+            var cls = "severity-" + (finding.severity_class || "none");
+            var date = finding.date ? "<span>" + escapeHtml(finding.date) + "</span>" : "";
+            var accession = finding.accession ? link(finding.accession, accessionUrl(finding.accession)) : "";
+            return "<div class='finding-card " + cls + "'>" +
+                "<div class='finding-title'><span class='badge " + cls + "'>" + escapeHtml(finding.severity || "Finding") + "</span>" + date + accession + "</div>" +
+                "<div><strong>" + escapeHtml(finding.significance || "Unspecified") + "</strong></div>" +
+                "<div>" + escapeHtml(finding.condition || "No condition supplied") + "</div>" +
+                "</div>";
+        }).join("") + "</div>";
+    }
+
+    function renderSnpediaFinding(row) {
+        var finding = row.SNPediaMatchedFinding || {};
+        if (!finding.summary) return "";
+        var cls = "severity-" + (finding.severity_class || "none");
+        var strand = finding.match === "complement" ? "complement strand match" : "direct genotype match";
+        return "<div class='finding-card " + cls + "'>" +
+            "<div class='finding-title'><span class='badge " + cls + "'>" + escapeHtml(finding.severity || "SNPedia") + "</span><span>" + escapeHtml(strand) + "</span></div>" +
+            "<div><strong>" + escapeHtml(finding.allele || "") + "</strong></div>" +
+            (finding.magnitude ? "<div><strong>Magnitude:</strong> " + escapeHtml(finding.magnitude) + "</div>" : "") +
+            (finding.note ? "<div><strong>Risk note:</strong> " + escapeHtml(finding.note) + "</div>" : "") +
+            "</div>";
+    }
+
+    function sortRows(rows) {
+        rows.sort(function(a, b) {
+            var av = a[sortField] == null ? "" : a[sortField];
+            var bv = b[sortField] == null ? "" : b[sortField];
+            if (typeof av === "number" || typeof bv === "number") {
+                av = Number(av || 0);
+                bv = Number(bv || 0);
+            } else {
+                av = String(av).toLowerCase();
+                bv = String(bv).toLowerCase();
+            }
+            if (av < bv) return sortDir === "asc" ? -1 : 1;
+            if (av > bv) return sortDir === "asc" ? 1 : -1;
+            return 0;
+        });
+        return rows;
+    }
+
+    function renderRows() {
+        var rows = sortRows(filteredRows(allRows.slice()));
+        var size = pageSize();
+        if (currentPage > 0 && currentPage * size >= rows.length) {
+            currentPage = Math.max(0, Math.ceil(rows.length / size) - 1);
+        }
+        var start = currentPage * size;
+        var pageRows = rows.slice(start, start + size);
+        var body = document.getElementById("rows");
+        body.innerHTML = pageRows.map(function(row) {
+            var selected = row.Name === selectedName ? " class='selected'" : "";
+            var genotypeClass = riskHit(row) ? "geno-hit" : "geno-clear";
+            return "<tr data-rsid='" + escapeHtml(row.Name) + "'" + selected + ">" +
+                "<td>" + escapeHtml(row.Name) + "</td>" +
+                "<td><span class='" + genotypeClass + "'>" + escapeHtml(row.Genotype) + "</span></td>" +
+                "<td>" + escapeHtml(row.RiskAllele || row.Risk) + "</td>" +
+                "<td>" + escapeHtml(row.VariantZygosity || "") + "</td>" +
+                "<td>" + escapeHtml(row.Chromosome || "") + "</td>" +
+                "<td>" + escapeHtml(row.Position || "") + "</td>" +
+                "<td>" + escapeHtml(formatFrequency(row)) + "</td>" +
+                "<td>" + escapeHtml(row.SignificanceScore || 0) + "</td>" +
+                "<td>" + escapeHtml(formatDate(row.ClassificationUpdatedAt)) + "</td>" +
+                "<td>" + escapeHtml(row.Gene) + "</td>" +
+                "<td>" + vepCell(row) + "</td>" +
+                "<td>" + findingCell(row) + "</td>" +
+                "<td>" + escapeHtml(row.Description) + "</td>" +
+                "</tr>";
+        }).join("");
+        document.getElementById("page-readout").textContent = rows.length ? (start + 1) + "-" + Math.min(start + size, rows.length) + " of " + rows.length : "0 rows";
+        document.getElementById("prev-page").disabled = currentPage === 0;
+        document.getElementById("next-page").disabled = start + size >= rows.length;
+        setStatus(rows.length + " shown / " + allRows.length + " loaded");
+    }
+
+    function renderDetail(row) {
+        var sources = row.SourceUrls || {};
+        var sourceLinks = Object.keys(sources).map(function(key) {
+            return "<a href='" + escapeHtml(sources[key]) + "' target='_blank' rel='noreferrer'>" + escapeHtml(key) + "</a>";
+        }).join(" ");
+        document.getElementById("detail").innerHTML =
+            "<h2>" + escapeHtml(row.Name) + "</h2>" +
+            detail("Gene", row.Gene) +
+            detail("Genotype", row.Genotype) +
+            detail("Finding allele", row.RiskAllele || row.Risk) +
+            detail("Zygosity", row.VariantZygosity || "") +
+            detail("Build 37 position", [row.Chromosome, row.Position].filter(Boolean).join(":")) +
+            detail("Annotation release", row.AnnotationRelease || "") +
+            detail("VEP consequence", vepCell(row), true) +
+            detail("Allele orientation", row.AlleleOrientationNote || "") +
+            detail("Frequency", formatFrequency(row)) +
+            detail("Priority rating", (row.SignificanceScore || 0) + " - " + (row.Significance || "None")) +
+            detail("Clinical score", row.ClinicalScore == null ? "" : row.ClinicalScore) +
+            detail("Frequency context", row.FrequencyContext || "") +
+            detail("Top finding", findingCell(row), true) +
+            detail("Matched SNPedia note", renderSnpediaFinding(row), true) +
+            detail("ClinVar findings", renderFindings(row), true) +
+            detail("Clinical terms", row.ClinicalSignificance) +
+            detail("Finding date", formatDate(row.ClassificationUpdatedAt) || "Not supplied by source") +
+            detail("Local cache refreshed", formatDate(row.SourceUpdatedAt)) +
+            detail("SNPedia", link(row.Name, snpediaUrl(row)), true) +
+            detail("Studies", link((formatDate(row.ClassificationUpdatedAt) ? formatDate(row.ClassificationUpdatedAt) + ": " : "") + (row.Studies || "PubMed search"), studiesUrl(row)), true) +
+            detail("Citations", row.Citations) +
+            detail("Sources", sourceLinks || "", true) +
+            detail("SNPedia notes", row.Variations || "");
+    }
+
+    function detail(label, value, htmlAllowed) {
+        return "<div class='detail-row'><span class='detail-label'>" + escapeHtml(label) + "</span><div>" + (htmlAllowed ? (value || "") : escapeHtml(value || "")) + "</div></div>";
+    }
+
+    function loadRows() {
+        setStatus("Loading...");
+        return fetch(query())
+            .then(function(response) {
+                return response.json().then(function(data) {
+                    if (!response.ok) throw data;
+                    return data;
+                });
+            })
+            .then(function(data) {
+                allRows = data.results || [];
+                currentPage = 0;
+                selectedName = null;
+                document.getElementById("detail").innerHTML = "<h2>No row selected</h2>";
+                updateControls();
+                renderRows();
+            })
+            .catch(function(error) { setStatus(error.error || "Load failed"); });
+    }
+
+    function loadStats() {
+        return fetch("/api/stats")
+            .then(function(response) { return response.json(); })
+            .then(function(stats) {
+                var imported = Number(stats.imported_genotypes || 0);
+                var normalized = Number(stats.normalized_variants || 0);
+                var heterozygous = Number(stats.heterozygous_variants || 0);
+                var homozygous = Number(stats.homozygous_variants || 0);
+                var noCall = Number(stats.no_call_variants || 0);
+                var annotated = Number(stats.annotated_genotypes || 0);
+                var cached = Number(stats.cached_snps || 0);
+                var clinvarRows = Number(stats.clinvar_reference_rows || 0);
+                var clinvarRsids = Number(stats.clinvar_reference_rsids || 0);
+                var clinvarMatches = Number(stats.clinvar_genotype_matches || 0);
+                var clinvarTargets = Number(stats.clinvar_target_matches || 0);
+                var vepRows = Number(stats.vep_consequence_rows || 0);
+                var vepRsids = Number(stats.vep_consequence_rsids || 0);
+                var vepHigh = Number(stats.vep_high_rsids || 0);
+                var vepModerate = Number(stats.vep_moderate_rsids || 0);
+                var percent = imported ? ((annotated / imported) * 100).toFixed(2) : "0.00";
+                var coverage = document.getElementById("coverage");
+                if (!imported) {
+                    coverage.style.display = "none";
+                    coverage.textContent = "";
+                    return;
+                }
+                coverage.style.display = "block";
+                coverage.innerHTML =
+                    "<strong>Annotation coverage:</strong> " +
+                    formatInteger(annotated) + " of " + formatInteger(imported) +
+                    " imported genotypes have cached annotations (" + percent + "%). " +
+                    "<strong>Build 37 normalized:</strong> " + formatInteger(normalized) +
+                    " variants; " + formatInteger(heterozygous) + " x;y, " +
+                    formatInteger(homozygous) + " x;x, " + formatInteger(noCall) + " no-call. " +
+                    "Finding-type counts are cached annotations, not a full-genome clinical scan. " +
+                    formatInteger(cached) + " total SNP annotations are cached. " +
+                    "<strong>Local ClinVar:</strong> " +
+                    (clinvarRows
+                        ? formatInteger(clinvarRows) + " rows / " + formatInteger(clinvarRsids) +
+                            " rsids, " + formatInteger(clinvarMatches) + " imported genotype matches, " +
+                            formatInteger(clinvarTargets) + " targeted clinical matches."
+                        : "not imported yet.") +
+                    " <strong>VEP:</strong> " +
+                    (vepRows
+                        ? formatInteger(vepRows) + " consequences / " + formatInteger(vepRsids) +
+                            " rsids, " + formatInteger(vepHigh) + " high, " +
+                            formatInteger(vepModerate) + " moderate."
+                        : "not imported yet.");
+            })
+            .catch(function() {});
+    }
+
+    function pollScrape() {
+        fetch("/api/scrape-runs/latest")
+            .then(function(response) { return response.json(); })
+            .then(function(run) {
+                if (!run || !run.id) return;
+                latestRunId = run.id;
+                var failed = run.failed ? ", " + run.failed + " failed" : "";
+                setStatus("Run " + run.id + " " + run.status + ": " + run.completed + "/" + run.total + failed);
+                if (["complete", "failed", "paused", "canceled"].indexOf(run.status) !== -1) {
+                    clearInterval(scrapeTimer);
+                    loadStats();
+                    loadRows();
+                }
+            });
+    }
+
+    function startScrape(url, payload) {
+        setStatus("Starting...");
+        var options = { method: "POST" };
+        if (
+            url === "/api/scrape" ||
+            url === "/api/refresh-findings" ||
+            url === "/api/clinvar/import" ||
+            url === "/api/clinvar/scan" ||
+            url === "/api/snpedia/bad-genotypes/import" ||
+            url === "/api/snpedia/genosets/import"
+        ) {
+            options.headers = { "Content-Type": "application/json" };
+            options.body = JSON.stringify(payload || { limit: 25 });
+        }
+        return fetch(url, options)
+            .then(function(response) {
+                return response.text().then(function(text) {
+                    var data = {};
+                    try {
+                        data = text ? JSON.parse(text) : {};
+                    } catch (error) {
+                        data = { error: text || response.statusText };
+                    }
+                    return { ok: response.ok, data: data };
+                });
+            })
+            .then(function(result) {
+                if (!result.ok) throw result.data;
+                if (!result.data.run_id) {
+                    setStatus((result.data.cached || 0) + " rows already cached");
+                    return loadRows();
+                }
+                latestRunId = result.data.run_id;
+                clearInterval(scrapeTimer);
+                scrapeTimer = setInterval(pollScrape, 2000);
+                pollScrape();
+            })
+            .catch(function(error) { setStatus(error.error || "Request failed"); });
+    }
+
+    document.getElementById("rows").addEventListener("click", function(event) {
+        var rowEl = event.target.closest("tr");
+        if (!rowEl) return;
+        selectedName = rowEl.dataset.rsid;
+        var row = allRows.find(function(item) { return item.Name === selectedName; });
+        if (row) renderDetail(row);
+        renderRows();
+    });
+
+    document.querySelectorAll("th[data-sort]").forEach(function(header) {
+        header.addEventListener("click", function() {
+            var field = header.dataset.sort;
+            var defaultDesc = ["SignificanceScore", "ClassificationUpdatedAt", "FrequencyPercent", "VepImpactRank"].indexOf(field) !== -1;
+            sortDir = sortField === field ? (sortDir === "asc" ? "desc" : "asc") : (defaultDesc ? "desc" : "asc");
+            sortField = field;
+            updateControls();
+            renderRows();
+        });
+    });
+
+    document.getElementById("search").addEventListener("input", function() {
+        clearTimeout(window.searchTimer);
+        window.searchTimer = setTimeout(loadRows, 250);
+    });
+    document.getElementById("filter-has-genotype").addEventListener("click", function() {
+        filters.hasGenotype = !filters.hasGenotype;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("filter-clinical-allele").addEventListener("click", function() {
+        filters.clinicalAllele = !filters.clinicalAllele;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("filter-promethease").addEventListener("click", function() {
+        filters.promethease = !filters.promethease;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("filter-clinical").addEventListener("click", function() {
+        filters.clinical = !filters.clinical;
+        currentPage = 0;
+        if (variantsMode) {
+            updateControls();
+            loadRows();
+        } else {
+            updateControls();
+            renderRows();
+        }
+    });
+    document.getElementById("view-variants").addEventListener("click", function() {
+        variantsMode = !variantsMode;
+        if (variantsMode) backlogMode = false;
+        selectedName = null;
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("filter-heterozygous").addEventListener("click", function() {
+        variantsMode = true;
+        backlogMode = false;
+        filters.zygosity = filters.zygosity === "heterozygous" ? "" : "heterozygous";
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("filter-homozygous").addEventListener("click", function() {
+        variantsMode = true;
+        backlogMode = false;
+        filters.zygosity = filters.zygosity === "homozygous" ? "" : "homozygous";
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    });
+    function applyVepFilter(impact, consequence) {
+        variantsMode = true;
+        backlogMode = false;
+        filters.vepImpact = filters.vepImpact === impact ? "" : impact;
+        if (impact) filters.vepConsequence = "";
+        filters.vepConsequence = filters.vepConsequence === consequence ? "" : consequence;
+        if (consequence) filters.vepImpact = "";
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    }
+    document.getElementById("filter-vep-high").addEventListener("click", function() { applyVepFilter("HIGH", ""); });
+    document.getElementById("filter-vep-moderate").addEventListener("click", function() { applyVepFilter("MODERATE", ""); });
+    document.getElementById("filter-vep-missense").addEventListener("click", function() { applyVepFilter("", "missense_variant"); });
+    document.getElementById("filter-vep-splice").addEventListener("click", function() { applyVepFilter("", "splice"); });
+    document.getElementById("filter-vep-stop").addEventListener("click", function() { applyVepFilter("", "stop_gained"); });
+    document.querySelectorAll("[data-severity]").forEach(function(button) {
+        button.addEventListener("click", function() {
+            var severity = button.dataset.severity;
+            var index = filters.severities.indexOf(severity);
+            if (index === -1) {
+                filters.severities.push(severity);
+            } else {
+                filters.severities.splice(index, 1);
+            }
+            currentPage = 0;
+            updateControls();
+            renderRows();
+        });
+    });
+    document.getElementById("clear-filters").addEventListener("click", function() {
+        filters.hasGenotype = false;
+        filters.clinicalAllele = false;
+        filters.promethease = false;
+        filters.clinical = false;
+        filters.severities = [];
+        filters.zygosity = "";
+        filters.vepImpact = "";
+        filters.vepConsequence = "";
+        backlogMode = false;
+        variantsMode = false;
+        sortField = "Name";
+        sortDir = "asc";
+        document.getElementById("search").value = "";
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("sort-significance").addEventListener("click", function() {
+        sortField = "SignificanceScore";
+        sortDir = "desc";
+        currentPage = 0;
+        updateControls();
+        renderRows();
+    });
+    document.getElementById("sort-recent").addEventListener("click", function() {
+        sortField = "ClassificationUpdatedAt";
+        sortDir = "desc";
+        currentPage = 0;
+        updateControls();
+        renderRows();
+    });
+    document.getElementById("sort-rsid").addEventListener("click", function() {
+        sortField = "Name";
+        sortDir = "asc";
+        currentPage = 0;
+        updateControls();
+        renderRows();
+    });
+    document.getElementById("refresh-clinical").addEventListener("click", function() {
+        var rows = filteredRows(allRows.slice()).filter(hasClinicalFinding);
+        var rsids = rows.slice(0, 50).map(function(row) { return row.Name; });
+        if (!rsids.length) return setStatus("No clinical rows loaded");
+        startScrape("/api/refresh-findings", { rsids: rsids });
+    });
+    document.getElementById("import-clinvar").addEventListener("click", function() {
+        startScrape("/api/clinvar/import", { force: false });
+    });
+    document.getElementById("scan-clinvar").addEventListener("click", function() {
+        startScrape(
+            "/api/clinvar/scan",
+            { targeted_only: false, heterozygous_only: true, missing_only: false, limit: 50000 }
+        );
+    });
+    document.getElementById("import-snpedia-bad").addEventListener("click", function() {
+        startScrape("/api/snpedia/bad-genotypes/import", {});
+    });
+    document.getElementById("scan-genosets").addEventListener("click", function() {
+        startScrape("/api/snpedia/genosets/import", {});
+    });
+    document.getElementById("view-backlog").addEventListener("click", function() {
+        backlogMode = !backlogMode;
+        if (backlogMode) variantsMode = false;
+        selectedName = null;
+        currentPage = 0;
+        updateControls();
+        loadRows();
+    });
+    document.getElementById("refresh").addEventListener("click", loadRows);
+    document.getElementById("page-size").addEventListener("change", function() { currentPage = 0; renderRows(); });
+    document.getElementById("prev-page").addEventListener("click", function() { currentPage = Math.max(0, currentPage - 1); renderRows(); });
+    document.getElementById("next-page").addEventListener("click", function() { currentPage += 1; renderRows(); });
+
+    document.getElementById("genome-file").addEventListener("change", function() {
+        var file = this.files[0];
+        if (!file) return;
+        var form = new FormData();
+        form.append("genome", file);
+        setStatus("Importing...");
+        fetch("/api/import", { method: "POST", body: form })
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                setStatus("Imported " + data.imported + " genotypes, normalized " + (data.variants || 0) + " variants");
+                loadStats();
+                loadRows();
+            })
+            .catch(function() { setStatus("Import failed"); });
+    });
+
+    document.getElementById("vep-file").addEventListener("change", function() {
+        var file = this.files[0];
+        if (!file) return;
+        var form = new FormData();
+        form.append("vep", file);
+        setStatus("Importing VEP output...");
+        fetch("/api/vep/import", { method: "POST", body: form })
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                if (data.error) throw data;
+                setStatus("Imported " + data.imported + " VEP consequence rows");
+                variantsMode = true;
+                loadStats();
+                loadRows();
+            })
+            .catch(function(error) { setStatus(error.error || "VEP import failed"); });
+    });
+
+    document.getElementById("clear-genotypes").addEventListener("click", function() {
+        if (!window.confirm("Delete local genotype cache?")) return;
+        fetch("/api/genotypes", { method: "DELETE" })
+            .then(function(response) { return response.json(); })
+            .then(function(data) { setStatus("Deleted " + data.deleted + " genotypes"); loadStats(); loadRows(); })
+            .catch(function() { setStatus("Delete failed"); });
+    });
+
+    document.getElementById("scrape").addEventListener("click", function() { startScrape("/api/scrape"); });
+    document.getElementById("resume-scrape").addEventListener("click", function() { startScrape("/api/scrape/resume"); });
+    document.getElementById("retry-failed").addEventListener("click", function() {
+        if (!latestRunId) return setStatus("No scrape run selected");
+        startScrape("/api/scrape-runs/" + latestRunId + "/retry-failed");
+    });
+    document.getElementById("pause-scrape").addEventListener("click", function() {
+        if (!latestRunId) return setStatus("No scrape run selected");
+        fetch("/api/scrape-runs/" + latestRunId + "/pause", { method: "POST" }).then(pollScrape);
+    });
+    document.getElementById("cancel-scrape").addEventListener("click", function() {
+        if (!latestRunId) return setStatus("No scrape run selected");
+        fetch("/api/scrape-runs/" + latestRunId + "/cancel", { method: "POST" }).then(pollScrape);
+    });
+
+    loadStats();
+    loadRows().then(pollScrape);
+</script>
 </body>
 </html>

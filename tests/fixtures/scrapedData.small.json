@@ -1,0 +1,12 @@
+{
+  "rs1303": {
+    "Description": "Example SNP",
+    "Variations": [["A", "example variation"]],
+    "ClinVar": [["", "benign"]],
+    "Frequency": "10%",
+    "Studies": "Example study",
+    "Citations": "1",
+    "Gene": "EXAMPLE",
+    "Risk": "A"
+  }
+}

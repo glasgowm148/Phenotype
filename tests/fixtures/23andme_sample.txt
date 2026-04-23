@@ -1,0 +1,4 @@
+# rsid	chromosome	position	genotype
+rs1303	1	1000	AG
+rs1815739	11	2000	CC
+i3000001	2	3000	--

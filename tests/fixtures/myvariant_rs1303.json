@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "chr14:g.94844843T>C",
+    "dbsnp": {
+      "rsid": "rs1303",
+      "gene": {
+        "symbol": "SERPINA1"
+      },
+      "alleles": [
+        {
+          "allele": "T",
+          "freq": 0.88
+        },
+        {
+          "allele": "C",
+          "freq": 0.12
+        }
+      ]
+    },
+    "clinvar": {
+      "rcv": {
+        "accession": "RCV000000001",
+        "clinical_significance": "Benign",
+        "last_evaluated": "2024-03-15",
+        "conditions": {
+          "name": "Example ClinVar condition"
+        }
+      }
+    }
+  }
+]

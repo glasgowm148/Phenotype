@@ -44,6 +44,10 @@ src/1-Phenotype-web/data/scrapedData.json
 src/1-Phenotype-web/data/yourData.json
 src/1-Phenotype-web/data/last_session.txt
 src/1-Phenotype-web/data/outputs/
+src/1-Phenotype-web/data/exports/
+src/1-Phenotype-web/data/uploads/
+src/1-Phenotype-web/data/downloads/
+src/1-Phenotype-web/data/phenotype.sqlite*
 src/1-Phenotype-web/data/AncestryDNA*.txt
 src/1-Phenotype-web/data/23andme*.txt
 src/1-Phenotype-web/data/reload_db.xlsx

@@ -1,0 +1,4 @@
+#AncestryDNA raw data
+#rsid	chromosome	position	allele1	allele2
+rs1303	1	1000	A	G
+rs1815739	11	2000	C	C
