@@ -26,8 +26,9 @@ def test_home_route_serves_app_shell(tmp_path):
     assert b"Build 37 variants" in response.data
     assert b"x;y" in response.data
     assert b"x;x" in response.data
-    assert b"Highest priority" in response.data
+    assert b"Highest magnitude" in response.data
     assert b"Recent findings" in response.data
+    assert b"New" in response.data
     assert b"Most publications" in response.data
     assert b"Clear" in response.data
     assert b"Refresh finding dates" in response.data
@@ -119,6 +120,46 @@ def test_backlog_lists_unannotated_genotypes(tmp_path):
     assert len(rows) == 1
     assert rows[0]["Name"] == "rs2"
     assert rows[0]["FindingSummary"] == "No cached annotation yet"
+
+
+def test_new_since_import_filters_recent_findings(tmp_path):
+    from phenotype.models import SNPRecord
+
+    app = create_app(tmp_path / "phenotype.sqlite", genotypes_path=tmp_path / "yourData.json", seed_legacy=False)
+    store = app.config["PHENOTYPE_STORE"]
+    store.upsert_genotypes({"rs1": "(A;G)"})
+    store.upsert_snps(
+        [SNPRecord(rsid="rs1", risk_allele="A", clinical_significance=["pathogenic"], classification_updated_at="2099-01-01")]
+    )
+
+    response = app.test_client().get("/api/snps?new_since_import_only=1&clinical_match_only=1")
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["count"] == 1
+    assert [row["Name"] for row in payload["results"]] == ["rs1"]
+
+
+def test_severity_filter_pulls_full_benign_set(tmp_path):
+    from phenotype.models import SNPRecord
+
+    app = create_app(tmp_path / "phenotype.sqlite", genotypes_path=tmp_path / "yourData.json", seed_legacy=False)
+    store = app.config["PHENOTYPE_STORE"]
+    store.upsert_genotypes({"rs1": "(A;G)", "rs2": "(A;G)", "rs3": "(A;G)"})
+    store.upsert_snps(
+        [
+            SNPRecord(rsid="rs1", clinical_significance=["benign"]),
+            SNPRecord(rsid="rs2", clinical_significance=["benign"]),
+            SNPRecord(rsid="rs3", clinical_significance=["pathogenic"]),
+        ]
+    )
+
+    response = app.test_client().get("/api/snps?severity_filters=benign&has_genotype=1")
+
+    assert response.status_code == 200
+    payload = response.get_json()
+    assert payload["count"] == 2
+    assert {row["Name"] for row in payload["results"]} == {"rs1", "rs2"}
 
 
 def test_variants_api_lists_normalized_build37_rows(tmp_path):
@@ -249,7 +290,8 @@ def test_report_import_endpoint_caches_bad_findings(tmp_path):
 
     assert response.status_code == 200
     assert response.get_json() == {"imported": 1, "metadata": 1}
-    assert app.config["PHENOTYPE_STORE"].get_snp("rs1")["SNPediaMatchedFinding"]["note"] == "Bad: risk note"
+    assert app.config["PHENOTYPE_STORE"].get_snp("rs1")["SNPediaMatchedFinding"]["note"] == "risk note"
+    assert app.config["PHENOTYPE_STORE"].get_snp("rs1")["SNPediaMatchedFinding"]["repute"] == "Bad"
 
 
 def test_upload_imports_genotypes(tmp_path):

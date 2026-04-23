@@ -23,7 +23,7 @@ def test_catalog_result_parses_bad_genotype_page():
 
     assert finding.rsid == "rs1800562"
     assert finding.genotype == "(A;G)"
-    assert finding.variation == ["(A;G)", "3", "Bad: One copy of C282Y"]
+    assert finding.variation == ["(A;G)", "3", "One copy of C282Y", "Bad"]
 
 
 def test_catalog_match_allows_complement_and_indels():
@@ -63,7 +63,7 @@ def test_exact_genotype_fetch_tries_direct_page(monkeypatch):
     finding = fetch_matching_genotype_finding("rs4307059", "(T;T)")
 
     assert finding.rsid == "rs4307059"
-    assert finding.variation == ["(T;T)", "3", "Bad: 1.42x risk of Autism"]
+    assert finding.variation == ["(T;T)", "3", "1.42x risk of Autism", "Bad"]
 
 
 def test_known_genoset_rules_match_imported_genotypes(monkeypatch):
@@ -94,4 +94,4 @@ def test_known_genoset_rules_match_imported_genotypes(monkeypatch):
     )
 
     assert [finding.rsid for finding in findings] == ["gs223"]
-    assert findings[0].variation == ["(match)", "2.1", "Bad: Example genoset"]
+    assert findings[0].variation == ["(match)", "2.1", "Example genoset", "Bad"]

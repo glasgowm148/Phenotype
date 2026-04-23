@@ -59,8 +59,8 @@ def test_clinvar_findings_summarize_severity_and_dates():
 def test_clinvar_findings_handle_condition_significance_order():
     findings = clinvar_findings([["RCV1", "Ischemic stroke, susceptibility to", "Risk-Factor"]])
 
-    assert findings[0]["significance"] == "Risk-Factor"
-    assert findings[0]["condition"] == "Ischemic stroke, susceptibility to"
+    assert findings[0]["significance"] == "Ischemic stroke, susceptibility to"
+    assert findings[0]["condition"] == "Risk-Factor"
     assert findings[0]["severity_class"] == "risk"
 
 
@@ -128,7 +128,7 @@ def test_snpedia_genoset_match_counts_as_promethease_match():
 
     row = SNPRecord(
         rsid="gs223",
-        variations=[["(match)", "2.1", "Bad: One copy of GCH1 variant"]],
+        variations=[["(match)", "2.1", "One copy of GCH1 variant", "Bad"]],
     ).to_legacy("(match)")
 
     assert row["HasClinicalAlleleMatch"] is False

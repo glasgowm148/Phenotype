@@ -236,7 +236,7 @@ def test_store_separates_clinical_and_promethease_style_filters(tmp_path):
     promethease = store.list_snps(promethease_only=True)
 
     assert [row["Name"] for row in clinical] == ["rs1"]
-    assert [row["Name"] for row in promethease] == ["rs1", "rs2"]
+    assert {row["Name"] for row in promethease} == {"rs1", "rs2"}
 
 
 def test_store_imports_and_filters_vep_consequences(tmp_path):

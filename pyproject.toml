@@ -28,11 +28,11 @@ phenotype-scrape = "phenotype.cli:scrape"
 phenotype-vep-import = "phenotype.vep:main"
 
 [tool.setuptools.packages.find]
-where = ["src/1-Phenotype-web"]
+where = ["src/phenotype-web"]
 include = ["phenotype*"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src/1-Phenotype-web"]
+pythonpath = ["src/phenotype-web"]
 testpaths = ["tests"]
 
 [tool.ruff]

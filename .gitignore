@@ -39,19 +39,22 @@ tmp/
 temp/
 
 # Generated app data and personal genome exports
-src/1-Phenotype-web/data/scrapedData.csv
-src/1-Phenotype-web/data/scrapedData.json
-src/1-Phenotype-web/data/yourData.json
-src/1-Phenotype-web/data/last_session.txt
-src/1-Phenotype-web/data/outputs/
-src/1-Phenotype-web/data/exports/
-src/1-Phenotype-web/data/uploads/
-src/1-Phenotype-web/data/downloads/
-src/1-Phenotype-web/data/phenotype.sqlite*
-src/1-Phenotype-web/data/AncestryDNA*.txt
-src/1-Phenotype-web/data/23andme*.txt
-src/1-Phenotype-web/data/reload_db.xlsx
-src/2-Jupyter-playground/data/23andme*
+src/phenotype-web/data/scrapedData.csv
+src/phenotype-web/data/scrapedData.json
+src/phenotype-web/data/yourData.json
+src/phenotype-web/data/last_session.txt
+src/phenotype-web/data/outputs/
+src/phenotype-web/data/exports/
+src/phenotype-web/data/uploads/
+src/phenotype-web/data/downloads/
+src/phenotype-web/data/phenotype.sqlite*
+src/phenotype-web/data/AncestryDNA*.txt
+src/phenotype-web/data/23andme*.txt
+src/phenotype-web/data/reload_db.xlsx
+src/phenotype-web/phenotype.egg-info/
+src/jupyter-playground/.ipynb_checkpoints/
+src/jupyter-playground/old-notebooks/.ipynb_checkpoints/
+src/jupyter-playground/data/23andme*
 
 # Generated scraper scratch files
 src/1-Phenotype-web/ext/SNPedia_Scraper-master/test.csv
