@@ -66,12 +66,13 @@ class SNPRecord:
             top_finding = snpedia_finding
         return {
             "Name": self.rsid,
-            "Description": self.description,
+            "Description": clean_display_text(self.description),
             "ClinVar": _join_clinvar(self.clinvar),
             "Genotype": genotype,
             "Frequency": self.frequency,
             "FrequencyDisplay": format_frequency_percent(self.frequency_percent, self.frequency),
             "Citations": self.citations,
+            "PublicationCount": publication_count(self.citations),
             "Gene": self.gene,
             "Risk": self.risk,
             "RiskAllele": self.risk_allele,
@@ -95,7 +96,7 @@ class SNPRecord:
             "AlleleOrientationNote": allele_orientation_note(self.variations, genotype, snpedia_match),
             "Studies": self.studies,
             "Variations": "<br>".join(_format_variation(v, genotype) for v in self.variations),
-            "ClinicalSignificance": ", ".join(self.clinical_significance),
+            "ClinicalSignificance": clean_display_text(", ".join(self.clinical_significance)),
             "SourceUrls": self.source_urls,
         }
 
@@ -146,6 +147,20 @@ def format_frequency_percent(percent: float | None, fallback: Any = "") -> str:
     if percent is None:
         return "" if is_zero_frequency_text(fallback) else str(fallback or "")
     return f"{percent:.2f}".rstrip("0").rstrip(".") + "%"
+
+
+def publication_count(value: Any) -> int:
+    match = re.search(r"\d+", str(value or ""))
+    return int(match.group(0)) if match else 0
+
+
+def clean_display_text(value: Any) -> str:
+    text = html.unescape(str(value or ""))
+    text = re.sub(r"\s*\|\s*", "; ", text)
+    text = re.sub(r"\s*;\s*", "; ", text)
+    text = re.sub(r"(?:;\s*){2,}", "; ", text)
+    text = re.sub(r"\bnot provided\b", "not provided", text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip(" ;")
 
 
 def is_zero_frequency_text(value: Any) -> bool:

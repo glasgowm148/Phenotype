@@ -28,11 +28,13 @@ def test_home_route_serves_app_shell(tmp_path):
     assert b"x;x" in response.data
     assert b"Highest priority" in response.data
     assert b"Recent findings" in response.data
+    assert b"Most publications" in response.data
     assert b"Clear" in response.data
     assert b"Refresh finding dates" in response.data
     assert b"Import ClinVar DB" in response.data
     assert b"Scan x;y ClinVar matches" in response.data
     assert b"Import VEP" in response.data
+    assert b"Import report HTML" in response.data
     assert b"Export VEP x;y" in response.data
     assert b"Export VEP rsids" in response.data
     assert b"High impact" in response.data
@@ -42,6 +44,7 @@ def test_home_route_serves_app_shell(tmp_path):
     assert b"Stop gained" in response.data
     assert b"Unannotated" in response.data
     assert b"Finding date" in response.data
+    assert b"SNPedia risk note" in response.data
     assert b"ClinVar findings" in response.data
     assert b"Clinical" in response.data
     assert b"Findings" in response.data
@@ -207,6 +210,46 @@ def test_vep_import_endpoint_caches_consequences(tmp_path):
     rows = variants.get_json()["results"]
     assert [row["Name"] for row in rows] == ["rs1303"]
     assert rows[0]["VepConsequence"] == "missense_variant"
+
+
+def test_report_import_endpoint_caches_bad_findings(tmp_path):
+    import base64
+    import io
+    import json
+    import zlib
+
+    app = create_app(
+        tmp_path / "phenotype.sqlite",
+        genotypes_path=tmp_path / "yourData.json",
+        upload_dir=tmp_path / "uploads",
+        seed_legacy=False,
+    )
+    app.config["PHENOTYPE_STORE"].upsert_genotypes({"rs1": "(A;G)"})
+    payload = base64.b64encode(
+        zlib.compress(
+            json.dumps(
+                [
+                    {
+                        "rsnum": "rs1",
+                        "geno": "(A;G)",
+                        "repute": "Bad",
+                        "magnitude": 2.5,
+                        "genosummary": "risk note",
+                    }
+                ]
+            ).encode("utf-8")
+        )
+    ).decode("ascii")
+    html = f"mygenos.push.apply(mygenos,decompressString('{payload}'));"
+
+    response = app.test_client().post(
+        "/api/report/import",
+        data={"report": (io.BytesIO(html.encode("utf-8")), "report.html")},
+    )
+
+    assert response.status_code == 200
+    assert response.get_json() == {"imported": 1, "metadata": 1}
+    assert app.config["PHENOTYPE_STORE"].get_snp("rs1")["SNPediaMatchedFinding"]["note"] == "Bad: risk note"
 
 
 def test_upload_imports_genotypes(tmp_path):

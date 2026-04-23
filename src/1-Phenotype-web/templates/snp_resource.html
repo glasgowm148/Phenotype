@@ -74,18 +74,15 @@
         th, td { padding: 8px 9px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
         th { position: sticky; top: 0; z-index: 1; background: #eef3f7; text-align: left; color: #263544; font-weight: 700; cursor: pointer; }
         tr:hover td { background: #f7fbff; }
+        tr.source-only td { color: #627181; background: #fbfcfd; }
         tr.selected td { background: #e8f2fb; }
         .rsid { width: 118px; }
         .genotype { width: 95px; }
         .risk { width: 76px; }
-        .zygosity { width: 110px; }
-        .chromosome { width: 74px; }
-        .position { width: 92px; }
         .freq { width: 86px; }
         .significance { width: 92px; }
-        .updated { width: 112px; }
         .gene { width: 116px; }
-        .vep { width: 180px; }
+        .snpedia-note { width: 220px; }
         .clinical { width: 310px; }
         .desc { width: 280px; }
         .geno-hit { display: inline-block; padding: 3px 6px; background: var(--warn); border-radius: 4px; }
@@ -96,6 +93,7 @@
         .match-genotype { border-color: #b75f00; background: #fff6ea; color: #744000; }
         .match-source { border-color: #aebbc7; background: #eef3f7; color: #536171; }
         .match-none { border-color: #c8d1da; background: #f7fafc; color: #6c7782; }
+        .note-label { border-color: #b75f00; background: #fff6ea; color: #744000; }
         .severity-pathogenic { background: var(--sev-pathogenic); }
         .severity-risk { background: var(--sev-risk); }
         .severity-drug { background: var(--sev-drug); }
@@ -162,8 +160,8 @@
             <span class="group-label">Show</span>
             <button class="chip" id="view-findings" aria-pressed="true">Findings <span class="chip-count" id="count-findings">0</span></button>
             <button class="chip" id="view-clinical" aria-pressed="false">Clinical <span class="chip-count" id="count-clinical-match">0</span></button>
-            <button class="chip" id="view-all" aria-pressed="false">All annotated</button>
-            <button class="chip" id="view-backlog" aria-pressed="false">Unannotated</button>
+            <button class="chip" id="view-all" aria-pressed="false">All annotated <span class="chip-count" id="count-all-annotated">0</span></button>
+            <button class="chip" id="view-backlog" aria-pressed="false">Unannotated <span class="chip-count" id="count-unannotated">0</span></button>
         </div>
         <div class="control-group" aria-label="Sort">
             <span class="group-label">Sort</span>
@@ -173,6 +171,7 @@
                 <option value="rare">Rare first</option>
                 <option value="common">Common first</option>
                 <option value="type">Finding type</option>
+                <option value="publications">Most publications</option>
                 <option value="gene">Gene</option>
                 <option value="rsid">rsid</option>
             </select>
@@ -214,6 +213,8 @@
             <span class="group-label">Data</span>
             <label class="file-button" for="vep-file">Import VEP</label>
             <input id="vep-file" type="file" accept=".txt,.tab,.tsv">
+            <label class="file-button" for="report-file">Import report HTML</label>
+            <input id="report-file" type="file" accept=".html,.htm">
             <button id="scrape">Refresh annotations</button>
             <button id="refresh-clinical">Refresh finding dates</button>
             <button id="import-clinvar">Import ClinVar DB</button>
@@ -241,14 +242,10 @@
                     <th class="rsid" data-sort="Name">rsid</th>
                     <th class="genotype" data-sort="Genotype">You</th>
                     <th class="risk" data-sort="RiskAllele">Source allele</th>
-                    <th class="zygosity" data-sort="VariantZygosity">Zygosity</th>
-                    <th class="chromosome" data-sort="Chromosome">Chr</th>
-                    <th class="position" data-sort="Position">Position</th>
                     <th class="freq" data-sort="FrequencyPercent">Freq</th>
                     <th class="significance" data-sort="SignificanceScore">Rating</th>
-                    <th class="updated" data-sort="ClassificationUpdatedAt">Finding date</th>
                     <th class="gene" data-sort="Gene">Gene</th>
-                    <th class="vep" data-sort="VepImpactRank">VEP</th>
+                    <th class="snpedia-note">SNPedia risk note</th>
                     <th class="clinical" data-sort="FindingSeverityScore">Finding</th>
                     <th class="desc" data-sort="Description">Description</th>
                 </tr>
@@ -289,6 +286,15 @@
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;")
             .replace(/"/g, "&quot;");
+    }
+
+    function cleanText(value) {
+        return String(value == null ? "" : value)
+            .replace(/\s*\|\s*/g, "; ")
+            .replace(/\s*;\s*/g, "; ")
+            .replace(/(;\s*){2,}/g, "; ")
+            .replace(/\s+/g, " ")
+            .replace(/^[ ;]+|[ ;]+$/g, "");
     }
 
     function setStatus(text) {
@@ -414,7 +420,11 @@
     }
 
     function formatFrequency(row) {
-        return row.FrequencyDisplay || (row.FrequencyPercent == null ? row.Frequency : row.FrequencyPercent + "%");
+        if (row.FrequencyDisplay) return row.FrequencyDisplay;
+        if (row.Frequency && !/^\s*(?:[ACGT]\s*=\s*)?0+(?:\.0+)?%?\s*$/i.test(String(row.Frequency))) {
+            return row.Frequency;
+        }
+        return row.FrequencyPercent == null ? "" : row.FrequencyPercent + "%";
     }
 
     function link(label, url) {
@@ -516,8 +526,8 @@
         var snpedia = snpediaFindingSummary(row.SNPediaMatchedFinding);
         return "<div class='finding-cell'>" +
             "<div class='finding-title'>" + severityBadge(row, row.FindingSeverity || "Finding") + matchStatusPill(row) + "</div>" +
-            "<div class='finding-summary'>" + escapeHtml(summary) + "</div>" +
-            "<div class='finding-meta'>" + escapeHtml(meta) + "</div>" +
+            "<div class='finding-summary'>" + escapeHtml(cleanText(summary)) + "</div>" +
+            "<div class='finding-meta'>" + escapeHtml(cleanText(meta)) + "</div>" +
             snpedia +
             "</div>";
     }
@@ -528,10 +538,21 @@
             ? "<span><strong>Magnitude:</strong> " + escapeHtml(finding.magnitude) + "</span>"
             : "";
         var note = finding.note
-            ? "<span><strong>Risk note:</strong> " + escapeHtml(finding.note) + "</span>"
+            ? "<span><strong>Risk note:</strong> " + escapeHtml(cleanText(finding.note)) + "</span>"
             : "";
-        return "<div class='finding-meta snpedia-inline'><span><strong>SNPedia genotype:</strong> " +
+        var label = finding.severity === "Risk" ? "SNPedia risk note" : "SNPedia note";
+        return "<div class='finding-meta snpedia-inline'><span class='match-status note-label'>" + escapeHtml(label) + "</span><span><strong>SNPedia genotype:</strong> " +
             escapeHtml(finding.allele || "") + "</span>" + magnitude + note + "</div>";
+    }
+
+    function snpediaRiskNoteCell(row) {
+        var finding = row.SNPediaMatchedFinding || {};
+        if (!finding.note) return "";
+        return "<div class='finding-cell'>" +
+            "<div class='finding-title'><span class='match-status note-label'>SNPedia</span></div>" +
+            "<div class='finding-summary'>" + escapeHtml(cleanText(finding.note)) + "</div>" +
+            (finding.magnitude ? "<div class='finding-meta'>Magnitude " + escapeHtml(finding.magnitude) + "</div>" : "") +
+            "</div>";
     }
 
     function accessionUrl(accession) {
@@ -547,8 +568,8 @@
             var accession = finding.accession ? link(finding.accession, accessionUrl(finding.accession)) : "";
             return "<div class='finding-card " + cls + "'>" +
                 "<div class='finding-title'><span class='badge " + cls + "'>" + escapeHtml(finding.severity || "Finding") + "</span>" + date + accession + "</div>" +
-                "<div><strong>" + escapeHtml(finding.significance || "Unspecified") + "</strong></div>" +
-                "<div>" + escapeHtml(finding.condition || "No condition supplied") + "</div>" +
+                "<div><strong>" + escapeHtml(cleanText(finding.significance || "Unspecified")) + "</strong></div>" +
+                "<div>" + escapeHtml(cleanText(finding.condition || "No condition supplied")) + "</div>" +
                 "</div>";
         }).join("") + "</div>";
     }
@@ -562,7 +583,7 @@
             "<div class='finding-title'><span class='badge " + cls + "'>" + escapeHtml(finding.severity || "SNPedia") + "</span><span>" + escapeHtml(strand) + "</span></div>" +
             "<div><strong>" + escapeHtml(finding.allele || "") + "</strong></div>" +
             (finding.magnitude ? "<div><strong>Magnitude:</strong> " + escapeHtml(finding.magnitude) + "</div>" : "") +
-            (finding.note ? "<div><strong>Risk note:</strong> " + escapeHtml(finding.note) + "</div>" : "") +
+            (finding.note ? "<div><strong>Risk note:</strong> " + escapeHtml(cleanText(finding.note)) + "</div>" : "") +
             "</div>";
     }
 
@@ -609,22 +630,21 @@
         var pageRows = rows.slice(start, start + size);
         var body = document.getElementById("rows");
         body.innerHTML = pageRows.map(function(row) {
-            var selected = row.Name === selectedName ? " class='selected'" : "";
+            var rowClasses = [];
+            if (row.Name === selectedName) rowClasses.push("selected");
+            if (matchStatus(row).label === "Source only") rowClasses.push("source-only");
+            var selected = rowClasses.length ? " class='" + rowClasses.join(" ") + "'" : "";
             var genotypeClass = riskHit(row) ? "geno-hit" : "geno-clear";
             return "<tr data-rsid='" + escapeHtml(row.Name) + "'" + selected + ">" +
                 "<td>" + escapeHtml(row.Name) + "</td>" +
                 "<td><span class='" + genotypeClass + "'>" + escapeHtml(row.Genotype) + "</span></td>" +
                 "<td>" + escapeHtml(row.RiskAllele || row.Risk) + "</td>" +
-                "<td>" + escapeHtml(row.VariantZygosity || "") + "</td>" +
-                "<td>" + escapeHtml(row.Chromosome || "") + "</td>" +
-                "<td>" + escapeHtml(row.Position || "") + "</td>" +
                 "<td>" + escapeHtml(formatFrequency(row)) + "</td>" +
                 "<td>" + ratingCell(row) + "</td>" +
-                "<td>" + escapeHtml(formatDate(row.ClassificationUpdatedAt)) + "</td>" +
                 "<td>" + escapeHtml(row.Gene) + "</td>" +
-                "<td>" + vepCell(row) + "</td>" +
+                "<td>" + snpediaRiskNoteCell(row) + "</td>" +
                 "<td>" + findingCell(row) + "</td>" +
-                "<td>" + escapeHtml(row.Description) + "</td>" +
+                "<td>" + escapeHtml(cleanText(row.Description)) + "</td>" +
                 "</tr>";
         }).join("");
         document.getElementById("page-readout").textContent = rows.length ? (start + 1) + "-" + Math.min(start + size, rows.length) + " of " + rows.length : "0 rows";
@@ -636,7 +656,7 @@
     function renderDetail(row) {
         var sources = row.SourceUrls || {};
         var sourceLinks = Object.keys(sources).map(function(key) {
-            return "<a href='" + escapeHtml(sources[key]) + "' target='_blank' rel='noreferrer'>" + escapeHtml(key) + "</a>";
+            return "<a href='" + escapeHtml(normalizeSourceUrl(sources[key])) + "' target='_blank' rel='noreferrer'>" + escapeHtml(key) + "</a>";
         }).join(" ");
         document.getElementById("detail").innerHTML =
             "<h2>" + escapeHtml(row.Name) + "</h2>" +
@@ -653,10 +673,11 @@
             detail("Priority rating", (row.SignificanceScore || 0) + " - " + (row.Significance || "None")) +
             detail("Clinical score", row.ClinicalScore == null ? "" : row.ClinicalScore) +
             detail("Frequency context", row.FrequencyContext || "") +
+            detail("Publication count", row.PublicationCount || "") +
             detail("Top finding", findingCell(row), true) +
             detail("Matched SNPedia note", renderSnpediaFinding(row), true) +
             detail("ClinVar findings", renderFindings(row), true) +
-            detail("Clinical terms", row.ClinicalSignificance) +
+            detail("Clinical terms", cleanText(row.ClinicalSignificance)) +
             detail("Finding date", formatDate(row.ClassificationUpdatedAt) || "Not supplied by source") +
             detail("Local cache refreshed", formatDate(row.SourceUpdatedAt)) +
             detail("SNPedia", link(row.Name, snpediaUrl(row)), true) +
@@ -664,6 +685,27 @@
             detail("Citations", row.Citations) +
             detail("Sources", sourceLinks || "", true) +
             detail("SNPedia notes", row.Variations || "");
+    }
+
+    function loadDetail(rsid) {
+        document.getElementById("detail").innerHTML = "<h2>" + escapeHtml(rsid) + "</h2><div class='detail-row'><span class='detail-label'>Loading</span><div>Fetching full annotation...</div></div>";
+        return fetch("/api/snps/" + encodeURIComponent(rsid))
+            .then(function(response) {
+                return response.json().then(function(data) {
+                    if (!response.ok) throw data;
+                    return data;
+                });
+            })
+            .then(function(data) {
+                var index = allRows.findIndex(function(item) { return item.Name === rsid; });
+                if (index !== -1) allRows[index] = Object.assign({}, allRows[index], data);
+                if (selectedName === rsid) renderDetail(index !== -1 ? allRows[index] : data);
+            })
+            .catch(function(error) {
+                if (selectedName === rsid) {
+                    document.getElementById("detail").innerHTML = "<h2>" + escapeHtml(rsid) + "</h2><div class='detail-row'><span class='detail-label'>Error</span><div>" + escapeHtml((error && error.error) || "Detail load failed") + "</div></div>";
+                }
+            });
     }
 
     function detail(label, value, htmlAllowed) {
@@ -700,6 +742,7 @@
                 var homozygous = Number(stats.homozygous_variants || 0);
                 var noCall = Number(stats.no_call_variants || 0);
                 var annotated = Number(stats.annotated_genotypes || 0);
+                var unannotated = Number(stats.unannotated_genotypes || 0);
                 var cached = Number(stats.cached_snps || 0);
                 var clinvarRows = Number(stats.clinvar_reference_rows || 0);
                 var clinvarRsids = Number(stats.clinvar_reference_rsids || 0);
@@ -711,6 +754,8 @@
                 var vepModerate = Number(stats.vep_moderate_rsids || 0);
                 var percent = imported ? ((annotated / imported) * 100).toFixed(2) : "0.00";
                 var coverage = document.getElementById("coverage");
+                document.getElementById("count-all-annotated").textContent = formatInteger(annotated);
+                document.getElementById("count-unannotated").textContent = formatInteger(unannotated);
                 if (!imported) {
                     coverage.style.display = "none";
                     coverage.textContent = "";
@@ -727,7 +772,8 @@
                     "<strong>ClinVar:</strong> " +
                     (clinvarRows ? formatInteger(clinvarTargets) + " targeted matches." : "not imported.") +
                     " <strong>VEP:</strong> " +
-                    (vepRows ? formatInteger(vepHigh) + " high, " + formatInteger(vepModerate) + " moderate." : "not imported.");
+                    (vepRows ? formatInteger(vepHigh) + " high, " + formatInteger(vepModerate) + " moderate." : "not imported.") +
+                    " Unannotated means not cached locally yet, not known-safe.";
             })
             .catch(function() {});
     }
@@ -793,7 +839,10 @@
         if (!rowEl) return;
         selectedName = rowEl.dataset.rsid;
         var row = allRows.find(function(item) { return item.Name === selectedName; });
-        if (row) renderDetail(row);
+        if (row) {
+            renderDetail(row);
+            loadDetail(selectedName);
+        }
         renderRows();
     });
 
@@ -808,6 +857,7 @@
                 field === "FrequencyPercent" && sortDir === "asc" ? "rare" :
                 field === "FrequencyPercent" ? "common" :
                 field === "FindingSeverityScore" ? "type" :
+                field === "PublicationCount" ? "publications" :
                 field === "Gene" ? "gene" :
                 field === "Name" ? "rsid" :
                 sortMode;
@@ -899,6 +949,7 @@
             rare: ["FrequencyPercent", "asc"],
             common: ["FrequencyPercent", "desc"],
             type: ["FindingType", "desc"],
+            publications: ["PublicationCount", "desc"],
             gene: ["Gene", "asc"],
             rsid: ["Name", "asc"]
         };
@@ -966,6 +1017,23 @@
                 loadRows();
             })
             .catch(function(error) { setStatus(error.error || "VEP import failed"); });
+    });
+
+    document.getElementById("report-file").addEventListener("change", function() {
+        var file = this.files[0];
+        if (!file) return;
+        var form = new FormData();
+        form.append("report", file);
+        setStatus("Importing report...");
+        fetch("/api/report/import", { method: "POST", body: form })
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                if (data.error) throw data;
+                setStatus("Imported " + data.imported + " report findings, updated " + (data.metadata || 0) + " metadata rows");
+                loadStats();
+                loadRows();
+            })
+            .catch(function(error) { setStatus(error.error || "Report import failed"); });
     });
 
     document.getElementById("clear-genotypes").addEventListener("click", function() {

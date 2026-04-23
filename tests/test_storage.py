@@ -163,6 +163,31 @@ def test_store_lists_normalized_genome_variants(tmp_path):
     assert ids_path.read_text(encoding="utf-8").splitlines() == ["rs1303", "rs1815739"]
 
 
+def test_store_includes_normalized_variant_metadata_in_snp_rows(tmp_path):
+    store = PhenotypeStore(tmp_path / "phenotype.sqlite")
+    personal = PersonalData(FIXTURES / "23andme_sample.txt", export_path=tmp_path / "yourData.json")
+    store.upsert_genotypes(personal.yourData)
+    store.upsert_genome_variants(personal.variants)
+    store.upsert_snps([SNPRecord(rsid="rs1303", variations=[["(A;G)", "2", "risk note"]])])
+
+    row = store.list_snps(promethease_only=True)[0]
+
+    assert row["Chromosome"] == "1"
+    assert row["Position"] == 1000
+    assert row["VariantZygosity"] == "heterozygous"
+    assert row["VariantAssembly"] == "GRCh37"
+
+
+def test_store_uses_exact_rsid_search_when_query_is_rsid(tmp_path):
+    store = PhenotypeStore(tmp_path / "phenotype.sqlite")
+    store.upsert_genotypes({"rs1208": "(A;G)", "rs12085366": "(C;T)"})
+    store.upsert_snps([SNPRecord(rsid="rs1208"), SNPRecord(rsid="rs12085366", gene="GENE2")])
+
+    rows = store.list_snps(search="rs1208", has_genotype=True)
+
+    assert [row["Name"] for row in rows] == ["rs1208"]
+
+
 def test_store_filters_normalized_variants_by_listed_allele_match(tmp_path):
     store = PhenotypeStore(tmp_path / "phenotype.sqlite")
     personal = PersonalData(FIXTURES / "23andme_sample.txt", export_path=tmp_path / "yourData.json")

@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import re
 import sqlite3
 from collections.abc import Iterable
 from datetime import datetime, timezone
@@ -53,6 +54,10 @@ class PhenotypeStore:
                     classification_updated_at text not null,
                     source_updated_at text not null
                 );
+                create index if not exists idx_snps_finding_candidates
+                    on snps(rsid)
+                    where variations_json != '[]'
+                       or (risk_allele != '' and clinical_significance_json != '[]');
                 create table if not exists genotypes (
                     rsid text primary key,
                     genotype text not null,
@@ -200,11 +205,12 @@ class PhenotypeStore:
             """
             select rsid, clinvar_json, risk, frequency
             from snps
-            where clinical_significance_json = '[]'
-               or risk_allele = ''
-               or frequency_percent is null
-               or frequency_percent <= 0
-               or frequency_percent > 100
+            where (clinvar_json != '[]' and clinical_significance_json = '[]')
+               or (risk != '' and risk_allele = '')
+               or (
+                    frequency != ''
+                    and (frequency_percent is null or frequency_percent <= 0 or frequency_percent > 100)
+               )
             """
         ).fetchall()
         conn.executemany(
@@ -671,12 +677,17 @@ class PhenotypeStore:
         query_limit = limit
         query_offset = offset
         if search:
-            like = f"%{search.lower()}%"
-            where.append(
-                "(lower(gv.rsid) like ? or lower(s.gene) like ? or lower(s.description) like ? "
-                "or lower(s.clinical_significance_json) like ? or lower(s.clinvar_json) like ?)"
-            )
-            params.extend([like, like, like, like, like])
+            search_lower = search.lower()
+            if re.fullmatch(r"(?:rs|gs)\d+", search_lower):
+                where.append("lower(gv.rsid) = ?")
+                params.append(search_lower)
+            else:
+                like = f"%{search_lower}%"
+                where.append(
+                    "(lower(gv.rsid) like ? or lower(s.gene) like ? or lower(s.description) like ? "
+                    "or lower(s.clinical_significance_json) like ? or lower(s.clinvar_json) like ?)"
+                )
+                params.extend([like, like, like, like, like])
         if zygosity:
             where.append("gv.zygosity = ?")
             params.append(zygosity)
@@ -686,6 +697,13 @@ class PhenotypeStore:
             where.append("s.rsid is not null")
         if mutated_only or clinical_match_only or promethease_only:
             where.append("s.rsid is not null")
+            if clinical_match_only:
+                where.append("s.risk_allele != ''")
+                where.append("s.clinical_significance_json != '[]'")
+            if mutated_only or promethease_only:
+                where.append(
+                    "(s.variations_json != '[]' or (s.risk_allele != '' and s.clinical_significance_json != '[]'))"
+                )
             query_limit = max(limit + offset, 100000)
             query_offset = 0
         if vep_impact:
@@ -770,6 +788,7 @@ class PhenotypeStore:
         mutated_only: bool = False,
         clinical_match_only: bool = False,
         promethease_only: bool = False,
+        summary_only: bool = False,
         limit: int = 1000,
         offset: int = 0,
     ) -> list[dict[str, str]]:
@@ -778,24 +797,74 @@ class PhenotypeStore:
         query_limit = limit
         query_offset = offset
         if search:
-            like = f"%{search.lower()}%"
-            where.append(
-                "(lower(s.rsid) like ? or lower(s.gene) like ? or lower(s.description) like ? "
-                "or lower(s.clinical_significance_json) like ? or lower(s.clinvar_json) like ?)"
-            )
-            params.extend([like, like, like, like, like])
+            search_lower = search.lower()
+            if re.fullmatch(r"(?:rs|gs)\d+", search_lower):
+                where.append("lower(s.rsid) = ?")
+                params.append(search_lower)
+            else:
+                like = f"%{search_lower}%"
+                where.append(
+                    "(lower(s.rsid) like ? or lower(s.gene) like ? or lower(s.description) like ? "
+                    "or lower(s.clinical_significance_json) like ?)"
+                )
+                params.extend([like, like, like, like])
         if has_genotype:
             where.append("g.genotype is not null")
         if mutated_only or clinical_match_only or promethease_only:
             where.append("g.genotype is not null")
+            if clinical_match_only:
+                where.append("s.risk_allele != ''")
+                where.append("s.clinical_significance_json != '[]'")
+            if mutated_only or promethease_only:
+                where.append(
+                    "(s.variations_json != '[]' or (s.risk_allele != '' and s.clinical_significance_json != '[]'))"
+                )
             query_limit = max(limit + offset, 100000)
             query_offset = 0
 
-        sql = """
-            select s.*, coalesce(g.genotype, '(n/a)') as genotype
-            from snps s
-            left join genotypes g on g.rsid = s.rsid
-        """
+        if summary_only:
+            sql = """
+                select
+                    s.rsid,
+                    s.description,
+                    '[]' as clinvar_json,
+                    s.clinical_significance_json,
+                    s.frequency,
+                    '' as studies,
+                    s.citations,
+                    s.gene,
+                    s.risk,
+                    s.risk_allele,
+                    s.frequency_percent,
+                    s.variations_json,
+                    '{}' as source_urls_json,
+                    s.first_seen_at,
+                    s.classification_updated_at,
+                    s.source_updated_at,
+                    coalesce(g.genotype, '(n/a)') as genotype,
+                    gv.chromosome,
+                    gv.position,
+                    gv.zygosity,
+                    gv.assembly,
+                    gv.annotation_release
+                from snps s
+                left join genotypes g on g.rsid = s.rsid
+                left join genotype_variants gv on gv.rsid = s.rsid
+            """
+        else:
+            sql = """
+                select
+                    s.*,
+                    coalesce(g.genotype, '(n/a)') as genotype,
+                    gv.chromosome,
+                    gv.position,
+                    gv.zygosity,
+                    gv.assembly,
+                    gv.annotation_release
+                from snps s
+                left join genotypes g on g.rsid = s.rsid
+                left join genotype_variants gv on gv.rsid = s.rsid
+            """
         if where:
             sql += " where " + " and ".join(where)
         sql += " order by s.rsid limit ? offset ?"
@@ -846,8 +915,17 @@ class PhenotypeStore:
         with self.connect() as conn:
             row = conn.execute(
                 """
-                select s.*, coalesce(g.genotype, '(n/a)') as genotype
-                from snps s left join genotypes g on g.rsid = s.rsid
+                select
+                    s.*,
+                    coalesce(g.genotype, '(n/a)') as genotype,
+                    gv.chromosome,
+                    gv.position,
+                    gv.zygosity,
+                    gv.assembly,
+                    gv.annotation_release
+                from snps s
+                left join genotypes g on g.rsid = s.rsid
+                left join genotype_variants gv on gv.rsid = s.rsid
                 where s.rsid = ?
                 """,
                 [normalize_rsid(rsid)],
@@ -1048,6 +1126,7 @@ class PhenotypeStore:
         payload["ClassificationUpdatedAt"] = row["classification_updated_at"]
         payload["RecentFindingAt"] = row["classification_updated_at"]
         payload["SourceUpdatedAt"] = row["source_updated_at"]
+        payload.update(_variant_metadata(row))
         return payload
 
     def _variant_row_to_legacy(self, row: sqlite3.Row) -> dict[str, Any]:
@@ -1100,7 +1179,7 @@ def _merge_record_update(update: SNPRecord, existing: SNPRecord | None) -> SNPRe
         variations=_merge_lists(update.variations, existing.variations),
         clinical_significance=update.clinical_significance or existing.clinical_significance,
         source_urls={**existing.source_urls, **update.source_urls},
-        classification_updated_at=update.classification_updated_at or existing.classification_updated_at,
+        classification_updated_at=_max_date(update.classification_updated_at, existing.classification_updated_at),
     )
 
 
@@ -1129,6 +1208,11 @@ def _classification_source_date(clinvar: list[Any]) -> str:
     for value in _walk_values(clinvar):
         if isinstance(value, str) and len(value) >= 10 and value[4:5] == "-" and value[7:8] == "-":
             dates.append(value[:10])
+    return max(dates) if dates else ""
+
+
+def _max_date(*values: str) -> str:
+    dates = [value[:10] for value in values if value]
     return max(dates) if dates else ""
 
 
@@ -1265,6 +1349,11 @@ def _unannotated_row(row: sqlite3.Row) -> dict[str, Any]:
         "ClassificationUpdatedAt": "",
         "RecentFindingAt": "",
         "SourceUpdatedAt": row["imported_at"],
+        "Chromosome": _row_value(row, "chromosome", ""),
+        "Position": _row_value(row, "position", ""),
+        "VariantZygosity": _row_value(row, "zygosity", ""),
+        "VariantAssembly": _row_value(row, "assembly", ""),
+        "AnnotationRelease": _row_value(row, "annotation_release", ""),
     }
 
 
@@ -1274,6 +1363,20 @@ def _unannotated_variant_row(row: sqlite3.Row) -> dict[str, Any]:
     payload["FindingSummary"] = f"{row['zygosity'].replace('-', ' ')} genotype, not annotated"
     payload["Significance"] = "Not annotated"
     return payload
+
+
+def _variant_metadata(row: sqlite3.Row) -> dict[str, Any]:
+    return {
+        "Chromosome": _row_value(row, "chromosome", ""),
+        "Position": _row_value(row, "position", ""),
+        "VariantZygosity": _row_value(row, "zygosity", ""),
+        "VariantAssembly": _row_value(row, "assembly", ""),
+        "AnnotationRelease": _row_value(row, "annotation_release", ""),
+    }
+
+
+def _row_value(row: sqlite3.Row, key: str, default: Any = "") -> Any:
+    return row[key] if key in row.keys() and row[key] is not None else default
 
 
 def _clinvar_rows_to_records(rows: list[sqlite3.Row]) -> list[SNPRecord]:

@@ -111,8 +111,6 @@ def _frequency(alleles: Any) -> tuple[str, float | None]:
         base = _first_text(allele.get("allele"))
         raw_frequency = allele.get("frequency", allele.get("freq"))
         percent = normalize_frequency_percent(raw_frequency)
-        if percent is not None and 0 <= percent <= 1 and "%" not in str(raw_frequency):
-            percent *= 100
         if base and percent is not None:
             values.append((base, percent))
     if not values:

@@ -10,6 +10,7 @@ from phenotype.clinvar_local import download_variant_summary, iter_variant_summa
 from phenotype.genome_importer import PersonalData
 from phenotype.models import SNPRecord, normalize_rsid
 from phenotype.paths import APP_DIR, DATA_DIR, DEFAULT_DB_PATH, DEFAULT_GENOTYPES_JSON, UPLOAD_DIR
+from phenotype.promethease import iter_report_metadata_records, iter_report_records
 from phenotype.providers.combined import fetch_snp_record
 from phenotype.providers.myvariant import fetch_myvariant_record
 from phenotype.providers.snpedia_ncbi import snpedia_url
@@ -55,6 +56,7 @@ def create_app(
             mutated_only=_flag("mutated_only"),
             clinical_match_only=_flag("clinical_match_only"),
             promethease_only=_flag("promethease_only"),
+            summary_only=True,
             limit=_int_arg("limit", 1000),
             offset=_int_arg("offset", 0),
         )
@@ -156,6 +158,23 @@ def create_app(
             temp_path = Path(temp.name)
         count = store.replace_vep_consequences(iter_vep_tab(temp_path))
         return jsonify({"imported": count})
+
+    @app.route("/api/report/import", methods=["POST"])
+    def import_report_html():
+        upload = request.files.get("report")
+        if not upload or not upload.filename:
+            return jsonify({"error": "missing report file"}), 400
+        upload_dir.mkdir(parents=True, exist_ok=True)
+        suffix = Path(upload.filename).suffix or ".html"
+        with tempfile.NamedTemporaryFile(delete=False, dir=upload_dir, suffix=suffix) as temp:
+            upload.save(temp.name)
+            temp_path = Path(temp.name)
+        metadata_records = list(iter_report_metadata_records(temp_path))
+        finding_records = list(iter_report_records(temp_path))
+        store.upsert_genotypes({record.rsid: "(match)" for record in finding_records if record.rsid.startswith("gs")})
+        store.merge_upsert_snps(metadata_records)
+        store.merge_upsert_snps(finding_records)
+        return jsonify({"imported": len(finding_records), "metadata": len(metadata_records)})
 
     @app.route("/api/import", methods=["POST"])
     def import_genome():
