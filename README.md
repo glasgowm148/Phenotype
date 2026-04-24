@@ -1,35 +1,46 @@
 # Phenotype
 
-Phenotype is a local genome annotation app for inspecting SNPs without pushing your raw genome file to a hosted service. It uses Flask, SQLite, and plain JavaScript to combine imported genotypes with cached annotation sources such as ClinVar, SNPedia, VEP, and imported Promethease-style reports.
+<p align="center">
+  <img src="docs/img/logo.png" alt="Phenotype logo" width="140">
+</p>
+
+<p align="center">
+  <a href="#quick-start"><img src="https://img.shields.io/badge/Quick%20Start-Run%20locally-2ea44f?style=for-the-badge" alt="Quick Start"></a>
+  <a href="#what-it-does"><img src="https://img.shields.io/badge/What%20It%20Does-Overview-0366d6?style=for-the-badge" alt="What it does"></a>
+  <a href="#vep-workflow"><img src="https://img.shields.io/badge/VEP-Workflow-f59e0b?style=for-the-badge" alt="VEP Workflow"></a>
+</p>
+
+<p align="center">
+  <img src="docs/img/phenotype.png" alt="Phenotype app screenshot" width="980">
+</p>
+
+Phenotype is a local genome annotation app for inspecting SNPs without pushing raw genotype data to a hosted service. It combines imported genotypes with cached sources such as ClinVar, SNPedia, VEP, and Promethease-style reports.
 
 ## What It Does
 
 - Upload a 23andMe or Ancestry-style genome file.
-- Review matches by `Findings`, `New`, `Clinical`, `All annotated`, `Unannotated`, and `Build 37 variants`.
+- Review `Findings`, `New`, `Clinical`, `All annotated`, `Unannotated`, and `Build 37 variants`.
 - Search by rsid or gene.
 - Filter by zygosity, VEP impact, VEP consequence, and finding severity.
-- Sort by magnitude, rating, recent findings, publication count, gene, rsid, and frequency.
-- Open a SNP in the sidebar to see the full record, linked studies, SNPedia, ClinVar, and metadata.
+- Sort by magnitude, rating, recency, publication count, gene, rsid, and frequency.
+- Open a SNP in the sidebar to see linked studies, SNPedia, ClinVar, and metadata.
 - Import VEP output, ClinVar data, and Promethease HTML reports.
 - Export VEP input for build 37 variants or rsid lists.
 
-## Current UI Behavior
+## Why It Feels Fast
 
-- `Findings` is the personal-match view.
-- `New` surfaces findings updated after import.
-- `Clinical` focuses on ClinVar allele matches.
-- `All annotated` shows everything cached locally.
-- `Unannotated` shows imported genotypes that still lack a local annotation.
-- The table is intentionally summary-first for faster loading.
-- Full SNP detail is fetched on click and shown in the sidebar.
-- Table metadata was simplified; fields like zygosity, chromosome, position, finding date, and VEP are now in the sidebar.
-- The sidebar includes direct links to SNPedia and supporting studies, plus publication count and source links.
-- `SNPedia risk note` is now its own column.
-- The default sort is highest SNPedia magnitude.
+- The table is summary-first.
+- Full SNP detail loads only when you click a row.
+- Summary counts and the default findings view are cached locally.
+- Matching is stricter: rows only show as findings when the imported genotype actually matches.
+
+## Screenshot
+
+<p align="center">
+  <img src="docs/img/html_table.png" alt="Phenotype table view" width="980">
+</p>
 
 ## Quick Start
-
-### Install
 
 ```bash
 python3 -m venv .venv
@@ -38,20 +49,20 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-### Run the app
+Run the app:
 
 ```bash
 cd src/phenotype-web
 ../../.venv/bin/python -m flask --app phenotype.app:create_app run --host 127.0.0.1 --port 5000
 ```
 
-Open the app in your browser at the printed local URL. If `5000` is busy, pick another free port.
+Open the local URL printed by Flask. If `5000` is busy, use another free port.
 
-The app uses local data under `src/phenotype-web/data/`:
+Local data lives under `src/phenotype-web/data/`:
 
 - `scrapedData.json` for cached annotations
 - `yourData.json` for imported genotypes
-- `phenotype.sqlite` for the local annotation cache
+- `phenotype.sqlite` for the local cache
 
 ## Importing Data
 
@@ -66,11 +77,11 @@ cd src/phenotype-web
 
 ### Promethease HTML report
 
-The app can import a Promethease-style HTML report from the browser. This is useful if you want to seed the cache with your existing findings and keep their metadata locally.
+Import a Promethease-style HTML report from the browser to seed the cache with existing findings.
 
 ### ClinVar and VEP
 
-The browser also supports:
+The browser supports:
 
 - `Import ClinVar DB`
 - `Scan x;y ClinVar matches`
@@ -83,7 +94,7 @@ The browser also supports:
 
 After importing a build 37 genome file, use `Build 37 variants` with `x;y` to narrow the export to heterozygous rows.
 
-Install the GRCh37 cache with Docker Desktop available:
+Install the GRCh37 cache:
 
 ```bash
 mkdir -p "$HOME/vep_data"
@@ -103,7 +114,7 @@ docker run --rm \
   --force_overwrite --tab --symbol --hgvs --canonical --variant_class --no_stats
 ```
 
-Import the result with the browser or from the command line:
+Import the result:
 
 ```bash
 .venv/bin/phenotype-vep-import src/phenotype-web/data/exports/phenotype_vep_output.txt
@@ -141,5 +152,4 @@ Import the result with the browser or from the command line:
 - The app is for personal exploration, not diagnosis.
 - Direct-to-consumer raw data can contain false positives.
 - Clinical interpretation should be confirmed with an appropriate lab test and a clinician.
-- Match labels are now stricter: a row must match the imported genotype, not just exist in the source database.
-- The app caches summary counts and the first page of the default view locally for quicker refreshes.
+
